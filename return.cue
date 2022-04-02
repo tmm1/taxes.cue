@@ -60,21 +60,12 @@ import (
 	_debug: computed: _computed
 
 	// Form 1040
-	form1040: {
-		// line 1 Wages
-		wages: _computed.income.wages
-
-		// line 2a Tax-exempt interest
-		taxExemptInterest: _computed.income.exemptInterestDividends
-
-		// line 3a Qualified dividends
+	form1040: #Form1040 & {
+		wages:              _computed.income.wages
+		taxExemptInterest:  _computed.income.exemptInterestDividends
 		qualifiedDividends: _computed.income.qualifiedDividends
-
-		// line 3b Ordinary dividends
-		ordinaryDividends: _computed.income.dividends
-
-		// line 25a Federal income tax withheld (W-2)
-		w2TaxWithheld: _computed.income.w2TaxWithheld
+		ordinaryDividends:  _computed.income.dividends
+		w2TaxWithheld:      _computed.income.w2TaxWithheld
 
 		// schedules
 		schedules: [
