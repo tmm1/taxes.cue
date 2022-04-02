@@ -1,6 +1,6 @@
 import "tmm1.net/taxes"
 
-example2021: taxes.#Return & {
+example2021: (taxes.#Return & {
 	form1099INTs: [
 		{
 			payerName:      "bank 1"
@@ -29,4 +29,4 @@ example2021: taxes.#Return & {
 			longTermCostBasis: 25000
 		},
 	]
-}
+}).form1040

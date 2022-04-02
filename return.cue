@@ -5,7 +5,7 @@ import (
 )
 
 #Return: {
-	id: #TaxpayerID
+	id?: #TaxpayerID
 
 	form1099DIVs: [...#Form1099.#DIV]
 	form1099INTs: [...#Form1099.#INT]
