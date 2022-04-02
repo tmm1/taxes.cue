@@ -1,52 +1,11 @@
+package taxes
+
 import (
     "list"
 )
 
-#number: int | float | *0
-
-#Form1099: {
-    #Base: {
-        payerTIN?: #taxpayerID
-        payerName?: string
-    }
-    #DIV: {
-        #Base
-
-        // box 1a Total ordinary dividends
-        totalOrdinaryDividends: #number
-
-        // box 1b Qualified dividends
-        qualifiedDividends: #number
-        
-        // box 2b Total capital gain distributions
-        totalCapitalGainDistributions: #number
-        
-        // box 11 Exempt-interest dividends
-        exemptInterestDividends: #number
-    }
-    #INT: {
-        #Base
-        
-        // box 1a Interest Income
-        interestIncome: #number
-    }
-    #B: {
-        #Base
-        
-        longTermProceeds: #number
-        longTermCostBasis: #number
-        
-        shortTermProceeds: #number
-        shortTermCostBasis: #number
-    }
-}
-
-#ssn: =~ "^\\d{3}-\\d{2}-\\d{4}$"
-#ein: =~ "^\\d{2}-\\d{8}$"
-#taxpayerID: #ssn | #ein
-
-#Taxpayer: {
-    id: #taxpayerID
+#Return: {
+    id: #TaxpayerID
 
     _form1099DIVs: [...#Form1099.#DIV]
     _form1099INTs: [...#Form1099.#INT]
@@ -176,37 +135,4 @@ import (
         ]
     }
 
-}
-
-example2021: #Taxpayer & {
-    id: "123-12-1234"
-    
-    _form1099INTs: [
-        {
-            payerName: "bank 1"
-            interestIncome: 15
-        }
-    ]
-    
-    _form1099DIVs: [
-        {
-            payerName: "brokerage 1"
-            totalOrdinaryDividends: 1200
-            qualifiedDividends: 200
-        },
-        {
-            payerName: "brokerage 2"
-            totalOrdinaryDividends: 2000
-            totalCapitalGainDistributions: 100
-            exemptInterestDividends: 50
-        }
-    ]
-    
-    _form1099Bs: [
-        {
-            payerName: "investment 1"
-            longTermProceeds: 50000
-            longTermCostBasis: 25000
-        }
-    ]
 }
