@@ -7,41 +7,41 @@ import (
 #Return: {
     id: #TaxpayerID
 
-    _form1099DIVs: [...#Form1099.#DIV]
-    _form1099INTs: [...#Form1099.#INT]
-    _form1099Bs: [...#Form1099.#B]
+    form1099DIVs: [...#Form1099.#DIV]
+    form1099INTs: [...#Form1099.#INT]
+    form1099Bs: [...#Form1099.#B]
 
     _computed: {
         income: {
             interest: list.Sum([
-                for d in _form1099INTs { d.interestIncome }
+                for d in form1099INTs { d.interestIncome }
             ])
             dividends: list.Sum([
-                for d in _form1099DIVs { d.totalOrdinaryDividends }
+                for d in form1099DIVs { d.totalOrdinaryDividends }
             ])
             qualifiedDividends: list.Sum([
-                for d in _form1099DIVs { d.qualifiedDividends }
+                for d in form1099DIVs { d.qualifiedDividends }
             ])
             exemptInterestDividends: list.Sum([
-                for d in _form1099DIVs { d.exemptInterestDividends }
+                for d in form1099DIVs { d.exemptInterestDividends }
             ])
             longTermProceeds: list.Sum([
-                for d in _form1099Bs { d.longTermProceeds }
+                for d in form1099Bs { d.longTermProceeds }
             ])
             longTermCostBasis: list.Sum([
-                for d in _form1099Bs { d.longTermCostBasis }
+                for d in form1099Bs { d.longTermCostBasis }
             ])
             shortTermProceeds: list.Sum([
-                for d in _form1099Bs { d.shortTermProceeds }
+                for d in form1099Bs { d.shortTermProceeds }
             ])
             shortTermCostBasis: list.Sum([
-                for d in _form1099Bs { d.shortTermCostBasis }
+                for d in form1099Bs { d.shortTermCostBasis }
             ])
             longTermGains: list.Sum([
-                for d in _form1099Bs { d.longTermProceeds - d.longTermCostBasis }
+                for d in form1099Bs { d.longTermProceeds - d.longTermCostBasis }
             ])
             shortTermGains: list.Sum([
-                for d in _form1099Bs { d.shortTermProceeds - d.shortTermCostBasis }
+                for d in form1099Bs { d.shortTermProceeds - d.shortTermCostBasis }
             ])
         }
         schedulesRequired: {
@@ -52,11 +52,6 @@ import (
 
     _debug: {
         computed: _computed
-        inputs: {
-            "1099-DIV": _form1099DIVs
-            "1099-INT": _form1099INTs
-            "1099-B": _form1099Bs
-        }
     }
     
     // Form 1040
@@ -80,7 +75,7 @@ import (
                         partI: {
                             // line 1 List name of Payer + Amount
                             list: [
-                                for d in _form1099INTs {
+                                for d in form1099INTs {
                                     [d.payerName, d.interestIncome]
                                 }
                             ]
@@ -94,7 +89,7 @@ import (
                         partII: {
                             // line 5 List name of Payer + Amount
                             list: [
-                                for d in _form1099DIVs {
+                                for d in form1099DIVs {
                                     [d.payerName, d.totalOrdinaryDividends]
                                 }
                             ]

@@ -3,14 +3,14 @@ import "tmm1.net/taxes"
 example2021: taxes.#Return & {
     id: "123-12-1234"
     
-    _form1099INTs: [
+    form1099INTs: [
         {
             payerName: "bank 1"
             interestIncome: 15
         }
     ]
     
-    _form1099DIVs: [
+    form1099DIVs: [
         {
             payerName: "brokerage 1"
             totalOrdinaryDividends: 1200
@@ -24,7 +24,7 @@ example2021: taxes.#Return & {
         }
     ]
     
-    _form1099Bs: [
+    form1099Bs: [
         {
             payerName: "investment 1"
             longTermProceeds: 50000
