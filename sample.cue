@@ -1,6 +1,13 @@
 import "github.com/tmm1/taxes"
 
 Form1040: (taxes.#Return & {
+	w2s: [
+		{
+			employerName: "employer 1"
+			wages:        50000
+		},
+	]
+
 	form1099INTs: [
 		{
 			payerName:      "bank 1"

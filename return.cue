@@ -10,9 +10,13 @@ import (
 	form1099DIVs: [...#Form1099.#DIV]
 	form1099INTs: [...#Form1099.#INT]
 	form1099Bs: [...#Form1099.#B]
+	w2s: [...#W2]
 
 	_computed: {
 		income: {
+			wages: list.Sum([
+				for w in w2s {w.wages},
+			])
 			interest: list.Sum([
 					for d in form1099INTs {d.interestIncome},
 			])
@@ -50,12 +54,13 @@ import (
 		}
 	}
 
-	_debug: {
-		computed: _computed
-	}
+	_debug: computed: _computed
 
 	// Form 1040
 	form1040: {
+		// line 1 Wages
+		wages: _computed.income.wages
+
 		// line 2a Tax-exempt interest
 		taxExemptInterest: _computed.income.exemptInterestDividends
 
