@@ -1,6 +1,6 @@
-import "tmm1.net/taxes"
+import "github.com/tmm1/taxes"
 
-example2021: (taxes.#Return & {
+Form1040: (taxes.#Return & {
 	form1099INTs: [
 		{
 			payerName:      "bank 1"

@@ -1,1 +1,1 @@
-module: "tmm1.net/taxes"
+module: "github.com/tmm1/taxes"
