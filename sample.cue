@@ -3,8 +3,9 @@ import "github.com/tmm1/taxes"
 Form1040: (taxes.#Return & {
 	w2s: [
 		{
-			employerName: "employer 1"
-			wages:        50000
+			employerName:      "employer 1"
+			wages:             50000
+			incomeTaxWithheld: 4500
 		},
 	]
 

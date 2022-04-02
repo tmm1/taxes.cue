@@ -17,6 +17,9 @@ import (
 			wages: list.Sum([
 				for w in w2s {w.wages},
 			])
+			w2TaxWithheld: list.Sum([
+					for w in w2s {w.incomeTaxWithheld},
+			])
 			interest: list.Sum([
 					for d in form1099INTs {d.interestIncome},
 			])
@@ -69,6 +72,9 @@ import (
 
 		// line 3b Ordinary dividends
 		ordinaryDividends: _computed.income.dividends
+
+		// line 25a Federal income tax withheld (W-2)
+		w2TaxWithheld: _computed.income.w2TaxWithheld
 
 		// schedules
 		schedules: [
