@@ -98,30 +98,24 @@ import (
 		schedules: [
 			if _computed.schedulesRequired.B {
 				// Schedule B
-				B: {
+				B: #Form1040.#ScheduleB & {
 					if _computed.income.interest > 0 {
-						// Part I Interest
 						partI: {
-							// line 1 List name of Payer + Amount
 							list: [
 								for d in form1099INTs {
 									[d.payerName, d.interestIncome]
 								},
 							]
-							// line 2 Total
 							total: _computed.income.interest
 						}
 					}
 					if _computed.income.dividends > 0 {
-						// Part II Ordinary Dividends
 						partII: {
-							// line 5 List name of Payer + Amount
 							list: [
 								for d in form1099DIVs {
 									[d.payerName, d.totalOrdinaryDividends]
 								},
 							]
-							// line 6 Total
 							total: _computed.income.dividends
 						}
 					}
@@ -130,46 +124,15 @@ import (
 
 			if _computed.schedulesRequired.D {
 				// Schedule D
-				D: {
+				D: #Form1040.#ScheduleD & {
 					if _computed.income.shortTermGains > 0 {
-						// Part I Short-Term Capital Gains and Losses
 						partI: {
 							let shortTermGains = _computed.income.shortTermProceeds - _computed.income.shortTermCostBasis
 							if shortTermGains != 0 {
-								// line 1ad Proceeds
 								shortTermReportedProceeds: _computed.income.shortTermProceeds
-								// line 1ae Cost
-								shortTermReportedBasis: _computed.income.shortTermCostBasis
-								// line 1ah Gain or loss
-								shortTermReportedGain: shortTermGains
+								shortTermReportedBasis:    _computed.income.shortTermCostBasis
+								shortTermReportedGain:     shortTermGains
 							}
-
-							// line 1bd Proceeds
-							shortTermAProceeds?: #numeric
-							// line 1be Cost
-							shortTermABasis?: #numeric
-							// line 1bh Gain or loss
-							shortTermAGain?: #numeric
-							// line 1bg Adjustments
-							shortTermAAdjustments?: #numeric
-
-							// line 2d Proceeds
-							shortTermBProceeds?: #numeric
-							// line 2e Cost
-							shortTermBBasis?: #numeric
-							// line 2h Gain or loss
-							shortTermBGain?: #numeric
-							// line 2g Adjustments
-							shortTermBAdjustments?: #numeric
-
-							// line 3d Proceeds
-							shortTermCProceeds?: #numeric
-							// line 3e Cost
-							shortTermCBasis?: #numeric
-							// line 3h Gain or loss
-							shortTermCGain?: #numeric
-							// line 3g Adjustments
-							shortTermCAdjustments?: #numeric
 
 							let txByCode = _computed.income.form1099BTransactionsByCode
 							for _, c in ["A", "B", "C"] {
@@ -188,44 +151,13 @@ import (
 						}
 					}
 					if _computed.income.longTermGains > 0 {
-						// Part II Long-Term Capital Gains and Losses
 						partII: {
 							let longTermGains = _computed.income.longTermProceeds - _computed.income.longTermCostBasis
 							if longTermGains != 0 {
-								// line 8ad Proceeds
 								longTermReportedProceeds: _computed.income.longTermProceeds
-								// line 8ae Cost
-								longTermReportedBasis: _computed.income.longTermCostBasis
-								// line 8ah Gain or loss
-								longTermReportedGain: longTermGains
+								longTermReportedBasis:    _computed.income.longTermCostBasis
+								longTermReportedGain:     longTermGains
 							}
-
-							// line 8bd Proceeds
-							longTermDProceeds?: #numeric
-							// line 8be Cost
-							longTermDBasis?: #numeric
-							// line 8bh Gain or loss
-							longTermDGain?: #numeric
-							// line 8bg Adjustments
-							longTermDAdjustments?: #numeric
-
-							// line 9d Proceeds
-							longTermEProceeds?: #numeric
-							// line 9e Cost
-							longTermEBasis?: #numeric
-							// line 9h Gain or loss
-							longTermEGain?: #numeric
-							// line 9g Adjustments
-							longTermEAdjustments?: #numeric
-
-							// line 10d Proceeds
-							longTermFProceeds?: #numeric
-							// line 10e Cost
-							longTermFBasis?: #numeric
-							// line 10h Gain or loss
-							longTermFGain?: #numeric
-							// line 10g Adjustments
-							longTermFAdjustments?: #numeric
 
 							let txByCode = _computed.income.form1099BTransactionsByCode
 							for _, c in ["D", "E", "F"] {
