@@ -9,30 +9,30 @@ package taxes
 		#Base
 
 		// box 1a Total ordinary dividends
-		totalOrdinaryDividends: #number
+		totalOrdinaryDividends: #amount
 
 		// box 1b Qualified dividends
-		qualifiedDividends: #number
+		qualifiedDividends: #amount
 
 		// box 2b Total capital gain distributions
-		totalCapitalGainDistributions: #number
+		totalCapitalGainDistributions: #amount
 
 		// box 11 Exempt-interest dividends
-		exemptInterestDividends: #number
+		exemptInterestDividends: #amount
 	}
 	#INT: {
 		#Base
 
 		// box 1a Interest Income
-		interestIncome: #number
+		interestIncome: #amount
 	}
 	#B: {
 		#Base
 
-		longTermProceeds:  #number
-		longTermCostBasis: #number
+		longTermProceeds:  #amount
+		longTermCostBasis: #amount
 
-		shortTermProceeds:  #number
-		shortTermCostBasis: #number
+		shortTermProceeds:  #amount
+		shortTermCostBasis: #amount
 	}
 }

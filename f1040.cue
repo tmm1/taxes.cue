@@ -2,19 +2,19 @@ package taxes
 
 #Form1040: {
 	// line 1 Wages
-	wages: #number
+	wages: #amount
 
 	// line 2a Tax-exempt interest
-	taxExemptInterest: #number
+	taxExemptInterest: #amount
 
 	// line 3a Qualified dividends
-	qualifiedDividends: #number
+	qualifiedDividends: #amount
 
 	// line 3b Ordinary dividends
-	ordinaryDividends: #number
+	ordinaryDividends: #amount
 
 	// line 25a Federal income tax withheld (W-2)
-	w2TaxWithheld: #number
+	w2TaxWithheld: #amount
 
 	// schedules
 	schedules: [...]
