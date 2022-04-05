@@ -44,6 +44,9 @@ import (
 			shortTermCostBasis: list.Sum([
 						for d in form1099Bs {d.shortTermCostBasis},
 			])
+			shortTermGains: list.Sum([
+					for d in form1099Bs {d.shortTermProceeds - d.shortTermCostBasis},
+			]) + shortTermGainsFromTransactions
 			longTermGains: list.Sum([
 					for d in form1099Bs {d.longTermProceeds - d.longTermCostBasis},
 			]) + longTermGainsFromTransactions
@@ -54,9 +57,6 @@ import (
 					])
 				},
 			])
-			shortTermGains: list.Sum([
-					for d in form1099Bs {d.shortTermProceeds - d.shortTermCostBasis},
-			]) + shortTermGainsFromTransactions
 			shortTermGainsFromTransactions: list.Sum([
 							for d in form1099Bs if len(d.transactions) > 0 {
 					list.Sum([
@@ -64,6 +64,19 @@ import (
 					])
 				},
 			])
+			form1099BTransactionsByCode: {
+				for _, c in ['A', 'B', 'C', 'D', 'E', 'F'] {
+					"\(c)": {
+						transactions: list.FlattenN([ for d in form1099Bs if len(d.transactions) != 0 {
+							[ for t in d.transactions if t.code == c {t}]
+						}], 1)
+						proceeds:    list.Sum([ for t in transactions {t.proceeds}])
+						costBasis:   list.Sum([ for t in transactions {t.costBasis}])
+						gainOrLoss:  list.Sum([ for t in transactions {t.gainOrLoss}])
+						adjustments: list.Sum([ for t in transactions {t.adjustAmount}])
+					}
+				}
+			}
 		}
 		schedulesRequired: {
 			B: income.dividends > 1500
@@ -144,23 +157,15 @@ import (
 								// line 8ah Gain or loss
 								longTermReportedGain: longTermGains
 							}
-							let boxEProceeds = list.Sum([ for d in form1099Bs {
-								list.Sum([ for t in d.transactions if t.code == 'E' {t.proceeds}])
-							}])
+							let boxEProceeds = _computed.income.form1099BTransactionsByCode.E.proceeds
 							if boxEProceeds > 0 {
 								// line 9d Proceeds
 								longTermEProceeds: boxEProceeds
 								// line 9e Cost
-								longTermEBasis: list.Sum([ for d in form1099Bs {
-									list.Sum([ for t in d.transactions if t.code == 'E' {t.costBasis}])
-								}])
+								longTermEBasis: _computed.income.form1099BTransactionsByCode.E.costBasis
 								// line 9h Gain or loss
-								longTermEGain: list.Sum([ for d in form1099Bs {
-									list.Sum([ for t in d.transactions if t.code == 'E' {t.gainOrLoss}])
-								}])
-								let adjustments = list.Sum([ for d in form1099Bs {
-									list.Sum([ for t in d.transactions if t.code == 'E' {t.adjustAmount}])
-								}])
+								longTermEGain: _computed.income.form1099BTransactionsByCode.E.gainOrLoss
+								let adjustments = _computed.income.form1099BTransactionsByCode.E.adjustments
 								if adjustments != 0 {
 									// line 9g Adjustments
 									longTermEAdjustments: adjustments
