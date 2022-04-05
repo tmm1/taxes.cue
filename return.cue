@@ -46,9 +46,23 @@ import (
 			])
 			longTermGains: list.Sum([
 					for d in form1099Bs {d.longTermProceeds - d.longTermCostBasis},
+			]) + longTermGainsFromTransactions
+			longTermGainsFromTransactions: list.Sum([
+							for d in form1099Bs if len(d.transactions) > 0 {
+					list.Sum([
+						for t in d.transactions if (t & #Form8949.#LongTerm) != _|_ {t.gainOrLoss},
+					])
+				},
 			])
 			shortTermGains: list.Sum([
 					for d in form1099Bs {d.shortTermProceeds - d.shortTermCostBasis},
+			]) + shortTermGainsFromTransactions
+			shortTermGainsFromTransactions: list.Sum([
+							for d in form1099Bs if len(d.transactions) > 0 {
+					list.Sum([
+						for t in d.transactions if (t & #Form8949.#ShortTerm) != _|_ {t.gainOrLoss},
+					])
+				},
 			])
 		}
 		schedulesRequired: {
@@ -107,23 +121,51 @@ import (
 					if _computed.income.shortTermGains > 0 {
 						// Part I Short-Term Capital Gains and Losses
 						partI: {
-							// line 1ad Proceeds
-							shortTermReportedProceeds: _computed.income.shortTermProceeds
-							// line 1ae Cost
-							shortTermReportedBasis: _computed.income.shortTermCostBasis
-							// line 1ah Gain or loss
-							shortTermGain: _computed.income.shortTermGains
+							let shortTermGains = _computed.income.shortTermProceeds - _computed.income.shortTermCostBasis
+							if shortTermGains != 0 {
+								// line 1ad Proceeds
+								shortTermReportedProceeds: _computed.income.shortTermProceeds
+								// line 1ae Cost
+								shortTermReportedBasis: _computed.income.shortTermCostBasis
+								// line 1ah Gain or loss
+								shortTermReportedGain: shortTermGains
+							}
 						}
 					}
 					if _computed.income.longTermGains > 0 {
 						// Part II Long-Term Capital Gains and Losses
 						partII: {
-							// line 8ad Proceeds
-							longTermReportedProceeds: _computed.income.longTermProceeds
-							// line 8ae Cost
-							longTermReportedBasis: _computed.income.longTermCostBasis
-							// line 8ah Gain or loss
-							longTermGain: _computed.income.longTermGains
+							let longTermGains = _computed.income.longTermProceeds - _computed.income.longTermCostBasis
+							if longTermGains != 0 {
+								// line 8ad Proceeds
+								longTermReportedProceeds: _computed.income.longTermProceeds
+								// line 8ae Cost
+								longTermReportedBasis: _computed.income.longTermCostBasis
+								// line 8ah Gain or loss
+								longTermReportedGain: longTermGains
+							}
+							let boxEProceeds = list.Sum([ for d in form1099Bs {
+								list.Sum([ for t in d.transactions if t.code == 'E' {t.proceeds}])
+							}])
+							if boxEProceeds > 0 {
+								// line 9d Proceeds
+								longTermEProceeds: boxEProceeds
+								// line 9e Cost
+								longTermEBasis: list.Sum([ for d in form1099Bs {
+									list.Sum([ for t in d.transactions if t.code == 'E' {t.costBasis}])
+								}])
+								// line 9h Gain or loss
+								longTermEGain: list.Sum([ for d in form1099Bs {
+									list.Sum([ for t in d.transactions if t.code == 'E' {t.gainOrLoss}])
+								}])
+								let adjustments = list.Sum([ for d in form1099Bs {
+									list.Sum([ for t in d.transactions if t.code == 'E' {t.adjustAmount}])
+								}])
+								if adjustments != 0 {
+									// line 9g Adjustments
+									longTermEAdjustments: adjustments
+								}
+							}
 						}
 					}
 				}

@@ -36,5 +36,17 @@ Form1040: (taxes.#Return & {
 			longTermProceeds:  50000
 			longTermCostBasis: 25000
 		},
+		{
+			payerName: "brokerage 1"
+			transactions: [
+				{
+					code:         'E'
+					dateAcquired: "01/01/2010"
+					dateSold:     "10/10/2020"
+					costBasis:    5000
+					proceeds:     5555
+				},
+			]
+		},
 	]
 }).form1040

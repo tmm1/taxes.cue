@@ -42,8 +42,14 @@ Form1040: {
 				longTermReportedProceeds: 50000
 				// line 8ae Cost
 				longTermReportedBasis: 25000
+				// line 9d Proceeds
+				longTermEProceeds: 5555
+				// line 9e Cost
+				longTermEBasis: 5000
 				// line 8ah Gain or loss
-				longTermGain: 25000
+				longTermReportedGain: 25000
+				// line 9h Gain or loss
+				longTermEGain: 555
 			}
 		}
 	}]

@@ -34,5 +34,7 @@ package taxes
 
 		shortTermProceeds:  #amount
 		shortTermCostBasis: #amount
+
+		transactions: [...#Form8949.#Transaction]
 	}
 }
