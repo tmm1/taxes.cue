@@ -1,4 +1,3 @@
-cue export --out cue sample.cue
 Form1040: {
 	// line 1 Wages
 	wages: 50000

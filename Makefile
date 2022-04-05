@@ -1,8 +1,11 @@
-default: test
+default: format test
 
 %: %.cue
 	cue export --out cue $(<)
 
+format:
+	cue fmt
+
 test:
 	cue eval -c ./
-	make sample > sample.out
+	cue export --out cue sample.cue > sample.out
