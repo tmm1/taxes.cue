@@ -1,0 +1,51 @@
+cue export --out cue sample.cue
+Form1040: {
+	// line 1 Wages
+	wages: 50000
+
+	// line 2a Tax-exempt interest
+	taxExemptInterest: 50
+
+	// line 3a Qualified dividends
+	qualifiedDividends: 200
+
+	// line 3b Ordinary dividends
+	ordinaryDividends: 3200
+
+	// line 25a Federal income tax withheld (W-2)
+	w2TaxWithheld: 4500
+
+	// schedules
+	schedules: [{
+		// Schedule B
+		B: {
+			// Part I Interest
+			partI: {
+				// line 1 List name of Payer + Amount
+				list: [["bank 1", 15]]
+				// line 2 Total
+				total: 15
+			}
+			// Part II Ordinary Dividends
+			partII: {
+				// line 5 List name of Payer + Amount
+				list: [["brokerage 1", 1200], ["brokerage 2", 2000]]
+				// line 6 Total
+				total: 3200
+			}
+		}
+	}, {
+		// Schedule D
+		D: {
+			// Part II Long-Term Capital Gains and Losses
+			partII: {
+				// line 8ad Proceeds
+				longTermReportedProceeds: 50000
+				// line 8ae Cost
+				longTermReportedBasis: 25000
+				// line 8ah Gain or loss
+				longTermGain: 25000
+			}
+		}
+	}]
+}
