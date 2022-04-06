@@ -49,6 +49,9 @@ Form1040: {
 			longTermEBasis: 5000
 			// line 9h Gain or loss
 			longTermEGain: 555
+
+			// line 12 Long-term gain from K1s
+			longTermFromK1: 100
 		}
 	}
 }

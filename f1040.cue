@@ -75,6 +75,9 @@ package taxes
 			shortTermCGain?: #numeric
 			// line 3g Adjustments
 			shortTermCAdjustments?: #numeric
+
+			// line 5 Short-term gain from K1s
+			shortTermFromK1?: #numeric
 		}
 
 		// Part II Long-Term Capital Gains and Losses
@@ -112,6 +115,9 @@ package taxes
 			longTermFGain?: #numeric
 			// line 10g Adjustments
 			longTermFAdjustments?: #numeric
+
+			// line 12 Long-term gain from K1s
+			longTermFromK1?: #numeric
 		}
 	}
 }

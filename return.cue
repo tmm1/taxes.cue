@@ -36,8 +36,12 @@ import (
 			longTermCostBasis:             list.Sum([ for d in form1099Bs {d.longTermCostBasis}])
 			shortTermProceeds:             list.Sum([ for d in form1099Bs {d.shortTermProceeds}])
 			shortTermCostBasis:            list.Sum([ for d in form1099Bs {d.shortTermCostBasis}])
-			shortTermGains:                shortTermGainsFromTransactions + list.Sum([ for d in form1099Bs {d.shortTermProceeds - d.shortTermCostBasis}])
-			longTermGains:                 longTermGainsFromTransactions + list.Sum([ for d in form1099Bs {d.longTermProceeds - d.longTermCostBasis}])
+			shortTermGains:                shortTermGainsFromTransactions + shortTermGainsFromReported + shortTermGainsFromK1s
+			longTermGains:                 longTermGainsFromTransactions + longTermGainsFromReported + longTermGainsFromK1s
+			shortTermGainsFromK1s:         list.Sum([ for k in k1s {k.shortTermCapitalGain}])
+			longTermGainsFromK1s:          list.Sum([ for k in k1s {k.longTermCapitalGain}])
+			longTermGainsFromReported:     list.Sum([ for d in form1099Bs {d.longTermProceeds - d.longTermCostBasis}])
+			shortTermGainsFromReported:    list.Sum([ for d in form1099Bs {d.shortTermProceeds - d.shortTermCostBasis}])
 			longTermGainsFromTransactions: list.Sum([ for d in form1099Bs if len(d.transactions) > 0 {
 				list.Sum([
 					for t in d.transactions if (t & #Form8949.#LongTerm) != _|_ {t.gainOrLoss},
@@ -140,6 +144,11 @@ import (
 								}
 							}
 						}
+
+						let shortTermK1 = _computed.income.shortTermGainsFromK1s
+						if shortTermK1 != 0 {
+							shortTermFromK1: shortTermK1
+						}
 					}
 				}
 				if _computed.income.longTermGains > 0 {
@@ -164,6 +173,11 @@ import (
 									"longTerm\(c)Adjustments": adjustments
 								}
 							}
+						}
+
+						let longTermK1 = _computed.income.longTermGainsFromK1s
+						if longTermK1 != 0 {
+							longTermFromK1: longTermK1
 						}
 					}
 				}
