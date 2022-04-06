@@ -9,7 +9,7 @@ Form1040: {
 	qualifiedDividends: 200
 
 	// line 3b Ordinary dividends
-	ordinaryDividends: 3200
+	ordinaryDividends: 3201
 
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 4500
@@ -19,21 +19,27 @@ Form1040: {
 		// Part I Interest
 		partI: {
 			// line 1 List name of Payer + Amount
-			list: [["bank 1", 15], ["passive investors llc", 16], ["acme corp llc", 1]]
+			list: [["bank 1", 15], ["passive investors llc", 16]]
 			// line 2 Total
-			total: 32
+			total: 31
 		}
 		// Part II Ordinary Dividends
 		partII: {
 			// line 5 List name of Payer + Amount
-			list: [["brokerage 1", 1200], ["brokerage 2", 2000]]
+			list: [["brokerage 1", 1200], ["brokerage 2", 2000], ["acme corp llc", 1]]
 			// line 6 Total
-			total: 3200
+			total: 3201
 		}
 	}
 
 	// Schedule D: Capital Gains and Losses
 	scheduleD: {
+		// Part I Short-Term Capital Gains and Losses
+		partI: {
+			// line 5 Short-term gain from K1s
+			shortTermFromK1: 50
+		}
+
 		// Part II Long-Term Capital Gains and Losses
 		partII: {
 			// line 8ad Proceeds

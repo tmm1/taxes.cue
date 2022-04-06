@@ -73,8 +73,9 @@ Form1040: (taxes.#Return & {
 			longTermCapitalGain: 100
 		},
 		{
-			corporationName: "acme corp llc"
-			interestIncome:  1
+			corporationName:      "acme corp llc"
+			ordinaryDividends:    1
+			shortTermCapitalGain: 50
 		},
 	]
 }).form1040
