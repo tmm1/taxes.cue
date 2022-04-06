@@ -65,4 +65,13 @@ Form1040: (taxes.#Return & {
 			},
 		]
 	}
+
+	k1s: [
+		{
+			partnershipName: "passive investors llc"
+		},
+		{
+			corporationName: "acme corp llc"
+		},
+	]
 }).form1040

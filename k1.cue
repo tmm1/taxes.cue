@@ -26,4 +26,5 @@ package taxes
 		corporationName:    string
 		corporationAddress: string
 	}
+	#Form: #Form1065 | #Form1120S
 }

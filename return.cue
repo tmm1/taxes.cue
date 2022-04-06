@@ -11,6 +11,7 @@ import (
 	form1099INTs: [...#Form1099.#INT]
 	form1099Bs: [...#Form1099.#B]
 	w2s: [...#W2]
+	k1s: [...#K1.#Form]
 
 	itemizedDeductions: {
 		medicalAndDentalExpenses: #amount
