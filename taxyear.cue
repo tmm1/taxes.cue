@@ -6,11 +6,13 @@ package taxes
 		selfOnly: int
 		family:   int
 	}
-	standardDeductions: {
-		[#FilingStatus.#Type]: #amount
-	}
-	additionalDeductionForBlindOrOver65: {
-		[#FilingStatus.#Type]: #amount
+	deductions: {
+		standard: {
+			[#FilingStatus.#Type]: #amount
+		}
+		additionalForBlindOrOver65: {
+			[#FilingStatus.#Type]: #amount
+		}
 	}
 }
 
@@ -20,19 +22,21 @@ package taxes
 		selfOnly: 3_550
 		family:   7_100
 	}
-	standardDeductions: {
-		single:                   12_400
-		headOfHousehold:          18_650
-		marriedFilingJointly:     24_800
-		marriedFilingSeparately:  single
-		qualifyingWidowOrWidower: marriedFilingJointly
-	}
-	additionalDeductionForBlindOrOver65: {
-		single:                   1_650
-		marriedFilingJointly:     1_300
-		headOfHousehold:          single
-		marriedFilingSeparately:  marriedFilingJointly
-		qualifyingWidowOrWidower: marriedFilingJointly
+	deductions: {
+		standard: {
+			single:                   12_400
+			headOfHousehold:          18_650
+			marriedFilingJointly:     24_800
+			marriedFilingSeparately:  single
+			qualifyingWidowOrWidower: marriedFilingJointly
+		}
+		additionalForBlindOrOver65: {
+			single:                   1_650
+			marriedFilingJointly:     1_300
+			headOfHousehold:          single
+			marriedFilingSeparately:  marriedFilingJointly
+			qualifyingWidowOrWidower: marriedFilingJointly
+		}
 	}
 }
 
@@ -42,18 +46,20 @@ package taxes
 		selfOnly: 3_600
 		family:   7_200
 	}
-	standardDeductions: {
-		single:                   12_550
-		headOfHousehold:          18_800
-		marriedFilingJointly:     25_100
-		marriedFilingSeparately:  single
-		qualifyingWidowOrWidower: marriedFilingJointly
-	}
-	additionalDeductionForBlindOrOver65: {
-		single:                   1_700
-		marriedFilingJointly:     1_350
-		headOfHousehold:          single
-		marriedFilingSeparately:  marriedFilingJointly
-		qualifyingWidowOrWidower: marriedFilingJointly
+	deductions: {
+		standard: {
+			single:                   12_550
+			headOfHousehold:          18_800
+			marriedFilingJointly:     25_100
+			marriedFilingSeparately:  single
+			qualifyingWidowOrWidower: marriedFilingJointly
+		}
+		additionalForBlindOrOver65: {
+			single:                   1_700
+			marriedFilingJointly:     1_350
+			headOfHousehold:          single
+			marriedFilingSeparately:  marriedFilingJointly
+			qualifyingWidowOrWidower: marriedFilingJointly
+		}
 	}
 }
