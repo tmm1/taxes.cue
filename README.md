@@ -21,8 +21,8 @@ $ make _myreturn2021
 
 ### example
 
-- input: [sample.cue](/tmm1/taxes.cue/blob/master/sample.cue)
-- output: [sample.out](/tmm1/taxes.cue/blob/master/sample.out)
+- input: [sample.cue](/sample.cue)
+- output: [sample.out](/sample.out)
 
 ### inspiration
 
