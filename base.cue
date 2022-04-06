@@ -7,6 +7,7 @@ import "time"
 #amount: #numeric | *0
 
 #date: string & time.Format("2006-01-02")
+#year: string & time.Format("2006")
 
 #payerAmountTuple: [string, #numeric]
 
