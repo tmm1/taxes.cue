@@ -21,7 +21,7 @@ import (
 		stateAndLocalTaxesPersonalProperty: #amount
 
 		charitableGiftsByCashOrCheck: #amount
-		charitableGiftsOfPublicStock: [#Form8283.#DonatedPublicStock]
+		charitableGiftsOfPublicStock: [...#Form8283.#DonatedPublicStock]
 	}
 
 	_computed: {
