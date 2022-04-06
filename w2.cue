@@ -12,10 +12,10 @@ package taxes
 	wages: #amount
 
 	// box 3 Social security wages
-	ssWages: #numeric | *wages
+	ssWages: number | *wages
 
 	// box 5 Medicare wages
-	medicareWages: #numeric | *wages
+	medicareWages: number | *wages
 
 	// box 2 Federal income tax withheld
 	incomeTaxWithheld: #amount

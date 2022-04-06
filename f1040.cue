@@ -43,81 +43,81 @@ package taxes
 		// Part I Short-Term Capital Gains and Losses
 		partI?: {
 			// line 1ad Proceeds
-			shortTermReportedProceeds?: #numeric
+			shortTermReportedProceeds?: number
 			// line 1ae Cost
-			shortTermReportedBasis?: #numeric
+			shortTermReportedBasis?: number
 			// line 1ah Gain or loss
-			shortTermReportedGain?: #numeric
+			shortTermReportedGain?: number
 
 			// line 1bd Proceeds
-			shortTermAProceeds?: #numeric
+			shortTermAProceeds?: number
 			// line 1be Cost
-			shortTermABasis?: #numeric
+			shortTermABasis?: number
 			// line 1bh Gain or loss
-			shortTermAGain?: #numeric
+			shortTermAGain?: number
 			// line 1bg Adjustments
-			shortTermAAdjustments?: #numeric
+			shortTermAAdjustments?: number
 
 			// line 2d Proceeds
-			shortTermBProceeds?: #numeric
+			shortTermBProceeds?: number
 			// line 2e Cost
-			shortTermBBasis?: #numeric
+			shortTermBBasis?: number
 			// line 2h Gain or loss
-			shortTermBGain?: #numeric
+			shortTermBGain?: number
 			// line 2g Adjustments
-			shortTermBAdjustments?: #numeric
+			shortTermBAdjustments?: number
 
 			// line 3d Proceeds
-			shortTermCProceeds?: #numeric
+			shortTermCProceeds?: number
 			// line 3e Cost
-			shortTermCBasis?: #numeric
+			shortTermCBasis?: number
 			// line 3h Gain or loss
-			shortTermCGain?: #numeric
+			shortTermCGain?: number
 			// line 3g Adjustments
-			shortTermCAdjustments?: #numeric
+			shortTermCAdjustments?: number
 
 			// line 5 Short-term gain from K1s
-			shortTermFromK1?: #numeric
+			shortTermFromK1?: number
 		}
 
 		// Part II Long-Term Capital Gains and Losses
 		partII?: {
 			// line 8ad Proceeds
-			longTermReportedProceeds?: #numeric
+			longTermReportedProceeds?: number
 			// line 8ae Cost
-			longTermReportedBasis?: #numeric
+			longTermReportedBasis?: number
 			// line 8ah Gain or loss
-			longTermReportedGain?: #numeric
+			longTermReportedGain?: number
 
 			// line 8bd Proceeds
-			longTermDProceeds?: #numeric
+			longTermDProceeds?: number
 			// line 8be Cost
-			longTermDBasis?: #numeric
+			longTermDBasis?: number
 			// line 8bh Gain or loss
-			longTermDGain?: #numeric
+			longTermDGain?: number
 			// line 8bg Adjustments
-			longTermDAdjustments?: #numeric
+			longTermDAdjustments?: number
 
 			// line 9d Proceeds
-			longTermEProceeds?: #numeric
+			longTermEProceeds?: number
 			// line 9e Cost
-			longTermEBasis?: #numeric
+			longTermEBasis?: number
 			// line 9h Gain or loss
-			longTermEGain?: #numeric
+			longTermEGain?: number
 			// line 9g Adjustments
-			longTermEAdjustments?: #numeric
+			longTermEAdjustments?: number
 
 			// line 10d Proceeds
-			longTermFProceeds?: #numeric
+			longTermFProceeds?: number
 			// line 10e Cost
-			longTermFBasis?: #numeric
+			longTermFBasis?: number
 			// line 10h Gain or loss
-			longTermFGain?: #numeric
+			longTermFGain?: number
 			// line 10g Adjustments
-			longTermFAdjustments?: #numeric
+			longTermFAdjustments?: number
 
 			// line 12 Long-term gain from K1s
-			longTermFromK1?: #numeric
+			longTermFromK1?: number
 		}
 	}
 }

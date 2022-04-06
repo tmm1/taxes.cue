@@ -8,13 +8,13 @@ package taxes
 		dateDonated:     #date
 		dateAcquired?:   #date
 		howAcquired?:    string
-		costBasis?:      #numeric
+		costBasis?:      number
 		fairMarketValue: #amount
 		appraisalMethod: string
 	}
 	#DonatedPublicStock: {
 		#DonatedProperty
 		dateAcquired: #date
-		costBasis:    #numeric
+		costBasis:    number
 	}
 }
