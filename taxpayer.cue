@@ -28,11 +28,17 @@ package taxes
 }
 
 #FilingStatus: {
-	#HeadOfHousehold:          "head-of-household"
-	#MarriedFilingJointly:     "married-filing-jointly"
-	#MarriedFilingSeparately:  "married-filing-separately"
-	#QualifyingWidowOrWidower: "qualifying-window(er)"
+	#HeadOfHousehold:          "headOfHousehold"
+	#MarriedFilingJointly:     "marriedFilingJointly"
+	#MarriedFilingSeparately:  "marriedFilingSeparately"
+	#QualifyingWidowOrWidower: "qualifyingWidowOrWidower"
 	#Single:                   "single"
+
+	#HOH: #HeadOfHousehold
+	#MFJ: #MarriedFilingJointly
+	#MFS: #MarriedFilingSeparately
+	#QW:  #QualifyingWidowOrWidower
+	#S:   #Single
 
 	#Type: #Single |
 		#MarriedFilingJointly |
