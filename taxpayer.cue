@@ -1,16 +1,16 @@
 package taxes
 
 #TaxablePerson: {
-	ssn:         #SSN
-	firstName:   string
-	middleName?: string
-	lastName:    string
-	dateOfBirth: #date
+	ssn:                  #SSN
+	firstName:            string
+	middleInitial?:       string
+	lastName:             string
+	dateOfBirth:          #date
+	isClaimedAsDependent: bool
 }
 
 #Spouse: {
 	#TaxablePerson
-	isClaimedAsDependent: bool
 }
 
 #Dependent: {
@@ -22,6 +22,21 @@ package taxes
 
 #TaxPayer: {
 	#TaxablePerson
-	spouse?: #Spouse
+	address?: #address
+	spouse?:  #Spouse
 	dependents?: [...#Dependent]
+}
+
+#FilingStatus: {
+	#HeadOfHousehold:          "head-of-household"
+	#MarriedFilingJointly:     "married-filing-jointly"
+	#MarriedFilingSeparately:  "married-filing-separately"
+	#QualifyingWidowOrWidower: "qualifying-window(er)"
+	#Single:                   "single"
+
+	#Type: #Single |
+		#MarriedFilingJointly |
+		#MarriedFilingSeparately |
+		#HeadOfHousehold |
+		#QualifyingWidowOrWidower
 }

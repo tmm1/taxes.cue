@@ -5,7 +5,11 @@ import (
 )
 
 #Return: {
-	id?: #TaxpayerID
+	taxpayer?:    #TaxPayer
+	filingStatus: #FilingStatus.#Type
+	if taxpayer != _|_ && taxpayer.spouse == _|_ {
+		filingStatus: #FilingStatus.#Single | #FilingStatus.#HeadOfHousehold | #FilingStatus.#QualifyingWidowOrWidower
+	}
 
 	form1099DIVs: [...#Form1099.#DIV]
 	form1099INTs: [...#Form1099.#INT]
