@@ -5,9 +5,10 @@ import (
 )
 
 #Return: {
-	taxpayer?:    #TaxPayer
+	taxYear:      #year
+	taxPayer?:    #TaxPayer
 	filingStatus: #FilingStatus.#Type
-	if taxpayer != _|_ && taxpayer.spouse == _|_ {
+	if taxPayer != _|_ && taxPayer.spouse == _|_ {
 		filingStatus: #FilingStatus.#Single | #FilingStatus.#HeadOfHousehold | #FilingStatus.#QualifyingWidowOrWidower
 	}
 

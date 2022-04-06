@@ -1,14 +1,15 @@
 import "github.com/tmm1/taxes"
 
 Form1040: (taxes.#Return & {
-	taxpayer: {
+	taxYear:      "2021"
+	filingStatus: "single"
+
+	taxPayer: {
 		firstName:     "john"
 		middleInitial: "e"
 		lastName:      "doe"
 		dateOfBirth:   "1982-01-01"
 	}
-
-	filingStatus: "single"
 
 	w2s: [
 		{
