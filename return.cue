@@ -12,6 +12,17 @@ import (
 	form1099Bs: [...#Form1099.#B]
 	w2s: [...#W2]
 
+	itemizedDeductions: {
+		medicalAndDentalExpenses: #amount
+
+		stateAndLocalTaxes:                 #amount
+		stateAndLocalTaxesRealEstate:       #amount
+		stateAndLocalTaxesPersonalProperty: #amount
+
+		charitableGiftsByCashOrCheck: #amount
+		charitableGiftsOfPublicStock: [#Form8283.#DonatedPublicStock]
+	}
+
 	_computed: {
 		income: {
 			wages: list.Sum([

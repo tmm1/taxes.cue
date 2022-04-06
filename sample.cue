@@ -41,12 +41,28 @@ Form1040: (taxes.#Return & {
 			transactions: [
 				{
 					code:         'E'
-					dateAcquired: "01/01/2010"
-					dateSold:     "10/10/2020"
+					dateAcquired: "2010-01-01"
+					dateSold:     "2020-10-10"
 					costBasis:    5000
 					proceeds:     5555
 				},
 			]
 		},
 	]
+
+	itemizedDeductions: {
+		charitableGiftsByCashOrCheck: 100
+		charitableGiftsOfPublicStock: [
+			{
+				doneeName:       "charitable foundation"
+				doneeAddress:    "123 example ave"
+				description:     "1 share AAPL"
+				dateAcquired:    "2010-10-10"
+				dateDonated:     "2020-10-10"
+				costBasis:       100
+				fairMarketValue: 1000
+				appraisalMethod: "average stock price"
+			},
+		]
+	}
 }).form1040
