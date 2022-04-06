@@ -14,7 +14,7 @@ Form1040: {
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 4500
 
-	// Schedule B
+	// Schedule B: Interest and Ordinary Dividends
 	scheduleB: {
 		// Part I Interest
 		partI: {
@@ -32,7 +32,7 @@ Form1040: {
 		}
 	}
 
-	// Schedule D
+	// Schedule D: Capital Gains and Losses
 	scheduleD: {
 		// Part II Long-Term Capital Gains and Losses
 		partII: {

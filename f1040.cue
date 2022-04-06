@@ -16,10 +16,10 @@ package taxes
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: #amount
 
-	// Schedule B
+	// Schedule B: Interest and Ordinary Dividends
 	scheduleB?: #ScheduleB
 
-	// Schedule D
+	// Schedule D: Capital Gains and Losses
 	scheduleD?: #ScheduleD
 
 	#ScheduleB: {
