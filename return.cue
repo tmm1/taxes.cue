@@ -78,90 +78,85 @@ import (
 		ordinaryDividends:  _computed.income.dividends
 		w2TaxWithheld:      _computed.income.w2TaxWithheld
 
-		// schedules
-		schedules: [
-			if _computed.schedulesRequired.B {
-				// Schedule B
-				B: #Form1040.#ScheduleB & {
-					if _computed.income.interest > 0 {
-						partI: {
-							list: [
-								for d in form1099INTs {
-									[d.payerName, d.interestIncome]
-								},
-							]
-							total: _computed.income.interest
-						}
-					}
-					if _computed.income.dividends > 0 {
-						partII: {
-							list: [
-								for d in form1099DIVs {
-									[d.payerName, d.totalOrdinaryDividends]
-								},
-							]
-							total: _computed.income.dividends
-						}
+		if _computed.schedulesRequired.B {
+			scheduleB: #Form1040.#ScheduleB & {
+				if _computed.income.interest > 0 {
+					partI: {
+						list: [
+							for d in form1099INTs {
+								[d.payerName, d.interestIncome]
+							},
+						]
+						total: _computed.income.interest
 					}
 				}
-			},
-
-			if _computed.schedulesRequired.D {
-				// Schedule D
-				D: #Form1040.#ScheduleD & {
-					if _computed.income.shortTermGains > 0 {
-						partI: {
-							let shortTermGains = _computed.income.shortTermProceeds - _computed.income.shortTermCostBasis
-							if shortTermGains != 0 {
-								shortTermReportedProceeds: _computed.income.shortTermProceeds
-								shortTermReportedBasis:    _computed.income.shortTermCostBasis
-								shortTermReportedGain:     shortTermGains
-							}
-
-							let txByCode = _computed.income.form1099BTransactionsByCode
-							for _, c in ["A", "B", "C"] {
-								let bucket = txByCode[c]
-								let proceeds = bucket.proceeds
-								if proceeds > 0 {
-									"shortTerm\(c)Proceeds": proceeds
-									"shortTerm\(c)Basis":    bucket.costBasis
-									"shortTerm\(c)Gain":     bucket.gainOrLoss
-									let adjustments = bucket.adjustments
-									if adjustments != 0 {
-										"shortTerm\(c)Adjustments": adjustments
-									}
-								}
-							}
-						}
+				if _computed.income.dividends > 0 {
+					partII: {
+						list: [
+							for d in form1099DIVs {
+								[d.payerName, d.totalOrdinaryDividends]
+							},
+						]
+						total: _computed.income.dividends
 					}
-					if _computed.income.longTermGains > 0 {
-						partII: {
-							let longTermGains = _computed.income.longTermProceeds - _computed.income.longTermCostBasis
-							if longTermGains != 0 {
-								longTermReportedProceeds: _computed.income.longTermProceeds
-								longTermReportedBasis:    _computed.income.longTermCostBasis
-								longTermReportedGain:     longTermGains
-							}
+				}
+			}
+		}
 
-							let txByCode = _computed.income.form1099BTransactionsByCode
-							for _, c in ["D", "E", "F"] {
-								let bucket = txByCode[c]
-								let proceeds = bucket.proceeds
-								if proceeds > 0 {
-									"longTerm\(c)Proceeds": proceeds
-									"longTerm\(c)Basis":    bucket.costBasis
-									"longTerm\(c)Gain":     bucket.gainOrLoss
-									let adjustments = bucket.adjustments
-									if adjustments != 0 {
-										"longTerm\(c)Adjustments": adjustments
-									}
+		if _computed.schedulesRequired.D {
+			scheduleD: #Form1040.#ScheduleD & {
+				if _computed.income.shortTermGains > 0 {
+					partI: {
+						let shortTermGains = _computed.income.shortTermProceeds - _computed.income.shortTermCostBasis
+						if shortTermGains != 0 {
+							shortTermReportedProceeds: _computed.income.shortTermProceeds
+							shortTermReportedBasis:    _computed.income.shortTermCostBasis
+							shortTermReportedGain:     shortTermGains
+						}
+
+						let txByCode = _computed.income.form1099BTransactionsByCode
+						for _, c in ["A", "B", "C"] {
+							let bucket = txByCode[c]
+							let proceeds = bucket.proceeds
+							if proceeds > 0 {
+								"shortTerm\(c)Proceeds": proceeds
+								"shortTerm\(c)Basis":    bucket.costBasis
+								"shortTerm\(c)Gain":     bucket.gainOrLoss
+								let adjustments = bucket.adjustments
+								if adjustments != 0 {
+									"shortTerm\(c)Adjustments": adjustments
 								}
 							}
 						}
 					}
 				}
-			},
-		]
+				if _computed.income.longTermGains > 0 {
+					partII: {
+						let longTermGains = _computed.income.longTermProceeds - _computed.income.longTermCostBasis
+						if longTermGains != 0 {
+							longTermReportedProceeds: _computed.income.longTermProceeds
+							longTermReportedBasis:    _computed.income.longTermCostBasis
+							longTermReportedGain:     longTermGains
+						}
+
+						let txByCode = _computed.income.form1099BTransactionsByCode
+						for _, c in ["D", "E", "F"] {
+							let bucket = txByCode[c]
+							let proceeds = bucket.proceeds
+							if proceeds > 0 {
+								"longTerm\(c)Proceeds": proceeds
+								"longTerm\(c)Basis":    bucket.costBasis
+								"longTerm\(c)Gain":     bucket.gainOrLoss
+								let adjustments = bucket.adjustments
+								if adjustments != 0 {
+									"longTerm\(c)Adjustments": adjustments
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 }

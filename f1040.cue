@@ -16,8 +16,11 @@ package taxes
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: #amount
 
-	// schedules
-	schedules: [...]
+	// Schedule B
+	scheduleB?: #ScheduleB
+
+	// Schedule D
+	scheduleD?: #ScheduleD
 
 	#ScheduleB: {
 		// Part I Interest
