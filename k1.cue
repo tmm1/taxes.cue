@@ -22,9 +22,9 @@ package taxes
 	}
 	#Form1120S: {
 		#_base
-		corporationEIN?:    #EIN
-		corporationName:    string
-		corporationAddress: string
+		corporationEIN?:     #EIN
+		corporationName:     string
+		corporationAddress?: string
 	}
 	#Form: #Form1065 | #Form1120S
 }
