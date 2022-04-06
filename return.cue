@@ -26,56 +26,28 @@ import (
 
 	_computed: {
 		income: {
-			wages: list.Sum([
-				for w in w2s {w.wages},
-			])
-			w2TaxWithheld: list.Sum([
-					for w in w2s {w.incomeTaxWithheld},
-			])
-			interest: list.Sum([
-					for d in form1099INTs {d.interestIncome},
-			])
-			dividends: list.Sum([
-					for d in form1099DIVs {d.totalOrdinaryDividends},
-			])
-			qualifiedDividends: list.Sum([
-						for d in form1099DIVs {d.qualifiedDividends},
-			])
-			exemptInterestDividends: list.Sum([
-							for d in form1099DIVs {d.exemptInterestDividends},
-			])
-			longTermProceeds: list.Sum([
-						for d in form1099Bs {d.longTermProceeds},
-			])
-			longTermCostBasis: list.Sum([
-						for d in form1099Bs {d.longTermCostBasis},
-			])
-			shortTermProceeds: list.Sum([
-						for d in form1099Bs {d.shortTermProceeds},
-			])
-			shortTermCostBasis: list.Sum([
-						for d in form1099Bs {d.shortTermCostBasis},
-			])
-			shortTermGains: list.Sum([
-					for d in form1099Bs {d.shortTermProceeds - d.shortTermCostBasis},
-			]) + shortTermGainsFromTransactions
-			longTermGains: list.Sum([
-					for d in form1099Bs {d.longTermProceeds - d.longTermCostBasis},
-			]) + longTermGainsFromTransactions
-			longTermGainsFromTransactions: list.Sum([
-							for d in form1099Bs if len(d.transactions) > 0 {
-					list.Sum([
-						for t in d.transactions if (t & #Form8949.#LongTerm) != _|_ {t.gainOrLoss},
-					])
-				},
-			])
-			shortTermGainsFromTransactions: list.Sum([
-							for d in form1099Bs if len(d.transactions) > 0 {
-					list.Sum([
-						for t in d.transactions if (t & #Form8949.#ShortTerm) != _|_ {t.gainOrLoss},
-					])
-				},
-			])
+			wages:                         list.Sum([ for w in w2s {w.wages}])
+			w2TaxWithheld:                 list.Sum([ for w in w2s {w.incomeTaxWithheld}])
+			interest:                      list.Sum([ for d in form1099INTs {d.interestIncome}])
+			dividends:                     list.Sum([ for d in form1099DIVs {d.totalOrdinaryDividends}])
+			qualifiedDividends:            list.Sum([ for d in form1099DIVs {d.qualifiedDividends}])
+			exemptInterestDividends:       list.Sum([ for d in form1099DIVs {d.exemptInterestDividends}])
+			longTermProceeds:              list.Sum([ for d in form1099Bs {d.longTermProceeds}])
+			longTermCostBasis:             list.Sum([ for d in form1099Bs {d.longTermCostBasis}])
+			shortTermProceeds:             list.Sum([ for d in form1099Bs {d.shortTermProceeds}])
+			shortTermCostBasis:            list.Sum([ for d in form1099Bs {d.shortTermCostBasis}])
+			shortTermGains:                shortTermGainsFromTransactions + list.Sum([ for d in form1099Bs {d.shortTermProceeds - d.shortTermCostBasis}])
+			longTermGains:                 longTermGainsFromTransactions + list.Sum([ for d in form1099Bs {d.longTermProceeds - d.longTermCostBasis}])
+			longTermGainsFromTransactions: list.Sum([ for d in form1099Bs if len(d.transactions) > 0 {
+				list.Sum([
+					for t in d.transactions if (t & #Form8949.#LongTerm) != _|_ {t.gainOrLoss},
+				])
+			}])
+			shortTermGainsFromTransactions: list.Sum([ for d in form1099Bs if len(d.transactions) > 0 {
+				list.Sum([
+					for t in d.transactions if (t & #Form8949.#ShortTerm) != _|_ {t.gainOrLoss},
+				])
+			}])
 			form1099BTransactionsByCode: {
 				for _, c in ['A', 'B', 'C', 'D', 'E', 'F'] {
 					"\(c)": {
