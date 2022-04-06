@@ -69,9 +69,11 @@ Form1040: (taxes.#Return & {
 	k1s: [
 		{
 			partnershipName: "passive investors llc"
+			interestIncome:  16
 		},
 		{
 			corporationName: "acme corp llc"
+			interestIncome:  1
 		},
 	]
 }).form1040

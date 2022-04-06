@@ -28,9 +28,9 @@ import (
 		income: {
 			wages:                         list.Sum([ for w in w2s {w.wages}])
 			w2TaxWithheld:                 list.Sum([ for w in w2s {w.incomeTaxWithheld}])
-			interest:                      list.Sum([ for d in form1099INTs {d.interestIncome}])
-			dividends:                     list.Sum([ for d in form1099DIVs {d.totalOrdinaryDividends}])
-			qualifiedDividends:            list.Sum([ for d in form1099DIVs {d.qualifiedDividends}])
+			interest:                      list.Sum([ for d in form1099INTs {d.interestIncome}, for k in k1s {k.interestIncome}])
+			dividends:                     list.Sum([ for d in form1099DIVs {d.totalOrdinaryDividends}, for k in k1s {k.ordinaryDividends}])
+			qualifiedDividends:            list.Sum([ for d in form1099DIVs {d.qualifiedDividends}, for k in k1s {k.qualifiedDividends}])
 			exemptInterestDividends:       list.Sum([ for d in form1099DIVs {d.exemptInterestDividends}])
 			longTermProceeds:              list.Sum([ for d in form1099Bs {d.longTermProceeds}])
 			longTermCostBasis:             list.Sum([ for d in form1099Bs {d.longTermCostBasis}])
@@ -86,6 +86,12 @@ import (
 							for d in form1099INTs {
 								[d.payerName, d.interestIncome]
 							},
+							for k in k1s if k.interestIncome > 0 && (k & #K1.#Form1065) != _|_ {
+								[k.partnershipName, k.interestIncome]
+							},
+							for k in k1s if k.interestIncome > 0 && (k & #K1.#Form1120S) != _|_ {
+								[k.corporationName, k.interestIncome]
+							},
 						]
 						total: _computed.income.interest
 					}
@@ -95,6 +101,12 @@ import (
 						list: [
 							for d in form1099DIVs {
 								[d.payerName, d.totalOrdinaryDividends]
+							},
+							for k in k1s if k.ordinaryDividends > 0 && (k & #K1.#Form1065) != _|_ {
+								[k.partnershipName, k.ordinaryDividends]
+							},
+							for k in k1s if k.ordinaryDividends > 0 && (k & #K1.#Form1120S) != _|_ {
+								[k.corporationName, k.ordinaryDividends]
 							},
 						]
 						total: _computed.income.dividends

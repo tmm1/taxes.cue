@@ -19,9 +19,9 @@ Form1040: {
 		// Part I Interest
 		partI: {
 			// line 1 List name of Payer + Amount
-			list: [["bank 1", 15]]
+			list: [["bank 1", 15], ["passive investors llc", 16], ["acme corp llc", 1]]
 			// line 2 Total
-			total: 15
+			total: 32
 		}
 		// Part II Ordinary Dividends
 		partII: {
