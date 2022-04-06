@@ -7,10 +7,7 @@ package taxes
 		family:   int
 	}
 	deductions: {
-		standard: {
-			[#FilingStatus.#Type]: #amount
-		}
-		additionalForBlindOrOver65: {
+		[string & =~"^(standard|additionalForBlindOrOver65)$"]: {
 			[#FilingStatus.#Type]: #amount
 		}
 	}
