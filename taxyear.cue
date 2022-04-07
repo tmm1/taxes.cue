@@ -12,7 +12,7 @@ package taxes
 		}
 	}
 	taxRates: {
-		#_rate: [number, number & >0.0 & <100.0, number]
+		#_rate: [number & >0 | number & -1, number & >0.0 & <100.0, number & >=0]
 		[#FilingStatus.#Type]: [...#_rate]
 	}
 }
