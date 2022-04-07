@@ -15,6 +15,10 @@ package taxes
 		#_rate: [number & >0 | number & -1, number & >0.0 & <100.0, number & >=0]
 		[#FilingStatus.#Type]: [...#_rate]
 	}
+	qualifiedTaxRates: {
+		#_rate: [number & >0 | number & -1, number & >=0.0 & <100.0]
+		[#FilingStatus.#Type]: [...#_rate]
+	}
 }
 
 #TY2020: #TaxYear & {
@@ -78,6 +82,29 @@ package taxes
 		]
 		qualifyingWidowOrWidower: marriedFilingJointly
 	}
+	qualifiedTaxRates: {
+		single: [
+			[40_000, 0.0],
+			[441_450, 15.0],
+			[-1, 20.0],
+		]
+		marriedFilingJointly: [
+			[80_000, 0.0],
+			[496_600, 15.0],
+			[-1, 20.0],
+		]
+		marriedFilingSeparately: [
+			[40_000, 0.0],
+			[248_300, 15.0],
+			[-1, 20.0],
+		]
+		headOfHousehold: [
+			[53_600, 0.0],
+			[469_050, 15.0],
+			[-1, 20.0],
+		]
+		qualifyingWidowOrWidower: marriedFilingJointly
+	}
 }
 
 #TY2021: #TaxYear & {
@@ -138,6 +165,29 @@ package taxes
 			[209_400, 32.0, 20_623.0],
 			[523_600, 35.0, 26_905.0],
 			[-1, 37.0, 37_377.0],
+		]
+		qualifyingWidowOrWidower: marriedFilingJointly
+	}
+	qualifiedTaxRates: {
+		single: [
+			[40_400, 0.0],
+			[445_850, 15.0],
+			[-1, 20.0],
+		]
+		marriedFilingJointly: [
+			[80_800, 0.0],
+			[501_600, 15.0],
+			[-1, 20.0],
+		]
+		marriedFilingSeparately: [
+			[40_400, 0.0],
+			[250_800, 15.0],
+			[-1, 20.0],
+		]
+		headOfHousehold: [
+			[54_100, 0.0],
+			[473_750, 15.0],
+			[-1, 20.0],
 		]
 		qualifyingWidowOrWidower: marriedFilingJointly
 	}
