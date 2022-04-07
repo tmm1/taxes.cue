@@ -8,9 +8,6 @@ import (
 	taxYear:      #year
 	taxPayer?:    #TaxPayer
 	filingStatus: #FilingStatus.#Type
-	if taxPayer != _|_ && taxPayer.spouse == _|_ {
-		filingStatus: #FilingStatus.#Single | #FilingStatus.#HeadOfHousehold | #FilingStatus.#QualifyingWidowOrWidower
-	}
 
 	form1099DIVs: [...#Form1099.#DIV]
 	form1099INTs: [...#Form1099.#INT]
@@ -183,5 +180,11 @@ import (
 			}
 		}
 	}
+}
 
+#Return: {
+	taxPayer: spouse?: _|_
+	filingStatus: #FilingStatus.#Single |
+		#FilingStatus.#HeadOfHousehold |
+		#FilingStatus.#QualifyingWidowOrWidower
 }
