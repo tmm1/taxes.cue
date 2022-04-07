@@ -95,11 +95,8 @@ import (
 							for d in form1099INTs {
 								[d.payerName, d.interestIncome]
 							},
-							for k in k1s if k.interestIncome > 0 && (k & #K1.#Form1065) != _|_ {
-								[k.partnershipName, k.interestIncome]
-							},
-							for k in k1s if k.interestIncome > 0 && (k & #K1.#Form1120S) != _|_ {
-								[k.corporationName, k.interestIncome]
+							for k in k1s if k.interestIncome > 0 {
+								[k.name, k.interestIncome]
 							},
 						]
 						total: _computed.income.interest
@@ -111,11 +108,8 @@ import (
 							for d in form1099DIVs {
 								[d.payerName, d.totalOrdinaryDividends]
 							},
-							for k in k1s if k.ordinaryDividends > 0 && (k & #K1.#Form1065) != _|_ {
-								[k.partnershipName, k.ordinaryDividends]
-							},
-							for k in k1s if k.ordinaryDividends > 0 && (k & #K1.#Form1120S) != _|_ {
-								[k.corporationName, k.ordinaryDividends]
+							for k in k1s if k.ordinaryDividends > 0 {
+								[k.name, k.ordinaryDividends]
 							},
 						]
 						total: _computed.income.dividends

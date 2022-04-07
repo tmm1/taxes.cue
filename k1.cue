@@ -26,5 +26,10 @@ package taxes
 		corporationName:     string
 		corporationAddress?: string
 	}
-	#Form: #Form1065 | #Form1120S
+	#Form: f={
+		#Form1065 | #Form1120S
+		name:    f.partnershipName | f.corporationName
+		ein:     f.partnershipEIN | f.corporationEIN
+		address: f.partnershipAddress | f.corporationAddress
+	}
 }
