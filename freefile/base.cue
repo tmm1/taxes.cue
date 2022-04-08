@@ -69,15 +69,17 @@ import (
 			if f.type == "combo" || f.type == "check" {
 				"\(f.name)"?: or([ for o in f.options {o.value}])
 			}
-			for t in f.tags {
-				if t == "SSN" {
-					"\(f.name)"?: string & =~"^\\d{3}-\\d{2}-\\d{4}$"
-				}
-				if t == "DATE" {
-					"\(f.name)"?: time.Format("2006-01-02")
-				}
-				if t == "NUMERIC" {
-					"\(f.name)"?: #numeric
+			if f.tags != _|_ {
+				for t in f.tags {
+					if t == "SSN" {
+						"\(f.name)"?: string & =~"^\\d{3}-\\d{2}-\\d{4}$"
+					}
+					if t == "DATE" {
+						"\(f.name)"?: time.Format("2006-01-02")
+					}
+					if t == "NUMERIC" {
+						"\(f.name)"?: #numeric
+					}
 				}
 			}
 		}
