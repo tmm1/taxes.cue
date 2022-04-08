@@ -1,3 +1,15 @@
+// this file runs in the isolated content script context.
+// we're going to inject it into the page too, so these
+// helpers are available in the main context.
+if (chrome.runtime.getURL) {
+  var s = document.createElement('script')
+  s.src = chrome.runtime.getURL('inject.js')
+  s.onload = function () {
+    this.remove()
+  }
+  ;(document.head || document.documentElement).appendChild(s)
+}
+
 function extractFormSchema() {
   let formDoc = document.querySelector('#iFrameFilingForm').contentDocument
   let formId = formDoc.querySelector('form').id
