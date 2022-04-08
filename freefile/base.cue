@@ -21,7 +21,7 @@ import (
 	title?:       string
 	placeholder?: string
 	value?:       string
-	readonly?:    bool
+	readonly:     bool | *false
 
 	tags?: [...#tag]
 }
@@ -60,7 +60,7 @@ import (
 	fields: [...#field]
 
 	#schema: {
-		for f in fields {
+		for f in fields if !f.readonly {
 			"\(f.name)"?: [
 					if list.Contains(f.tags, "NEGAMOUNT") {number},
 					if list.Contains(f.tags, "AMOUNT") {number & >=0},
@@ -68,6 +68,14 @@ import (
 			][0]
 			if f.type == "combo" || f.type == "check" {
 				"\(f.name)"?: or([ for o in f.options {o.value}])
+			}
+			if f.type == "text" && f.tags != _|_ && (f.maxlength & >0) != _|_ {
+				if !list.Contains(f.tags, "AMOUNT") {
+					"\(f.name)"?: str={
+						string
+						_lenOk: true & len(str) <= f.maxlength
+					}
+				}
 			}
 			if f.tags != _|_ {
 				for t in f.tags {
