@@ -21,9 +21,11 @@ package ty2021
 	tags?: [...#tag]
 }
 
+#options: [...#option]
+
 #field: {
-	type: "check" | "combo"
-	options: [...#option]
+	type:    "check" | "combo"
+	options: #states | #countries | #options
 } | {
 	type: "button"
 	link: string
