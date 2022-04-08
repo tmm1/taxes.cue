@@ -17,4 +17,5 @@ host_permissions: [
 ]
 content_scripts: [{
 	matches: ["https://www.freefilefillableforms.com/*"]
+	js: ["inject.js"]
 }]
