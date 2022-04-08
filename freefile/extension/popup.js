@@ -20,7 +20,19 @@ let buttonData = document.querySelector('button.form-data')
 let buttonSchema = document.querySelector('button.form-schema')
 
 buttonForms.addEventListener('click', e => {
-  if (e.shiftKey) {
+  if (e.altKey) {
+    chrome.storage.local.get(null, data => {
+      let keys = Object.keys(data)
+      for (let key of keys) {
+        if (key.startsWith('schema_')) {
+          let filename = key.replace(/^schema_/, '') + '.json'
+          let blob = new Blob([JSON.stringify(data[key], null, '  ')], {type: 'application/json'})
+          let url = window.URL.createObjectURL(blob)
+          chrome.downloads.download({url, filename})
+        }
+      }
+    })
+  } else if (e.shiftKey) {
     triggerFormListSchema()
   } else {
     triggerFormList()

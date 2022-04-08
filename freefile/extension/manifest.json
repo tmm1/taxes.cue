@@ -6,6 +6,7 @@
     "permissions": [
         "clipboardWrite",
         "declarativeContent",
+        "downloads",
         "storage",
         "scripting"
     ],
