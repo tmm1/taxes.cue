@@ -1,4 +1,4 @@
-package ty2021
+package freefile
 
 f1040: {
 	name: "Form 1040 - U.S. Individual Income Tax Return"
