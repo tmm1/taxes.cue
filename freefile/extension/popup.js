@@ -108,7 +108,7 @@ async function triggerForm(type) {
       for (const r of results) {
         if (r.result) {
           document.oncopy = function (e) {
-            e.clipboardData.setData('text/plain', JSON.stringify(r.result, null, 2))
+            e.clipboardData.setData('text/plain', r.result)
             e.preventDefault()
           }
           document.execCommand('copy')

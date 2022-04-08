@@ -100,12 +100,13 @@ function extractFormSchema() {
       .filter(o => !!o)
   )
 
-  let formInfo = {id: formId, fields: fields}
+  let formInfo = {id: formId}
   let available = availableForms()
   if (available[formId] instanceof Array) {
     formInfo.multiple = true
   }
-  return formInfo
+  formInfo.fields = fields
+  return JSON.stringify(formInfo, null, '  ')
 }
 
 function extractFormData() {
@@ -122,7 +123,7 @@ function extractFormData() {
       formData[o.name] = o.value
     }
   })
-  return {[formId]: formData}
+  return JSON.stringify({[formId]: formData}, null, '  ')
 }
 
 function availableForms() {
