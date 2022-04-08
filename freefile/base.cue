@@ -54,7 +54,7 @@ import (
 
 #numeric: number | (string & =~"^[0-9-]+$")
 
-[string]: {
+[string & !="forms" & =~"^f"]: {
 	name:     string
 	multiple: bool | *false
 	fields: [...#field]
