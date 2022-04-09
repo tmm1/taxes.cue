@@ -38,6 +38,8 @@ files: [
 			tpl: """
 				package freefile
 
+				import "strings"
+
 				// {{.name}}
 				#{{.id}}: {
 					#input
@@ -59,13 +61,10 @@ files: [
 						{{- end}}
 						{{- end}}
 						{{if eq $f.type "text" -}}
-						{{- if eq (index $f.tags 0) "SSN" -}}
-						{{$f.name}}?: #ssn
-						{{- else if eq (index $f.tags 0) "EIN" -}}
-						{{$f.name}}?: #ein
-						{{- else -}}
-						{{$f.name}}?: string
-						{{- end -}}
+						{{$f.name}}?: {{range $idx, $t := $f.tags}}{{if $idx}} | {{end}}#{{$t}}{{end}}
+						{{- if and $f.maxlength (gt $f.maxlength 0)}}
+						{{$f.name}}?: strings.MaxRunes({{$f.maxlength}})
+						{{- end}}
 						{{- else if and (eq $f.type "check") (eq (len $f.options) 1) -}}
 						{{$f.name}}: *"" | "{{(index $f.options 0).value}}"
 						{{- else if or (eq $f.type "check") (eq $f.type "combo") -}}
@@ -88,7 +87,10 @@ files: [
 						{{if $f.title -}}
 						// {{$f.title}}
 						{{end -}}
-						{{$f.name}}?: string
+						{{$f.name}}?: {{range $idx, $t := $f.tags}}{{if $idx}} | {{end}}#{{$t}}{{end}}
+						{{- if and $f.maxlength (gt $f.maxlength 0)}}
+						{{$f.name}}?: strings.MaxRunes({{$f.maxlength}})
+						{{- end}}
 						{{end -}}
 						{{end}}
 					}
