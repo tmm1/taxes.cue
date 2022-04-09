@@ -4,9 +4,6 @@ import "strings"
 
 // Form 1040 - U.S. Individual Income Tax Return
 #f1040: {
-	#input
-	#output
-
 	#input: {
 		// If Primary is deceased, select the option
 		cboDeceasedPr: *"" | "PRIMARY DECEASED"

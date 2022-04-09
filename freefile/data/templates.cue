@@ -17,9 +17,9 @@ files: [
 			#Return: {
 				{{range $f := .list -}}
 				// {{$f.name}}
-				{{$f.id}}?: #{{$f.id}}
+				{{$f.id}}?: #{{$f.id}}.#input
 				{{- if $f.multiple}}
-				{{$f.id}}_extra?: [...#{{$f.id}}]
+				{{$f.id}}_extra?: [...#{{$f.id}}.#input]
 				{{- end}}
 
 				{{end}}
@@ -34,17 +34,17 @@ files: [
 				name:   f.name
 				schema: *schemas[f.id] | null
 				fields: *schema.fields | []
+				strings: len([ for f in fields if (f.maxlength & int & >0) != _|_ {f} ]) > 0
 			}
 			tpl: """
 				package freefile
 
+				{{if .strings -}}
 				import "strings"
+				{{- end}}
 
 				// {{.name}}
 				#{{.id}}: {
-					#input
-					#output
-
 					#input: {
 						{{range $f := .fields -}}
 						{{if and (ne $f.type "button") (eq $f.readonly false) -}}
