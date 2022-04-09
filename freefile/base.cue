@@ -28,7 +28,7 @@ import (
 	value?:       string
 	readonly:     bool | *false
 
-	tags?: [...#tag]
+	tags: [...#tag]
 }
 
 #options: [...#option]
@@ -82,20 +82,18 @@ data: [string & !="forms"]: {
 					}
 				}
 			}
-			if f.tags != _|_ {
-				for t in f.tags {
-					if t == "SSN" {
-						"\(f.name)"?: string & =~"^\\d{3}-\\d{2}-\\d{4}$"
-					}
-					if t == "EIN" {
-						"\(f.name)"?: string & =~"^\\d{2}-\\d{7}$"
-					}
-					if t == "DATE" {
-						"\(f.name)"?: time.Format("2006-01-02")
-					}
-					if t == "NUMERIC" {
-						"\(f.name)"?: #numeric
-					}
+			for t in f.tags {
+				if t == "SSN" {
+					"\(f.name)"?: string & =~"^\\d{3}-\\d{2}-\\d{4}$"
+				}
+				if t == "EIN" {
+					"\(f.name)"?: string & =~"^\\d{2}-\\d{7}$"
+				}
+				if t == "DATE" {
+					"\(f.name)"?: time.Format("2006-01-02")
+				}
+				if t == "NUMERIC" {
+					"\(f.name)"?: #numeric
 				}
 			}
 		}
