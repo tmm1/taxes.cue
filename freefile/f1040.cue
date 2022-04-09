@@ -25,7 +25,12 @@ package freefile
 		txtincareofName?: string
 
 		
-		chkFilingStatus?: string
+		// Filing status. Check onlyone box - Single
+		// Filing status. Check onlyone box - Married Filing Jointly
+		// Filing status. Check onlyone box - Married Filing Separate
+		// Filing status. Check onlyone box - Head of Household
+		// Filing status. Check onlyone box - Qualifying Widow(er)
+		chkFilingStatus: "single" | "joint" | "separate" | "hoh" | "widow"
 
 		// Enter Person's First Name
 		txtQualFirstName?: string
@@ -91,7 +96,9 @@ package freefile
 		txtForeignZip?: string
 
 		
-		rdoVirtCurrency?: string
+		// Yes - At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
+		// No -At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
+		rdoVirtCurrency: "1" | "0"
 
 		// Standard Deduction. Someone can claim: You as a dependent
 		chkExemptInd: *"" | "1"
@@ -340,7 +347,9 @@ package freefile
 		txtRoutingNbr?: string
 
 		
-		chkAccountType?: string
+		// Line 35c. Account Type - Checking
+		// Line 35c. Account Type - Savings
+		chkAccountType: "C" | "S"
 
 		// Line 35d. Account Number
 		txtAccountNbr?: string
@@ -349,7 +358,9 @@ package freefile
 		txtNstyresttax?: string
 
 		
-		chkDiscussInd?: string
+		// Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - Yes
+		// Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - No
+		chkDiscussInd: "1" | "0"
 
 		// Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - Name
 		txtDesigneeName?: string
