@@ -17,11 +17,10 @@ files: [
 				{{range $f := .list -}}
 				// {{$f.name}}
 				{{$f.id}}?: #{{$f.id}}
-				{{if $f.schema -}}
-				{{if $f.schema.multiple -}}
+				{{- if and $f.schema $f.schema.multiple}}
 				{{$f.id}}_extra?: [...#{{$f.id}}]
-				{{end -}}
-				{{end}}
+				{{- end}}
+
 				{{end}}
 			}
 			"""
@@ -50,7 +49,7 @@ files: [
 					{{$f.name}}?: string
 
 					{{end}}
-					{{end}}
+					{{- end}}
 				}
 				"""
 		}
