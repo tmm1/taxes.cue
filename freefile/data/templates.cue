@@ -51,13 +51,19 @@ files: [
 						{{end -}}
 						{{if $f.title -}}
 						// {{$f.title}}
-						{{end -}}
+						{{- else if and (eq $f.type "check") (eq (len $f.options) 1) -}}
+						// {{(index $f.options 0).label}}
+						{{- end}}
 						{{if eq $f.type "text" -}}
 						{{- if eq (index $f.tags 0) "SSN" -}}
 						{{$f.name}}?: #ssn
+						{{- else if eq (index $f.tags 0) "EIN" -}}
+						{{$f.name}}?: #ein
 						{{- else -}}
 						{{$f.name}}?: string
 						{{- end -}}
+						{{- else if and (eq $f.type "check") (eq (len $f.options) 1) -}}
+						{{$f.name}}: *"" | "{{(index $f.options 0).value}}"
 						{{- else -}}
 						{{$f.name}}?: string
 						{{- end}}
@@ -76,7 +82,6 @@ files: [
 						// {{$f.title}}
 						{{end -}}
 						{{$f.name}}?: string
-
 						{{end -}}
 						{{end}}
 					}

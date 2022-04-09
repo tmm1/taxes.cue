@@ -24,6 +24,7 @@ package freefile
 		// Please input a Care Of name for the surviving spouse or the person to whom any correspondence should be addressed
 		txtincareofName?: string
 
+		
 		chkFilingStatus?: string
 
 		// Enter Person's First Name
@@ -74,9 +75,11 @@ package freefile
 		// Enter ZIP code
 		txtZip?: string
 
-		chkPresFundInd?: string
+		// You - Presidential Election Campaign. Check here if you, or your spouse if filing jointly, want $3 to go to this fund. Checking a box below will not change your tax or refund
+		chkPresFundInd: *"" | "1"
 
-		chkSpPresFundInd?: string
+		// Spouse - Presidential Election Campaign. Check here if you, or your spouse if filing jointly, want $3 to go to this fund. Checking a box below will not change your tax or refund
+		chkSpPresFundInd: *"" | "1"
 
 		// Select foreign country name
 		cboForeignCountryCode?: string
@@ -87,21 +90,29 @@ package freefile
 		// Enter Foreign postal code
 		txtForeignZip?: string
 
+		
 		rdoVirtCurrency?: string
 
-		chkExemptInd?: string
+		// Standard Deduction. Someone can claim: You as a dependent
+		chkExemptInd: *"" | "1"
 
-		chkSpExemptInd?: string
+		// Standard Deduction. Someone can claim: Your Spouse as a dependent
+		chkSpExemptInd: *"" | "1"
 
-		chkSpItemizeDed?: string
+		// Standard Deduction - Spouse itemizes on a separate return or you were a dual-status alien
+		chkSpItemizeDed: *"" | "1"
 
-		chkAgeO65?: string
+		// Age/Blindness - You were born before January 2, 1957
+		chkAgeO65: *"" | "1"
 
-		chkBlind?: string
+		// Age/Blindness -  You are blind
+		chkBlind: *"" | "1"
 
-		chkSpAgeO65?: string
+		// Age/Blindness - Your Spouse was born before January 2, 1957
+		chkSpAgeO65: *"" | "1"
 
-		chkSpBlind?: string
+		// Age/Blindness - Your Spouse is blind
+		chkSpBlind: *"" | "1"
 
 		// Dependents - Enter First name
 		txtDepFirstName1?: string
@@ -115,9 +126,11 @@ package freefile
 		// Dependents - Select Relationship to you
 		cboDepRelation1?: string
 
-		chkDepCTCInd1?: string
+		// Dependents - Check if qualifies for (see instructions): Child tax credit
+		chkDepCTCInd1: *"" | "1"
 
-		ChkDepOtherInd1?: string
+		// Dependents - Check if Credit for other dependents
+		ChkDepOtherInd1: *"" | "1"
 
 		// Dependents - Enter First name
 		txtDepFirstName2?: string
@@ -131,9 +144,11 @@ package freefile
 		// Dependents - Select Relationship to you
 		cboDepRelation2?: string
 
-		chkDepCTCInd2?: string
+		// Dependents - Check if qualifies for (see instructions): Child tax credit
+		chkDepCTCInd2: *"" | "1"
 
-		ChkDepOtherInd2?: string
+		// Dependents - Check if Credit for other dependents
+		ChkDepOtherInd2: *"" | "1"
 
 		// Dependents - Enter First name
 		txtDepFirstName3?: string
@@ -147,11 +162,14 @@ package freefile
 		// Dependents - Select Relationship to you
 		cboDepRelation3?: string
 
-		chkDepCTCInd3?: string
+		// Dependents - Check if qualifies for (see instructions): Child tax credit
+		chkDepCTCInd3: *"" | "1"
 
-		ChkDepOtherInd3?: string
+		// Dependents - Check if Credit for other dependents
+		ChkDepOtherInd3: *"" | "1"
 
-		chkMoreDepInd?: string
+		// check here, If more than four dependents, see instructions
+		chkMoreDepInd: *"" | "1"
 
 		// Dependents - Enter First name
 		txtDepFirstName4?: string
@@ -165,9 +183,11 @@ package freefile
 		// Dependents - Select Relationship to you
 		cboDepRelation4?: string
 
-		chkDepCTCInd4?: string
+		// Dependents - Check if qualifies for (see instructions): Child tax credit
+		chkDepCTCInd4: *"" | "1"
 
-		ChkDepOtherInd4?: string
+		// Dependents - Check if Credit for other dependents
+		ChkDepOtherInd4: *"" | "1"
 
 		// Line 1. If applicable, select code. See instructions for any entry
 		cboOtherWageType?: string
@@ -229,7 +249,8 @@ package freefile
 		// Line 6b. Taxable amount
 		txtTaxSsBenefits?: string
 
-		chkSchdNotRequiredInd?: string
+		// Line 7. Capital gain or (loss). Attach Schedule D if required. If not required, check here
+		chkSchdNotRequiredInd: *"" | "1"
 
 		// Line 7. Capital gain or (loss). Attach Schedule D if required
 		txtCapitalGains?: string
@@ -246,11 +267,14 @@ package freefile
 		// Line 12b. Charitable contributions if you take the standard deduction. See instructions
 		txtCharContWithStdDed?: string
 
-		chkTax8814Ind?: string
+		// Tax (see instructions). Check if any from Form(s): 8814
+		chkTax8814Ind: *"" | "1"
 
-		chkTax4972Ind?: string
+		// Tax (see instructions). Check if any from Form(s): 4972
+		chkTax4972Ind: *"" | "1"
 
-		chkTaxOtherInd?: string
+		// Tax (see instructions). Check if any from Form(s): Other Form
+		chkTaxOtherInd: *"" | "1"
 
 		// Tax (see instructions). Check if any from Form(s): Tax from Other Forms
 		txtTaxOtherAmt?: string
@@ -258,8 +282,10 @@ package freefile
 		// Line 16. Tax (see instructions)
 		txtTaxWoAmt?: string
 
+		
 		txtForm8814TaxAmt?: string
 
+		
 		cboF1040OtherTaxCode?: string
 
 		// Line 19. Nonrefundable child tax credit or credit for other dependents from Schedule 8812
@@ -289,7 +315,8 @@ package freefile
 		// Line 27a. Earned income credit (EIC)
 		txtEIC?: string
 
-		chkEicUnderAge19Ind?: string
+		// 
+		chkEicUnderAge19Ind: *"" | "1"
 
 		// Line 27b. Nontaxable combat pay election
 		txtPriorYrCombatpay?: string
@@ -306,11 +333,13 @@ package freefile
 		// Line 33. Other Payments Amount
 		txtF8689TotPayment1040?: string
 
-		chkForm8888Ind?: string
+		// Line 35a - Check if Form 8888 is Attached
+		chkForm8888Ind: *"" | "1"
 
 		// Line 35b. Routing number
 		txtRoutingNbr?: string
 
+		
 		chkAccountType?: string
 
 		// Line 35d. Account Number
@@ -319,6 +348,7 @@ package freefile
 		// Line 36. Amount of line 34 you want applied to your 2022 estimated tax
 		txtNstyresttax?: string
 
+		
 		chkDiscussInd?: string
 
 		// Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - Name
@@ -333,11 +363,13 @@ package freefile
 		// Enter Your Occupation
 		txtOccupation?: string
 
+		
 		txtIdentTheftPin?: string
 
 		// Enter Your Spouse Occupation
 		txtSpOccupation?: string
 
+		
 		txtIdentTheftPinSp?: string
 
 		
@@ -345,63 +377,34 @@ package freefile
 
 	#output: {
 		txtOtherInc?: string
-
 		txtTotalIncome?: string
-
 		txtTotAdj?: string
-
 		txtTotAdjGrossInc?: string
-
 		txtTotAdjFromSchedule1?: string
-
 		txtQualBusIncDed?: string
-
 		txtTotalDeduction?: string
-
 		txtTaxableIncome?: string
-
 		txtTotOf6251And8962?: string
-
 		txtTax?: string
-
 		txtTotNonRefCrdt?: string
-
 		txtTotCredit?: string
-
 		txtTaxAfterCred?: string
-
 		txtTotalOtherTax?: string
-
 		txtTotalTax?: string
-
 		txtFedTaxWithheld?: string
-
 		txtAddChildTaxCredit?: string
-
 		txtRefundAmerOptCdt?: string
-
 		txtTotOthPayRefCrdt?: string
-
 		txtTotOtherPayments?: string
-
 		txtTotPayments?: string
-
 		txtOverPaid?: string
-
 		txtRefund?: string
-
 		txtAmtOwe?: string
-
 		txtPenalty?: string
-
 		txtSignature?: string
-
 		txtSpSignature?: string
-
 		txtPreparerNote?: string
-
 		txtPreparerNote1?: string
-
 		
 	}
 }
