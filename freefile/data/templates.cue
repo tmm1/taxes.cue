@@ -73,8 +73,6 @@ files: [
 						{{if $idx}} | {{else if eq $o.value ""}}*{{end -}}
 						"{{$o.value}}"
 						{{- end}}
-						{{- else -}}
-						{{$f.name}}?: string
 						{{- end}}
 
 						{{end -}}
