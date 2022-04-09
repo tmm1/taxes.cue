@@ -7,8 +7,8 @@ package data
 }
 
 #tag: string
-#tag: "NUMERIC" | "DECIMAL" |
-	"DATE" | "DATEMMDD" | "DATETEXT" | "DATEMMYYYYTEXT" |
+#tag: "NUMERIC" | "NEGNUMERIC" | "DECIMAL" |
+	"DATE" | "DATEMMDD" | "DATEMMYYYY" | "DATETEXT" | "DATEMMYYYYTEXT" |
 	"UPPERCASE" |
 	"AMOUNT" | "NEGAMOUNT" | "NEGAMOUNTTEXT" | "AMOUNTTEXT" |
 	"SSN" | "EIN" |
