@@ -1953,6 +1953,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtOtherInc"
+		title:     "Line 8. Other income from Schedule 1, line 10 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -1962,6 +1963,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotalIncome"
+		title:     "Line 9. Total income - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -1976,6 +1978,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotAdj"
+		title:     "Line 10. Adjustments to income from Schedule 1, line 26 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -1984,6 +1987,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotAdjGrossInc"
+		title:     "Line 11. Adjusted gross income - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2014,6 +2018,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotAdjFromSchedule1"
+		title:     "Line 12c. Add lines 12a and 12b - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2034,6 +2039,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtQualBusIncDed"
+		title:     "Line 13. Qualified business income deduction - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2042,6 +2048,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotalDeduction"
+		title:     "Line 14. Add lines 12c and 13 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2050,6 +2057,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTaxableIncome"
+		title:     "Line 15. Taxable Income - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2154,6 +2162,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotOf6251And8962"
+		title:     "Line 17. Amount from Schedule 2, line 3 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2162,6 +2171,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTax"
+		title:     "Line 18. Add lines 16 and 17 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2184,6 +2194,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotNonRefCrdt"
+		title:     "Line 20. Amount from Schedule 3, line 8 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2192,6 +2203,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotCredit"
+		title:     "Line 21. Add lines 19 and 20 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2200,6 +2212,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTaxAfterCred"
+		title:     "Line 22. Subtract line 21 from line 18. If zero or less, enter 0 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2214,6 +2227,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotalOtherTax"
+		title:     "Line 23. Other taxes, including self-employment tax, from Schedule 2, line 21 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2222,6 +2236,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotalTax"
+		title:     "Line 24. Add lines 22 and 23. This is your total tax - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2260,6 +2275,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtFedTaxWithheld"
+		title:     "Line 25d. Add lines 25a through 25c - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2346,6 +2362,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtAddChildTaxCredit"
+		title:     "Line 28. Refundable child tax credit or Additional child tax credit from Schedule 8812 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2366,6 +2383,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtRefundAmerOptCdt"
+		title:     "Line 29. American opportunity credit from Form 8863, line 8 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2388,6 +2406,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotOthPayRefCrdt"
+		title:     "Line 31. Amount from Schedule 3, line 15 - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2396,6 +2415,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotOtherPayments"
+		title:     "Line 32. Add lines 27a and 28 through 31. These are your total other payments and refundable credits"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2423,6 +2443,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtTotPayments"
+		title:     "Line 33. Add lines 25d, 26, and 32. These are your total payments"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2431,6 +2452,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtOverPaid"
+		title:     "Line 34. If line 33 is more than line 24, subtract line 24 from line 33. This is the amount you overpaid - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2446,6 +2468,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtRefund"
+		title:     "Line 35a. Amount of line 34 you want refunded to you - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2488,6 +2511,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtAmtOwe"
+		title:     "Line 37. Subtract line 33 from line 24. This is the amount you owe now - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [
@@ -2496,6 +2520,7 @@ schemas: f1040: {
 	}, {
 		type:      "text"
 		name:      "txtPenalty"
+		title:     "Line 38. Estimated tax penalty (see instructions) - This field is automatically calculated for you"
 		maxlength: 10
 		readonly:  true
 		tags: [

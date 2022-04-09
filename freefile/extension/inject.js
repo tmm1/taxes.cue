@@ -53,7 +53,7 @@ function extractFormSchema() {
         let info = {
           type: o.className.replace(/^FFI_/, '').toLowerCase(),
           name: o.name,
-          title: (o.readOnly ? undefined : o.title) || undefined,
+          title: o.title || undefined,
           value: (o.value && o.value != '0' ? o.value : null) || undefined,
           placeholder: o.placeholder || undefined,
           maxlength: o.maxLength && o.maxLength > 0 ? o.maxLength : undefined,

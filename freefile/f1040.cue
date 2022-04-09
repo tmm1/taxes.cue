@@ -387,30 +387,55 @@ package freefile
 	}
 
 	#output: {
+		// Line 8. Other income from Schedule 1, line 10 - This field is automatically calculated for you
 		txtOtherInc?: string
+		// Line 9. Total income - This field is automatically calculated for you
 		txtTotalIncome?: string
+		// Line 10. Adjustments to income from Schedule 1, line 26 - This field is automatically calculated for you
 		txtTotAdj?: string
+		// Line 11. Adjusted gross income - This field is automatically calculated for you
 		txtTotAdjGrossInc?: string
+		// Line 12c. Add lines 12a and 12b - This field is automatically calculated for you
 		txtTotAdjFromSchedule1?: string
+		// Line 13. Qualified business income deduction - This field is automatically calculated for you
 		txtQualBusIncDed?: string
+		// Line 14. Add lines 12c and 13 - This field is automatically calculated for you
 		txtTotalDeduction?: string
+		// Line 15. Taxable Income - This field is automatically calculated for you
 		txtTaxableIncome?: string
+		// Line 17. Amount from Schedule 2, line 3 - This field is automatically calculated for you
 		txtTotOf6251And8962?: string
+		// Line 18. Add lines 16 and 17 - This field is automatically calculated for you
 		txtTax?: string
+		// Line 20. Amount from Schedule 3, line 8 - This field is automatically calculated for you
 		txtTotNonRefCrdt?: string
+		// Line 21. Add lines 19 and 20 - This field is automatically calculated for you
 		txtTotCredit?: string
+		// Line 22. Subtract line 21 from line 18. If zero or less, enter 0 - This field is automatically calculated for you
 		txtTaxAfterCred?: string
+		// Line 23. Other taxes, including self-employment tax, from Schedule 2, line 21 - This field is automatically calculated for you
 		txtTotalOtherTax?: string
+		// Line 24. Add lines 22 and 23. This is your total tax - This field is automatically calculated for you
 		txtTotalTax?: string
+		// Line 25d. Add lines 25a through 25c - This field is automatically calculated for you
 		txtFedTaxWithheld?: string
+		// Line 28. Refundable child tax credit or Additional child tax credit from Schedule 8812 - This field is automatically calculated for you
 		txtAddChildTaxCredit?: string
+		// Line 29. American opportunity credit from Form 8863, line 8 - This field is automatically calculated for you
 		txtRefundAmerOptCdt?: string
+		// Line 31. Amount from Schedule 3, line 15 - This field is automatically calculated for you
 		txtTotOthPayRefCrdt?: string
+		// Line 32. Add lines 27a and 28 through 31. These are your total other payments and refundable credits
 		txtTotOtherPayments?: string
+		// Line 33. Add lines 25d, 26, and 32. These are your total payments
 		txtTotPayments?: string
+		// Line 34. If line 33 is more than line 24, subtract line 24 from line 33. This is the amount you overpaid - This field is automatically calculated for you
 		txtOverPaid?: string
+		// Line 35a. Amount of line 34 you want refunded to you - This field is automatically calculated for you
 		txtRefund?: string
+		// Line 37. Subtract line 33 from line 24. This is the amount you owe now - This field is automatically calculated for you
 		txtAmtOwe?: string
+		// Line 38. Estimated tax penalty (see instructions) - This field is automatically calculated for you
 		txtPenalty?: string
 		txtSignature?: string
 		txtSpSignature?: string
