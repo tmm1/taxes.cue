@@ -5,9 +5,10 @@ files: [
 		name: "return"
 		data: {
 			list: [ for f in forms {{
-				id:     f.id
-				name:   f.name
-				schema: *schemas[f.id] | null
+				id:       f.id
+				name:     f.name
+				schema:   *schemas[f.id] | null
+				multiple: *schema.multiple | false
 			}}]
 		}
 		tpl: """
@@ -17,7 +18,7 @@ files: [
 				{{range $f := .list -}}
 				// {{$f.name}}
 				{{$f.id}}?: #{{$f.id}}
-				{{- if and $f.schema $f.schema.multiple}}
+				{{- if $f.multiple}}
 				{{$f.id}}_extra?: [...#{{$f.id}}]
 				{{- end}}
 
@@ -32,20 +33,22 @@ files: [
 				id:     f.id
 				name:   f.name
 				schema: *schemas[f.id] | null
+				fields: *[ for x in schema.fields if x.type != "button" {x}] | []
 			}
 			tpl: """
 				package freefile
 
 				// {{.name}}
 				#{{.id}}: {
-					{{if .schema -}}
-					{{range $f := .schema.fields -}}
-					{{if $f.title -}}
-					// {{$f.title}}
-					{{end -}}
+					{{if .fields -}}
+					{{range $f := .fields -}}
 					{{if $f.placeholder -}}
 					// {{$f.placeholder}}
 					{{end -}}
+					{{if $f.title -}}
+					// {{$f.title}}
+					{{end -}}
+					{{if $f.readonly}}// {{end -}}
 					{{$f.name}}?: string
 
 					{{end}}
