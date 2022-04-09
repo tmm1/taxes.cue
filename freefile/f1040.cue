@@ -418,4 +418,45 @@ package freefile
 		txtPreparerNote1?: string
 		
 	}
+
+	#links: {
+		// Dependents - Add dates of birth or more dependents
+		cmdAddMoreDep?: #fdepend
+		// Line 2a & line 2b - Attach Schedule B if required
+		cmdAddSchB?: #f1040sb
+		// Line 3a & line 3b - Attach Schedule B if required
+		cmdAddSchB1?: #f1040sb
+		// Line 7 - Attach Schedule D if required
+		cmdAddSchD?: #f1040sd
+		// Line 8 - Attach Schedule 1
+		cmdAddSch1Ln8?: #f1040s1
+		// Line 10a - Attach Schedule 1
+		cmdAddSch1Ln10?: #f1040s1
+		// Line 12. Add Schedule A
+		cmdAddSchA?: #f1040sa
+		// Line 13. Add Form 8995
+		cmdAddForm8995?: #f8995
+		// Line 13. Add Form 8995A
+		cmdAddForm8995A?: #f8995a
+		cmdAddF8814?: #f8814
+		cmdAddF4972T?: #f4972t
+		cmdAddF4972S?: #f4972s
+		// Line 17 - Attach Schedule 2 if required
+		cmdAddSch2?: #f1040s2
+		// Line 20 - Attach Schedule 3
+		cmdAddSch3Ln20?: #f1040s3
+		// Line 23 - Attach Schedule 3
+		cmdAddSch2Ln23?: #f1040s2
+		// Line 25c - Attach Supported Forms
+		cmdAddWtheldForms?: #f8959
+		// Line 27 - Attach Schedule EIC
+		cmdAddEIC?: #f1040sei
+		// Line 28 - Attach Schedule 8812
+		CmdAdd8812?: #f8812
+		// Line 29 - Attach Form 8863
+		cmdAdd8863?: #f8863
+		// Line 31 - Attach Schedule 3
+		cmdAddSch3Ln31?: #f1040s3
+		
+	}
 }

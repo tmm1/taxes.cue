@@ -94,6 +94,17 @@ files: [
 						{{end -}}
 						{{end}}
 					}
+
+					#links: {
+						{{range $f := .fields -}}
+						{{if and (eq $f.type "button") (gt (len $f.link) 0) -}}
+						{{if $f.title -}}
+						// {{$f.title}}
+						{{end -}}
+						{{$f.name}}?: #{{$f.link}}
+						{{end -}}
+						{{end}}
+					}
 				}
 				"""
 		}
