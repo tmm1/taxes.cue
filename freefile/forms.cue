@@ -1,6 +1,6 @@
 package freefile
 
-forms: [{
+data: forms: [{
 	id:   "f1040"
 	name: "Form 1040 - U.S. Individual Income Tax Return"
 }, {

@@ -1,6 +1,6 @@
 package freefile
 
-f1040: {
+data: f1040: {
 	id: "f1040"
 	fields: [{
 		type:  "combo"
