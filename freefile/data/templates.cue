@@ -33,26 +33,45 @@ files: [
 				id:     f.id
 				name:   f.name
 				schema: *schemas[f.id] | null
-				fields: *[ for x in schema.fields if x.type != "button" {x}] | []
+				fields: *schema.fields | []
 			}
 			tpl: """
 				package freefile
 
 				// {{.name}}
 				#{{.id}}: {
-					{{if .fields -}}
-					{{range $f := .fields -}}
-					{{if $f.placeholder -}}
-					// {{$f.placeholder}}
-					{{end -}}
-					{{if $f.title -}}
-					// {{$f.title}}
-					{{end -}}
-					{{if $f.readonly}}// {{end -}}
-					{{$f.name}}?: string
+					#input
+					#output
 
-					{{end}}
-					{{- end}}
+					#input: {
+						{{range $f := .fields -}}
+						{{if and (ne $f.type "button") (eq $f.readonly false) -}}
+						{{if $f.placeholder -}}
+						// {{$f.placeholder}}
+						{{end -}}
+						{{if $f.title -}}
+						// {{$f.title}}
+						{{end -}}
+						{{$f.name}}?: string
+
+						{{end -}}
+						{{end}}
+					}
+
+					#output: {
+						{{range $f := .fields -}}
+						{{if and (ne $f.type "button") (eq $f.readonly true) -}}
+						{{if $f.placeholder -}}
+						// {{$f.placeholder}}
+						{{end -}}
+						{{if $f.title -}}
+						// {{$f.title}}
+						{{end -}}
+						{{$f.name}}?: string
+
+						{{end -}}
+						{{end}}
+					}
 				}
 				"""
 		}
