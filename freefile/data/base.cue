@@ -23,7 +23,7 @@ package data
 	value?:       string
 	readonly:     bool | *false
 
-	tags: [...#tag]
+	tags: *[] | [#tag] | [#tag, #tag]
 }
 
 #options: [...#option]
