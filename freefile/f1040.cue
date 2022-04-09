@@ -7,14 +7,14 @@ package freefile
 
 	#input: {
 		// If Primary is deceased, select the option
-		cboDeceasedPr?: string
+		cboDeceasedPr: *"" | "PRIMARY DECEASED"
 
 		// Date of death Primary
 		// If Primary is deceased, enter deceaased date
 		txtDeceasedDatePr?: string
 
 		// If Spouse is deceased, select the option
-		cboDeceasedSp?: string
+		cboDeceasedSp: *"" | "SPOUSE DECEASED"
 
 		// Date of death Spouse
 		// If Spouse deceased, enter spouse deceased date
@@ -75,7 +75,7 @@ package freefile
 		txtCity?: string
 
 		// Select State
-		cboState?: string
+		cboState: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
 
 		// Enter ZIP code
 		txtZip?: string
@@ -87,7 +87,7 @@ package freefile
 		chkSpPresFundInd: *"" | "1"
 
 		// Select foreign country name
-		cboForeignCountryCode?: string
+		cboForeignCountryCode: *"" | "AF" | "AX" | "AL" | "AG" | "AQ" | "AN" | "AO" | "AV" | "AY" | "AC" | "AR" | "AM" | "AA" | "AT" | "AS" | "AU" | "AJ" | "BF" | "BA" | "FQ" | "BG" | "BB" | "BO" | "BE" | "BH" | "BN" | "BD" | "BT" | "BL" | "BK" | "BC" | "BV" | "BR" | "IO" | "VI" | "BX" | "BU" | "UV" | "BM" | "BY" | "CB" | "CM" | "CA" | "CV" | "CJ" | "CT" | "CD" | "CI" | "CH" | "KT" | "IP" | "CK" | "CO" | "CN" | "CF" | "CG" | "CW" | "CR" | "CS" | "IV" | "HR" | "CU" | "UC" | "CY" | "EZ" | "DA" | "DX" | "DJ" | "DO" | "DR" | "TT" | "EC" | "EG" | "ES" | "EK" | "ER" | "EN" | "ET" | "FK" | "FO" | "FM" | "FJ" | "FI" | "FR" | "FP" | "FS" | "GB" | "GG" | "GM" | "GH" | "GI" | "GR" | "GL" | "GJ" | "GQ" | "GT" | "GK" | "GV" | "PU" | "GY" | "HA" | "HM" | "VT" | "HO" | "HK" | "HQ" | "HU" | "IC" | "IN" | "ID" | "IR" | "IZ" | "EI" | "IS" | "IT" | "JM" | "JN" | "JA" | "DQ" | "JE" | "JQ" | "JO" | "KZ" | "KE" | "KQ" | "KR" | "KN" | "KS" | "KV" | "KU" | "KG" | "LA" | "LG" | "LE" | "LT" | "LI" | "LY" | "LS" | "LH" | "LU" | "MC" | "MK" | "MA" | "MI" | "MY" | "MV" | "ML" | "MT" | "IM" | "RM" | "MR" | "MP" | "MX" | "MQ" | "MD" | "MN" | "MG" | "MJ" | "MH" | "MO" | "MZ" | "WA" | "NR" | "BQ" | "NP" | "NL" | "NC" | "NZ" | "NU" | "NG" | "NI" | "NE" | "NF" | "CQ" | "NO" | "MU" | "OC" | "PK" | "PS" | "LQ" | "PM" | "PP" | "PF" | "PA" | "PE" | "RP" | "PC" | "PL" | "PO" | "RQ" | "QA" | "RO" | "RS" | "RW" | "TB" | "RN" | "WS" | "SM" | "TP" | "SA" | "SG" | "RI" | "SE" | "SL" | "SN" | "NN" | "LO" | "SI" | "BP" | "SO" | "SF" | "SX" | "OD" | "SP" | "PG" | "CE" | "SH" | "SC" | "ST" | "SB" | "VC" | "SU" | "NS" | "SV" | "WZ" | "SW" | "SZ" | "SY" | "TW" | "TI" | "TZ" | "TH" | "GA" | "TO" | "TL" | "TN" | "TD" | "TS" | "TU" | "TX" | "TK" | "TV" | "UG" | "UP" | "AE" | "UK" | "UY" | "UZ" | "NH" | "VE" | "VM" | "VQ" | "WQ" | "WF" | "WI" | "YM" | "ZA" | "ZI"
 
 		// Enter foreign province/state/county
 		txtForeignState?: string
@@ -131,7 +131,7 @@ package freefile
 		txtDepSSN1?: #ssn
 
 		// Dependents - Select Relationship to you
-		cboDepRelation1?: string
+		cboDepRelation1: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
 
 		// Dependents - Check if qualifies for (see instructions): Child tax credit
 		chkDepCTCInd1: *"" | "1"
@@ -149,7 +149,7 @@ package freefile
 		txtDepSSN2?: #ssn
 
 		// Dependents - Select Relationship to you
-		cboDepRelation2?: string
+		cboDepRelation2: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
 
 		// Dependents - Check if qualifies for (see instructions): Child tax credit
 		chkDepCTCInd2: *"" | "1"
@@ -167,7 +167,7 @@ package freefile
 		txtDepSSN3?: #ssn
 
 		// Dependents - Select Relationship to you
-		cboDepRelation3?: string
+		cboDepRelation3: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
 
 		// Dependents - Check if qualifies for (see instructions): Child tax credit
 		chkDepCTCInd3: *"" | "1"
@@ -188,7 +188,7 @@ package freefile
 		txtDepSSN4?: #ssn
 
 		// Dependents - Select Relationship to you
-		cboDepRelation4?: string
+		cboDepRelation4: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
 
 		// Dependents - Check if qualifies for (see instructions): Child tax credit
 		chkDepCTCInd4: *"" | "1"
@@ -197,7 +197,7 @@ package freefile
 		ChkDepOtherInd4: *"" | "1"
 
 		// Line 1. If applicable, select code. See instructions for any entry
-		cboOtherWageType?: string
+		cboOtherWageType: *"" | "DFC" | "PRI" | "HSH" | "PSO" | "SCH" | "EXCESS ALLOWANCE" | "F8919" | "AB" | "SNE" | "PYAB" | "FB" | "DCB" | "FB AND DCB"
 
 		// Line 1. Enter the amount from the code(s). (See instructions)
 		txtOtherWageAmt?: string
@@ -218,13 +218,13 @@ package freefile
 		txtOrdDiv?: string
 
 		// Line 3a. If applicable, select code from the picklist. See instructions for entry
-		cboF8814QualDiv1040?: string
+		cboF8814QualDiv1040: *"" | "FORM 8814"
 
 		// Line 3a. Enter amount from code Form 8814. See instructions
 		txtF8814QualDiv1040?: string
 
 		// Line 3b. If applicable, select code from the picklist. See instructions for entry
-		cboF8814OrdDiv1040?: string
+		cboF8814OrdDiv1040: *"" | "FORM 8814"
 
 		// Line 3b. Enter amount from code Form 8814. See instructions
 		txtF8814OrdDiv1040?: string
@@ -233,7 +233,7 @@ package freefile
 		txtTotIraDist?: string
 
 		// Line 4b. If applicable, select the IRA code from the picklist. (See instructions)
-		cboIRAType?: string
+		cboIRAType: *"" | "ROLLOVER" | "QCD" | "HFD"
 
 		// Line 4b. Taxable amount
 		txtTaxTotIraDist?: string
@@ -242,7 +242,7 @@ package freefile
 		txtTotPen?: string
 
 		// Line 5b. If applicable, select the Pensions and Annuities code from picklist. (See instructions)
-		cboPenAnnType?: string
+		cboPenAnnType: *"" | "ROLLOVER" | "PSO" | "ROLLOVER AND PSO"
 
 		// Line 5b. Taxable amount
 		txtTaxTotPen?: string
@@ -251,7 +251,7 @@ package freefile
 		txtSsBenefits?: string
 
 		// Line 6b. If applicable, select a code from the picklist. See instructions for entry
-		cboSSAType?: string
+		cboSSAType: *"" | "D" | "LSE" | "D AND LSE"
 
 		// Line 6b. Taxable amount
 		txtTaxSsBenefits?: string
@@ -263,7 +263,7 @@ package freefile
 		txtCapitalGains?: string
 
 		// Line 7. If applicable, select code from the picklist. See instructions for entry
-		cboF8814CapGain1040?: string
+		cboF8814CapGain1040: *"" | "FORM 8814"
 
 		// Line 7. Enter amount from code Form 8814. See instructions
 		txtF8814CapGain1040?: string
@@ -293,7 +293,7 @@ package freefile
 		txtForm8814TaxAmt?: string
 
 		
-		cboF1040OtherTaxCode?: string
+		cboF1040OtherTaxCode: *"" | "ECR" | "HCTC" | "MLR" | "FORM 8978" | "962" | "965" | "965INC" | "1291TAX"
 
 		// Line 19. Nonrefundable child tax credit or credit for other dependents from Schedule 8812
 		txtChildTaxCdt?: string
@@ -308,7 +308,7 @@ package freefile
 		txtFedTaxWithheldOther?: string
 
 		// 2021 estimated tax payments and amount applied from 2020 return - Divorced Literal Code
-		cboPryrEstpayDivCode?: string
+		cboPryrEstpayDivCode: *"" | "DIV"
 
 		// 2021 estimated tax payments and amount applied from 2020 return - Divorced Spouse SSN
 		txtPryrEstpayDivSpSSN?: #ssn
@@ -317,7 +317,7 @@ package freefile
 		txtAppTaxFrmPrevYr?: string
 
 		// Line 27: select an option if applicable. (see instructions)
-		cboEicEligLiteralCode?: string
+		cboEicEligLiteralCode: *"" | "CLERGY" | "NO"
 
 		// Line 27a. Earned income credit (EIC)
 		txtEIC?: string
@@ -335,7 +335,7 @@ package freefile
 		txtRecovRebateCdt?: string
 
 		// Line 33. Payment Type
-		cboF8689TotPayment1040?: string
+		cboF8689TotPayment1040: *"" | "FORM 8689"
 
 		// Line 33. Other Payments Amount
 		txtF8689TotPayment1040?: string

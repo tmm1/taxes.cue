@@ -68,7 +68,7 @@ files: [
 						{{- end -}}
 						{{- else if and (eq $f.type "check") (eq (len $f.options) 1) -}}
 						{{$f.name}}: *"" | "{{(index $f.options 0).value}}"
-						{{- else if eq $f.type "check" -}}
+						{{- else if or (eq $f.type "check") (eq $f.type "combo") -}}
 						{{$f.name}}: {{range $idx, $o := $f.options -}}
 						{{if $idx}} | {{else if eq $o.value ""}}*{{end -}}
 						"{{$o.value}}"
