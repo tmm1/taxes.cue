@@ -33,7 +33,7 @@ package data
 	options: #options
 } | {
 	type: "button"
-	link: string
+	link: string | *""
 } | {
 	type:       "text"
 	maxlength?: int
