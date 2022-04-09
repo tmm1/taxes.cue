@@ -33,7 +33,7 @@ package freefile
 		txtQualLastName?: string
 
 		// Enter Person's SSN
-		txtQualSSN?: string
+		txtQualSSN?: #ssn
 
 		// Enter Your First Name
 		txtFirstName?: string
@@ -45,7 +45,7 @@ package freefile
 		txtLastName?: string
 
 		// Enter Your Social Security Number
-		txtSSN?: string
+		txtSSN?: #ssn
 
 		// If Joint Return, Enter Your Spouse First Name
 		txtSpFirstName?: string
@@ -57,7 +57,7 @@ package freefile
 		txtSpLastName?: string
 
 		// If Joint Return, Enter Your Spouse Social Security Number
-		txtSpSSN?: string
+		txtSpSSN?: #ssn
 
 		// Enter home address (number and street). If you have a P. O . box, see instructions
 		txtAddress1?: string
@@ -110,7 +110,7 @@ package freefile
 		txtDepLastName1?: string
 
 		// Dependents - Enter Social security number
-		txtDepSSN1?: string
+		txtDepSSN1?: #ssn
 
 		// Dependents - Select Relationship to you
 		cboDepRelation1?: string
@@ -126,7 +126,7 @@ package freefile
 		txtDepLastName2?: string
 
 		// Dependents - Enter Social security number
-		txtDepSSN2?: string
+		txtDepSSN2?: #ssn
 
 		// Dependents - Select Relationship to you
 		cboDepRelation2?: string
@@ -142,7 +142,7 @@ package freefile
 		txtDepLastName3?: string
 
 		// Dependents - Enter Social security number
-		txtDepSSN3?: string
+		txtDepSSN3?: #ssn
 
 		// Dependents - Select Relationship to you
 		cboDepRelation3?: string
@@ -160,7 +160,7 @@ package freefile
 		txtDepLastName4?: string
 
 		// Dependents - Enter Social security number
-		txtDepSSN4?: string
+		txtDepSSN4?: #ssn
 
 		// Dependents - Select Relationship to you
 		cboDepRelation4?: string
@@ -278,7 +278,7 @@ package freefile
 		cboPryrEstpayDivCode?: string
 
 		// 2021 estimated tax payments and amount applied from 2020 return - Divorced Spouse SSN
-		txtPryrEstpayDivSpSSN?: string
+		txtPryrEstpayDivSpSSN?: #ssn
 
 		// Line 26. 2021 estimated tax payments and amount applied from 2020 return
 		txtAppTaxFrmPrevYr?: string

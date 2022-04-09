@@ -52,7 +52,15 @@ files: [
 						{{if $f.title -}}
 						// {{$f.title}}
 						{{end -}}
+						{{if eq $f.type "text" -}}
+						{{- if eq (index $f.tags 0) "SSN" -}}
+						{{$f.name}}?: #ssn
+						{{- else -}}
 						{{$f.name}}?: string
+						{{- end -}}
+						{{- else -}}
+						{{$f.name}}?: string
+						{{- end}}
 
 						{{end -}}
 						{{end}}
