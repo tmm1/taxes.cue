@@ -268,10 +268,34 @@ import "strings"
 		txtF8962Ssn1?: strings.MaxRunes(11)
 
 		// Allocation 1. Line 30(c) Allocation start month
-		cboF8962StartMntNum1: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962StartMntNum1: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Allocation 1. Line 30(d). Allocation stop month
-		cboF8962StopMntNum1: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962StopMntNum1: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Allocation percentage applied to monthly amounts Line 30(e) Premium Percentage
 		txtF8962PremiumPercent1?: #NUMERIC
@@ -294,10 +318,34 @@ import "strings"
 		txtF8962Ssn2?: strings.MaxRunes(11)
 
 		// Allocation 2. Line 31(c) Allocation start month
-		cboF8962StartMntNum2: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962StartMntNum2: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Allocation 2. Line 31(d). Allocation stop month
-		cboF8962StopMntNum2: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962StopMntNum2: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Allocation percentage applied to monthly amounts Line 31(e) Premium Percentage
 		txtF8962PremiumPercent2?: #NUMERIC
@@ -320,10 +368,34 @@ import "strings"
 		txtF8962Ssn3?: strings.MaxRunes(11)
 
 		// Allocation 3. Line 32(c) Allocation start month
-		cboF8962StartMntNum3: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962StartMntNum3: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Allocation 3. Line 32(d). Allocation stop month
-		cboF8962StopMntNum3: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962StopMntNum3: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Allocation percentage applied to monthly amounts Line 32(e) Premium Percentage
 		txtF8962PremiumPercent3?: #NUMERIC
@@ -346,10 +418,34 @@ import "strings"
 		txtF8962Ssn4?: strings.MaxRunes(11)
 
 		// Allocation 4. Line 33(c) Allocation start month
-		cboF8962StartMntNum4: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962StartMntNum4: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Allocation 4. Line 33(d). Allocation stop month
-		cboF8962StopMntNum4: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962StopMntNum4: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Allocation percentage applied to monthly amounts Line 33(e) Premium Percentage
 		txtF8962PremiumPercent4?: #NUMERIC
@@ -377,10 +473,34 @@ import "strings"
 		txtF8962MonthContriPri?: strings.MaxRunes(8)
 
 		// Alternative entries  for your SSN  Line 35 (c) Alternative start month
-		cboF8962AltStartMntPri: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962AltStartMntPri: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Alternative entries  for your SSN  Line 35(d) Alternative stop month
-		cboF8962AltStopMntPri: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962AltStopMntPri: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Alternative entries for your spouse's SSN  Line 36 (a) Alternative family size
 		txtF8962AlterFmlySpcnt?: #NUMERIC
@@ -391,10 +511,34 @@ import "strings"
 		txtF8962MonthContriSp?: strings.MaxRunes(8)
 
 		// Alternative entries  for spouse's SSN  Line 36(c) Alternative start month
-		cboF8962AltStartMntSp: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962AltStartMntSp: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		// Alternative entries  for spouse's SSN  Line 36(d) Alternative stop month
-		cboF8962AltStopMntSp: *"" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"
+		cboF8962AltStopMntSp: *"" |
+			"01" |
+			"02" |
+			"03" |
+			"04" |
+			"05" |
+			"06" |
+			"07" |
+			"08" |
+			"09" |
+			"10" |
+			"11" |
+			"12"
 
 		
 	}

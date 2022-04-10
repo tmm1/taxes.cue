@@ -18,10 +18,12 @@ import "strings"
 		txtAlimonyReceivedDate?: strings.MaxRunes(10)
 
 		// Other gains or (losses) - Form 4684 Code
-		cboOtherGainsCode: *"" | "F4684"
+		cboOtherGainsCode: *"" |
+			"F4684" // FORM 4684
 
 		// Unemployment compensation Description
-		cboG1099PrRepayDesc: *"" | "REPAID"
+		cboG1099PrRepayDesc: *"" |
+			"REPAID"
 
 		// Unemployment compensation Repaid Amount
 		txtG1099PrRepayAmt?: #AMOUNT
@@ -96,7 +98,21 @@ import "strings"
 		txtAbleOthIncAmt?: strings.MaxRunes(10)
 
 		// Other income. List type
-		cboOtherInc: *"" | "MSA" | "LTC" | "MED MSA" | "FORM 8814" | "LOSS ON EXCESS DEFER DIST" | "INDIAN GAMING PROCEEDS" | "INDIAN TRIBAL DISTRIB" | "NATIVE AMERICAN DISTRIB" | "NOTICE 2014-7" | "AIRLINE PAYMENT" | "SECT 933" | "RPP" | "RRSPS" | "CANADA ARTICLE XVIII"
+		cboOtherInc: *"" |
+			"MSA" |
+			"LTC" |
+			"MED MSA" |
+			"FORM 8814" |
+			"LOSS ON EXCESS DEFER DIST" |
+			"INDIAN GAMING PROCEEDS" |
+			"INDIAN TRIBAL DISTRIB" |
+			"NATIVE AMERICAN DISTRIB" |
+			"NOTICE 2014-7" |
+			"AIRLINE PAYMENT" |
+			"SECT 933" |
+			"RPP" |
+			"RRSPS" |
+			"CANADA ARTICLE XVIII"
 
 		// Other income. List Description
 		txtOtherIncDesc?: #UPPERCASE
@@ -111,7 +127,8 @@ import "strings"
 		txtEduExp?: strings.MaxRunes(10)
 
 		// Moving expenses for members of the Armed Forces - Code
-		cboMovingExpCode: *"" | "STORAGE"
+		cboMovingExpCode: *"" |
+			"STORAGE"
 
 		// Self-employed SEP, SIMPLE, and qualified plans
 		txtSelfEmpSimSepDed?: #AMOUNT
@@ -138,7 +155,8 @@ import "strings"
 		txtAlimonyDivorceDate?: strings.MaxRunes(10)
 
 		// IRA deduction - Code
-		cboIraDeductionCode: *"" | "D"
+		cboIraDeductionCode: *"" |
+			"D"
 
 		// IRA deduction
 		txtIraDeduction?: #AMOUNT

@@ -60,7 +60,66 @@ import "strings"
 		txtPerCity?: strings.MaxRunes(30)
 
 		// Line 8b: Select person's state
-		cboPerSt: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboPerSt: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 8b: Enter person's zip
 		txtPerZip?: #NUMERIC
@@ -99,14 +158,38 @@ import "strings"
 		txtGiftsToChar?: strings.MaxRunes(10)
 
 		// Line 16: Other - from list in instructions. List type
-		cboItemDesc16a: *"" | "AMORTIZABLE BOND PREMIUMS" | "CASUALTY AND THEFT LOSS" | "FEDERAL ESTATE TAX" | "GAMBLING LOSSES" | "IMPAIRMENT-RELATED WORK EXPENSES" | "CLAIM REPAYMENTS" | "UNRECOVERED PENSION INVESTMENTS" | "SCHEDULE K-1" | "ORDINARY LOSS DEBT INSTRUMENT" | "NET QUALIFIED DISASTER LOSS" | "STANDARD DEDUCTION CLAIMED WITH QUALIFIED DISASTER LOSS" | "EXCESS DEDUCTION ON TERMINATION"
+		cboItemDesc16a: *"" |
+			"AMORTIZABLE BOND PREMIUMS" |
+			"CASUALTY AND THEFT LOSS" |
+			"FEDERAL ESTATE TAX" |
+			"GAMBLING LOSSES" |
+			"IMPAIRMENT-RELATED WORK EXPENSES" |
+			"CLAIM REPAYMENTS" |
+			"UNRECOVERED PENSION INVESTMENTS" |
+			"SCHEDULE K-1" |
+			"ORDINARY LOSS DEBT INSTRUMENT" |
+			"NET QUALIFIED DISASTER LOSS" |
+			"STANDARD DEDUCTION CLAIMED WITH QUALIFIED DISASTER LOSS" |
+			"EXCESS DEDUCTION ON TERMINATION"
 
 		// Line 16: Other - from list in instructions. List amount
 		txtItemAmt16a?: #AMOUNT
 		txtItemAmt16a?: strings.MaxRunes(10)
 
 		// Line 16: Other - from list in instructions. List type
-		cboItemDesc16b: *"" | "AMORTIZABLE BOND PREMIUMS" | "CASUALTY AND THEFT LOSS" | "FEDERAL ESTATE TAX" | "GAMBLING LOSSES" | "IMPAIRMENT-RELATED WORK EXPENSES" | "CLAIM REPAYMENTS" | "UNRECOVERED PENSION INVESTMENTS" | "SCHEDULE K-1" | "ORDINARY LOSS DEBT INSTRUMENT" | "NET QUALIFIED DISASTER LOSS" | "STANDARD DEDUCTION CLAIMED WITH QUALIFIED DISASTER LOSS" | "EXCESS DEDUCTION ON TERMINATION"
+		cboItemDesc16b: *"" |
+			"AMORTIZABLE BOND PREMIUMS" |
+			"CASUALTY AND THEFT LOSS" |
+			"FEDERAL ESTATE TAX" |
+			"GAMBLING LOSSES" |
+			"IMPAIRMENT-RELATED WORK EXPENSES" |
+			"CLAIM REPAYMENTS" |
+			"UNRECOVERED PENSION INVESTMENTS" |
+			"SCHEDULE K-1" |
+			"ORDINARY LOSS DEBT INSTRUMENT" |
+			"NET QUALIFIED DISASTER LOSS" |
+			"STANDARD DEDUCTION CLAIMED WITH QUALIFIED DISASTER LOSS" |
+			"EXCESS DEDUCTION ON TERMINATION"
 
 		// Line 16: Other - from list in instructions. List amount
 		txtItemAmt16b?: #AMOUNT

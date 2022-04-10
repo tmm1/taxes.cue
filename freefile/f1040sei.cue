@@ -87,22 +87,94 @@ import "strings"
 		chkDisabledChild3: "Y" | "N"
 
 		// Line 5 Child's relationship to you (for example, son, daughter, grandchild, niece, nephew, eligible foster child, etc. )
-		cboRelationChild1: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboRelationChild1: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		// Line 5 Child's relationship to you (for example, son, daughter, grandchild, niece, nephew, eligible foster child, etc. )
-		cboRelationChild2: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboRelationChild2: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		// Line 5 Child's relationship to you (for example, son, daughter, grandchild, niece, nephew, eligible foster child, etc. )
-		cboRelationChild3: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboRelationChild3: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		// Line 6 Number of months child lived with you in the United States during 2021 If the child lived with you for more than half of 2021 but less than 7 months, enter 7. If the child was born or died in 2021 and your home was the child's home for more than half the time he or she was alive during 2021, enter 12
-		cboNoMonthsLivedChild1: *"" | "7" | "8" | "9" | "10" | "11" | "12"
+		cboNoMonthsLivedChild1: *"" |
+			"7" |
+			"8" |
+			"9" |
+			"10" |
+			"11" |
+			"12"
 
 		// Line 6 Number of months child lived with you in the United States during 2021 If the child lived with you for more than half of 2021 but less than 7 months, enter 7. If the child was born or died in 2021 and your home was the child's home for more than half the time he or she was alive during 2021, enter 12
-		cboNoMonthsLivedChild2: *"" | "7" | "8" | "9" | "10" | "11" | "12"
+		cboNoMonthsLivedChild2: *"" |
+			"7" |
+			"8" |
+			"9" |
+			"10" |
+			"11" |
+			"12"
 
 		// Line 6 Number of months child lived with you in the United States during 2021 If the child lived with you for more than half of 2021 but less than 7 months, enter 7. If the child was born or died in 2021 and your home was the child's home for more than half the time he or she was alive during 2021, enter 12
-		cboNoMonthsLivedChild3: *"" | "7" | "8" | "9" | "10" | "11" | "12"
+		cboNoMonthsLivedChild3: *"" |
+			"7" |
+			"8" |
+			"9" |
+			"10" |
+			"11" |
+			"12"
 
 		
 	}

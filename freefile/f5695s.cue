@@ -43,7 +43,66 @@ import "strings"
 		txtCityFuelCell?: strings.MaxRunes(22)
 
 		// Line 7b. State
-		cboStateFuelCell: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboStateFuelCell: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 7b. Zip code
 		txtZipFuelCell?: #NUMERIC
@@ -83,7 +142,66 @@ import "strings"
 		txtCity?: strings.MaxRunes(22)
 
 		// Line 17b. State
-		cboState: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboState: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 17b. Zip code
 		txtZip?: #NUMERIC

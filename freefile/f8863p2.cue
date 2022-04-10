@@ -38,7 +38,66 @@ import "strings"
 		txtF1098TFilercity1?: strings.MaxRunes(50)
 
 		// Line 22a. (1) Select State
-		cboF1098TFilerstate1: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboF1098TFilerstate1: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 22a. (1) Enter Zip code
 		txtF1098TFilerzip1?: #NUMERIC
@@ -49,7 +108,66 @@ import "strings"
 		txtF1098TFilercity2?: strings.MaxRunes(50)
 
 		// Line 22b. (1) Select State
-		cboF1098TFilerstate2: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboF1098TFilerstate2: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 22b. (1) Enter Zip
 		txtF1098TFilerzip2?: #NUMERIC

@@ -25,7 +25,66 @@ import "strings"
 		txtPropCity1?: strings.MaxRunes(25)
 
 		// Line 1. Property A - State
-		cboPropState1: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboPropState1: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 1. Property A - ZIP Code
 		txtPropZip1?: #NUMERIC
@@ -44,7 +103,66 @@ import "strings"
 		txtPropCity2?: strings.MaxRunes(25)
 
 		// Line 1. Property B - State
-		cboPropState2: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboPropState2: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 1. Property B - ZIP Code
 		txtPropZip2?: #NUMERIC
@@ -63,7 +181,66 @@ import "strings"
 		txtPropCity3?: strings.MaxRunes(25)
 
 		// Line 1. Property C - State
-		cboPropState3: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboPropState3: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 1. Property C - ZIP Code
 		txtPropZip3?: #NUMERIC
@@ -82,7 +259,66 @@ import "strings"
 		txtPropCity4?: strings.MaxRunes(25)
 
 		// Line 1. Property D - State
-		cboPropState4: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboPropState4: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 1. Property D - ZIP Code
 		txtPropZip4?: #NUMERIC

@@ -29,7 +29,66 @@ import "strings"
 		txtCarePersonCity1?: strings.MaxRunes(50)
 
 		// Row 1. Line 1(b) State
-		cboCarePersonState1: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboCarePersonState1: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Row 1. Line 1(b) Zip
 		txtCarePersonZip1?: #NUMERIC
@@ -67,7 +126,66 @@ import "strings"
 		txtCarePersonCity2?: strings.MaxRunes(50)
 
 		// Row 2. Line 1(b) State
-		cboCarePersonState2: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboCarePersonState2: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Row 2. Line 1(b) Zip
 		txtCarePersonZip2?: #NUMERIC
@@ -105,7 +223,66 @@ import "strings"
 		txtCarePersonCity3?: strings.MaxRunes(50)
 
 		// Row 3. Line 1(b) State
-		cboCarePersonState3: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboCarePersonState3: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Row 3. Line 1(b) Zip
 		txtCarePersonZip3?: #NUMERIC
@@ -143,7 +320,66 @@ import "strings"
 		txtCarePersonCity4?: strings.MaxRunes(50)
 
 		// Row 4. Line 1(b) State
-		cboCarePersonState4: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboCarePersonState4: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Row 4. Line 1(b) Zip
 		txtCarePersonZip4?: #NUMERIC
@@ -181,7 +417,66 @@ import "strings"
 		txtCarePersonCity5?: strings.MaxRunes(50)
 
 		// Row 5. Line 1(b) State
-		cboCarePersonState5: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboCarePersonState5: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Row 5. Line 1(b) Zip
 		txtCarePersonZip5?: #NUMERIC
@@ -219,7 +514,66 @@ import "strings"
 		txtCarePersonCity6?: strings.MaxRunes(50)
 
 		// Row 6. Line 1(b) State
-		cboCarePersonState6: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboCarePersonState6: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Row 6. Line 1(b) Zip
 		txtCarePersonZip6?: #NUMERIC

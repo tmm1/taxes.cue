@@ -24,7 +24,66 @@ import "strings"
 		txtScheCityA?: strings.MaxRunes(50)
 
 		// Line 1a. Property A. Select State
-		cboScheStateA: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboScheStateA: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 1a. Property A. Zipcode
 		txtScheZipA?: #NUMERIC
@@ -39,7 +98,66 @@ import "strings"
 		txtScheCityB?: strings.MaxRunes(50)
 
 		// Line 1a. Property B. Select State
-		cboScheStateB: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboScheStateB: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 1a. Property B. Zipcode
 		txtScheZipB?: #NUMERIC
@@ -54,7 +172,66 @@ import "strings"
 		txtScheCityC?: strings.MaxRunes(50)
 
 		// Line 1a. Property C. Select State
-		cboScheStateC: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboScheStateC: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Line 1a. Property C. Zipcode
 		txtScheZipC?: #NUMERIC
@@ -64,7 +241,15 @@ import "strings"
 		chkScheQJVA: *"" | "1"
 
 		// Line 1b. Property A. Slect Type of Property
-		cboSchdePropertyTypeA: *"" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8"
+		cboSchdePropertyTypeA: *"" |
+			"1" | // Single Family Residence
+			"2" | // Multi Family Residence
+			"3" | // Vacation/Short-Term Rental
+			"4" | // Commercial
+			"5" | // Land
+			"6" | // Royalties
+			"7" | // Self-Rental
+			"8" // Other
 
 		// For each rental real estate property listed above, report the number of fair rental and personal use days. Check the QJV box only if you meet the requirements to file as a qualified joint venture. Property A Fair Rental Days
 		txtScheRentaldayA?: #NUMERIC
@@ -78,7 +263,15 @@ import "strings"
 		chkScheQJVB: *"" | "1"
 
 		// Line 1b. Property B. Select Type of Property
-		cboSchdePropertyTypeB: *"" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8"
+		cboSchdePropertyTypeB: *"" |
+			"1" | // Single Family Residence
+			"2" | // Multi Family Residence
+			"3" | // Vacation/Short-Term Rental
+			"4" | // Commercial
+			"5" | // Land
+			"6" | // Royalties
+			"7" | // Self-Rental
+			"8" // Other
 
 		// Property B Fair Rental Days
 		txtScheRentaldayB?: #NUMERIC
@@ -92,7 +285,15 @@ import "strings"
 		chkScheQJVC: *"" | "1"
 
 		// LIne 1b. Property C. Select Type of Property
-		cboSchdePropertyTypeC: *"" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8"
+		cboSchdePropertyTypeC: *"" |
+			"1" | // Single Family Residence
+			"2" | // Multi Family Residence
+			"3" | // Vacation/Short-Term Rental
+			"4" | // Commercial
+			"5" | // Land
+			"6" | // Royalties
+			"7" | // Self-Rental
+			"8" // Other
 
 		// Property C Fair Rental Days
 		txtScheRentaldayC?: #NUMERIC

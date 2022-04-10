@@ -10,7 +10,11 @@ import "strings"
 		txtDescOfProperty?: strings.MaxRunes(100)
 
 		// Select property type code
-		cboInstSalePropTypecd: *"" | "1" | "2" | "3" | "4"
+		cboInstSalePropTypecd: *"" | // -
+			"1" | // 1-Sale property is timeshare or residential lot
+			"2" | // 2-Sale by an individual of personal use property (within the meaning of section 1275(b)(3))
+			"3" | // 3-Sale of any property used or produced in the trade or business of farming (within the meaning of section 2032A(e)(4) or (5))
+			"4" // 4-All other installment sales not listed
 
 		// Line 2a. Date acquired (mm/dd/yyyy)
 		txtDateAcq?: #DATE
@@ -83,7 +87,66 @@ import "strings"
 		txtRelParCity?: strings.MaxRunes(50)
 
 		// Line 27. Select state of related property
-		cboRelParSt: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboRelParSt: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Zip code of related property
 		txtRelParZip?: #NUMERIC

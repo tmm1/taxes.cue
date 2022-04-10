@@ -230,7 +230,8 @@ import "strings"
 		txtF4797Sec1255ApplPercP34?: strings.MaxRunes(10)
 
 		
-		cboF47976252RepInd: *"" | "N/A"
+		cboF47976252RepInd: *"" |
+			"N/A"
 
 		// Line 33 Section 179 expense deduction or depreciation allowable in prior years
 		txtF4797ExpDedSec179?: #AMOUNT

@@ -26,7 +26,25 @@ import "strings"
 		txtDepDOBR1?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR1: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboDepRelationR1: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		
 		// Check if dependent qualifies for: Child tax credit
@@ -58,7 +76,25 @@ import "strings"
 		txtDepDOBR2?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR2: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboDepRelationR2: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		
 		// Check if dependent qualifies for: Child tax credit
@@ -90,7 +126,25 @@ import "strings"
 		txtDepDOBR3?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR3: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboDepRelationR3: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		
 		// Check if dependent qualifies for: Child tax credit
@@ -122,7 +176,25 @@ import "strings"
 		txtDepDOBR4?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR4: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboDepRelationR4: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		
 		// Check if dependent qualifies for: Child tax credit
@@ -154,7 +226,25 @@ import "strings"
 		txtDepDOBR5?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR5: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboDepRelationR5: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		
 		// Check if dependent qualifies for: Child tax credit
@@ -186,7 +276,25 @@ import "strings"
 		txtDepDOBR6?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR6: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboDepRelationR6: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		
 		// Check if dependent qualifies for: Child tax credit
@@ -218,7 +326,25 @@ import "strings"
 		txtDepDOBR7?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR7: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboDepRelationR7: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		
 		// Check if dependent qualifies for: Child tax credit
@@ -250,7 +376,25 @@ import "strings"
 		txtDepDOBR8?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR8: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboDepRelationR8: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		
 		// Check if dependent qualifies for: Child tax credit
@@ -282,7 +426,25 @@ import "strings"
 		txtDepDOBR9?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR9: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboDepRelationR9: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		
 		// Check if dependent qualifies for: Child tax credit
@@ -314,7 +476,25 @@ import "strings"
 		txtDepDOBR10?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR10: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+		cboDepRelationR10: *"" |
+			"SO" | // SON
+			"D" | // DAUGHTER
+			"GC" | // GRANDCHILD
+			"FC" | // FOSTERCHILD
+			"SI" | // SISTER
+			"B" | // BROTHER
+			"NE" | // NIECE
+			"NW" | // NEPHEW
+			"P" | // PARENT
+			"GP" | // GRANDPARENT
+			"A" | // AUNT
+			"U" | // UNCLE
+			"SC" | // STEPCHILD
+			"HB" | // HALFBROTHER
+			"HS" | // HALFSISTER
+			"SB" | // STEPBROTHER
+			"SS" | // STEPSISTER
+			"O" // OTHER
 
 		
 		// Check if depCheck if dependent qualifies for: Child tax credit

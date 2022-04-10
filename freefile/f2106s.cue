@@ -166,10 +166,16 @@ import "strings"
 		txtFrm2106Line32Vh2?: strings.MaxRunes(10)
 
 		// Select depreciation method - Vehicle 1
-		cboDepMethodOptionInd1: "0" | "1" | "2" | "3"
+		cboDepMethodOptionInd1: "0" |
+			"1" | // 200 DB
+			"2" | // 150 DB
+			"3" // SL
 
 		// Select depreciation method - Vehicle 2
-		cboDepMethodOptionInd2: "0" | "1" | "2" | "3"
+		cboDepMethodOptionInd2: "0" |
+			"1" | // 200 DB
+			"2" | // 150 DB
+			"3" // SL
 
 		// Enter depreciation percentage - Vehicle 1
 		txtDepreciationPercentVh1?: #PERCENT

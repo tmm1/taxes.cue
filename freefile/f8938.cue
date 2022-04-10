@@ -280,14 +280,331 @@ import "strings"
 		txtF8938FdcFfiCity?: strings.MaxRunes(50)
 
 		// State
-		cboF8938FdcFfiState: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboF8938FdcFfiState: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Zip code
 		txtF8938FdcFfiZip?: #NUMERIC
 		txtF8938FdcFfiZip?: strings.MaxRunes(9)
 
 		// Foreign Country
-		cboF8938FdcFfiCountry: *"" | "AF" | "AX" | "AL" | "AG" | "AQ" | "AN" | "AO" | "AV" | "AY" | "AC" | "AR" | "AM" | "AA" | "AT" | "AS" | "AU" | "AJ" | "BF" | "BA" | "FQ" | "BG" | "BB" | "BO" | "BE" | "BH" | "BN" | "BD" | "BT" | "BL" | "BK" | "BC" | "BV" | "BR" | "IO" | "VI" | "BX" | "BU" | "UV" | "BM" | "BY" | "CB" | "CM" | "CA" | "CV" | "CJ" | "CT" | "CD" | "CI" | "CH" | "KT" | "IP" | "CK" | "CO" | "CN" | "CF" | "CG" | "CW" | "CR" | "CS" | "IV" | "HR" | "CU" | "UC" | "CY" | "EZ" | "DA" | "DX" | "DJ" | "DO" | "DR" | "TT" | "EC" | "EG" | "ES" | "EK" | "ER" | "EN" | "ET" | "FK" | "FO" | "FM" | "FJ" | "FI" | "FR" | "FP" | "FS" | "GB" | "GG" | "GM" | "GH" | "GI" | "GR" | "GL" | "GJ" | "GQ" | "GT" | "GK" | "GV" | "PU" | "GY" | "HA" | "HM" | "VT" | "HO" | "HK" | "HQ" | "HU" | "IC" | "IN" | "ID" | "IR" | "IZ" | "EI" | "IS" | "IT" | "JM" | "JN" | "JA" | "DQ" | "JE" | "JQ" | "JO" | "KZ" | "KE" | "KQ" | "KR" | "KN" | "KS" | "KV" | "KU" | "KG" | "LA" | "LG" | "LE" | "LT" | "LI" | "LY" | "LS" | "LH" | "LU" | "MC" | "MK" | "MA" | "MI" | "MY" | "MV" | "ML" | "MT" | "IM" | "RM" | "MR" | "MP" | "MX" | "MQ" | "MD" | "MN" | "MG" | "MJ" | "MH" | "MO" | "MZ" | "WA" | "NR" | "BQ" | "NP" | "NL" | "NC" | "NZ" | "NU" | "NG" | "NI" | "NE" | "NF" | "CQ" | "NO" | "MU" | "OC" | "PK" | "PS" | "LQ" | "PM" | "PP" | "PF" | "PA" | "PE" | "RP" | "PC" | "PL" | "PO" | "RQ" | "QA" | "RO" | "RS" | "RW" | "TB" | "RN" | "WS" | "SM" | "TP" | "SA" | "SG" | "RI" | "SE" | "SL" | "SN" | "NN" | "LO" | "SI" | "BP" | "SO" | "SF" | "SX" | "OD" | "SP" | "PG" | "CE" | "SH" | "SC" | "ST" | "SB" | "VC" | "SU" | "NS" | "SV" | "WZ" | "SW" | "SZ" | "SY" | "TW" | "TI" | "TZ" | "TH" | "GA" | "TO" | "TL" | "TN" | "TD" | "TS" | "TU" | "TX" | "TK" | "TV" | "UG" | "UP" | "AE" | "UK" | "UY" | "UZ" | "NH" | "VE" | "VM" | "VQ" | "WQ" | "WF" | "WI" | "YM" | "ZA" | "ZI"
+		cboF8938FdcFfiCountry: *"" |
+			"AF" | // Afghanistan
+			"AX" | // Akrotiri
+			"AL" | // Albania
+			"AG" | // Algeria
+			"AQ" | // American Samoa
+			"AN" | // Andorra
+			"AO" | // Angola
+			"AV" | // Anguilla
+			"AY" | // Antarctica
+			"AC" | // Antigua and Barbuda
+			"AR" | // Argentina
+			"AM" | // Armenia
+			"AA" | // Aruba
+			"AT" | // Ashmore and Cartier Islands
+			"AS" | // Australia
+			"AU" | // Austria
+			"AJ" | // Azerbaijan
+			"BF" | // Bahamas
+			"BA" | // Bahrain
+			"FQ" | // Baker Island
+			"BG" | // Bangladesh
+			"BB" | // Barbados
+			"BO" | // Belarus
+			"BE" | // Belgium
+			"BH" | // Belize
+			"BN" | // Benin
+			"BD" | // Bermuda
+			"BT" | // Bhutan
+			"BL" | // Bolivia
+			"BK" | // Bosnia-Herzegovina
+			"BC" | // Botswana
+			"BV" | // Bouvet Island
+			"BR" | // Brazil
+			"IO" | // British Indian Ocean Territory
+			"VI" | // British Virgin Islands
+			"BX" | // Brunei
+			"BU" | // Bulgaria
+			"UV" | // Burkina Faso
+			"BM" | // Burma
+			"BY" | // Burundi
+			"CB" | // Cambodia
+			"CM" | // Cameroon
+			"CA" | // Canada
+			"CV" | // Cape Verde
+			"CJ" | // Cayman Islands
+			"CT" | // Central African Republic
+			"CD" | // Chad
+			"CI" | // Chile
+			"CH" | // China
+			"KT" | // Christmas Island
+			"IP" | // Clipperton Island
+			"CK" | // Cocos (Keeling) Islands
+			"CO" | // Colombia
+			"CN" | // Comoros
+			"CF" | // Congo (Brazzaville)
+			"CG" | // Congo (Kinshasa)
+			"CW" | // Cook Islands
+			"CR" | // Coral Sea Islands
+			"CS" | // Costa Rica
+			"IV" | // Cote D'Ivoire(Ivory Coast)
+			"HR" | // Croatia
+			"CU" | // Cuba
+			"UC" | // Curacao
+			"CY" | // Cyprus
+			"EZ" | // Czech Republic
+			"DA" | // Denmark
+			"DX" | // Dhekelia
+			"DJ" | // Djibouti
+			"DO" | // Dominica
+			"DR" | // Dominican Republic
+			"TT" | // East Timor
+			"EC" | // Ecuador
+			"EG" | // Egypt
+			"ES" | // El Salvador
+			"EK" | // Equatorial Guinea
+			"ER" | // Eritrea
+			"EN" | // Estonia
+			"ET" | // Ethiopia
+			"FK" | // Falkland Islands (Islas Malvinas)
+			"FO" | // Faroe Islands
+			"FM" | // Federated States of Micronesia
+			"FJ" | // Fiji
+			"FI" | // Finland
+			"FR" | // France
+			"FP" | // French Polynesia
+			"FS" | // French Southern and Antarctic Lands
+			"GB" | // Gabon
+			"GG" | // Georgia
+			"GM" | // Germany
+			"GH" | // Ghana
+			"GI" | // Gibraltar
+			"GR" | // Greece
+			"GL" | // Greenland
+			"GJ" | // Grenada
+			"GQ" | // Guam
+			"GT" | // Guatemala
+			"GK" | // Guernsey
+			"GV" | // Guinea
+			"PU" | // Guinea-Bissau
+			"GY" | // Guyana
+			"HA" | // Haiti
+			"HM" | // Heard Island and McDonald Islands
+			"VT" | // Holy See
+			"HO" | // Honduras
+			"HK" | // Hong Kong
+			"HQ" | // Howland Island
+			"HU" | // Hungary
+			"IC" | // Iceland
+			"IN" | // India
+			"ID" | // Indonesia
+			"IR" | // Iran
+			"IZ" | // Iraq
+			"EI" | // Ireland
+			"IS" | // Israel
+			"IT" | // Italy
+			"JM" | // Jamaica
+			"JN" | // Jan Mayen
+			"JA" | // Japan
+			"DQ" | // Jarvis Island
+			"JE" | // Jersey
+			"JQ" | // Johnston Atoll
+			"JO" | // Jordan
+			"KZ" | // Kazakhstan
+			"KE" | // Kenya
+			"KQ" | // Kingman Reef
+			"KR" | // Kiribati
+			"KN" | // Korea, Democratic People's Republic of (North)
+			"KS" | // Korea, Republic of (South)
+			"KV" | // Kosovo
+			"KU" | // Kuwait
+			"KG" | // Kyrgyzstan
+			"LA" | // Laos
+			"LG" | // Latvia
+			"LE" | // Lebanon
+			"LT" | // Lesotho
+			"LI" | // Liberia
+			"LY" | // Libya
+			"LS" | // Liechtenstein
+			"LH" | // Lithuania
+			"LU" | // Luxembourg
+			"MC" | // Macau
+			"MK" | // Macedonia
+			"MA" | // Madagascar
+			"MI" | // Malawi
+			"MY" | // Malaysia
+			"MV" | // Maldives
+			"ML" | // Mali
+			"MT" | // Malta
+			"IM" | // Man, Isle of
+			"RM" | // Marshall Islands
+			"MR" | // Mauritania
+			"MP" | // Mauritius
+			"MX" | // Mexico
+			"MQ" | // Midway Islands
+			"MD" | // Moldova
+			"MN" | // Monaco
+			"MG" | // Mongolia
+			"MJ" | // Montenegro
+			"MH" | // Montserrat
+			"MO" | // Morocco
+			"MZ" | // Mozambique
+			"WA" | // Namibia
+			"NR" | // Nauru
+			"BQ" | // Navassa Island
+			"NP" | // Nepal
+			"NL" | // Netherlands
+			"NC" | // New Caledonia
+			"NZ" | // New Zealand
+			"NU" | // Nicaragua
+			"NG" | // Niger
+			"NI" | // Nigeria
+			"NE" | // Niue
+			"NF" | // Norfolk Island
+			"CQ" | // Northern Mariana Islands
+			"NO" | // Norway
+			"MU" | // Oman
+			"OC" | // Other Country
+			"PK" | // Pakistan
+			"PS" | // Palau
+			"LQ" | // Palmyra Atoll
+			"PM" | // Panama
+			"PP" | // Papua-New Guinea
+			"PF" | // Paracel Islands
+			"PA" | // Paraguay
+			"PE" | // Peru
+			"RP" | // Philippines
+			"PC" | // Pitcairn Islands
+			"PL" | // Poland
+			"PO" | // Portugal
+			"RQ" | // Puerto Rico
+			"QA" | // Qatar
+			"RO" | // Romania
+			"RS" | // Russia
+			"RW" | // Rwanda
+			"TB" | // Saint Barthelemy
+			"RN" | // Saint Martin
+			"WS" | // Samoa
+			"SM" | // San Marino
+			"TP" | // Sao Tome and Principe
+			"SA" | // Saudi Arabia
+			"SG" | // Senegal
+			"RI" | // Serbia
+			"SE" | // Seychelles
+			"SL" | // Sierra Leone
+			"SN" | // Singapore
+			"NN" | // Sint Maarten
+			"LO" | // Slovakia
+			"SI" | // Slovenia
+			"BP" | // Solomon Islands
+			"SO" | // Somalia
+			"SF" | // South Africa
+			"SX" | // South Georgia and the South Sandwich Islands
+			"OD" | // South Sudan
+			"SP" | // Spain
+			"PG" | // Spratly Islands
+			"CE" | // Sri Lanka
+			"SH" | // St. Helena
+			"SC" | // St. Kitts and Nevis
+			"ST" | // St. Lucia Island
+			"SB" | // St. Pierre and Miquelon
+			"VC" | // St. Vincent and the Grenadines
+			"SU" | // Sudan
+			"NS" | // Suriname
+			"SV" | // Svalbard
+			"WZ" | // Swaziland
+			"SW" | // Sweden
+			"SZ" | // Switzerland
+			"SY" | // Syria
+			"TW" | // Taiwan
+			"TI" | // Tajikistan
+			"TZ" | // Tanzania
+			"TH" | // Thailand
+			"GA" | // The Gambia
+			"TO" | // Togo
+			"TL" | // Tokelau
+			"TN" | // Tonga
+			"TD" | // Trinidad and Tobago
+			"TS" | // Tunisia
+			"TU" | // Turkey
+			"TX" | // Turkmenistan
+			"TK" | // Turks and Caicos Islands
+			"TV" | // Tuvalu
+			"UG" | // Uganda
+			"UP" | // Ukraine
+			"AE" | // United Arab Emirates
+			"UK" | // United Kingdom (England, Northern Ireland, Scotland, and Wales)
+			"UY" | // Uruguay
+			"UZ" | // Uzbekistan
+			"NH" | // Vanuatu
+			"VE" | // Venezuela
+			"VM" | // Vietnam
+			"VQ" | // Virgin Islands
+			"WQ" | // Wake Island
+			"WF" | // Wallis and Futuna
+			"WI" | // Western Sahara
+			"YM" | // Yemen (Aden)
+			"ZA" | // Zambia
+			"ZI" // Zimbabwe
 
 		// Foreign Province
 		txtF8938FdcFfiProvince?: #UPPERCASE
@@ -372,14 +689,331 @@ import "strings"
 		txtF8938OfaFfiCity?: strings.MaxRunes(50)
 
 		// State
-		cboF8938OfaFfiState: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboF8938OfaFfiState: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Zip code
 		txtF8938OfaFfiZip?: #NUMERIC
 		txtF8938OfaFfiZip?: strings.MaxRunes(9)
 
 		// Country
-		cboF8938OfaFfiCountry: *"" | "AF" | "AX" | "AL" | "AG" | "AQ" | "AN" | "AO" | "AV" | "AY" | "AC" | "AR" | "AM" | "AA" | "AT" | "AS" | "AU" | "AJ" | "BF" | "BA" | "FQ" | "BG" | "BB" | "BO" | "BE" | "BH" | "BN" | "BD" | "BT" | "BL" | "BK" | "BC" | "BV" | "BR" | "IO" | "VI" | "BX" | "BU" | "UV" | "BM" | "BY" | "CB" | "CM" | "CA" | "CV" | "CJ" | "CT" | "CD" | "CI" | "CH" | "KT" | "IP" | "CK" | "CO" | "CN" | "CF" | "CG" | "CW" | "CR" | "CS" | "IV" | "HR" | "CU" | "UC" | "CY" | "EZ" | "DA" | "DX" | "DJ" | "DO" | "DR" | "TT" | "EC" | "EG" | "ES" | "EK" | "ER" | "EN" | "ET" | "FK" | "FO" | "FM" | "FJ" | "FI" | "FR" | "FP" | "FS" | "GB" | "GG" | "GM" | "GH" | "GI" | "GR" | "GL" | "GJ" | "GQ" | "GT" | "GK" | "GV" | "PU" | "GY" | "HA" | "HM" | "VT" | "HO" | "HK" | "HQ" | "HU" | "IC" | "IN" | "ID" | "IR" | "IZ" | "EI" | "IS" | "IT" | "JM" | "JN" | "JA" | "DQ" | "JE" | "JQ" | "JO" | "KZ" | "KE" | "KQ" | "KR" | "KN" | "KS" | "KV" | "KU" | "KG" | "LA" | "LG" | "LE" | "LT" | "LI" | "LY" | "LS" | "LH" | "LU" | "MC" | "MK" | "MA" | "MI" | "MY" | "MV" | "ML" | "MT" | "IM" | "RM" | "MR" | "MP" | "MX" | "MQ" | "MD" | "MN" | "MG" | "MJ" | "MH" | "MO" | "MZ" | "WA" | "NR" | "BQ" | "NP" | "NL" | "NC" | "NZ" | "NU" | "NG" | "NI" | "NE" | "NF" | "CQ" | "NO" | "MU" | "OC" | "PK" | "PS" | "LQ" | "PM" | "PP" | "PF" | "PA" | "PE" | "RP" | "PC" | "PL" | "PO" | "RQ" | "QA" | "RO" | "RS" | "RW" | "TB" | "RN" | "WS" | "SM" | "TP" | "SA" | "SG" | "RI" | "SE" | "SL" | "SN" | "NN" | "LO" | "SI" | "BP" | "SO" | "SF" | "SX" | "OD" | "SP" | "PG" | "CE" | "SH" | "SC" | "ST" | "SB" | "VC" | "SU" | "NS" | "SV" | "WZ" | "SW" | "SZ" | "SY" | "TW" | "TI" | "TZ" | "TH" | "GA" | "TO" | "TL" | "TN" | "TD" | "TS" | "TU" | "TX" | "TK" | "TV" | "UG" | "UP" | "AE" | "UK" | "UY" | "UZ" | "NH" | "VE" | "VM" | "VQ" | "WQ" | "WF" | "WI" | "YM" | "ZA" | "ZI"
+		cboF8938OfaFfiCountry: *"" |
+			"AF" | // Afghanistan
+			"AX" | // Akrotiri
+			"AL" | // Albania
+			"AG" | // Algeria
+			"AQ" | // American Samoa
+			"AN" | // Andorra
+			"AO" | // Angola
+			"AV" | // Anguilla
+			"AY" | // Antarctica
+			"AC" | // Antigua and Barbuda
+			"AR" | // Argentina
+			"AM" | // Armenia
+			"AA" | // Aruba
+			"AT" | // Ashmore and Cartier Islands
+			"AS" | // Australia
+			"AU" | // Austria
+			"AJ" | // Azerbaijan
+			"BF" | // Bahamas
+			"BA" | // Bahrain
+			"FQ" | // Baker Island
+			"BG" | // Bangladesh
+			"BB" | // Barbados
+			"BO" | // Belarus
+			"BE" | // Belgium
+			"BH" | // Belize
+			"BN" | // Benin
+			"BD" | // Bermuda
+			"BT" | // Bhutan
+			"BL" | // Bolivia
+			"BK" | // Bosnia-Herzegovina
+			"BC" | // Botswana
+			"BV" | // Bouvet Island
+			"BR" | // Brazil
+			"IO" | // British Indian Ocean Territory
+			"VI" | // British Virgin Islands
+			"BX" | // Brunei
+			"BU" | // Bulgaria
+			"UV" | // Burkina Faso
+			"BM" | // Burma
+			"BY" | // Burundi
+			"CB" | // Cambodia
+			"CM" | // Cameroon
+			"CA" | // Canada
+			"CV" | // Cape Verde
+			"CJ" | // Cayman Islands
+			"CT" | // Central African Republic
+			"CD" | // Chad
+			"CI" | // Chile
+			"CH" | // China
+			"KT" | // Christmas Island
+			"IP" | // Clipperton Island
+			"CK" | // Cocos (Keeling) Islands
+			"CO" | // Colombia
+			"CN" | // Comoros
+			"CF" | // Congo (Brazzaville)
+			"CG" | // Congo (Kinshasa)
+			"CW" | // Cook Islands
+			"CR" | // Coral Sea Islands
+			"CS" | // Costa Rica
+			"IV" | // Cote D'Ivoire(Ivory Coast)
+			"HR" | // Croatia
+			"CU" | // Cuba
+			"UC" | // Curacao
+			"CY" | // Cyprus
+			"EZ" | // Czech Republic
+			"DA" | // Denmark
+			"DX" | // Dhekelia
+			"DJ" | // Djibouti
+			"DO" | // Dominica
+			"DR" | // Dominican Republic
+			"TT" | // East Timor
+			"EC" | // Ecuador
+			"EG" | // Egypt
+			"ES" | // El Salvador
+			"EK" | // Equatorial Guinea
+			"ER" | // Eritrea
+			"EN" | // Estonia
+			"ET" | // Ethiopia
+			"FK" | // Falkland Islands (Islas Malvinas)
+			"FO" | // Faroe Islands
+			"FM" | // Federated States of Micronesia
+			"FJ" | // Fiji
+			"FI" | // Finland
+			"FR" | // France
+			"FP" | // French Polynesia
+			"FS" | // French Southern and Antarctic Lands
+			"GB" | // Gabon
+			"GG" | // Georgia
+			"GM" | // Germany
+			"GH" | // Ghana
+			"GI" | // Gibraltar
+			"GR" | // Greece
+			"GL" | // Greenland
+			"GJ" | // Grenada
+			"GQ" | // Guam
+			"GT" | // Guatemala
+			"GK" | // Guernsey
+			"GV" | // Guinea
+			"PU" | // Guinea-Bissau
+			"GY" | // Guyana
+			"HA" | // Haiti
+			"HM" | // Heard Island and McDonald Islands
+			"VT" | // Holy See
+			"HO" | // Honduras
+			"HK" | // Hong Kong
+			"HQ" | // Howland Island
+			"HU" | // Hungary
+			"IC" | // Iceland
+			"IN" | // India
+			"ID" | // Indonesia
+			"IR" | // Iran
+			"IZ" | // Iraq
+			"EI" | // Ireland
+			"IS" | // Israel
+			"IT" | // Italy
+			"JM" | // Jamaica
+			"JN" | // Jan Mayen
+			"JA" | // Japan
+			"DQ" | // Jarvis Island
+			"JE" | // Jersey
+			"JQ" | // Johnston Atoll
+			"JO" | // Jordan
+			"KZ" | // Kazakhstan
+			"KE" | // Kenya
+			"KQ" | // Kingman Reef
+			"KR" | // Kiribati
+			"KN" | // Korea, Democratic People's Republic of (North)
+			"KS" | // Korea, Republic of (South)
+			"KV" | // Kosovo
+			"KU" | // Kuwait
+			"KG" | // Kyrgyzstan
+			"LA" | // Laos
+			"LG" | // Latvia
+			"LE" | // Lebanon
+			"LT" | // Lesotho
+			"LI" | // Liberia
+			"LY" | // Libya
+			"LS" | // Liechtenstein
+			"LH" | // Lithuania
+			"LU" | // Luxembourg
+			"MC" | // Macau
+			"MK" | // Macedonia
+			"MA" | // Madagascar
+			"MI" | // Malawi
+			"MY" | // Malaysia
+			"MV" | // Maldives
+			"ML" | // Mali
+			"MT" | // Malta
+			"IM" | // Man, Isle of
+			"RM" | // Marshall Islands
+			"MR" | // Mauritania
+			"MP" | // Mauritius
+			"MX" | // Mexico
+			"MQ" | // Midway Islands
+			"MD" | // Moldova
+			"MN" | // Monaco
+			"MG" | // Mongolia
+			"MJ" | // Montenegro
+			"MH" | // Montserrat
+			"MO" | // Morocco
+			"MZ" | // Mozambique
+			"WA" | // Namibia
+			"NR" | // Nauru
+			"BQ" | // Navassa Island
+			"NP" | // Nepal
+			"NL" | // Netherlands
+			"NC" | // New Caledonia
+			"NZ" | // New Zealand
+			"NU" | // Nicaragua
+			"NG" | // Niger
+			"NI" | // Nigeria
+			"NE" | // Niue
+			"NF" | // Norfolk Island
+			"CQ" | // Northern Mariana Islands
+			"NO" | // Norway
+			"MU" | // Oman
+			"OC" | // Other Country
+			"PK" | // Pakistan
+			"PS" | // Palau
+			"LQ" | // Palmyra Atoll
+			"PM" | // Panama
+			"PP" | // Papua-New Guinea
+			"PF" | // Paracel Islands
+			"PA" | // Paraguay
+			"PE" | // Peru
+			"RP" | // Philippines
+			"PC" | // Pitcairn Islands
+			"PL" | // Poland
+			"PO" | // Portugal
+			"RQ" | // Puerto Rico
+			"QA" | // Qatar
+			"RO" | // Romania
+			"RS" | // Russia
+			"RW" | // Rwanda
+			"TB" | // Saint Barthelemy
+			"RN" | // Saint Martin
+			"WS" | // Samoa
+			"SM" | // San Marino
+			"TP" | // Sao Tome and Principe
+			"SA" | // Saudi Arabia
+			"SG" | // Senegal
+			"RI" | // Serbia
+			"SE" | // Seychelles
+			"SL" | // Sierra Leone
+			"SN" | // Singapore
+			"NN" | // Sint Maarten
+			"LO" | // Slovakia
+			"SI" | // Slovenia
+			"BP" | // Solomon Islands
+			"SO" | // Somalia
+			"SF" | // South Africa
+			"SX" | // South Georgia and the South Sandwich Islands
+			"OD" | // South Sudan
+			"SP" | // Spain
+			"PG" | // Spratly Islands
+			"CE" | // Sri Lanka
+			"SH" | // St. Helena
+			"SC" | // St. Kitts and Nevis
+			"ST" | // St. Lucia Island
+			"SB" | // St. Pierre and Miquelon
+			"VC" | // St. Vincent and the Grenadines
+			"SU" | // Sudan
+			"NS" | // Suriname
+			"SV" | // Svalbard
+			"WZ" | // Swaziland
+			"SW" | // Sweden
+			"SZ" | // Switzerland
+			"SY" | // Syria
+			"TW" | // Taiwan
+			"TI" | // Tajikistan
+			"TZ" | // Tanzania
+			"TH" | // Thailand
+			"GA" | // The Gambia
+			"TO" | // Togo
+			"TL" | // Tokelau
+			"TN" | // Tonga
+			"TD" | // Trinidad and Tobago
+			"TS" | // Tunisia
+			"TU" | // Turkey
+			"TX" | // Turkmenistan
+			"TK" | // Turks and Caicos Islands
+			"TV" | // Tuvalu
+			"UG" | // Uganda
+			"UP" | // Ukraine
+			"AE" | // United Arab Emirates
+			"UK" | // United Kingdom (England, Northern Ireland, Scotland, and Wales)
+			"UY" | // Uruguay
+			"UZ" | // Uzbekistan
+			"NH" | // Vanuatu
+			"VE" | // Venezuela
+			"VM" | // Vietnam
+			"VQ" | // Virgin Islands
+			"WQ" | // Wake Island
+			"WF" | // Wallis and Futuna
+			"WI" | // Western Sahara
+			"YM" | // Yemen (Aden)
+			"ZA" | // Zambia
+			"ZI" // Zimbabwe
 
 		// Province
 		txtF8938OfaFfiProvince?: #UPPERCASE
@@ -420,14 +1054,331 @@ import "strings"
 		txtF8938OfaNtCity?: strings.MaxRunes(50)
 
 		// State
-		cboF8938OfaNtState: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
+		cboF8938OfaNtState: *"" |
+			"AA" |
+			"AE" |
+			"AK" |
+			"AL" |
+			"AP" |
+			"AR" |
+			"AS" |
+			"AZ" |
+			"CA" |
+			"CO" |
+			"CT" |
+			"DC" |
+			"DE" |
+			"FL" |
+			"GA" |
+			"GU" |
+			"HI" |
+			"IA" |
+			"ID" |
+			"IL" |
+			"IN" |
+			"KS" |
+			"KY" |
+			"LA" |
+			"MA" |
+			"MD" |
+			"ME" |
+			"MI" |
+			"MN" |
+			"MO" |
+			"MP" |
+			"MS" |
+			"MT" |
+			"NC" |
+			"ND" |
+			"NE" |
+			"NH" |
+			"NJ" |
+			"NM" |
+			"NV" |
+			"NY" |
+			"OH" |
+			"OK" |
+			"OR" |
+			"PA" |
+			"PR" |
+			"RI" |
+			"SC" |
+			"SD" |
+			"TN" |
+			"TX" |
+			"UT" |
+			"VA" |
+			"VI" |
+			"VT" |
+			"WA" |
+			"WI" |
+			"WV" |
+			"WY"
 
 		// Zip code
 		txtF8938OfaNtZip?: #NUMERIC
 		txtF8938OfaNtZip?: strings.MaxRunes(9)
 
 		// Country
-		cboF8938OfaNtCuntryName: *"" | "AF" | "AX" | "AL" | "AG" | "AQ" | "AN" | "AO" | "AV" | "AY" | "AC" | "AR" | "AM" | "AA" | "AT" | "AS" | "AU" | "AJ" | "BF" | "BA" | "FQ" | "BG" | "BB" | "BO" | "BE" | "BH" | "BN" | "BD" | "BT" | "BL" | "BK" | "BC" | "BV" | "BR" | "IO" | "VI" | "BX" | "BU" | "UV" | "BM" | "BY" | "CB" | "CM" | "CA" | "CV" | "CJ" | "CT" | "CD" | "CI" | "CH" | "KT" | "IP" | "CK" | "CO" | "CN" | "CF" | "CG" | "CW" | "CR" | "CS" | "IV" | "HR" | "CU" | "UC" | "CY" | "EZ" | "DA" | "DX" | "DJ" | "DO" | "DR" | "TT" | "EC" | "EG" | "ES" | "EK" | "ER" | "EN" | "ET" | "FK" | "FO" | "FM" | "FJ" | "FI" | "FR" | "FP" | "FS" | "GB" | "GG" | "GM" | "GH" | "GI" | "GR" | "GL" | "GJ" | "GQ" | "GT" | "GK" | "GV" | "PU" | "GY" | "HA" | "HM" | "VT" | "HO" | "HK" | "HQ" | "HU" | "IC" | "IN" | "ID" | "IR" | "IZ" | "EI" | "IS" | "IT" | "JM" | "JN" | "JA" | "DQ" | "JE" | "JQ" | "JO" | "KZ" | "KE" | "KQ" | "KR" | "KN" | "KS" | "KV" | "KU" | "KG" | "LA" | "LG" | "LE" | "LT" | "LI" | "LY" | "LS" | "LH" | "LU" | "MC" | "MK" | "MA" | "MI" | "MY" | "MV" | "ML" | "MT" | "IM" | "RM" | "MR" | "MP" | "MX" | "MQ" | "MD" | "MN" | "MG" | "MJ" | "MH" | "MO" | "MZ" | "WA" | "NR" | "BQ" | "NP" | "NL" | "NC" | "NZ" | "NU" | "NG" | "NI" | "NE" | "NF" | "CQ" | "NO" | "MU" | "OC" | "PK" | "PS" | "LQ" | "PM" | "PP" | "PF" | "PA" | "PE" | "RP" | "PC" | "PL" | "PO" | "RQ" | "QA" | "RO" | "RS" | "RW" | "TB" | "RN" | "WS" | "SM" | "TP" | "SA" | "SG" | "RI" | "SE" | "SL" | "SN" | "NN" | "LO" | "SI" | "BP" | "SO" | "SF" | "SX" | "OD" | "SP" | "PG" | "CE" | "SH" | "SC" | "ST" | "SB" | "VC" | "SU" | "NS" | "SV" | "WZ" | "SW" | "SZ" | "SY" | "TW" | "TI" | "TZ" | "TH" | "GA" | "TO" | "TL" | "TN" | "TD" | "TS" | "TU" | "TX" | "TK" | "TV" | "UG" | "UP" | "AE" | "UK" | "UY" | "UZ" | "NH" | "VE" | "VM" | "VQ" | "WQ" | "WF" | "WI" | "YM" | "ZA" | "ZI"
+		cboF8938OfaNtCuntryName: *"" |
+			"AF" | // Afghanistan
+			"AX" | // Akrotiri
+			"AL" | // Albania
+			"AG" | // Algeria
+			"AQ" | // American Samoa
+			"AN" | // Andorra
+			"AO" | // Angola
+			"AV" | // Anguilla
+			"AY" | // Antarctica
+			"AC" | // Antigua and Barbuda
+			"AR" | // Argentina
+			"AM" | // Armenia
+			"AA" | // Aruba
+			"AT" | // Ashmore and Cartier Islands
+			"AS" | // Australia
+			"AU" | // Austria
+			"AJ" | // Azerbaijan
+			"BF" | // Bahamas
+			"BA" | // Bahrain
+			"FQ" | // Baker Island
+			"BG" | // Bangladesh
+			"BB" | // Barbados
+			"BO" | // Belarus
+			"BE" | // Belgium
+			"BH" | // Belize
+			"BN" | // Benin
+			"BD" | // Bermuda
+			"BT" | // Bhutan
+			"BL" | // Bolivia
+			"BK" | // Bosnia-Herzegovina
+			"BC" | // Botswana
+			"BV" | // Bouvet Island
+			"BR" | // Brazil
+			"IO" | // British Indian Ocean Territory
+			"VI" | // British Virgin Islands
+			"BX" | // Brunei
+			"BU" | // Bulgaria
+			"UV" | // Burkina Faso
+			"BM" | // Burma
+			"BY" | // Burundi
+			"CB" | // Cambodia
+			"CM" | // Cameroon
+			"CA" | // Canada
+			"CV" | // Cape Verde
+			"CJ" | // Cayman Islands
+			"CT" | // Central African Republic
+			"CD" | // Chad
+			"CI" | // Chile
+			"CH" | // China
+			"KT" | // Christmas Island
+			"IP" | // Clipperton Island
+			"CK" | // Cocos (Keeling) Islands
+			"CO" | // Colombia
+			"CN" | // Comoros
+			"CF" | // Congo (Brazzaville)
+			"CG" | // Congo (Kinshasa)
+			"CW" | // Cook Islands
+			"CR" | // Coral Sea Islands
+			"CS" | // Costa Rica
+			"IV" | // Cote D'Ivoire(Ivory Coast)
+			"HR" | // Croatia
+			"CU" | // Cuba
+			"UC" | // Curacao
+			"CY" | // Cyprus
+			"EZ" | // Czech Republic
+			"DA" | // Denmark
+			"DX" | // Dhekelia
+			"DJ" | // Djibouti
+			"DO" | // Dominica
+			"DR" | // Dominican Republic
+			"TT" | // East Timor
+			"EC" | // Ecuador
+			"EG" | // Egypt
+			"ES" | // El Salvador
+			"EK" | // Equatorial Guinea
+			"ER" | // Eritrea
+			"EN" | // Estonia
+			"ET" | // Ethiopia
+			"FK" | // Falkland Islands (Islas Malvinas)
+			"FO" | // Faroe Islands
+			"FM" | // Federated States of Micronesia
+			"FJ" | // Fiji
+			"FI" | // Finland
+			"FR" | // France
+			"FP" | // French Polynesia
+			"FS" | // French Southern and Antarctic Lands
+			"GB" | // Gabon
+			"GG" | // Georgia
+			"GM" | // Germany
+			"GH" | // Ghana
+			"GI" | // Gibraltar
+			"GR" | // Greece
+			"GL" | // Greenland
+			"GJ" | // Grenada
+			"GQ" | // Guam
+			"GT" | // Guatemala
+			"GK" | // Guernsey
+			"GV" | // Guinea
+			"PU" | // Guinea-Bissau
+			"GY" | // Guyana
+			"HA" | // Haiti
+			"HM" | // Heard Island and McDonald Islands
+			"VT" | // Holy See
+			"HO" | // Honduras
+			"HK" | // Hong Kong
+			"HQ" | // Howland Island
+			"HU" | // Hungary
+			"IC" | // Iceland
+			"IN" | // India
+			"ID" | // Indonesia
+			"IR" | // Iran
+			"IZ" | // Iraq
+			"EI" | // Ireland
+			"IS" | // Israel
+			"IT" | // Italy
+			"JM" | // Jamaica
+			"JN" | // Jan Mayen
+			"JA" | // Japan
+			"DQ" | // Jarvis Island
+			"JE" | // Jersey
+			"JQ" | // Johnston Atoll
+			"JO" | // Jordan
+			"KZ" | // Kazakhstan
+			"KE" | // Kenya
+			"KQ" | // Kingman Reef
+			"KR" | // Kiribati
+			"KN" | // Korea, Democratic People's Republic of (North)
+			"KS" | // Korea, Republic of (South)
+			"KV" | // Kosovo
+			"KU" | // Kuwait
+			"KG" | // Kyrgyzstan
+			"LA" | // Laos
+			"LG" | // Latvia
+			"LE" | // Lebanon
+			"LT" | // Lesotho
+			"LI" | // Liberia
+			"LY" | // Libya
+			"LS" | // Liechtenstein
+			"LH" | // Lithuania
+			"LU" | // Luxembourg
+			"MC" | // Macau
+			"MK" | // Macedonia
+			"MA" | // Madagascar
+			"MI" | // Malawi
+			"MY" | // Malaysia
+			"MV" | // Maldives
+			"ML" | // Mali
+			"MT" | // Malta
+			"IM" | // Man, Isle of
+			"RM" | // Marshall Islands
+			"MR" | // Mauritania
+			"MP" | // Mauritius
+			"MX" | // Mexico
+			"MQ" | // Midway Islands
+			"MD" | // Moldova
+			"MN" | // Monaco
+			"MG" | // Mongolia
+			"MJ" | // Montenegro
+			"MH" | // Montserrat
+			"MO" | // Morocco
+			"MZ" | // Mozambique
+			"WA" | // Namibia
+			"NR" | // Nauru
+			"BQ" | // Navassa Island
+			"NP" | // Nepal
+			"NL" | // Netherlands
+			"NC" | // New Caledonia
+			"NZ" | // New Zealand
+			"NU" | // Nicaragua
+			"NG" | // Niger
+			"NI" | // Nigeria
+			"NE" | // Niue
+			"NF" | // Norfolk Island
+			"CQ" | // Northern Mariana Islands
+			"NO" | // Norway
+			"MU" | // Oman
+			"OC" | // Other Country
+			"PK" | // Pakistan
+			"PS" | // Palau
+			"LQ" | // Palmyra Atoll
+			"PM" | // Panama
+			"PP" | // Papua-New Guinea
+			"PF" | // Paracel Islands
+			"PA" | // Paraguay
+			"PE" | // Peru
+			"RP" | // Philippines
+			"PC" | // Pitcairn Islands
+			"PL" | // Poland
+			"PO" | // Portugal
+			"RQ" | // Puerto Rico
+			"QA" | // Qatar
+			"RO" | // Romania
+			"RS" | // Russia
+			"RW" | // Rwanda
+			"TB" | // Saint Barthelemy
+			"RN" | // Saint Martin
+			"WS" | // Samoa
+			"SM" | // San Marino
+			"TP" | // Sao Tome and Principe
+			"SA" | // Saudi Arabia
+			"SG" | // Senegal
+			"RI" | // Serbia
+			"SE" | // Seychelles
+			"SL" | // Sierra Leone
+			"SN" | // Singapore
+			"NN" | // Sint Maarten
+			"LO" | // Slovakia
+			"SI" | // Slovenia
+			"BP" | // Solomon Islands
+			"SO" | // Somalia
+			"SF" | // South Africa
+			"SX" | // South Georgia and the South Sandwich Islands
+			"OD" | // South Sudan
+			"SP" | // Spain
+			"PG" | // Spratly Islands
+			"CE" | // Sri Lanka
+			"SH" | // St. Helena
+			"SC" | // St. Kitts and Nevis
+			"ST" | // St. Lucia Island
+			"SB" | // St. Pierre and Miquelon
+			"VC" | // St. Vincent and the Grenadines
+			"SU" | // Sudan
+			"NS" | // Suriname
+			"SV" | // Svalbard
+			"WZ" | // Swaziland
+			"SW" | // Sweden
+			"SZ" | // Switzerland
+			"SY" | // Syria
+			"TW" | // Taiwan
+			"TI" | // Tajikistan
+			"TZ" | // Tanzania
+			"TH" | // Thailand
+			"GA" | // The Gambia
+			"TO" | // Togo
+			"TL" | // Tokelau
+			"TN" | // Tonga
+			"TD" | // Trinidad and Tobago
+			"TS" | // Tunisia
+			"TU" | // Turkey
+			"TX" | // Turkmenistan
+			"TK" | // Turks and Caicos Islands
+			"TV" | // Tuvalu
+			"UG" | // Uganda
+			"UP" | // Ukraine
+			"AE" | // United Arab Emirates
+			"UK" | // United Kingdom (England, Northern Ireland, Scotland, and Wales)
+			"UY" | // Uruguay
+			"UZ" | // Uzbekistan
+			"NH" | // Vanuatu
+			"VE" | // Venezuela
+			"VM" | // Vietnam
+			"VQ" | // Virgin Islands
+			"WQ" | // Wake Island
+			"WF" | // Wallis and Futuna
+			"WI" | // Western Sahara
+			"YM" | // Yemen (Aden)
+			"ZA" | // Zambia
+			"ZI" // Zimbabwe
 
 		// Province
 		txtF8938OfaNtProvince?: #UPPERCASE

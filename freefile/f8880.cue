@@ -34,7 +34,11 @@ import "strings"
 		txtLine8Agincome?: strings.MaxRunes(10)
 
 		// Line 9. Enter the applicable decimal amount from the table below
-		cboLine9Deciamt: *"" | "0.0" | "0.1" | "0.2" | "0.5"
+		cboLine9Deciamt: *"" |
+			"0.0" |
+			"0.1" |
+			"0.2" |
+			"0.5"
 
 		// Line 11. Limitation based on tax liability. Enter the amount from the Credit Limit Worksheet in the instructions
 		txtLine13Subtract?: #AMOUNT
