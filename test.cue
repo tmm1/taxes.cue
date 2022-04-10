@@ -6,7 +6,7 @@ import (
 )
 
 (testing.#T & {
-	test: "f1040": {
+	test: "Return.filingStatus": {
 		subject: taxes.#Return
 		"0": assert: ok: {
 			filingStatus: "single"
