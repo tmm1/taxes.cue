@@ -13,15 +13,14 @@ import "strings"
 		chkPart3FrgnInteliCommuInd: *"" | "1"
 
 		
-		// Line 3a. I sold (including through foreclosure) the home to a person who isn''t related to me and had a gain on the sale (as figured in Part III below). Go to Part II below
-		// Line 3b. I sold (including through foreclosure) the home to a person who isn't related to me and didn't have a gain on the sale (as figured in Part III below). No repayment of the credit is required. Stop here
-		// Line 3c. I sold the home to a related person OR I gave the home to someone other than my spouse (or ex-spouse as part of my divorce settlement). Go to Part II below
-		// Line 3d. I converted the entire home to a rental or business use OR I still own the home but no longer use it as my main home. Go to Part II
-		// Line 3e. I transferred the home to my spouse (or ex-spouse as part of my divorce settlement). The full name of my ex-spouse is
-		// Line 3f. My home was destroyed, condemned, or sold under threat of condemnation and I had a gain. See instructions
-		// Line 3g. My home was destroyed, condemned, or sold under threat of condemnation and I didn't have a gain. See instructions
-		// Line 3h. The taxpayer who claimed the credit died in 2021. No repayment of the credit is required of the deceased taxpayer. If you are filing a joint return for 2021 with the deceased taxpayer, see instructions. Otherwise, stop here
-		chkF5405PartIHomeInd: "4" | "1" | "5" | "6" | "8" | "2" | "7" | "3"
+		chkF5405PartIHomeInd: "4" | // Line 3a. I sold (including through foreclosure) the home to a person who isn''t related to me and had a gain on the sale (as figured in Part III below). Go to Part II below
+			"1" | // Line 3b. I sold (including through foreclosure) the home to a person who isn't related to me and didn't have a gain on the sale (as figured in Part III below). No repayment of the credit is required. Stop here
+			"5" | // Line 3c. I sold the home to a related person OR I gave the home to someone other than my spouse (or ex-spouse as part of my divorce settlement). Go to Part II below
+			"6" | // Line 3d. I converted the entire home to a rental or business use OR I still own the home but no longer use it as my main home. Go to Part II
+			"8" | // Line 3e. I transferred the home to my spouse (or ex-spouse as part of my divorce settlement). The full name of my ex-spouse is
+			"2" | // Line 3f. My home was destroyed, condemned, or sold under threat of condemnation and I had a gain. See instructions
+			"7" | // Line 3g. My home was destroyed, condemned, or sold under threat of condemnation and I didn't have a gain. See instructions
+			"3" // Line 3h. The taxpayer who claimed the credit died in 2021. No repayment of the credit is required of the deceased taxpayer. If you are filing a joint return for 2021 with the deceased taxpayer, see instructions. Otherwise, stop here
 
 		// Line 3e. I transferred the home to my spouse (or ex-spouse as part of my divorce settlement). The full name of my ex-spouse is
 		txtExSpouseName?: #UPPERCASE

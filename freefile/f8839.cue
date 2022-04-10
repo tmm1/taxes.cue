@@ -90,9 +90,8 @@ import "strings"
 		chkAdoptionFinalInd3: *"" | "1"
 
 		
-		// No. Enter -0-. Line 3. Did you file Form 8839 for a prior year for the same Child?
-		// Yes. See instructions for the amount to enter. Line 3. Did you file Form 8839 for a prior year for the same Child?
-		chkChildAmtFrPryrInd: "0" | "1"
+		chkChildAmtFrPryrInd: "0" | // No. Enter -0-. Line 3. Did you file Form 8839 for a prior year for the same Child?
+			"1" // Yes. See instructions for the amount to enter. Line 3. Did you file Form 8839 for a prior year for the same Child?
 
 		// Line 3. Child 1. Did you file Form 8839 for a prior year for the same child? If No. Enter -0-. Yes. See instructions for the amount to enter
 		txtChildAmtFrPryr1?: #AMOUNT
@@ -123,9 +122,8 @@ import "strings"
 		txtFr8839Ln8?: strings.MaxRunes(10)
 
 		
-		// Line 8. Is line 7 more than $216, 660? If No. Skip lines 8 and 9, and enter -0- on line 10 - This field is automatically calculated for you
-		// Line 8. Is line 7 more than $216, 660? If Yes. Subtract $214, 520 from line 7 -  - This field is automatically calculated for you
-		chkFr8839Ln8Ind: "0" | "1"
+		chkFr8839Ln8Ind: "0" | // Line 8. Is line 7 more than $216, 660? If No. Skip lines 8 and 9, and enter -0- on line 10 - This field is automatically calculated for you
+			"1" // Line 8. Is line 7 more than $216, 660? If Yes. Subtract $214, 520 from line 7 -  - This field is automatically calculated for you
 
 		// Line 13. Credit carryforward, if any, from prior years. See your Adoption Credit Carryforward Worksheet in the 2020 Form 8839 instructions
 		txtFr8839Ln13?: #AMOUNT
@@ -136,9 +134,8 @@ import "strings"
 		txtFr8839Ln18?: strings.MaxRunes(10)
 
 		
-		// No. Enter -0-. Line 18. Did you receive employer-provided adoption benefits for a prior year for the same child?
-		// Yes. See instructions for the amount to enter. Line 18. Did you receive employer-provided adoption benefits for a prior year for the same child?
-		chkChildEmpBenPryrInd: "0" | "1"
+		chkChildEmpBenPryrInd: "0" | // No. Enter -0-. Line 18. Did you receive employer-provided adoption benefits for a prior year for the same child?
+			"1" // Yes. See instructions for the amount to enter. Line 18. Did you receive employer-provided adoption benefits for a prior year for the same child?
 
 		// Line 18. Child 1. Did you receive employer-provided adoption benefits for a prior year for the same child? . If No. Enter -0-. Yes. See instructions for the amount to enter
 		txtChildEmpBenPryr1?: #AMOUNT
@@ -181,14 +178,12 @@ import "strings"
 		txtFr8839Ln26?: strings.MaxRunes(10)
 
 		
-		// Line 24. No. Skip lines 24 and 25, and enter -0- on line 26 - This field is automatically calculated for you
-		// Line 24. Yes. Subtract $216, 660 from line 23 - This field is automatically calculated for you
-		chkFr8839Ln24Ind: "0" | "1"
+		chkFr8839Ln24Ind: "0" | // Line 24. No. Skip lines 24 and 25, and enter -0- on line 26 - This field is automatically calculated for you
+			"1" // Line 24. Yes. Subtract $216, 660 from line 23 - This field is automatically calculated for you
 
 		
-		// No. Subtract line 28 from line 21. Also, include this amount, if more than zero, on ine 1 of Form 1040 or 1040-SR or line 1a of Form 1040-NR - This field is automatically calculated for you
-		// Yes. Subtract line 21 from line 28. Enter the result as a negative number. Reduce the total you would enter on line 1 of Form 1040 or 1040-SR or line 1a of Form 1040-NR by the amount on Form 8839, line 29. - This field is automatically calculated for you
-		chkTaxBenLn29Ind: "0" | "1"
+		chkTaxBenLn29Ind: "0" | // No. Subtract line 28 from line 21. Also, include this amount, if more than zero, on ine 1 of Form 1040 or 1040-SR or line 1a of Form 1040-NR - This field is automatically calculated for you
+			"1" // Yes. Subtract line 21 from line 28. Enter the result as a negative number. Reduce the total you would enter on line 1 of Form 1040 or 1040-SR or line 1a of Form 1040-NR by the amount on Form 8839, line 29. - This field is automatically calculated for you
 
 		
 	}

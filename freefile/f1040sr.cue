@@ -6,16 +6,15 @@ import "strings"
 #f1040sr: {
 	#input: {
 		
-		// You were 65 or older
-		// You were under 65 and you retired on permanent and total disability
-		// Both spouses were 65 or older
-		// Both spouses were under 65, but only one spouse retired on permanent and total disability
-		// Both spouses were under 65, and both retired on permanent and total disability
-		// One spouse was 65 or older, and the other spouse was under 65 and retired on permanent and total disability
-		// One spouse was 65 or older, and the other spouse was under 65 and not retired on permanent and total disability
-		// You were 65 or older and you lived apart from your spouse for all of 2021
-		// You were under 65, you retired on permanent and total disability, and you lived apart from your spouse for all of 2021
-		chkPart: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+		chkPart: "1" | // You were 65 or older
+			"2" | // You were under 65 and you retired on permanent and total disability
+			"3" | // Both spouses were 65 or older
+			"4" | // Both spouses were under 65, but only one spouse retired on permanent and total disability
+			"5" | // Both spouses were under 65, and both retired on permanent and total disability
+			"6" | // One spouse was 65 or older, and the other spouse was under 65 and retired on permanent and total disability
+			"7" | // One spouse was 65 or older, and the other spouse was under 65 and not retired on permanent and total disability
+			"8" | // You were 65 or older and you lived apart from your spouse for all of 2021
+			"9" // You were under 65, you retired on permanent and total disability, and you lived apart from your spouse for all of 2021
 
 		// spouse name
 		txtSchrSpouseName?: #UPPERCASE

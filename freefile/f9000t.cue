@@ -6,13 +6,12 @@ package freefile
 #f9000t: {
 	#input: {
 		
-		// 00 Standard Print (Cancels prior election)
-		// 01 Large Print
-		// 02 Braille
-		// 03 Audio (MP3)
-		// 04 Plain Text File (TXT)
-		// 05 Braille Ready File (BRF)
-		chkF9000AlternativeMedCd: "00" | "01" | "02" | "03" | "04" | "05"
+		chkF9000AlternativeMedCd: "00" | // 00 Standard Print (Cancels prior election)
+			"01" | // 01 Large Print
+			"02" | // 02 Braille
+			"03" | // 03 Audio (MP3)
+			"04" | // 04 Plain Text File (TXT)
+			"05" // 05 Braille Ready File (BRF)
 
 		
 	}

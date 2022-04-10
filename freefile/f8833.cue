@@ -468,9 +468,8 @@ import "strings"
 		txtF8833PayerZip?: strings.MaxRunes(5)
 
 		
-		// disclosing a treaty-based return position
-		// disclosing a treaty-based return position
-		chkDisclosTrtySec3016114Ind: "1" | "0"
+		chkDisclosTrtySec3016114Ind: "1" | // disclosing a treaty-based return position
+			"0" // disclosing a treaty-based return position
 
 		
 		txtDisclosTrtySecExpl?: #UPPERCASE

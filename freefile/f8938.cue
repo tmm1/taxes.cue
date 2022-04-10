@@ -20,18 +20,16 @@ import "strings"
 		chkF8938FilerType: *"" | "1"
 
 		
-		// This field is automatically calculated for you
-		// This field is automatically calculated for you
-		chkF8938FdcAccloseindLn5: "1" | "0"
+		chkF8938FdcAccloseindLn5: "1" | // This field is automatically calculated for you
+			"0" // This field is automatically calculated for you
 
 		// This field is automatically calculated for you
 		txtF8938OfaAssetMaxValOthr?: #AMOUNT
 		txtF8938OfaAssetMaxValOthr?: strings.MaxRunes(10)
 
 		
-		// This field is automatically calculated for you
-		// This field is automatically calculated for you
-		chkF8938OfaAcqYrInd: "1" | "0"
+		chkF8938OfaAcqYrInd: "1" | // This field is automatically calculated for you
+			"0" // This field is automatically calculated for you
 
 		// Line 13a, Column (c) - Interest
 		txtF8938IntFdcAmt?: #AMOUNT
@@ -222,9 +220,8 @@ import "strings"
 		txtF89388865NoOfForms?: strings.MaxRunes(6)
 
 		
-		// Type of account - Deposit
-		// Type of account - Custodial
-		chkF8938FdcAcctTypeInd: "0" | "1"
+		chkF8938FdcAcctTypeInd: "0" | // Type of account - Deposit
+			"1" // Type of account - Custodial
 
 		// Account number or other designation
 		txtF8938FdcAcctNo?: #UPPERCASE
@@ -247,9 +244,8 @@ import "strings"
 		txtF8938FdcMaxVal?: strings.MaxRunes(10)
 
 		
-		// Yes -Did you use a foreign currency exchange rate to convert the value of the account into U. S . dollars?
-		// No - Did you use a foreign currency exchange rate to convert the value of the account into U. S . dollars?
-		chkF8938FdcExchangeInd: "1" | "0"
+		chkF8938FdcExchangeInd: "1" | // Yes -Did you use a foreign currency exchange rate to convert the value of the account into U. S . dollars?
+			"0" // No - Did you use a foreign currency exchange rate to convert the value of the account into U. S . dollars?
 
 		// Foreign currency in which account is maintained
 		txtF8938FdcCurrencyUsed?: #UPPERCASE
@@ -637,21 +633,19 @@ import "strings"
 		chkF8938OfaAccNotaxInd: *"" | "1"
 
 		
-		// $0�$50, 000 - Maximum value of asset during tax year (check box that applies)
-		// $50, 001�$100, 000 - Maximum value of asset during tax year (check box that applies)
-		// $100, 001�$150, 000  - Maximum value of asset during tax year (check box that applies)
-		// $150, 001�$200, 000 - Maximum value of asset during tax year (check box that applies)
-		// If more than $200, 000, list value
-		chkF8938OfaAssetMaxInd: "0" | "1" | "2" | "3" | "4"
+		chkF8938OfaAssetMaxInd: "0" | // $0�$50, 000 - Maximum value of asset during tax year (check box that applies)
+			"1" | // $50, 001�$100, 000 - Maximum value of asset during tax year (check box that applies)
+			"2" | // $100, 001�$150, 000  - Maximum value of asset during tax year (check box that applies)
+			"3" | // $150, 001�$200, 000 - Maximum value of asset during tax year (check box that applies)
+			"4" // If more than $200, 000, list value
 
 		// If more than $200, 000, list value
 		txtF8938OfaAssetMaxVal?: #AMOUNT
 		txtF8938OfaAssetMaxVal?: strings.MaxRunes(10)
 
 		
-		// Yes - Did you use a foreign currency exchange rate to convert the value of the asset into U. S . dollars?
-		// No - Did you use a foreign currency exchange rate to convert the value of the asset into U. S . dollars?
-		chkF8938OfaExchangeInd: "1" | "0"
+		chkF8938OfaExchangeInd: "1" | // Yes - Did you use a foreign currency exchange rate to convert the value of the asset into U. S . dollars?
+			"0" // No - Did you use a foreign currency exchange rate to convert the value of the asset into U. S . dollars?
 
 		// Foreign currency in which asset is denominated
 		txtF8938OfaCurrencyUsed?: #UPPERCASE
@@ -674,11 +668,10 @@ import "strings"
 		txtF8938OfaGiinNo?: strings.MaxRunes(19)
 
 		
-		// Partnership - Name of foreign entity
-		// Corporation - Name of foreign entity
-		// Trust - Name of foreign entity
-		// Estate - Name of foreign entity
-		chkF8938OfaForTypeInd: "0" | "1" | "2" | "3"
+		chkF8938OfaForTypeInd: "0" | // Partnership - Name of foreign entity
+			"1" | // Corporation - Name of foreign entity
+			"2" | // Trust - Name of foreign entity
+			"3" // Estate - Name of foreign entity
 
 		// Address
 		txtF8938OfaFfiAddrs?: #UPPERCASE
@@ -1028,22 +1021,19 @@ import "strings"
 		txtF8938OfaNtName?: strings.MaxRunes(22)
 
 		
-		// Check if issuer
-		// 
-		chkF8938OfaNtIssrInd: "0" | "1"
+		chkF8938OfaNtIssrInd: "0" | // Check if issuer
+			"1"
 
 		
-		// Individual - Type of issuer or counterparty
-		// Partnership - Type of issuer or counterparty
-		// Corporation - Type of issuer or counterparty
-		// Trust - Type of issuer or counterparty
-		// Estate - Type of issuer or counterparty
-		chkF8938OfaNtCountInd: "0" | "1" | "2" | "3" | "4"
+		chkF8938OfaNtCountInd: "0" | // Individual - Type of issuer or counterparty
+			"1" | // Partnership - Type of issuer or counterparty
+			"2" | // Corporation - Type of issuer or counterparty
+			"3" | // Trust - Type of issuer or counterparty
+			"4" // Estate - Type of issuer or counterparty
 
 		
-		// Check if issuer or counterparty is a US person
-		// Check if issuer or counterparty is a Foreign person
-		chkF8938OfaNtForIssrInd: "0" | "1"
+		chkF8938OfaNtForIssrInd: "0" | // Check if issuer or counterparty is a US person
+			"1" // Check if issuer or counterparty is a Foreign person
 
 		// Address
 		txtF8938OfaNtAddrs?: #UPPERCASE

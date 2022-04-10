@@ -55,10 +55,6 @@ files: [
 						// {{$f.title}}
 						{{- else if and (eq $f.type "check") (eq (len $f.options) 1) -}}
 						// {{(index $f.options 0).label}}
-						{{- else if eq $f.type "check" -}}
-						{{- range $o := $f.options}}
-						// {{$o.label}}
-						{{- end}}
 						{{- end}}
 						{{if eq $f.type "text" -}}
 						{{$f.name}}?: {{range $idx, $t := $f.tags}}{{if $idx}} | {{end}}#{{$t}}{{end}}
@@ -67,12 +63,7 @@ files: [
 						{{- end}}
 						{{- else if and (eq $f.type "check") (eq (len $f.options) 1) -}}
 						{{$f.name}}: *"" | "{{(index $f.options 0).value}}"
-						{{- else if eq $f.type "check" -}}
-						{{$f.name}}: {{range $idx, $o := $f.options -}}
-						{{if $idx}} | {{else if eq $o.value ""}}*{{end -}}
-						"{{$o.value}}"
-						{{- end}}
-						{{- else if eq $f.type "combo" -}}
+						{{- else if or (eq $f.type "combo") (eq $f.type "check") -}}
 						{{- $lastLabel := "" -}}
 						{{$f.name}}: {{range $idx, $o := $f.options -}}
 						{{if $idx}} |{{if $lastLabel}} // {{$lastLabel}}{{end}}

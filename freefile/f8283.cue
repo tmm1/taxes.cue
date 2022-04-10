@@ -621,18 +621,17 @@ import "strings"
 		txtMethodToDet5?: strings.MaxRunes(28)
 
 		
-		// Line 2 - A. Check the box that describes the type of property donated - Art* (contribution of $20, 000 or more)
-		// Line 2 - e. Check the box that describes the type of property donated - Other Real Estate
-		// Line 2 - i. Check the box that describes the type of property donated - Vehicles
-		// Line 2 - b. Check the box that describes the type of property donated - Qualified Conservation Contribution
-		// Line 2 - f. Check the box that describes the type of property donated - Securities
-		// Line 2 - j. Check the box that describes the type of property donated - Clothing and household items
-		// Line 2 - c. Check the box that describes the type of property donated - Equipment
-		// Line 2 - g. Check the box that describes the type of property donated - Collectibles**
-		// Line 2 - k. Check the box that describes the type of property donated - Other
-		// Line 2 - d. Check the box that describes the type of property donated - Art* (contribution of less than $20, 000)
-		// Line 2 - h. Check the box that describes the type of property donated - Intellectual Property
-		chkMore: "artmore" | "realestate" | "vehicle" | "contrib" | "securities" | "clothandhouse" | "computer" | "collectibles" | "other" | "artless" | "intellectproperty"
+		chkMore: "artmore" | // Line 2 - A. Check the box that describes the type of property donated - Art* (contribution of $20, 000 or more)
+			"realestate" | // Line 2 - e. Check the box that describes the type of property donated - Other Real Estate
+			"vehicle" | // Line 2 - i. Check the box that describes the type of property donated - Vehicles
+			"contrib" | // Line 2 - b. Check the box that describes the type of property donated - Qualified Conservation Contribution
+			"securities" | // Line 2 - f. Check the box that describes the type of property donated - Securities
+			"clothandhouse" | // Line 2 - j. Check the box that describes the type of property donated - Clothing and household items
+			"computer" | // Line 2 - c. Check the box that describes the type of property donated - Equipment
+			"collectibles" | // Line 2 - g. Check the box that describes the type of property donated - Collectibles**
+			"other" | // Line 2 - k. Check the box that describes the type of property donated - Other
+			"artless" | // Line 2 - d. Check the box that describes the type of property donated - Art* (contribution of less than $20, 000)
+			"intellectproperty" // Line 2 - h. Check the box that describes the type of property donated - Intellectual Property
 
 		// Line 3A(a) - Description of donated property (if you need more space, attach a separate statement)
 		txtDescripProp3_1?: #UPPERCASE
@@ -841,19 +840,16 @@ import "strings"
 		txtPartiiActualNamePoss?: strings.MaxRunes(50)
 
 		
-		// Yes - Line 5a. Is there a restriction, either temporary or permanent, on the donee's right to use or dispose of the donated property?
-		// No - Line 5a. Is there a restriction, either temporary or permanent, on the donee's right to use or dispose of the donated property?
-		chkPartiiRestrDonatedInd: "1" | "0"
+		chkPartiiRestrDonatedInd: "1" | // Yes - Line 5a. Is there a restriction, either temporary or permanent, on the donee's right to use or dispose of the donated property?
+			"0" // No - Line 5a. Is there a restriction, either temporary or permanent, on the donee's right to use or dispose of the donated property?
 
 		
-		// Yes - Line 5b. Did you give to anyone (other than the donee organization or another organization participating with the donee organization in cooperative fundraising) the right to the income from the donated property or to the possession of the property, including the right to vote donated securities, to acquire the property by purchase or otherwise, or to designate the person having such income, possession, or right to acquire?
-		// No - Line 5b. Did you give to anyone (other than the donee organization or another organization participating with the donee organization in cooperative fundraising) the right to the income from the donated property or to the possession of the property, including the right to vote donated securities, to acquire the property by purchase or otherwise, or to designate the person having such income, possession, or right to acquire?
-		chkPartiiOtherDoneeInd: "1" | "0"
+		chkPartiiOtherDoneeInd: "1" | // Yes - Line 5b. Did you give to anyone (other than the donee organization or another organization participating with the donee organization in cooperative fundraising) the right to the income from the donated property or to the possession of the property, including the right to vote donated securities, to acquire the property by purchase or otherwise, or to designate the person having such income, possession, or right to acquire?
+			"0" // No - Line 5b. Did you give to anyone (other than the donee organization or another organization participating with the donee organization in cooperative fundraising) the right to the income from the donated property or to the possession of the property, including the right to vote donated securities, to acquire the property by purchase or otherwise, or to designate the person having such income, possession, or right to acquire?
 
 		
-		// Yes - Line 5c. Is there a restriction limiting the donated property for a particular use?
-		// No - Line 5c. Is there a restriction limiting the donated property for a particular use?
-		chkPartiiRestLimitInd: "1" | "0"
+		chkPartiiRestLimitInd: "1" | // Yes - Line 5c. Is there a restriction limiting the donated property for a particular use?
+			"0" // No - Line 5c. Is there a restriction limiting the donated property for a particular use?
 
 		// Part III. I declare that the following item(s) included in Section B, Part I above has to the best of my knowledge and belief an appraised value of not more than $500 (per item). Enter identifying letter from Section B, Part I and describe the specific item. See instructions
 		txtP3DonorPropertyId?: #UPPERCASE
@@ -962,9 +958,8 @@ import "strings"
 		txtDateOfContPart5?: strings.MaxRunes(10)
 
 		
-		// Yes - Part V. Does the organization intend to use the property for an unrelated use?
-		// No - Part V. Does the organization intend to use the property for an unrelated use?
-		chkBUnrelatedpropertyPart5: "1" | "0"
+		chkBUnrelatedpropertyPart5: "1" | // Yes - Part V. Does the organization intend to use the property for an unrelated use?
+			"0" // No - Part V. Does the organization intend to use the property for an unrelated use?
 
 		// Part V - Name of charitable organization (donee)
 		txtNameDoneePart5?: #UPPERCASE

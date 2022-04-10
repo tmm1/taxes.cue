@@ -10,19 +10,16 @@ import "strings"
 		txtFschhtEin?: strings.MaxRunes(10)
 
 		
-		// Yes - Did you pay any one household employee cash wages of $2, 300 or more in 2021? (If any household employee was your spouse, your child under age 21, your parent, or anyone under age 18
-		// No - Did you pay any one household employee cash wages of $2, 300 or more in 2021? (If any household employee was your spouse, your child under age 21, your parent, or anyone under age 18
-		chkScheduleHQa1Ind: "1" | "0"
+		chkScheduleHQa1Ind: "1" | // Yes - Did you pay any one household employee cash wages of $2, 300 or more in 2021? (If any household employee was your spouse, your child under age 21, your parent, or anyone under age 18
+			"0" // No - Did you pay any one household employee cash wages of $2, 300 or more in 2021? (If any household employee was your spouse, your child under age 21, your parent, or anyone under age 18
 
 		
-		// Yes - Did you withhold federal income tax during 2021 for any household employee?
-		// No - Did you withhold federal income tax during 2021 for any household employee?
-		chkScheduleHQb1Ind: "1" | "0"
+		chkScheduleHQb1Ind: "1" | // Yes - Did you withhold federal income tax during 2021 for any household employee?
+			"0" // No - Did you withhold federal income tax during 2021 for any household employee?
 
 		
-		// No - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
-		// Yes - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
-		chkScheduleHQc1Ind: "0" | "1"
+		chkScheduleHQc1Ind: "0" | // No - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
+			"1" // Yes - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
 
 		// Total cash wages subject to social security tax
 		txtSchdhTotCashWagesSstax?: #AMOUNT
@@ -93,24 +90,20 @@ import "strings"
 		txtSchdhHlthExpFamlvAft?: strings.MaxRunes(10)
 
 		
-		// No - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
-		// Yes - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
-		chkSchdhLine9Ind: "0" | "1"
+		chkSchdhLine9Ind: "0" | // No - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
+			"1" // Yes - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
 
 		
-		// Yes - Did you pay unemployment contributions to only one state?
-		// No - Did you pay unemployment contributions to only one state?
-		chkSchdhUnempStInd: "1" | "0"
+		chkSchdhUnempStInd: "1" | // Yes - Did you pay unemployment contributions to only one state?
+			"0" // No - Did you pay unemployment contributions to only one state?
 
 		
-		// Yes - Did you pay all state unemployment contributions for 2021 by April 18, 2022?
-		// No - Did you pay all state unemployment contributions for 2021 by April 18, 2022?
-		chkSchdhUnempStContInd: "1" | "0"
+		chkSchdhUnempStContInd: "1" | // Yes - Did you pay all state unemployment contributions for 2021 by April 18, 2022?
+			"0" // No - Did you pay all state unemployment contributions for 2021 by April 18, 2022?
 
 		
-		// Yes - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?
-		// No - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?
-		chkSchdhUnempStTaxWagesInd: "1" | "0"
+		chkSchdhUnempStTaxWagesInd: "1" | // Yes - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?
+			"0" // No - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?
 
 		// Name of the state where you paid unemployment contributions
 		cboSchdhStateAbbr: *"" |
@@ -354,9 +347,8 @@ import "strings"
 		chkCrdtStateCnt: *"" | "1"
 
 		
-		// Yes - Are you required to file Form 1040?
-		// No - Are you required to file Form 1040?
-		chkSchdhLine28Ind: "1" | "0"
+		chkSchdhLine28Ind: "1" | // Yes - Are you required to file Form 1040?
+			"0" // No - Are you required to file Form 1040?
 
 		
 		txtSchdhPart4Address?: #UPPERCASE

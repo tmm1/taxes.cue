@@ -6,9 +6,8 @@ import "strings"
 #f8889s: {
 	#input: {
 		
-		// Line 1. Self-only. Check the box to indicate your coverage under a high-deductible health plan (HDHP) during 2021
-		// Line 1. Family. Check the box to indicate your coverage under a high-deductible health plan (HDHP) during 2021
-		chkF8889CovTypeP2IndPr: "S" | "F"
+		chkF8889CovTypeP2IndPr: "S" | // Line 1. Self-only. Check the box to indicate your coverage under a high-deductible health plan (HDHP) during 2021
+			"F" // Line 1. Family. Check the box to indicate your coverage under a high-deductible health plan (HDHP) during 2021
 
 		// Line 2. HSA contributions you made for 2021 (or those made on your behalf), including those made from  January 1, 2022, through April 15, 2022, that were for 2021. Do not include employer contributions, contributions through a cafeteria plan, or rollovers
 		txtF8889HsaContPr?: #AMOUNT

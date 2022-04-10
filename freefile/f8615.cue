@@ -22,12 +22,11 @@ import "strings"
 		txtF8615ParentSsn?: strings.MaxRunes(11)
 
 		
-		// Parent's Filing Status-Single
-		// Parent's Filing Status -Joint
-		// Parent's Filing Status -Separate
-		// Parent's Filing Status -head of household
-		// Parent's Filing Status-Qualifying widower
-		chkF8615ParFilStatus: "1" | "2" | "3" | "4" | "5"
+		chkF8615ParFilStatus: "1" | // Parent's Filing Status-Single
+			"2" | // Parent's Filing Status -Joint
+			"3" | // Parent's Filing Status -Separate
+			"4" | // Parent's Filing Status -head of household
+			"5" // Parent's Filing Status-Qualifying widower
 
 		// Enter your unearned income
 		txtF8615ChildInvInc?: #AMOUNT
@@ -57,9 +56,8 @@ import "strings"
 		txtF8615SubTotTax?: strings.MaxRunes(10)
 
 		
-		// 
-		// 
-		chkF8615ParCapGainInd: "1" | "1"
+		chkF8615ParCapGainInd: "1" |
+			"1"
 
 		// Enter the parent�s tax from Form 1040 or 1040-NR, line 16, minus any alternative minimum tax
 		txtF8615ParTax?: #AMOUNT

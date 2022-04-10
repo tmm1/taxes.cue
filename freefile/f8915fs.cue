@@ -9,12 +9,11 @@ import "strings"
 		chkF8915Ftaxyear: *"" | "2021"
 
 		
-		// Calendar year in which disaster occurred
-		// Calendar year in which disaster occurred
-		// Calendar year in which disaster occurred
-		// Calendar year in which disaster occurred
-		// Calendar year in which disaster occurred
-		chkF8915FCalenderYear: "2020" | "2021" | "2022" | "2023" | "2024"
+		chkF8915FCalenderYear: "2020" | // Calendar year in which disaster occurred
+			"2021" | // Calendar year in which disaster occurred
+			"2022" | // Calendar year in which disaster occurred
+			"2023" | // Calendar year in which disaster occurred
+			"2024" // Calendar year in which disaster occurred
 
 		// Line B. Calendar year in which disaster occurred
 		txtF8915FCalenderYear?: #NUMERIC

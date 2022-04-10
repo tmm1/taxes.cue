@@ -68,14 +68,12 @@ import "strings"
 		txtNontaxCombatPayElect?: strings.MaxRunes(10)
 
 		
-		// Line 19. Is the amount on line 18a more than $2, 500?
-		// Is the amount on line 18a more than $2, 500?
-		chkActc5: "0" | "1"
+		chkActc5: "0" | // Line 19. Is the amount on line 18a more than $2, 500?
+			"1" // Is the amount on line 18a more than $2, 500?
 
 		
-		// This field is automatically calculated for you
-		// This field is automatically calculated for you
-		chkActc6: "0" | "1"
+		chkActc6: "0" | // This field is automatically calculated for you
+			"1" // This field is automatically calculated for you
 
 		// Withheld social security, Medicare, and Additional Medicare taxes from Form(s) W-2, boxes 4 and 6. If married filing jointly, include your spouse�s amounts with yours. If your employer withheld or you paid Additional Medicare Tax or tier 1 RRTA taxes, see  instructions
 		txtActc7?: #AMOUNT

@@ -6,14 +6,12 @@ import "strings"
 #f1040se1: {
 	#input: {
 		
-		// Income or Loss From Rental Real Estate and Royalties Note: If you are in the business of renting personal property, use Schedule C. See instructions. If you are an individual, report farm rental income or loss from Form 4835 on page 2, line 40. Yes -  Did you make any payments in 2020 that would require you to file Form(s) 1099? See instructions
-		// Income or Loss From Rental Real Estate and Royalties Note: If you are in the business of renting personal property, use Schedule C. See instructions. If you are an individual, report farm rental income or loss from Form 4835 on page 2, line 40. No -  Did you make any payments in 2020 that would require you to file Form(s) 1099? See instructions
-		chkMakePay1099Ind: "1" | "0"
+		chkMakePay1099Ind: "1" | // Income or Loss From Rental Real Estate and Royalties Note: If you are in the business of renting personal property, use Schedule C. See instructions. If you are an individual, report farm rental income or loss from Form 4835 on page 2, line 40. Yes -  Did you make any payments in 2020 that would require you to file Form(s) 1099? See instructions
+			"0" // Income or Loss From Rental Real Estate and Royalties Note: If you are in the business of renting personal property, use Schedule C. See instructions. If you are an individual, report farm rental income or loss from Form 4835 on page 2, line 40. No -  Did you make any payments in 2020 that would require you to file Form(s) 1099? See instructions
 
 		
-		// Yes - B. If 'Yes', did you or will you file required Form(s) 1099?
-		// Yes - B. If 'No', did you or will you file required Form(s) 1099?
-		chkReqForm1099Ind: "1" | "0"
+		chkReqForm1099Ind: "1" | // Yes - B. If 'Yes', did you or will you file required Form(s) 1099?
+			"0" // Yes - B. If 'No', did you or will you file required Form(s) 1099?
 
 		// Line 1a. Physical address of each property
 		txtScheStreetAddressA?: #UPPERCASE

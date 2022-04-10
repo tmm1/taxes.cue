@@ -6,10 +6,9 @@ import "strings"
 #f8949st: {
 	#input: {
 		
-		// (A) Short-term transactions reported on Form(s) 1099-B showing basis was reported to the IRS
-		// (B) Short-term transactions reported on Form(s) 1099-B showing basis wasn't reported to the IRS
-		// (C) Short-term transactions not reported to you on Form 1099-B
-		chkF1099BInd: "0" | "1" | "2"
+		chkF1099BInd: "0" | // (A) Short-term transactions reported on Form(s) 1099-B showing basis was reported to the IRS
+			"1" | // (B) Short-term transactions reported on Form(s) 1099-B showing basis wasn't reported to the IRS
+			"2" // (C) Short-term transactions not reported to you on Form 1099-B
 
 		// Line 1(a). Row 1. Description of property (Example: 100 sh. XYZ Co. )
 		txtDescrip1?: #UPPERCASE

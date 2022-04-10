@@ -6,12 +6,11 @@ import "strings"
 #f3800mlt: {
 	#input: {
 		
-		// Line A  General Business Credit From a Non-Passive Activity
-		// Line B  General Business Credit From a Passive Activity
-		// Line C General Business Credit Carryforwards
-		// Line G Eligible Small Business Credit Carryforwards
-		// Line D General Business Credit Carrybacks
-		chkF3800P3BoxType: "A" | "B" | "C" | "G" | "D"
+		chkF3800P3BoxType: "A" | // Line A  General Business Credit From a Non-Passive Activity
+			"B" | // Line B  General Business Credit From a Passive Activity
+			"C" | // Line C General Business Credit Carryforwards
+			"G" | // Line G Eligible Small Business Credit Carryforwards
+			"D" // Line D General Business Credit Carrybacks
 
 		// If you are filing more than one Part III with box A or B checked, complete and attach first an additional Part III combining amounts from all Parts III with box A or B checked. Check here if this is the consolidated Part III
 		chkF3800P3BoxTypeI: *"" | "1"

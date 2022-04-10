@@ -29,12 +29,11 @@ import "strings"
 		txtincareofName?: strings.MaxRunes(35)
 
 		
-		// Filing status. Check onlyone box - Single
-		// Filing status. Check onlyone box - Married Filing Jointly
-		// Filing status. Check onlyone box - Married Filing Separate
-		// Filing status. Check onlyone box - Head of Household
-		// Filing status. Check onlyone box - Qualifying Widow(er)
-		chkFilingStatus: "single" | "joint" | "separate" | "hoh" | "widow"
+		chkFilingStatus: "single" | // Filing status. Check onlyone box - Single
+			"joint" | // Filing status. Check onlyone box - Married Filing Jointly
+			"separate" | // Filing status. Check onlyone box - Married Filing Separate
+			"hoh" | // Filing status. Check onlyone box - Head of Household
+			"widow" // Filing status. Check onlyone box - Qualifying Widow(er)
 
 		// Enter Person's First Name
 		txtQualFirstName?: #UPPERCASE
@@ -434,9 +433,8 @@ import "strings"
 		txtForeignZip?: strings.MaxRunes(10)
 
 		
-		// Yes - At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
-		// No -At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
-		rdoVirtCurrency: "1" | "0"
+		rdoVirtCurrency: "1" | // Yes - At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
+			"0" // No -At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
 
 		// Standard Deduction. Someone can claim: You as a dependent
 		chkExemptInd: *"" | "1"
@@ -839,9 +837,8 @@ import "strings"
 		txtRoutingNbr?: strings.MaxRunes(9)
 
 		
-		// Line 35c. Account Type - Checking
-		// Line 35c. Account Type - Savings
-		chkAccountType: "C" | "S"
+		chkAccountType: "C" | // Line 35c. Account Type - Checking
+			"S" // Line 35c. Account Type - Savings
 
 		// Line 35d. Account Number
 		txtAccountNbr?: #UPPERCASE
@@ -852,9 +849,8 @@ import "strings"
 		txtNstyresttax?: strings.MaxRunes(10)
 
 		
-		// Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - Yes
-		// Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - No
-		chkDiscussInd: "1" | "0"
+		chkDiscussInd: "1" | // Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - Yes
+			"0" // Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - No
 
 		// Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - Name
 		txtDesigneeName?: #UPPERCASE

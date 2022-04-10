@@ -25,14 +25,12 @@ import "strings"
 		txtDateSold?: strings.MaxRunes(10)
 
 		
-		// Line 3. Yes. Was the property sold to a related party (see instructions) after May 14, 1980? If �No, � skip line 4
-		// Line 3. No. Was the property sold to a related party (see instructions) after May 14, 1980? If �No, � skip line 4
-		chkWasSoldRelParty: "1" | "0"
+		chkWasSoldRelParty: "1" | // Line 3. Yes. Was the property sold to a related party (see instructions) after May 14, 1980? If �No, � skip line 4
+			"0" // Line 3. No. Was the property sold to a related party (see instructions) after May 14, 1980? If �No, � skip line 4
 
 		
-		// Line 4. Yes. Was the property you sold to a related party a marketable security? If �Yes, � complete Part III. If �No, � complete Part III for the year of sale and the 2 years after the year of sale
-		// Line 4. No. Was the property you sold to a related party a marketable security? If �Yes, � complete Part III. If �No, � complete Part III for the year of sale and the 2 years after the year of sale
-		chkWasMarkSec: "1" | "0"
+		chkWasMarkSec: "1" | // Line 4. Yes. Was the property you sold to a related party a marketable security? If �Yes, � complete Part III. If �No, � complete Part III for the year of sale and the 2 years after the year of sale
+			"0" // Line 4. No. Was the property you sold to a related party a marketable security? If �Yes, � complete Part III. If �No, � complete Part III for the year of sale and the 2 years after the year of sale
 
 		// Line 5. Selling price including mortgages and other debts. Don't include interest, whether stated or unstated
 		txtSellPriceIncMort?: #AMOUNT
@@ -157,9 +155,8 @@ import "strings"
 		txtRelParSsn?: strings.MaxRunes(10)
 
 		
-		// Line 28. Yes. Did the related party resell or dispose of the property (�second disposition�) during this tax year?
-		// Line 28. No. Did the related party resell or dispose of the property (�second disposition�) during this tax year?
-		chkReselDispDuryrInd: "1" | "0"
+		chkReselDispDuryrInd: "1" | // Line 28. Yes. Did the related party resell or dispose of the property (�second disposition�) during this tax year?
+			"0" // Line 28. No. Did the related party resell or dispose of the property (�second disposition�) during this tax year?
 
 		// Line 29. If the answer to question 28 is �Yes, � complete lines 30 through 37 below unless one of the following conditions is met. Check the box that applies. a . The second disposition was more than 2 years after the first disposition (other than dispositions of marketable securities)
 		chkSecDispMore2YrInd: *"" | "1"

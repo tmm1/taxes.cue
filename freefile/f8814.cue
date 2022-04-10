@@ -45,9 +45,8 @@ import "strings"
 		txtChildCapGainDist?: strings.MaxRunes(10)
 
 		
-		// This field is automatically calculated for you
-		// This field is automatically calculated for you
-		chkTaxInd: "0" | "1"
+		chkTaxInd: "0" | // This field is automatically calculated for you
+			"1" // This field is automatically calculated for you
 
 		
 	}

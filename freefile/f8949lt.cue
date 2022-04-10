@@ -6,10 +6,9 @@ import "strings"
 #f8949lt: {
 	#input: {
 		
-		// (A) Long-term transactions reported on Form(s) 1099-B showing basis was reported to the IRS
-		// (B) Long-term transactions reported on Form(s) 1099-B showing basis wasn't reported to the IRS
-		// (C) Long-term transactions not reported to you on Form 1099-B
-		chkF1099BInd: "0" | "1" | "2"
+		chkF1099BInd: "0" | // (A) Long-term transactions reported on Form(s) 1099-B showing basis was reported to the IRS
+			"1" | // (B) Long-term transactions reported on Form(s) 1099-B showing basis wasn't reported to the IRS
+			"2" // (C) Long-term transactions not reported to you on Form 1099-B
 
 		// Line 1(a). Row 1. Description of property (Example: 100 sh. XYZ Co. )
 		txtDescrip1?: #UPPERCASE

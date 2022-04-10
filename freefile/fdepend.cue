@@ -47,9 +47,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		// Check if dependent qualifies for: Child tax credit
-		// Check if dependent qualifies for: Credit for other dependents
-		chkChildTaxCredIndR1: "1" | "0"
+		chkChildTaxCredIndR1: "1" | // Check if dependent qualifies for: Child tax credit
+			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
 		txtDepIPPINR1?: #NUMERIC
@@ -97,9 +96,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		// Check if dependent qualifies for: Child tax credit
-		// Check if dependent qualifies for: Credit for other dependents
-		chkChildTaxCredIndR2: "1" | "0"
+		chkChildTaxCredIndR2: "1" | // Check if dependent qualifies for: Child tax credit
+			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
 		txtDepIPPINR2?: #NUMERIC
@@ -147,9 +145,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		// Check if dependent qualifies for: Child tax credit
-		// Check if dependent qualifies for: Credit for other dependents
-		chkChildTaxCredIndR3: "1" | "0"
+		chkChildTaxCredIndR3: "1" | // Check if dependent qualifies for: Child tax credit
+			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
 		txtDepIPPINR3?: #NUMERIC
@@ -197,9 +194,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		// Check if dependent qualifies for: Child tax credit
-		// Check if dependent qualifies for: Credit for other dependents
-		chkChildTaxCredIndR4: "1" | "0"
+		chkChildTaxCredIndR4: "1" | // Check if dependent qualifies for: Child tax credit
+			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
 		txtDepIPPINR4?: #NUMERIC
@@ -247,9 +243,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		// Check if dependent qualifies for: Child tax credit
-		// Check if dependent qualifies for: Credit for other dependents
-		chkChildTaxCredIndR5: "1" | "0"
+		chkChildTaxCredIndR5: "1" | // Check if dependent qualifies for: Child tax credit
+			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Enter dependent IP PINDependents - Enter IP PIN
 		txtDepIPPINR5?: #NUMERIC
@@ -297,9 +292,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		// Check if dependent qualifies for: Child tax credit
-		// Check if dependent qualifies for: Credit for other dependents
-		chkChildTaxCredIndR6: "1" | "0"
+		chkChildTaxCredIndR6: "1" | // Check if dependent qualifies for: Child tax credit
+			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
 		txtDepIPPINR6?: #NUMERIC
@@ -347,9 +341,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		// Check if dependent qualifies for: Child tax credit
-		// Check if dependent qualifies for: Credit for other dependents
-		chkChildTaxCredIndR7: "1" | "0"
+		chkChildTaxCredIndR7: "1" | // Check if dependent qualifies for: Child tax credit
+			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
 		txtDepIPPINR7?: #NUMERIC
@@ -397,9 +390,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		// Check if dependent qualifies for: Child tax credit
-		// Check if dependent qualifies for: Credit for other dependents
-		chkChildTaxCredIndR8: "1" | "0"
+		chkChildTaxCredIndR8: "1" | // Check if dependent qualifies for: Child tax credit
+			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
 		txtDepIPPINR8?: #NUMERIC
@@ -447,9 +439,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		// Check if dependent qualifies for: Child tax credit
-		// Check if dependent qualifies for: Credit for other dependents
-		chkChildTaxCredIndR9: "1" | "0"
+		chkChildTaxCredIndR9: "1" | // Check if dependent qualifies for: Child tax credit
+			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
 		txtDepIPPINR9?: #NUMERIC
@@ -497,9 +488,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		// Check if depCheck if dependent qualifies for: Child tax credit
-		// Check if dependent qualifies for: Credit for other dependents
-		chkChildTaxCredIndR10: "1" | "0"
+		chkChildTaxCredIndR10: "1" | // Check if depCheck if dependent qualifies for: Child tax credit
+			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
 		txtDepIPPINR10?: #NUMERIC

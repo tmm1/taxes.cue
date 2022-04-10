@@ -9,12 +9,11 @@ import "strings"
 		chkF8915Ftaxyear: *"" | "2021"
 
 		
-		// Calendar year in which disaster occurred
-		// Calendar year in which disaster occurred
-		// Calendar year in which disaster occurred
-		// Calendar year in which disaster occurred
-		// Calendar year in which disaster occurred
-		chkF8915FCalenderYear: "2020" | "2021" | "2022" | "2023" | "2024"
+		chkF8915FCalenderYear: "2020" | // Calendar year in which disaster occurred
+			"2021" | // Calendar year in which disaster occurred
+			"2022" | // Calendar year in which disaster occurred
+			"2023" | // Calendar year in which disaster occurred
+			"2024" // Calendar year in which disaster occurred
 
 		// Line B. Calendar year in which disaster occurred
 		txtF8915FCalenderYear?: #NUMERIC
@@ -119,9 +118,8 @@ import "strings"
 		txtIncProdPropShort?: strings.MaxRunes(10)
 
 		
-		// This field is automatically calculated for you
-		// This field is automatically calculated for you
-		chkF8915FQualDistRetInd: "0" | "1"
+		chkF8915FQualDistRetInd: "0" | // This field is automatically calculated for you
+			"1" // This field is automatically calculated for you
 
 		// Line  9. Enter the applicable cost of distributions, if any
 		txtF8915FAppCostOfDist?: #AMOUNT
@@ -139,14 +137,12 @@ import "strings"
 		txtF8915FAmtRepaymtPrt2?: strings.MaxRunes(10)
 
 		
-		// This field is automatically calculated for you
-		// This field is automatically calculated for you
-		chkF8915FQualDistSepIra: "1" | "0"
+		chkF8915FQualDistSepIra: "1" | // This field is automatically calculated for you
+			"0" // This field is automatically calculated for you
 
 		
-		// Line 17. Did you receive a qualified disaster distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required to be reported on this year�s Form 8606? - Yes
-		// Line 17. Did you receive a qualified disaster distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required  to be reported on this year�s Form 8606? - No
-		chkF8915FQualDistSep8606: "1" | "0"
+		chkF8915FQualDistSep8606: "1" | // Line 17. Did you receive a qualified disaster distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required to be reported on this year�s Form 8606? - Yes
+			"0" // Line 17. Did you receive a qualified disaster distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required  to be reported on this year�s Form 8606? - No
 
 		// Line 18. Enter the amount, if any, from this year�s Form 8606, line 15b. But if you are entering amounts here and on other Forms 8915-F for this year, only enter on line 18 the amount on Form 8606, line 15b, attributable to Form 8915-F distributions for this form
 		txtF8915FAmtfrm8606Ln15B?: #AMOUNT
@@ -188,9 +184,8 @@ import "strings"
 		txtF8915FP4LastDisDate?: strings.MaxRunes(10)
 
 		
-		// Yes - Line 27. Did you receive a qualified distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required to be reported on this year's Form 8606?
-		// No - Line 27. Did you receive a qualified distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required to be reported on this year's Form 8606?
-		chkF8915FP4DistSep8606: "1" | "0"
+		chkF8915FP4DistSep8606: "1" | // Yes - Line 27. Did you receive a qualified distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required to be reported on this year's Form 8606?
+			"0" // No - Line 27. Did you receive a qualified distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required to be reported on this year's Form 8606?
 
 		// Line 28. Enter the total amount of qualified distributions you received this year for the purchase or construction of a main home. Don't include any amounts reported on this year's Form 8606. Also, don't include any distributions you reported on line 8 or 20, or on other Forms 8915 for this year, if any
 		txtF8915FP4TotRetIra?: #AMOUNT

@@ -150,19 +150,16 @@ import "strings"
 		txtF8594Cl67AlocsalAmt?: strings.MaxRunes(10)
 
 		
-		// Line 5. Yes - Did the purchaser and seller provide for an allocation of the sales price in the sales contract or in another written document signed by both parties?
-		// Line 5. No - Did the purchaser and seller provide for an allocation of the sales price in the sales contract or in another written document signed by both parties?
-		chkF8594WrittenDocInd: "1" | "0"
+		chkF8594WrittenDocInd: "1" | // Line 5. Yes - Did the purchaser and seller provide for an allocation of the sales price in the sales contract or in another written document signed by both parties?
+			"0" // Line 5. No - Did the purchaser and seller provide for an allocation of the sales price in the sales contract or in another written document signed by both parties?
 
 		
-		// Line 5. If Yes - aggregate FMV classes I, II, III, IV, V , VI, VII  the amounts agreed upon in your sales contract or in a seperate written document?
-		// Line 5. No - aggregate FMV classes I, II, III, IV, V , VI, VII  the amounts agreed upon in your sales contract or in a seperate written document?
-		chkF8594SepwriteDocInd: "1" | "0"
+		chkF8594SepwriteDocInd: "1" | // Line 5. If Yes - aggregate FMV classes I, II, III, IV, V , VI, VII  the amounts agreed upon in your sales contract or in a seperate written document?
+			"0" // Line 5. No - aggregate FMV classes I, II, III, IV, V , VI, VII  the amounts agreed upon in your sales contract or in a seperate written document?
 
 		
-		// Line 6. Yes - In the purchase of the group of assets (or stock), did the purchaser also purchase a license or a covenant not to compete, or enter into a lease agreement, employment contract, management contract, or similar arrangement with the seller
-		// Line 6. No - In the purchase of the group of assets (or stock), did the purchaser also purchase a license or a covenant not to compete, or enter into a lease agreement, employment contract, management contract, or similar arrangement with the seller
-		chkF8594NottoCompeteInd: "1" | "0"
+		chkF8594NottoCompeteInd: "1" | // Line 6. Yes - In the purchase of the group of assets (or stock), did the purchaser also purchase a license or a covenant not to compete, or enter into a lease agreement, employment contract, management contract, or similar arrangement with the seller
+			"0" // Line 6. No - In the purchase of the group of assets (or stock), did the purchaser also purchase a license or a covenant not to compete, or enter into a lease agreement, employment contract, management contract, or similar arrangement with the seller
 
 		// Line 7. Enter Taxyear
 		txtF8594SuppTaxyr?: #NUMERIC

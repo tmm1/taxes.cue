@@ -38,9 +38,8 @@ import "strings"
 		txtDatePropReceived?: strings.MaxRunes(10)
 
 		
-		// Line 7. Was the exchange of the property given up or received made with a related party, either directly or indirectly (such as through an intermediary)? See instructions. If �Yes, � complete Part II. If �No, � go to Part III
-		// Line 7. Was the exchange of the property given up or received made with a related party, either directly or indirectly (such as through an intermediary)? See instructions. If �Yes, � complete Part II. If �No, � go to Part III
-		chkWasRelPartyInd: "1" | "0"
+		chkWasRelPartyInd: "1" | // Line 7. Was the exchange of the property given up or received made with a related party, either directly or indirectly (such as through an intermediary)? See instructions. If �Yes, � complete Part II. If �No, � go to Part III
+			"0" // Line 7. Was the exchange of the property given up or received made with a related party, either directly or indirectly (such as through an intermediary)? See instructions. If �Yes, � complete Part II. If �No, � go to Part III
 
 		// Part 2. Related Party Exchange Information. Line 8. Name of related party
 		txtNameRelParty?: #UPPERCASE
@@ -133,20 +132,17 @@ import "strings"
 		txtRelZipExt?: strings.MaxRunes(4)
 
 		
-		// Line 9. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did the related party sell or dispose of any part of the like-kind property received from you (or an intermediary) in the exchange?
-		// Line 9. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did the related party sell or dispose of any part of the like-kind property received from you (or an intermediary) in the exchange?
-		chkDurYrRelPartySellInd: "1" | "0"
+		chkDurYrRelPartySellInd: "1" | // Line 9. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did the related party sell or dispose of any part of the like-kind property received from you (or an intermediary) in the exchange?
+			"0" // Line 9. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did the related party sell or dispose of any part of the like-kind property received from you (or an intermediary) in the exchange?
 
 		
-		// Line 10. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did you sell or dispose of any part of the like-kind property you received?
-		// Line 10. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did you sell or dispose of any part of the like-kind property you received?
-		chkDurYrTaxpayerSellInd: "1" | "0"
+		chkDurYrTaxpayerSellInd: "1" | // Line 10. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did you sell or dispose of any part of the like-kind property you received?
+			"0" // Line 10. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did you sell or dispose of any part of the like-kind property you received?
 
 		
-		// Line 11a. The disposition was after the death of either of the related parties
-		// Line 11b. The disposition was an involuntary conversion, and the threat of conversion occurred after the exchange
-		// Line 11c. You can establish to the satisfaction of the IRS that neither the exchange nor the disposition had tax avoidance as one of  its principal purposes. If this box is checked, attach an explanation. See instructions
-		chkDisposInd: "1" | "2" | "3"
+		chkDisposInd: "1" | // Line 11a. The disposition was after the death of either of the related parties
+			"2" | // Line 11b. The disposition was an involuntary conversion, and the threat of conversion occurred after the exchange
+			"3" // Line 11c. You can establish to the satisfaction of the IRS that neither the exchange nor the disposition had tax avoidance as one of  its principal purposes. If this box is checked, attach an explanation. See instructions
 
 		// Line 12. Fair market value (FMV) of other property given up
 		txtFMVPropGivenup?: #AMOUNT

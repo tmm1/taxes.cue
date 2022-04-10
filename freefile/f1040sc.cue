@@ -104,32 +104,28 @@ import "strings"
 		txtSchcBusinessZip?: strings.MaxRunes(5)
 
 		
-		// Cash. - Line F. Accounting method
-		// Accrual - Line F. Accounting method
-		// Other (specify) - Line F. Accounting method
-		chkSchCAccountingMtd: "0" | "1" | "2"
+		chkSchCAccountingMtd: "0" | // Cash. - Line F. Accounting method
+			"1" | // Accrual - Line F. Accounting method
+			"2" // Other (specify) - Line F. Accounting method
 
 		// Line F(3). Other accounting method description
 		txtSchCAccMtdOther?: #UPPERCASE
 		txtSchCAccMtdOther?: strings.MaxRunes(20)
 
 		
-		// Yes. - Line G. Did you 'materially participate' in the operation of this business during 2021? If 'No, ' see instructions for limit on losses
-		// No. - Line G. Did you 'materially participate' in the operation of this business during 2021? If 'No, ' see instructions for limit on losses
-		chkSchCMaterPartInd: "1" | "0"
+		chkSchCMaterPartInd: "1" | // Yes. - Line G. Did you 'materially participate' in the operation of this business during 2021? If 'No, ' see instructions for limit on losses
+			"0" // No. - Line G. Did you 'materially participate' in the operation of this business during 2021? If 'No, ' see instructions for limit on losses
 
 		// Line H. If you started or acquired this business during 2021, check here
 		chkSchCStartedAcquiredInd: *"" | "1"
 
 		
-		// Yes. - Line I. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions
-		// No. - Line I. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions
-		chkMakePayInd: "1" | "0"
+		chkMakePayInd: "1" | // Yes. - Line I. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions
+			"0" // No. - Line I. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions
 
 		
-		// Yes. - Line J. If 'Yes, ' did you or will you file required Form(s) 1099? 
-		// No. - Line J. If 'Yes, ' did you or will you file required Form(s) 1099? 
-		chkReqForm1099Ind: "1" | "0"
+		chkReqForm1099Ind: "1" | // Yes. - Line J. If 'Yes, ' did you or will you file required Form(s) 1099? 
+			"0" // No. - Line J. If 'Yes, ' did you or will you file required Form(s) 1099? 
 
 		// Line 1. if this income was reported to you on Form W-2 and the 'Statutory employee' box on that form was checked. Check here
 		chkSchcStatutoryEmpInd: *"" | "1"
@@ -255,20 +251,17 @@ import "strings"
 		txtSchcNetProfitLoss?: strings.MaxRunes(10)
 
 		
-		// Line 32a. If you have a loss, check the box that describes your investment in this activity. See instructions. All investment is at risk
-		// Line 32b. If you have a loss, check the box that describes your investment in this activity. See instructions. Some investment is not at risk
-		chkRiskInd: "1" | "2"
+		chkRiskInd: "1" | // Line 32a. If you have a loss, check the box that describes your investment in this activity. See instructions. All investment is at risk
+			"2" // Line 32b. If you have a loss, check the box that describes your investment in this activity. See instructions. Some investment is not at risk
 
 		
-		// Part 3. Cost of Goods Sold (see instructions). Cost - Line 33a. Method(s) used to value closing inventory
-		// Part 3. Cost of Goods Sold (see instructions). Lower of cost or market - Line 33b. Method(s) used to value closing inventory
-		// Part 3. Cost of Goods Sold (see instructions). Othere - Line 33c. Method(s) used to value closing inventory
-		chkSchCClosingInventMtd: "0" | "1" | "2"
+		chkSchCClosingInventMtd: "0" | // Part 3. Cost of Goods Sold (see instructions). Cost - Line 33a. Method(s) used to value closing inventory
+			"1" | // Part 3. Cost of Goods Sold (see instructions). Lower of cost or market - Line 33b. Method(s) used to value closing inventory
+			"2" // Part 3. Cost of Goods Sold (see instructions). Othere - Line 33c. Method(s) used to value closing inventory
 
 		
-		// Yes. - Line 34. Was there any change in determining quantities, costs, or valuations between opening and closing inventory?
-		// No. - Line 34. Was there any change in determining quantities, costs, or valuations between opening and closing inventory?
-		chkSchCChgeQuanCostInd: "1" | "0"
+		chkSchCChgeQuanCostInd: "1" | // Yes. - Line 34. Was there any change in determining quantities, costs, or valuations between opening and closing inventory?
+			"0" // No. - Line 34. Was there any change in determining quantities, costs, or valuations between opening and closing inventory?
 
 		// LIne 35. Inventory at beginning of year. If different from last year's closing inventory, attach explanation
 		txtSchCInventBegin?: #AMOUNT
@@ -311,24 +304,20 @@ import "strings"
 		txtSchcNumMilesOtherBfrSep?: strings.MaxRunes(12)
 
 		
-		// Yes. - Line 45. Was your vehicle available for personal use during off-duty hours?
-		// No. - Line 45. Was your vehicle available for personal use during off-duty hours?
-		chkSchCVehOffDutyHours: "1" | "0"
+		chkSchCVehOffDutyHours: "1" | // Yes. - Line 45. Was your vehicle available for personal use during off-duty hours?
+			"0" // No. - Line 45. Was your vehicle available for personal use during off-duty hours?
 
 		
-		// Yes. - Line 46. Do you (or your spouse) have another vehicle available for personal use?
-		// No. - Line 46. Do you (or your spouse) have another vehicle available for personal use?
-		chkSchCAnotherVehPers: "1" | "0"
+		chkSchCAnotherVehPers: "1" | // Yes. - Line 46. Do you (or your spouse) have another vehicle available for personal use?
+			"0" // No. - Line 46. Do you (or your spouse) have another vehicle available for personal use?
 
 		
-		// Yes. - Line 47a. Do you have evidence to support your deduction?
-		// No. - Line 47a. Do you have evidence to support your deduction?
-		chkSchCEvidenceDed: "1" | "0"
+		chkSchCEvidenceDed: "1" | // Yes. - Line 47a. Do you have evidence to support your deduction?
+			"0" // No. - Line 47a. Do you have evidence to support your deduction?
 
 		
-		// Yes. - Line 47b. If 'Yes, ' is the evidence written?
-		// No. - Line 47b. If 'Yes, ' is the evidence written?
-		chkSchCEvedenceWritten: "1" | "0"
+		chkSchCEvedenceWritten: "1" | // Yes. - Line 47b. If 'Yes, ' is the evidence written?
+			"0" // No. - Line 47b. If 'Yes, ' is the evidence written?
 
 		// Part 5. Other Expenses. List below business expenses not included on lines 8-26 or line 30. Row1. Description
 		txtSchdcOtherExpenseDesc1?: #UPPERCASE

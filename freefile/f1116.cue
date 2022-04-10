@@ -6,14 +6,13 @@ import "strings"
 #f1116: {
 	#input: {
 		
-		// a . Section 951A category income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
-		// c . Passive category income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
-		// e . Section 901(j) income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
-		// g . Lump-sum distributions. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
-		// b . Foreign branch category income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
-		// d . General category income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
-		// f . Certain income re-sourced by treaty. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
-		chkF1116ForeigntxTyinc: "4" | "0" | "7" | "6" | "5" | "9" | "8"
+		chkF1116ForeigntxTyinc: "4" | // a . Section 951A category income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
+			"0" | // c . Passive category income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
+			"7" | // e . Section 901(j) income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
+			"6" | // g . Lump-sum distributions. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
+			"5" | // b . Foreign branch category income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
+			"9" | // d . General category income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
+			"8" // f . Certain income re-sourced by treaty. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
 
 		// Line f. Resident of (name of country)
 		cboF1116ResidentCountry: *"" |
@@ -1196,9 +1195,8 @@ import "strings"
 		txtF1116LoseeForen3?: strings.MaxRunes(10)
 
 		
-		// (j) Paid. - Part 2. Foreign Taxes Paid or Accrued. (See instructions). Country. Credit is claimed for taxes (you must check one)
-		// (k) Accrued. - Part 2. Foreign Taxes Paid or Accrued. (See instructions). Country. Credit is claimed for taxes (you must check one)
-		chkF1116CreditInd: "1" | "0"
+		chkF1116CreditInd: "1" | // (j) Paid. - Part 2. Foreign Taxes Paid or Accrued. (See instructions). Country. Credit is claimed for taxes (you must check one)
+			"0" // (k) Accrued. - Part 2. Foreign Taxes Paid or Accrued. (See instructions). Country. Credit is claimed for taxes (you must check one)
 
 		// Line A(l). Date paid or accrued (2 digit month, 2 digit day, and 4 digit year)
 		txtF1116Date1?: #DATE
