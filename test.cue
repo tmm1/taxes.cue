@@ -14,5 +14,12 @@ import (
 		"1": assert: notOk: {
 			filingStatus: "marriedFilingJointly"
 		}
+		"2": assert: ok: {
+			filingStatus: "marriedFilingJointly"
+			taxPayer: {
+				spouse: {
+				}
+			}
+		}
 	}
 }).results
