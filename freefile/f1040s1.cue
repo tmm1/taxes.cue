@@ -1,227 +1,273 @@
 package freefile
 
+import "strings"
+
 // Schedule 1 - Additional Income and Adjustments to Income
 #f1040s1: {
-	txtTaxpayerName?: string
+	#input: {
+		// Taxable refunds, credits, or offsets of state and local income taxes
+		txtTaxableRefunds?: #AMOUNT
+		txtTaxableRefunds?: strings.MaxRunes(10)
 
-	txtTaxPayerSSN?: string
+		// Alimony received
+		txtAlimony?: #AMOUNT
+		txtAlimony?: strings.MaxRunes(10)
 
-	// Taxable refunds, credits, or offsets of state and local income taxes
-	txtTaxableRefunds?: string
+		// Date of original divorce or separation agreement (see instructions) (mm/dd/yyyyy)
+		txtAlimonyReceivedDate?: #DATE
+		txtAlimonyReceivedDate?: strings.MaxRunes(10)
 
-	// Alimony received
-	txtAlimony?: string
+		// Other gains or (losses) - Form 4684 Code
+		cboOtherGainsCode: *"" | "F4684"
 
-	// Date of original divorce or separation agreement (see instructions) (mm/dd/yyyyy)
-	txtAlimonyReceivedDate?: string
+		// Unemployment compensation Description
+		cboG1099PrRepayDesc: *"" | "REPAID"
 
-	// Add Schedule C
-	cmdAddSchC?: string
+		// Unemployment compensation Repaid Amount
+		txtG1099PrRepayAmt?: #AMOUNT
+		txtG1099PrRepayAmt?: strings.MaxRunes(10)
 
-	txtBusinessInc?: string
+		// This field is automatically calculated for you
+		txtUnempComp?: #AMOUNT
+		txtUnempComp?: strings.MaxRunes(10)
 
-	// Other gains or (losses) - Form 4684 Code
-	cboOtherGainsCode?: string
+		// Net operating loss
+		txtNolOthIncAmt?: #AMOUNT
+		txtNolOthIncAmt?: strings.MaxRunes(10)
 
-	// Add Form 4797
-	cmdAdd4797?: string
+		// Gambling income
+		txtGamblingWin?: #AMOUNT
+		txtGamblingWin?: strings.MaxRunes(10)
 
-	txtOtherGains?: string
+		// Cancellation of debt
+		txtC99OrdinaryInc1040?: #AMOUNT
+		txtC99OrdinaryInc1040?: strings.MaxRunes(10)
 
-	// Add Schedule E
-	cmdAddSchE?: string
+		// Foreign earned income exclusion from Form 2555
+		txtF2555Inc?: #AMOUNT
+		txtF2555Inc?: strings.MaxRunes(10)
 
-	txtSuppIncome?: string
+		// Taxable Health Savings Account distribution
+		txtHsaInc?: #AMOUNT
+		txtHsaInc?: strings.MaxRunes(10)
 
-	// Add Form Schedule F
-	cmdAddSchF?: string
+		// Alaska Permanent Fund dividends
+		txtAlaskaPerm?: #AMOUNT
+		txtAlaskaPerm?: strings.MaxRunes(10)
 
-	txtFarmLoss?: string
+		// Jury duty pay
+		txtJuryPayOthIncAmt?: #AMOUNT
+		txtJuryPayOthIncAmt?: strings.MaxRunes(10)
 
-	// Unemployment compensation Description
-	cboG1099PrRepayDesc?: string
+		// Prizes and awards
+		txtPrizesAwardsAmt?: #AMOUNT
+		txtPrizesAwardsAmt?: strings.MaxRunes(10)
 
-	// Unemployment compensation Repaid Amount
-	txtG1099PrRepayAmt?: string
+		// Activity not engaged in for profit income
+		txtActivityNotengdPrftInc?: #AMOUNT
+		txtActivityNotengdPrftInc?: strings.MaxRunes(10)
 
-	// This field is automatically calculated for you
-	txtUnempComp?: string
+		// Stock options
+		txtStockOptionsAmt?: #AMOUNT
+		txtStockOptionsAmt?: strings.MaxRunes(10)
 
-	// Net operating loss
-	txtNolOthIncAmt?: string
+		// Income from the rental of personal property
+		txtIncFrmPersProp?: #AMOUNT
+		txtIncFrmPersProp?: strings.MaxRunes(10)
 
-	// Gambling income
-	txtGamblingWin?: string
+		// Olympic and Paralympic medals and USOC prize money
+		txtOlympicParalymcUsocAmt?: #AMOUNT
+		txtOlympicParalymcUsocAmt?: strings.MaxRunes(10)
 
-	// Cancellation of debt
-	txtC99OrdinaryInc1040?: string
+		// Section 951(a) inclusion
+		txtSec951AInclusionAmt?: #AMOUNT
+		txtSec951AInclusionAmt?: strings.MaxRunes(10)
 
-	// Foreign earned income exclusion from Form 2555
-	txtF2555Inc?: string
+		// Section 951A(a) inclusion
+		txtSec951AaInclusionAmt?: #AMOUNT
+		txtSec951AaInclusionAmt?: strings.MaxRunes(10)
 
-	// Taxable Health Savings Account distribution
-	txtHsaInc?: string
+		// Section 461(l) excess business loss adjustment
+		txtSec461ExcessLossAdj?: #AMOUNT
+		txtSec461ExcessLossAdj?: strings.MaxRunes(10)
 
-	// Alaska Permanent Fund dividends
-	txtAlaskaPerm?: string
+		// Taxable distributions from an ABLE account
+		txtAbleOthIncAmt?: #AMOUNT
+		txtAbleOthIncAmt?: strings.MaxRunes(10)
 
-	// Jury duty pay
-	txtJuryPayOthIncAmt?: string
+		// Other income. List type
+		cboOtherInc: *"" | "MSA" | "LTC" | "MED MSA" | "FORM 8814" | "LOSS ON EXCESS DEFER DIST" | "INDIAN GAMING PROCEEDS" | "INDIAN TRIBAL DISTRIB" | "NATIVE AMERICAN DISTRIB" | "NOTICE 2014-7" | "AIRLINE PAYMENT" | "SECT 933" | "RPP" | "RRSPS" | "CANADA ARTICLE XVIII"
 
-	// Prizes and awards
-	txtPrizesAwardsAmt?: string
+		// Other income. List Description
+		txtOtherIncDesc?: #UPPERCASE
+		txtOtherIncDesc?: strings.MaxRunes(100)
 
-	// Activity not engaged in for profit income
-	txtActivityNotengdPrftInc?: string
+		// Other income. List amount
+		txtOtherIncDescAmount?: #AMOUNT | #NEGAMOUNT
+		txtOtherIncDescAmount?: strings.MaxRunes(10)
 
-	// Stock options
-	txtStockOptionsAmt?: string
-
-	// Income from the rental of personal property
-	txtIncFrmPersProp?: string
-
-	// Olympic and Paralympic medals and USOC prize money
-	txtOlympicParalymcUsocAmt?: string
-
-	// Section 951(a) inclusion
-	txtSec951AInclusionAmt?: string
-
-	// Section 951A(a) inclusion
-	txtSec951AaInclusionAmt?: string
-
-	// Section 461(l) excess business loss adjustment
-	txtSec461ExcessLossAdj?: string
-
-	// Taxable distributions from an ABLE account
-	txtAbleOthIncAmt?: string
-
-	// Other income. List type
-	cboOtherInc?: string
-
-	// Other income. List Description
-	txtOtherIncDesc?: string
-
-	// Other income. List amount
-	txtOtherIncDescAmount?: string
-
-	txtTotOtherIncAmt?: string
-
-	txtOtherInc?: string
-
-	txtLn10TotIncome?: string
-
-	txtTaxpayerName?: string
-
-	txtTaxPayerSSN?: string
-
-	// Educator expenses
-	txtEduExp?: string
-
-	// Add Form 2106 for Primary
-	cmdTaxpayerAdd2106?: string
-
-	// Add Form 2106 for Spouse
-	cmdSpouseAdd2106?: string
-
-	txtBusiExpReserArtist?: string
-
-	// Add Form 8889 for Primary
-	cmdTaxpyerAdd8889?: string
-
-	// Add Form 8889 for Spouse
-	cmdSpouseAdd8889?: string
-
-	txtHsaDed?: string
-
-	// Add Form 3903
-	cmdAdd3903?: string
-
-	// Moving expenses for members of the Armed Forces - Code
-	cboMovingExpCode?: string
-
-	txtMovingExp?: string
-
-	// Add Schedule SE for Primary
-	cmdTaxpayerAddSE?: string
-
-	// Add Schedule SE for Spouse
-	cmdSpouseAddSE?: string
-
-	txtSelfEmp50Per?: string
-
-	// Self-employed SEP, SIMPLE, and qualified plans
-	txtSelfEmpSimSepDed?: string
-
-	// Self-employed health insurance deduction
-	txtSelfEmpHealthDed?: string
-
-	// Penalty on early withdrawal of savings
-	txtEarlyWithPen?: string
-
-	// Alimony paid
-	txtAlimonyPaid?: string
-
-	// Alimony paid Recipient's SSN
-	txtAlimonySSN1?: string
-
-	// Date of original divorce or separation agreement (see instructions)  (mm/dd/yyyyy)
-	txtAlimonyDivorceDate?: string
-
-	// IRA deduction - Code
-	cboIraDeductionCode?: string
-
-	// IRA deduction
-	txtIraDeduction?: string
-
-	// Student loan interest deduction
-	txtStdLoanIntDed?: string
-
-	txtAmsaContOtherAdj?: string
-
-	// Jury duty pay
-	txtOthAdjJuryPayAmt?: string
-
-	// Deductible expenses related to income reported on line 8k
-	txtOthAdjPprAmt?: string
-
-	// Nontaxable amount of the value medals and USOC prize money reported on line 8l
-	txtOthAdjUsocAmt?: string
-
-	// Reforestation amortization and expenses
-	txtOthAdjRfstAmt?: string
-
-	// Repayment of supplemental unemployment benefits
-	txtOthAdjSubPayTraAmt?: string
-
-	// Contributions to section 501(c)(18)(D) pension plans
-	txtOthAdj501CAmt?: string
-
-	// Contributions by certain chaplains to section 403(b) plans
-	txtOthAdj403BAmt?: string
-
-	// Attorney fees and court costs for actions involving certain unlawful discrimination claims
-	txtOthAdjUdcAmt?: string
-
-	// Attorney fees and court costs you paid in connection with an award from the IRS
-	txtOthAdjWbfAmt?: string
-
-	// Housing deduction from Form 2555
-	txtOthAdj2555DedAmt?: string
-
-	// Excess deductions of section 67(e) expenses from Schedule K-1
-	txtOthAdjEd67EAmt?: string
-
-	// Other adjustments type
-	txtOtherAdjDesc?: string
-
-	// Other Adjustments amount
-	txtOtherAdjAmt?: string
-
-	txtTotOtherAdjAmt?: string
-
-	txtOtherAdj?: string
-
-	txtLn26TotAdjInc?: string
-
-	
+		// Educator expenses
+		txtEduExp?: #AMOUNT
+		txtEduExp?: strings.MaxRunes(10)
+
+		// Moving expenses for members of the Armed Forces - Code
+		cboMovingExpCode: *"" | "STORAGE"
+
+		// Self-employed SEP, SIMPLE, and qualified plans
+		txtSelfEmpSimSepDed?: #AMOUNT
+		txtSelfEmpSimSepDed?: strings.MaxRunes(10)
+
+		// Self-employed health insurance deduction
+		txtSelfEmpHealthDed?: #AMOUNT
+		txtSelfEmpHealthDed?: strings.MaxRunes(10)
+
+		// Penalty on early withdrawal of savings
+		txtEarlyWithPen?: #AMOUNT
+		txtEarlyWithPen?: strings.MaxRunes(10)
+
+		// Alimony paid
+		txtAlimonyPaid?: #AMOUNT
+		txtAlimonyPaid?: strings.MaxRunes(10)
+
+		// Alimony paid Recipient's SSN
+		txtAlimonySSN1?: #SSN
+		txtAlimonySSN1?: strings.MaxRunes(11)
+
+		// Date of original divorce or separation agreement (see instructions)  (mm/dd/yyyyy)
+		txtAlimonyDivorceDate?: #DATE
+		txtAlimonyDivorceDate?: strings.MaxRunes(10)
+
+		// IRA deduction - Code
+		cboIraDeductionCode: *"" | "D"
+
+		// IRA deduction
+		txtIraDeduction?: #AMOUNT
+		txtIraDeduction?: strings.MaxRunes(10)
+
+		// Student loan interest deduction
+		txtStdLoanIntDed?: #AMOUNT
+		txtStdLoanIntDed?: strings.MaxRunes(4)
+
+		// Jury duty pay
+		txtOthAdjJuryPayAmt?: #AMOUNT
+		txtOthAdjJuryPayAmt?: strings.MaxRunes(10)
+
+		// Deductible expenses related to income reported on line 8k
+		txtOthAdjPprAmt?: #AMOUNT
+		txtOthAdjPprAmt?: strings.MaxRunes(10)
+
+		// Nontaxable amount of the value medals and USOC prize money reported on line 8l
+		txtOthAdjUsocAmt?: #AMOUNT
+		txtOthAdjUsocAmt?: strings.MaxRunes(10)
+
+		// Reforestation amortization and expenses
+		txtOthAdjRfstAmt?: #AMOUNT
+		txtOthAdjRfstAmt?: strings.MaxRunes(10)
+
+		// Repayment of supplemental unemployment benefits
+		txtOthAdjSubPayTraAmt?: #AMOUNT
+		txtOthAdjSubPayTraAmt?: strings.MaxRunes(10)
+
+		// Contributions to section 501(c)(18)(D) pension plans
+		txtOthAdj501CAmt?: #AMOUNT
+		txtOthAdj501CAmt?: strings.MaxRunes(10)
+
+		// Contributions by certain chaplains to section 403(b) plans
+		txtOthAdj403BAmt?: #AMOUNT
+		txtOthAdj403BAmt?: strings.MaxRunes(10)
+
+		// Attorney fees and court costs for actions involving certain unlawful discrimination claims
+		txtOthAdjUdcAmt?: #AMOUNT
+		txtOthAdjUdcAmt?: strings.MaxRunes(10)
+
+		// Attorney fees and court costs you paid in connection with an award from the IRS
+		txtOthAdjWbfAmt?: #AMOUNT
+		txtOthAdjWbfAmt?: strings.MaxRunes(10)
+
+		// Housing deduction from Form 2555
+		txtOthAdj2555DedAmt?: #AMOUNT
+		txtOthAdj2555DedAmt?: strings.MaxRunes(10)
+
+		// Excess deductions of section 67(e) expenses from Schedule K-1
+		txtOthAdjEd67EAmt?: #AMOUNT
+		txtOthAdjEd67EAmt?: strings.MaxRunes(10)
+
+		// Other adjustments type
+		txtOtherAdjDesc?: #UPPERCASE
+		txtOtherAdjDesc?: strings.MaxRunes(50)
+
+		// Other Adjustments amount
+		txtOtherAdjAmt?: #AMOUNT
+		txtOtherAdjAmt?: strings.MaxRunes(10)
+
+		
+	}
+
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxpayerName?: strings.MaxRunes(75)
+		txtTaxPayerSSN?: #SSN
+		txtTaxPayerSSN?: strings.MaxRunes(11)
+		txtBusinessInc?: #AMOUNT
+		txtBusinessInc?: strings.MaxRunes(10)
+		txtOtherGains?: #AMOUNT
+		txtOtherGains?: strings.MaxRunes(10)
+		txtSuppIncome?: #AMOUNT
+		txtSuppIncome?: strings.MaxRunes(10)
+		txtFarmLoss?: #AMOUNT
+		txtFarmLoss?: strings.MaxRunes(10)
+		txtTotOtherIncAmt?: #AMOUNT
+		txtTotOtherIncAmt?: strings.MaxRunes(10)
+		txtOtherInc?: #AMOUNT
+		txtOtherInc?: strings.MaxRunes(10)
+		txtLn10TotIncome?: #AMOUNT
+		txtLn10TotIncome?: strings.MaxRunes(10)
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxpayerName?: strings.MaxRunes(75)
+		txtTaxPayerSSN?: #SSN
+		txtTaxPayerSSN?: strings.MaxRunes(11)
+		txtBusiExpReserArtist?: #AMOUNT
+		txtBusiExpReserArtist?: strings.MaxRunes(10)
+		txtHsaDed?: #AMOUNT
+		txtHsaDed?: strings.MaxRunes(10)
+		txtMovingExp?: #AMOUNT
+		txtMovingExp?: strings.MaxRunes(10)
+		txtSelfEmp50Per?: #AMOUNT
+		txtSelfEmp50Per?: strings.MaxRunes(10)
+		txtAmsaContOtherAdj?: #AMOUNT
+		txtAmsaContOtherAdj?: strings.MaxRunes(10)
+		txtTotOtherAdjAmt?: #AMOUNT
+		txtTotOtherAdjAmt?: strings.MaxRunes(10)
+		txtOtherAdj?: #AMOUNT
+		txtOtherAdj?: strings.MaxRunes(10)
+		txtLn26TotAdjInc?: #AMOUNT
+		txtLn26TotAdjInc?: strings.MaxRunes(10)
+		
+	}
+
+	#links: {
+		// Add Schedule C
+		// cmdAddSchC?: #f1040sc
+		// Add Form 4797
+		// cmdAdd4797?: #f4797
+		// Add Schedule E
+		// cmdAddSchE?: #f1040se1
+		// Add Form Schedule F
+		// cmdAddSchF?: #f1040sf
+		// Add Form 2106 for Primary
+		// cmdTaxpayerAdd2106?: #f2106t
+		// Add Form 2106 for Spouse
+		// cmdSpouseAdd2106?: #f2106s
+		// Add Form 8889 for Primary
+		// cmdTaxpyerAdd8889?: #f8889t
+		// Add Form 8889 for Spouse
+		// cmdSpouseAdd8889?: #f8889s
+		// Add Form 3903
+		// cmdAdd3903?: #f3903
+		// Add Schedule SE for Primary
+		// cmdTaxpayerAddSE?: #f1040sset
+		// Add Schedule SE for Spouse
+		// cmdSpouseAddSE?: #f1040sses
+		
+	}
 }

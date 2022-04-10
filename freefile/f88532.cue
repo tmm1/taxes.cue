@@ -1,52 +1,80 @@
 package freefile
 
+import "strings"
+
 // Form 8853 - Archer MSAs and Long-Term Care Insurance Contracts Page 2
 #f88532: {
-	txtTaxpayerName?: string
+	#input: {
+		// Line 14a - Name of insured. First Name
+		txtF8853InsFirstName?: #UPPERCASE
+		txtF8853InsFirstName?: strings.MaxRunes(25)
 
-	txtTaxPayerSSN?: string
+		// Line 14a - Name of insured. Middle Initial
+		txtF8853InsMidIni?: #UPPERCASE
+		txtF8853InsMidIni?: strings.MaxRunes(1)
 
-	// Line 14a - Name of insured. First Name
-	txtF8853InsFirstName?: string
+		// Line 14a - Name of insured. Last Name
+		txtF8853InsLastName?: #UPPERCASE
+		txtF8853InsLastName?: strings.MaxRunes(25)
 
-	// Line 14a - Name of insured. Middle Initial
-	txtF8853InsMidIni?: string
+		// Line 14b - Social security number of insured
+		txtF8853InsSsn?: #SSN
+		txtF8853InsSsn?: strings.MaxRunes(11)
 
-	// Line 14a - Name of insured. Last Name
-	txtF8853InsLastName?: string
+		
+		// Line 15. In 2021, did anyone other than you receive payments on a per diem or other periodic basis under a qualified LTC insurance contract covering the insured or receive accelerated death benefits under a life insurance policy covering the insured?
+		// Line 15. In 2021, did anyone other than you receive payments on a per diem or other periodic basis under a qualified LTC insurance contract covering the insured or receive accelerated death benefits under a life insurance policy covering the insured?
+		chkF8853OtherRecPayInd: "1" | "0"
 
-	// Line 14b - Social security number of insured
-	txtF8853InsSsn?: string
+		
+		// Line 16. Was the insured a terminally ill individual?
+		// Line 16. Was the insured a terminally ill individual?
+		chkF8853InsTerIllInd: "1" | "0"
 
-	chkF8853OtherRecPayInd?: string
+		// Line 17. Gross LTC payments received on a per diem or other periodic basis. Enter the total of the amounts from box 1 of all Forms 1099-LTC you received with respect to the insured on which the �Per diem� box in box 3 is checked
+		txtF8853GrossLtcPay?: #AMOUNT
+		txtF8853GrossLtcPay?: strings.MaxRunes(10)
 
-	chkF8853InsTerIllInd?: string
+		// Line 18. Enter the part of the amount on line 17 that is from qualified LTC insurance contracts
+		txtF8853PartQualLtcInsCnts?: #AMOUNT
+		txtF8853PartQualLtcInsCnts?: strings.MaxRunes(10)
 
-	// Line 17. Gross LTC payments received on a per diem or other periodic basis. Enter the total of the amounts from box 1 of all Forms 1099-LTC you received with respect to the insured on which the �Per diem� box in box 3 is checked
-	txtF8853GrossLtcPay?: string
+		// Line 19. Accelerated death benefits received on a per diem or other periodic basis. Don�t include any amounts you received because the insured was terminally ill
+		txtF8853AcceleratedDeathBen?: #AMOUNT
+		txtF8853AcceleratedDeathBen?: strings.MaxRunes(10)
 
-	// Line 18. Enter the part of the amount on line 17 that is from qualified LTC insurance contracts
-	txtF8853PartQualLtcInsCnts?: string
+		// Line 21. Multiply $400 by the number of days in the LTC period
+		txtF8853MulNumLtcDays220?: #AMOUNT
+		txtF8853MulNumLtcDays220?: strings.MaxRunes(10)
 
-	// Line 19. Accelerated death benefits received on a per diem or other periodic basis. Don�t include any amounts you received because the insured was terminally ill
-	txtF8853AcceleratedDeathBen?: string
+		// Line 22 - Costs incurred for qualified LTC services provided for the insured during the LTC period (see instructions)
+		txtF8853CostIncQualLtcSer?: #AMOUNT
+		txtF8853CostIncQualLtcSer?: strings.MaxRunes(10)
 
-	txtF8853AddQualLtcDeathBen?: string
+		// Line 24 - Reimbursements for qualified LTC services provided for the insured during the LTC period. Caution: If you received any reimbursements from LTC contracts issued before August 1, 1996, see instructions
+		txtF8853ReimQualLtcSer?: #AMOUNT
+		txtF8853ReimQualLtcSer?: strings.MaxRunes(10)
 
-	// Line 21. Multiply $400 by the number of days in the LTC period
-	txtF8853MulNumLtcDays220?: string
+		
+	}
 
-	// Line 22 - Costs incurred for qualified LTC services provided for the insured during the LTC period (see instructions)
-	txtF8853CostIncQualLtcSer?: string
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxpayerName?: strings.MaxRunes(128)
+		txtTaxPayerSSN?: #SSN
+		txtTaxPayerSSN?: strings.MaxRunes(11)
+		txtF8853AddQualLtcDeathBen?: #AMOUNT
+		txtF8853AddQualLtcDeathBen?: strings.MaxRunes(10)
+		txtF8853LargerMulAmtCostLtc?: #AMOUNT
+		txtF8853LargerMulAmtCostLtc?: strings.MaxRunes(10)
+		txtF8853PerDiemLimit?: #AMOUNT
+		txtF8853PerDiemLimit?: strings.MaxRunes(10)
+		txtF8853TaxablePayment?: #AMOUNT
+		txtF8853TaxablePayment?: strings.MaxRunes(10)
+		
+	}
 
-	txtF8853LargerMulAmtCostLtc?: string
-
-	// Line 24 - Reimbursements for qualified LTC services provided for the insured during the LTC period. Caution: If you received any reimbursements from LTC contracts issued before August 1, 1996, see instructions
-	txtF8853ReimQualLtcSer?: string
-
-	txtF8853PerDiemLimit?: string
-
-	txtF8853TaxablePayment?: string
-
-	
+	#links: {
+		
+	}
 }

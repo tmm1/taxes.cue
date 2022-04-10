@@ -101,7 +101,7 @@ files: [
 						{{if $f.title -}}
 						// {{$f.title}}
 						{{end -}}
-						{{$f.name}}?: #{{$f.link}}
+						// {{$f.name}}?: #{{$f.link}}
 						{{end -}}
 						{{end}}
 					}

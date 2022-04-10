@@ -1,125 +1,160 @@
 package freefile
 
+import "strings"
+
 // Schedule A - Itemized Deductions
 #f1040sa: {
-	txtTaxpayerName?: string
+	#input: {
+		// Line 1: Medical and dental expenses
+		txtMedDenExp?: #AMOUNT
+		txtMedDenExp?: strings.MaxRunes(10)
 
-	txtTaxPayerSSN?: string
+		// Line 5a: State and local income taxes or general sales taxes. You may include either income taxes or general sales taxes on line 5a, but not both. If you elect to include general sales taxes instead of income taxes, check this box
+		chkGenSalesTaxInd: *"" | "1"
 
-	// Line 1: Medical and dental expenses
-	txtMedDenExp?: string
+		// Line 5a: State and local income taxes or general sales taxes. You may include either income taxes or general sales taxes on line 5a, but not both. If you elect to include general sales taxes instead of income taxes
+		txtstLocIncTax?: #AMOUNT
+		txtstLocIncTax?: strings.MaxRunes(10)
 
-	txtAgiAmt?: string
+		// Line 5b: State and local real estate taxes
+		txtRealEstTax?: #AMOUNT
+		txtRealEstTax?: strings.MaxRunes(10)
 
-	txtExpDedAmt?: string
+		// Line 5c: State and local personal property taxes
+		txtStlocPerTax?: #AMOUNT
+		txtStlocPerTax?: strings.MaxRunes(10)
 
-	txtCalmedExp4?: string
+		// Line 5e: Enter the smaller of line 5d or $10, 000 ($5, 000 if married filing separately)
+		txtSchASmallLine5d?: #AMOUNT
+		txtSchASmallLine5d?: strings.MaxRunes(10)
 
-	chkGenSalesTaxInd?: string
+		// Line 6: Other taxes. List type
+		txtItemDes?: #UPPERCASE
+		txtItemDes?: strings.MaxRunes(128)
 
-	// Line 5a: State and local income taxes or general sales taxes. You may include either income taxes or general sales taxes on line 5a, but not both. If you elect to include general sales taxes instead of income taxes
-	txtstLocIncTax?: string
+		// Line 6: Other taxes. List total Amount
+		txtItemAmount?: #AMOUNT
+		txtItemAmount?: strings.MaxRunes(10)
 
-	// Line 5b: State and local real estate taxes
-	txtRealEstTax?: string
+		// Line 8: Home mortgage interest and points. If you didn�t use all of your home mortgage loan(s) to buy, build, or improve your home, see instructions and check this box
+		chkSchAP936ImproveInd: *"" | "1"
 
-	// Line 5c: State and local personal property taxes
-	txtStlocPerTax?: string
+		// Line 8a: Home mortgage interest and points reported to you on Form 1098
+		txtSchALn10Temp?: #AMOUNT
+		txtSchALn10Temp?: strings.MaxRunes(10)
 
-	txtschAAddLn5aLn5c?: string
+		// Line 8b: Enter person's name
+		txtPerName?: #UPPERCASE
+		txtPerName?: strings.MaxRunes(35)
 
-	// Line 5e: Enter the smaller of line 5d or $10, 000 ($5, 000 if married filing separately)
-	txtSchASmallLine5d?: string
+		// Line 8b: Enter person's Social Security Number(SSN)
+		txtPerSSN?: #SSN
+		txtPerSSN?: strings.MaxRunes(11)
 
-	// Line 6: Other taxes. List type
-	txtItemDes?: string
+		// Line 8b: Enter Person's Address
+		txtPerAddr?: #UPPERCASE
+		txtPerAddr?: strings.MaxRunes(36)
 
-	// Line 6: Other taxes. List total Amount
-	txtItemAmount?: string
+		// Line 8b: Enter Person's City
+		txtPerCity?: #UPPERCASE
+		txtPerCity?: strings.MaxRunes(30)
 
-	txtOtherTax?: string
+		// Line 8b: Select person's state
+		cboPerSt: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
 
-	txtTaxesUPaid?: string
+		// Line 8b: Enter person's zip
+		txtPerZip?: #NUMERIC
+		txtPerZip?: strings.MaxRunes(5)
 
-	chkSchAP936ImproveInd?: string
+		// Line 8b: Home mortgage interest not reported to you on Form 1098. See instructions if limited. If paid to the person from whom you bought the home, see instructions and show that person�s name, identifying no and address
+		txtSchALn11Temp?: #AMOUNT
+		txtSchALn11Temp?: strings.MaxRunes(10)
 
-	// Line 8a: Home mortgage interest and points reported to you on Form 1098
-	txtSchALn10Temp?: string
+		// Line 8c: Points not reported to you on Form 1098. See instructions for special rules
+		txtPointRep?: #AMOUNT
+		txtPointRep?: strings.MaxRunes(10)
 
-	// Line 8b: Enter person's name
-	txtPerName?: string
+		// Line 8d: Mortgage insurance premiums
+		txtQualMortInsPremium?: #AMOUNT
+		txtQualMortInsPremium?: strings.MaxRunes(10)
 
-	// Line 8b: Enter person's Social Security Number(SSN)
-	txtPerSSN?: string
+		// Line 9: Investment interest
+		txtInvestInterestDeduction?: #AMOUNT
+		txtInvestInterestDeduction?: strings.MaxRunes(10)
 
-	// Line 8b: Enter Person's Address
-	txtPerAddr?: string
+		// Caution: If you made a gift and got a benefit for it, see instructions. Line 11: Gifts by cash or check. If you made any gift of $250 or more
+		txtGiftsChcq?: #AMOUNT
+		txtGiftsChcq?: strings.MaxRunes(10)
 
-	// Line 8b: Enter Person's City
-	txtPerCity?: string
+		// Line 12: Other than by cash or check. If you made any gift of $250 or more
+		txtGiftsnChcq?: #AMOUNT
+		txtGiftsnChcq?: strings.MaxRunes(10)
 
-	// Line 8b: Select person's state
-	cboPerSt?: string
+		// Line 13: Carryover from prior year
+		txtPriorYear?: #AMOUNT
+		txtPriorYear?: strings.MaxRunes(10)
 
-	// Line 8b: Enter person's zip
-	txtPerZip?: string
+		// Line 14. Add lines 11 through 13
+		txtGiftsToChar?: #AMOUNT
+		txtGiftsToChar?: strings.MaxRunes(10)
 
-	// Line 8b: Home mortgage interest not reported to you on Form 1098. See instructions if limited. If paid to the person from whom you bought the home, see instructions and show that person�s name, identifying no and address
-	txtSchALn11Temp?: string
+		// Line 16: Other - from list in instructions. List type
+		cboItemDesc16a: *"" | "AMORTIZABLE BOND PREMIUMS" | "CASUALTY AND THEFT LOSS" | "FEDERAL ESTATE TAX" | "GAMBLING LOSSES" | "IMPAIRMENT-RELATED WORK EXPENSES" | "CLAIM REPAYMENTS" | "UNRECOVERED PENSION INVESTMENTS" | "SCHEDULE K-1" | "ORDINARY LOSS DEBT INSTRUMENT" | "NET QUALIFIED DISASTER LOSS" | "STANDARD DEDUCTION CLAIMED WITH QUALIFIED DISASTER LOSS" | "EXCESS DEDUCTION ON TERMINATION"
 
-	// Line 8c: Points not reported to you on Form 1098. See instructions for special rules
-	txtPointRep?: string
+		// Line 16: Other - from list in instructions. List amount
+		txtItemAmt16a?: #AMOUNT
+		txtItemAmt16a?: strings.MaxRunes(10)
 
-	// Line 8d: Mortgage insurance premiums
-	txtQualMortInsPremium?: string
+		// Line 16: Other - from list in instructions. List type
+		cboItemDesc16b: *"" | "AMORTIZABLE BOND PREMIUMS" | "CASUALTY AND THEFT LOSS" | "FEDERAL ESTATE TAX" | "GAMBLING LOSSES" | "IMPAIRMENT-RELATED WORK EXPENSES" | "CLAIM REPAYMENTS" | "UNRECOVERED PENSION INVESTMENTS" | "SCHEDULE K-1" | "ORDINARY LOSS DEBT INSTRUMENT" | "NET QUALIFIED DISASTER LOSS" | "STANDARD DEDUCTION CLAIMED WITH QUALIFIED DISASTER LOSS" | "EXCESS DEDUCTION ON TERMINATION"
 
-	txtSchAAddLn8aLn8c?: string
+		// Line 16: Other - from list in instructions. List amount
+		txtItemAmt16b?: #AMOUNT
+		txtItemAmt16b?: strings.MaxRunes(10)
 
-	// Investment interest. Attach Form 4952 if required
-	cmdInsInvest?: string
+		// Line 18: If you elect to itemize deductions even though they are less than your standard deduction, check this box
+		chkForceItemizeInd: *"" | "1"
 
-	// Line 9: Investment interest
-	txtInvestInterestDeduction?: string
+		
+	}
 
-	txtIntUPaid?: string
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxpayerName?: strings.MaxRunes(75)
+		txtTaxPayerSSN?: #SSN
+		txtTaxPayerSSN?: strings.MaxRunes(11)
+		txtAgiAmt?: #AMOUNT
+		txtAgiAmt?: strings.MaxRunes(10)
+		txtExpDedAmt?: #AMOUNT
+		txtExpDedAmt?: strings.MaxRunes(10)
+		txtCalmedExp4?: #AMOUNT
+		txtCalmedExp4?: strings.MaxRunes(10)
+		txtschAAddLn5aLn5c?: #AMOUNT
+		txtschAAddLn5aLn5c?: strings.MaxRunes(10)
+		txtOtherTax?: #AMOUNT
+		txtOtherTax?: strings.MaxRunes(10)
+		txtTaxesUPaid?: #AMOUNT
+		txtTaxesUPaid?: strings.MaxRunes(10)
+		txtSchAAddLn8aLn8c?: #AMOUNT
+		txtSchAAddLn8aLn8c?: strings.MaxRunes(10)
+		txtIntUPaid?: #AMOUNT
+		txtIntUPaid?: strings.MaxRunes(10)
+		txtCasualTheftLoss?: #AMOUNT
+		txtCasualTheftLoss?: strings.MaxRunes(10)
+		txtSchATotOthMiscDed?: #AMOUNT
+		txtSchATotOthMiscDed?: strings.MaxRunes(10)
+		txtTotItemDed?: #AMOUNT
+		txtTotItemDed?: strings.MaxRunes(10)
+		
+	}
 
-	// Caution: If you made a gift and got a benefit for it, see instructions. Line 11: Gifts by cash or check. If you made any gift of $250 or more
-	txtGiftsChcq?: string
-
-	// Other than by cash or check. If you made any gift of $250 or more, You must attach Form 8283 if over $500
-	cmdGiftByChk?: string
-
-	// Line 12: Other than by cash or check. If you made any gift of $250 or more
-	txtGiftsnChcq?: string
-
-	// Line 13: Carryover from prior year
-	txtPriorYear?: string
-
-	// Line 14. Add lines 11 through 13
-	txtGiftsToChar?: string
-
-	// Casualty and theft loss(es) from a federally declared disaster (other than net qualified  disaster losses). Attach Form 4684 and enter the amount from line 18 of that form
-	cmdCasualTheftLoss?: string
-
-	txtCasualTheftLoss?: string
-
-	// Line 16: Other - from list in instructions. List type
-	cboItemDesc16a?: string
-
-	// Line 16: Other - from list in instructions. List amount
-	txtItemAmt16a?: string
-
-	// Line 16: Other - from list in instructions. List type
-	cboItemDesc16b?: string
-
-	// Line 16: Other - from list in instructions. List amount
-	txtItemAmt16b?: string
-
-	txtSchATotOthMiscDed?: string
-
-	txtTotItemDed?: string
-
-	chkForceItemizeInd?: string
-
-	
+	#links: {
+		// Investment interest. Attach Form 4952 if required
+		// cmdInsInvest?: #f4952
+		// Other than by cash or check. If you made any gift of $250 or more, You must attach Form 8283 if over $500
+		// cmdGiftByChk?: #f8283
+		// Casualty and theft loss(es) from a federally declared disaster (other than net qualified  disaster losses). Attach Form 4684 and enter the amount from line 18 of that form
+		// cmdCasualTheftLoss?: #f4684
+		
+	}
 }

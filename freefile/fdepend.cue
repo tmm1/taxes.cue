@@ -1,240 +1,342 @@
 package freefile
 
+import "strings"
+
 // Form 1040 Additional Dependents Statement
 #fdepend: {
-	txtTaxPayerName?: string
+	#input: {
+		// Dependents - Enter First name
+		txtDepFirstNameR1?: #UPPERCASE
+		txtDepFirstNameR1?: strings.MaxRunes(40)
+
+		// Dependents - Enter Middle initial
+		txtDepMiddleInitialR1?: #UPPERCASE
+		txtDepMiddleInitialR1?: strings.MaxRunes(2)
+
+		// Dependents - Enter Last name
+		txtDepLastNameR1?: #UPPERCASE
+		txtDepLastNameR1?: strings.MaxRunes(45)
+
+		// Dependents - Enter Social Security number
+		txtDepSsnR1?: #SSN
+		txtDepSsnR1?: strings.MaxRunes(11)
+
+		// Dependents - Enter Date of Birth
+		txtDepDOBR1?: #DATE
+		txtDepDOBR1?: strings.MaxRunes(10)
 
-	txtTaxPayerSsn?: string
+		// Dependents - Select Relationship to you
+		cboDepRelationR1: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+
+		
+		// Check if dependent qualifies for: Child tax credit
+		// Check if dependent qualifies for: Credit for other dependents
+		chkChildTaxCredIndR1: "1" | "0"
+
+		// Dependents - Enter IP PIN
+		txtDepIPPINR1?: #NUMERIC
+		txtDepIPPINR1?: strings.MaxRunes(6)
+
+		// Dependents - Enter First name
+		txtDepFirstNameR2?: #UPPERCASE
+		txtDepFirstNameR2?: strings.MaxRunes(40)
+
+		// Dependents - Enter Middle initial
+		txtDepMiddleInitialR2?: #UPPERCASE
+		txtDepMiddleInitialR2?: strings.MaxRunes(2)
+
+		// Dependents - Enter Last name
+		txtDepLastNameR2?: #UPPERCASE
+		txtDepLastNameR2?: strings.MaxRunes(45)
+
+		// Dependents - Enter Social Security number
+		txtDepSsnR2?: #SSN
+		txtDepSsnR2?: strings.MaxRunes(11)
+
+		// Dependents - Enter Date of Birth
+		txtDepDOBR2?: #DATE
+		txtDepDOBR2?: strings.MaxRunes(10)
 
-	// Dependents - Enter First name
-	txtDepFirstNameR1?: string
+		// Dependents - Select Relationship to you
+		cboDepRelationR2: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+
+		
+		// Check if dependent qualifies for: Child tax credit
+		// Check if dependent qualifies for: Credit for other dependents
+		chkChildTaxCredIndR2: "1" | "0"
+
+		// Dependents - Enter IP PIN
+		txtDepIPPINR2?: #NUMERIC
+		txtDepIPPINR2?: strings.MaxRunes(6)
+
+		// Dependents - Enter First name
+		txtDepFirstNameR3?: #UPPERCASE
+		txtDepFirstNameR3?: strings.MaxRunes(40)
+
+		// Dependents - Enter Middle initial
+		txtDepMiddleInitialR3?: #UPPERCASE
+		txtDepMiddleInitialR3?: strings.MaxRunes(2)
+
+		// Dependents - Enter Last name
+		txtDepLastNameR3?: #UPPERCASE
+		txtDepLastNameR3?: strings.MaxRunes(45)
+
+		// Dependents - Enter Social Security number
+		txtDepSsnR3?: #SSN
+		txtDepSsnR3?: strings.MaxRunes(11)
+
+		// Dependents - Enter Date of Birth
+		txtDepDOBR3?: #DATE
+		txtDepDOBR3?: strings.MaxRunes(10)
 
-	// Dependents - Enter Middle initial
-	txtDepMiddleInitialR1?: string
+		// Dependents - Select Relationship to you
+		cboDepRelationR3: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+
+		
+		// Check if dependent qualifies for: Child tax credit
+		// Check if dependent qualifies for: Credit for other dependents
+		chkChildTaxCredIndR3: "1" | "0"
+
+		// Dependents - Enter IP PIN
+		txtDepIPPINR3?: #NUMERIC
+		txtDepIPPINR3?: strings.MaxRunes(6)
+
+		// Dependents - Enter First name
+		txtDepFirstNameR4?: #UPPERCASE
+		txtDepFirstNameR4?: strings.MaxRunes(40)
+
+		// Dependents - Enter Middle initial
+		txtDepMiddleInitialR4?: #UPPERCASE
+		txtDepMiddleInitialR4?: strings.MaxRunes(2)
 
-	// Dependents - Enter Last name
-	txtDepLastNameR1?: string
+		// Dependents - Enter Last name
+		txtDepLastNameR4?: #UPPERCASE
+		txtDepLastNameR4?: strings.MaxRunes(45)
 
-	// Dependents - Enter Social Security number
-	txtDepSsnR1?: string
+		// Dependents - Enter Social Security number
+		txtDepSsnR4?: #SSN
+		txtDepSsnR4?: strings.MaxRunes(11)
 
-	// Dependents - Enter Date of Birth
-	txtDepDOBR1?: string
+		// Dependents - Enter Date of Birth
+		txtDepDOBR4?: #DATE
+		txtDepDOBR4?: strings.MaxRunes(10)
 
-	// Dependents - Select Relationship to you
-	cboDepRelationR1?: string
+		// Dependents - Select Relationship to you
+		cboDepRelationR4: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
 
-	chkChildTaxCredIndR1?: string
+		
+		// Check if dependent qualifies for: Child tax credit
+		// Check if dependent qualifies for: Credit for other dependents
+		chkChildTaxCredIndR4: "1" | "0"
 
-	// Dependents - Enter IP PIN
-	txtDepIPPINR1?: string
+		// Dependents - Enter IP PIN
+		txtDepIPPINR4?: #NUMERIC
+		txtDepIPPINR4?: strings.MaxRunes(6)
 
-	// Dependents - Enter First name
-	txtDepFirstNameR2?: string
+		// Dependents - Enter First name
+		txtDepFirstNameR5?: #UPPERCASE
+		txtDepFirstNameR5?: strings.MaxRunes(40)
 
-	// Dependents - Enter Middle initial
-	txtDepMiddleInitialR2?: string
+		// Dependents - Enter Middle initial
+		txtDepMiddleInitialR5?: #UPPERCASE
+		txtDepMiddleInitialR5?: strings.MaxRunes(2)
 
-	// Dependents - Enter Last name
-	txtDepLastNameR2?: string
+		// Dependents - Enter Last name
+		txtDepLastNameR5?: #UPPERCASE
+		txtDepLastNameR5?: strings.MaxRunes(45)
 
-	// Dependents - Enter Social Security number
-	txtDepSsnR2?: string
+		// Dependents - Enter Social Security number
+		txtDepSsnR5?: #SSN
+		txtDepSsnR5?: strings.MaxRunes(11)
 
-	// Dependents - Enter Date of Birth
-	txtDepDOBR2?: string
+		// Dependents - Enter Date of Birth
+		txtDepDOBR5?: #DATE
+		txtDepDOBR5?: strings.MaxRunes(10)
 
-	// Dependents - Select Relationship to you
-	cboDepRelationR2?: string
+		// Dependents - Select Relationship to you
+		cboDepRelationR5: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
 
-	chkChildTaxCredIndR2?: string
+		
+		// Check if dependent qualifies for: Child tax credit
+		// Check if dependent qualifies for: Credit for other dependents
+		chkChildTaxCredIndR5: "1" | "0"
 
-	// Dependents - Enter IP PIN
-	txtDepIPPINR2?: string
+		// Enter dependent IP PINDependents - Enter IP PIN
+		txtDepIPPINR5?: #NUMERIC
+		txtDepIPPINR5?: strings.MaxRunes(6)
 
-	// Dependents - Enter First name
-	txtDepFirstNameR3?: string
+		// Dependents - Enter First name
+		txtDepFirstNameR6?: #UPPERCASE
+		txtDepFirstNameR6?: strings.MaxRunes(40)
 
-	// Dependents - Enter Middle initial
-	txtDepMiddleInitialR3?: string
+		// Dependents - Enter Middle initial
+		txtDepMiddleInitialR6?: #UPPERCASE
+		txtDepMiddleInitialR6?: strings.MaxRunes(2)
 
-	// Dependents - Enter Last name
-	txtDepLastNameR3?: string
+		// Dependents - Enter Last name
+		txtDepLastNameR6?: #UPPERCASE
+		txtDepLastNameR6?: strings.MaxRunes(45)
 
-	// Dependents - Enter Social Security number
-	txtDepSsnR3?: string
+		// Dependents - Enter Social Security number
+		txtDepSsnR6?: #SSN
+		txtDepSsnR6?: strings.MaxRunes(11)
 
-	// Dependents - Enter Date of Birth
-	txtDepDOBR3?: string
+		// Dependents - Enter Date of Birth
+		txtDepDOBR6?: #DATE
+		txtDepDOBR6?: strings.MaxRunes(10)
 
-	// Dependents - Select Relationship to you
-	cboDepRelationR3?: string
+		// Dependents - Select Relationship to you
+		cboDepRelationR6: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
 
-	chkChildTaxCredIndR3?: string
+		
+		// Check if dependent qualifies for: Child tax credit
+		// Check if dependent qualifies for: Credit for other dependents
+		chkChildTaxCredIndR6: "1" | "0"
 
-	// Dependents - Enter IP PIN
-	txtDepIPPINR3?: string
+		// Dependents - Enter IP PIN
+		txtDepIPPINR6?: #NUMERIC
+		txtDepIPPINR6?: strings.MaxRunes(6)
 
-	// Dependents - Enter First name
-	txtDepFirstNameR4?: string
+		// Dependents - Enter First name
+		txtDepFirstNameR7?: #UPPERCASE
+		txtDepFirstNameR7?: strings.MaxRunes(40)
 
-	// Dependents - Enter Middle initial
-	txtDepMiddleInitialR4?: string
+		// Dependents - Enter Middle initial
+		txtDepMiddleInitialR7?: #UPPERCASE
+		txtDepMiddleInitialR7?: strings.MaxRunes(2)
 
-	// Dependents - Enter Last name
-	txtDepLastNameR4?: string
+		// Dependents - Enter Last name
+		txtDepLastNameR7?: #UPPERCASE
+		txtDepLastNameR7?: strings.MaxRunes(45)
 
-	// Dependents - Enter Social Security number
-	txtDepSsnR4?: string
+		// Dependents - Enter Social Security number
+		txtDepSsnR7?: #SSN
+		txtDepSsnR7?: strings.MaxRunes(11)
 
-	// Dependents - Enter Date of Birth
-	txtDepDOBR4?: string
+		// Dependents - Enter Date of Birth
+		txtDepDOBR7?: #DATE
+		txtDepDOBR7?: strings.MaxRunes(10)
 
-	// Dependents - Select Relationship to you
-	cboDepRelationR4?: string
+		// Dependents - Select Relationship to you
+		cboDepRelationR7: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
 
-	chkChildTaxCredIndR4?: string
+		
+		// Check if dependent qualifies for: Child tax credit
+		// Check if dependent qualifies for: Credit for other dependents
+		chkChildTaxCredIndR7: "1" | "0"
 
-	// Dependents - Enter IP PIN
-	txtDepIPPINR4?: string
+		// Dependents - Enter IP PIN
+		txtDepIPPINR7?: #NUMERIC
+		txtDepIPPINR7?: strings.MaxRunes(6)
 
-	// Dependents - Enter First name
-	txtDepFirstNameR5?: string
+		// Dependents - Enter First name
+		txtDepFirstNameR8?: #UPPERCASE
+		txtDepFirstNameR8?: strings.MaxRunes(40)
 
-	// Dependents - Enter Middle initial
-	txtDepMiddleInitialR5?: string
+		// Dependents - Enter Middle initial
+		txtDepMiddleInitialR8?: #UPPERCASE
+		txtDepMiddleInitialR8?: strings.MaxRunes(2)
 
-	// Dependents - Enter Last name
-	txtDepLastNameR5?: string
-
-	// Dependents - Enter Social Security number
-	txtDepSsnR5?: string
-
-	// Dependents - Enter Date of Birth
-	txtDepDOBR5?: string
-
-	// Dependents - Select Relationship to you
-	cboDepRelationR5?: string
-
-	chkChildTaxCredIndR5?: string
-
-	// Enter dependent IP PINDependents - Enter IP PIN
-	txtDepIPPINR5?: string
-
-	// Dependents - Enter First name
-	txtDepFirstNameR6?: string
-
-	// Dependents - Enter Middle initial
-	txtDepMiddleInitialR6?: string
-
-	// Dependents - Enter Last name
-	txtDepLastNameR6?: string
-
-	// Dependents - Enter Social Security number
-	txtDepSsnR6?: string
-
-	// Dependents - Enter Date of Birth
-	txtDepDOBR6?: string
-
-	// Dependents - Select Relationship to you
-	cboDepRelationR6?: string
-
-	chkChildTaxCredIndR6?: string
-
-	// Dependents - Enter IP PIN
-	txtDepIPPINR6?: string
-
-	// Dependents - Enter First name
-	txtDepFirstNameR7?: string
-
-	// Dependents - Enter Middle initial
-	txtDepMiddleInitialR7?: string
-
-	// Dependents - Enter Last name
-	txtDepLastNameR7?: string
-
-	// Dependents - Enter Social Security number
-	txtDepSsnR7?: string
-
-	// Dependents - Enter Date of Birth
-	txtDepDOBR7?: string
-
-	// Dependents - Select Relationship to you
-	cboDepRelationR7?: string
-
-	chkChildTaxCredIndR7?: string
-
-	// Dependents - Enter IP PIN
-	txtDepIPPINR7?: string
-
-	// Dependents - Enter First name
-	txtDepFirstNameR8?: string
-
-	// Dependents - Enter Middle initial
-	txtDepMiddleInitialR8?: string
-
-	// Dependents - Enter Last name
-	txtDepLastNameR8?: string
-
-	// Dependents - Enter Social Security number
-	txtDepSsnR8?: string
-
-	// Dependents - Enter Date of Birth
-	txtDepDOBR8?: string
-
-	// Dependents - Select Relationship to you
-	cboDepRelationR8?: string
-
-	chkChildTaxCredIndR8?: string
-
-	// Dependents - Enter IP PIN
-	txtDepIPPINR8?: string
-
-	// Dependents - Enter First name
-	txtDepFirstNameR9?: string
-
-	// Dependents - Enter Middle initial
-	txtDepMiddleInitialR9?: string
-
-	// Dependents - Enter Last name
-	txtDepLastNameR9?: string
-
-	// Dependents - Enter Social Security number
-	txtDepSsnR9?: string
-
-	// Dependents - Enter Date of Birth
-	txtDepDOBR9?: string
-
-	// Dependents - Select Relationship to you
-	cboDepRelationR9?: string
-
-	chkChildTaxCredIndR9?: string
-
-	// Dependents - Enter IP PIN
-	txtDepIPPINR9?: string
-
-	// Dependents - Enter First name
-	txtDepFirstNameR10?: string
-
-	// Dependents - Enter Middle initial
-	txtDepMiddleInitialR10?: string
-
-	// Dependents - Enter Last name
-	txtDepLastNameR10?: string
-
-	// Dependents - Enter Social Security number
-	txtDepSsnR10?: string
-
-	// Dependents - Enter Date of Birth
-	txtDepDOBR10?: string
-
-	// Dependents - Select Relationship to you
-	cboDepRelationR10?: string
-
-	chkChildTaxCredIndR10?: string
-
-	// Dependents - Enter IP PIN
-	txtDepIPPINR10?: string
-
-	
+		// Dependents - Enter Last name
+		txtDepLastNameR8?: #UPPERCASE
+		txtDepLastNameR8?: strings.MaxRunes(45)
+
+		// Dependents - Enter Social Security number
+		txtDepSsnR8?: #SSN
+		txtDepSsnR8?: strings.MaxRunes(11)
+
+		// Dependents - Enter Date of Birth
+		txtDepDOBR8?: #DATE
+		txtDepDOBR8?: strings.MaxRunes(10)
+
+		// Dependents - Select Relationship to you
+		cboDepRelationR8: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+
+		
+		// Check if dependent qualifies for: Child tax credit
+		// Check if dependent qualifies for: Credit for other dependents
+		chkChildTaxCredIndR8: "1" | "0"
+
+		// Dependents - Enter IP PIN
+		txtDepIPPINR8?: #NUMERIC
+		txtDepIPPINR8?: strings.MaxRunes(6)
+
+		// Dependents - Enter First name
+		txtDepFirstNameR9?: #UPPERCASE
+		txtDepFirstNameR9?: strings.MaxRunes(40)
+
+		// Dependents - Enter Middle initial
+		txtDepMiddleInitialR9?: #UPPERCASE
+		txtDepMiddleInitialR9?: strings.MaxRunes(2)
+
+		// Dependents - Enter Last name
+		txtDepLastNameR9?: #UPPERCASE
+		txtDepLastNameR9?: strings.MaxRunes(45)
+
+		// Dependents - Enter Social Security number
+		txtDepSsnR9?: #SSN
+		txtDepSsnR9?: strings.MaxRunes(11)
+
+		// Dependents - Enter Date of Birth
+		txtDepDOBR9?: #DATE
+		txtDepDOBR9?: strings.MaxRunes(10)
+
+		// Dependents - Select Relationship to you
+		cboDepRelationR9: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+
+		
+		// Check if dependent qualifies for: Child tax credit
+		// Check if dependent qualifies for: Credit for other dependents
+		chkChildTaxCredIndR9: "1" | "0"
+
+		// Dependents - Enter IP PIN
+		txtDepIPPINR9?: #NUMERIC
+		txtDepIPPINR9?: strings.MaxRunes(6)
+
+		// Dependents - Enter First name
+		txtDepFirstNameR10?: #UPPERCASE
+		txtDepFirstNameR10?: strings.MaxRunes(40)
+
+		// Dependents - Enter Middle initial
+		txtDepMiddleInitialR10?: #UPPERCASE
+		txtDepMiddleInitialR10?: strings.MaxRunes(2)
+
+		// Dependents - Enter Last name
+		txtDepLastNameR10?: #UPPERCASE
+		txtDepLastNameR10?: strings.MaxRunes(45)
+
+		// Dependents - Enter Social Security number
+		txtDepSsnR10?: #SSN
+		txtDepSsnR10?: strings.MaxRunes(11)
+
+		// Dependents - Enter Date of Birth
+		txtDepDOBR10?: #DATE
+		txtDepDOBR10?: strings.MaxRunes(10)
+
+		// Dependents - Select Relationship to you
+		cboDepRelationR10: *"" | "SO" | "D" | "GC" | "FC" | "SI" | "B" | "NE" | "NW" | "P" | "GP" | "A" | "U" | "SC" | "HB" | "HS" | "SB" | "SS" | "O"
+
+		
+		// Check if depCheck if dependent qualifies for: Child tax credit
+		// Check if dependent qualifies for: Credit for other dependents
+		chkChildTaxCredIndR10: "1" | "0"
+
+		// Dependents - Enter IP PIN
+		txtDepIPPINR10?: #NUMERIC
+		txtDepIPPINR10?: strings.MaxRunes(6)
+
+		
+	}
+
+	#output: {
+		txtTaxPayerName?: #UPPERCASE
+		txtTaxPayerName?: strings.MaxRunes(75)
+		txtTaxPayerSsn?: #SSN
+		txtTaxPayerSsn?: strings.MaxRunes(11)
+		
+	}
+
+	#links: {
+		
+	}
 }

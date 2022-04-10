@@ -1,28 +1,37 @@
 package freefile
 
+
+
 // Form 9000 - Alternative Media Preference - Spouse
 #f9000s: {
-	txtTaxpayerName?: string
+	#input: {
+		
+		// 00 Standard Print (Cancels prior election)
+		// 01 Large Print
+		// 02 Braille
+		// 03 Audio (MP3)
+		// 04 Plain Text File (TXT)
+		// 05 Braille Ready File (BRF)
+		chkF9000AlternativeMedCd: "00" | "01" | "02" | "03" | "04" | "05"
 
-	txtTaxPayerSSN?: string
+		
+	}
 
-	txtAddress1?: string
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxPayerSSN?: #SSN
+		txtAddress1?: #UPPERCASE
+		txtApartment?: #UPPERCASE
+		txtCity?: #UPPERCASE
+		txtState?: #UPPERCASE
+		txtZipCode?: #UPPERCASE
+		txtForeignCountry?: #UPPERCASE
+		txtForeignState?: #UPPERCASE
+		txtForeignCode?: #UPPERCASE
+		
+	}
 
-	txtApartment?: string
-
-	txtCity?: string
-
-	txtState?: string
-
-	txtZipCode?: string
-
-	txtForeignCountry?: string
-
-	txtForeignState?: string
-
-	txtForeignCode?: string
-
-	chkF9000AlternativeMedCd?: string
-
-	
+	#links: {
+		
+	}
 }

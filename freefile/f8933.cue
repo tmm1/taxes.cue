@@ -1,63 +1,90 @@
 package freefile
 
+import "strings"
+
 // Form 8933 - Carbon Oxide Sequestration Credit
 #f8933: {
-	txtTaxpayerName?: string
+	#input: {
+		// Part 1. Line 1. Captured qualified carbon oxide during the tax year
+		chkF8933CapQualifiedInd: *"" | "1"
 
-	txtTaxpayerSSN?: string
+		// Line 2. Physically disposed, used, or utilized captured qualified carbon oxide during the tax year
+		chkF8933PhysiQualifiedInd: *"" | "1"
 
-	chkF8933CapQualifiedInd?: string
+		// Line 3. Elected to allow another taxpayer to claim the carbon oxide sequestration credit that you would've otherwise been
+		chkF8933ElectAllowInd: *"" | "1"
 
-	chkF8933PhysiQualifiedInd?: string
+		// Line 4. Another taxpayer elected to allow you to claim the carbon oxide sequestration credit that they would've otherwise been
+		chkF8933ElectAllowYouInd: *"" | "1"
 
-	chkF8933ElectAllowInd?: string
+		// Line 1a. Metric tons captured and disposed of
+		txtF8933TonsCaptDispose?: #AMOUNT
+		txtF8933TonsCaptDispose?: strings.MaxRunes(10)
 
-	chkF8933ElectAllowYouInd?: string
+		// Line 2a. Metric tons captured and used or utilized
+		txtF8933TonsCaptEor?: #AMOUNT
+		txtF8933TonsCaptEor?: strings.MaxRunes(10)
 
-	// Line 1a. Metric tons captured and disposed of
-	txtF8933TonsCaptDispose?: string
+		// Line 3a. Metric tons captured and disposed of
+		txtF8933TonsCaptUse?: #AMOUNT
+		txtF8933TonsCaptUse?: strings.MaxRunes(10)
 
-	txtF8933TonsCaptDisposAmt?: string
+		// Line 4a. Metric tons captured and used or utilized
+		txtF8933TonsCaptDispUse?: #AMOUNT
+		txtF8933TonsCaptDispUse?: strings.MaxRunes(10)
 
-	// Line 2a. Metric tons captured and used or utilized
-	txtF8933TonsCaptEor?: string
+		// Line 5a. Metric tons captured and disposed of and for which you didn't elect for another
+		txtF8933Sec45qCaptEor?: #AMOUNT
+		txtF8933Sec45qCaptEor?: strings.MaxRunes(10)
 
-	txtF8933TonsCaptEorAmt?: string
+		// LIne 6a. Metric tons captured and utilized and for which you didn't elect for another
+		txtF8933Sec45qCaptUse?: #AMOUNT
+		txtF8933Sec45qCaptUse?: strings.MaxRunes(10)
 
-	// Line 3a. Metric tons captured and disposed of
-	txtF8933TonsCaptUse?: string
+		// Line 7. Section 45Q(b)(3) election. Check the box if you are making the election under section 45Q(b)(3)
+		chkF8933Sec45QbEleInd: *"" | "1"
 
-	txtF8933TonsCaptUseAmt?: string
+		// Line 6. Section 45Q(f)(6) election. Check the box if you are making the election under section 45Q(f)(6)
+		chkF8933Sec45QfEleInd: *"" | "1"
 
-	// Line 4a. Metric tons captured and used or utilized
-	txtF8933TonsCaptDispUse?: string
+		// Line 9 - Carbon oxide sequestration credit for which another taxpayer elected under section 45Q(f)(3)(B) to allow you to claim. See instructions for attaching Model Certificates ELECT, EOR-Owner, DISP-Owner, and UTZ
+		txtF8933Sec45qSequCrtAmt?: #AMOUNT
+		txtF8933Sec45qSequCrtAmt?: strings.MaxRunes(10)
 
-	txtF8933TonsCaptDispUseAmt?: string
+		// Line 10. Carbon oxide sequestration credit from partnerships and S corporations (see instructions)
+		txtF8933CdtFrmPassThru?: #AMOUNT
+		txtF8933CdtFrmPassThru?: strings.MaxRunes(10)
 
-	// Line 5a. Metric tons captured and disposed of and for which you didn't elect for another
-	txtF8933Sec45qCaptEor?: string
+		// Line 12 - Carbon oxide sequestration credit recaptured. See instructions for attaching Model Certificate RECAPTURE
+		txtF8933SequCrtRecapAmt?: #AMOUNT
+		txtF8933SequCrtRecapAmt?: strings.MaxRunes(10)
 
-	txtF8933Sec45qCaptEorAmt?: string
+		
+	}
 
-	// LIne 6a. Metric tons captured and utilized and for which you didn't elect for another
-	txtF8933Sec45qCaptUse?: string
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxpayerName?: strings.MaxRunes(12)
+		txtTaxpayerSSN?: #SSN
+		txtTaxpayerSSN?: strings.MaxRunes(11)
+		txtF8933TonsCaptDisposAmt?: #AMOUNT
+		txtF8933TonsCaptDisposAmt?: strings.MaxRunes(10)
+		txtF8933TonsCaptEorAmt?: #AMOUNT
+		txtF8933TonsCaptEorAmt?: strings.MaxRunes(10)
+		txtF8933TonsCaptUseAmt?: #AMOUNT
+		txtF8933TonsCaptUseAmt?: strings.MaxRunes(10)
+		txtF8933TonsCaptDispUseAmt?: #AMOUNT
+		txtF8933TonsCaptDispUseAmt?: strings.MaxRunes(10)
+		txtF8933Sec45qCaptEorAmt?: #AMOUNT
+		txtF8933Sec45qCaptEorAmt?: strings.MaxRunes(10)
+		txtF8933Sec45qCaptUseAmt?: #AMOUNT
+		txtF8933Sec45qCaptUseAmt?: strings.MaxRunes(10)
+		txtF8933CuryrCdt?: #AMOUNT
+		txtF8933CuryrCdt?: strings.MaxRunes(10)
+		
+	}
 
-	txtF8933Sec45qCaptUseAmt?: string
-
-	chkF8933Sec45QbEleInd?: string
-
-	chkF8933Sec45QfEleInd?: string
-
-	// Line 9 - Carbon oxide sequestration credit for which another taxpayer elected under section 45Q(f)(3)(B) to allow you to claim. See instructions for attaching Model Certificates ELECT, EOR-Owner, DISP-Owner, and UTZ
-	txtF8933Sec45qSequCrtAmt?: string
-
-	// Line 10. Carbon oxide sequestration credit from partnerships and S corporations (see instructions)
-	txtF8933CdtFrmPassThru?: string
-
-	txtF8933CuryrCdt?: string
-
-	// Line 12 - Carbon oxide sequestration credit recaptured. See instructions for attaching Model Certificate RECAPTURE
-	txtF8933SequCrtRecapAmt?: string
-
-	
+	#links: {
+		
+	}
 }

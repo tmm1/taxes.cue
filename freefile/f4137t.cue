@@ -1,97 +1,131 @@
 package freefile
 
+import "strings"
+
 // Form 4137 - Social Security and Medicare Tax on Unreported Tip Income - Taxpayer
 #f4137t: {
-	txtTaxpayerName?: string
+	#input: {
+		// Name of employer to whom you were required to but didn't report all your tips
+		txtAaEmpName?: #UPPERCASE
+		txtAaEmpName?: strings.MaxRunes(50)
 
-	txtTaxPayerSSN?: string
+		// Employer identification number
+		txtAbEmpIdNum?: #EIN
+		txtAbEmpIdNum?: strings.MaxRunes(10)
 
-	// Name of employer to whom you were required to but didn't report all your tips
-	txtAaEmpName?: string
+		// Total cash and charge tips you received
+		txtAcAmtReceived?: #AMOUNT
+		txtAcAmtReceived?: strings.MaxRunes(10)
 
-	// Employer identification number
-	txtAbEmpIdNum?: string
+		// Total cash and charge tips you reported to your employer
+		txtAdAmtReported?: #AMOUNT
+		txtAdAmtReported?: strings.MaxRunes(10)
 
-	// Total cash and charge tips you received
-	txtAcAmtReceived?: string
+		// Name of employer to whom you were required to but didn't report all your tips
+		txtBaEmpName?: #UPPERCASE
+		txtBaEmpName?: strings.MaxRunes(50)
 
-	// Total cash and charge tips you reported to your employer
-	txtAdAmtReported?: string
+		// Employer identification number
+		txtBbEmpIdNum?: #EIN
+		txtBbEmpIdNum?: strings.MaxRunes(10)
 
-	// Name of employer to whom you were required to but didn't report all your tips
-	txtBaEmpName?: string
+		// Total cash and charge tips you received
+		txtBcAmtReceived?: #AMOUNT
+		txtBcAmtReceived?: strings.MaxRunes(10)
 
-	// Employer identification number
-	txtBbEmpIdNum?: string
+		// Total cash and charge tips you reported to your employer
+		txtBdAmtReported?: #AMOUNT
+		txtBdAmtReported?: strings.MaxRunes(10)
 
-	// Total cash and charge tips you received
-	txtBcAmtReceived?: string
+		// Name of employer to whom you were required to but didn't report all your tips
+		txtCaEmpName?: #UPPERCASE
+		txtCaEmpName?: strings.MaxRunes(50)
 
-	// Total cash and charge tips you reported to your employer
-	txtBdAmtReported?: string
+		// Employer identification number
+		txtCbEmpIdNum?: #EIN
+		txtCbEmpIdNum?: strings.MaxRunes(10)
 
-	// Name of employer to whom you were required to but didn't report all your tips
-	txtCaEmpName?: string
+		// Total cash and charge tips you received
+		txtCcAmtReceived?: #AMOUNT
+		txtCcAmtReceived?: strings.MaxRunes(10)
 
-	// Employer identification number
-	txtCbEmpIdNum?: string
+		// Total cash and charge tips you reported to your employer
+		txtCdAmtReported?: #AMOUNT
+		txtCdAmtReported?: strings.MaxRunes(10)
 
-	// Total cash and charge tips you received
-	txtCcAmtReceived?: string
+		// Name of employer to whom you were required to but didn't report all your tips
+		txtDaEmpName?: #UPPERCASE
+		txtDaEmpName?: strings.MaxRunes(50)
 
-	// Total cash and charge tips you reported to your employer
-	txtCdAmtReported?: string
+		// Employer identification number
+		txtDbEmpIdNum?: #EIN
+		txtDbEmpIdNum?: strings.MaxRunes(10)
 
-	// Name of employer to whom you were required to but didn't report all your tips
-	txtDaEmpName?: string
+		// Total cash and charge tips you received
+		txtDcAmtReceived?: #AMOUNT
+		txtDcAmtReceived?: strings.MaxRunes(10)
 
-	// Employer identification number
-	txtDbEmpIdNum?: string
+		// Total cash and charge tips you reported to your employer
+		txtDdAmtReported?: #AMOUNT
+		txtDdAmtReported?: strings.MaxRunes(10)
 
-	// Total cash and charge tips you received
-	txtDcAmtReceived?: string
+		// Name of employer to whom you were required to but didn't report all your tips
+		txtEaEmpName?: #UPPERCASE
+		txtEaEmpName?: strings.MaxRunes(50)
 
-	// Total cash and charge tips you reported to your employer
-	txtDdAmtReported?: string
+		// Employer identification number
+		txtEbEmpIdNum?: #EIN
+		txtEbEmpIdNum?: strings.MaxRunes(10)
 
-	// Name of employer to whom you were required to but didn't report all your tips
-	txtEaEmpName?: string
+		// Total cash and charge tips you received
+		txtEcAmtReceived?: #AMOUNT
+		txtEcAmtReceived?: strings.MaxRunes(10)
 
-	// Employer identification number
-	txtEbEmpIdNum?: string
+		// Total cash and charge tips you reported to your employer
+		txtEdAmtReported?: #AMOUNT
+		txtEdAmtReported?: strings.MaxRunes(10)
 
-	// Total cash and charge tips you received
-	txtEcAmtReceived?: string
+		// Cash and charge tips you received but didn't report to your employer because the total was less than $20 in a calendar month
+		txtAmtNotReport?: #AMOUNT
+		txtAmtNotReport?: strings.MaxRunes(10)
 
-	// Total cash and charge tips you reported to your employer
-	txtEdAmtReported?: string
+		// Total social security wages and social security tips (total of boxes 3 and 7 shown on your Form(s) W-2) and railroad retirement (RRTA) compensation
+		txtTotSsWagesTips?: #AMOUNT
+		txtTotSsWagesTips?: strings.MaxRunes(10)
 
-	txtAmtReceive?: string
+		// Unreported tips subject to social security tax. Enter the smaller of line 6 or line 9. If you received tips as a federal, state, or local government employee, see instructions
+		txtUnrepTipsSmall?: #AMOUNT
+		txtUnrepTipsSmall?: strings.MaxRunes(10)
 
-	txtAmtReport?: string
+		
+	}
 
-	txtSubLn3FrLn2?: string
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxpayerName?: strings.MaxRunes(75)
+		txtTaxPayerSSN?: #SSN
+		txtTaxPayerSSN?: strings.MaxRunes(11)
+		txtAmtReceive?: #AMOUNT
+		txtAmtReceive?: strings.MaxRunes(10)
+		txtAmtReport?: #AMOUNT
+		txtAmtReport?: strings.MaxRunes(10)
+		txtSubLn3FrLn2?: #AMOUNT
+		txtSubLn3FrLn2?: strings.MaxRunes(10)
+		txtSubLn5FrLn4?: #AMOUNT
+		txtSubLn5FrLn4?: strings.MaxRunes(10)
+		txtLn7?: #AMOUNT
+		txtSubLn8FrLn7?: #AMOUNT
+		txtSubLn8FrLn7?: strings.MaxRunes(10)
+		txtMulLn10ByPt062?: #AMOUNT
+		txtMulLn10ByPt062?: strings.MaxRunes(10)
+		txtMulLn6ByPt0145?: #AMOUNT
+		txtMulLn6ByPt0145?: strings.MaxRunes(10)
+		txtAddLn11Ln12?: #AMOUNT
+		txtAddLn11Ln12?: strings.MaxRunes(10)
+		
+	}
 
-	// Cash and charge tips you received but didn't report to your employer because the total was less than $20 in a calendar month
-	txtAmtNotReport?: string
-
-	txtSubLn5FrLn4?: string
-
-	txtLn7?: string
-
-	// Total social security wages and social security tips (total of boxes 3 and 7 shown on your Form(s) W-2) and railroad retirement (RRTA) compensation
-	txtTotSsWagesTips?: string
-
-	txtSubLn8FrLn7?: string
-
-	// Unreported tips subject to social security tax. Enter the smaller of line 6 or line 9. If you received tips as a federal, state, or local government employee, see instructions
-	txtUnrepTipsSmall?: string
-
-	txtMulLn10ByPt062?: string
-
-	txtMulLn6ByPt0145?: string
-
-	txtAddLn11Ln12?: string
-
-	
+	#links: {
+		
+	}
 }

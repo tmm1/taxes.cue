@@ -1,184 +1,252 @@
 package freefile
 
+import "strings"
+
 // Form 4835 - Farm Rental Income and Expenses (Crop and Livestock Shares (Not Cash) Received by Landowner (or Sub-Lessor)) (Income not subject to self-employment tax)
 #f4835: {
-	txtF4835Ssn?: string
+	#input: {
+		// Employer ID Number
+		txtEmployerIdNo?: #EIN
+		txtEmployerIdNo?: strings.MaxRunes(10)
 
-	txtF4835Name?: string
+		
+		// Yes - Did you actively participate in the operation of this farm during 2020?
+		// No - Did you actively participate in the operation of this farm during 2020?
+		chkActPartInd: "1" | "0"
 
-	// Employer ID Number
-	txtEmployerIdNo?: string
+		// Income from production of livestock, produce, grains, and other crops
+		txtSaleOfLivestock?: #AMOUNT
+		txtSaleOfLivestock?: strings.MaxRunes(10)
 
-	chkActPartInd?: string
+		// Cooperative distributions
+		txtTotCooperDist?: #AMOUNT
+		txtTotCooperDist?: strings.MaxRunes(10)
 
-	// Income from production of livestock, produce, grains, and other crops
-	txtSaleOfLivestock?: string
+		// Cooperative distributions - taxable amount
+		txtTaxCooperDist?: #AMOUNT
+		txtTaxCooperDist?: strings.MaxRunes(10)
 
-	// Cooperative distributions
-	txtTotCooperDist?: string
+		// Agricultural program payments
+		txtAgriPgmPay?: #AMOUNT
+		txtAgriPgmPay?: strings.MaxRunes(10)
 
-	// Cooperative distributions - taxable amount
-	txtTaxCooperDist?: string
+		// Agricultural program payments - taxable amount
+		txtTaxAgriPay?: #AMOUNT
+		txtTaxAgriPay?: strings.MaxRunes(10)
 
-	// Agricultural program payments
-	txtAgriPgmPay?: string
+		// CCC loans reported under election
+		txtCccUnderElect?: #AMOUNT
+		txtCccUnderElect?: strings.MaxRunes(10)
 
-	// Agricultural program payments - taxable amount
-	txtTaxAgriPay?: string
+		// CCC loans forfeited
+		txtCccForfeited?: #AMOUNT
+		txtCccForfeited?: strings.MaxRunes(10)
 
-	// CCC loans reported under election
-	txtCccUnderElect?: string
+		// CCC loans forfeited - taxable amount
+		txtTaxCccAmt?: #AMOUNT
+		txtTaxCccAmt?: strings.MaxRunes(10)
 
-	// CCC loans forfeited
-	txtCccForfeited?: string
+		// Crop insurance proceeds and federal crop disaster payments - amount received
+		txtCropInsAmt?: #AMOUNT
+		txtCropInsAmt?: strings.MaxRunes(10)
 
-	// CCC loans forfeited - taxable amount
-	txtTaxCccAmt?: string
+		// Crop insurance proceeds and federal crop disaster payments - taxable amount
+		txtTaxInsurAmt?: #AMOUNT
+		txtTaxInsurAmt?: strings.MaxRunes(10)
 
-	// Crop insurance proceeds and federal crop disaster payments - amount received
-	txtCropInsAmt?: string
+		// Check If election to defer to 2021 is attached
+		chkDeferto04Ind: *"" | "1"
 
-	// Crop insurance proceeds and federal crop disaster payments - taxable amount
-	txtTaxInsurAmt?: string
+		// Amount deferred from 2020
+		txtAmtDefferFr02?: #AMOUNT
+		txtAmtDefferFr02?: strings.MaxRunes(10)
 
-	chkDeferto04Ind?: string
+		// Other income, including federal and state gasoline or fuel tax credit or refund
+		txtOtherIncOnln6?: #AMOUNT
+		txtOtherIncOnln6?: strings.MaxRunes(10)
 
-	// Amount deferred from 2020
-	txtAmtDefferFr02?: string
+		// Expenses - Farm Rental Property - Pension and profit-sharing plans
+		txtPenProfitShare?: #AMOUNT
+		txtPenProfitShare?: strings.MaxRunes(10)
 
-	// Other income, including federal and state gasoline or fuel tax credit or refund
-	txtOtherIncOnln6?: string
+		// Car and truck expenses
+		txtCarTruckExp?: #AMOUNT
+		txtCarTruckExp?: strings.MaxRunes(10)
 
-	txtGrossIncOnln7?: string
+		// Expenses - Farm Rental Property - Chemicals
+		txtChemeicals?: #AMOUNT
+		txtChemeicals?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Pension and profit-sharing plans
-	txtPenProfitShare?: string
+		// Expenses - Farm Rental Property - Conservation expenses
+		txtConservationExp?: #AMOUNT
+		txtConservationExp?: strings.MaxRunes(10)
 
-	cmdAddF4562?: string
+		// Expenses - Farm Rental Property - Rent or lease: Vehicles, machinery, and equipment
+		txtRentLeaseVehicle?: #AMOUNT
+		txtRentLeaseVehicle?: strings.MaxRunes(10)
 
-	// Car and truck expenses
-	txtCarTruckExp?: string
+		// Expenses - Farm Rental Property -Custom hire (machine work)
+		txtCustomHireMcwork?: #AMOUNT
+		txtCustomHireMcwork?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Chemicals
-	txtChemeicals?: string
+		// Expenses - Farm Rental Property - Rent or lease - Other
+		txtRentLeaseOther?: #AMOUNT
+		txtRentLeaseOther?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Conservation expenses
-	txtConservationExp?: string
+		// Expenses - Farm Rental Property - Repairs and maintenance
+		txtRepairMaintenance?: #AMOUNT
+		txtRepairMaintenance?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Rent or lease: Vehicles, machinery, and equipment
-	txtRentLeaseVehicle?: string
+		// Expenses - Farm Rental Property - Depreciation and section 179 expense deduction not claimed elsewhere
+		txtDepreciationExpDed?: #AMOUNT
+		txtDepreciationExpDed?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property -Custom hire (machine work)
-	txtCustomHireMcwork?: string
+		// Expenses - Farm Rental Property - Seeds and plants
+		txtSeedPlantPurchar?: #AMOUNT
+		txtSeedPlantPurchar?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Rent or lease - Other
-	txtRentLeaseOther?: string
+		// Expenses - Farm Rental Property - Storage and warehousing
+		txtStorageWarehouse?: #AMOUNT
+		txtStorageWarehouse?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Repairs and maintenance
-	txtRepairMaintenance?: string
+		// Expenses - Farm Rental Property - Supplies
+		txtSuppliesPurchase?: #AMOUNT
+		txtSuppliesPurchase?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Depreciation and section 179 expense deduction not claimed elsewhere
-	txtDepreciationExpDed?: string
+		// Expenses - Farm Rental Property - Employee benefit programs other than on line 21
+		txtEmpBenfProg?: #AMOUNT
+		txtEmpBenfProg?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Seeds and plants
-	txtSeedPlantPurchar?: string
+		// Expenses - Farm Rental Property - Taxes
+		txtTaxesOnSchf?: #AMOUNT
+		txtTaxesOnSchf?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Storage and warehousing
-	txtStorageWarehouse?: string
+		// Expenses - Farm Rental Property - Feed
+		txtFeedPurchased?: #AMOUNT
+		txtFeedPurchased?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Supplies
-	txtSuppliesPurchase?: string
+		// Expenses - Farm Rental Property - Utilities
+		txtUtilitiesExp?: #AMOUNT
+		txtUtilitiesExp?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Employee benefit programs other than on line 21
-	txtEmpBenfProg?: string
+		// Expenses - Farm Rental Property - Fertilizers and lime
+		txtFertilizersLime?: #AMOUNT
+		txtFertilizersLime?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Taxes
-	txtTaxesOnSchf?: string
+		// Expenses - Farm Rental Property - Freight and trucking
+		txtFreightTrucking?: #AMOUNT
+		txtFreightTrucking?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Feed
-	txtFeedPurchased?: string
+		// Expenses - Farm Rental Property - Veterinary, breeding, and medicine
+		txtBreedingMedicine?: #AMOUNT
+		txtBreedingMedicine?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Utilities
-	txtUtilitiesExp?: string
+		// Expenses - Farm Rental Property - Gasoline, fuel, and oil
+		txtGasolineFuelOil?: #AMOUNT
+		txtGasolineFuelOil?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Fertilizers and lime
-	txtFertilizersLime?: string
+		// Expenses - Farm Rental Property - Insurance (other than health)
+		txtInsuranceOthHealth?: #AMOUNT
+		txtInsuranceOthHealth?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Freight and trucking
-	txtFreightTrucking?: string
+		// Expenses - Farm Rental Property - Other expenses description(a)
+		txtDescriptionName1?: #UPPERCASE
+		txtDescriptionName1?: strings.MaxRunes(50)
 
-	// Expenses - Farm Rental Property - Veterinary, breeding, and medicine
-	txtBreedingMedicine?: string
+		// Expenses - Farm Rental Property - Other expenses amount(a)
+		txtDescripAmount1?: #AMOUNT
+		txtDescripAmount1?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Gasoline, fuel, and oil
-	txtGasolineFuelOil?: string
+		// Expenses - Farm Rental Property - Other expenses description(b)
+		txtDescriptionName2?: #UPPERCASE
+		txtDescriptionName2?: strings.MaxRunes(50)
 
-	// Expenses - Farm Rental Property - Insurance (other than health)
-	txtInsuranceOthHealth?: string
+		// Expenses - Farm Rental Property - Other expenses amount(b)
+		txtDescripAmount2?: #AMOUNT
+		txtDescripAmount2?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Other expenses description(a)
-	txtDescriptionName1?: string
+		// Expenses - Farm Rental Property - Mortgage (paid to banks, etc. )
+		txtMortgageIntr?: #AMOUNT
+		txtMortgageIntr?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Other expenses amount(a)
-	txtDescripAmount1?: string
+		// Expenses - Farm Rental Property - Other expenses description(c)
+		txtDescriptionName3?: #UPPERCASE
+		txtDescriptionName3?: strings.MaxRunes(50)
 
-	// Expenses - Farm Rental Property - Other expenses description(b)
-	txtDescriptionName2?: string
+		// Expenses - Farm Rental Property - Other expenses amount(c)
+		txtDescripAmount3?: #AMOUNT
+		txtDescripAmount3?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Other expenses amount(b)
-	txtDescripAmount2?: string
+		// Expenses - Farm Rental Property - Interest - Other
+		txtOtherInterest?: #AMOUNT
+		txtOtherInterest?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Mortgage (paid to banks, etc. )
-	txtMortgageIntr?: string
+		// Expenses - Farm Rental Property - Other expenses description(d)
+		txtDescriptionName4?: #UPPERCASE
+		txtDescriptionName4?: strings.MaxRunes(50)
 
-	// Expenses - Farm Rental Property - Other expenses description(c)
-	txtDescriptionName3?: string
+		// Expenses - Farm Rental Property - Other expenses amount(d)
+		txtDescripAmount4?: #AMOUNT
+		txtDescripAmount4?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Other expenses amount(c)
-	txtDescripAmount3?: string
+		// Expenses - Farm Rental Property - Other expenses description(e)
+		txtDescriptionName5?: #UPPERCASE
+		txtDescriptionName5?: strings.MaxRunes(50)
 
-	// Expenses - Farm Rental Property - Interest - Other
-	txtOtherInterest?: string
+		// Expenses - Farm Rental Property - Other expenses amount(e)
+		txtDescripAmount5?: #AMOUNT
+		txtDescripAmount5?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Other expenses description(d)
-	txtDescriptionName4?: string
+		// Expenses - Farm Rental Property - Other expenses description(f)
+		txtDescriptionName6?: #UPPERCASE
+		txtDescriptionName6?: strings.MaxRunes(50)
 
-	// Expenses - Farm Rental Property - Other expenses amount(d)
-	txtDescripAmount4?: string
+		// Expenses - Farm Rental Property - Other expenses amount(f)
+		txtDescripAmount6?: #AMOUNT
+		txtDescripAmount6?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Other expenses description(e)
-	txtDescriptionName5?: string
+		// Expenses - Farm Rental Property - Labor hired (less employment credits)
+		txtLaborHired?: #AMOUNT
+		txtLaborHired?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Other expenses amount(e)
-	txtDescripAmount5?: string
+		// Expenses - Farm Rental Property - Other expenses description(g)
+		txtDescriptionName7?: #UPPERCASE
+		txtDescriptionName7?: strings.MaxRunes(50)
 
-	// Expenses - Farm Rental Property - Other expenses description(f)
-	txtDescriptionName6?: string
+		// Expenses - Farm Rental Property - Other expenses amount(g)
+		txtDescripAmount7?: #AMOUNT
+		txtDescripAmount7?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Other expenses amount(f)
-	txtDescripAmount6?: string
+		
+		// All investment is at risk
+		// Some investment is not at risk
+		chkRiskInd: "1" | "2"
 
-	// Expenses - Farm Rental Property - Labor hired (less employment credits)
-	txtLaborHired?: string
+		// This field is automatically calculated for you
+		txtDeductLoss8582?: #AMOUNT
+		txtDeductLoss8582?: strings.MaxRunes(10)
 
-	// Expenses - Farm Rental Property - Other expenses description(g)
-	txtDescriptionName7?: string
+		
+	}
 
-	// Expenses - Farm Rental Property - Other expenses amount(g)
-	txtDescripAmount7?: string
+	#output: {
+		txtF4835Ssn?: #SSN
+		txtF4835Ssn?: strings.MaxRunes(11)
+		txtF4835Name?: #UPPERCASE
+		txtF4835Name?: strings.MaxRunes(50)
+		txtGrossIncOnln7?: #AMOUNT
+		txtGrossIncOnln7?: strings.MaxRunes(10)
+		txtTotaExpLn8Toln30G?: #AMOUNT
+		txtTotaExpLn8Toln30G?: strings.MaxRunes(10)
+		txtNetFarmProfitLoss?: #AMOUNT
+		txtNetFarmProfitLoss?: strings.MaxRunes(10)
+		
+	}
 
-	txtTotaExpLn8Toln30G?: string
-
-	txtNetFarmProfitLoss?: string
-
-	chkRiskInd?: string
-
-	cmdAddF8582?: string
-
-	cmdAddF6198?: string
-
-	// This field is automatically calculated for you
-	txtDeductLoss8582?: string
-
-	
+	#links: {
+		// cmdAddF4562?: #f4562z
+		// cmdAddF8582?: #f8582
+		// cmdAddF6198?: #f6198z
+		
+	}
 }

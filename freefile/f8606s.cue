@@ -1,102 +1,120 @@
 package freefile
 
+import "strings"
+
 // Form 8606 - Nondeductible IRAs - Spouse
 #f8606s: {
-	txtFrm8606RecName?: string
+	#input: {
+		// Line 1. Enter your nondeductible contributions to traditional IRAs for 2021, including those made for 2021 from January 1, 2022, through April 18, 2022
+		txtPrt1NonContri?: #AMOUNT
+		txtPrt1NonContri?: strings.MaxRunes(10)
 
-	txtFrm8606RecSSN?: string
+		// Line 2. Enter your total basis in traditional IRAs
+		txtPrt1IraBasis?: #AMOUNT
+		txtPrt1IraBasis?: strings.MaxRunes(10)
 
-	txtAddress?: string
+		// Line 4. Enter those contributions included on line 1 that were made from January 1, 2022, through April 18, 2022
+		txtPrt1ContMade?: #AMOUNT
+		txtPrt1ContMade?: strings.MaxRunes(10)
 
-	txtAptNumber?: string
+		// Line 6. Enter the value of all your traditional, SEP, and SIMPLE IRAs as of December 31, 2021, plus any outstanding rollovers. Subtract any repayments of qualified disaster distributions (see 2021 Forms 8915-D and 8915-F)
+		txtPrt1AllSEP?: #AMOUNT
+		txtPrt1AllSEP?: strings.MaxRunes(10)
 
-	txtCityStZip?: string
+		// Line 7. Enter your distributions from traditional, SEP, and SIMPLE IRAs in 2021. Do not include rollovers (other than repayments of qualified disaster distributions (see 2021 Forms 8915-D and 8915-F)), qualified charitable distributions, a one-time distribution to fund an HSA, conversions to a Roth IRA, certain returned contributions, or recharacterizations of traditional IRA contributions (see instructions)
+		txtPrt1DistSEP?: #AMOUNT
+		txtPrt1DistSEP?: strings.MaxRunes(10)
 
-	txtForeignCountry?: string
+		// Line 8. Enter the net amount you converted from traditional, SEP, and SIMPLE IRAs to Roth IRAs in 2021. Also, enter this amount on line 16
+		txtPrt1NetSEP?: #AMOUNT
+		txtPrt1NetSEP?: strings.MaxRunes(10)
 
-	txtForeignState?: string
+		// Line 15b. Enter the amount on line 15a attributable to qualified disaster distributions from 2021 Forms 8915-D and 8915-F (see instructions). Also, enter this amount on 2021 Form 8915-D, line 23; or 2021 Form 8915-F, line 18, as applicable
+		txtPrt1QualHurricDist?: #AMOUNT
+		txtPrt1QualHurricDist?: strings.MaxRunes(10)
 
-	txtForeignCode?: string
+		// Line 16. If you completed Part I, enter the amount from line 8. Otherwise, enter the net amount you converted from traditional, SEP, and SIMPLE IRAs to Roth IRAs in 2021
+		txtPrt2NetSEP?: #AMOUNT
+		txtPrt2NetSEP?: strings.MaxRunes(10)
 
-	// Line 1. Enter your nondeductible contributions to traditional IRAs for 2021, including those made for 2021 from January 1, 2022, through April 18, 2022
-	txtPrt1NonContri?: string
+		// Line 17. If you completed Part I, enter the amount from line 11. Otherwise, enter your basis in the amount on line 16
+		txtPrt2Basis?: #AMOUNT
+		txtPrt2Basis?: strings.MaxRunes(10)
 
-	// Line 2. Enter your total basis in traditional IRAs
-	txtPrt1IraBasis?: string
+		// Line 19. Enter your total nonqualified distributions from Roth IRAs in 2021, including any qualified first-time homebuyer distributions, and any qualified disaster distributions. Also, see 2021 Forms 8915-D and 8915-F
+		txtPrt3RothIRA?: #AMOUNT
+		txtPrt3RothIRA?: strings.MaxRunes(10)
 
-	txtPrt1Add1?: string
+		// Line 20. Qualified first-time homebuyer expenses Do not enter more than $10, 000 reduced by the total of all your prior qualified first-time homebuyer distributions
+		txtPrt3HomeBuy?: #AMOUNT
+		txtPrt3HomeBuy?: strings.MaxRunes(10)
 
-	// Line 4. Enter those contributions included on line 1 that were made from January 1, 2022, through April 18, 2022
-	txtPrt1ContMade?: string
+		// Line 22. Enter your basis in Roth IRA contributions  If line 21 is zero, stop here
+		txtPrt3IraBasis?: #AMOUNT
+		txtPrt3IraBasis?: strings.MaxRunes(10)
 
-	txtPrt1Sub1?: string
+		// Line 24. Enter your basis in conversions from traditional, SEP, and SIMPLE IRAs and rollovers from qualified retirement plans to a Roth IRA
+		txtPrt3IraConver?: #AMOUNT
+		txtPrt3IraConver?: strings.MaxRunes(10)
 
-	// Line 6. Enter the value of all your traditional, SEP, and SIMPLE IRAs as of December 31, 2021, plus any outstanding rollovers. Subtract any repayments of qualified disaster distributions (see 2021 Forms 8915-D and 8915-F)
-	txtPrt1AllSEP?: string
+		// Line 25b. Enter the amount on line 25a attributable to qualified disaster distributions from 2021 Forms 8915-D and 8915-F (see instructions). Also, enter this amount on 2021 Form 8915-D, line 24; or 2021 Form 8915-F, line 19, as applicable
+		txtPrt3QualHurricDist?: #AMOUNT
+		txtPrt3QualHurricDist?: strings.MaxRunes(10)
 
-	// Line 7. Enter your distributions from traditional, SEP, and SIMPLE IRAs in 2021. Do not include rollovers (other than repayments of qualified disaster distributions (see 2021 Forms 8915-D and 8915-F)), qualified charitable distributions, a one-time distribution to fund an HSA, conversions to a Roth IRA, certain returned contributions, or recharacterizations of traditional IRA contributions (see instructions)
-	txtPrt1DistSEP?: string
+		
+	}
 
-	// Line 8. Enter the net amount you converted from traditional, SEP, and SIMPLE IRAs to Roth IRAs in 2021. Also, enter this amount on line 16
-	txtPrt1NetSEP?: string
+	#output: {
+		txtFrm8606RecName?: #UPPERCASE
+		txtFrm8606RecName?: strings.MaxRunes(75)
+		txtFrm8606RecSSN?: #SSN
+		txtFrm8606RecSSN?: strings.MaxRunes(11)
+		txtAddress?: #UPPERCASE
+		txtAptNumber?: #UPPERCASE
+		txtCityStZip?: #UPPERCASE
+		txtForeignCountry?: #UPPERCASE
+		txtForeignState?: #UPPERCASE
+		txtForeignCode?: #UPPERCASE
+		txtPrt1Add1?: #AMOUNT
+		txtPrt1Add1?: strings.MaxRunes(10)
+		txtPrt1Sub1?: #AMOUNT
+		txtPrt1Sub1?: strings.MaxRunes(10)
+		txtPrt1Add2?: #AMOUNT
+		txtPrt1Add2?: strings.MaxRunes(10)
+		txtPrt1Divide1?: #AMOUNT
+		txtPrt1Divide1?: strings.MaxRunes(10)
+		txtPrt1Multiply1?: #AMOUNT
+		txtPrt1Multiply1?: strings.MaxRunes(10)
+		txtPrt1Multiply2?: #AMOUNT
+		txtPrt1Multiply2?: strings.MaxRunes(10)
+		txtPrt1Add3?: #AMOUNT
+		txtPrt1Add3?: strings.MaxRunes(10)
+		txtPrt1Sub2?: #AMOUNT
+		txtPrt1Sub2?: strings.MaxRunes(10)
+		txtPrt1Subln12FrmLn7?: #AMOUNT
+		txtPrt1Subln12FrmLn7?: strings.MaxRunes(10)
+		txtPrt1Result?: #AMOUNT
+		txtPrt1Result?: strings.MaxRunes(10)
+		txtFrm8606RecName?: #UPPERCASE
+		txtFrm8606RecName?: strings.MaxRunes(75)
+		txtFrm8606RecSSN?: #SSN
+		txtFrm8606RecSSN?: strings.MaxRunes(11)
+		txtPrt2Result?: #AMOUNT
+		txtPrt2Result?: strings.MaxRunes(10)
+		txtPrt3Sub1?: #AMOUNT
+		txtPrt3Sub1?: strings.MaxRunes(10)
+		txtPrt3Sub2?: #AMOUNT
+		txtPrt3Sub2?: strings.MaxRunes(10)
+		txtPrt3SubLn24FrmLn23?: #AMOUNT
+		txtPrt3SubLn24FrmLn23?: strings.MaxRunes(10)
+		txtPrt3Result?: #AMOUNT
+		txtPrt3Result?: strings.MaxRunes(10)
+		txtPrepareSign?: #UPPERCASE
+		txtSelfPrepared?: #UPPERCASE
+		
+	}
 
-	txtPrt1Add2?: string
-
-	txtPrt1Divide1?: string
-
-	txtPrt1Multiply1?: string
-
-	txtPrt1Multiply2?: string
-
-	txtPrt1Add3?: string
-
-	txtPrt1Sub2?: string
-
-	txtPrt1Subln12FrmLn7?: string
-
-	// Line 15b. Enter the amount on line 15a attributable to qualified disaster distributions from 2021 Forms 8915-D and 8915-F (see instructions). Also, enter this amount on 2021 Form 8915-D, line 23; or 2021 Form 8915-F, line 18, as applicable
-	txtPrt1QualHurricDist?: string
-
-	txtPrt1Result?: string
-
-	txtFrm8606RecName?: string
-
-	txtFrm8606RecSSN?: string
-
-	// Line 16. If you completed Part I, enter the amount from line 8. Otherwise, enter the net amount you converted from traditional, SEP, and SIMPLE IRAs to Roth IRAs in 2021
-	txtPrt2NetSEP?: string
-
-	// Line 17. If you completed Part I, enter the amount from line 11. Otherwise, enter your basis in the amount on line 16
-	txtPrt2Basis?: string
-
-	txtPrt2Result?: string
-
-	// Line 19. Enter your total nonqualified distributions from Roth IRAs in 2021, including any qualified first-time homebuyer distributions, and any qualified disaster distributions. Also, see 2021 Forms 8915-D and 8915-F
-	txtPrt3RothIRA?: string
-
-	// Line 20. Qualified first-time homebuyer expenses Do not enter more than $10, 000 reduced by the total of all your prior qualified first-time homebuyer distributions
-	txtPrt3HomeBuy?: string
-
-	txtPrt3Sub1?: string
-
-	// Line 22. Enter your basis in Roth IRA contributions  If line 21 is zero, stop here
-	txtPrt3IraBasis?: string
-
-	txtPrt3Sub2?: string
-
-	// Line 24. Enter your basis in conversions from traditional, SEP, and SIMPLE IRAs and rollovers from qualified retirement plans to a Roth IRA
-	txtPrt3IraConver?: string
-
-	txtPrt3SubLn24FrmLn23?: string
-
-	// Line 25b. Enter the amount on line 25a attributable to qualified disaster distributions from 2021 Forms 8915-D and 8915-F (see instructions). Also, enter this amount on 2021 Form 8915-D, line 24; or 2021 Form 8915-F, line 19, as applicable
-	txtPrt3QualHurricDist?: string
-
-	txtPrt3Result?: string
-
-	txtPrepareSign?: string
-
-	txtSelfPrepared?: string
-
-	
+	#links: {
+		
+	}
 }

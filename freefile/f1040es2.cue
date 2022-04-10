@@ -1,33 +1,36 @@
 package freefile
 
+import "strings"
+
 // Form 1040-ES - Individual Estimated Tax, Voucher 2
 #f1040es2: {
-	// Amount of estimated tax you are paying by check or  money order
-	txtEstimatedTaxAmt?: string
+	#input: {
+		// Amount of estimated tax you are paying by check or  money order
+		txtEstimatedTaxAmt?: #AMOUNT
+		txtEstimatedTaxAmt?: strings.MaxRunes(10)
 
-	txtTaxpayerName?: string
+		
+	}
 
-	txtTaxPayerSSN?: string
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxPayerSSN?: #SSN
+		txtTaxPayerSSN?: strings.MaxRunes(11)
+		txtSpouseName?: #UPPERCASE
+		txtSpouseSSN?: #SSN
+		txtSpouseSSN?: strings.MaxRunes(11)
+		txtAddress?: #UPPERCASE
+		txtCity?: #UPPERCASE
+		txtState?: #UPPERCASE
+		txtZipCode?: #UPPERCASE
+		txtForeignCountry?: #UPPERCASE
+		txtForeignState?: #UPPERCASE
+		txtForeignCode?: #UPPERCASE
+		txtPrivacyAct?: #UPPERCASE
+		
+	}
 
-	txtSpouseName?: string
-
-	txtSpouseSSN?: string
-
-	txtAddress?: string
-
-	txtCity?: string
-
-	txtState?: string
-
-	txtZipCode?: string
-
-	txtForeignCountry?: string
-
-	txtForeignState?: string
-
-	txtForeignCode?: string
-
-	txtPrivacyAct?: string
-
-	
+	#links: {
+		
+	}
 }

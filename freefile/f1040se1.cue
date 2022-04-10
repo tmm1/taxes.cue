@@ -1,289 +1,381 @@
 package freefile
 
+import "strings"
+
 // Schedule E - Supplemental Income and Loss (From rental real estate, royalties, partnerships, S corporations, estates, trusts, REMICs, etc.)
 #f1040se1: {
-	txtTaxpayerName?: string
+	#input: {
+		
+		// Income or Loss From Rental Real Estate and Royalties Note: If you are in the business of renting personal property, use Schedule C. See instructions. If you are an individual, report farm rental income or loss from Form 4835 on page 2, line 40. Yes -  Did you make any payments in 2020 that would require you to file Form(s) 1099? See instructions
+		// Income or Loss From Rental Real Estate and Royalties Note: If you are in the business of renting personal property, use Schedule C. See instructions. If you are an individual, report farm rental income or loss from Form 4835 on page 2, line 40. No -  Did you make any payments in 2020 that would require you to file Form(s) 1099? See instructions
+		chkMakePay1099Ind: "1" | "0"
 
-	txtTaxpayerSsn?: string
+		
+		// Yes - B. If 'Yes', did you or will you file required Form(s) 1099?
+		// Yes - B. If 'No', did you or will you file required Form(s) 1099?
+		chkReqForm1099Ind: "1" | "0"
 
-	chkMakePay1099Ind?: string
+		// Line 1a. Physical address of each property
+		txtScheStreetAddressA?: #UPPERCASE
+		txtScheStreetAddressA?: strings.MaxRunes(70)
 
-	chkReqForm1099Ind?: string
+		// Line 1a. Property A. City
+		txtScheCityA?: #UPPERCASE
+		txtScheCityA?: strings.MaxRunes(50)
 
-	// Line 1a. Physical address of each property
-	txtScheStreetAddressA?: string
+		// Line 1a. Property A. Select State
+		cboScheStateA: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
 
-	// Line 1a. Property A. City
-	txtScheCityA?: string
+		// Line 1a. Property A. Zipcode
+		txtScheZipA?: #NUMERIC
+		txtScheZipA?: strings.MaxRunes(5)
 
-	// Line 1a. Property A. Select State
-	cboScheStateA?: string
+		// Line 1a. Property B. Physical address
+		txtScheStreetAddressB?: #UPPERCASE
+		txtScheStreetAddressB?: strings.MaxRunes(70)
 
-	// Line 1a. Property A. Zipcode
-	txtScheZipA?: string
+		// Line 1a. Property B. City
+		txtScheCityB?: #UPPERCASE
+		txtScheCityB?: strings.MaxRunes(50)
 
-	// Line 1a. Property B. Physical address
-	txtScheStreetAddressB?: string
+		// Line 1a. Property B. Select State
+		cboScheStateB: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
 
-	// Line 1a. Property B. City
-	txtScheCityB?: string
+		// Line 1a. Property B. Zipcode
+		txtScheZipB?: #NUMERIC
+		txtScheZipB?: strings.MaxRunes(5)
 
-	// Line 1a. Property B. Select State
-	cboScheStateB?: string
+		// Line 1a. Property C. Physical address
+		txtScheStreetAddressC?: #UPPERCASE
+		txtScheStreetAddressC?: strings.MaxRunes(70)
 
-	// Line 1a. Property B. Zipcode
-	txtScheZipB?: string
+		// Line 1a. Property C. City
+		txtScheCityC?: #UPPERCASE
+		txtScheCityC?: strings.MaxRunes(50)
 
-	// Line 1a. Property C. Physical address
-	txtScheStreetAddressC?: string
+		// Line 1a. Property C. Select State
+		cboScheStateC: *"" | "AA" | "AE" | "AK" | "AL" | "AP" | "AR" | "AS" | "AZ" | "CA" | "CO" | "CT" | "DC" | "DE" | "FL" | "GA" | "GU" | "HI" | "IA" | "ID" | "IL" | "IN" | "KS" | "KY" | "LA" | "MA" | "MD" | "ME" | "MI" | "MN" | "MO" | "MP" | "MS" | "MT" | "NC" | "ND" | "NE" | "NH" | "NJ" | "NM" | "NV" | "NY" | "OH" | "OK" | "OR" | "PA" | "PR" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT" | "VA" | "VI" | "VT" | "WA" | "WI" | "WV" | "WY"
 
-	// Line 1a. Property C. City
-	txtScheCityC?: string
+		// Line 1a. Property C. Zipcode
+		txtScheZipC?: #NUMERIC
+		txtScheZipC?: strings.MaxRunes(5)
 
-	// Line 1a. Property C. Select State
-	cboScheStateC?: string
+		// Line 2. Property A. Checked QJV
+		chkScheQJVA: *"" | "1"
 
-	// Line 1a. Property C. Zipcode
-	txtScheZipC?: string
+		// Line 1b. Property A. Slect Type of Property
+		cboSchdePropertyTypeA: *"" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8"
 
-	chkScheQJVA?: string
+		// For each rental real estate property listed above, report the number of fair rental and personal use days. Check the QJV box only if you meet the requirements to file as a qualified joint venture. Property A Fair Rental Days
+		txtScheRentaldayA?: #NUMERIC
+		txtScheRentaldayA?: strings.MaxRunes(3)
 
-	// Line 1b. Property A. Slect Type of Property
-	cboSchdePropertyTypeA?: string
+		// Property A Personal Use Days
+		txtSchePersonaldayA?: #NUMERIC
+		txtSchePersonaldayA?: strings.MaxRunes(3)
 
-	// For each rental real estate property listed above, report the number of fair rental and personal use days. Check the QJV box only if you meet the requirements to file as a qualified joint venture. Property A Fair Rental Days
-	txtScheRentaldayA?: string
+		// Property B. Checked QJV
+		chkScheQJVB: *"" | "1"
 
-	// Property A Personal Use Days
-	txtSchePersonaldayA?: string
+		// Line 1b. Property B. Select Type of Property
+		cboSchdePropertyTypeB: *"" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8"
 
-	chkScheQJVB?: string
+		// Property B Fair Rental Days
+		txtScheRentaldayB?: #NUMERIC
+		txtScheRentaldayB?: strings.MaxRunes(3)
 
-	// Line 1b. Property B. Select Type of Property
-	cboSchdePropertyTypeB?: string
+		
+		txtSchePersonaldayB?: #NUMERIC
+		txtSchePersonaldayB?: strings.MaxRunes(3)
 
-	// Property B Fair Rental Days
-	txtScheRentaldayB?: string
+		// Property C. Checked QJV
+		chkScheQJVC: *"" | "1"
 
-	txtSchePersonaldayB?: string
+		// LIne 1b. Property C. Select Type of Property
+		cboSchdePropertyTypeC: *"" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8"
 
-	chkScheQJVC?: string
+		// Property C Fair Rental Days
+		txtScheRentaldayC?: #NUMERIC
+		txtScheRentaldayC?: strings.MaxRunes(3)
 
-	// LIne 1b. Property C. Select Type of Property
-	cboSchdePropertyTypeC?: string
+		// Property C Personal Use Days
+		txtSchePersonaldayC?: #NUMERIC
+		txtSchePersonaldayC?: strings.MaxRunes(3)
 
-	// Property C Fair Rental Days
-	txtScheRentaldayC?: string
+		// Part 1: Typer of Prooerty Other Describetion
+		txtSchdeOthProptypeDesc?: #UPPERCASE
+		txtSchdeOthProptypeDesc?: strings.MaxRunes(35)
+
+		// Line 3. Property A. Rents received
+		txtScheAmountRentA?: #AMOUNT
+		txtScheAmountRentA?: strings.MaxRunes(10)
+
+		// Line 3. Property B. Rents received
+		txtScheAmountRentB?: #AMOUNT
+		txtScheAmountRentB?: strings.MaxRunes(10)
+
+		// Line 3. Property C. Rents received
+		txtScheAmountRentC?: #AMOUNT
+		txtScheAmountRentC?: strings.MaxRunes(10)
+
+		// Line 4. Property A. Royalties received
+		txtScheRoyalityA?: #AMOUNT
+		txtScheRoyalityA?: strings.MaxRunes(10)
+
+		// Line 4. Property B. Royalties received
+		txtScheRoyalityB?: #AMOUNT
+		txtScheRoyalityB?: strings.MaxRunes(10)
+
+		// Line 4. Property C. Royalties received
+		txtScheRoyalityC?: #AMOUNT
+		txtScheRoyalityC?: strings.MaxRunes(10)
+
+		// Line 5. Property A. Advertising
+		txtScheAdvertizeA?: #AMOUNT
+		txtScheAdvertizeA?: strings.MaxRunes(10)
+
+		// Line 5. Property B. Advertising
+		txtScheAdvertizeB?: #AMOUNT
+		txtScheAdvertizeB?: strings.MaxRunes(10)
+
+		// Line 5. Property C. Advertising
+		txtScheAdvertizeC?: #AMOUNT
+		txtScheAdvertizeC?: strings.MaxRunes(10)
+
+		// Line 6. Property A. Auto and travel
+		txtScheAutotravelA?: #AMOUNT
+		txtScheAutotravelA?: strings.MaxRunes(10)
+
+		// Line 6. Property B. Auto and travel
+		txtScheAutotravelB?: #AMOUNT
+		txtScheAutotravelB?: strings.MaxRunes(10)
+
+		// Line 6. Property C. Auto and travel
+		txtScheAutotravelC?: #AMOUNT
+		txtScheAutotravelC?: strings.MaxRunes(10)
+
+		// Line 7. Property A. Cleaning and maintenance
+		txtScheCleanMaintainenceA?: #AMOUNT
+		txtScheCleanMaintainenceA?: strings.MaxRunes(10)
+
+		// Line 7. Property B. Cleaning and maintenance
+		txtScheCleanMaintainenceB?: #AMOUNT
+		txtScheCleanMaintainenceB?: strings.MaxRunes(10)
+
+		// Line 7. Property C. Cleaning and maintenance
+		txtScheCleanMaintainenceC?: #AMOUNT
+		txtScheCleanMaintainenceC?: strings.MaxRunes(10)
+
+		// Line 8. Property A. Commissions
+		txtScheCommisionPaideA?: #AMOUNT
+		txtScheCommisionPaideA?: strings.MaxRunes(10)
+
+		// Line 8. Property A. Commissions
+		txtScheCommisionPaideB?: #AMOUNT
+		txtScheCommisionPaideB?: strings.MaxRunes(10)
+
+		// Line 8. Property C. Commissions
+		txtScheCommisionPaideC?: #AMOUNT
+		txtScheCommisionPaideC?: strings.MaxRunes(10)
+
+		// Line 9. Property A. Insurance
+		txtScheInsuranceA?: #AMOUNT
+		txtScheInsuranceA?: strings.MaxRunes(10)
+
+		// Line 9. Property B. Insurance
+		txtScheInsuranceB?: #AMOUNT
+		txtScheInsuranceB?: strings.MaxRunes(10)
+
+		// Line 9. Property C. Insurance
+		txtScheInsuranceC?: #AMOUNT
+		txtScheInsuranceC?: strings.MaxRunes(10)
+
+		// Line 10. Property A. Legal and other professional fees
+		txtScheLegalfeeA?: #AMOUNT
+		txtScheLegalfeeA?: strings.MaxRunes(10)
+
+		// Line 10. Property B. Legal and other professional fees
+		txtScheLegalfeeB?: #AMOUNT
+		txtScheLegalfeeB?: strings.MaxRunes(10)
+
+		// Line 10. Property B. Legal and other professional fees
+		txtScheLegalfeeC?: #AMOUNT
+		txtScheLegalfeeC?: strings.MaxRunes(10)
+
+		// Line 11. Property A. Management fees
+		txtScheManagementFeeA?: #AMOUNT
+		txtScheManagementFeeA?: strings.MaxRunes(10)
+
+		// Line 11. Property B. Management fees
+		txtScheManagementFeeB?: #AMOUNT
+		txtScheManagementFeeB?: strings.MaxRunes(10)
+
+		// Line 11. Property C. Management fees
+		txtScheManagementFeeC?: #AMOUNT
+		txtScheManagementFeeC?: strings.MaxRunes(10)
+
+		// Line 12. Property A. Mortgage interest paid to banks
+		txtScheMortageInterestA?: #AMOUNT
+		txtScheMortageInterestA?: strings.MaxRunes(10)
+
+		// Line 12. Property B. Mortgage interest paid to banks
+		txtScheMortageInterestB?: #AMOUNT
+		txtScheMortageInterestB?: strings.MaxRunes(10)
+
+		// Line 12. Property C. Mortgage interest paid to banks
+		txtScheMortageInterestC?: #AMOUNT
+		txtScheMortageInterestC?: strings.MaxRunes(10)
+
+		// Line 13. Property A. Other interest
+		txtScheOtherInterestA?: #AMOUNT
+		txtScheOtherInterestA?: strings.MaxRunes(10)
+
+		// Line 13. Property B. Other interest
+		txtScheOtherInterestB?: #AMOUNT
+		txtScheOtherInterestB?: strings.MaxRunes(10)
+
+		// Line 13. Property C. Other interest
+		txtScheOtherInterestC?: #AMOUNT
+		txtScheOtherInterestC?: strings.MaxRunes(10)
+
+		// Line 14. Property A. Repairs
+		txtScheRepairA?: #AMOUNT
+		txtScheRepairA?: strings.MaxRunes(10)
 
-	// Property C Personal Use Days
-	txtSchePersonaldayC?: string
-
-	// Part 1: Typer of Prooerty Other Describetion
-	txtSchdeOthProptypeDesc?: string
-
-	// Line 3. Property A. Rents received
-	txtScheAmountRentA?: string
-
-	// Line 3. Property B. Rents received
-	txtScheAmountRentB?: string
-
-	// Line 3. Property C. Rents received
-	txtScheAmountRentC?: string
-
-	// Line 4. Property A. Royalties received
-	txtScheRoyalityA?: string
-
-	// Line 4. Property B. Royalties received
-	txtScheRoyalityB?: string
-
-	// Line 4. Property C. Royalties received
-	txtScheRoyalityC?: string
-
-	// Line 5. Property A. Advertising
-	txtScheAdvertizeA?: string
-
-	// Line 5. Property B. Advertising
-	txtScheAdvertizeB?: string
-
-	// Line 5. Property C. Advertising
-	txtScheAdvertizeC?: string
-
-	// Line 6. Property A. Auto and travel
-	txtScheAutotravelA?: string
-
-	// Line 6. Property B. Auto and travel
-	txtScheAutotravelB?: string
-
-	// Line 6. Property C. Auto and travel
-	txtScheAutotravelC?: string
-
-	// Line 7. Property A. Cleaning and maintenance
-	txtScheCleanMaintainenceA?: string
-
-	// Line 7. Property B. Cleaning and maintenance
-	txtScheCleanMaintainenceB?: string
-
-	// Line 7. Property C. Cleaning and maintenance
-	txtScheCleanMaintainenceC?: string
-
-	// Line 8. Property A. Commissions
-	txtScheCommisionPaideA?: string
-
-	// Line 8. Property A. Commissions
-	txtScheCommisionPaideB?: string
-
-	// Line 8. Property C. Commissions
-	txtScheCommisionPaideC?: string
-
-	// Line 9. Property A. Insurance
-	txtScheInsuranceA?: string
-
-	// Line 9. Property B. Insurance
-	txtScheInsuranceB?: string
-
-	// Line 9. Property C. Insurance
-	txtScheInsuranceC?: string
-
-	// Line 10. Property A. Legal and other professional fees
-	txtScheLegalfeeA?: string
-
-	// Line 10. Property B. Legal and other professional fees
-	txtScheLegalfeeB?: string
-
-	// Line 10. Property B. Legal and other professional fees
-	txtScheLegalfeeC?: string
-
-	// Line 11. Property A. Management fees
-	txtScheManagementFeeA?: string
-
-	// Line 11. Property B. Management fees
-	txtScheManagementFeeB?: string
-
-	// Line 11. Property C. Management fees
-	txtScheManagementFeeC?: string
-
-	// Line 12. Property A. Mortgage interest paid to banks
-	txtScheMortageInterestA?: string
-
-	// Line 12. Property B. Mortgage interest paid to banks
-	txtScheMortageInterestB?: string
-
-	// Line 12. Property C. Mortgage interest paid to banks
-	txtScheMortageInterestC?: string
-
-	// Line 13. Property A. Other interest
-	txtScheOtherInterestA?: string
-
-	// Line 13. Property B. Other interest
-	txtScheOtherInterestB?: string
-
-	// Line 13. Property C. Other interest
-	txtScheOtherInterestC?: string
-
-	// Line 14. Property A. Repairs
-	txtScheRepairA?: string
-
-	// Line 14. Property B. Repairs
-	txtScheRepairB?: string
-
-	// Line 14. Property C. Repairs
-	txtScheRepairC?: string
-
-	// Line 15. Property A. Supplies
-	txtScheSupplieA?: string
-
-	// Line 15. Property B. Supplies
-	txtScheSupplieB?: string
-
-	// Line 15. Property C. Supplies
-	txtScheSupplieC?: string
-
-	// Line 16. Property A. Taxes
-	txtScheTaxesA?: string
-
-	// Line 16. Property B. Taxes
-	txtScheTaxesB?: string
-
-	// Line 16. Property C. Taxes
-	txtScheTaxesC?: string
-
-	// Line 17. Property A. Utilities
-	txtScheUtilityA?: string
-
-	// Line 17. Property B. Utilities
-	txtScheUtilityB?: string
-
-	// Line 17. Property C. Utilities
-	txtScheUtilityC?: string
-
-	cmdAdd4562Depr?: string
-
-	// Line 18. Property A. Depreciation expense or depletion
-	txtSchdeDepreciationExpenseA?: string
-
-	// Line 18. Property B. Depreciation expense or depletion
-	txtSchdeDepreciationExpenseB?: string
-
-	// Line 18. Property C. Depreciation expense or depletion
-	txtSchdeDepreciationExpenseC?: string
-
-	// Line 19. Explaition
-	txtOtherExplain?: string
-
-	// Line 19. Property A. Other
-	txtSchdeOtherExpA?: string
-
-	// Line 19. Property B. Other
-	txtSchdeOtherExpB?: string
-
-	// Line 19. Property C. Other
-	txtSchdeOtherExpC?: string
-
-	txtScheTotalLine20A?: string
-
-	txtScheTotalLine20B?: string
-
-	txtScheTotalLine20C?: string
-
-	cmdAdd6198Frm?: string
-
-	// Line 21. Property A. Subtract line 20 from line 3 (rents) and/or 4 (royalties). If result is a (loss), see instructions to find out if you must file Form 6198
-	txtScheSubstratLine3A?: string
-
-	// Line 21. Property B. Subtract line 20 from line 3 (rents) and/or 4 (royalties). If result is a (loss), see instructions to find out if you must file Form 6198
-	txtScheSubstratLine3B?: string
-
-	// Line 21. Property C. Subtract line 20 from line 3 (rents) and/or 4 (royalties). If result is a (loss), see instructions to find out if you must file Form 6198
-	txtScheSubstratLine3C?: string
-
-	cmdAdd8582Frm?: string
-
-	// Line 22. Property A. Deductible rental real estate loss after limitation, if any, on Form 8582
-	txtScheRentalRealestateA?: string
-
-	// Line 22. Property B. Deductible rental real estate loss after limitation, if any, on Form 8582
-	txtScheRentalRealestateB?: string
-
-	// Line 22. Property A. Deductible rental real estate loss after limitation, if any, on Form 8582
-	txtScheRentalRealestateC?: string
-
-	txtScheTotincRentalAmt?: string
-
-	txtScheTotincRoyalAmt?: string
-
-	txtScheTotMortgageAmt?: string
-
-	txtScheTotDepexpAmt?: string
-
-	txtScheTotExpensesAmt?: string
-
-	txtScheAddPositivevalue?: string
-
-	txtScheTotalLosse?: string
-
-	txtScheTotIncomeorloss?: string
-
-	cmdAddSchEP2?: string
-
-	
+		// Line 14. Property B. Repairs
+		txtScheRepairB?: #AMOUNT
+		txtScheRepairB?: strings.MaxRunes(10)
+
+		// Line 14. Property C. Repairs
+		txtScheRepairC?: #AMOUNT
+		txtScheRepairC?: strings.MaxRunes(10)
+
+		// Line 15. Property A. Supplies
+		txtScheSupplieA?: #AMOUNT
+		txtScheSupplieA?: strings.MaxRunes(10)
+
+		// Line 15. Property B. Supplies
+		txtScheSupplieB?: #AMOUNT
+		txtScheSupplieB?: strings.MaxRunes(10)
+
+		// Line 15. Property C. Supplies
+		txtScheSupplieC?: #AMOUNT
+		txtScheSupplieC?: strings.MaxRunes(10)
+
+		// Line 16. Property A. Taxes
+		txtScheTaxesA?: #AMOUNT
+		txtScheTaxesA?: strings.MaxRunes(10)
+
+		// Line 16. Property B. Taxes
+		txtScheTaxesB?: #AMOUNT
+		txtScheTaxesB?: strings.MaxRunes(10)
+
+		// Line 16. Property C. Taxes
+		txtScheTaxesC?: #AMOUNT
+		txtScheTaxesC?: strings.MaxRunes(10)
+
+		// Line 17. Property A. Utilities
+		txtScheUtilityA?: #AMOUNT
+		txtScheUtilityA?: strings.MaxRunes(10)
+
+		// Line 17. Property B. Utilities
+		txtScheUtilityB?: #AMOUNT
+		txtScheUtilityB?: strings.MaxRunes(10)
+
+		// Line 17. Property C. Utilities
+		txtScheUtilityC?: #AMOUNT
+		txtScheUtilityC?: strings.MaxRunes(10)
+
+		// Line 18. Property A. Depreciation expense or depletion
+		txtSchdeDepreciationExpenseA?: #AMOUNT
+		txtSchdeDepreciationExpenseA?: strings.MaxRunes(10)
+
+		// Line 18. Property B. Depreciation expense or depletion
+		txtSchdeDepreciationExpenseB?: #AMOUNT
+		txtSchdeDepreciationExpenseB?: strings.MaxRunes(10)
+
+		// Line 18. Property C. Depreciation expense or depletion
+		txtSchdeDepreciationExpenseC?: #AMOUNT
+		txtSchdeDepreciationExpenseC?: strings.MaxRunes(10)
+
+		// Line 19. Explaition
+		txtOtherExplain?: #UPPERCASE
+		txtOtherExplain?: strings.MaxRunes(10)
+
+		// Line 19. Property A. Other
+		txtSchdeOtherExpA?: #AMOUNT
+		txtSchdeOtherExpA?: strings.MaxRunes(10)
+
+		// Line 19. Property B. Other
+		txtSchdeOtherExpB?: #AMOUNT
+		txtSchdeOtherExpB?: strings.MaxRunes(10)
+
+		// Line 19. Property C. Other
+		txtSchdeOtherExpC?: #AMOUNT
+		txtSchdeOtherExpC?: strings.MaxRunes(10)
+
+		// Line 21. Property A. Subtract line 20 from line 3 (rents) and/or 4 (royalties). If result is a (loss), see instructions to find out if you must file Form 6198
+		txtScheSubstratLine3A?: #AMOUNT | #NEGAMOUNT
+		txtScheSubstratLine3A?: strings.MaxRunes(10)
+
+		// Line 21. Property B. Subtract line 20 from line 3 (rents) and/or 4 (royalties). If result is a (loss), see instructions to find out if you must file Form 6198
+		txtScheSubstratLine3B?: #AMOUNT | #NEGAMOUNT
+		txtScheSubstratLine3B?: strings.MaxRunes(10)
+
+		// Line 21. Property C. Subtract line 20 from line 3 (rents) and/or 4 (royalties). If result is a (loss), see instructions to find out if you must file Form 6198
+		txtScheSubstratLine3C?: #AMOUNT | #NEGAMOUNT
+		txtScheSubstratLine3C?: strings.MaxRunes(10)
+
+		// Line 22. Property A. Deductible rental real estate loss after limitation, if any, on Form 8582
+		txtScheRentalRealestateA?: #AMOUNT
+		txtScheRentalRealestateA?: strings.MaxRunes(10)
+
+		// Line 22. Property B. Deductible rental real estate loss after limitation, if any, on Form 8582
+		txtScheRentalRealestateB?: #AMOUNT
+		txtScheRentalRealestateB?: strings.MaxRunes(10)
+
+		// Line 22. Property A. Deductible rental real estate loss after limitation, if any, on Form 8582
+		txtScheRentalRealestateC?: #AMOUNT
+		txtScheRentalRealestateC?: strings.MaxRunes(10)
+
+		
+	}
+
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxpayerName?: strings.MaxRunes(87)
+		txtTaxpayerSsn?: #UPPERCASE
+		txtTaxpayerSsn?: strings.MaxRunes(11)
+		txtScheTotalLine20A?: #AMOUNT
+		txtScheTotalLine20A?: strings.MaxRunes(10)
+		txtScheTotalLine20B?: #AMOUNT
+		txtScheTotalLine20B?: strings.MaxRunes(10)
+		txtScheTotalLine20C?: #AMOUNT
+		txtScheTotalLine20C?: strings.MaxRunes(10)
+		txtScheTotincRentalAmt?: #AMOUNT
+		txtScheTotincRentalAmt?: strings.MaxRunes(10)
+		txtScheTotincRoyalAmt?: #AMOUNT
+		txtScheTotincRoyalAmt?: strings.MaxRunes(10)
+		txtScheTotMortgageAmt?: #AMOUNT
+		txtScheTotMortgageAmt?: strings.MaxRunes(10)
+		txtScheTotDepexpAmt?: #AMOUNT
+		txtScheTotDepexpAmt?: strings.MaxRunes(10)
+		txtScheTotExpensesAmt?: #AMOUNT
+		txtScheTotExpensesAmt?: strings.MaxRunes(10)
+		txtScheAddPositivevalue?: #AMOUNT
+		txtScheAddPositivevalue?: strings.MaxRunes(10)
+		txtScheTotalLosse?: #AMOUNT
+		txtScheTotalLosse?: strings.MaxRunes(10)
+		txtScheTotIncomeorloss?: #AMOUNT
+		txtScheTotIncomeorloss?: strings.MaxRunes(10)
+		
+	}
+
+	#links: {
+		// cmdAdd4562Depr?: #f4562e
+		// cmdAdd6198Frm?: #f6198e
+		// cmdAdd8582Frm?: #f8582
+		// cmdAddSchEP2?: #f1040se2
+		
+	}
 }

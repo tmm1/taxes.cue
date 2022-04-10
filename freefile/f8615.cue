@@ -1,79 +1,116 @@
 package freefile
 
+import "strings"
+
 // Form 8615 - Tax for Certain Children Who Have Unearned Income
 #f8615: {
-	txtTaxpayerName?: string
+	#input: {
+		// Parent's First Name
+		txtF8615ParentFirstName?: #UPPERCASE
+		txtF8615ParentFirstName?: strings.MaxRunes(20)
 
-	txtTaxpayerSSN?: string
+		// Parent's Middle Name
+		txtF8615ParentMi?: #UPPERCASE
+		txtF8615ParentMi?: strings.MaxRunes(1)
 
-	// Parent's First Name
-	txtF8615ParentFirstName?: string
+		// Parent's Last Name
+		txtF8615ParentLastName?: #UPPERCASE
+		txtF8615ParentLastName?: strings.MaxRunes(25)
 
-	// Parent's Middle Name
-	txtF8615ParentMi?: string
+		// Parent's SSN
+		txtF8615ParentSsn?: #SSN
+		txtF8615ParentSsn?: strings.MaxRunes(11)
 
-	// Parent's Last Name
-	txtF8615ParentLastName?: string
+		
+		// Parent's Filing Status-Single
+		// Parent's Filing Status -Joint
+		// Parent's Filing Status -Separate
+		// Parent's Filing Status -head of household
+		// Parent's Filing Status-Qualifying widower
+		chkF8615ParFilStatus: "1" | "2" | "3" | "4" | "5"
 
-	// Parent's SSN
-	txtF8615ParentSsn?: string
+		// Enter your unearned income
+		txtF8615ChildInvInc?: #AMOUNT
+		txtF8615ChildInvInc?: strings.MaxRunes(10)
 
-	chkF8615ParFilStatus?: string
+		// If the child did not itemize deductions on Schedule A (Form 1040 or Form 1040-NR), enter $2, 200. Otherwise, see instructions
+		txtF8615ChildStdItm?: #AMOUNT
+		txtF8615ChildStdItm?: strings.MaxRunes(10)
 
-	// Enter your unearned income
-	txtF8615ChildInvInc?: string
+		// Enter the child's taxable income from Form 1040 or 1040-NR, line 15
+		txtF8615ChildTaxableInc?: #AMOUNT
+		txtF8615ChildTaxableInc?: strings.MaxRunes(10)
 
-	// If the child did not itemize deductions on Schedule A (Form 1040 or Form 1040-NR), enter $2, 200. Otherwise, see instructions
-	txtF8615ChildStdItm?: string
+		// Enter your parent's taxable income
+		txtF8615ParTaxableInc?: #AMOUNT
+		txtF8615ParTaxableInc?: strings.MaxRunes(10)
 
-	txtF8615Ln1MinusLn2?: string
+		// Enter the total, if any, from Forms 8615, line 5, of all other children of the parent named above
+		txtF8615OthChildLn5?: #AMOUNT
+		txtF8615OthChildLn5?: strings.MaxRunes(10)
 
-	// Enter the child's taxable income from Form 1040 or 1040-NR, line 15
-	txtF8615ChildTaxableInc?: string
+		// 
+		chkF8615ParTaxtype: *"" | "1"
 
-	txtF8615MinLn3Ln4?: string
+		// Enter the tax on the amount on line 8 based on the parent�s filing status above
+		txtF8615SubTotTax?: #AMOUNT
+		txtF8615SubTotTax?: strings.MaxRunes(10)
 
-	// Enter your parent's taxable income
-	txtF8615ParTaxableInc?: string
+		
+		// 
+		// 
+		chkF8615ParCapGainInd: "1" | "1"
 
-	// Enter the total, if any, from Forms 8615, line 5, of all other children of the parent named above
-	txtF8615OthChildLn5?: string
+		// Enter the parent�s tax from Form 1040 or 1040-NR, line 16, minus any alternative minimum tax
+		txtF8615ParTax?: #AMOUNT
+		txtF8615ParTax?: strings.MaxRunes(10)
 
-	txtF8615SubTot?: string
+		// 
+		chkF8615Ln4MinusLn5Div: *"" | "1"
 
-	chkF8615ParTaxtype?: string
+		// Enter the tax on the amount on line 14 based on the child�s filing status
+		txtF8615Ln14Tax?: #AMOUNT
+		txtF8615Ln14Tax?: strings.MaxRunes(10)
 
-	// Enter the tax on the amount on line 8 based on the parent�s filing status above
-	txtF8615SubTotTax?: string
+		// Enter the tax on the amount on line 4 based on the child�s filing status
+		txtF8615Ln4Tax?: #AMOUNT
+		txtF8615Ln4Tax?: strings.MaxRunes(10)
 
-	chkF8615ParCapGainInd?: string
+		// 
+		chkF8615Line17Ind: *"" | "1"
 
-	// Enter the parent�s tax from Form 1040 or 1040-NR, line 16, minus any alternative minimum tax
-	txtF8615ParTax?: string
+		
+	}
 
-	txtF8615Ln9MinusLn10?: string
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxpayerName?: strings.MaxRunes(75)
+		txtTaxpayerSSN?: #SSN
+		txtTaxpayerSSN?: strings.MaxRunes(11)
+		txtF8615Ln1MinusLn2?: #AMOUNT
+		txtF8615Ln1MinusLn2?: strings.MaxRunes(10)
+		txtF8615MinLn3Ln4?: #AMOUNT
+		txtF8615MinLn3Ln4?: strings.MaxRunes(10)
+		txtF8615SubTot?: #AMOUNT
+		txtF8615SubTot?: strings.MaxRunes(10)
+		txtF8615Ln9MinusLn10?: #AMOUNT
+		txtF8615Ln9MinusLn10?: strings.MaxRunes(10)
+		txtF8615AddLn5Ln7?: #AMOUNT
+		txtF8615AddLn5Ln7?: strings.MaxRunes(10)
+		txtF8615DivLn5Ln12a?: #AMOUNT
+		txtF8615DivLn5Ln12a?: strings.MaxRunes(10)
+		txtF8615MulLn11Ln12b?: #AMOUNT
+		txtF8615MulLn11Ln12b?: strings.MaxRunes(10)
+		txtF8615Ln4MinusLn5?: #AMOUNT
+		txtF8615Ln4MinusLn5?: strings.MaxRunes(10)
+		txtF8615AddLn13Ln15?: #AMOUNT
+		txtF8615AddLn13Ln15?: strings.MaxRunes(10)
+		txtF8615ChildTax?: #AMOUNT
+		txtF8615ChildTax?: strings.MaxRunes(10)
+		
+	}
 
-	txtF8615AddLn5Ln7?: string
-
-	txtF8615DivLn5Ln12a?: string
-
-	txtF8615MulLn11Ln12b?: string
-
-	txtF8615Ln4MinusLn5?: string
-
-	chkF8615Ln4MinusLn5Div?: string
-
-	// Enter the tax on the amount on line 14 based on the child�s filing status
-	txtF8615Ln14Tax?: string
-
-	txtF8615AddLn13Ln15?: string
-
-	// Enter the tax on the amount on line 4 based on the child�s filing status
-	txtF8615Ln4Tax?: string
-
-	chkF8615Line17Ind?: string
-
-	txtF8615ChildTax?: string
-
-	
+	#links: {
+		
+	}
 }

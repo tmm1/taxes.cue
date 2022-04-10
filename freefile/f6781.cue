@@ -1,188 +1,249 @@
 package freefile
 
+import "strings"
+
 // Form 6781 - Gains and Losses from Section 1256 Contracts and Straddles
 #f6781: {
-	txtTaxpayerName?: string
+	#input: {
+		// Checkbox A. Mixed straddle election
+		chkMixdStradElectInd: *"" | "1"
 
-	txtTaxPayerSSN?: string
+		// Checkbox C. Mixed straddle account election
+		chkMixdStradAcctElectInd: *"" | "1"
 
-	chkMixdStradElectInd?: string
+		// Checkbox B. Straddle-by-straddle identification election
+		chkStradIdentElectInd: *"" | "1"
 
-	chkMixdStradAcctElectInd?: string
+		// Checkbox D. Net section 1256 contracts loss election
+		chkNet1256ElectInd: *"" | "1"
 
-	chkStradIdentElectInd?: string
+		// Part I. Section 1256 Contracts Marked to Market. Line 1(a). Identification of account
+		txtLn1AccountIdent_1?: #UPPERCASE
+		txtLn1AccountIdent_1?: strings.MaxRunes(100)
 
-	chkNet1256ElectInd?: string
+		// Gain or Loss. Use '-' for loss value
+		txtLn1GainLoss_1?: #AMOUNT | #NEGAMOUNT
+		txtLn1GainLoss_1?: strings.MaxRunes(10)
 
-	// Part I. Section 1256 Contracts Marked to Market. Line 1(a). Identification of account
-	txtLn1AccountIdent_1?: string
+		// Line 1(a). Identification of account
+		txtLn1AccountIdent_2?: #UPPERCASE
+		txtLn1AccountIdent_2?: strings.MaxRunes(100)
 
-	// Gain or Loss. Use '-' for loss value
-	txtLn1GainLoss_1?: string
+		// Gain or Loss. Use '-' for loss value
+		txtLn1GainLoss_2?: #AMOUNT | #NEGAMOUNT
+		txtLn1GainLoss_2?: strings.MaxRunes(10)
 
-	// Line 1(a). Identification of account
-	txtLn1AccountIdent_2?: string
+		// Line 1(a). Identification of account
+		txtLn1AccountIdent_3?: #UPPERCASE
+		txtLn1AccountIdent_3?: strings.MaxRunes(100)
 
-	// Gain or Loss. Use '-' for loss value
-	txtLn1GainLoss_2?: string
+		// Gain or Loss. Use '-' for loss value
+		txtLn1GainLoss_3?: #AMOUNT | #NEGAMOUNT
+		txtLn1GainLoss_3?: strings.MaxRunes(10)
 
-	// Line 1(a). Identification of account
-	txtLn1AccountIdent_3?: string
+		// Line 4. Form 1099-B adjustments. See instructions and attach statement
+		txtLn41099bAdjustment?: #AMOUNT
+		txtLn41099bAdjustment?: strings.MaxRunes(10)
 
-	// Gain or Loss. Use '-' for loss value
-	txtLn1GainLoss_3?: string
+		// Line 6. If you have a net section 1256 contracts loss and checked box D above, enter the amount of loss toback. Enter the loss as a positive number. If you didn't check box D, enter zero
+		txtLn6Net1256Loss?: #AMOUNT
+		txtLn6Net1256Loss?: strings.MaxRunes(10)
 
-	txtLn2aTotLoss?: string
+		// Part II. Gains and Losses From Straddles. Section A-Losses From Straddles. Line 10(a). Description of property
+		txtLn10aPropDesc_1?: #UPPERCASE
+		txtLn10aPropDesc_1?: strings.MaxRunes(100)
 
-	txtLn2bTotLoss?: string
+		// Line 10(b). Date entered into or acquired. (2 digit month, 2 digit day and 4 digit year)
+		txtLn10bDateEntered_1?: #DATE
+		txtLn10bDateEntered_1?: strings.MaxRunes(10)
 
-	txtLn3NetGainLoss?: string
+		// Line 10(c). Date closed out or sold. (2 digit month, 2 digit day and 4 digit year)
+		txtLn10cDateClosed_1?: #DATE
+		txtLn10cDateClosed_1?: strings.MaxRunes(10)
 
-	// Line 4. Form 1099-B adjustments. See instructions and attach statement
-	txtLn41099bAdjustment?: string
+		// Line 10(d). Gross sales price
+		txtLn10dGrossSalesPrice_1?: #AMOUNT
+		txtLn10dGrossSalesPrice_1?: strings.MaxRunes(10)
 
-	txtLn5CombineLn3Ln4?: string
+		// Line 10(e). Cost or other basis plus expense of sale
+		txtLn10eCostOfSale_1?: #AMOUNT
+		txtLn10eCostOfSale_1?: strings.MaxRunes(10)
 
-	// Line 6. If you have a net section 1256 contracts loss and checked box D above, enter the amount of loss toback. Enter the loss as a positive number. If you didn't check box D, enter zero
-	txtLn6Net1256Loss?: string
+		// Line 10(g). Unrecognized gain on offsetting positions
+		txtLn10gUnregGain_1?: #AMOUNT
+		txtLn10gUnregGain_1?: strings.MaxRunes(10)
 
-	txtLn7CombineLn5Ln6?: string
+		// Line 10(a). Description of property
+		txtLn10aPropDesc_2?: #UPPERCASE
+		txtLn10aPropDesc_2?: strings.MaxRunes(100)
 
-	txtLn8ShortTermGainLoss?: string
+		// Line 10(b). Date entered into or acquired. (2 digit month, 2 digit day and 4 digit year)
+		txtLn10bDateEntered_2?: #DATE
+		txtLn10bDateEntered_2?: strings.MaxRunes(10)
 
-	txtLn9LongTermGainLoss?: string
+		// Line 10(c). Date closed out or sold. (2 digit month, 2 digit day and 4 digit year)
+		txtLn10cDateClosed_2?: #DATE
+		txtLn10cDateClosed_2?: strings.MaxRunes(10)
 
-	// Part II. Gains and Losses From Straddles. Section A-Losses From Straddles. Line 10(a). Description of property
-	txtLn10aPropDesc_1?: string
+		// Line 10(d). Gross sales price
+		txtLn10dGrossSalesPrice_2?: #AMOUNT
+		txtLn10dGrossSalesPrice_2?: strings.MaxRunes(10)
 
-	// Line 10(b). Date entered into or acquired. (2 digit month, 2 digit day and 4 digit year)
-	txtLn10bDateEntered_1?: string
+		// Line 10(e). Cost or other basis plus expense of sale
+		txtLn10eCostOfSale_2?: #AMOUNT
+		txtLn10eCostOfSale_2?: strings.MaxRunes(10)
 
-	// Line 10(c). Date closed out or sold. (2 digit month, 2 digit day and 4 digit year)
-	txtLn10cDateClosed_1?: string
+		// Line 10(g). Unrecognized gain on offsetting positions
+		txtLn10gUnregGain_2?: #AMOUNT
+		txtLn10gUnregGain_2?: strings.MaxRunes(10)
 
-	// Line 10(d). Gross sales price
-	txtLn10dGrossSalesPrice_1?: string
+		// Line 11a. Enter the short-term portion of losses from line 10, column (h), here and include on line 4 of ScheduleD or on Form 8949. See instructions
+		txtLn11aShortTermLoss?: #AMOUNT
+		txtLn11aShortTermLoss?: strings.MaxRunes(10)
 
-	// Line 10(e). Cost or other basis plus expense of sale
-	txtLn10eCostOfSale_1?: string
+		// Line 11b. Enter the long-term portion of losses from line 10, column (h), here and include on line 11 of ScheduleD or on Form 8949. See instructions
+		txtLn11bLongTermLoss?: #AMOUNT
+		txtLn11bLongTermLoss?: strings.MaxRunes(10)
 
-	txtLn10fCalDiff_1?: string
+		// Part II. Gains and Losses From Straddles. Section B - Gains From Straddles. Line 12(a). Description of property
+		txtLn12aPropDesc_1?: #UPPERCASE
+		txtLn12aPropDesc_1?: strings.MaxRunes(100)
 
-	// Line 10(g). Unrecognized gain on offsetting positions
-	txtLn10gUnregGain_1?: string
-
-	txtLn10hCalDiff_1?: string
-
-	// Line 10(a). Description of property
-	txtLn10aPropDesc_2?: string
-
-	// Line 10(b). Date entered into or acquired. (2 digit month, 2 digit day and 4 digit year)
-	txtLn10bDateEntered_2?: string
-
-	// Line 10(c). Date closed out or sold. (2 digit month, 2 digit day and 4 digit year)
-	txtLn10cDateClosed_2?: string
-
-	// Line 10(d). Gross sales price
-	txtLn10dGrossSalesPrice_2?: string
-
-	// Line 10(e). Cost or other basis plus expense of sale
-	txtLn10eCostOfSale_2?: string
-
-	txtLn10fCalDiff_2?: string
-
-	// Line 10(g). Unrecognized gain on offsetting positions
-	txtLn10gUnregGain_2?: string
-
-	txtLn10hCalDiff_2?: string
-
-	// Line 11a. Enter the short-term portion of losses from line 10, column (h), here and include on line 4 of ScheduleD or on Form 8949. See instructions
-	txtLn11aShortTermLoss?: string
-
-	// Line 11b. Enter the long-term portion of losses from line 10, column (h), here and include on line 11 of ScheduleD or on Form 8949. See instructions
-	txtLn11bLongTermLoss?: string
-
-	// Part II. Gains and Losses From Straddles. Section B - Gains From Straddles. Line 12(a). Description of property
-	txtLn12aPropDesc_1?: string
-
-	// Line 12(b). Date entered into or acquired. (2 digit month, 2 digit day and 4 digit year)
-	txtLn12bDateEntered_1?: string
-
-	// Line 12(c). Date closed out or sold. (2 digit month, 2 digit day and 4 digit year)
-	txtLn12cDateClosed_1?: string
-
-	// Line 12(d). Gross sales price
-	txtLn12dGrossSalesPrice_1?: string
-
-	// Line 12(e). Cost or other basis plus expense of sale
-	txtLn12eCostOfSale_1?: string
-
-	txtLn12fCalDiff_1?: string
-
-	// Line 12(a). Description of property
-	txtLn12aPropDesc_2?: string
-
-	// Line 12(b). Date entered into or acquired. (2 digit month, 2 digit day and 4 digit year)
-	txtLn12bDateEntered_2?: string
-
-	// Line 12(c). Date closed out or sold. (2 digit month, 2 digit day and 4 digit year)
-	txtLn12cDateClosed_2?: string
-
-	// Line 12(d). Gross sales price
-	txtLn12dGrossSalesPrice_2?: string
-
-	// Line 12(e). Cost or other basis plus expense of sale
-	txtLn12eCostOfSale_2?: string
-
-	txtLn12fCalDiff_2?: string
-
-	// Line 13a. Enter the short-term portion of gains from line 12, column (f), here and include on line 4 of Schedule Dor on Form 8949. See instructions
-	txtLn13aShortTermGain?: string
-
-	// Line 13b. Enter the long-term portion of gains from line 12, column (f), here and include on line 11 of ScheduleD or on Form 8949. See instructions
-	txtLn13bLongTermGain?: string
-
-	// Part III. Unrecognized Gains From Positions Held on Last Day of Tax Year  Line 14(a). Description of property
-	txtLn14aPropDesc_1?: string
-
-	// Line 14(b). Date acquired. (2 digit month, 2 digit day and 4 digit year)
-	txtLn14bDateAcquired_1?: string
-
-	// Line 14(c). Fair market value on last business day of tax year
-	txtLn14cMarketVal_1?: string
-
-	// Line 14(d). Cost or other basis as adjusted
-	txtLn14dCost_1?: string
-
-	txtLn14eCalDiff_1?: string
-
-	// Line 14(a). Description of property
-	txtLn14aPropDesc_2?: string
-
-	// Line 14(b). Date acquired. (2 digit month, 2 digit day and 4 digit year)
-	txtLn14bDateAcquired_2?: string
-
-	// Line 14(c). Fair market value on last business day of tax year
-	txtLn14cMarketVal_2?: string
-
-	// Line 14(d). Cost or other basis as adjusted
-	txtLn14dCost_2?: string
-
-	txtLn14eCalDiff_2?: string
-
-	// Line 14(a). Description of property
-	txtLn14aPropDesc_3?: string
-
-	// Line 14(b). Date acquired. (2 digit month, 2 digit day and 4 digit year)
-	txtLn14bDateAcquired_3?: string
-
-	// Line 14(c). Fair market value on last business day of tax year
-	txtLn14cMarketVal_3?: string
-
-	// Line 14(d). Cost or other basis as adjusted
-	txtLn14dCost_3?: string
-
-	txtLn14eCalDiff_3?: string
-
-	
+		// Line 12(b). Date entered into or acquired. (2 digit month, 2 digit day and 4 digit year)
+		txtLn12bDateEntered_1?: #DATE
+		txtLn12bDateEntered_1?: strings.MaxRunes(10)
+
+		// Line 12(c). Date closed out or sold. (2 digit month, 2 digit day and 4 digit year)
+		txtLn12cDateClosed_1?: #DATE
+		txtLn12cDateClosed_1?: strings.MaxRunes(10)
+
+		// Line 12(d). Gross sales price
+		txtLn12dGrossSalesPrice_1?: #AMOUNT
+		txtLn12dGrossSalesPrice_1?: strings.MaxRunes(10)
+
+		// Line 12(e). Cost or other basis plus expense of sale
+		txtLn12eCostOfSale_1?: #AMOUNT
+		txtLn12eCostOfSale_1?: strings.MaxRunes(10)
+
+		// Line 12(a). Description of property
+		txtLn12aPropDesc_2?: #UPPERCASE
+		txtLn12aPropDesc_2?: strings.MaxRunes(100)
+
+		// Line 12(b). Date entered into or acquired. (2 digit month, 2 digit day and 4 digit year)
+		txtLn12bDateEntered_2?: #DATE
+		txtLn12bDateEntered_2?: strings.MaxRunes(10)
+
+		// Line 12(c). Date closed out or sold. (2 digit month, 2 digit day and 4 digit year)
+		txtLn12cDateClosed_2?: #DATE
+		txtLn12cDateClosed_2?: strings.MaxRunes(10)
+
+		// Line 12(d). Gross sales price
+		txtLn12dGrossSalesPrice_2?: #AMOUNT
+		txtLn12dGrossSalesPrice_2?: strings.MaxRunes(10)
+
+		// Line 12(e). Cost or other basis plus expense of sale
+		txtLn12eCostOfSale_2?: #AMOUNT
+		txtLn12eCostOfSale_2?: strings.MaxRunes(10)
+
+		// Line 13a. Enter the short-term portion of gains from line 12, column (f), here and include on line 4 of Schedule Dor on Form 8949. See instructions
+		txtLn13aShortTermGain?: #AMOUNT
+		txtLn13aShortTermGain?: strings.MaxRunes(10)
+
+		// Line 13b. Enter the long-term portion of gains from line 12, column (f), here and include on line 11 of ScheduleD or on Form 8949. See instructions
+		txtLn13bLongTermGain?: #AMOUNT
+		txtLn13bLongTermGain?: strings.MaxRunes(10)
+
+		// Part III. Unrecognized Gains From Positions Held on Last Day of Tax Year  Line 14(a). Description of property
+		txtLn14aPropDesc_1?: #UPPERCASE
+		txtLn14aPropDesc_1?: strings.MaxRunes(50)
+
+		// Line 14(b). Date acquired. (2 digit month, 2 digit day and 4 digit year)
+		txtLn14bDateAcquired_1?: #DATE
+		txtLn14bDateAcquired_1?: strings.MaxRunes(10)
+
+		// Line 14(c). Fair market value on last business day of tax year
+		txtLn14cMarketVal_1?: #AMOUNT
+		txtLn14cMarketVal_1?: strings.MaxRunes(10)
+
+		// Line 14(d). Cost or other basis as adjusted
+		txtLn14dCost_1?: #AMOUNT
+		txtLn14dCost_1?: strings.MaxRunes(10)
+
+		// Line 14(a). Description of property
+		txtLn14aPropDesc_2?: #UPPERCASE
+		txtLn14aPropDesc_2?: strings.MaxRunes(50)
+
+		// Line 14(b). Date acquired. (2 digit month, 2 digit day and 4 digit year)
+		txtLn14bDateAcquired_2?: #DATE
+		txtLn14bDateAcquired_2?: strings.MaxRunes(10)
+
+		// Line 14(c). Fair market value on last business day of tax year
+		txtLn14cMarketVal_2?: #AMOUNT
+		txtLn14cMarketVal_2?: strings.MaxRunes(10)
+
+		// Line 14(d). Cost or other basis as adjusted
+		txtLn14dCost_2?: #AMOUNT
+		txtLn14dCost_2?: strings.MaxRunes(10)
+
+		// Line 14(a). Description of property
+		txtLn14aPropDesc_3?: #UPPERCASE
+		txtLn14aPropDesc_3?: strings.MaxRunes(50)
+
+		// Line 14(b). Date acquired. (2 digit month, 2 digit day and 4 digit year)
+		txtLn14bDateAcquired_3?: #DATE
+		txtLn14bDateAcquired_3?: strings.MaxRunes(10)
+
+		// Line 14(c). Fair market value on last business day of tax year
+		txtLn14cMarketVal_3?: #AMOUNT
+		txtLn14cMarketVal_3?: strings.MaxRunes(10)
+
+		// Line 14(d). Cost or other basis as adjusted
+		txtLn14dCost_3?: #AMOUNT
+		txtLn14dCost_3?: strings.MaxRunes(10)
+
+		
+	}
+
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxPayerSSN?: #SSN
+		txtTaxPayerSSN?: strings.MaxRunes(11)
+		txtLn2aTotLoss?: #AMOUNT
+		txtLn2aTotLoss?: strings.MaxRunes(10)
+		txtLn2bTotLoss?: #AMOUNT
+		txtLn2bTotLoss?: strings.MaxRunes(10)
+		txtLn3NetGainLoss?: #AMOUNT
+		txtLn3NetGainLoss?: strings.MaxRunes(10)
+		txtLn5CombineLn3Ln4?: #AMOUNT
+		txtLn5CombineLn3Ln4?: strings.MaxRunes(10)
+		txtLn7CombineLn5Ln6?: #AMOUNT
+		txtLn7CombineLn5Ln6?: strings.MaxRunes(10)
+		txtLn8ShortTermGainLoss?: #AMOUNT
+		txtLn8ShortTermGainLoss?: strings.MaxRunes(10)
+		txtLn9LongTermGainLoss?: #AMOUNT
+		txtLn9LongTermGainLoss?: strings.MaxRunes(10)
+		txtLn10fCalDiff_1?: #AMOUNT
+		txtLn10fCalDiff_1?: strings.MaxRunes(10)
+		txtLn10hCalDiff_1?: #AMOUNT
+		txtLn10hCalDiff_1?: strings.MaxRunes(10)
+		txtLn10fCalDiff_2?: #AMOUNT
+		txtLn10fCalDiff_2?: strings.MaxRunes(10)
+		txtLn10hCalDiff_2?: #AMOUNT
+		txtLn10hCalDiff_2?: strings.MaxRunes(10)
+		txtLn12fCalDiff_1?: #AMOUNT
+		txtLn12fCalDiff_1?: strings.MaxRunes(10)
+		txtLn12fCalDiff_2?: #AMOUNT
+		txtLn12fCalDiff_2?: strings.MaxRunes(10)
+		txtLn14eCalDiff_1?: #AMOUNT
+		txtLn14eCalDiff_1?: strings.MaxRunes(10)
+		txtLn14eCalDiff_2?: #AMOUNT
+		txtLn14eCalDiff_2?: strings.MaxRunes(10)
+		txtLn14eCalDiff_3?: #AMOUNT
+		txtLn14eCalDiff_3?: strings.MaxRunes(10)
+		
+	}
+
+	#links: {
+		
+	}
 }

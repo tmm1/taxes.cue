@@ -1,32 +1,32 @@
 package freefile
 
+import "strings"
+
 // Form 1040-V - Payment Voucher
 #f1040v: {
-	txtTaxPayerSSN?: string
+	#input: {
+		
+	}
 
-	txtSpouseSSN?: string
+	#output: {
+		txtTaxPayerSSN?: #SSN
+		txtSpouseSSN?: #SSN
+		txtF1040vAmtOwe?: #AMOUNT
+		txtF1040vAmtOwe?: strings.MaxRunes(10)
+		txtTaxpayerName?: #UPPERCASE
+		txtSpouseName?: #UPPERCASE
+		txtAddress?: #UPPERCASE
+		txtCity?: #UPPERCASE
+		txtState?: #UPPERCASE
+		txtZipCode?: #UPPERCASE
+		txtForeignCountry?: #UPPERCASE
+		txtForeignState?: #UPPERCASE
+		txtForeignCode?: #UPPERCASE
+		txtPrivacyAct?: #UPPERCASE
+		
+	}
 
-	txtF1040vAmtOwe?: string
-
-	txtTaxpayerName?: string
-
-	txtSpouseName?: string
-
-	txtAddress?: string
-
-	txtCity?: string
-
-	txtState?: string
-
-	txtZipCode?: string
-
-	txtForeignCountry?: string
-
-	txtForeignState?: string
-
-	txtForeignCode?: string
-
-	txtPrivacyAct?: string
-
-	
+	#links: {
+		
+	}
 }

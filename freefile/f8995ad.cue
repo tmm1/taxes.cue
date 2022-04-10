@@ -1,67 +1,90 @@
 package freefile
 
+import "strings"
+
 // Form 8995-A Schedule D - Special Rules for Patrons of Agricultural or Horticultural Cooperatives
 #f8995ad: {
-	txtTaxpayerName?: string
+	#input: {
+		// Line 1a. Column: A . Trade, business, or aggregation name
+		txtQBIBABusinName1?: #UPPERCASE
+		txtQBIBABusinName1?: strings.MaxRunes(100)
 
-	txtTaxPayerSSN?: string
+		// Line 1a. Column: B . Trade, business, or aggregation name
+		txtQBIBABusinName2?: #UPPERCASE
+		txtQBIBABusinName2?: strings.MaxRunes(100)
 
-	// Add Additional Copies of Form 8995-A Schedule D
-	cmdAddF8995SDC?: string
+		// Line 1a. Column: C . Trade, business, or aggregation name
+		txtQBIBABusinName3?: #UPPERCASE
+		txtQBIBABusinName3?: strings.MaxRunes(100)
 
-	// Line 1a. Column: A . Trade, business, or aggregation name
-	txtQBIBABusinName1?: string
+		// Line 1b. Column: A . Taxpayer identification number. (SSN - Enter only EIN or SSN, not both)
+		txtQBIBABusinIdno1?: #EIN
+		txtQBIBABusinIdno1?: strings.MaxRunes(10)
 
-	// Line 1a. Column: B . Trade, business, or aggregation name
-	txtQBIBABusinName2?: string
+		// Line 1b. Column: B . Taxpayer identification number. (SSN - Enter only EIN or SSN, not both)
+		txtQBIBABusinIdno2?: #EIN
+		txtQBIBABusinIdno2?: strings.MaxRunes(10)
 
-	// Line 1a. Column: C . Trade, business, or aggregation name
-	txtQBIBABusinName3?: string
+		// Line 1b. Column: C . Taxpayer identification number. (SSN - Enter only EIN or SSN, not both)
+		txtQBIBABusinIdno3?: #EIN
+		txtQBIBABusinIdno3?: strings.MaxRunes(10)
 
-	// Line 1b. Column: A . Taxpayer identification number. (SSN - Enter only EIN or SSN, not both)
-	txtQBIBABusinIdno1?: string
+		// Line 2. Column: A . Qualified business income allocable to qualified payments received from cooperative. See instructions
+		txtQBISchDBusinIncome1?: #AMOUNT
+		txtQBISchDBusinIncome1?: strings.MaxRunes(10)
 
-	// Line 1b. Column: B . Taxpayer identification number. (SSN - Enter only EIN or SSN, not both)
-	txtQBIBABusinIdno2?: string
+		// Line 2. Column: B . Qualified business income allocable to qualified payments received from cooperative. See instructions
+		txtQBISchDBusinIncome2?: #AMOUNT
+		txtQBISchDBusinIncome2?: strings.MaxRunes(10)
 
-	// Line 1b. Column: C . Taxpayer identification number. (SSN - Enter only EIN or SSN, not both)
-	txtQBIBABusinIdno3?: string
+		// Line 2. Column: C . Qualified business income allocable to qualified payments received from cooperative. See instructions
+		txtQBISchDBusinIncome3?: #AMOUNT
+		txtQBISchDBusinIncome3?: strings.MaxRunes(10)
 
-	// Line 2. Column: A . Qualified business income allocable to qualified payments received from cooperative. See instructions
-	txtQBISchDBusinIncome1?: string
+		// Line 4. Column: A . W-2 wages from trade or business allocable to the qualified payments
+		txtQBISchDW2Wages1?: #AMOUNT
+		txtQBISchDW2Wages1?: strings.MaxRunes(10)
 
-	// Line 2. Column: B . Qualified business income allocable to qualified payments received from cooperative. See instructions
-	txtQBISchDBusinIncome2?: string
+		// Line 4. Column: B . W-2 wages from trade or business allocable to the qualified payments
+		txtQBISchDW2Wages2?: #AMOUNT
+		txtQBISchDW2Wages2?: strings.MaxRunes(10)
 
-	// Line 2. Column: C . Qualified business income allocable to qualified payments received from cooperative. See instructions
-	txtQBISchDBusinIncome3?: string
+		// Line 4. Column: C . W-2 wages from trade or business allocable to the qualified payments
+		txtQBISchDW2Wages3?: #AMOUNT
+		txtQBISchDW2Wages3?: strings.MaxRunes(10)
 
-	txtQBISchDIncBy91?: string
+		
+	}
 
-	txtQBISchDIncBy92?: string
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxpayerName?: strings.MaxRunes(75)
+		txtTaxPayerSSN?: #SSN
+		txtTaxPayerSSN?: strings.MaxRunes(11)
+		txtQBISchDIncBy91?: #AMOUNT
+		txtQBISchDIncBy91?: strings.MaxRunes(10)
+		txtQBISchDIncBy92?: #AMOUNT
+		txtQBISchDIncBy92?: strings.MaxRunes(10)
+		txtQBISchDIncBy93?: #AMOUNT
+		txtQBISchDIncBy93?: strings.MaxRunes(10)
+		txtQBISchDW2WagesBy501?: #AMOUNT
+		txtQBISchDW2WagesBy501?: strings.MaxRunes(10)
+		txtQBISchDW2WagesBy502?: #AMOUNT
+		txtQBISchDW2WagesBy502?: strings.MaxRunes(10)
+		txtQBISchDW2WagesBy503?: #AMOUNT
+		txtQBISchDW2WagesBy503?: strings.MaxRunes(10)
+		txtQBI12APatronReduc1?: #AMOUNT
+		txtQBI12APatronReduc1?: strings.MaxRunes(10)
+		txtQBI12APatronReduc2?: #AMOUNT
+		txtQBI12APatronReduc2?: strings.MaxRunes(10)
+		txtQBI12APatronReduc3?: #AMOUNT
+		txtQBI12APatronReduc3?: strings.MaxRunes(10)
+		
+	}
 
-	txtQBISchDIncBy93?: string
-
-	// Line 4. Column: A . W-2 wages from trade or business allocable to the qualified payments
-	txtQBISchDW2Wages1?: string
-
-	// Line 4. Column: B . W-2 wages from trade or business allocable to the qualified payments
-	txtQBISchDW2Wages2?: string
-
-	// Line 4. Column: C . W-2 wages from trade or business allocable to the qualified payments
-	txtQBISchDW2Wages3?: string
-
-	txtQBISchDW2WagesBy501?: string
-
-	txtQBISchDW2WagesBy502?: string
-
-	txtQBISchDW2WagesBy503?: string
-
-	txtQBI12APatronReduc1?: string
-
-	txtQBI12APatronReduc2?: string
-
-	txtQBI12APatronReduc3?: string
-
-	
+	#links: {
+		// Add Additional Copies of Form 8995-A Schedule D
+		// cmdAddF8995SDC?: #f8995ad
+		
+	}
 }

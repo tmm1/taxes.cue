@@ -1,22 +1,36 @@
 package freefile
 
+import "strings"
+
 // Form 8906 - Distilled Spirits Credit
 #f8906: {
-	txtTaxpayerName?: string
+	#input: {
+		// Line 1. Total number of cases of distilled spirits
+		txtTotCaseDisSpirit?: #NUMERIC
+		txtTotCaseDisSpirit?: strings.MaxRunes(10)
 
-	txtTaxpayerSSN?: string
+		// Line 4. Distilled spirits credit from partnerships and S corporations
+		txtCdtFrmPartnerCorp?: #AMOUNT
+		txtCdtFrmPartnerCorp?: strings.MaxRunes(10)
 
-	// Line 1. Total number of cases of distilled spirits
-	txtTotCaseDisSpirit?: string
+		
+	}
 
-	txtAvgTaxFinancingCost?: string
+	#output: {
+		txtTaxpayerName?: #UPPERCASE
+		txtTaxpayerName?: strings.MaxRunes(75)
+		txtTaxpayerSSN?: #EIN
+		txtTaxpayerSSN?: strings.MaxRunes(10)
+		txtAvgTaxFinancingCost?: #UPPERCASE
+		txtAvgTaxFinancingCost?: strings.MaxRunes(10)
+		txtMulTotCaseAvgTax?: #AMOUNT
+		txtMulTotCaseAvgTax?: strings.MaxRunes(10)
+		txtCurrYrF8906Cdt?: #AMOUNT
+		txtCurrYrF8906Cdt?: strings.MaxRunes(10)
+		
+	}
 
-	txtMulTotCaseAvgTax?: string
-
-	// Line 4. Distilled spirits credit from partnerships and S corporations
-	txtCdtFrmPartnerCorp?: string
-
-	txtCurrYrF8906Cdt?: string
-
-	
+	#links: {
+		
+	}
 }
