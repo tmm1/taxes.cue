@@ -6,7 +6,8 @@ package taxes
 	middleInitial?:       string
 	lastName:             string
 	dateOfBirth:          #date
-	isClaimedAsDependent: bool
+	isClaimedAsDependent: bool | *false
+	isBlind:              bool | *false
 }
 
 #Spouse: {
@@ -15,9 +16,10 @@ package taxes
 
 #Dependent: {
 	#TaxablePerson
-	relationship:          string
+	relationship:          "son" | "daughter" | "grandchild" | "fosterchild" | "sister" | "brother" | "niece" | "nephew" | "parent" | "grandparent" | "aunt" | "uncle" | "stepchild" | "halfbrother" | "halfsister" | "stepbrother" | "stepsister" | "other"
 	isFullTimeStudent:     bool
 	monthsLivingTogether?: int
+	isClaimedAsDependent:  true
 }
 
 #TaxPayer: {

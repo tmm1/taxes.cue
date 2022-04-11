@@ -13,9 +13,9 @@ Form1040: (taxes.#Return & {
 
 	w2s: [
 		{
-			employerName:      "employer 1"
-			wages:             50000
-			incomeTaxWithheld: 4500
+			employer: name: "employer 1"
+			wages:     50000
+			incomeTax: 4500
 		},
 	]
 

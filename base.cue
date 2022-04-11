@@ -10,7 +10,7 @@ import "time"
 #payerAmountTuple: [string, number]
 
 #SSN: =~"^\\d{3}-\\d{2}-\\d{4}$"
-#EIN: =~"^\\d{2}-\\d{8}$"
+#EIN: =~"^\\d{2}-\\d{7}$"
 
 #TaxpayerID: #SSN | #EIN
 
@@ -18,7 +18,8 @@ import "time"
 
 #address: {
 	street: string
+	aptNo?: string
 	city:   string
 	state:  #state
-	zip:    string
+	zip:    =~"^\\d{5}"
 }

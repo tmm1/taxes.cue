@@ -29,7 +29,7 @@ import (
 	_computed: {
 		income: {
 			wages:                         list.Sum([ for w in w2s {w.wages}])
-			w2TaxWithheld:                 list.Sum([ for w in w2s {w.incomeTaxWithheld}])
+			w2TaxWithheld:                 list.Sum([ for w in w2s {w.incomeTax}])
 			interest:                      list.Sum([ for d in form1099INTs {d.interestIncome}, for k in k1s {k.interestIncome}])
 			dividends:                     list.Sum([ for d in form1099DIVs {d.totalOrdinaryDividends}, for k in k1s {k.ordinaryDividends}])
 			qualifiedDividends:            list.Sum([ for d in form1099DIVs {d.qualifiedDividends}, for k in k1s {k.qualifiedDividends}])

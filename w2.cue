@@ -1,12 +1,13 @@
 package taxes
 
 #Employer: {
-	employerEIN?:  #EIN
-	employerName?: string
+	ein?:     #EIN
+	name:     string
+	address?: #address
 }
 
 #W2: {
-	#Employer
+	employer?: #Employer
 
 	// box 1 Wages
 	wages: #amount
@@ -18,11 +19,11 @@ package taxes
 	medicareWages: number | *wages
 
 	// box 2 Federal income tax withheld
-	incomeTaxWithheld: #amount
+	incomeTax: #amount
 
 	// box 4 Social security tax withheld
-	ssTaxWithheld: #amount
+	ssTax: #amount
 
 	// box 6 Medicare tax withheld
-	medicareTaxWithheld: #amount
+	medicareTax: #amount
 }
