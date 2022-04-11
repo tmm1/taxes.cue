@@ -25,9 +25,26 @@ import "github.com/tmm1/taxes/testing"
 			name: "bob"
 		}
 		"1": assert: ok: {name: string}
-		"2": assert: ok: {
+		"2": assert: {
 			check: subject.name
 			ok:    "bob"
+		}
+	}
+	test: "function": {
+		subject: {
+			in:  int
+			out: [
+				if in > 25 {in*100 + in},
+				in + 10,
+			][0]
+		}
+		"0": assert: {
+			invoke: 5
+			out:    15
+		}
+		"1": assert: {
+			invoke: 50
+			out:    5050
 		}
 	}
 }).results

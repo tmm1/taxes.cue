@@ -11,6 +11,11 @@ package testing
 			notOk:  _
 			check?: _
 			pass:   (*_|_ | (notOk & (check | subject))) == _|_
+		} | {
+			invoke: _
+			out:    _
+			_check: (subject & {in: invoke}).out
+			pass:   (*_|_ | (out & _check)) != _|_
 		}
 	}
 	results: {
