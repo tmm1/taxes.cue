@@ -13,13 +13,3 @@ import "time"
 #EIN: =~"^\\d{2}-\\d{7}$"
 
 #TaxpayerID: #SSN | #EIN
-
-#state: string
-
-#address: {
-	street: string
-	aptNo?: string
-	city:   string
-	state:  #state
-	zip:    =~"^\\d{5}"
-}

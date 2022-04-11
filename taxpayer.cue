@@ -1,5 +1,13 @@
 package taxes
 
+#address: {
+	street: string
+	aptNo?: string
+	city:   string
+	state:  #states
+	zip:    =~"^\\d{5}"
+}
+
 #TaxablePerson: {
 	ssn:                  #SSN
 	firstName:            string
