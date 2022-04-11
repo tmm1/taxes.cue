@@ -18,3 +18,36 @@ import "github.com/tmm1/taxes/freefile"
 		(fs.hoh):      "hoh"
 	}[in]
 }
+
+#convert: taxPayer: {
+	in: #TaxPayer
+	out: f1040: {
+		txtFirstName:     in.firstName
+		txtMiddleInitial: in.middleInitial
+		txtLastName:      in.lastName
+		txtSSN:           in.ssn
+		if in.isBlind {
+			chkBlind: "1"
+		}
+
+		let spouse = in.spouse
+		if spouse != _|_ {
+			txtSpFirstName:     spouse.firstName
+			txtSpMiddleInitial: spouse.middleInitial
+			txtSpLastName:      spouse.lastName
+			txtSpSSN:           spouse.ssn
+			if spouse.isBlind {
+				chkSpBlind: "1"
+			}
+		}
+
+		let address = in.address
+		if address != _|_ {
+			txtAddress1:  address.street
+			txtApartment: address.aptNo
+			txtCity:      address.city
+			cboState:     address.state
+			txtZip:       address.zip
+		}
+	}
+}

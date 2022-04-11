@@ -1,6 +1,7 @@
 package test
 
 import (
+	"github.com/tmm1/taxes/fixtures"
 	"github.com/tmm1/taxes/freefile"
 	"github.com/tmm1/taxes/testing"
 	"github.com/tmm1/taxes"
@@ -44,6 +45,18 @@ import (
 			transform: t
 			invoke:    "marriedFilingSeparately"
 			out:       "separate"
+		}
+	}
+
+	test: "#convert.taxPayer": {
+		subject: taxes.#convert.taxPayer
+		"0": assert: {
+			invoke: fixtures.taxPayer.morganGardner
+			out: f1040: txtSSN: "400-00-1037"
+		}
+		"1": assert: {
+			invoke: fixtures.taxPayer.samGardenia
+			out: f1040: chkSpBlind: "1"
 		}
 	}
 }).results
