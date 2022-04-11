@@ -54,30 +54,39 @@ import "strings"
 		// This field is automatically calculated for you
 		txtF2210FTaxpayerName?: #UPPERCASE
 		txtF2210FTaxpayerName?: strings.MaxRunes(75)
+
 		// SSN (Social security number) - This field is automatically calculated for you
 		txtF2210FTaxpayerSsn?: #UPPERCASE
 		txtF2210FTaxpayerSsn?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtAddOfLn1Ln2?: #AMOUNT
 		txtAddOfLn1Ln2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtCurrYrTaxAmt?: #AMOUNT
 		txtCurrYrTaxAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtMulLn10ByVal?: #AMOUNT
 		txtMulLn10ByVal?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSubLn12FrLn10?: #AMOUNT
 		txtSubLn12FrLn10?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtReqAnnualPay?: #AMOUNT
 		txtReqAnnualPay?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtUnderpayAmt?: #AMOUNT
 		txtUnderpayAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtWaiverAmt?: #AMOUNT
 		txtWaiverAmt?: strings.MaxRunes(10)
+
 		
 	}
 

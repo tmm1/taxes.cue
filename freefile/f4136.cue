@@ -384,204 +384,271 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Taxpayer Identifying number - This field is automatically populated for you
 		txtTaxpayerSsn?: #UPPERCASE
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+
 		// Line 1c(d) Amount of credit - This field is automatically calculated for you
 		txtPart1Line1Cd?: #AMOUNT
 		txtPart1Line1Cd?: strings.MaxRunes(10)
+
 		// Line 1d(d) Amount of credit - This field is automatically calculated for you
 		txtPart1Line1Dd?: #AMOUNT
 		txtPart1Line1Dd?: strings.MaxRunes(10)
+
 		// Line 2a(d) Amount of credit - This field is automatically calculated for you
 		txtPart2Line2Ad?: #AMOUNT
 		txtPart2Line2Ad?: strings.MaxRunes(10)
+
 		// Line 2b(d) Amount of credit - This field is automatically calculated for you
 		txtPart2Line2Bd?: #AMOUNT
 		txtPart2Line2Bd?: strings.MaxRunes(10)
+
 		// Line 2c(d) Amount of credit - This field is automatically calculated for you
 		txtPart2Line2Cd?: #AMOUNT
 		txtPart2Line2Cd?: strings.MaxRunes(10)
+
 		// Line 2d(d) Amount of credit - This field is automatically calculated for you
 		txtPart2Line2Dd?: #AMOUNT
 		txtPart2Line2Dd?: strings.MaxRunes(10)
+
 		// Line 3a(d) Amount of credit - This field is automatically calculated for you
 		txtPart3Line3Bd?: #AMOUNT
 		txtPart3Line3Bd?: strings.MaxRunes(10)
+
 		// Line 3c(d) Amount of credit - This field is automatically calculated for you
 		txtPart3Line3Cd?: #AMOUNT
 		txtPart3Line3Cd?: strings.MaxRunes(10)
+
 		// Line 3d(d) Amount of credit - This field is automatically calculated for you
 		txtPart3Line3Dd?: #AMOUNT
 		txtPart3Line3Dd?: strings.MaxRunes(10)
+
 		// Line 3e(d) Amount of credit - This field is automatically calculated for you
 		txtPart3Line3Ed?: #AMOUNT
 		txtPart3Line3Ed?: strings.MaxRunes(10)
+
 		// Line 4a(d) Amount of credit - This field is automatically calculated for you
 		txtPart4Line4Ad?: #AMOUNT
 		txtPart4Line4Ad?: strings.MaxRunes(10)
+
 		// Line 4c(d) Amount of credit - This field is automatically calculated for you
 		txtPart4Line4Cd?: #AMOUNT
 		txtPart4Line4Cd?: strings.MaxRunes(10)
+
 		// Line 4d(d) Amount of credit - This field is automatically calculated for you
 		txtPart4Line4Dd?: #AMOUNT
 		txtPart4Line4Dd?: strings.MaxRunes(10)
+
 		// Line 4e(d) Amount of credit - This field is automatically calculated for you
 		txtPart4Line4Ed?: #AMOUNT
 		txtPart4Line4Ed?: strings.MaxRunes(10)
+
 		// Line 4d(d) Amount of credit - This field is automatically calculated for you
 		txtPart4Line4Fd?: #AMOUNT
 		txtPart4Line4Fd?: strings.MaxRunes(10)
+
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(70)
+
 		// Taxpayer Identifying number - This field is automatically populated for you
 		txtTaxpayerSsn?: #UPPERCASE
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+
 		// Line 5a(d) Amount of credit - This field is automatically calculated for you
 		txtPart5Line5Ad?: #AMOUNT
 		txtPart5Line5Ad?: strings.MaxRunes(10)
+
 		// Line 5b(d) Amount of credit - This field is automatically calculated for you
 		txtPart5Line5Bd?: #AMOUNT
 		txtPart5Line5Bd?: strings.MaxRunes(10)
+
 		// Line 5c(d) Amount of credit - This field is automatically calculated for you
 		txtPart5Line5Cd?: #AMOUNT
 		txtPart5Line5Cd?: strings.MaxRunes(10)
+
 		// Line 5d(d) Amount of credit - This field is automatically calculated for you
 		txtPart5Line5Dd?: #AMOUNT
 		txtPart5Line5Dd?: strings.MaxRunes(10)
+
 		// Line 5e(d) Amount of credit - This field is automatically calculated for you
 		txtPart5Line5Ed?: #AMOUNT
 		txtPart5Line5Ed?: strings.MaxRunes(10)
+
 		// Line 6a(d) Amount of credit - This field is automatically calculated for you
 		txtPart6Line6Ad?: #AMOUNT
 		txtPart6Line6Ad?: strings.MaxRunes(10)
+
 		// Line 6b(d) Amount of credit - This field is automatically calculated for you
 		txtPart6Line6Bd?: #AMOUNT
 		txtPart6Line6Bd?: strings.MaxRunes(10)
+
 		// Line 7(d) Amount of credit - This field is automatically calculated for you
 		txtPart7Line7Ad?: #AMOUNT
 		txtPart7Line7Ad?: strings.MaxRunes(10)
+
 		// Line 7c(d) Amount of credit - This field is automatically calculated for you
 		txtPart7Line7Cd?: #AMOUNT
 		txtPart7Line7Cd?: strings.MaxRunes(10)
+
 		// Line 8a(d) Amount of credit - This field is automatically calculated for you
 		txtPart8Line8Ad?: #AMOUNT
 		txtPart8Line8Ad?: strings.MaxRunes(10)
+
 		// Line 8b(d) Amount of credit - This field is automatically calculated for you
 		txtPart8Line8Bd?: #AMOUNT
 		txtPart8Line8Bd?: strings.MaxRunes(10)
+
 		// Line 8c(d) Amount of credit - This field is automatically calculated for you
 		txtPart8Line8Cd?: #AMOUNT
 		txtPart8Line8Cd?: strings.MaxRunes(10)
+
 		// Line 8d(d) Amount of credit - This field is automatically calculated for you
 		txtPart8Line8Dd?: #AMOUNT
 		txtPart8Line8Dd?: strings.MaxRunes(10)
+
 		// Line 8e(d) Amount of credit - This field is automatically calculated for you
 		txtPart8Line8Ed?: #AMOUNT
 		txtPart8Line8Ed?: strings.MaxRunes(10)
+
 		// Line 8f(d) Amount of credit - This field is automatically calculated for you
 		txtPart8Line8Fd?: #AMOUNT
 		txtPart8Line8Fd?: strings.MaxRunes(10)
+
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Taxpayer Identifying number - This field is automatically populated for you
 		txtTaxpayerSsn?: #UPPERCASE
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+
 		// Line 10a(d) Amount of credit - This field is automatically calculated for you
 		txtPart10Line10Ad?: #AMOUNT
 		txtPart10Line10Ad?: strings.MaxRunes(10)
+
 		// Line 10b(d) Amount of credit - This field is automatically calculated for you
 		txtPart10Line10Bd?: #AMOUNT
 		txtPart10Line10Bd?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtPart10Line10Cd?: #AMOUNT
 		txtPart10Line10Cd?: strings.MaxRunes(10)
+
 		// Line 11a(d) Amount of credit - This field is automatically calculated for you
 		txtPart11Line11Ad?: #UPPERCASE
 		txtPart11Line11Ad?: strings.MaxRunes(10)
+
 		// Line 11b(d) Amount of credit - This field is automatically calculated for you
 		txtPart11Line11Bd?: #AMOUNT
 		txtPart11Line11Bd?: strings.MaxRunes(10)
+
 		// Line 11c(d) Amount of credit - This field is automatically calculated for you
 		txtPart11Line11Cd?: #AMOUNT
 		txtPart11Line11Cd?: strings.MaxRunes(10)
+
 		// Line 11d(d) Amount of credit - This field is automatically calculated for you
 		txtPart11Line11Dd?: #AMOUNT
 		txtPart11Line11Dd?: strings.MaxRunes(10)
+
 		// Line 11e(d) Amount of credit - This field is automatically calculated for you
 		txtPart11Line11Ed?: #AMOUNT
 		txtPart11Line11Ed?: strings.MaxRunes(10)
+
 		// Line 11f(d) Amount of credit - This field is automatically calculated for you
 		txtPart11Line11Fd?: #AMOUNT
 		txtPart11Line11Fd?: strings.MaxRunes(10)
+
 		// Line 11g(d) Amount of credit - This field is automatically calculated for you
 		txtPart11Line11Gd?: #AMOUNT
 		txtPart11Line11Gd?: strings.MaxRunes(10)
+
 		// Line 11h(d) Amount of credit - This field is automatically calculated for you
 		txtPart11Line11Hd?: #AMOUNT
 		txtPart11Line11Hd?: strings.MaxRunes(10)
+
 		// Line 12a(d) Amount of credit - This field is automatically calculated for you
 		txtPart12Line12Ad?: #AMOUNT
 		txtPart12Line12Ad?: strings.MaxRunes(10)
+
 		// Line 12b(d) Amount of credit - This field is automatically calculated for you
 		txtPart12Line12Bd?: #AMOUNT
 		txtPart12Line12Bd?: strings.MaxRunes(10)
+
 		// Line 12c(d) Amount of credit - This field is automatically calculated for you
 		txtPart12Line12Cd?: #AMOUNT
 		txtPart12Line12Cd?: strings.MaxRunes(10)
+
 		// Line 12d(d) Amount of credit - This field is automatically calculated for you
 		txtPart12Line12Dd?: #AMOUNT
 		txtPart12Line12Dd?: strings.MaxRunes(10)
+
 		// Line 12e(d) Amount of credit - This field is automatically calculated for you
 		txtPart12Line12Ed?: #AMOUNT
 		txtPart12Line12Ed?: strings.MaxRunes(10)
+
 		// Line 12f(d) Amount of credit - This field is automatically calculated for you
 		txtPart12Line12Fd?: #AMOUNT
 		txtPart12Line12Fd?: strings.MaxRunes(10)
+
 		// Line 12g(d) Amount of credit - This field is automatically calculated for you
 		txtPart12Line12Gd?: #AMOUNT
 		txtPart12Line12Gd?: strings.MaxRunes(10)
+
 		// Line 12h(d) Amount of credit - This field is automatically calculated for you
 		txtPart12Line12Hd?: #AMOUNT
 		txtPart12Line12Hd?: strings.MaxRunes(10)
+
 		// Line 12i(d) Amount of credit - This field is automatically calculated for you
 		txtPart12Line12Id?: #AMOUNT
 		txtPart12Line12Id?: strings.MaxRunes(10)
+
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Taxpayer Identifying number - This field is automatically populated for you
 		txtTaxpayerSsn?: #UPPERCASE
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+
 		// Line 13a(d) Amount of credit - This field is automatically calculated for you
 		txtPart13Line13Ad?: #AMOUNT
 		txtPart13Line13Ad?: strings.MaxRunes(10)
+
 		// Line 13b(d) Amount of credit - This field is automatically calculated for you
 		txtPart13Line13Bd?: #AMOUNT
 		txtPart13Line13Bd?: strings.MaxRunes(10)
+
 		// Line 13c(d) Amount of credit - This field is automatically calculated for you
 		txtPart13Line13Cd?: #AMOUNT
 		txtPart13Line13Cd?: strings.MaxRunes(10)
+
 		// Line 14a(d) Amount of credit - This field is automatically calculated for you
 		txtPart14Line14Ad?: #AMOUNT
 		txtPart14Line14Ad?: strings.MaxRunes(10)
+
 		// Line 14b(d) Amount of credit - This field is automatically calculated for you
 		txtPart14Line14Bd?: #AMOUNT
 		txtPart14Line14Bd?: strings.MaxRunes(10)
+
 		// Line 15a(d) Amount of credit - This field is automatically calculated for you
 		txtPart15Line15Ad?: #AMOUNT
 		txtPart15Line15Ad?: strings.MaxRunes(10)
+
 		// Line 16a(d) Amount of credit - This field is automatically calculated for you
 		txtPart16Line16Ad?: #AMOUNT
 		txtPart16Line16Ad?: strings.MaxRunes(10)
+
 		// Line 16b(d) Amount of credit - This field is automatically calculated for you
 		txtPart16Line16Bd?: #AMOUNT
 		txtPart16Line16Bd?: strings.MaxRunes(10)
+
 		// Line 17(d) Amount of credit - This field is automatically calculated for you
 		txtPart17Line17Ad?: #AMOUNT
 		txtPart17Line17Ad?: strings.MaxRunes(10)
+
 		
 	}
 

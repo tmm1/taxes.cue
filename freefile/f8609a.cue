@@ -72,21 +72,27 @@ import "strings"
 		// Name(s) shown on return  - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+
 		// Identifying number - This field is automatically calculated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+
 		// Line 9. Credit percentage. Enter one-third of the percentage on line 5 - This field is automatically calculated for you
 		txtCreditPerIi?: #NUMERIC
 		txtCreditPerIi?: strings.MaxRunes(5)
+
 		// Line 12. Add lines 10 and 11 - This field is automatically calculated for you
 		txtAddLn10Ln11?: #AMOUNT
 		txtAddLn10Ln11?: strings.MaxRunes(10)
+
 		// Line 13. Credit for building before line 14 reduction. Subtract line 12 from line 6  - This field is automatically calculated for you
 		txtSubLon12Ln6?: #AMOUNT
 		txtSubLon12Ln6?: strings.MaxRunes(10)
+
 		// Line 16. Taxpayer's credit. Combine lines 16 and 17. Enter here and on Form 8586 (see instructions) - This field is automatically calculated for you
 		txtTaxpayCredit?: #AMOUNT
 		txtTaxpayCredit?: strings.MaxRunes(10)
+
 		
 	}
 

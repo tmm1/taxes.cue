@@ -24,18 +24,23 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// ssn: Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+
 		// Line 1b. Multiply line 1a by $2, 000 - This field is automatically calculated for you
 		txtMulTotQualEngEffHome?: #AMOUNT
 		txtMulTotQualEngEffHome?: strings.MaxRunes(10)
+
 		// Line 2b. Multiply line 2a by $1, 000 - This field is automatically calculated for you
 		txtMulTotQualEffManuHome?: #AMOUNT
 		txtMulTotQualEffManuHome?: strings.MaxRunes(10)
+
 		// Line 4. Add lines 1b, 2b, and 3. Partnerships and S corporations, report this amount on Schedule K. All -  This field is automatically calculated for you
 		txtCurrYrF8908Cdt?: #AMOUNT
 		txtCurrYrF8908Cdt?: strings.MaxRunes(10)
+
 		
 	}
 

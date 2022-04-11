@@ -126,39 +126,51 @@ import "strings"
 		// Name(s) shown on your return - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+
 		// Your social security number  - This field is automatically calculated for you
 		txtSSN?: #SSN
 		txtSSN?: strings.MaxRunes(11)
+
 		// Line 7. Add lines 3 through 6 - This field is automatically calculated for you
 		txtAddLn03To06?: #AMOUNT
 		txtAddLn03To06?: strings.MaxRunes(10)
+
 		// Line 9. Current year mortgage interest credit. Enter the smaller of line 7 or line 8. Also include this amount on Schedule 3 (Form 1040), line 6g
 		txtCurYrMortIntCdt?: #AMOUNT
 		txtCurYrMortIntCdt?: strings.MaxRunes(10)
+
 		// Line 10. Add lines 3 and 4. This field is automatically calculated for you
 		txtAddLn3AndLn4?: #AMOUNT
 		txtAddLn3AndLn4?: strings.MaxRunes(10)
+
 		// Line 11. Enter the amount from line 7. This field is automatically calculated for you
 		txtAmtFromLine7?: #AMOUNT
 		txtAmtFromLine7?: strings.MaxRunes(10)
+
 		// Line 12. Enter the larger of line 9 or line 10. This field is automatically calculated for you
 		txtMaxOfLn11Ln12?: #AMOUNT
 		txtMaxOfLn11Ln12?: strings.MaxRunes(10)
+
 		// Line 13. Subtract line 12 from line 11 - This field is automatically calculated for you
 		txtSubFrLn14FrLn13?: #AMOUNT
 		txtSubFrLn14FrLn13?: strings.MaxRunes(1)
+
 		// Line 14. 2020 credit carryforward to 2022. Enter the smaller of line 6 or line 13  - This field is automatically calculated for you
 		txtCdt02Carryfwd04?: #AMOUNT
 		txtCdt02Carryfwd04?: strings.MaxRunes(10)
+
 		// Line 15. Subtract line 14 from line 13  - This field is automatically calculated for you
 		txtSubLn16FrLn15?: #AMOUNT
 		txtSubLn16FrLn15?: strings.MaxRunes(10)
+
 		// Line 16. 2019 credit carryforward to 2022. Enter the smaller of line 5 or line 15 - This field is automatically calculated for you
 		txtCdt01Carryfwd04?: #AMOUNT
 		txtCdt01Carryfwd04?: strings.MaxRunes(10)
+
 		// Line 17. 2021 credit carryforward to 2022. Subtract line 9 from line 3. If zero or less, enter -0- This field is automatically calculated for you
 		txtCdt03Carryfwd04?: #AMOUNT
 		txtCdt03Carryfwd04?: strings.MaxRunes(10)
+
 		
 	}
 

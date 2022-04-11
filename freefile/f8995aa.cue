@@ -116,72 +116,95 @@ import "strings"
 		// This field is automatically calculated for you
 		txt8995AFTaxpayerName?: #UPPERCASE
 		txt8995AFTaxpayerName?: strings.MaxRunes(75)
+
 		// SSN (Social security number) - This field is automatically calculated for you
 		txt8995AFTaxpayerSsn?: #UPPERCASE
 		txt8995AFTaxpayerSsn?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtQbiSchaThreshold?: #AMOUNT
 		txtQbiSchaThreshold?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiSchaSub6Frm5?: #AMOUNT
 		txtQbiSchaSub6Frm5?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiSchaPhaseRange?: #AMOUNT
 		txtQbiSchaPhaseRange?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiSchaDivBy8?: #NUMERIC
 		txtQbiSchaDivBy8?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiSchaApplicPerc?: #NUMERIC
 		txtQbiSchaApplicPerc?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiaIncmLossPercA?: #AMOUNT
 		txtQbiaIncmLossPercA?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiaIncmLossPercB?: #AMOUNT
 		txtQbiaIncmLossPercB?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiaIncmLossPercC?: #AMOUNT
 		txtQbiaIncmLossPercC?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiaW2WagesPercA?: #AMOUNT
 		txtQbiaW2WagesPercA?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiaW2WagesPercB?: #AMOUNT
 		txtQbiaW2WagesPercB?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiaW2WagesPercC?: #AMOUNT
 		txtQbiaW2WagesPercC?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiaUnadjBasisPercA?: #AMOUNT
 		txtQbiaUnadjBasisPercA?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiaUnadjBasisPercB?: #AMOUNT
 		txtQbiaUnadjBasisPercB?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiaUnadjBasisPercC?: #AMOUNT
 		txtQbiaUnadjBasisPercC?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQualPtpInclossAmtTot?: #AMOUNT
 		txtQualPtpInclossAmtTot?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiSchaThresholdPrt2?: #AMOUNT
 		txtQbiSchaThresholdPrt2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiSchaSub6Frm5Prt2?: #AMOUNT
 		txtQbiSchaSub6Frm5Prt2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiSchaPhaseRangePrt2?: #AMOUNT
 		txtQbiSchaPhaseRangePrt2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiSchaDivBy8Prt2?: #NUMERIC
 		txtQbiSchaDivBy8Prt2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiSchaApplicPercPrt2?: #NUMERIC
 		txtQbiSchaApplicPercPrt2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiaQualPtpPercTot?: #AMOUNT
 		txtQbiaQualPtpPercTot?: strings.MaxRunes(10)
+
 		
 	}
 

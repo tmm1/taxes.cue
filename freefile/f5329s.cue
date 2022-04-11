@@ -486,96 +486,128 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Identifying Number - This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// Enter home address (number and street). If you have a P. O . box, see instructions - This field is automatically populated for you
 		txtAddress?: #UPPERCASE
 		txtAddress?: strings.MaxRunes(35)
+
 		// Enter apartment number - This field is automatically populated for you
 		txtApartNumber?: #UPPERCASE
 		txtApartNumber?: strings.MaxRunes(5)
+
 		// Enter City, town, or post office. If you have a foreign address, also complete spaces below - This field is automatically populated for you
 		txtCity?: #UPPERCASE
 		txtCity?: strings.MaxRunes(22)
+
 		// Enter ZIP code - This field is automatically populated for you
 		txtZip?: #UPPERCASE
 		txtZip?: strings.MaxRunes(10)
+
 		// Enter Foreign Foreign province/state/county - This field is automatically populated for you
 		txtForeignState?: #UPPERCASE
 		txtForeignState?: strings.MaxRunes(35)
+
 		// Enter Foreign postal code
 		txtForeignZip?: #UPPERCASE
 		txtForeignZip?: strings.MaxRunes(16)
+
 		// Amount subject to additional tax. Subtract line 2 from line 1  - This field is automatically calculated for you
 		txtAmtSubTaxF8606?: #AMOUNT
 		txtAmtSubTaxF8606?: strings.MaxRunes(10)
+
 		// Amount subject to additional tax. Subtract line 6 from line 5 - This field is automatically calculated for you
 		txtSubAddTax?: #AMOUNT
 		txtSubAddTax?: strings.MaxRunes(10)
+
 		// Add lines 10, 11, and 12 - This field is automatically calculated for you
 		txtAddContrib?: #AMOUNT
 		txtAddContrib?: strings.MaxRunes(10)
+
 		// Prior year excess contributions. Subtract line 13 from line 9. If zero or less, enter -0-. This field is automatically calculated for you
 		txtPriorExcContribTIRA?: #AMOUNT
 		txtPriorExcContribTIRA?: strings.MaxRunes(10)
+
 		// Total excess contributions. Add lines 14 and 15 - This field is automatically calculated for you
 		txtTotExcContribTIRA?: #AMOUNT
 		txtTotExcContribTIRA?: strings.MaxRunes(10)
+
 		// Add lines 19 and 20 - This field is automatically calculated for you
 		txtAddIRAContribDist?: #AMOUNT
 		txtAddIRAContribDist?: strings.MaxRunes(10)
+
 		// Prior year excess contributions. Subtract line 21 from line 18. If zero or less, enter -0- This field is automatically calculated for you
 		txtPriorExcContrib?: #AMOUNT
 		txtPriorExcContrib?: strings.MaxRunes(10)
+
 		// Total excess contributions. Add lines 22 and 23 - This field is automatically calculated for you
 		txtTotExcContrib?: #AMOUNT
 		txtTotExcContrib?: strings.MaxRunes(10)
+
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Identifying Number - This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// Add lines 27 and 28  - This field is automatically calculated for you
 		txtAddArcherESADist?: #AMOUNT
 		txtAddArcherESADist?: strings.MaxRunes(10)
+
 		// Prior year excess contributions. Subtract line 29 from line 26. If zero or less, enter -0-. This field is automatically calculated for you
 		txtpriorExcContribESA?: #AMOUNT
 		txtpriorExcContribESA?: strings.MaxRunes(10)
+
 		// Total excess contributions. Add lines 30 and 31 -This field is automatically calculated for you
 		txtTotExcContribESA?: #AMOUNT
 		txtTotExcContribESA?: strings.MaxRunes(10)
+
 		// Add lines 35 and 36 - This field is automatically calculated for you
 		txtPrt6ln37?: #AMOUNT
 		txtPrt6ln37?: strings.MaxRunes(10)
+
 		// Prior year excess contributions. Subtract line 37 from line 34. If zero or less, enter -0-. This field is automatically calculated for you
 		txtPrt6Ln38?: #AMOUNT
 		txtPrt6Ln38?: strings.MaxRunes(10)
+
 		// Total excess contributions. Add lines 38 and 39 - This field is automatically calculated for you
 		txtPrt6Ln40?: #AMOUNT
 		txtPrt6Ln40?: strings.MaxRunes(10)
+
 		// Add lines 43 and 44 - This field is automatically calculated for you
 		txtAddContribDistHSA?: #AMOUNT
 		txtAddContribDistHSA?: strings.MaxRunes(10)
+
 		// Prior year excess contributions. Subtract line 45 from line 42. If zero or less, enter -0- This field is automatically calculated for you
 		txtPriorExcContribHSA?: #AMOUNT
 		txtPriorExcContribHSA?: strings.MaxRunes(10)
+
 		// Total excess contributions. Add lines 46 and 47- This field is automatically calculated for you
 		txtTotExcContribHSA?: #AMOUNT
 		txtTotExcContribHSA?: strings.MaxRunes(10)
+
 		// Subtract line 53 from line 52. If zero or less, enter -0- This field is automatically calculated for you
 		txtSubMinActualDist?: #AMOUNT
 		txtSubMinActualDist?: strings.MaxRunes(10)
+
 		// Additional tax. Enter 50% (0. 50) of line 54. Include this amount on Schedule 2 (Form 1040), line 8 - This field is automatically calculated for you
 		txtAddTaxQRP?: #AMOUNT
 		txtAddTaxQRP?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSignature?: #UPPERCASE
+
 		// This field is automatically populated for you
 		txtPreparerNote1?: #UPPERCASE
+
 		// This field is automatically populated for you
 		txtPreparerNote?: #UPPERCASE
+
 		
 	}
 

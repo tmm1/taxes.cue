@@ -56,12 +56,15 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Social security number - This field is automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtF4797GainLoss1?: #AMOUNT
 		txtF4797GainLoss1?: strings.MaxRunes(10)
+
 		
 	}
 

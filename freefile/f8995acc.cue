@@ -48,18 +48,23 @@ import "strings"
 		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+
 		// This field is automatically calculated for you
 		txtTaxpayerSsn?: #UPPERCASE
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtQbiBaAdjustIncmLosswks?: #AMOUNT
 		txtQbiBaAdjustIncmLosswks?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiBaAdjustIncmLosswksR2?: #AMOUNT
 		txtQbiBaAdjustIncmLosswksR2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbiBaAdjustIncmLosswksR3?: #AMOUNT
 		txtQbiBaAdjustIncmLosswksR3?: strings.MaxRunes(10)
+
 		
 	}
 

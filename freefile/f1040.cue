@@ -887,82 +887,111 @@ import "strings"
 		// Line 8. Other income from Schedule 1, line 10 - This field is automatically calculated for you
 		txtOtherInc?: #AMOUNT | #NEGAMOUNT
 		txtOtherInc?: strings.MaxRunes(10)
+
 		// Line 9. Total income - This field is automatically calculated for you
 		txtTotalIncome?: #AMOUNT
 		txtTotalIncome?: strings.MaxRunes(10)
+
 		// Line 10. Adjustments to income from Schedule 1, line 26 - This field is automatically calculated for you
 		txtTotAdj?: #AMOUNT
 		txtTotAdj?: strings.MaxRunes(10)
+
 		// Line 11. Adjusted gross income - This field is automatically calculated for you
 		txtTotAdjGrossInc?: #AMOUNT
 		txtTotAdjGrossInc?: strings.MaxRunes(10)
+
 		// Line 12c. Add lines 12a and 12b - This field is automatically calculated for you
 		txtTotAdjFromSchedule1?: #AMOUNT
 		txtTotAdjFromSchedule1?: strings.MaxRunes(10)
+
 		// Line 13. Qualified business income deduction - This field is automatically calculated for you
 		txtQualBusIncDed?: #AMOUNT
 		txtQualBusIncDed?: strings.MaxRunes(10)
+
 		// Line 14. Add lines 12c and 13 - This field is automatically calculated for you
 		txtTotalDeduction?: #AMOUNT
 		txtTotalDeduction?: strings.MaxRunes(10)
+
 		// Line 15. Taxable Income - This field is automatically calculated for you
 		txtTaxableIncome?: #AMOUNT
 		txtTaxableIncome?: strings.MaxRunes(10)
+
 		// Line 17. Amount from Schedule 2, line 3 - This field is automatically calculated for you
 		txtTotOf6251And8962?: #AMOUNT
 		txtTotOf6251And8962?: strings.MaxRunes(10)
+
 		// Line 18. Add lines 16 and 17 - This field is automatically calculated for you
 		txtTax?: #AMOUNT
 		txtTax?: strings.MaxRunes(10)
+
 		// Line 20. Amount from Schedule 3, line 8 - This field is automatically calculated for you
 		txtTotNonRefCrdt?: #AMOUNT
 		txtTotNonRefCrdt?: strings.MaxRunes(10)
+
 		// Line 21. Add lines 19 and 20 - This field is automatically calculated for you
 		txtTotCredit?: #AMOUNT
 		txtTotCredit?: strings.MaxRunes(10)
+
 		// Line 22. Subtract line 21 from line 18. If zero or less, enter 0 - This field is automatically calculated for you
 		txtTaxAfterCred?: #AMOUNT
 		txtTaxAfterCred?: strings.MaxRunes(10)
+
 		// Line 23. Other taxes, including self-employment tax, from Schedule 2, line 21 - This field is automatically calculated for you
 		txtTotalOtherTax?: #AMOUNT
 		txtTotalOtherTax?: strings.MaxRunes(10)
+
 		// Line 24. Add lines 22 and 23. This is your total tax - This field is automatically calculated for you
 		txtTotalTax?: #AMOUNT
 		txtTotalTax?: strings.MaxRunes(10)
+
 		// Line 25d. Add lines 25a through 25c - This field is automatically calculated for you
 		txtFedTaxWithheld?: #AMOUNT
 		txtFedTaxWithheld?: strings.MaxRunes(10)
+
 		// Line 28. Refundable child tax credit or Additional child tax credit from Schedule 8812 - This field is automatically calculated for you
 		txtAddChildTaxCredit?: #AMOUNT
 		txtAddChildTaxCredit?: strings.MaxRunes(10)
+
 		// Line 29. American opportunity credit from Form 8863, line 8 - This field is automatically calculated for you
 		txtRefundAmerOptCdt?: #AMOUNT
 		txtRefundAmerOptCdt?: strings.MaxRunes(10)
+
 		// Line 31. Amount from Schedule 3, line 15 - This field is automatically calculated for you
 		txtTotOthPayRefCrdt?: #AMOUNT
 		txtTotOthPayRefCrdt?: strings.MaxRunes(10)
+
 		// Line 32. Add lines 27a and 28 through 31. These are your total other payments and refundable credits
 		txtTotOtherPayments?: #AMOUNT
 		txtTotOtherPayments?: strings.MaxRunes(10)
+
 		// Line 33. Add lines 25d, 26, and 32. These are your total payments
 		txtTotPayments?: #AMOUNT
 		txtTotPayments?: strings.MaxRunes(10)
+
 		// Line 34. If line 33 is more than line 24, subtract line 24 from line 33. This is the amount you overpaid - This field is automatically calculated for you
 		txtOverPaid?: #AMOUNT
 		txtOverPaid?: strings.MaxRunes(10)
+
 		// Line 35a. Amount of line 34 you want refunded to you - This field is automatically calculated for you
 		txtRefund?: #AMOUNT
 		txtRefund?: strings.MaxRunes(10)
+
 		// Line 37. Subtract line 33 from line 24. This is the amount you owe now - This field is automatically calculated for you
 		txtAmtOwe?: #AMOUNT
 		txtAmtOwe?: strings.MaxRunes(10)
+
 		// Line 38. Estimated tax penalty (see instructions) - This field is automatically calculated for you
 		txtPenalty?: #AMOUNT
 		txtPenalty?: strings.MaxRunes(10)
+
 		txtSignature?: #UPPERCASE
+
 		txtSpSignature?: #UPPERCASE
+
 		txtPreparerNote?: #UPPERCASE
+
 		txtPreparerNote1?: #UPPERCASE
+
 		
 	}
 

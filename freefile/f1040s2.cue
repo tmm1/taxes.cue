@@ -120,63 +120,83 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Your social security number - This field is automatically populated for you
 		txtTaxpayerSsn?: #UPPERCASE
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+
 		// Line 1. Alternative minimum tax. Attach Form 6251 - This field is automatically calculated for you
 		txtAltMinTaxAmt?: #AMOUNT
 		txtAltMinTaxAmt?: strings.MaxRunes(10)
+
 		// Line 2. Excess advance premium tax credit repayment. Attach Form 8962 - This field is automatically calculated for you
 		txtF8962EAPTaxCdtRepay?: #AMOUNT
 		txtF8962EAPTaxCdtRepay?: strings.MaxRunes(10)
+
 		// Line 3. Add lines 1 and 2. Enter here and on Form 1040, 1040-SR, or 1040-NR, line 17 - This field is automatically calculated for you
 		txtAddLines1and2?: #AMOUNT
 		txtAddLines1and2?: strings.MaxRunes(10)
+
 		// Line 4. Self-employment tax. Attach Schedule SE - This field is automatically calculated for you
 		txtSelfEmpTax?: #AMOUNT
 		txtSelfEmpTax?: strings.MaxRunes(10)
+
 		// Line 5. Social security and Medicare tax on unreported tip income. Attach Form 4137 - This field is automatically calculated for you
 		txtSsmTaxFrm4137?: #AMOUNT
 		txtSsmTaxFrm4137?: strings.MaxRunes(10)
+
 		// Line 6. Uncollected social security and Medicare tax on wages. Attach Form 8919 - This field is automatically calculated for you
 		txtSsmTaxFrm8919?: #AMOUNT
 		txtSsmTaxFrm8919?: strings.MaxRunes(10)
+
 		// Line 7. Total additional social security and Medicare tax. Add lines 5 and 6. This field is automatically calculated for you
 		txtSsmTax?: #AMOUNT
 		txtSsmTax?: strings.MaxRunes(10)
+
 		// Line 9. Household employment taxes. Attach Schedule H - This field is automatically calculated for you
 		txtSpecificOthTax?: #AMOUNT
 		txtSpecificOthTax?: strings.MaxRunes(10)
+
 		// Line 11. Additional Medicare Tax - This field is automatically calculated for you
 		txtF89591040Ln60?: #AMOUNT
 		txtF89591040Ln60?: strings.MaxRunes(10)
+
 		// Line 12. Net investment income tax. Attach Form 8960  - This field is automatically calculated for you
 		txtF8960NetInvIndiv?: #AMOUNT
 		txtF8960NetInvIndiv?: strings.MaxRunes(10)
+
 		// Line 16. Recapture of low-income housing credit. Attach Form 8611 - This field is automatically calculated for you
 		txtF1040F8611RecapTax?: #AMOUNT
 		txtF1040F8611RecapTax?: strings.MaxRunes(10)
+
 		// Line 17c. Additional tax on HSA distributions. - This field is automatically calculated for you
 		txtHsaOtherTax?: #AMOUNT
 		txtHsaOtherTax?: strings.MaxRunes(10)
+
 		// Line 17d. Additional tax on an HSA because you didn�t remain an eligible individual. - This field is automatically calculated for you
 		txtCodehdhpOtherTax?: #AMOUNT
 		txtCodehdhpOtherTax?: strings.MaxRunes(10)
+
 		// Line 17e. Additional tax on Archer MSA distributions. - This field is automatically calculated for you
 		txtAmsaDistOtherTax?: #AMOUNT
 		txtAmsaDistOtherTax?: strings.MaxRunes(10)
+
 		// Line17f. Additional tax on Medicare Advantage MSA distributions. - This field is automatically calculated for you
 		txtMedmsaDistOtherTax?: #AMOUNT
 		txtMedmsaDistOtherTax?: strings.MaxRunes(10)
+
 		// Line 18. Total additional taxes. Add lines 17a through 17z. - This field is automatically calculated for you
 		txtF1040TotOthTax?: #AMOUNT
 		txtF1040TotOthTax?: strings.MaxRunes(10)
+
 		// Line 19. Additional tax from Schedule 8812. - This field is automatically calculated for you
 		txtF8812AddiTaxAmt?: #AMOUNT
 		txtF8812AddiTaxAmt?: strings.MaxRunes(10)
+
 		// Line 21. Add lines 4, 7 through 16, 18, and 19. These are your total other taxes. - This field is automatically calculated for you
 		txtTotalOtherTax?: #AMOUNT
 		txtTotalOtherTax?: strings.MaxRunes(10)
+
 		
 	}
 

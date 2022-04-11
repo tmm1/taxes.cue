@@ -20,15 +20,19 @@ import "strings"
 		// Name - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// SSN - This field is automatically calculated for you
 		txtTaxpayerEin?: #SSN
 		txtTaxpayerEin?: strings.MaxRunes(11)
+
 		// Line 36 Subtract line 35 from line 17 or line 34 (whichever applies). If zero or less, enter  0  - This field is automatically calculated for you
 		txtSubCdtamtWages?: #AMOUNT
 		txtSubCdtamtWages?: strings.MaxRunes(10)
+
 		// Line 38  Add lines 36 and 37 - This field is automatically calculated for you
 		txtCurrYrCredit?: #AMOUNT
 		txtCurrYrCredit?: strings.MaxRunes(10)
+
 		
 	}
 

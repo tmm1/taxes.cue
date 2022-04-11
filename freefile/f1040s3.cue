@@ -44,84 +44,111 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(12)
+
 		// Identifying Number - This field is automatically populated for you
 		txtTaxpayerSsn?: #SSN
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+
 		// Line 2. Credit for child and dependent care expenses - This field is automatically calculated for you
 		txtChildDepCareCdt?: #AMOUNT
 		txtChildDepCareCdt?: strings.MaxRunes(10)
+
 		// Line 3. Education credits from Form 8863, line 19 - This field is automatically calculated for you
 		txtEduCdt?: #AMOUNT
 		txtEduCdt?: strings.MaxRunes(10)
+
 		// Line 4. Retirement Saving Contribution Credits - This field is automatically calculated for you
 		txtRetSavContCdt?: #AMOUNT
 		txtRetSavContCdt?: strings.MaxRunes(10)
+
 		// Line 5. Residential energy credits - This field is automatically calculated for you
 		txtResEnergyCdt?: #AMOUNT
 		txtResEnergyCdt?: strings.MaxRunes(10)
+
 		// Line 6. General business credit. Attach Form 3800
 		txtF3800CdtAllowCurrYr?: #AMOUNT
 		txtF3800CdtAllowCurrYr?: strings.MaxRunes(10)
+
 		// Line 6b. Credit for prior year minimum tax. Attach Form 8801
 		txtF8801MinTaxCred?: #AMOUNT
 		txtF8801MinTaxCred?: strings.MaxRunes(10)
+
 		// Line 6c. Adoption credit. Attach Form 8839
 		txtAdopCdt?: #AMOUNT
 		txtAdopCdt?: strings.MaxRunes(10)
+
 		// Line 6d. Credit for the elderly or disabled. Attach Schedule R
 		txtEldDisabledCdt?: #AMOUNT
 		txtEldDisabledCdt?: strings.MaxRunes(10)
+
 		// Line 6e. Alternative motor vehicle credit. Attach Form 8910
 		txtF8910CdtPersonalUse?: #AMOUNT
 		txtF8910CdtPersonalUse?: strings.MaxRunes(10)
+
 		// Line 6f. Qualified plug-in motor vehicle credit. Attach Form 8936
 		txtF8936PersonalUseCdt?: #AMOUNT
 		txtF8936PersonalUseCdt?: strings.MaxRunes(10)
+
 		// Line 6g. Mortgage interest credit. Attach Form 8396
 		txtMortgageIntCdt?: #AMOUNT
 		txtMortgageIntCdt?: strings.MaxRunes(10)
+
 		// Line 6h. District of Columbia first-time homebuyer credit. Attach Form 8859
 		txtCreditFrom8859?: #AMOUNT
 		txtCreditFrom8859?: strings.MaxRunes(10)
+
 		// Line 6i. Qualified electric vehicle credit. Attach Form 8834
 		txtQualElecVehCdt?: #AMOUNT
 		txtQualElecVehCdt?: strings.MaxRunes(10)
+
 		// Line 6j. Alternative fuel vehicle refueling property credit. Attach Form 8911
 		txtF8911PersonalUseCdt?: #AMOUNT
 		txtF8911PersonalUseCdt?: strings.MaxRunes(10)
+
 		// Line 7. This field is automatically calculated for you
 		txtTotOthCredit?: #AMOUNT
 		txtTotOthCredit?: strings.MaxRunes(10)
+
 		// Line 8. This field is automatically calculated for you
 		txtTotCredit?: #AMOUNT
 		txtTotCredit?: strings.MaxRunes(10)
+
 		// Line 8. Net premium tax credit - This field is automatically calculated for you
 		txtNetPremTaxCdt?: #AMOUNT
 		txtNetPremTaxCdt?: strings.MaxRunes(10)
+
 		// Line 12. Credit for federal tax on fuels - This field is automatically calculated for you
 		txtF4136FuelsCdt?: #AMOUNT
 		txtF4136FuelsCdt?: strings.MaxRunes(10)
+
 		// Line 13a. Form 2439 - This field is automatically calculated for you
 		txtF2439Payment?: #AMOUNT
 		txtF2439Payment?: strings.MaxRunes(10)
+
 		// Line 13b. This field is automatically calculated for you
 		txtF7202Payment?: #AMOUNT
 		txtF7202Payment?: strings.MaxRunes(10)
+
 		// Line 13c. Health coverage tax credit from Form 8885 - This field is automatically calculated for you
 		txtF8885TotAmt?: #AMOUNT
 		txtF8885TotAmt?: strings.MaxRunes(10)
+
 		// Line 13g Credit for child and dependent care expenses from Form 2441,
 		txtRefundableDepCareExpen?: #AMOUNT
 		txtRefundableDepCareExpen?: strings.MaxRunes(10)
+
 		// Line 13h. Qualified sick and family leave credits from Schedule(s) H and
 		txtschSEDeferalTaxPay?: #AMOUNT
 		txtschSEDeferalTaxPay?: strings.MaxRunes(10)
+
 		// Line 14. - This field is automatically calculated for you
 		txtAddTot?: #AMOUNT
 		txtAddTot?: strings.MaxRunes(10)
+
 		// Line 15. - This field is automatically calculated for you
 		txtTotPaymentsCdts?: #AMOUNT
 		txtTotPaymentsCdts?: strings.MaxRunes(10)
+
 		
 	}
 

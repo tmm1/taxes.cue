@@ -206,63 +206,83 @@ import "strings"
 		// This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// This field is automatically populated for you
 		txtTaxPayerSSN?: #UPPERCASE
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtF8915FSubLn1BLn1A1C?: #AMOUNT
 		txtF8915FSubLn1BLn1A1C?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FSumLn2Ln4Colb?: #AMOUNT
 		txtF8915FSumLn2Ln4Colb?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FSumLn2Ln4Cola?: #AMOUNT
 		txtF8915FSumLn2Ln4Cola?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSubLin3Ln8MDup2?: #AMOUNT
 		txtSubLin3Ln8MDup2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FTotQualDisDist?: #AMOUNT
 		txtF8915FTotQualDisDist?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FTaxableAmt?: #AMOUNT
 		txtF8915FTaxableAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtLine8?: #AMOUNT
 		txtLine8?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FSubLn9FrmLn8?: #AMOUNT
 		txtF8915FSubLn9FrmLn8?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FDivLn10ByConst?: #AMOUNT
 		txtF8915FDivLn10ByConst?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FQualRetIncPrt2?: #AMOUNT
 		txtF8915FQualRetIncPrt2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FTaxAmtPrt2?: #AMOUNT
 		txtF8915FTaxAmtPrt2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FPrt1Ln3Colb?: #AMOUNT
 		txtF8915FPrt1Ln3Colb?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FTaxAmtIra?: #AMOUNT
 		txtF8915FTaxAmtIra?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FDivLn21ByConst?: #AMOUNT
 		txtF8915FDivLn21ByConst?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FQualRetIncPrt3?: #AMOUNT
 		txtF8915FQualRetIncPrt3?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FTaxAmtPrt3?: #AMOUNT
 		txtF8915FTaxAmtPrt3?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FSub28Ln29RetIra?: #AMOUNT
 		txtF8915FSub28Ln29RetIra?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8915FTaxAmtPrt4?: #AMOUNT
 		txtF8915FTaxAmtPrt4?: strings.MaxRunes(10)
+
 		
 	}
 

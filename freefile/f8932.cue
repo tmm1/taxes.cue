@@ -20,15 +20,19 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Identifying Number - This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// Multiply line 1 by 20% (0. 20). See instructions for the adjustment you must make to your deduction -This field is automatically calculated for you
 		txtF8932ElgWage20Perc?: #AMOUNT
 		txtF8932ElgWage20Perc?: strings.MaxRunes(10)
+
 		// Add lines 2 and 3. Cooperatives, estates, and trusts, go to line 5. Partnerships and S corporations -This field is automatically calculated for you
 		txtF8932PshipIndiEdwpCdt?: #AMOUNT
 		txtF8932PshipIndiEdwpCdt?: strings.MaxRunes(10)
+
 		
 	}
 

@@ -439,84 +439,111 @@ import "strings"
 		// This field is populated calculated for you
 		txtFschhtName?: #UPPERCASE
 		txtFschhtName?: strings.MaxRunes(50)
+
 		// This field is populated calculated for you
 		txtFschhtSsn?: #SSN
 		txtFschhtSsn?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtSchdhSsTax?: #AMOUNT
 		txtSchdhSsTax?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhEmpShare?: #AMOUNT
 		txtSchdhEmpShare?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhTotSsTax?: #AMOUNT
 		txtSchdhTotSsTax?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhMedTax?: #AMOUNT
 		txtSchdhMedTax?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhAddMedTax?: #AMOUNT
 		txtSchdhAddMedTax?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhTotSsMedTax8a?: #AMOUNT
 		txtSchdhTotSsMedTax8a?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhTotSsmedTax?: #AMOUNT
 		txtSchdhTotSsmedTax?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtFschhtName2?: #UPPERCASE
 		txtFschhtName2?: strings.MaxRunes(50)
+
 		// This field is automatically populated for you
 		txtFschhtSsn2?: #SSN
 		txtFschhtSsn2?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtSchdhSecaFutaTax?: #AMOUNT
 		txtSchdhSecaFutaTax?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtFutaColumnF1?: #AMOUNT
 		txtFutaColumnF1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtFutaMulColcCole1?: #AMOUNT
 		txtFutaMulColcCole1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtFutaSubColgFrmColf1?: #AMOUNT
 		txtFutaSubColgFrmColf1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtFutaColumnF2?: #AMOUNT
 		txtFutaColumnF2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtFutaMulColcCole2?: #AMOUNT
 		txtFutaMulColcCole2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtFutaSubColgFrmColf2?: #AMOUNT
 		txtFutaSubColgFrmColf2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhLine19H?: #AMOUNT
 		txtSchdhLine19H?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhLine19I?: #AMOUNT
 		txtSchdhLine19I?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhLine20?: #AMOUNT
 		txtSchdhLine20?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhLine22?: #AMOUNT
 		txtSchdhLine22?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhLine23?: #AMOUNT
 		txtSchdhLine23?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhLine24?: #AMOUNT
 		txtSchdhLine24?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhSecbFutaTax?: #AMOUNT
 		txtSchdhSecbFutaTax?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhAmtFrmLine8?: #AMOUNT
 		txtSchdhAmtFrmLine8?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdhAddLn26Ln17?: #AMOUNT
 		txtSchdhAddLn26Ln17?: strings.MaxRunes(10)
+
 		
 	}
 

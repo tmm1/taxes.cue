@@ -1062,15 +1062,19 @@ import "strings"
 		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(128)
+
 		// This field is automatically calculated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtTaxpayerName1?: #UPPERCASE
 		txtTaxpayerName1?: strings.MaxRunes(128)
+
 		// This field is automatically calculated for you
 		txtTaxPayerSSN1?: #SSN
 		txtTaxPayerSSN1?: strings.MaxRunes(11)
+
 		
 	}
 

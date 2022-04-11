@@ -1655,24 +1655,31 @@ import "strings"
 		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+
 		// This field is automatically calculated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically populated for you
 		txtTaxpayerNamep2?: #UPPERCASE
 		txtTaxpayerNamep2?: strings.MaxRunes(87)
+
 		// This field is automatically populated for you
 		txtTaxpayerSSNp2?: #SSN
 		txtTaxpayerSSNp2?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtF2555TotalExp?: #AMOUNT
 		txtF2555TotalExp?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF2555AddLine19Line23?: #AMOUNT
 		txtF2555AddLine19Line23?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF2555ForeignEarnInc?: #AMOUNT
 		txtF2555ForeignEarnInc?: strings.MaxRunes(10)
+
 		
 	}
 

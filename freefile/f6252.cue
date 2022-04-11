@@ -196,60 +196,79 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #EIN
 		txtTaxpayerSSN?: strings.MaxRunes(10)
+
 		// Line 7. Subtract line 6 from line 5. - This field is automatically calculated for you
 		txtSubLn6Ln5?: #AMOUNT
 		txtSubLn6Ln5?: strings.MaxRunes(10)
+
 		// Line 10. Adjusted basis. Subtract line 9 from line 8. - This field is automatically calculated for you
 		txtAdjustBasis?: #AMOUNT
 		txtAdjustBasis?: strings.MaxRunes(10)
+
 		// Line 13. Add lines 10, 11, and 12. - This field is automatically calculated for you
 		txtAddLn10Ln11Ln12?: #AMOUNT
 		txtAddLn10Ln11Ln12?: strings.MaxRunes(10)
+
 		// Line 14. Subtract line 13 from line 5. If zero or less, don�t complete the rest of this form. See instructions. - This field is automatically calculated for you
 		txtSubLn13Ln5?: #AMOUNT
 		txtSubLn13Ln5?: strings.MaxRunes(10)
+
 		// Line 16. Gross profit. Subtract line 15 from line 14. - This field is automatically calculated for you
 		txtGrossProfit?: #AMOUNT
 		txtGrossProfit?: strings.MaxRunes(10)
+
 		// Line 17. Subtract line 13 from line 6. If zero or less, enter -0-. - This field is automatically calculated for you
 		txtSubLn13Ln6?: #AMOUNT
 		txtSubLn13Ln6?: strings.MaxRunes(10)
+
 		// Line 18. Contract price. Add line 7 and line 17. - This field is automatically calculated for you
 		txtContPrice?: #AMOUNT
 		txtContPrice?: strings.MaxRunes(10)
+
 		// Line 19. Gross profit percentage (expressed as a decimal amount). Divide line 16 by line 18. (For years after the year of sale, see instructions. ) . - This field is automatically calculated for you
 		txtGrossProfPer?: #RATIO
 		txtGrossProfPer?: strings.MaxRunes(7)
+
 		// Line 20. If this is the year of sale, enter the amount from line 17. Otherwise, enter -0-. - This field is automatically calculated for you
 		txtAmtLn17?: #AMOUNT
 		txtAmtLn17?: strings.MaxRunes(10)
+
 		// Line 22. Add lines 20 and 21. - This field is automatically calculated for you
 		txtAddLn20Ln21?: #AMOUNT
 		txtAddLn20Ln21?: strings.MaxRunes(10)
+
 		// Line 24. Installment sale income. Multiply line 22 by line 19. - This field is automatically calculated for you
 		txtInstSalInc?: #AMOUNT
 		txtInstSalInc?: strings.MaxRunes(10)
+
 		// Line 26. Subtract line 25 from line 24. Enter here and on Schedule D or Form 4797. See instructions. - This field is automatically calculated for you
 		txtFinAmtFrln266252?: #AMOUNT
 		txtFinAmtFrln266252?: strings.MaxRunes(10)
+
 		// Line 31. Enter contract price from line 18 for year of first sale. - This field is automatically calculated for you
 		txtContPriceOnln18?: #AMOUNT
 		txtContPriceOnln18?: strings.MaxRunes(10)
+
 		// Line 32. Enter the smaller of line 30 or line 31. - This field is automatically calculated for you
 		txtSmallLn30Ln31?: #AMOUNT
 		txtSmallLn30Ln31?: strings.MaxRunes(10)
+
 		// Line 34. Subtract line 33 from line 32. If zero or less, enter -0-. - This field is automatically calculated for you
 		txtSubLn33Ln32?: #AMOUNT
 		txtSubLn33Ln32?: strings.MaxRunes(10)
+
 		// Line 35. Multiply line 34 by the gross profit percentage on line 19 for year of first sale. - This field is automatically calculated for you
 		txtMulLn34Ln19?: #AMOUNT
 		txtMulLn34Ln19?: strings.MaxRunes(10)
+
 		// Line 37. Subtract line 36 from line 35. Enter here and on Schedule D or Form 4797. See instructions. - This field is automatically calculated for you
 		txtAmtFrln376252?: #AMOUNT
 		txtAmtFrln376252?: strings.MaxRunes(10)
+
 		
 	}
 

@@ -502,9 +502,11 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxPayerName?: #UPPERCASE
 		txtTaxPayerName?: strings.MaxRunes(75)
+
 		// Identifying Number - This field is automatically populated for you
 		txtTaxPayerSsn?: #SSN
 		txtTaxPayerSsn?: strings.MaxRunes(11)
+
 		
 	}
 

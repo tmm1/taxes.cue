@@ -62,21 +62,27 @@ import "strings"
 		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(128)
+
 		// This field is automatically calculated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtF8853ArchMsaDed?: #AMOUNT
 		txtF8853ArchMsaDed?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8853SubRolloverFromDist?: #AMOUNT
 		txtF8853SubRolloverFromDist?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8853TaxableArchMsaDist?: #AMOUNT
 		txtF8853TaxableArchMsaDist?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8853TaxableMediChMsaDist?: #AMOUNT
 		txtF8853TaxableMediChMsaDist?: strings.MaxRunes(10)
+
 		
 	}
 

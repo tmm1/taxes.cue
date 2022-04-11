@@ -368,9 +368,11 @@ import "strings"
 		// Name shown on your return - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+
 		// Your social security number  - This field is automatically calculated for you
 		txtSSN?: #SSN
 		txtSSN?: strings.MaxRunes(11)
+
 		
 	}
 

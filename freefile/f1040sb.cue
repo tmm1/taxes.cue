@@ -507,23 +507,30 @@ import "strings"
 	#output: {
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
+
 		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
+
 		// Line 2. Add the amounts on line 1. - This field is automatically populated for you
 		txtLine1Tot?: #NEGAMOUNT
 		txtLine1Tot?: strings.MaxRunes(10)
+
 		// Line 3. Excludable interest on series EE and I U. S . savings bonds issued after 1989. - - This field is automatically populated for you
 		txtF8815IntExclusion?: #AMOUNT
 		txtF8815IntExclusion?: strings.MaxRunes(10)
+
 		// Line 4. Subtract line 3 from line 2 - This field is automatically populated for you
 		txtSchbLine4?: #AMOUNT
 		txtSchbLine4?: strings.MaxRunes(10)
+
 		// Line 5. Ordinary Dividend Amount  - This field is automatically populated for you
 		txtOrdAmt16?: #AMOUNT
 		txtOrdAmt16?: strings.MaxRunes(10)
+
 		// Line 6. Add the amounts on line 5 - This field is automatically populated for you
 		txtLine6?: #AMOUNT
 		txtLine6?: strings.MaxRunes(10)
+
 		
 	}
 

@@ -205,42 +205,55 @@ import "strings"
 		// Name - This field will be automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// SSN - This field will be automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtAgiAmt?: #AMOUNT
 		txtAgiAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtExpDedAmt?: #AMOUNT
 		txtExpDedAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtCalmedExp4?: #AMOUNT
 		txtCalmedExp4?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtschAAddLn5aLn5c?: #AMOUNT
 		txtschAAddLn5aLn5c?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtOtherTax?: #AMOUNT
 		txtOtherTax?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtTaxesUPaid?: #AMOUNT
 		txtTaxesUPaid?: strings.MaxRunes(10)
+
 		// Line 8e: Add lines 8a through 8d. This field is automatically calculated for you
 		txtSchAAddLn8aLn8c?: #AMOUNT
 		txtSchAAddLn8aLn8c?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtIntUPaid?: #AMOUNT
 		txtIntUPaid?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtCasualTheftLoss?: #AMOUNT
 		txtCasualTheftLoss?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchATotOthMiscDed?: #AMOUNT
 		txtSchATotOthMiscDed?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtTotItemDed?: #AMOUNT
 		txtTotItemDed?: strings.MaxRunes(10)
+
 		
 	}
 

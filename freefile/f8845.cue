@@ -24,18 +24,23 @@ import "strings"
 		// Name - This field will be automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Identifying number - This field will be automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
 		txtTaxpayerSSN?: strings.MaxRunes(12)
+
 		// Line 3. This field will be automatically calculated for you
 		txtIncmntIncre?: #AMOUNT
 		txtIncmntIncre?: strings.MaxRunes(10)
+
 		// Line 4. This field will be automatically calculated for you
 		txtMulLn320Per?: #AMOUNT
 		txtMulLn320Per?: strings.MaxRunes(10)
+
 		// Line 6. This field will be automatically calculated for you
 		txtCurrYrCdt8845?: #AMOUNT
 		txtCurrYrCdt8845?: strings.MaxRunes(10)
+
 		
 	}
 

@@ -96,18 +96,23 @@ import "strings"
 		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(95)
+
 		// This field is automatically calculated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtQbibIncmLossTot?: #AMOUNT
 		txtQbibIncmLossTot?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbibW2WagesTot?: #AMOUNT
 		txtQbibW2WagesTot?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbibUnadjBasisTot?: #AMOUNT
 		txtQbibUnadjBasisTot?: strings.MaxRunes(10)
+
 		
 	}
 

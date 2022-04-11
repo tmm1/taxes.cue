@@ -19,24 +19,34 @@ package freefile
 	#output: {
 		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtTaxPayerSSN?: #SSN
+
 		// This field is automatically calculated for you
 		txtAddress1?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtApartment?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtCity?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtState?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtZipCode?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtForeignCountry?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtForeignState?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtForeignCode?: #UPPERCASE
+
 		
 	}
 

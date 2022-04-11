@@ -254,37 +254,49 @@ import "strings"
 		// Line 5a. Enter the name(s) of the community property state(s)
 		txtF8379CommPropState?: #UPPERCASE
 		txtF8379CommPropState?: strings.MaxRunes(30)
+
 		// Line 13 a. Income reported on Form(s) W-2. (a) Amount shown on joint return
 		txtF8379WagesJoint?: #AMOUNT
 		txtF8379WagesJoint?: strings.MaxRunes(10)
+
 		// Line 13 b. All other income. (a) Amount shown on joint return
 		txtF8379OtherIncJoint?: #AMOUNT
 		txtF8379OtherIncJoint?: strings.MaxRunes(10)
+
 		// Line 14. Adjustments to income. (a) Amount shown on joint return
 		txtF8379AdjIncJoint?: #AMOUNT
 		txtF8379AdjIncJoint?: strings.MaxRunes(10)
+
 		// Line 15. Standard deduction or Itemized deductions  (a)Amount shown on joint return
 		txtF8379StdDedJoint?: #AMOUNT
 		txtF8379StdDedJoint?: strings.MaxRunes(10)
+
 		// Line 16. Number of exemptions. (a)Amount shown  on joint return
 		txtF8379NonrefCreditsJoint?: #NUMERIC
 		txtF8379NonrefCreditsJoint?: strings.MaxRunes(9)
+
 		// Line 17. Credits (do not include any earned income credit). (a)Amount shown on joint return
 		txtF8379CreditsJoint?: #AMOUNT
 		txtF8379CreditsJoint?: strings.MaxRunes(10)
+
 		// Line 18. Other taxes. (a)Amount shown  on joint return
 		txtF8379OthTaxJoint?: #AMOUNT
 		txtF8379OthTaxJoint?: strings.MaxRunes(10)
+
 		// Line 19. Federal income tax withheld. (a)Amount shown on joint return
 		txtF8379FedWithHeldJoint?: #AMOUNT
 		txtF8379FedWithHeldJoint?: strings.MaxRunes(10)
+
 		// Line 20. Payments. (a)Amount shown on joint return
 		txtF8379PaymentsJoint?: #AMOUNT
 		txtF8379PaymentsJoint?: strings.MaxRunes(10)
+
 		// Preparer's signature
 		txtSignature?: #UPPERCASE
+
 		txtFirmName?: #UPPERCASE
 		txtFirmName?: strings.MaxRunes(35)
+
 		
 	}
 

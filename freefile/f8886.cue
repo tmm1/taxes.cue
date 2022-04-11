@@ -605,18 +605,23 @@ import "strings"
 		// Name(s) shown on return (individuals enter last name, first name, middle initial)
 		txtF8886Name?: #UPPERCASE
 		txtF8886Name?: strings.MaxRunes(50)
+
 		// Identifying number
 		txtF8886IdNum?: #SSN
 		txtF8886IdNum?: strings.MaxRunes(11)
+
 		// Number, street, and room or suite no
 		txtF8886Addres?: #UPPERCASE
 		txtF8886Addres?: strings.MaxRunes(50)
+
 		// City or town
 		txtF8886City?: #UPPERCASE
 		txtF8886City?: strings.MaxRunes(50)
+
 		// Zip Code
 		txtF8886Zip?: #NUMERIC
 		txtF8886Zip?: strings.MaxRunes(5)
+
 		
 	}
 

@@ -57,27 +57,35 @@ import "strings"
 		// Name shown on return - This field is automatically calculated for you
 		txtF5405Name?: #UPPERCASE
 		txtF5405Name?: strings.MaxRunes(75)
+
 		// Your social security number - This field is automatically calculated for you
 		txtF5405Ssn?: #SSN
 		txtF5405Ssn?: strings.MaxRunes(11)
+
 		// Line 6. Subtract line 5 from line 4. If you checked the box on line 3f or 3g, see instructions. If you checked the box. This field is automatically calculated for you
 		txtF5405SubRepiadAmt?: #AMOUNT
 		txtF5405SubRepiadAmt?: strings.MaxRunes(10)
+
 		// Line 7. Enter the gain on the disposition of your main home (from line 15 below) - This field is automatically calculated for you
 		txtMainhomeGainAmountln7?: #AMOUNT
 		txtMainhomeGainAmountln7?: strings.MaxRunes(10)
+
 		// Line 11. Subtract line 10 from line 9. This is the amount realized on the sale of the home. This field is automatically calculated for you
 		txtF5405SubPrExp?: #AMOUNT
 		txtF5405SubPrExp?: strings.MaxRunes(10)
+
 		// Line 13. Enter the first-time homebuyer credit claimed on Form 5405 minus the amount of the credit you repaid with your tax returns for the years 2010 through 2020 - This field is automatically calculated for you
 		txtF5405SubRepiadAmtln13?: #AMOUNT
 		txtF5405SubRepiadAmtln13?: strings.MaxRunes(10)
+
 		// Line 14 Subtract line 13 from line 12. This is the adjusted basis for purposes of repaying the credit. This field is automatically calculated for you
 		txtF5405SubCdtBas?: #AMOUNT
 		txtF5405SubCdtBas?: strings.MaxRunes(10)
+
 		// Line 15 Subtract line 14 from line 11. This field is automatically calculated for you
 		txtMainhomeGainAmount?: #AMOUNT
 		txtMainhomeGainAmount?: strings.MaxRunes(10)
+
 		
 	}
 

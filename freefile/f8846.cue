@@ -31,15 +31,19 @@ import "strings"
 		// Tax Payer Name - This field is automatically populated for you
 		txtTaxPyrName?: #UPPERCASE
 		txtTaxPyrName?: strings.MaxRunes(75)
+
 		// Tax Payer SSN - This field is automatically populated for you
 		txtTaxPyrSSN?: #SSN
 		txtTaxPyrSSN?: strings.MaxRunes(9)
+
 		// Line 3. Creditable tips. Subtract line 2 from line 1 - This field is automatically calculated for you
 		txtCreditTips?: #AMOUNT
 		txtCreditTips?: strings.MaxRunes(10)
+
 		// Line 6. Add lines 4 and 5. Partnerships and S corporations, report this amount on Schedule K. All others, report this amount on Form 3800, Part III, line 4f - This field is automatically calculated for you
 		txtCurrYrCredit?: #AMOUNT
 		txtCurrYrCredit?: strings.MaxRunes(10)
+
 		
 	}
 

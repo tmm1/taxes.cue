@@ -555,21 +555,27 @@ import "strings"
 		// Name - automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// SSN - automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+
 		// Name - This field is automatically populated for you
 		txtTaxPayerName?: #UPPERCASE
 		txtTaxPayerName?: strings.MaxRunes(75)
+
 		// SSN - This field is automatically populated for you
 		txtTaxPayerSSN?: #UPPERCASE
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// Name - This field is automatically populated for you
 		txtTaxPayerName?: #UPPERCASE
 		txtTaxPayerName?: strings.MaxRunes(75)
+
 		// SSN - This field is automatically populated for you
 		txtTaxPayerSSN?: #UPPERCASE
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		
 	}
 

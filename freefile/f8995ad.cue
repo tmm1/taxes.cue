@@ -60,36 +60,47 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Identifying Number - This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// Multiply line 2 by 9% (0. 09) Column A - This field is automatically calculated for you
 		txtQBISchDIncBy91?: #AMOUNT
 		txtQBISchDIncBy91?: strings.MaxRunes(10)
+
 		// Multiply line 2 by 9% (0. 09) Column B  - This field is automatically calculated for you
 		txtQBISchDIncBy92?: #AMOUNT
 		txtQBISchDIncBy92?: strings.MaxRunes(10)
+
 		// Multiply line 2 by 9% (0. 09) Column C - This field is automatically calculated for you
 		txtQBISchDIncBy93?: #AMOUNT
 		txtQBISchDIncBy93?: strings.MaxRunes(10)
+
 		// Multiply line 4 by 50% (0. 50)  Column A - This field is automatically calculated for you
 		txtQBISchDW2WagesBy501?: #AMOUNT
 		txtQBISchDW2WagesBy501?: strings.MaxRunes(10)
+
 		// Multiply line 4 by 50% (0. 50) Column B - This field is automatically calculated for you
 		txtQBISchDW2WagesBy502?: #AMOUNT
 		txtQBISchDW2WagesBy502?: strings.MaxRunes(10)
+
 		// Multiply line 4 by 50% (0. 50) Column C - This field is automatically calculated for you
 		txtQBISchDW2WagesBy503?: #AMOUNT
 		txtQBISchDW2WagesBy503?: strings.MaxRunes(10)
+
 		// Patron reduction. Enter the smaller of line 3 or line 5. Enter this  amount on Form 8995-A, line 14, for the corresponding trade, business, or aggregation - This field is automatically calculated for you
 		txtQBI12APatronReduc1?: #AMOUNT
 		txtQBI12APatronReduc1?: strings.MaxRunes(10)
+
 		// Patron reduction. Enter the smaller of line 3 or line 5. Enter this  amount on Form 8995-A, line 14, for the corresponding trade, business, or aggregation - This field is automatically calculated for you
 		txtQBI12APatronReduc2?: #AMOUNT
 		txtQBI12APatronReduc2?: strings.MaxRunes(10)
+
 		// Patron reduction. Enter the smaller of line 3 or line 5. Enter this  amount on Form 8995-A, line 14, for the corresponding trade, business, or aggregation - This field is automatically calculated for you
 		txtQBI12APatronReduc3?: #AMOUNT
 		txtQBI12APatronReduc3?: strings.MaxRunes(10)
+
 		
 	}
 

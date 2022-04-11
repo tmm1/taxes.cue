@@ -426,9 +426,11 @@ import "strings"
 		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+
 		// This field is automatically calculated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+
 		
 	}
 

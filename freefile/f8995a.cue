@@ -135,192 +135,255 @@ import "strings"
 		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+
 		// This field is automatically calculated for you
 		txtTaxpayerSsn?: #SSN
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtQbi12AMulBy20A?: #AMOUNT
 		txtQbi12AMulBy20A?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AMulBy20B?: #AMOUNT
 		txtQbi12AMulBy20B?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AMulBy20C?: #AMOUNT
 		txtQbi12AMulBy20C?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AW2WagesBy50A?: #AMOUNT
 		txtQbi12AW2WagesBy50A?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AW2WagesBy50B?: #AMOUNT
 		txtQbi12AW2WagesBy50B?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AW2WagesBy50C?: #AMOUNT
 		txtQbi12AW2WagesBy50C?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AW2WagesBy25A?: #AMOUNT
 		txtQbi12AW2WagesBy25A?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AW2WagesBy25B?: #AMOUNT
 		txtQbi12AW2WagesBy25B?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AW2WagesBy25C?: #AMOUNT
 		txtQbi12AW2WagesBy25C?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AUnadjBy25A?: #AMOUNT
 		txtQbi12AUnadjBy25A?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AUnadjBy25B?: #AMOUNT
 		txtQbi12AUnadjBy25B?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AUnadjBy25C?: #AMOUNT
 		txtQbi12AUnadjBy25C?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AAddBy25A?: #AMOUNT
 		txtQbi12AAddBy25A?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AAddBy25B?: #AMOUNT
 		txtQbi12AAddBy25B?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AAddBy25C?: #AMOUNT
 		txtQbi12AAddBy25C?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AMaxBy2550A?: #AMOUNT
 		txtQbi12AMaxBy2550A?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AMaxBy2550B?: #AMOUNT
 		txtQbi12AMaxBy2550B?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AMaxBy2550C?: #AMOUNT
 		txtQbi12AMaxBy2550C?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AQualPropLimitA?: #AMOUNT
 		txtQbi12AQualPropLimitA?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AQualPropLimitB?: #AMOUNT
 		txtQbi12AQualPropLimitB?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AQualPropLimitC?: #AMOUNT
 		txtQbi12AQualPropLimitC?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AQualIncAftphaseA?: #AMOUNT
 		txtQbi12AQualIncAftphaseA?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AQualIncAftphaseB?: #AMOUNT
 		txtQbi12AQualIncAftphaseB?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12AQualIncAftphaseC?: #AMOUNT
 		txtQbi12AQualIncAftphaseC?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12ABusibfPatronA?: #AMOUNT
 		txtQbi12ABusibfPatronA?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12ABusibfPatronB?: #AMOUNT
 		txtQbi12ABusibfPatronB?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12ABusibfPatronC?: #AMOUNT
 		txtQbi12ABusibfPatronC?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12ABusiComponentA?: #AMOUNT
 		txtQbi12ABusiComponentA?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12ABusiComponentB?: #AMOUNT
 		txtQbi12ABusiComponentB?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12ABusiComponentC?: #AMOUNT
 		txtQbi12ABusiComponentC?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQualBusiIncomeComp?: #AMOUNT
 		txtQualBusiIncomeComp?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtTaxpayerNamePg2?: #UPPERCASE
 		txtTaxpayerNamePg2?: strings.MaxRunes(87)
+
 		// This field is automatically calculated for you
 		txtTaxpayerSsnPg2?: #SSN
 		txtTaxpayerSsnPg2?: strings.MaxRunes(11)
+
 		// Line 17 A. Enter the amounts from line 3
 		txtLn17Qbi12AMulBy20A?: #AMOUNT
 		txtLn17Qbi12AMulBy20A?: strings.MaxRunes(10)
+
 		// Line 17 B. Enter the amounts from line 3
 		txtLn17Qbi12AMulBy20B?: #AMOUNT
 		txtLn17Qbi12AMulBy20B?: strings.MaxRunes(10)
+
 		// Line 17 C. Enter the amounts from line 3
 		txtLn17Qbi12AMulBy20C?: #AMOUNT
 		txtLn17Qbi12AMulBy20C?: strings.MaxRunes(10)
+
 		// Line 18 A. Enter the amounts from line 10
 		txtLn18Qbi12AMaxBy2550A?: #AMOUNT
 		txtLn18Qbi12AMaxBy2550A?: strings.MaxRunes(10)
+
 		// Line 18 B. Enter the amounts from line 10
 		txtLn18Qbi12AMaxBy2550B?: #AMOUNT
 		txtLn18Qbi12AMaxBy2550B?: strings.MaxRunes(10)
+
 		// Line 18 C. Enter the amounts from line 10
 		txtLn18Qbi12AMaxBy2550C?: #AMOUNT
 		txtLn18Qbi12AMaxBy2550C?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12ASubBy20Frmax50A?: #AMOUNT
 		txtQbi12ASubBy20Frmax50A?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12ASubBy20Frmax50B?: #AMOUNT
 		txtQbi12ASubBy20Frmax50B?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12ASubBy20Frmax50C?: #AMOUNT
 		txtQbi12ASubBy20Frmax50C?: strings.MaxRunes(10)
+
 		// Line 20. Taxable income before qualified business income deduction
 		txtIncBfrQbiDeduction?: #AMOUNT
 		txtIncBfrQbiDeduction?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12ASubThrshIncome?: #AMOUNT
 		txtQbi12ASubThrshIncome?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12APhaseInPerc?: #NUMERIC
 		txtQbi12APhaseInPerc?: strings.MaxRunes(5)
+
 		// This field is automatically calculated for you
 		txtQbi12APhaseRedTotA?: #AMOUNT
 		txtQbi12APhaseRedTotA?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12APhaseRedTotB?: #AMOUNT
 		txtQbi12APhaseRedTotB?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQbi12APhaseRedTotC?: #AMOUNT
 		txtQbi12APhaseRedTotC?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtLn26Qbi12AQualIncAftphaseA?: #AMOUNT
 		txtLn26Qbi12AQualIncAftphaseA?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtLn26Qbi12AQualIncAftphaseB?: #AMOUNT
 		txtLn26Qbi12AQualIncAftphaseB?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtLn26Qbi12AQualIncAftphaseC?: #AMOUNT
 		txtLn26Qbi12AQualIncAftphaseC?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtLn27QualBusiIncomeComp?: #AMOUNT
 		txtLn27QualBusiIncomeComp?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQualAddLn19Ln20Ln21?: #AMOUNT
 		txtQualAddLn19Ln20Ln21?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQual20Percentln21Ln22?: #AMOUNT
 		txtQual20Percentln21Ln22?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQualAddln51018Ln22Ln24?: #AMOUNT
 		txtQualAddln51018Ln22Ln24?: strings.MaxRunes(10)
+
 		// Line 33: Taxable income before qualified business income deduction
 		txtIncBfrQbiDeductionLn33?: #AMOUNT
 		txtIncBfrQbiDeductionLn33?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtWkshTaxIncomeLn1?: #AMOUNT
 		txtWkshTaxIncomeLn1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtWksh20PercentLn1Ln4?: #AMOUNT
 		txtWksh20PercentLn1Ln4?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtQualSmallLn4Ln25?: #AMOUNT
 		txtQualSmallLn4Ln25?: strings.MaxRunes(10)
+
 		// Line 39. Total qualified business income deduction. Add lines 37 and 38
 		txtTotQualBusIncDed?: #AMOUNT
 		txtTotQualBusIncDed?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtTotReitIncPtpCryfrd?: #AMOUNT
 		txtTotReitIncPtpCryfrd?: strings.MaxRunes(10)
+
 		
 	}
 

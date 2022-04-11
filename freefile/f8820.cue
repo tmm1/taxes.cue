@@ -336,24 +336,31 @@ import "strings"
 		// Tax Payer Name - This field is automatically populated for you
 		txtTaxPyrName?: #UPPERCASE
 		txtTaxPyrName?: strings.MaxRunes(75)
+
 		// Tax Payer SSN - This field is automatically populated for you
 		txtTaxPyrSSN?: #SSN
 		txtTaxPyrSSN?: strings.MaxRunes(9)
+
 		// Line 2a. If �Yes, � multiply line 1 by 19. 75% (0. 1975). If �No, � multiply line 1 by 25% (0. 25) and see the
 		txtCurrYrCdtLn2?: #AMOUNT
 		txtCurrYrCdtLn2?: strings.MaxRunes(10)
+
 		// Line 2c. Subtract line 2b from line 2a. If zero or less, enter -0- - This field is automatically calculated for you
 		txtSubQualamtWageamt?: #AMOUNT
 		txtSubQualamtWageamt?: strings.MaxRunes(10)
+
 		// Line 4. Add lines 2c and 3. Estates and trusts, go to line 5. Partnerships and S corporations, report this amount on Schedule K. All others, report this amount on Form 3800, Part III, line 1h - This field is automatically calculated for you
 		txtCurrYrCdt8820?: #AMOUNT
 		txtCurrYrCdt8820?: strings.MaxRunes(10)
+
 		// Line 5. Amount allocated to the beneficiaries of the estate or trust
 		txtF8820EstateTrustInp?: #AMOUNT
 		txtF8820EstateTrustInp?: strings.MaxRunes(10)
+
 		// Line 6. Estates and trusts. Subtract line 5 from line 4. Report this amount on Form 3800, Part III, line 1h
 		txtF8820EstateTrustAmt?: #AMOUNT
 		txtF8820EstateTrustAmt?: strings.MaxRunes(10)
+
 		
 	}
 

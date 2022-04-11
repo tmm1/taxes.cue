@@ -92,90 +92,119 @@ import "strings"
 		// This field is automatically populated for you
 		txtTaxPyrName?: #UPPERCASE
 		txtTaxPyrName?: strings.MaxRunes(75)
+
 		// This field is automatically populated for you
 		txtTaxPyrSSN?: #UPPERCASE
 		txtTaxPyrSSN?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtSchdTotSsellprb1?: #AMOUNT
 		txtSchdTotSsellprb1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotSbuyprb1?: #AMOUNT
 		txtSchdTotSbuyprb1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotSadjgnlossb1?: #AMOUNT
 		txtSchdTotSadjgnlossb1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotSgnlossb1?: #AMOUNT
 		txtSchdTotSgnlossb1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotSsellprb2?: #AMOUNT
 		txtSchdTotSsellprb2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotSbuyprb2?: #AMOUNT
 		txtSchdTotSbuyprb2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotSadjgnlossb2?: #AMOUNT
 		txtSchdTotSadjgnlossb2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotSgnlossb2?: #AMOUNT
 		txtSchdTotSgnlossb2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotSsellprb3?: #AMOUNT
 		txtSchdTotSsellprb3?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotsbuyprb3?: #AMOUNT
 		txtSchdTotsbuyprb3?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotSadjgnlossb3?: #AMOUNT
 		txtSchdTotSadjgnlossb3?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotSgnlossb3?: #AMOUNT
 		txtSchdTotSgnlossb3?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtNetShortTermCap?: #AMOUNT
 		txtNetShortTermCap?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLsellprb1?: #AMOUNT
 		txtSchdTotLsellprb1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLbuyprb1?: #AMOUNT
 		txtSchdTotLbuyprb1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLadjgnlossb1?: #AMOUNT
 		txtSchdTotLadjgnlossb1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotlgnlossb1?: #AMOUNT
 		txtSchdTotlgnlossb1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLsellprb2?: #AMOUNT
 		txtSchdTotLsellprb2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLbuyprb2?: #AMOUNT
 		txtSchdTotLbuyprb2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLadjgnlossprb2?: #AMOUNT
 		txtSchdTotLadjgnlossprb2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLgnlossb2?: #AMOUNT
 		txtSchdTotLgnlossb2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLsellprb3?: #AMOUNT
 		txtSchdTotLsellprb3?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLsuyprb3?: #AMOUNT
 		txtSchdTotLsuyprb3?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLadjgnlossb3?: #AMOUNT
 		txtSchdTotLadjgnlossb3?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchdTotLgnlossb3?: #AMOUNT
 		txtSchdTotLgnlossb3?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtNetLongTermCap?: #AMOUNT
 		txtNetLongTermCap?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSumShtLngGains?: #AMOUNT
 		txtSumShtLngGains?: strings.MaxRunes(10)
+
 		
 	}
 

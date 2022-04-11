@@ -123,15 +123,19 @@ import "strings"
 		// Tax year decedent was due a refund: Calendar year
 		CONST_txtF1310TaxYear?: #NUMERIC
 		CONST_txtF1310TaxYear?: strings.MaxRunes(4)
+
 		// Name of decedent - This field is automatically populated for you
 		txtF1310DecedName?: #UPPERCASE
 		txtF1310DecedName?: strings.MaxRunes(12)
+
 		// Date of Death - This field is automatically populated for you
 		txtF1310DeceasedDate?: #DATE
 		txtF1310DeceasedDate?: strings.MaxRunes(10)
+
 		// Decedent's social security number - This field is automatically populated for you
 		txtF1310DeceasedSsn?: #SSN
 		txtF1310DeceasedSsn?: strings.MaxRunes(11)
+
 		
 	}
 

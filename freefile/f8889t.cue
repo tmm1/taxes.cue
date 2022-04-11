@@ -71,36 +71,47 @@ import "strings"
 		// Name - This field is automatically calculated for you
 		txtF8889TaxpayerName?: #UPPERCASE
 		txtF8889TaxpayerName?: strings.MaxRunes(75)
+
 		// SSN (Social security number) - This field is automatically calculated for you
 		txtF8889TaxpayerSsn?: #SSN
 		txtF8889TaxpayerSsn?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtF8889SubAmsaFrAnnDedPr?: #AMOUNT
 		txtF8889SubAmsaFrAnnDedPr?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8889AddAddiContPr?: #AMOUNT
 		txtF8889AddAddiContPr?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8889HsaAddLn10Ln11Pr?: #AMOUNT
 		txtF8889HsaAddLn10Ln11Pr?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8889SubEmpContPr?: #AMOUNT
 		txtF8889SubEmpContPr?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8889HsaDedPr?: #AMOUNT
 		txtF8889HsaDedPr?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8889SubRolovrFrDistPr?: #AMOUNT
 		txtF8889SubRolovrFrDistPr?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8889TaxableHsaDistPr?: #AMOUNT
 		txtF8889TaxableHsaDistPr?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8889HdhpTotalIncomePr?: #AMOUNT
 		txtF8889HdhpTotalIncomePr?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8889HdhpAdditionalTaxPr?: #AMOUNT
 		txtF8889HdhpAdditionalTaxPr?: strings.MaxRunes(10)
+
 		
 	}
 

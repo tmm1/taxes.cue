@@ -292,33 +292,43 @@ import "strings"
 		// Name(s) (Name) - This field is automatically calculated for you
 		txtF8828TaxpayerName?: #UPPERCASE
 		txtF8828TaxpayerName?: strings.MaxRunes(75)
+
 		// SSN (Social security number) - This field is automatically calculated for you
 		txtF8828TaxpayerSsn?: #SSN
 		txtF8828TaxpayerSsn?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtF8828RealizedAmt?: #AMOUNT
 		txtF8828RealizedAmt?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtF8828GainLoss?: #AMOUNT
 		txtF8828GainLoss?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtF8828HalfGain?: #AMOUNT
 		txtF8828HalfGain?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtF8828SubtractAdj?: #AMOUNT
 		txtF8828SubtractAdj?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtF8828IncPercent?: #AMOUNT
 		txtF8828IncPercent?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtF8828MultiplySubsidy?: #AMOUNT
 		txtF8828MultiplySubsidy?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtF8828RecaptureAmt?: #AMOUNT
 		txtF8828RecaptureAmt?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtF8828Tax?: #AMOUNT
 		txtF8828Tax?: strings.MaxRunes(8)
+
 		
 	}
 

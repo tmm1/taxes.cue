@@ -319,33 +319,43 @@ import "strings"
 		// Line 1c. Subtract line 1b from line 1a - This field is automatically calculated for you
 		txtSubLn2FrLn1?: #AMOUNT
 		txtSubLn2FrLn1?: strings.MaxRunes(10)
+
 		// Line 9. Gross income. Add amounts in the right column (lines 1c, 2 , 3b, 4b, 5a, 5c, 6b, 6d, 7 , and 8). If you use the accrual method, enter the amount from Part III, line 50. See instructions - This field is automatically calculated for you
 		txtGrossIncOnln11?: #AMOUNT
 		txtGrossIncOnln11?: strings.MaxRunes(10)
+
 		// Line 33. Total expenses. Add lines 10 through 32f. If line 32f is negative, see instructions - This field is automatically calculated for you
 		txtTotaExpLn12Toln34F?: #AMOUNT
 		txtTotaExpLn12Toln34F?: strings.MaxRunes(10)
+
 		// Line 34. Net farm profit or (loss). Subtract line 33 from line 9. If a profit, stop here and see instructions for where to report. If a loss, complete lines 35 and 36. - This field is automatically calculated for you
 		txtNetFarmProfitLoss?: #AMOUNT
 		txtNetFarmProfitLoss?: strings.MaxRunes(10)
+
 		// Name of proprietor - This This field is automatically calculated for you
 		txtTaxPayerNamePg2?: #UPPERCASE
 		txtTaxPayerNamePg2?: strings.MaxRunes(75)
+
 		// Social security number (SSN) - This field is automatically calculated for you
 		txtTaxPayerSSNPg2?: #UPPERCASE
 		txtTaxPayerSSNPg2?: strings.MaxRunes(11)
+
 		// Line 44. Add amounts in the right column for lines 37 through 43 (lines 37, 38b, 39b, 40a, 40c, 41, 42, and 43) - This field is automatically calculated for you
 		txtTotAmtLn38Toln44?: #AMOUNT
 		txtTotAmtLn38Toln44?: strings.MaxRunes(10)
+
 		// Line 47. Add lines 45 and 46 - This field is automatically calculated for you
 		txtSumOfLn4647?: #AMOUNT
 		txtSumOfLn4647?: strings.MaxRunes(10)
+
 		// Line 49. Cost of livestock, produce, grains, and other products sold. Subtract line 48 from line 47 - This field is automatically calculated for you
 		txtCostOfSoldProd?: #AMOUNT
 		txtCostOfSoldProd?: strings.MaxRunes(10)
+
 		// Line 50. Gross income. Subtract line 49 from line 44. Enter the result here and on Part I, line 9 - This field is automatically calculated for you
 		txtGrossIncOnln51?: #AMOUNT
 		txtGrossIncOnln51?: strings.MaxRunes(10)
+
 		
 	}
 

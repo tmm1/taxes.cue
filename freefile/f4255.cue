@@ -160,114 +160,151 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically populated for you
 		txtCostOrBasis1?: #AMOUNT
 		txtCostOrBasis1?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtCostOrBasis2?: #AMOUNT
 		txtCostOrBasis2?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtCostOrBasis3?: #AMOUNT
 		txtCostOrBasis3?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtCostOrBasis4?: #AMOUNT
 		txtCostOrBasis4?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtRefiguredcredit1?: #AMOUNT
 		txtRefiguredcredit1?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtRefiguredcredit2?: #AMOUNT
 		txtRefiguredcredit2?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtRefiguredcredit3?: #AMOUNT
 		txtRefiguredcredit3?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtRefiguredcredit4?: #AMOUNT
 		txtRefiguredcredit4?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSubLn5FrmLn61?: #AMOUNT
 		txtSubLn5FrmLn61?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSubLn5FrmLn62?: #AMOUNT
 		txtSubLn5FrmLn62?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSubLn5FrmLn63?: #AMOUNT
 		txtSubLn5FrmLn63?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSubLn5FrmLn64?: #AMOUNT
 		txtSubLn5FrmLn64?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSubLn8FrmLn71?: #AMOUNT
 		txtSubLn8FrmLn71?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSubLn8FrmLn72?: #AMOUNT
 		txtSubLn8FrmLn72?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSubLn8FrmLn73?: #AMOUNT
 		txtSubLn8FrmLn73?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSubLn8FrmLn74?: #AMOUNT
 		txtSubLn8FrmLn74?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtNumOfFullyrs1?: #AMOUNT
 		txtNumOfFullyrs1?: strings.MaxRunes(2)
+
 		// This field is automatically populated for you
 		txtNumOfFullyrs2?: #AMOUNT
 		txtNumOfFullyrs2?: strings.MaxRunes(2)
+
 		// This field is automatically populated for you
 		txtNumOfFullyrs3?: #AMOUNT
 		txtNumOfFullyrs3?: strings.MaxRunes(2)
+
 		// This field is automatically populated for you
 		txtNumOfFullyrs4?: #AMOUNT
 		txtNumOfFullyrs4?: strings.MaxRunes(2)
+
 		// This field is automatically populated for you
 		txtOriginalCdt1?: #AMOUNT
 		txtOriginalCdt1?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtOriginalCdt2?: #AMOUNT
 		txtOriginalCdt2?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtOriginalCdt3?: #AMOUNT
 		txtOriginalCdt3?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtOriginalCdt4?: #AMOUNT
 		txtOriginalCdt4?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtRecapPercent1?: #AMOUNT
 		txtRecapPercent1?: strings.MaxRunes(8)
+
 		// This field is automatically populated for you
 		txtRecapPercent2?: #AMOUNT
 		txtRecapPercent2?: strings.MaxRunes(8)
+
 		// This field is automatically populated for you
 		txtRecapPercent3?: #AMOUNT
 		txtRecapPercent3?: strings.MaxRunes(8)
+
 		// This field is automatically populated for you
 		txtRecapPercent4?: #AMOUNT
 		txtRecapPercent4?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtTentRecapTax1?: #AMOUNT
 		txtTentRecapTax1?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtTentRecapTax2?: #AMOUNT
 		txtTentRecapTax2?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtTentRecapTax3?: #AMOUNT
 		txtTentRecapTax3?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtTentRecapTax4?: #AMOUNT
 		txtTentRecapTax4?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtAddPropAtoDLn9?: #AMOUNT
 		txtAddPropAtoDLn9?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtTotAmtMln8?: #AMOUNT
 		txtTotAmtMln8?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtTotIncrInTax?: #AMOUNT
 		txtTotIncrInTax?: strings.MaxRunes(10)
+
 		
 	}
 

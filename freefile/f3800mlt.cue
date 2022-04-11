@@ -326,18 +326,23 @@ import "strings"
 		// Name - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// SSN - This field is automatically calculated for you
 		txtTaxpayerSsn?: #SSN
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+
 		// Line 2  Add lines 1a through 1zz and enter here and on the applicable line of Part I - This field is automatically calculated for you
 		txtSumCurrentYrCdtSum?: #AMOUNT
 		txtSumCurrentYrCdtSum?: strings.MaxRunes(10)
+
 		// Line 5 Add lines 4a through 4z and enter here and on the applicable line of Part II - This field is automatically calculated for you
 		txtSum3800OtherCdtSum?: #AMOUNT
 		txtSum3800OtherCdtSum?: strings.MaxRunes(10)
+
 		// Line 6 Add lines 2, 3 , and 5 and enter here and on the applicable line of Part II  -  This field is automatically calculated for you
 		txtTotGenBusinessCdtSum?: #AMOUNT
 		txtTotGenBusinessCdtSum?: strings.MaxRunes(10)
+
 		
 	}
 

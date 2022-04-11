@@ -60,12 +60,15 @@ import "strings"
 		// This field will be automatically populated for you
 		txtRecipientName?: #UPPERCASE
 		txtRecipientName?: strings.MaxRunes(75)
+
 		// This field will be automatically populated for you
 		txtRecipientSSN?: #UPPERCASE
 		txtRecipientSSN?: strings.MaxRunes(11)
+
 		// Line 4. Subtract line 3 from line 2 - This field will be automatically calculated for you
 		txtNettHlthInsAmtColb?: #AMOUNT
 		txtNettHlthInsAmtColb?: strings.MaxRunes(10)
+
 		
 	}
 

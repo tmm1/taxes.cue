@@ -90,6 +90,7 @@ files: [
 						{{- if and $f.maxlength (gt $f.maxlength 0)}}
 						{{$f.name}}?: strings.MaxRunes({{$f.maxlength}})
 						{{- end}}
+
 						{{end -}}
 						{{end}}
 					}

@@ -358,9 +358,11 @@ import "strings"
 		// Name(s) shown on return - This field is automatically calculated for you
 		txtTaxPayerName?: #UPPERCASE
 		txtTaxPayerName?: strings.MaxRunes(75)
+
 		// Identifying number shown on return - This field is automatically calculated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		
 	}
 

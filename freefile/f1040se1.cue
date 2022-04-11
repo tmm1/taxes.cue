@@ -544,42 +544,55 @@ import "strings"
 		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+
 		// This field is automatically calculated for you
 		txtTaxpayerSsn?: #UPPERCASE
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtScheTotalLine20A?: #AMOUNT
 		txtScheTotalLine20A?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtScheTotalLine20B?: #AMOUNT
 		txtScheTotalLine20B?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtScheTotalLine20C?: #AMOUNT
 		txtScheTotalLine20C?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtScheTotincRentalAmt?: #AMOUNT
 		txtScheTotincRentalAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtScheTotincRoyalAmt?: #AMOUNT
 		txtScheTotincRoyalAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtScheTotMortgageAmt?: #AMOUNT
 		txtScheTotMortgageAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtScheTotDepexpAmt?: #AMOUNT
 		txtScheTotDepexpAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtScheTotExpensesAmt?: #AMOUNT
 		txtScheTotExpensesAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtScheAddPositivevalue?: #AMOUNT
 		txtScheAddPositivevalue?: strings.MaxRunes(10)
+
 		// Line 25. Losses. Add royalty losses from line 21 and rental real estate losses from line 22. Enter total losses here
 		txtScheTotalLosse?: #AMOUNT
 		txtScheTotalLosse?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtScheTotIncomeorloss?: #AMOUNT
 		txtScheTotIncomeorloss?: strings.MaxRunes(10)
+
 		
 	}
 

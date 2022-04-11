@@ -411,74 +411,98 @@ import "strings"
 		// This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// This field is automatically populated for you
 		txtTaxPayerSSN?: #UPPERCASE
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// Line 4. Property A - Gain from casualty or theft. If line 3 is more than line 2, enter the difference here and skip lines 5 through 9 for that column
 		txtGainCasThft1?: #AMOUNT
 		txtGainCasThft1?: strings.MaxRunes(10)
+
 		// Line 4. Property B - Gain from casualty or theft. If line 3 is more than line 2, enter the difference here and skip lines 5 through 9 for that column
 		txtGainCasThft2?: #AMOUNT
 		txtGainCasThft2?: strings.MaxRunes(10)
+
 		// Line 4. Property C - Gain from casualty or theft. If line 3 is more than line 2, enter the difference here and skip lines 5 through 9 for that column
 		txtGainCasThft3?: #AMOUNT
 		txtGainCasThft3?: strings.MaxRunes(10)
+
 		// Line 4. Property D - Gain from casualty or theft. If line 3 is more than line 2, enter the difference here and skip lines 5 through 9 for that column
 		txtGainCasThft4?: #AMOUNT
 		txtGainCasThft4?: strings.MaxRunes(10)
+
 		// Line 7. Property A - Subtract line 6 from line 5
 		txtSubLin6Ln71?: #AMOUNT
 		txtSubLin6Ln71?: strings.MaxRunes(10)
+
 		// Line 7. Property B - Subtract line 6 from line 5
 		txtSubLin6Ln72?: #AMOUNT
 		txtSubLin6Ln72?: strings.MaxRunes(10)
+
 		// Line 7. Property C - Subtract line 6 from line 5
 		txtSubLin6Ln73?: #AMOUNT
 		txtSubLin6Ln73?: strings.MaxRunes(10)
+
 		// Line 7. Property D - Subtract line 6 from line 5
 		txtSubLin6Ln74?: #AMOUNT
 		txtSubLin6Ln74?: strings.MaxRunes(10)
+
 		// Line 8. Property A - Enter the smaller of line 2 or line 7
 		txtMinLin2Ln71?: #AMOUNT
 		txtMinLin2Ln71?: strings.MaxRunes(10)
+
 		// Line 8. Property B - Enter the smaller of line 2 or line 7
 		txtMinLin2Ln72?: #AMOUNT
 		txtMinLin2Ln72?: strings.MaxRunes(10)
+
 		// Line 8. Property C - Enter the smaller of line 2 or line 7
 		txtMinLin2Ln73?: #AMOUNT
 		txtMinLin2Ln73?: strings.MaxRunes(10)
+
 		// Line 8, Property B - Enter the smaller of line 2 or line 7
 		txtMinLin2Ln74?: #AMOUNT
 		txtMinLin2Ln74?: strings.MaxRunes(10)
+
 		// Line 9. Property A - Subtract line 3 from line 8. If zero or less, enter -0-
 		txtSubLin3Ln81?: #AMOUNT
 		txtSubLin3Ln81?: strings.MaxRunes(10)
+
 		// Line 9. Property B - Subtract line 3 from line 8. If zero or less, enter -0-
 		txtSubLin3Ln82?: #AMOUNT
 		txtSubLin3Ln82?: strings.MaxRunes(10)
+
 		// Line 9. Property C - Subtract line 3 from line 8. If zero or less, enter -0-
 		txtSubLin3Ln83?: #AMOUNT
 		txtSubLin3Ln83?: strings.MaxRunes(10)
+
 		txtSubLin3Ln84?: #AMOUNT
 		txtSubLin3Ln84?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtCasTheftLossTot?: #AMOUNT
 		txtCasTheftLossTot?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF4684SubLn11Ln10?: #AMOUNT
 		txtF4684SubLn11Ln10?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtAddAmtLn4?: #AMOUNT
 		txtAddAmtLn4?: strings.MaxRunes(10)
+
 		// Line 14. Add the amounts on line 12 of all Forms 4684
 		txtAddAmtLn12?: #AMOUNT
 		txtAddAmtLn12?: strings.MaxRunes(10)
+
 		// Line 16. Add lines 13 and 15. Subtract the result from line 14
 		txtDiffLn13Ln14?: #AMOUNT
 		txtDiffLn13Ln14?: strings.MaxRunes(10)
+
 		// Line 18. Subtract line 17 from line 16. If zero or less, enter -0-. Also, enter the result on Schedule A (Form 1040), line 15; or Schedule A (Form 1040-NR), line 6. Estates and trusts, enter the result on the �Other deductions� line of your tax return
 		txtAddLn17Ln20Scha19?: #AMOUNT
 		txtAddLn17Ln20Scha19?: strings.MaxRunes(10)
+
 		
 	}
 

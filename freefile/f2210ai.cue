@@ -171,191 +171,269 @@ import "strings"
 	#output: {
 		// This field is automatically calculated for you
 		txtAnnualIncCola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtAnnualIncColb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtAnnualIncColc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtAnnualIncCold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtMulLn4ByLn5Cola?: #UPPERCASE
 		txtMulLn4ByLn5Cola?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtMulLn4ByLn5Colb?: #UPPERCASE
 		txtMulLn4ByLn5Colb?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtMulLn4ByLn5Colc?: #UPPERCASE
 		txtMulLn4ByLn5Colc?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtMulLn4ByLn5Cold?: #UPPERCASE
 		txtMulLn4ByLn5Cold?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtLargeLn6Ln7Cola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtLargeLn6Ln7Colb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtLargeLn6Ln7Colc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtLargeLn6Ln7Cold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtAddLn8Ln9Cola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtAddLn8Ln9Colb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtAddLn8Ln9Colc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtAddLn8Ln9Cold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSubLn3Ln8Cola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSubLn3Ln8Colb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSubLn3Ln8Colc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSubLn3Ln8Cold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSubLn9Ln10Cola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSubLn9Ln10Colb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSubLn9Ln10Colc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSubLn9Ln10Cold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSetaxAmtCola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSetaxAmtColb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSetaxAmtColc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSetaxAmtCold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtTottaxAmtCola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtTottaxAmtColb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtTottaxAmtColc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtTottaxAmtCold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSubLn15Ln16Cola?: #UPPERCASE
 		txtSubLn15Ln16Cola?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtSubLn15Ln16Colb?: #UPPERCASE
 		txtSubLn15Ln16Colb?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtSubLn15Ln16Colc?: #UPPERCASE
 		txtSubLn15Ln16Colc?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtSubLn15Ln16Cold?: #UPPERCASE
 		txtSubLn15Ln16Cold?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtMulLn17By18Cola?: #UPPERCASE
 		txtMulLn17By18Cola?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtMulLn17By18Colb?: #UPPERCASE
 		txtMulLn17By18Colb?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtMulLn17By18Colc?: #UPPERCASE
 		txtMulLn17By18Colc?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtMulLn17By18Cold?: #UPPERCASE
 		txtMulLn17By18Cold?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtAddPrevCol25Colb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtAddPrevCol25ColC?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtAddPrevCol25Cold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtSubLn19Ln20Cola?: #UPPERCASE
 		txtSubLn19Ln20Cola?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtSubLn19Ln20Colb?: #UPPERCASE
 		txtSubLn19Ln20Colb?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtSubLn19Ln20Colc?: #UPPERCASE
 		txtSubLn19Ln20Colc?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtSubLn19Ln20Cold?: #UPPERCASE
 		txtSubLn19Ln20Cold?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtPer25Ln9Cola?: #UPPERCASE
 		txtPer25Ln9Cola?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtPer25Ln9Colb?: #UPPERCASE
 		txtPer25Ln9Colb?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtPer25Ln9Colc?: #UPPERCASE
 		txtPer25Ln9Colc?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtPer25Ln9Cold?: #UPPERCASE
 		txtPer25Ln9Cold?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtSubPrev2425Colb?: #UPPERCASE
 		txtSubPrev2425Colb?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtSubPrev2425Colc?: #UPPERCASE
 		txtSubPrev2425Colc?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtSubPrev2425Cold?: #UPPERCASE
 		txtSubPrev2425Cold?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtAddLn22Ln23Cola?: #UPPERCASE
 		txtAddLn22Ln23Cola?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtAddLn22Ln23Colb?: #UPPERCASE
 		txtAddLn22Ln23Colb?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtAddLn22Ln23Colc?: #UPPERCASE
 		txtAddLn22Ln23Colc?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtAddLn22Ln23Cold?: #UPPERCASE
 		txtAddLn22Ln23Cold?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtAmtToLn18Cola?: #UPPERCASE
 		txtAmtToLn18Cola?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtAmtToLn18Colb?: #UPPERCASE
 		txtAmtToLn18Colb?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtAmtToLn18Colc?: #UPPERCASE
 		txtAmtToLn18Colc?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtAmtToLn18Cold?: #UPPERCASE
 		txtAmtToLn18Cold?: strings.MaxRunes(8)
+
 		// This field is automatically calculated for you
 		txtPriSubLn27Ln28Cola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriSubLn27Ln28Colb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriSubLn27Ln28Colc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriSubLn27Ln28Cold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriMulLn30ValCola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriMulLn30ValColB?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriMulLn30ValColc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriMulLn30ValCold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriMul26By32Cola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriMul26By32Colb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriMul26By32Colc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriMul26By32Cold?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriAddLn31Ln33Cola?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriAddLn31Ln33Colb?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriAddLn31Ln33Colc?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtPriAddLn31Ln33Cold?: #UPPERCASE
+
 		
 	}
 

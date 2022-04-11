@@ -44,12 +44,15 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+
 		// Line 5. Add lines 3 and 4. - This field is automatically populated for you
 		txtPart2AddLn10Ln11?: #AMOUNT
 		txtPart2AddLn10Ln11?: strings.MaxRunes(10)
+
 		
 	}
 

@@ -484,30 +484,39 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically populated for you
 		txtF8611RecaptureCdt?: #AMOUNT
 		txtF8611RecaptureCdt?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtF8611AccelPortionCdt?: #UPPERCASE
 		txtF8611AccelPortionCdt?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtF8611RecapAccelPortion?: #UPPERCASE
 		txtF8611RecapAccelPortion?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtF8611NetRecap?: #AMOUNT
 		txtF8611NetRecap?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtF8611TotRecapAmt?: #AMOUNT
 		txtF8611TotRecapAmt?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtF8611RecapTax?: #AMOUNT
 		txtF8611RecapTax?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtF8611CfwdLowincHousecdt?: #AMOUNT
 		txtF8611CfwdLowincHousecdt?: strings.MaxRunes(10)
+
 		
 	}
 

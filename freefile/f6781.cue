@@ -207,57 +207,75 @@ import "strings"
 	#output: {
 		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
+
 		// This field is automatically calculated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// Line 2(a). This field is automatically calculated for you
 		txtLn2aTotLoss?: #AMOUNT
 		txtLn2aTotLoss?: strings.MaxRunes(10)
+
 		// Line 2(b). This field is automatically calculated for you
 		txtLn2bTotLoss?: #AMOUNT
 		txtLn2bTotLoss?: strings.MaxRunes(10)
+
 		// Line 3. Net gain or (loss). Combine line 2, columns (b) and (c). This field is automatically calculated for you
 		txtLn3NetGainLoss?: #AMOUNT
 		txtLn3NetGainLoss?: strings.MaxRunes(10)
+
 		// Line 5. Combine lines 3 and 4. This field is automatically calculated for you
 		txtLn5CombineLn3Ln4?: #AMOUNT
 		txtLn5CombineLn3Ln4?: strings.MaxRunes(10)
+
 		// Line 7. Combine lines 5 and 6. This field is automatically calculated for you
 		txtLn7CombineLn5Ln6?: #AMOUNT
 		txtLn7CombineLn5Ln6?: strings.MaxRunes(10)
+
 		// Line 8. Short-term capital gain or (loss). Multiply line 7 by 40% (0. 40). Enter here and include on line 4 of Schedule D or on Form 8949. This field is automatically calculated for you
 		txtLn8ShortTermGainLoss?: #AMOUNT
 		txtLn8ShortTermGainLoss?: strings.MaxRunes(10)
+
 		// Line 9. Long-term capital gain or (loss). Multiply line 7 by 60% (0. 60). Enter here and include on line 11 of Schedule D or on Form 8949. This field is automatically calculated for you
 		txtLn9LongTermGainLoss?: #AMOUNT
 		txtLn9LongTermGainLoss?: strings.MaxRunes(10)
+
 		// Line 10(f) Loss. If column (e) is more than (d), enter difference Otherwise, enter -0-. This field is automatically calculated for you
 		txtLn10fCalDiff_1?: #AMOUNT
 		txtLn10fCalDiff_1?: strings.MaxRunes(10)
+
 		// Line 10(h) Recognized loss. If column (f) is more than (g), enter difference. Otherwise, enter -0-. This field is automatically calculated for you
 		txtLn10hCalDiff_1?: #AMOUNT
 		txtLn10hCalDiff_1?: strings.MaxRunes(10)
+
 		// Line 10(f) Loss. If column (e) is more than (d), enter difference Otherwise, enter -0-. This field is automatically calculated for you
 		txtLn10fCalDiff_2?: #AMOUNT
 		txtLn10fCalDiff_2?: strings.MaxRunes(10)
+
 		// Line 10(h) Recognized loss. If column (f) is more than (g), enter difference. Otherwise, enter -0-. This field is automatically calculated for you
 		txtLn10hCalDiff_2?: #AMOUNT
 		txtLn10hCalDiff_2?: strings.MaxRunes(10)
+
 		// Line 12(f) Gain. If column (d) is more than (e), enter difference. Otherwise, enter -0-. This field is automatically calculated for you
 		txtLn12fCalDiff_1?: #AMOUNT
 		txtLn12fCalDiff_1?: strings.MaxRunes(10)
+
 		// Line 12(f) Gain. If column (d) is more than (e), enter difference. Otherwise, enter -0-. This field is automatically calculated for you
 		txtLn12fCalDiff_2?: #AMOUNT
 		txtLn12fCalDiff_2?: strings.MaxRunes(10)
+
 		// Line 14(e) Unrecognized gain. If column (c) is more than (d), enter difference. Otherwise, enter -0-. This field is automatically calculated for you
 		txtLn14eCalDiff_1?: #AMOUNT
 		txtLn14eCalDiff_1?: strings.MaxRunes(10)
+
 		// Line 14(e) Unrecognized gain. If column (c) is more than (d), enter difference. Otherwise, enter -0-. This field is automatically calculated for you
 		txtLn14eCalDiff_2?: #AMOUNT
 		txtLn14eCalDiff_2?: strings.MaxRunes(10)
+
 		// Line 14(e) Unrecognized gain. If column (c) is more than (d), enter difference. Otherwise, enter -0-. This field is automatically calculated for you
 		txtLn14eCalDiff_3?: #AMOUNT
 		txtLn14eCalDiff_3?: strings.MaxRunes(10)
+
 		
 	}
 

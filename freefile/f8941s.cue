@@ -76,21 +76,27 @@ import "strings"
 		// Name(s) shown on return - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Identifying number - This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtEligPremPd?: #AMOUNT
 		txtEligPremPd?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSubAmt?: #AMOUNT
 		txtSubAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSmallerAmt?: #AMOUNT
 		txtSmallerAmt?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtAddnAmt?: #AMOUNT
 		txtAddnAmt?: strings.MaxRunes(10)
+
 		
 	}
 

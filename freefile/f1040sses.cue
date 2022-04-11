@@ -51,54 +51,71 @@ import "strings"
 		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+
 		// Social security number - This field is automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+
 		// This field is automatically populated for you
 		txtSchSESchFProfitSchC?: #AMOUNT
 		txtSchSESchFProfitSchC?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSELn4a?: #AMOUNT
 		txtSchSELn4a?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSELn4b?: #AMOUNT
 		txtSchSELn4b?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSELn5b?: #AMOUNT
 		txtSchSELn5b?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSENetEarnings?: #AMOUNT
 		txtSchSENetEarnings?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSelfEmpTaxLimit?: #AMOUNT
 		txtSelfEmpTaxLimit?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSEUnrepTips?: #AMOUNT
 		txtSchSEUnrepTips?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSEWagesSubjSsTax?: #AMOUNT
 		txtSchSEWagesSubjSsTax?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSELn8c?: #AMOUNT
 		txtSchSELn8c?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSESubLn8cLn7?: #AMOUNT
 		txtSchSESubLn8cLn7?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSELn10?: #AMOUNT
 		txtSchSELn10?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSELn11?: #AMOUNT
 		txtSchSELn11?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSESelfEmpTax?: #AMOUNT
 		txtSchSESelfEmpTax?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSEDedOneHalfSeTax?: #AMOUNT
 		txtSchSEDedOneHalfSeTax?: strings.MaxRunes(10)
+
 		// This field is automatically populated for you
 		txtSchSEMaxIncOptMthd?: #UPPERCASE
 		txtSchSEMaxIncOptMthd?: strings.MaxRunes(10)
+
 		
 	}
 

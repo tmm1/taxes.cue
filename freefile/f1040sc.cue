@@ -398,39 +398,51 @@ import "strings"
 		// This field is automatically calculated for you
 		txtSchcSubLn2Ln1?: #AMOUNT
 		txtSchcSubLn2Ln1?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchcCostGoodsSold?: #AMOUNT
 		txtSchcCostGoodsSold?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchcGrossProfit?: #AMOUNT
 		txtSchcGrossProfit?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchcGrossIncome?: #AMOUNT
 		txtSchcGrossIncome?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchcOtherExp?: #AMOUNT
 		txtSchcOtherExp?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchcTotalExp?: #AMOUNT
 		txtSchcTotalExp?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchCTentativeProfit?: #AMOUNT
 		txtSchCTentativeProfit?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchcProprietorName1?: #UPPERCASE
 		txtSchcProprietorName1?: strings.MaxRunes(35)
+
 		// This field is automatically calculated for you
 		txtSchcProprietorSSN1?: #SSN
 		txtSchcProprietorSSN1?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtSchcAddLn35ThruLn39?: #AMOUNT
 		txtSchcAddLn35ThruLn39?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchcCostGoodsSold?: #AMOUNT
 		txtSchcCostGoodsSold?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtSchcOtherExp?: #AMOUNT
 		txtSchcOtherExp?: strings.MaxRunes(10)
+
 		
 	}
 

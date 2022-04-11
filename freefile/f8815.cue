@@ -310,27 +310,35 @@ import "strings"
 		// This field is automatically populated for you
 		txtF8815TaxpayerName?: #UPPERCASE
 		txtF8815TaxpayerName?: strings.MaxRunes(75)
+
 		// This field is automatically populated for you
 		txtF8815TaxpayerSsn?: #SSN
 		txtF8815TaxpayerSsn?: strings.MaxRunes(11)
+
 		// This field is automatically calculated for you
 		txtF8815SubLine2?: #AMOUNT
 		txtF8815SubLine2?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8815MaxLine5?: #UPPERCASE
 		txtF8815MaxLine5?: strings.MaxRunes(5)
+
 		// This field is automatically calculated for you
 		txtF8815MultiplyLine7?: #AMOUNT
 		txtF8815MultiplyLine7?: strings.MaxRunes(10)
+
 		// Subtract line 10 from line 9. If zero or less, skip line 12, enter -0- on line 13, and go to line 14
 		txtF8815SubLine9?: #AMOUNT
 		txtF8815SubLine9?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8815MultiplyLine12?: #AMOUNT
 		txtF8815MultiplyLine12?: strings.MaxRunes(10)
+
 		// This field is automatically calculated for you
 		txtF8815ExcludeInterest?: #AMOUNT
 		txtF8815ExcludeInterest?: strings.MaxRunes(10)
+
 		
 	}
 
