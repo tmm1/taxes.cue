@@ -188,7 +188,7 @@ import (
 		#FilingStatus.#HeadOfHousehold |
 		#FilingStatus.#QualifyingWidowOrWidower
 } | {
-	taxPayer: #spouseExists: true & list.MinItems([for label, _ in taxPayer if label == "spouse" {label}], 1)
+	taxPayer: #spouseExists: true & list.MinItems([ for label, _ in taxPayer if label == "spouse" {label}], 1)
 	filingStatus: #FilingStatus.#MarriedFilingJointly |
 		#FilingStatus.#MarriedFilingSeparately
 }
