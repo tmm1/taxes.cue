@@ -540,78 +540,115 @@ import "strings"
 	}
 
 	#output: {
+		// Name shown on your return - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+		// Your social security number  - This field is automatically calculated for you
 		txtSSN?: #SSN
 		txtSSN?: strings.MaxRunes(11)
+		// Line 3. Household income. Add the amounts on lines 2a and 2b. See instructions - This field is automatically calculated for you
 		txtF8962HouseholdInc?: #AMOUNT
 		txtF8962HouseholdInc?: strings.MaxRunes(10)
+		// Line 8b. Monthly contribution amount. Divide line 8a by 12. Round to nearest whole dollar amount - This field is automatically calculated for you
 		txtF8962DivLn8Aby12?: #AMOUNT
 		txtF8962DivLn8Aby12?: strings.MaxRunes(10)
+		// Line 8a. Annual contribution amount. Multiply line 3 by line 7. Round to nearest whole dollar amount - This field is automatically calculated for you
 		txtF8962MulLn3Byln7?: #AMOUNT
 		txtF8962MulLn3Byln7?: strings.MaxRunes(10)
+		// Annual Totals Line 11(c) Annual contribution amount (line 8a) - This field is automatically calculated for you
 		txtF8962AnulColcConAmt?: #AMOUNT
 		txtF8962AnulColcConAmt?: strings.MaxRunes(1)
+		// Annual Totals Line 11(d) Annual maximum  premium assistance (subtract (c) from (b); if  zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962AnulColdPreAss?: #AMOUNT
 		txtF8962AnulColdPreAss?: strings.MaxRunes(10)
+		// Annual Totals  Line 11(e) Annual premium tax credit allowed  (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962AnulColeTaxAlow?: #AMOUNT
 		txtF8962AnulColeTaxAlow?: strings.MaxRunes(10)
+		// Line 12(d) January Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962JanColdPreAss?: #AMOUNT
 		txtF8962JanColdPreAss?: strings.MaxRunes(10)
+		// Line 12(e) January Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962JanColeTaxAlow?: #AMOUNT
 		txtF8962JanColeTaxAlow?: strings.MaxRunes(10)
+		// Line 13(d) February Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962FebColdPreAss?: #AMOUNT
 		txtF8962FebColdPreAss?: strings.MaxRunes(10)
+		// Line 13(e) February Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962FebColeTaxAlow?: #AMOUNT
 		txtF8962FebColeTaxAlow?: strings.MaxRunes(10)
+		// Line 14(d) March Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you - This field is automatically calculated for you
 		txtF8962MarColdPreAss?: #AMOUNT
 		txtF8962MarColdPreAss?: strings.MaxRunes(10)
+		// Line 14(e) March  Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you -
 		txtF8962MarColeTaxAlow?: #AMOUNT
 		txtF8962MarColeTaxAlow?: strings.MaxRunes(10)
+		// Line 15(d)  April Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962AprColdPreAss?: #AMOUNT
 		txtF8962AprColdPreAss?: strings.MaxRunes(10)
+		// Line 15(e) April  Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you - This field is automatically calculated for you
 		txtF8962AprColeTaxAlow?: #AMOUNT
 		txtF8962AprColeTaxAlow?: strings.MaxRunes(10)
+		// Line 16(d)  May Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962MayColdPreAss?: #AMOUNT
 		txtF8962MayColdPreAss?: strings.MaxRunes(10)
+		// Line 16(e) May Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962MayColeTaxAlow?: #AMOUNT
 		txtF8962MayColeTaxAlow?: strings.MaxRunes(10)
+		// Line 17(d) June Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962JunColdPreAss?: #AMOUNT
 		txtF8962JunColdPreAss?: strings.MaxRunes(10)
+		// Line 17(e) June Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962JunColeTaxAlow?: #AMOUNT
 		txtF8962JunColeTaxAlow?: strings.MaxRunes(10)
+		// Line 18(d) July Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962JulColdPreAss?: #AMOUNT
 		txtF8962JulColdPreAss?: strings.MaxRunes(10)
+		// Line 18(e) July Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962JulColeTaxAlow?: #AMOUNT
 		txtF8962JulColeTaxAlow?: strings.MaxRunes(10)
+		// Line 19(d) August Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962AugColdPreAss?: #AMOUNT
 		txtF8962AugColdPreAss?: strings.MaxRunes(10)
+		// Line 19(e) August Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962AugColeTaxAlow?: #AMOUNT
 		txtF8962AugColeTaxAlow?: strings.MaxRunes(10)
+		// Line 20(d) September Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962SepColdPreAss?: #AMOUNT
 		txtF8962SepColdPreAss?: strings.MaxRunes(10)
+		// Line 20(e) September Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962SepColeTaxAlow?: #AMOUNT
 		txtF8962SepColeTaxAlow?: strings.MaxRunes(10)
+		// Line 21(d) October Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962OctColdPreAss?: #AMOUNT
 		txtF8962OctColdPreAss?: strings.MaxRunes(10)
+		// Line 21(e) October Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962OctColeTaxAlow?: #AMOUNT
 		txtF8962OctColeTaxAlow?: strings.MaxRunes(10)
+		// Line 22(d) November Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962NovColdPreAss?: #AMOUNT
 		txtF8962NovColdPreAss?: strings.MaxRunes(10)
+		// Line 22(e) November Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962NovColeTaxAlow?: #AMOUNT
 		txtF8962NovColeTaxAlow?: strings.MaxRunes(10)
+		// Line 23(d) December Monthly maximum premium assistance (subtract (c) from (b); if zero or less, enter -0-) - This field is automatically calculated for you
 		txtF8962DecColdPreAss?: #AMOUNT
 		txtF8962DecColdPreAss?: strings.MaxRunes(10)
+		// Line 23(e) December Monthly premium tax credit allowed (smaller of (a) or (d)) - This field is automatically calculated for you
 		txtF8962DecColeTaxAlow?: #AMOUNT
 		txtF8962DecColeTaxAlow?: strings.MaxRunes(10)
+		// Line 24. Total premium tax credit. Enter the amount from line 11(e) or add lines 12(e) through 23(e) and enter the total here - This field is automatically calculated for you
 		txtF8962TotPreTaxCdt?: #AMOUNT
 		txtF8962TotPreTaxCdt?: strings.MaxRunes(10)
+		// Line 25. Advance payment of PTC. Enter the amount from line 11(f) or add lines 12(f) through 23(f) and enter the total here - This field is automatically calculated for you
 		txtF8962AdvancePytPtc?: #AMOUNT
 		txtF8962AdvancePytPtc?: strings.MaxRunes(10)
+		// Line 26. Net premium tax credit. If line 24 is greater than line 25, subtract line 25 from line 24. Enter the difference here and on Schedule 3 (Form 1040), line 8. If line 24 equals line 25, enter -0-. Stop here. If line 25 is greater than line 24, leave this line blank and continue to line 27 - This field is automatically calculated for you
 		txtF8962NetPreTaxCdt?: #AMOUNT
 		txtF8962NetPreTaxCdt?: strings.MaxRunes(10)
+		// Line 27. Excess advance payment of PTC. If line 25 is greater than line 24, subtract line 24 from line 25. Enter the difference here - This field is automatically calculated for you
 		txtF8962ExcAdvPytPtc?: #AMOUNT
 		txtF8962ExcAdvPytPtc?: strings.MaxRunes(10)
+		// Line 29. Excess advance premium tax credit repayment. Enter the smaller of line 27 or line 28 here and on Schedule 2 (Form 1040), line 2 - This field is automatically calculated for you
 		txtF8962AdvTaxCdtRepyt?: #AMOUNT
 		txtF8962AdvTaxCdtRepyt?: strings.MaxRunes(10)
 		

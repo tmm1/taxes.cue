@@ -1,88 +1,90 @@
 package data
 
 schemas: f1040lept: {
+	id: "f1040lept"
 	fields: [{
+		type:     "text"
 		name:     "txtTaxpayerName"
+		title:    "Name of person making request (as shown on tax return)"
+		value:    " "
 		readonly: true
 		tags: [
 			"UPPERCASE",
 		]
-		type:  "text"
-		value: " "
 	}, {
+		type:     "text"
 		name:     "txtTaxPayerSSN"
+		title:    "Social security number of person making request"
 		readonly: true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
+		type: "check"
 		name: "chkLangPrefCode"
 		options: [{
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. English"
 			value: "000"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. English"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. French"
 			value: "011"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. French"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Spanish"
 			value: "001"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Spanish"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Japanese"
 			value: "012"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Japanese"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Korean"
 			value: "002"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Korean"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Gujarati"
 			value: "013"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Gujarati"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Vietnamese"
 			value: "003"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Vietnamese"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Punjabi"
 			value: "014"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Punjabi"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Russian"
 			value: "004"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Russian"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Khmer"
 			value: "015"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Khmer"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Arabic"
 			value: "005"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Arabic"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Urdu"
 			value: "016"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Urdu"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Haitian Creole"
 			value: "006"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Haitian Creole"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Bengali"
 			value: "017"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Bengali"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Tagalog"
 			value: "007"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Tagalog"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Italian"
 			value: "018"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Italian"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Portuguese"
 			value: "008"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Portuguese"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Chinese (Traditional)"
 			value: "019"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Chinese (Traditional)"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Polish"
 			value: "009"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Polish"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Chinese (Simplified)"
 			value: "020"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Chinese (Simplified)"
 		}, {
-			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Farsi"
 			value: "010"
+			label: "I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Farsi"
 		}]
-		type: "check"
 	}]
-	id: "f1040lept"
 }

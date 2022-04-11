@@ -225,14 +225,19 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Social security number - This field is automatically populated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+		// Line 28. Subtract $, 2000 from line 27. If zero or less than -0- -  - This field is automatically calculated for you
 		txtSubfromln27?: #UPPERCASE
 		txtSubfromln27?: strings.MaxRunes(8)
+		// Line 29. Multiply line 28 by 25% (0. 25) - This field is automatically calculated for you
 		txtMultifromln28?: #UPPERCASE
 		txtMultifromln28?: strings.MaxRunes(8)
+		// Line 30. If line 28 is zero, enter the amount from line 27. Otherwise, add $2, 000 to the amount on line 29 and enter the result. Skip line 31. Include the total of all amounts from all Parts III, line 30, on Part I, line 1 - This field is automatically calculated for you
 		txtAmtln29?: #UPPERCASE
 		txtAmtln29?: strings.MaxRunes(8)
 		

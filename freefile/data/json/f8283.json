@@ -1,81 +1,87 @@
 {
+  "id": "f8283",
+  "multiple": true,
   "fields": [
     {
-      "maxlength": 128,
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 128,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxPayerSSN",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkVehicleInd1",
       "options": [
         {
-          "label": "Line 1A(b). If donated property is a vehicle (see instructions), check the box",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1A(b). If donated property is a vehicle (see instructions), check the box"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 17,
+      "type": "text",
       "name": "txtVehicleIn1",
-      "placeholder": "Vehicle identification number",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1A(b). enter the vehicle identification number",
-      "type": "text"
+      "placeholder": "Vehicle identification number",
+      "maxlength": 17,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtNameDonee1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1A(a). Name of the donee organization",
-      "type": "text"
+      "maxlength": 75,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 70,
+      "type": "text",
       "name": "txtAddrDonee1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1A(a). Street of the donee organization",
-      "type": "text"
+      "maxlength": 70,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 128,
+      "type": "text",
       "name": "txtDescripProp1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1A(c). Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
-      "type": "text"
-    },
-    {
-      "maxlength": 30,
-      "name": "txtCityDonee1",
+      "maxlength": 128,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1A(a). City of the donee organization",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtCityDonee1",
+      "title": "Line 1A(a). City of the donee organization",
+      "maxlength": 30,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboStDonee1",
+      "title": "Line 1A(a). State of the donee organization",
       "options": [
         {
           "value": ""
@@ -257,96 +263,96 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Line 1A(a). State of the donee organization",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtZipDonee1",
+      "title": "Line 1A(a). Zip Code of the donee organization",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Line 1A(a). Zip Code of the donee organization",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtContempWrAckDesc1",
-      "placeholder": "Contemporaneous Written Acknowledgment Statement",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1A(b) Comtemporaneous Written Acknowledgement statement",
-      "type": "text"
-    },
-    {
-      "maxlength": 128,
-      "name": "txtDescripProp1C",
+      "placeholder": "Contemporaneous Written Acknowledgment Statement",
+      "maxlength": 500,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1A(c) Continued. Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtDescripProp1C",
+      "title": "Line 1A(c) Continued. Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
+      "maxlength": 128,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "check",
       "name": "chkVehicleInd2",
       "options": [
         {
-          "label": "Line 1B(b). If donated property is a vehicle (see instructions), check the box",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1B(b). If donated property is a vehicle (see instructions), check the box"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 17,
+      "type": "text",
       "name": "txtVehicleIn2",
-      "placeholder": "Vehicle identification number",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1B(b). enter the vehicle identification number",
-      "type": "text"
+      "placeholder": "Vehicle identification number",
+      "maxlength": 17,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtNameDonee2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1B(a). Name of the donee organization",
-      "type": "text"
+      "maxlength": 75,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 70,
+      "type": "text",
       "name": "txtAddrDonee2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1B(a). Street of the donee organization",
-      "type": "text"
+      "maxlength": 70,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 128,
+      "type": "text",
       "name": "txtDescripProp2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1B(c). Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
-      "type": "text"
-    },
-    {
-      "maxlength": 30,
-      "name": "txtCityDonee2",
+      "maxlength": 128,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1B(a). City of the donee organization",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtCityDonee2",
+      "title": "Line 1B(a). City of the donee organization",
+      "maxlength": 30,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboStDonee2",
+      "title": "Line 1B(a). State of the donee organization",
       "options": [
         {
           "value": ""
@@ -528,96 +534,96 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Line 1B(a). State of the donee organization",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtZipDonee2",
+      "title": "Line 1B(a). Zip Code of the donee organization",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Line 1B(a). Zip Code of the donee organization",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtContempWrAckDesc2",
-      "placeholder": "Contemporaneous Written Acknowledgment Statement",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1B(b) Comtemporaneous Written Acknowledgement statement",
-      "type": "text"
-    },
-    {
-      "maxlength": 128,
-      "name": "txtDescripProp2C",
+      "placeholder": "Contemporaneous Written Acknowledgment Statement",
+      "maxlength": 500,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1B(c) Continued. Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtDescripProp2C",
+      "title": "Line 1B(c) Continued. Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
+      "maxlength": 128,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "check",
       "name": "chkVehicleInd3",
       "options": [
         {
-          "label": "Line 1C(b). If donated property is a vehicle (see instructions), check the box",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1C(b). If donated property is a vehicle (see instructions), check the box"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 17,
+      "type": "text",
       "name": "txtVehicleIn3",
-      "placeholder": "Vehicle identification number",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1C(b). enter the vehicle identification number",
-      "type": "text"
+      "placeholder": "Vehicle identification number",
+      "maxlength": 17,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtNameDonee3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1C(a). Name of the donee organization",
-      "type": "text"
+      "maxlength": 75,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 70,
+      "type": "text",
       "name": "txtAddrDonee3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1C(a). Street of the donee organization",
-      "type": "text"
+      "maxlength": 70,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 128,
+      "type": "text",
       "name": "txtDescripProp3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1C(c). Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
-      "type": "text"
-    },
-    {
-      "maxlength": 30,
-      "name": "txtCityDonee3",
+      "maxlength": 128,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1C(a). City of the donee organization",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtCityDonee3",
+      "title": "Line 1C(a). City of the donee organization",
+      "maxlength": 30,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboStDonee3",
+      "title": "Line 1C(a). State of the donee organization",
       "options": [
         {
           "value": ""
@@ -799,96 +805,96 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Line 1C(a). State of the donee organization",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtZipDonee3",
+      "title": "Line 1C(a). Zip Code of the donee organization",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Line 1C(a). Zip Code of the donee organization",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtContempWrAckDesc3",
-      "placeholder": "Contemporaneous Written Acknowledgment Statement",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1C(b) Comtemporaneous Written Acknowledgement statement",
-      "type": "text"
-    },
-    {
-      "maxlength": 128,
-      "name": "txtDescripProp3C",
+      "placeholder": "Contemporaneous Written Acknowledgment Statement",
+      "maxlength": 500,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1C(c) Continued. Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtDescripProp3C",
+      "title": "Line 1C(c) Continued. Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
+      "maxlength": 128,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "check",
       "name": "chkVehicleInd4",
       "options": [
         {
-          "label": "Line 1D(b). If donated property is a vehicle (see instructions), check the box",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1D(b). If donated property is a vehicle (see instructions), check the box"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 17,
+      "type": "text",
       "name": "txtVehicleIn4",
-      "placeholder": "Vehicle identification number",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1D(b). enter the vehicle identification number",
-      "type": "text"
+      "placeholder": "Vehicle identification number",
+      "maxlength": 17,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtNameDonee4",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1D(a). Name of the donee organization",
-      "type": "text"
+      "maxlength": 75,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 70,
+      "type": "text",
       "name": "txtAddrDonee4",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1D(a). Street of the donee organization",
-      "type": "text"
+      "maxlength": 70,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 128,
+      "type": "text",
       "name": "txtDescripProp4",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1D(c). Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
-      "type": "text"
-    },
-    {
-      "maxlength": 30,
-      "name": "txtCityDonee4",
+      "maxlength": 128,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1D(a). City of the donee organization",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtCityDonee4",
+      "title": "Line 1D(a). City of the donee organization",
+      "maxlength": 30,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboStDonee4",
+      "title": "Line 1D(a). State of the donee organization",
       "options": [
         {
           "value": ""
@@ -1070,96 +1076,96 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Line 1D(a). State of the donee organization",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtZipDonee4",
+      "title": "Line 1D(a). Zip Code of the donee organization",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Line 1D(a). Zip Code of the donee organization",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtContempWrAckDesc4",
-      "placeholder": "Contemporaneous Written Acknowledgment Statement",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1D(b) Comtemporaneous Written Acknowledgement statement",
-      "type": "text"
-    },
-    {
-      "maxlength": 128,
-      "name": "txtDescripProp4C",
+      "placeholder": "Contemporaneous Written Acknowledgment Statement",
+      "maxlength": 500,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1D(c) Continued. Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtDescripProp4C",
+      "title": "Line 1D(c) Continued. Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
+      "maxlength": 128,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "check",
       "name": "chkVehicleInd5",
       "options": [
         {
-          "label": "Line 1E(b). If donated property is a vehicle (see instructions), check the box",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1E(b). If donated property is a vehicle (see instructions), check the box"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 17,
+      "type": "text",
       "name": "txtVehicleIn5",
-      "placeholder": "Vehicle identification number",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1E(b). enter the vehicle identification number",
-      "type": "text"
+      "placeholder": "Vehicle identification number",
+      "maxlength": 17,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtNameDonee5",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1E(a). Name of the donee organization",
-      "type": "text"
+      "maxlength": 75,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 70,
+      "type": "text",
       "name": "txtAddrDonee5",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1E(a). Street of the donee organization",
-      "type": "text"
+      "maxlength": 70,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 128,
+      "type": "text",
       "name": "txtDescripProp5",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1D(c). Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
-      "type": "text"
-    },
-    {
-      "maxlength": 30,
-      "name": "txtCityDonee5",
+      "maxlength": 128,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1E(a). City of the donee organization",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtCityDonee5",
+      "title": "Line 1E(a). City of the donee organization",
+      "maxlength": 30,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboStDonee5",
+      "title": "Line 1E(a). State of the donee organization",
       "options": [
         {
           "value": ""
@@ -1341,683 +1347,685 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Line 1E(a). State of the donee organization",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtZipDonee5",
+      "title": "Line 1E(a). Zip Code of the donee organization",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Line 1E(a). Zip Code of the donee organization",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtContempWrAckDesc5",
-      "placeholder": "Contemporaneous Written Acknowledgment Statement",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1E(b) Comtemporaneous Written Acknowledgement statement",
-      "type": "text"
+      "placeholder": "Contemporaneous Written Acknowledgment Statement",
+      "maxlength": 500,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 128,
+      "type": "text",
       "name": "txtDescripProp5C",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1E(c) Continued. Description and condition of donated property (For a vehicle, enter the year, make, model, and mileage. For securities and other property, see instructions. )",
-      "type": "text"
+      "maxlength": 128,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDateOfCont1",
-      "tags": [
-        "DATE"
-      ],
       "title": "Line 1A(d). Date of the contribution",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
     },
     {
-      "maxlength": 7,
+      "type": "text",
       "name": "txtDateAcq1",
-      "tags": [
-        "UPPERCASE",
-        "DATEMMYYYYTEXT"
-      ],
       "title": "Line 1A(e). Date acquired by donor (mo. , yr. )",
-      "type": "text"
+      "maxlength": 7,
+      "tags": [
+        "UPPERCASE",
+        "DATEMMYYYYTEXT"
+      ]
     },
     {
-      "maxlength": 35,
+      "type": "text",
       "name": "txtHowAcq1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1A(f). How acquired by donor",
-      "type": "text"
+      "maxlength": 35,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDonorCost1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1A(g). Donor's cost or adjusted basis",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFairMktVal1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1A(h). Fair market value (see instructions)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 28,
+      "type": "text",
       "name": "txtMethodToDet1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1A(i). Method used to determine the fair market value",
-      "type": "text"
+      "maxlength": 28,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDateOfCont2",
-      "tags": [
-        "DATE"
-      ],
       "title": "Line 1B(d). Date of the contribution",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
     },
     {
-      "maxlength": 7,
+      "type": "text",
       "name": "txtDateAcq2",
-      "tags": [
-        "UPPERCASE",
-        "DATEMMYYYYTEXT"
-      ],
       "title": "Line 1B(e). Date acquired by donor (mo. , yr. )",
-      "type": "text"
+      "maxlength": 7,
+      "tags": [
+        "UPPERCASE",
+        "DATEMMYYYYTEXT"
+      ]
     },
     {
-      "maxlength": 35,
+      "type": "text",
       "name": "txtHowAcq2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1B(f). How acquired by donor",
-      "type": "text"
+      "maxlength": 35,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDonorCost2",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1B(g). Donor's cost or adjusted basis",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFairMktVal2",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1B(h). Fair market value (see instructions)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 28,
+      "type": "text",
       "name": "txtMethodToDet2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1B(i). Method used to determine the fair market value",
-      "type": "text"
+      "maxlength": 28,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDateOfCont3",
-      "tags": [
-        "DATE"
-      ],
       "title": "Line 1C(d). Date of the contribution",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
     },
     {
-      "maxlength": 7,
+      "type": "text",
       "name": "txtDateAcq3",
-      "tags": [
-        "UPPERCASE",
-        "DATEMMYYYYTEXT"
-      ],
       "title": "Line 1C(e). Date acquired by donor (mo. , yr. )",
-      "type": "text"
+      "maxlength": 7,
+      "tags": [
+        "UPPERCASE",
+        "DATEMMYYYYTEXT"
+      ]
     },
     {
-      "maxlength": 35,
+      "type": "text",
       "name": "txtHowAcq3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1C(f). How acquired by donor",
-      "type": "text"
+      "maxlength": 35,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDonorCost3",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1C(g). Donor's cost or adjusted basis",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFairMktVal3",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1C(h). Fair market value (see instructions)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 28,
+      "type": "text",
       "name": "txtMethodToDet3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1C(i). Method used to determine the fair market value",
-      "type": "text"
+      "maxlength": 28,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDateOfCont4",
-      "tags": [
-        "DATE"
-      ],
       "title": "Line 1D(d). Date of the contribution",
-      "type": "text"
-    },
-    {
-      "maxlength": 7,
-      "name": "txtDateAcq4",
-      "tags": [
-        "UPPERCASE",
-        "DATEMMYYYYTEXT"
-      ],
-      "title": "Line 1D(e). Date acquired by donor (mo. , yr. )",
-      "type": "text"
-    },
-    {
-      "maxlength": 35,
-      "name": "txtHowAcq4",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 1D(f). How acquired by donor",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtDonorCost4",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 1D(g). Donor's cost or adjusted basis",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtFairMktVal4",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 1D(h). Fair market value (see instructions)",
-      "type": "text"
-    },
-    {
-      "maxlength": 28,
-      "name": "txtMethodToDet4",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 1D(i). Method used to determine the fair market value",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDateOfCont5",
       "tags": [
         "DATE"
-      ],
-      "title": "Line 1E(d). Date of the contribution",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtDateAcq4",
+      "title": "Line 1D(e). Date acquired by donor (mo. , yr. )",
       "maxlength": 7,
-      "name": "txtDateAcq5",
       "tags": [
         "UPPERCASE",
         "DATEMMYYYYTEXT"
-      ],
-      "title": "Line 1E(e). Date acquired by donor (mo. , yr. )",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtHowAcq4",
+      "title": "Line 1D(f). How acquired by donor",
       "maxlength": 35,
-      "name": "txtHowAcq5",
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1E(f). How acquired by donor",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtDonorCost4",
+      "title": "Line 1D(g). Donor's cost or adjusted basis",
       "maxlength": 10,
-      "name": "txtDonorCost5",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 1E(g). Donor's cost or adjusted basis",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtFairMktVal4",
+      "title": "Line 1D(h). Fair market value (see instructions)",
       "maxlength": 10,
-      "name": "txtFairMktVal5",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 1E(h). Fair market value (see instructions)",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtMethodToDet4",
+      "title": "Line 1D(i). Method used to determine the fair market value",
       "maxlength": 28,
-      "name": "txtMethodToDet5",
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1E(i). Method used to determine the fair market value",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtDateOfCont5",
+      "title": "Line 1E(d). Date of the contribution",
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDateAcq5",
+      "title": "Line 1E(e). Date acquired by donor (mo. , yr. )",
+      "maxlength": 7,
+      "tags": [
+        "UPPERCASE",
+        "DATEMMYYYYTEXT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtHowAcq5",
+      "title": "Line 1E(f). How acquired by donor",
+      "maxlength": 35,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDonorCost5",
+      "title": "Line 1E(g). Donor's cost or adjusted basis",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtFairMktVal5",
+      "title": "Line 1E(h). Fair market value (see instructions)",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtMethodToDet5",
+      "title": "Line 1E(i). Method used to determine the fair market value",
+      "maxlength": 28,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "check",
       "name": "chkMore",
       "options": [
         {
-          "label": "Line 2 - A. Check the box that describes the type of property donated - Art* (contribution of $20, 000 or more)",
-          "value": "artmore"
+          "value": "artmore",
+          "label": "Line 2 - A. Check the box that describes the type of property donated - Art* (contribution of $20, 000 or more)"
         },
         {
-          "label": "Line 2 - e. Check the box that describes the type of property donated - Other Real Estate",
-          "value": "realestate"
+          "value": "realestate",
+          "label": "Line 2 - e. Check the box that describes the type of property donated - Other Real Estate"
         },
         {
-          "label": "Line 2 - i. Check the box that describes the type of property donated - Vehicles",
-          "value": "vehicle"
+          "value": "vehicle",
+          "label": "Line 2 - i. Check the box that describes the type of property donated - Vehicles"
         },
         {
-          "label": "Line 2 - b. Check the box that describes the type of property donated - Qualified Conservation Contribution",
-          "value": "contrib"
+          "value": "contrib",
+          "label": "Line 2 - b. Check the box that describes the type of property donated - Qualified Conservation Contribution"
         },
         {
-          "label": "Line 2 - f. Check the box that describes the type of property donated - Securities",
-          "value": "securities"
+          "value": "securities",
+          "label": "Line 2 - f. Check the box that describes the type of property donated - Securities"
         },
         {
-          "label": "Line 2 - j. Check the box that describes the type of property donated - Clothing and household items",
-          "value": "clothandhouse"
+          "value": "clothandhouse",
+          "label": "Line 2 - j. Check the box that describes the type of property donated - Clothing and household items"
         },
         {
-          "label": "Line 2 - c. Check the box that describes the type of property donated - Equipment",
-          "value": "computer"
+          "value": "computer",
+          "label": "Line 2 - c. Check the box that describes the type of property donated - Equipment"
         },
         {
-          "label": "Line 2 - g. Check the box that describes the type of property donated - Collectibles**",
-          "value": "collectibles"
+          "value": "collectibles",
+          "label": "Line 2 - g. Check the box that describes the type of property donated - Collectibles**"
         },
         {
-          "label": "Line 2 - k. Check the box that describes the type of property donated - Other",
-          "value": "other"
+          "value": "other",
+          "label": "Line 2 - k. Check the box that describes the type of property donated - Other"
         },
         {
-          "label": "Line 2 - d. Check the box that describes the type of property donated - Art* (contribution of less than $20, 000)",
-          "value": "artless"
+          "value": "artless",
+          "label": "Line 2 - d. Check the box that describes the type of property donated - Art* (contribution of less than $20, 000)"
         },
         {
-          "label": "Line 2 - h. Check the box that describes the type of property donated - Intellectual Property",
-          "value": "intellectproperty"
+          "value": "intellectproperty",
+          "label": "Line 2 - h. Check the box that describes the type of property donated - Intellectual Property"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 128,
+      "type": "text",
       "name": "txtDescripProp3_1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 3A(a) - Description of donated property (if you need more space, attach a separate statement)",
-      "type": "text"
+      "maxlength": 128,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 100,
+      "type": "text",
       "name": "txtb2physcon3_1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 3A(b) - If any tangible personal property or real property was donated, give a brief summary of the overall physical condition of the property at the time of the gift",
-      "type": "text"
+      "maxlength": 100,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFairMktVal3_1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 3A(c) -  Appraised fair market value",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 128,
+      "type": "text",
       "name": "txtDescripProp3_2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 3B(a) - Description of donated property (if you need more space, attach a separate statement)",
-      "type": "text"
+      "maxlength": 128,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 100,
+      "type": "text",
       "name": "txtb2physcon3_2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 3B(b) - If any tangible personal property or real property was donated, give a brief summary of the overall physical condition of the property at the time of the gift",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtFairMktVal3_2",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 3B(c) -  Appraised fair market value",
-      "type": "text"
-    },
-    {
-      "maxlength": 128,
-      "name": "txtDescripProp3_3",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 3C(a) - Description of donated property (if you need more space, attach a separate statement)",
-      "type": "text"
-    },
-    {
       "maxlength": 100,
-      "name": "txtb2physcon3_3",
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 3C(b) - If any tangible personal property or real property was donated, give a brief summary of the overall physical condition of the property at the time of the gift",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtFairMktVal3_2",
+      "title": "Line 3B(c) -  Appraised fair market value",
       "maxlength": 10,
-      "name": "txtFairMktVal3_3",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 3C(c) -  Appraised fair market value",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 7,
-      "name": "txtDateAcq3_1",
-      "tags": [
-        "UPPERCASE",
-        "DATEMMYYYYTEXT"
-      ],
-      "title": "Line 3A(d) - Date acquired by donor (mo. , yr. )",
-      "type": "text"
-    },
-    {
-      "maxlength": 35,
-      "name": "txtHowAcq3_1",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 3A(e) - How acquired by donor",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDonorCost3_1",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 3A(f) - Donor's cost or adjusted basis",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtBBargainamt3_1",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 3A(g) - For bargain sales, enter amount received and attach a separate statement",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtBDedamt3_1",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 3A(h) - Amount claimed as a deduction (see instructions)",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDonorContributeDate3_1",
-      "tags": [
-        "DATE"
-      ],
-      "title": "Line 3A(i) - Date of  contribution (see instructions)",
-      "type": "text"
-    },
-    {
-      "maxlength": 7,
-      "name": "txtDateAcq3_2",
-      "tags": [
-        "UPPERCASE",
-        "DATEMMYYYYTEXT"
-      ],
-      "title": "Line 3B(d) - Date acquired by donor (mo. , yr. )",
-      "type": "text"
-    },
-    {
-      "maxlength": 35,
-      "name": "txtHowAcq3_2",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 3B(e) - How acquired by donor",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDonorCost3_2",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 3B(f) - Donor's cost or adjusted basis",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtBBargainamt3_2",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 3B(g) - For bargain sales, enter amount received and attach a separate statement",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtBDedamt3_2",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 3B(h) - Amount claimed as a deduction (see instructions)",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDonorContributeDate3_2",
-      "tags": [
-        "DATE"
-      ],
-      "title": "Line 3B(i) - Date of  contribution (see instructions)",
-      "type": "text"
-    },
-    {
-      "maxlength": 7,
-      "name": "txtDateAcq3_3",
-      "tags": [
-        "UPPERCASE",
-        "DATEMMYYYYTEXT"
-      ],
-      "title": "Line 3C(d) - Date acquired by donor (mo. , yr. )",
-      "type": "text"
-    },
-    {
-      "maxlength": 35,
-      "name": "txtHowAcq3_3",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 3C(e) - How acquired by donor",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDonorCost3_3",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 3C(f) - Donor's cost or adjusted basis",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtBBargainamt3_3",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 3C(g) - For bargain sales, enter amount received and attach a separate statement",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtBDedamt3_3",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 3C(h) - Amount claimed as a deduction (see instructions)",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDonorContributeDate3_3",
-      "tags": [
-        "DATE"
-      ],
-      "title": "Line 3A(i) - Date of  contribution (see instructions)",
-      "type": "text"
-    },
-    {
+      "type": "text",
+      "name": "txtDescripProp3_3",
+      "title": "Line 3C(a) - Description of donated property (if you need more space, attach a separate statement)",
       "maxlength": 128,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtb2physcon3_3",
+      "title": "Line 3C(b) - If any tangible personal property or real property was donated, give a brief summary of the overall physical condition of the property at the time of the gift",
+      "maxlength": 100,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtFairMktVal3_3",
+      "title": "Line 3C(c) -  Appraised fair market value",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDateAcq3_1",
+      "title": "Line 3A(d) - Date acquired by donor (mo. , yr. )",
+      "maxlength": 7,
+      "tags": [
+        "UPPERCASE",
+        "DATEMMYYYYTEXT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtHowAcq3_1",
+      "title": "Line 3A(e) - How acquired by donor",
+      "maxlength": 35,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDonorCost3_1",
+      "title": "Line 3A(f) - Donor's cost or adjusted basis",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtBBargainamt3_1",
+      "title": "Line 3A(g) - For bargain sales, enter amount received and attach a separate statement",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtBDedamt3_1",
+      "title": "Line 3A(h) - Amount claimed as a deduction (see instructions)",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDonorContributeDate3_1",
+      "title": "Line 3A(i) - Date of  contribution (see instructions)",
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDateAcq3_2",
+      "title": "Line 3B(d) - Date acquired by donor (mo. , yr. )",
+      "maxlength": 7,
+      "tags": [
+        "UPPERCASE",
+        "DATEMMYYYYTEXT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtHowAcq3_2",
+      "title": "Line 3B(e) - How acquired by donor",
+      "maxlength": 35,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDonorCost3_2",
+      "title": "Line 3B(f) - Donor's cost or adjusted basis",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtBBargainamt3_2",
+      "title": "Line 3B(g) - For bargain sales, enter amount received and attach a separate statement",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtBDedamt3_2",
+      "title": "Line 3B(h) - Amount claimed as a deduction (see instructions)",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDonorContributeDate3_2",
+      "title": "Line 3B(i) - Date of  contribution (see instructions)",
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDateAcq3_3",
+      "title": "Line 3C(d) - Date acquired by donor (mo. , yr. )",
+      "maxlength": 7,
+      "tags": [
+        "UPPERCASE",
+        "DATEMMYYYYTEXT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtHowAcq3_3",
+      "title": "Line 3C(e) - How acquired by donor",
+      "maxlength": 35,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDonorCost3_3",
+      "title": "Line 3C(f) - Donor's cost or adjusted basis",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtBBargainamt3_3",
+      "title": "Line 3C(g) - For bargain sales, enter amount received and attach a separate statement",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtBDedamt3_3",
+      "title": "Line 3C(h) - Amount claimed as a deduction (see instructions)",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDonorContributeDate3_3",
+      "title": "Line 3A(i) - Date of  contribution (see instructions)",
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtTaxpayerName1",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 128,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxPayerSSN1",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtPartiiLetterIdent",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 4a - Enter the letter from Section B, Part I that identifies the property for which you gave less than an entire interest. If Section B, Part II applies to more than one property, attach a separate statement",
-      "type": "text"
+      "maxlength": 5,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtPartiiTotClaimCuryr",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 4b - Total amount claimed as a deduction for the property listed in Section B, Part I: (1) For this tax year",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtPartiiTotClaimCurPryr",
       "tags": [
         "AMOUNT"
-      ],
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtPartiiTotClaimCurPryr",
       "title": "Line 4b - Total amount claimed as a deduction for the property listed in Section B, Part I: (2) For any prior tax years",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtPartiiDoneeName",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 4c - Name and address of each organization to which any such contribution was made in a prior year (complete only if different from the donee organization above): Name of charitable organization (donee)",
-      "type": "text"
+      "maxlength": 75,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 70,
+      "type": "text",
       "name": "txtPartiiDoneeAddress",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 4c - Name and address of each organization to which any such contribution was made in a prior year (complete only if different from the donee organization above): Address (number, street, and room or suite no. )",
-      "type": "text"
-    },
-    {
-      "maxlength": 40,
-      "name": "txtPartiiDoneeCity",
+      "maxlength": 70,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 4c - Name and address of each organization to which any such contribution was made in a prior year (complete only if different from the donee organization above): City",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtPartiiDoneeCity",
+      "title": "Line 4c - Name and address of each organization to which any such contribution was made in a prior year (complete only if different from the donee organization above): City",
+      "maxlength": 40,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboPartiiDoneeState",
+      "title": "Line 4c - Name and address of each organization to which any such contribution was made in a prior year (complete only if different from the donee organization above): state",
       "options": [
         {
           "value": ""
@@ -2199,161 +2207,161 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Line 4c - Name and address of each organization to which any such contribution was made in a prior year (complete only if different from the donee organization above): state",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtPartiiZip",
+      "title": "Line 4c - Name and address of each organization to which any such contribution was made in a prior year (complete only if different from the donee organization above): ZIP code",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Line 4c - Name and address of each organization to which any such contribution was made in a prior year (complete only if different from the donee organization above): ZIP code",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtPartiiTangPropLoc",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 4d - For tangible property, enter the place where the property is located or kept",
-      "type": "text"
-    },
-    {
       "maxlength": 50,
-      "name": "txtPartiiActualNamePoss",
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 4e - Name of any person, other than the donee organization, having actual possession of the property",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtPartiiActualNamePoss",
+      "title": "Line 4e - Name of any person, other than the donee organization, having actual possession of the property",
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "check",
       "name": "chkPartiiRestrDonatedInd",
       "options": [
         {
-          "label": "Yes - Line 5a. Is there a restriction, either temporary or permanent, on the donee's right to use or dispose of the donated property?",
-          "value": "1"
+          "value": "1",
+          "label": "Yes - Line 5a. Is there a restriction, either temporary or permanent, on the donee's right to use or dispose of the donated property?"
         },
         {
-          "label": "No - Line 5a. Is there a restriction, either temporary or permanent, on the donee's right to use or dispose of the donated property?",
-          "value": "0"
+          "value": "0",
+          "label": "No - Line 5a. Is there a restriction, either temporary or permanent, on the donee's right to use or dispose of the donated property?"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkPartiiOtherDoneeInd",
       "options": [
         {
-          "label": "Yes - Line 5b. Did you give to anyone (other than the donee organization or another organization participating with the donee organization in cooperative fundraising) the right to the income from the donated property or to the possession of the property, including the right to vote donated securities, to acquire the property by purchase or otherwise, or to designate the person having such income, possession, or right to acquire?",
-          "value": "1"
+          "value": "1",
+          "label": "Yes - Line 5b. Did you give to anyone (other than the donee organization or another organization participating with the donee organization in cooperative fundraising) the right to the income from the donated property or to the possession of the property, including the right to vote donated securities, to acquire the property by purchase or otherwise, or to designate the person having such income, possession, or right to acquire?"
         },
         {
-          "label": "No - Line 5b. Did you give to anyone (other than the donee organization or another organization participating with the donee organization in cooperative fundraising) the right to the income from the donated property or to the possession of the property, including the right to vote donated securities, to acquire the property by purchase or otherwise, or to designate the person having such income, possession, or right to acquire?",
-          "value": "0"
+          "value": "0",
+          "label": "No - Line 5b. Did you give to anyone (other than the donee organization or another organization participating with the donee organization in cooperative fundraising) the right to the income from the donated property or to the possession of the property, including the right to vote donated securities, to acquire the property by purchase or otherwise, or to designate the person having such income, possession, or right to acquire?"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkPartiiRestLimitInd",
       "options": [
         {
-          "label": "Yes - Line 5c. Is there a restriction limiting the donated property for a particular use?",
-          "value": "1"
+          "value": "1",
+          "label": "Yes - Line 5c. Is there a restriction limiting the donated property for a particular use?"
         },
         {
-          "label": "No - Line 5c. Is there a restriction limiting the donated property for a particular use?",
-          "value": "0"
+          "value": "0",
+          "label": "No - Line 5c. Is there a restriction limiting the donated property for a particular use?"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 3,
+      "type": "text",
       "name": "txtP3DonorPropertyId",
+      "title": "Part III. I declare that the following item(s) included in Section B, Part I above has to the best of my knowledge and belief an appraised value of not more than $500 (per item). Enter identifying letter from Section B, Part I and describe the specific item. See instructions",
+      "maxlength": 3,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Part III. I declare that the following item(s) included in Section B, Part I above has to the best of my knowledge and belief an appraised value of not more than $500 (per item). Enter identifying letter from Section B, Part I and describe the specific item. See instructions",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 25,
+      "type": "text",
       "name": "txtP3DonatedPropertyDesc",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Part III. I declare that the following item(s) included in Section B, Part I above has to the best of my knowledge and belief an appraised value of not more than $500 (per item). Enter identifying letter from Section B, Part I and describe the specific item. See instructions",
-      "type": "text"
+      "maxlength": 25,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtP3DonorAquDate",
-      "tags": [
-        "DATE"
-      ],
       "title": "Part III. Date",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtP4AppraiserSignDate",
       "tags": [
         "DATE"
-      ],
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtP4AppraiserSignDate",
       "title": "Part IV. Date",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtP4AppraiserName",
+      "maxlength": 75,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 35,
+      "type": "text",
       "name": "txtP4AppraiserTitle",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Part IV. Title",
-      "type": "text"
-    },
-    {
       "maxlength": 35,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtP4AppraiserAddr",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Part IV. Business address (including room or suite no. )",
-      "type": "text"
+      "maxlength": 35,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 15,
+      "type": "text",
       "name": "txtP4AppraiserIdentrifyNum",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Part IV. Business EIN",
-      "type": "text"
-    },
-    {
-      "maxlength": 22,
-      "name": "txtP4AppraiserCity",
+      "maxlength": 15,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Part IV. Business City",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtP4AppraiserCity",
+      "title": "Part IV. Business City",
+      "maxlength": 22,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboP4AppraiserSt",
+      "title": "Part IV. Business State",
       "options": [
         {
           "value": ""
@@ -2535,80 +2543,80 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Part IV. Business State",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtP4AppraiserZip",
+      "title": "Part IV. Business Zip",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Part IV. Business Zip",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDateOfContPart5",
+      "title": "Part V - This charitable organization acknowledges that it is a qualified organization under section 170(c) and that it received the donated property as described in Section B, Part I, above on the following date",
+      "maxlength": 10,
       "tags": [
         "DATE"
-      ],
-      "title": "Part V - This charitable organization acknowledges that it is a qualified organization under section 170(c) and that it received the donated property as described in Section B, Part I, above on the following date",
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkBUnrelatedpropertyPart5",
       "options": [
         {
-          "label": "Yes - Part V. Does the organization intend to use the property for an unrelated use?",
-          "value": "1"
+          "value": "1",
+          "label": "Yes - Part V. Does the organization intend to use the property for an unrelated use?"
         },
         {
-          "label": "No - Part V. Does the organization intend to use the property for an unrelated use?",
-          "value": "0"
+          "value": "0",
+          "label": "No - Part V. Does the organization intend to use the property for an unrelated use?"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtNameDoneePart5",
+      "title": "Part V - Name of charitable organization (donee)",
+      "maxlength": 75,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Part V - Name of charitable organization (donee)",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtBEidPart5",
+      "title": "Part V - Employer identification number",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Part V - Employer identification number",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 70,
+      "type": "text",
       "name": "txtAddrDoneePart5",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Part V - Address of charitable organization (donee)",
-      "type": "text"
-    },
-    {
-      "maxlength": 30,
-      "name": "txtCityDoneePart5",
+      "maxlength": 70,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Part V - City of charitable organization (donee)",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtCityDoneePart5",
+      "title": "Part V - City of charitable organization (donee)",
+      "maxlength": 30,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboStDoneePart5",
+      "title": "Part V - State of charitable organization (donee)",
       "options": [
         {
           "value": ""
@@ -2790,46 +2798,42 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Part V - State of charitable organization (donee)",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtZipDoneePart5",
+      "title": "Part V - Zip of charitable organization (donee)",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Part V - Zip of charitable organization (donee)",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 100,
+      "type": "text",
       "name": "txtAuthSig_Dup",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Part V - Authorized signature",
-      "type": "text"
-    },
-    {
-      "maxlength": 50,
-      "name": "txtPart5Title_Dup",
+      "maxlength": 100,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
+      "name": "txtPart5Title_Dup",
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtPart5Date_Dup",
+      "title": "Part V - Date charitable organization (donee)",
+      "maxlength": 10,
       "tags": [
         "DATE"
-      ],
-      "title": "Part V - Date charitable organization (donee)",
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f8283",
-  "multiple": true
+  ]
 }

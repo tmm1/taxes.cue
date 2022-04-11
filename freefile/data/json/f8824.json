@@ -1,156 +1,162 @@
 {
+  "id": "f8824",
+  "multiple": true,
   "fields": [
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "Name - This field is automatically populated for you",
+      "maxlength": 75,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxpayerSSN",
+      "title": "Identifying number - This field is automatically populated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "EIN"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 60,
+      "type": "text",
       "name": "txtDescPropGiven",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Part 1. Information on the Like-Kind Exchange. Line 1. Description of like-kind property given up",
-      "type": "text"
-    },
-    {
-      "maxlength": 30,
-      "name": "txtCountryPropGiven",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Description of like-kind property given up",
-      "type": "text"
-    },
-    {
       "maxlength": 60,
-      "name": "txtDescPropReceived",
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 2. Description of like-kind property received",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtCountryPropGiven",
+      "title": "Description of like-kind property given up",
       "maxlength": 30,
-      "name": "txtCountryPropReceived",
       "tags": [
         "UPPERCASE"
-      ],
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDescPropReceived",
+      "title": "Line 2. Description of like-kind property received",
+      "maxlength": 60,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtCountryPropReceived",
       "title": "Description of like-kind property received",
-      "type": "text"
+      "maxlength": 30,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDatePropGivenup",
-      "tags": [
-        "DATE"
-      ],
       "title": "Line 3. Date like-kind property given up was originally acquired (month, day, year)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDatePropTransfer",
-      "tags": [
-        "DATE"
-      ],
       "title": "Line 4. Date you actually transferred your property to the other party (month, day, year)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDatePropIdentify",
-      "tags": [
-        "DATE"
-      ],
       "title": "Line 5. Date like-kind property you received was identified by written notice to another party (month, day, year)",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtDatePropReceived",
       "tags": [
         "DATE"
-      ],
-      "title": "Line 6. Date you actually received the like-kind property from other party (month, day, year)",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtDatePropReceived",
+      "title": "Line 6. Date you actually received the like-kind property from other party (month, day, year)",
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
+    },
+    {
+      "type": "check",
       "name": "chkWasRelPartyInd",
       "options": [
         {
-          "label": "Line 7. Was the exchange of the property given up or received made with a related party, either directly or indirectly (such as through an intermediary)? See instructions. If �Yes, � complete Part II. If �No, � go to Part III",
-          "value": "1"
+          "value": "1",
+          "label": "Line 7. Was the exchange of the property given up or received made with a related party, either directly or indirectly (such as through an intermediary)? See instructions. If �Yes, � complete Part II. If �No, � go to Part III"
         },
         {
-          "label": "Line 7. Was the exchange of the property given up or received made with a related party, either directly or indirectly (such as through an intermediary)? See instructions. If �Yes, � complete Part II. If �No, � go to Part III",
-          "value": "0"
+          "value": "0",
+          "label": "Line 7. Was the exchange of the property given up or received made with a related party, either directly or indirectly (such as through an intermediary)? See instructions. If �Yes, � complete Part II. If �No, � go to Part III"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtNameRelParty",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Part 2. Related Party Exchange Information. Line 8. Name of related party",
-      "type": "text"
-    },
-    {
-      "maxlength": 25,
-      "name": "txtRelationship",
+      "maxlength": 50,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 8. Relationship to you",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
+      "name": "txtRelationship",
+      "title": "Line 8. Relationship to you",
+      "maxlength": 25,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtRelatedIdentNum",
+      "title": "Line 8. Related party's identifying number",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Line 8. Related party's identifying number",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 70,
+      "type": "text",
       "name": "txtRelStreetAddr",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Enter address",
-      "type": "text"
-    },
-    {
-      "maxlength": 22,
-      "name": "txtRelCity",
+      "maxlength": 70,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Enter City",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtRelCity",
+      "title": "Enter City",
+      "maxlength": 22,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboRelState",
+      "title": "Select State",
       "options": [
         {
           "value": ""
@@ -332,219 +338,225 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Select State",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtRelZip",
-      "tags": [
-        "NUMERIC"
-      ],
       "title": "Enter ZIP code",
-      "type": "text"
-    },
-    {
-      "maxlength": 4,
-      "name": "txtRelZipExt",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Enter ZIP code extension",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtRelZipExt",
+      "title": "Enter ZIP code extension",
+      "maxlength": 4,
+      "tags": [
+        "NUMERIC"
+      ]
+    },
+    {
+      "type": "check",
       "name": "chkDurYrRelPartySellInd",
       "options": [
         {
-          "label": "Line 9. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did the related party sell or dispose of any part of the like-kind property received from you (or an intermediary) in the exchange?",
-          "value": "1"
+          "value": "1",
+          "label": "Line 9. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did the related party sell or dispose of any part of the like-kind property received from you (or an intermediary) in the exchange?"
         },
         {
-          "label": "Line 9. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did the related party sell or dispose of any part of the like-kind property received from you (or an intermediary) in the exchange?",
-          "value": "0"
+          "value": "0",
+          "label": "Line 9. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did the related party sell or dispose of any part of the like-kind property received from you (or an intermediary) in the exchange?"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkDurYrTaxpayerSellInd",
       "options": [
         {
-          "label": "Line 10. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did you sell or dispose of any part of the like-kind property you received?",
-          "value": "1"
+          "value": "1",
+          "label": "Line 10. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did you sell or dispose of any part of the like-kind property you received?"
         },
         {
-          "label": "Line 10. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did you sell or dispose of any part of the like-kind property you received?",
-          "value": "0"
+          "value": "0",
+          "label": "Line 10. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did you sell or dispose of any part of the like-kind property you received?"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkDisposInd",
       "options": [
         {
-          "label": "Line 11a. The disposition was after the death of either of the related parties",
-          "value": "1"
+          "value": "1",
+          "label": "Line 11a. The disposition was after the death of either of the related parties"
         },
         {
-          "label": "Line 11b. The disposition was an involuntary conversion, and the threat of conversion occurred after the exchange",
-          "value": "2"
+          "value": "2",
+          "label": "Line 11b. The disposition was an involuntary conversion, and the threat of conversion occurred after the exchange"
         },
         {
-          "label": "Line 11c. You can establish to the satisfaction of the IRS that neither the exchange nor the disposition had tax avoidance as one of  its principal purposes. If this box is checked, attach an explanation. See instructions",
-          "value": "3"
+          "value": "3",
+          "label": "Line 11c. You can establish to the satisfaction of the IRS that neither the exchange nor the disposition had tax avoidance as one of  its principal purposes. If this box is checked, attach an explanation. See instructions"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "Name - This field is automatically populated for you",
+      "maxlength": 75,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxpayerSSN",
+      "title": "Identifying number - This field is automatically populated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFMVPropGivenup",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 12. Fair market value (FMV) of other property given up",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAdjBasisGivenup",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 13. Adjusted basis of other property given up",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtGainOrLossGivenup",
+      "title": "Line 14. Gain or (loss) recognized on other property given up. Subtract line 13 from line 12. Report the gain or (loss) in the same manner as if the exchange had been a sale - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCashFMVNetLiable",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 15. Cash received, FMV of other property received, plus net liabilities assumed by other party, reduced (but not below zero) by any exchange expenses you incurred",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFMVPropReceived",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 16. FMV of like-kind property you received",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAmountRealized",
+      "title": "Line 17. Add lines 15 and 16 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAdjBasisReceived",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 18. Adjusted basis of like-kind property you gave up, net amounts paid to other party, plus any exchange expenses not used on line 15",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRealizedGainLoss",
+      "title": "Line 19. Realized gain or (loss). Subtract line 18 from line 17 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSmallRealGainLiable",
+      "title": "Line 20. Enter the smaller of line 15 or line 19, but not less than zero - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtOrdIncUnderRecap",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 21. Ordinary income under recapture rules. Enter here and on Form 4797, line 16",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtNetSmallMinOrdInc",
+      "title": "Line 22. Subtract line 21 from line 20. If zero or less, enter -0-. If more than zero, enter here and on Schedule D or Form 4797, unless the installment method applies. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRecognizedGain",
+      "title": "Line 23. Recognized gain. Add lines 21 and 22 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDefferedGainLoss",
+      "title": "Line 24. Deferred gain or (loss). Subtract line 23 from line 19. If a related party exchange - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtBasisPropReceived",
+      "title": "Line 25. Basis of like-kind property received. Subtract line 15 from the sum of lines 18 and 23 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f8824",
-  "multiple": true
+  ]
 }

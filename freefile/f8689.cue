@@ -141,32 +141,46 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field will be automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// SSN - This field will be automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// Line 16. Add lines 1 through 15. This is your total USVI income. This field is automatically calculated for you
 		txtF8689TotalUsviIncome?: #AMOUNT
 		txtF8689TotalUsviIncome?: strings.MaxRunes(10)
+		// Line 29. Add lines 17 through 28. This field is automatically calculated for you
 		txtF8689AddLn17Ln28?: #AMOUNT
 		txtF8689AddLn17Ln28?: strings.MaxRunes(10)
+		// Line 30. Subtract line 29 from line 16. This is your USVI adjusted gross income. This field is automatically calculated for you
 		txtF8689TotalAdjGrossInc?: #AMOUNT
 		txtF8689TotalAdjGrossInc?: strings.MaxRunes(10)
+		// Line 31. Enter the amount from the total tax line on your tax return. This field is automatically calculated for you
 		txtF8689AmtFrm1040Ln24?: #AMOUNT
 		txtF8689AmtFrm1040Ln24?: strings.MaxRunes(10)
+		// Line 33. Subtract line 32 from line 31. This field is automatically calculated for you
 		txtF8689SubLn32Ln31?: #AMOUNT
 		txtF8689SubLn32Ln31?: strings.MaxRunes(10)
+		// Line 34. Enter the amount from the adjusted gross income line on your tax return. This field is automatically calculated for you
 		txtF8689AmtFrm1040Ln11?: #AMOUNT
 		txtF8689AmtFrm1040Ln11?: strings.MaxRunes(10)
+		// Line 35. Divide line 30 above by line 34. Enter the result as a decimal (rounded to at least 3 places). Do not enter more than 1. 000. This field is automatically calculated for you
 		txtF8689DivLn30Byln34?: #RATIO
 		txtF8689DivLn30Byln34?: strings.MaxRunes(5)
+		// Line 36. Multiply line 33 by line 35. This is your tax allocated to the USVI. This field is automatically calculated for you
 		txtF8689TotalUsviTax?: #AMOUNT
 		txtF8689TotalUsviTax?: strings.MaxRunes(10)
+		// Line 40. Add lines 37 through 39. These are your total payments to the USVI. This field is automatically calculated for you
 		txtF8689AddLn37Ln39?: #AMOUNT
 		txtF8689AddLn37Ln39?: strings.MaxRunes(10)
+		// Line 41. Enter the smaller of line 36 or line 40. Add this amount to the total payments line of your tax return On the dotted line next to it, enter �Form 8689� and show this amount. This field is automatically calculated for you
 		txtF8689TotalUsviPayment?: #AMOUNT
 		txtF8689TotalUsviPayment?: strings.MaxRunes(10)
+		// Line 42. Overpayment to the USVI. If line 40 is more than line 36, subtract line 36 from line 40. This field is automatically calculated for you
 		txtF8689OverPmtUsvi?: #AMOUNT
 		txtF8689OverPmtUsvi?: strings.MaxRunes(10)
+		// Line 45. Amount you owe to the USVI. If line 40 is less than line 36, subtract line 40 from line 36. This field is automatically calculated form you
 		txtF8689AmtOweUsvi?: #AMOUNT
 		txtF8689AmtOweUsvi?: strings.MaxRunes(10)
 		

@@ -298,49 +298,70 @@ import "strings"
 	}
 
 	#output: {
+		// Name- This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
+		// Identifying number- This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
 		txtAddress?: #UPPERCASE
 		txtAddress?: strings.MaxRunes(35)
 		txtApartment?: #UPPERCASE
 		txtApartment?: strings.MaxRunes(5)
+		// City or town
 		txtCity?: #UPPERCASE
 		txtCity?: strings.MaxRunes(22)
+		// Enter ZIP code
 		txtZip?: #NUMERIC
 		txtZip?: strings.MaxRunes(9)
+		// Line 2(c). Total adjustment to income amount
 		txtP1TotAdjToInc?: #UPPERCASE
 		txtP1TotAdjToInc?: strings.MaxRunes(10)
+		// Line 3. Adjusted taxable income Look-Back amount
 		txtP1TaxIncLookbackPur_1?: #AMOUNT
 		txtP1TaxIncLookbackPur_1?: strings.MaxRunes(10)
+		// Line 3(a). Adjusted taxable income Look-Back amount
 		txtP1TaxIncLookbackPur_2?: #AMOUNT
 		txtP1TaxIncLookbackPur_2?: strings.MaxRunes(10)
+		// Line 3(b). Adjusted taxable income Look-Back amount
 		txtP1TaxIncLookbackPur_3?: #AMOUNT
 		txtP1TaxIncLookbackPur_3?: strings.MaxRunes(10)
+		// Line 6(a). This field is automatically calculated for you
 		txtP1IncDecTax_2?: #AMOUNT
 		txtP1IncDecTax_2?: strings.MaxRunes(10)
+		// Line 6(b). This field is automatically calculated for you
 		txtP1IncDecTax_3?: #AMOUNT
 		txtP1IncDecTax_3?: strings.MaxRunes(10)
+		// Line 7(c). Total interest due on increase
 		txtP1TotInterestDue?: #AMOUNT
 		txtP1TotInterestDue?: strings.MaxRunes(10)
+		// Line 8(b). Total interest to be refunded
 		txtP1TotInterestRef?: #AMOUNT
 		txtP1TotInterestRef?: strings.MaxRunes(10)
+		// Line 9-This field is automatically calculated for you
 		txtP1NetInterestRef?: #AMOUNT
 		txtP1NetInterestRef?: strings.MaxRunes(10)
+		// Line 10-This field is automatically calculated for you
 		txtP1NetInterestOwe?: #AMOUNT
 		txtP1NetInterestOwe?: strings.MaxRunes(10)
+		// Line 5(a). This field is automatically calculated for you
 		txtP2LargerL2Orl4_1?: #AMOUNT
 		txtP2LargerL2Orl4_1?: strings.MaxRunes(10)
+		// Line 5(b). This field is automatically calculated for you
 		txtP2LargerL2Orl4_2?: #AMOUNT
 		txtP2LargerL2Orl4_2?: strings.MaxRunes(10)
+		// Line 5(c). This field is automatically calculated for you
 		txtP2LargerL2Orl4_3?: #AMOUNT
 		txtP2LargerL2Orl4_3?: strings.MaxRunes(10)
+		// Line 8(d). Total interest due on increase
 		txtP2TotInterestDue?: #AMOUNT
 		txtP2TotInterestDue?: strings.MaxRunes(10)
+		// Line 9(d). Total interest to be refunded
 		txtP2TotInterestRef?: #AMOUNT
 		txtP2TotInterestRef?: strings.MaxRunes(10)
+		// Line 10. Net amount of interest to be refunded to you. If line 9, column (d), exceeds line 8, column (d), enter the excess. File Form 8697 separately; do not attach it to your tax return (see instructions)
 		txtP2NetInterestRef?: #AMOUNT
 		txtP2NetInterestRef?: strings.MaxRunes(10)
+		// Line 11. Net amount of interest you owe. If line 8, column (d), exceeds line 9, column (d), enter the excess. Attach Form 8697 to your tax return. See instructions for where to include this amount on your return
 		txtP2NetInterestOwe?: #AMOUNT
 		txtP2NetInterestOwe?: strings.MaxRunes(10)
 		

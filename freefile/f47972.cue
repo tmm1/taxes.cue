@@ -253,90 +253,133 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// This field is automatically calculated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtF4797AdjustedBasisP31?: #AMOUNT
 		txtF4797AdjustedBasisP31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797AdjustedBasisP32?: #AMOUNT
 		txtF4797AdjustedBasisP32?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797AdjustedBasisP33?: #AMOUNT
 		txtF4797AdjustedBasisP33?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797AdjustedBasisP34?: #AMOUNT
 		txtF4797AdjustedBasisP34?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797GainLossP31?: #AMOUNT
 		txtF4797GainLossP31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797GainLossP32?: #AMOUNT
 		txtF4797GainLossP32?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797GainLossP33?: #AMOUNT
 		txtF4797GainLossP33?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797GainLossP34?: #AMOUNT
 		txtF4797GainLossP34?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1245Ln25bP31?: #AMOUNT
 		txtF4797Sec1245Ln25bP31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1245Ln25bP32?: #AMOUNT
 		txtF4797Sec1245Ln25bP32?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1245Ln25bP33?: #AMOUNT
 		txtF4797Sec1245Ln25bP33?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1245Ln25bP34?: #AMOUNT
 		txtF4797Sec1245Ln25bP34?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26cP31?: #AMOUNT
 		txtF4797Sec1250Ln26cP31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26cP32?: #AMOUNT
 		txtF4797Sec1250Ln26cP32?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26cP33?: #AMOUNT
 		txtF4797Sec1250Ln26cP33?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26cP34?: #AMOUNT
 		txtF4797Sec1250Ln26cP34?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26eP31?: #AMOUNT
 		txtF4797Sec1250Ln26eP31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26eP32?: #AMOUNT
 		txtF4797Sec1250Ln26eP32?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26eP33?: #AMOUNT
 		txtF4797Sec1250Ln26eP33?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26eP34?: #AMOUNT
 		txtF4797Sec1250Ln26eP34?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26gAmtP31?: #AMOUNT
 		txtF4797Sec1250Ln26gAmtP31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26gAmtP32?: #AMOUNT
 		txtF4797Sec1250Ln26gAmtP32?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26gAmtP33?: #AMOUNT
 		txtF4797Sec1250Ln26gAmtP33?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1250Ln26gAmtP34?: #AMOUNT
 		txtF4797Sec1250Ln26gAmtP34?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1252Ln27cP31?: #AMOUNT
 		txtF4797Sec1252Ln27cP31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1252Ln27cP32?: #AMOUNT
 		txtF4797Sec1252Ln27cP32?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1252Ln27cP33?: #AMOUNT
 		txtF4797Sec1252Ln27cP33?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1252Ln27cP34?: #AMOUNT
 		txtF4797Sec1252Ln27cP34?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1254Ln28bP31?: #AMOUNT
 		txtF4797Sec1254Ln28bP31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1254Ln28bP32?: #AMOUNT
 		txtF4797Sec1254Ln28bP32?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1254Ln28bP33?: #AMOUNT
 		txtF4797Sec1254Ln28bP33?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1254Ln28bP34?: #AMOUNT
 		txtF4797Sec1254Ln28bP34?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1255Ln29bP31?: #AMOUNT
 		txtF4797Sec1255Ln29bP31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1255Ln29bP32?: #AMOUNT
 		txtF4797Sec1255Ln29bP32?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1255Ln29bP33?: #AMOUNT
 		txtF4797Sec1255Ln29bP33?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797Sec1255Ln29bP34?: #AMOUNT
 		txtF4797Sec1255Ln29bP34?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797P3TotGains?: #AMOUNT
 		txtF4797P3TotGains?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797P3SubTot?: #AMOUNT
 		txtF4797P3SubTot?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797TotGainMinSubTot?: #AMOUNT
 		txtF4797TotGainMinSubTot?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797RecaptureAmtSec179?: #AMOUNT
 		txtF4797RecaptureAmtSec179?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF4797RecaptureAmtSec280fb2?: #AMOUNT
 		txtF4797RecaptureAmtSec280fb2?: strings.MaxRunes(10)
 		

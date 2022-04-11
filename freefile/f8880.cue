@@ -48,26 +48,37 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying Number - This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// Add lines 1 and 2 - This field is automatically calculated for you
 		txtTotIraDefPri?: #AMOUNT
 		txtTotIraDefPri?: strings.MaxRunes(10)
+		// Add lines 1 and 2 - This field is automatically calculated for you
 		txtTotIraDefSp?: #AMOUNT
 		txtTotIraDefSp?: strings.MaxRunes(10)
+		// Subtract line 4 from line 3. If zero or less, enter -0 - This field is automatically calculated for you
 		txtDiffTotcontDistPri?: #AMOUNT
 		txtDiffTotcontDistPri?: strings.MaxRunes(10)
+		// Subtract line 4 from line 3. If zero or less, enter -0 - This field is automatically calculated for you
 		txtDiffTotcontDistSp?: #AMOUNT
 		txtDiffTotcontDistSp?: strings.MaxRunes(10)
+		// In each column, enter the smaller of line 5 or $2, 000 - This field is automatically calculated for you
 		txtSmallDiffPri?: #AMOUNT
 		txtSmallDiffPri?: strings.MaxRunes(10)
+		// In each column, enter the smaller of line 5 or $2, 000 - This field is automatically calculated for you
 		txtSmallDiffSp?: #AMOUNT
 		txtSmallDiffSp?: strings.MaxRunes(10)
+		// Add the amounts on line 6. If zero, stop; you can't take this credit - This field is automatically calculated for you
 		txtLine7Amt?: #AMOUNT
 		txtLine7Amt?: strings.MaxRunes(10)
+		// Multiply line 7 by line 9 - This field is automatically calculated for you
 		txtLine10Multiply?: #AMOUNT
 		txtLine10Multiply?: strings.MaxRunes(10)
+		// Credit for qualified retirement savings contributions - This field is automatically calculated for you
 		txtLine14Creditqualret?: #AMOUNT
 		txtLine14Creditqualret?: strings.MaxRunes(10)
 		

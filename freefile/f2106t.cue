@@ -193,66 +193,97 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtF2106Name?: #UPPERCASE
 		txtF2106Name?: strings.MaxRunes(50)
+		// This field is automatically calculated for you
 		txtF2106Ssn?: #SSN
 		txtF2106Ssn?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtTotalExpencesCola?: #AMOUNT
 		txtTotalExpencesCola?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtTotalExpencesColb?: #AMOUNT
 		txtTotalExpencesColb?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line8Cola?: #AMOUNT
 		txtFrm2106Line8Cola?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line8Colb?: #AMOUNT
 		txtFrm2106Line8Colb?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line9Cola?: #AMOUNT
 		txtFrm2106Line9Cola?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtUnreimbursedEmpExp?: #AMOUNT
 		txtUnreimbursedEmpExp?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2106Name2?: #UPPERCASE
 		txtF2106Name2?: strings.MaxRunes(50)
+		// This field is automatically calculated for you
 		txtF2106Ssn2?: #SSN
 		txtF2106Ssn2?: strings.MaxRunes(11)
+		// Percent of business use - Vehicle 1
 		txtPercentBusinessUseVh1?: #UPPERCASE
 		txtPercentBusinessUseVh1?: strings.MaxRunes(8)
+		// Percent of business use - Vehicle 2
 		txtPercentBusinessUseVh2?: #UPPERCASE
 		txtPercentBusinessUseVh2?: strings.MaxRunes(8)
+		// This field is automatically calculated for you
 		txtFrm2106Line17Vh1?: #UPPERCASE
 		txtFrm2106Line17Vh1?: strings.MaxRunes(9)
+		// This field is automatically calculated for you
 		txtFrm2106Line17Vh2?: #UPPERCASE
 		txtFrm2106Line17Vh2?: strings.MaxRunes(9)
+		// This field is automatically calculated for you
 		txtStandardMilageRate?: #AMOUNT
 		txtStandardMilageRate?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line24CVh1?: #AMOUNT
 		txtFrm2106Line24CVh1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line24CVh2?: #AMOUNT
 		txtFrm2106Line24CVh2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line26Vh1?: #AMOUNT
 		txtFrm2106Line26Vh1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line26Vh2?: #AMOUNT
 		txtFrm2106Line26Vh2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line27Vh1?: #AMOUNT
 		txtFrm2106Line27Vh1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line27Vh2?: #AMOUNT
 		txtFrm2106Line27Vh2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line29Vh1?: #AMOUNT
 		txtFrm2106Line29Vh1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line29Vh2?: #AMOUNT
 		txtFrm2106Line29Vh2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line34Vh1?: #AMOUNT
 		txtFrm2106Line34Vh1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line34Vh2?: #AMOUNT
 		txtFrm2106Line34Vh2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line35Vh1?: #AMOUNT
 		txtFrm2106Line35Vh1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line35Vh2?: #AMOUNT
 		txtFrm2106Line35Vh2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line37Vh1?: #AMOUNT
 		txtFrm2106Line37Vh1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line37Vh2?: #AMOUNT
 		txtFrm2106Line37Vh2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line38Vh1?: #AMOUNT
 		txtFrm2106Line38Vh1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFrm2106Line38Vh2?: #AMOUNT
 		txtFrm2106Line38Vh2?: strings.MaxRunes(10)
 		

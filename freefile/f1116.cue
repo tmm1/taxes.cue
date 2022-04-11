@@ -1370,74 +1370,109 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying Number - This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// Total  (Add cols. A , B , and C) -This field is automatically calculated for you
 		txtF1116GrossIncomeTotal?: #AMOUNT
 		txtF1116GrossIncomeTotal?: strings.MaxRunes(10)
+		// Line 3cA. Add lines 3a and 3b - This field is automatically calculated for you
 		txtF1116AddLine31?: #AMOUNT
 		txtF1116AddLine31?: strings.MaxRunes(10)
+		// Line 3cB. Add lines 3a and 3b - This field is automatically calculated for you
 		txtF1116AddLine32?: #AMOUNT
 		txtF1116AddLine32?: strings.MaxRunes(10)
+		// Line 3cC. Add lines 3a and 3b - This field is automatically calculated for you
 		txtF1116AddLine33?: #AMOUNT
 		txtF1116AddLine33?: strings.MaxRunes(10)
+		// Line 3fA. Divide line 3d by line 3e (see instructions) - This field is automatically calculated for you
 		txtF1116DivideLlindbye1?: #UPPERCASE
 		txtF1116DivideLlindbye1?: strings.MaxRunes(10)
+		// Line 3fB. Divide line 3d by line 3e (see instructions) - This field is automatically calculated for you
 		txtF1116DivideLlindbye2?: #UPPERCASE
 		txtF1116DivideLlindbye2?: strings.MaxRunes(10)
+		// Line 3fC. Divide line 3d by line 3e (see instructions) - This field is automatically calculated for you
 		txtF1116DivideLlindbye3?: #UPPERCASE
 		txtF1116DivideLlindbye3?: strings.MaxRunes(10)
+		// Line 3gA. Multiply line 3c by line 3f - This field is automatically calculated for you
 		txtF1116MultiplyLinecbyf1?: #AMOUNT
 		txtF1116MultiplyLinecbyf1?: strings.MaxRunes(10)
+		// Line 3gB. Multiply line 3c by line 3f - This field is automatically calculated for you
 		txtF1116MultiplyLinecbyf2?: #AMOUNT
 		txtF1116MultiplyLinecbyf2?: strings.MaxRunes(10)
+		// Line 3gC. Multiply line 3c by line 3f - This field is automatically calculated for you
 		txtF1116MultiplyLinecbyf3?: #AMOUNT
 		txtF1116MultiplyLinecbyf3?: strings.MaxRunes(10)
+		// Line 6A. Add lines 2, 3g, 4a, 4b, and 5 - This field is automatically calculated for you
 		txtF1116AddLine2to51?: #AMOUNT
 		txtF1116AddLine2to51?: strings.MaxRunes(10)
+		// Line 6B. Add lines 2, 3g, 4a, 4b, and 5 - This field is automatically calculated for you
 		txtF1116AddLine2to52?: #AMOUNT
 		txtF1116AddLine2to52?: strings.MaxRunes(10)
+		// Line 6C. Add lines 2, 3g, 4a, 4b, and 5 - This field is automatically calculated for you
 		txtF1116AddLine2to53?: #AMOUNT
 		txtF1116AddLine2to53?: strings.MaxRunes(10)
+		// Line 6. Add lines 2, 3g, 4a, 4b, and 5 - This field is automatically calculated for you
 		txtF1116AddLine2to5Tot?: #AMOUNT
 		txtF1116AddLine2to5Tot?: strings.MaxRunes(10)
+		// Line 7. Subtract line 6 from line 1a. Enter the result here and on line 15, page 2 - This field is automatically calculated for you
 		txtF1116SubLine7?: #AMOUNT
 		txtF1116SubLine7?: strings.MaxRunes(10)
+		// Total foreign  taxes paid or  accrued - This field is automatically calculated for you
 		txtF1116TotalForgntx1?: #AMOUNT
 		txtF1116TotalForgntx1?: strings.MaxRunes(10)
+		// Total foreign  taxes paid or  accrued - This field is automatically calculated for you
 		txtF1116TotalForgntx2?: #AMOUNT
 		txtF1116TotalForgntx2?: strings.MaxRunes(10)
+		// Total foreign  taxes paid or  accrued - This field is automatically calculated for you
 		txtF1116TotalForgntx3?: #AMOUNT
 		txtF1116TotalForgntx3?: strings.MaxRunes(10)
+		// Line 8. Add lines A through C, column (u). Enter the total here and on line 9, page 2 - This field is automatically calculated for you
 		txtF1116TotalForgntxLinetot?: #AMOUNT
 		txtF1116TotalForgntxLinetot?: strings.MaxRunes(10)
+		// Name - This field is automatically populated for you
 		txtTaxpayerNamePg2?: #UPPERCASE
 		txtTaxpayerNamePg2?: strings.MaxRunes(75)
+		// Identifying Number - This field is automatically populated for you
 		txtTaxPayerSSNPg2?: #SSN
 		txtTaxPayerSSNPg2?: strings.MaxRunes(11)
+		// Line 9. Enter the amount from line 8. These are your total foreign taxes paid  or accrued for the category of income checked above Part I  - This field is automatically calculated for you
 		txtF1116TotalForginTx?: #AMOUNT
 		txtF1116TotalForginTx?: strings.MaxRunes(10)
+		// Line 11. Add lines 9 and 10 - This field is automatically calculated for you
 		txtF1116AddLine9?: #AMOUNT
 		txtF1116AddLine9?: strings.MaxRunes(10)
+		// Line 14. Combine lines 11, 12, and 13. This is the total amount of foreign taxes available for credit-This field is automatically calculated for you
 		txtF1116SubLine12?: #AMOUNT
 		txtF1116SubLine12?: strings.MaxRunes(10)
+		// Line 15. Enter the amount from line 7. This is your taxable income or (loss) fromsources outside the United States (before adjustments) for the categoryof income checked above Part I  - This field is automatically calculated for you
 		txtF1116TaxIn?: #AMOUNT
 		txtF1116TaxIn?: strings.MaxRunes(10)
+		// Line 17. Combine the amounts on lines 15 and 16. This is your net foreignsource taxable income-This field is automatically calculated for you
 		txtF1116CombineLine14?: #AMOUNT
 		txtF1116CombineLine14?: strings.MaxRunes(10)
+		// Line 19. Divide line 17 by line 18. If line 17 is more than line 18, enter 1 - This field is automatically calculated for you
 		txtF1116DivideLine16?: #UPPERCASE
 		txtF1116DivideLine16?: strings.MaxRunes(10)
+		// Line 21. Multiply line 20 by line 19 (maximum amount of credit) - This field is automatically calculated for you
 		txtF1116MultiplyLine18?: #AMOUNT
 		txtF1116MultiplyLine18?: strings.MaxRunes(10)
+		// Line 23. Add lines 21 and 22 - This field is automatically calculated for you
 		txtF1116AddLine21?: #AMOUNT
 		txtF1116AddLine21?: strings.MaxRunes(10)
+		// Line 24. Enter the smaller of line 14 or line 23. If this is the only Form 1116 you are filing, skip lines 25 - This field is automatically calculated for you
 		txtF1116MinLine13nd20?: #AMOUNT
 		txtF1116MinLine13nd20?: strings.MaxRunes(10)
+		// Line 32. Add lines 25 through 31-This field is automatically calculated for you
 		txtF1116AddLine22?: #AMOUNT
 		txtF1116AddLine22?: strings.MaxRunes(10)
+		// Line 33. Enter the smaller of line 20 or line 32 - This field is automatically calculated for you
 		txtF1116MinLine30?: #AMOUNT
 		txtF1116MinLine30?: strings.MaxRunes(10)
+		// Line 35. Subtract line 34 from line 33. This is your foreign tax credit. Enter here and on Schedule 3 - This field is automatically calculated for you
 		txtF1116SubLine32?: #AMOUNT
 		txtF1116SubLine32?: strings.MaxRunes(10)
 		

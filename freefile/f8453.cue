@@ -45,19 +45,33 @@ package freefile
 	}
 
 	#output: {
+		// This Field is automatically calculated for you
 		txtTpFirstName?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtTpInitial?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txTpLastName?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtTpSSN?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtSpFirstName?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtSpInitial?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtSpLastName?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtSpSSN?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtAddress?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtAptNumber?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtCityStZip?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtForeignCountry?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtForeignState?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtForeignCode?: #UPPERCASE
 		
 	}

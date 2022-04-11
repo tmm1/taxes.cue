@@ -24,9 +24,10 @@ buttonForms.addEventListener('click', e => {
     chrome.storage.local.get(null, data => {
       let keys = Object.keys(data)
       for (let key of keys) {
-        if (key.startsWith('schema_')) {
-          let filename = key.replace(/^schema_/, '') + '.json'
-          let blob = new Blob([JSON.stringify(data[key], null, '  ')], {type: 'application/json'})
+        if (key.startsWith('schema_f')) {
+          let id = key.replace(/^schema_/, '')
+          let filename = id + '.json'
+          let blob = new Blob([data[key]],{type: 'application/json'})
           let url = window.URL.createObjectURL(blob)
           chrome.downloads.download({url, filename})
         }
@@ -145,15 +146,15 @@ async function triggerFormListSchema() {
         if (r.result == 'need_forms') {
           alert('Need form list first')
         } else if (r.result == 'retry') {
-          console.log('done')
+          console.log('retry')
           setTimeout(triggerFormListSchema, 2000)
         } else if (r.result == 'done') {
           console.log('done')
           document.querySelectorAll('button').forEach(b => (b.disabled = false))
         } else if (r.result) {
           let key = 'schema_' + r.result.id
-          chrome.storage.local.set({[key]: r.result})
-          console.log('schema saved', r.result)
+          chrome.storage.local.set({[key]: r.result.schema})
+          console.log('schema saved', r.result.id)
           setTimeout(triggerFormListSchema, 2000)
         }
         break
@@ -167,7 +168,11 @@ function doFormListSchema() {
     return 'need_forms'
   }
   let formDoc = document.querySelector('#iFrameFilingForm').contentDocument
-  let formId = formDoc.querySelector('form').id
+  let form = formDoc.querySelector('form')
+  if (!form) {
+    return 'retry'
+  }
+  let formId = form.id
   let allForms = JSON.parse(localStorage.forms)
   if (!allForms || allForms.length == 0) {
     return 'done'
@@ -178,7 +183,7 @@ function doFormListSchema() {
   if (formId == nextId) {
     let schema = extractFormSchema()
     localStorage['forms'] = JSON.stringify(allForms.slice(1))
-    return schema
+    return {id: formId, schema: schema}
   } else {
     let available = availableForms()
     if (available[nextId] instanceof Array) {

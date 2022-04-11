@@ -1,115 +1,124 @@
 package data
 
 schemas: f1040s1: {
+	id: "f1040s1"
 	fields: [{
-		maxlength: 75
+		type:      "text"
 		name:      "txtTaxpayerName"
+		title:     "This field is automatically calculated for you"
+		maxlength: 75
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtTaxPayerSSN"
+		title:     "This field is automatically calculated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTaxableRefunds"
+		title:     "Taxable refunds, credits, or offsets of state and local income taxes"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Taxable refunds, credits, or offsets of state and local income taxes"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAlimony"
+		title:     "Alimony received"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Alimony received"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAlimonyReceivedDate"
+		title:     "Date of original divorce or separation agreement (see instructions) (mm/dd/yyyyy)"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Date of original divorce or separation agreement (see instructions) (mm/dd/yyyyy)"
-		type:  "text"
 	}, {
-		link:  "f1040sc"
+		type:  "button"
 		name:  "cmdAddSchC"
 		title: "Add Schedule C"
-		type:  "button"
 		value: "Add"
+		link:  "f1040sc"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtBusinessInc"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		name: "cboOtherGainsCode"
+		type:  "combo"
+		name:  "cboOtherGainsCode"
+		title: "Other gains or (losses) - Form 4684 Code"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "FORM 4684"
 				value: "F4684"
+				label: "FORM 4684"
 			}]
-		title: "Other gains or (losses) - Form 4684 Code"
-		type:  "combo"
 	}, {
-		link:  "f4797"
+		type:  "button"
 		name:  "cmdAdd4797"
 		title: "Add Form 4797"
-		type:  "button"
 		value: "Add"
+		link:  "f4797"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOtherGains"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		link:  "f1040se1"
+		type:  "button"
 		name:  "cmdAddSchE"
 		title: "Add Schedule E"
-		type:  "button"
 		value: "Add"
+		link:  "f1040se1"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSuppIncome"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		link:  "f1040sf"
+		type:  "button"
 		name:  "cmdAddSchF"
 		title: "Add Form Schedule F"
-		type:  "button"
 		value: "Add"
+		link:  "f1040sf"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFarmLoss"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		name: "cboG1099PrRepayDesc"
+		type:  "combo"
+		name:  "cboG1099PrRepayDesc"
+		title: "Unemployment compensation Description"
 		options: [
 			{
 				value: ""
@@ -117,154 +126,154 @@ schemas: f1040s1: {
 			{
 				value: "REPAID"
 			}]
-		title: "Unemployment compensation Description"
-		type:  "combo"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtG1099PrRepayAmt"
+		title:     "Unemployment compensation Repaid Amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Unemployment compensation Repaid Amount"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtUnempComp"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "This field is automatically calculated for you"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtNolOthIncAmt"
+		title:     "Net operating loss"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Net operating loss"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtGamblingWin"
+		title:     "Gambling income"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Gambling income"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtC99OrdinaryInc1040"
+		title:     "Cancellation of debt"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Cancellation of debt"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555Inc"
+		title:     "Foreign earned income exclusion from Form 2555"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Foreign earned income exclusion from Form 2555"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtHsaInc"
+		title:     "Taxable Health Savings Account distribution"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Taxable Health Savings Account distribution"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAlaskaPerm"
+		title:     "Alaska Permanent Fund dividends"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Alaska Permanent Fund dividends"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtJuryPayOthIncAmt"
+		title:     "Jury duty pay"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Jury duty pay"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPrizesAwardsAmt"
+		title:     "Prizes and awards"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Prizes and awards"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtActivityNotengdPrftInc"
+		title:     "Activity not engaged in for profit income"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Activity not engaged in for profit income"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtStockOptionsAmt"
+		title:     "Stock options"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Stock options"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIncFrmPersProp"
+		title:     "Income from the rental of personal property"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Income from the rental of personal property"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOlympicParalymcUsocAmt"
+		title:     "Olympic and Paralympic medals and USOC prize money"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Olympic and Paralympic medals and USOC prize money"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSec951AInclusionAmt"
+		title:     "Section 951(a) inclusion"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Section 951(a) inclusion"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSec951AaInclusionAmt"
+		title:     "Section 951A(a) inclusion"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Section 951A(a) inclusion"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSec461ExcessLossAdj"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Section 461(l) excess business loss adjustment"
-		type:  "text"
-	}, {
+		title:     "Section 461(l) excess business loss adjustment"
 		maxlength: 10
-		name:      "txtAbleOthIncAmt"
 		tags: [
 			"AMOUNT",
 		]
-		title: "Taxable distributions from an ABLE account"
-		type:  "text"
 	}, {
-		name: "cboOtherInc"
+		type:      "text"
+		name:      "txtAbleOthIncAmt"
+		title:     "Taxable distributions from an ABLE account"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:  "combo"
+		name:  "cboOtherInc"
+		title: "Other income. List type"
 		options: [
 			{
 				value: ""
@@ -306,121 +315,128 @@ schemas: f1040s1: {
 			}, {
 				value: "CANADA ARTICLE XVIII"
 			}]
-		title: "Other income. List type"
-		type:  "combo"
 	}, {
-		maxlength: 100
+		type:      "text"
 		name:      "txtOtherIncDesc"
+		title:     "Other income. List Description"
+		maxlength: 100
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Other income. List Description"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOtherIncDescAmount"
+		title:     "Other income. List amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 			"NEGAMOUNT",
 		]
-		title: "Other income. List amount"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTotOtherIncAmt"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOtherInc"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
+		title:     "This field is automatically calculated for you"
 		maxlength: 10
-		name:      "txtLn10TotIncome"
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 75
+		type:      "text"
+		name:      "txtLn10TotIncome"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
 		name:      "txtTaxpayerName"
+		title:     "This field is automatically calculated for you"
+		maxlength: 75
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtTaxPayerSSN"
+		title:     "This field is automatically calculated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtEduExp"
+		title:     "Educator expenses"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Educator expenses"
-		type:  "text"
 	}, {
-		link:  "f2106t"
+		type:  "button"
 		name:  "cmdTaxpayerAdd2106"
 		title: "Add Form 2106 for Primary"
-		type:  "button"
 		value: "Add"
+		link:  "f2106t"
 	}, {
-		link:  "f2106s"
+		type:  "button"
 		name:  "cmdSpouseAdd2106"
 		title: "Add Form 2106 for Spouse"
-		type:  "button"
 		value: "Add"
+		link:  "f2106s"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtBusiExpReserArtist"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		link:  "f8889t"
+		type:  "button"
 		name:  "cmdTaxpyerAdd8889"
 		title: "Add Form 8889 for Primary"
-		type:  "button"
 		value: "Add"
+		link:  "f8889t"
 	}, {
-		link:  "f8889s"
+		type:  "button"
 		name:  "cmdSpouseAdd8889"
 		title: "Add Form 8889 for Spouse"
-		type:  "button"
 		value: "Add"
+		link:  "f8889s"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtHsaDed"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		link:  "f3903"
+		type:  "button"
 		name:  "cmdAdd3903"
 		title: "Add Form 3903"
-		type:  "button"
 		value: "Add"
+		link:  "f3903"
 	}, {
-		name: "cboMovingExpCode"
+		type:  "combo"
+		name:  "cboMovingExpCode"
+		title: "Moving expenses for members of the Armed Forces - Code"
 		options: [
 			{
 				value: ""
@@ -428,86 +444,88 @@ schemas: f1040s1: {
 			{
 				value: "STORAGE"
 			}]
-		title: "Moving expenses for members of the Armed Forces - Code"
-		type:  "combo"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtMovingExp"
+		title:     "Moving expenses for members of the Armed Forces. Attach Form 3903"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		link:  "f1040sset"
+		type:  "button"
 		name:  "cmdTaxpayerAddSE"
 		title: "Add Schedule SE for Primary"
-		type:  "button"
 		value: "Add"
+		link:  "f1040sset"
 	}, {
-		link:  "f1040sses"
+		type:  "button"
 		name:  "cmdSpouseAddSE"
 		title: "Add Schedule SE for Spouse"
-		type:  "button"
 		value: "Add"
+		link:  "f1040sses"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSelfEmp50Per"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSelfEmpSimSepDed"
+		title:     "Self-employed SEP, SIMPLE, and qualified plans"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Self-employed SEP, SIMPLE, and qualified plans"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSelfEmpHealthDed"
+		title:     "Self-employed health insurance deduction"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Self-employed health insurance deduction"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtEarlyWithPen"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Penalty on early withdrawal of savings"
-		type:  "text"
-	}, {
+		title:     "Penalty on early withdrawal of savings"
 		maxlength: 10
-		name:      "txtAlimonyPaid"
 		tags: [
 			"AMOUNT",
 		]
-		title: "Alimony paid"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
+		name:      "txtAlimonyPaid"
+		title:     "Alimony paid"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
 		name:      "txtAlimonySSN1"
+		title:     "Alimony paid Recipient's SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Alimony paid Recipient's SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAlimonyDivorceDate"
+		title:     "Date of original divorce or separation agreement (see instructions)  (mm/dd/yyyyy)"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Date of original divorce or separation agreement (see instructions)  (mm/dd/yyyyy)"
-		type:  "text"
 	}, {
-		name: "cboIraDeductionCode"
+		type:  "combo"
+		name:  "cboIraDeductionCode"
+		title: "IRA deduction - Code"
 		options: [
 			{
 				value: ""
@@ -515,160 +533,161 @@ schemas: f1040s1: {
 			{
 				value: "D"
 			}]
-		title: "IRA deduction - Code"
-		type:  "combo"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIraDeduction"
-		tags: [
-			"AMOUNT",
-		]
-		title: "IRA deduction"
-		type:  "text"
-	}, {
-		maxlength: 4
-		name:      "txtStdLoanIntDed"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Student loan interest deduction"
-		type:  "text"
-	}, {
+		title:     "IRA deduction"
 		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtStdLoanIntDed"
+		title:     "Student loan interest deduction"
+		maxlength: 4
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
 		name:      "txtAmsaContOtherAdj"
+		title:     "Archer MSA deduction. This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOthAdjJuryPayAmt"
+		title:     "Jury duty pay"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Jury duty pay"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOthAdjPprAmt"
+		title:     "Deductible expenses related to income reported on line 8k"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Deductible expenses related to income reported on line 8k"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOthAdjUsocAmt"
+		title:     "Nontaxable amount of the value medals and USOC prize money reported on line 8l"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Nontaxable amount of the value medals and USOC prize money reported on line 8l"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOthAdjRfstAmt"
+		title:     "Reforestation amortization and expenses"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Reforestation amortization and expenses"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOthAdjSubPayTraAmt"
+		title:     "Repayment of supplemental unemployment benefits"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Repayment of supplemental unemployment benefits"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOthAdj501CAmt"
+		title:     "Contributions to section 501(c)(18)(D) pension plans"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Contributions to section 501(c)(18)(D) pension plans"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOthAdj403BAmt"
+		title:     "Contributions by certain chaplains to section 403(b) plans"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Contributions by certain chaplains to section 403(b) plans"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOthAdjUdcAmt"
+		title:     "Attorney fees and court costs for actions involving certain unlawful discrimination claims"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Attorney fees and court costs for actions involving certain unlawful discrimination claims"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOthAdjWbfAmt"
+		title:     "Attorney fees and court costs you paid in connection with an award from the IRS"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Attorney fees and court costs you paid in connection with an award from the IRS"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOthAdj2555DedAmt"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Housing deduction from Form 2555"
-		type:  "text"
-	}, {
+		title:     "Housing deduction from Form 2555"
 		maxlength: 10
-		name:      "txtOthAdjEd67EAmt"
 		tags: [
 			"AMOUNT",
 		]
-		title: "Excess deductions of section 67(e) expenses from Schedule K-1"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
+		name:      "txtOthAdjEd67EAmt"
+		title:     "Excess deductions of section 67(e) expenses from Schedule K-1"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
 		name:      "txtOtherAdjDesc"
+		title:     "Other adjustments type"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Other adjustments type"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOtherAdjAmt"
+		title:     "Other Adjustments amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Other Adjustments amount"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTotOtherAdjAmt"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOtherAdj"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
+		title:     "This field is automatically calculated for you"
 		maxlength: 10
-		name:      "txtLn26TotAdjInc"
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
+	}, {
+		type:      "text"
+		name:      "txtLn26TotAdjInc"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
 	}]
-	id: "f1040s1"
 }

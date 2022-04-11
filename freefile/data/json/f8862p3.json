@@ -1,78 +1,80 @@
 {
+  "id": "f8862p3",
+  "multiple": true,
   "fields": [
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "Name - This field is automatically calculated for you",
+      "maxlength": 75,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxpayerSsn",
+      "title": "Identifying number - This field is automatically calculated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtChildFirstName",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Child First Name",
-      "type": "text"
+      "maxlength": 20,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtChildlastname",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Child Last Name",
-      "type": "text"
+      "maxlength": 20,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtOthDepFirstName",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Other Dependent First Name - This field is automatically calculated for you",
-      "type": "text"
+      "maxlength": 20,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtOthDepLastname",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Other Dependent Last Name",
-      "type": "text"
+      "maxlength": 20,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtStudFirstName",
+      "title": "Student First Name",
+      "maxlength": 20,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Student First Name",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtStudlastName",
+      "title": "Student Last Name",
+      "maxlength": 20,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Student Last Name",
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f8862p3",
-  "multiple": true
+  ]
 }

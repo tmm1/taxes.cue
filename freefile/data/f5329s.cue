@@ -1,55 +1,63 @@
 package data
 
 schemas: f5329s: {
+	id: "f5329s"
 	fields: [{
-		maxlength: 75
+		type:      "text"
 		name:      "txtTaxpayerName"
+		title:     "Name - This field is automatically populated for you"
+		maxlength: 75
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtTaxPayerSSN"
+		title:     "Identifying Number - This field is automatically populated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtAddress"
+		title:     "Enter home address (number and street). If you have a P. O . box, see instructions - This field is automatically populated for you"
+		maxlength: 35
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtApartNumber"
+		title:     "Enter apartment number - This field is automatically populated for you"
+		maxlength: 5
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
+		type: "check"
 		name: "chkAmdReturnInd"
 		options: [{
-			label: "If this is an amended return, check here (Not Supported)"
 			value: "1"
+			label: "If this is an amended return, check here (Not Supported)"
 		}]
-		type: "check"
 	}, {
-		maxlength: 22
+		type:      "text"
 		name:      "txtCity"
+		title:     "Enter City, town, or post office. If you have a foreign address, also complete spaces below - This field is automatically populated for you"
+		maxlength: 22
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		name: "cboState"
+		type:  "combo"
+		name:  "cboState"
+		title: "Select State - This field is automatically populated for you"
 		options: [
 			{
 				value: ""
@@ -231,1302 +239,1326 @@ schemas: f5329s: {
 			{
 				value: "WY"
 			}]
-		title: "Select State - This field is automatically populated for you"
-		type:  "combo"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtZip"
+		title:     "Enter ZIP code - This field is automatically populated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		name: "cboForeignCountry"
+		type:  "combo"
+		name:  "cboForeignCountry"
+		title: "Select Foreign Country Name - This field is automatically populated for you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "Afghanistan"
 				value: "AF"
+				label: "Afghanistan"
 			}, {
-				label: "Akrotiri"
 				value: "AX"
+				label: "Akrotiri"
 			}, {
-				label: "Albania"
 				value: "AL"
+				label: "Albania"
 			}, {
-				label: "Algeria"
 				value: "AG"
+				label: "Algeria"
 			}, {
-				label: "American Samoa"
 				value: "AQ"
+				label: "American Samoa"
 			}, {
-				label: "Andorra"
 				value: "AN"
+				label: "Andorra"
 			}, {
-				label: "Angola"
 				value: "AO"
+				label: "Angola"
 			}, {
-				label: "Anguilla"
 				value: "AV"
+				label: "Anguilla"
 			}, {
-				label: "Antarctica"
 				value: "AY"
+				label: "Antarctica"
 			}, {
-				label: "Antigua and Barbuda"
 				value: "AC"
+				label: "Antigua and Barbuda"
 			}, {
-				label: "Argentina"
 				value: "AR"
+				label: "Argentina"
 			}, {
-				label: "Armenia"
 				value: "AM"
+				label: "Armenia"
 			}, {
-				label: "Aruba"
 				value: "AA"
+				label: "Aruba"
 			}, {
-				label: "Ashmore and Cartier Islands"
 				value: "AT"
+				label: "Ashmore and Cartier Islands"
 			}, {
-				label: "Australia"
 				value: "AS"
+				label: "Australia"
 			}, {
-				label: "Austria"
 				value: "AU"
+				label: "Austria"
 			}, {
-				label: "Azerbaijan"
 				value: "AJ"
+				label: "Azerbaijan"
 			}, {
-				label: "Bahamas"
 				value: "BF"
+				label: "Bahamas"
 			}, {
-				label: "Bahrain"
 				value: "BA"
+				label: "Bahrain"
 			}, {
-				label: "Baker Island"
 				value: "FQ"
+				label: "Baker Island"
 			}, {
-				label: "Bangladesh"
 				value: "BG"
+				label: "Bangladesh"
 			}, {
-				label: "Barbados"
 				value: "BB"
+				label: "Barbados"
 			}, {
-				label: "Belarus"
 				value: "BO"
+				label: "Belarus"
 			}, {
-				label: "Belgium"
 				value: "BE"
+				label: "Belgium"
 			}, {
-				label: "Belize"
 				value: "BH"
+				label: "Belize"
 			}, {
-				label: "Benin"
 				value: "BN"
+				label: "Benin"
 			}, {
-				label: "Bermuda"
 				value: "BD"
+				label: "Bermuda"
 			}, {
-				label: "Bhutan"
 				value: "BT"
+				label: "Bhutan"
 			}, {
-				label: "Bolivia"
 				value: "BL"
+				label: "Bolivia"
 			}, {
-				label: "Bosnia-Herzegovina"
 				value: "BK"
+				label: "Bosnia-Herzegovina"
 			}, {
-				label: "Botswana"
 				value: "BC"
+				label: "Botswana"
 			}, {
-				label: "Bouvet Island"
 				value: "BV"
+				label: "Bouvet Island"
 			}, {
-				label: "Brazil"
 				value: "BR"
+				label: "Brazil"
 			}, {
-				label: "British Indian Ocean Territory"
 				value: "IO"
+				label: "British Indian Ocean Territory"
 			}, {
-				label: "British Virgin Islands"
 				value: "VI"
+				label: "British Virgin Islands"
 			}, {
-				label: "Brunei"
 				value: "BX"
+				label: "Brunei"
 			}, {
-				label: "Bulgaria"
 				value: "BU"
+				label: "Bulgaria"
 			}, {
-				label: "Burkina Faso"
 				value: "UV"
+				label: "Burkina Faso"
 			}, {
-				label: "Burma"
 				value: "BM"
+				label: "Burma"
 			}, {
-				label: "Burundi"
 				value: "BY"
+				label: "Burundi"
 			}, {
-				label: "Cambodia"
 				value: "CB"
+				label: "Cambodia"
 			}, {
-				label: "Cameroon"
 				value: "CM"
+				label: "Cameroon"
 			}, {
-				label: "Canada"
 				value: "CA"
+				label: "Canada"
 			}, {
-				label: "Cape Verde"
 				value: "CV"
+				label: "Cape Verde"
 			}, {
-				label: "Cayman Islands"
 				value: "CJ"
+				label: "Cayman Islands"
 			}, {
-				label: "Central African Republic"
 				value: "CT"
+				label: "Central African Republic"
 			}, {
-				label: "Chad"
 				value: "CD"
+				label: "Chad"
 			}, {
-				label: "Chile"
 				value: "CI"
+				label: "Chile"
 			}, {
-				label: "China"
 				value: "CH"
+				label: "China"
 			}, {
-				label: "Christmas Island"
 				value: "KT"
+				label: "Christmas Island"
 			}, {
-				label: "Clipperton Island"
 				value: "IP"
+				label: "Clipperton Island"
 			}, {
-				label: "Cocos (Keeling) Islands"
 				value: "CK"
+				label: "Cocos (Keeling) Islands"
 			}, {
-				label: "Colombia"
 				value: "CO"
+				label: "Colombia"
 			}, {
-				label: "Comoros"
 				value: "CN"
+				label: "Comoros"
 			}, {
-				label: "Congo (Brazzaville)"
 				value: "CF"
+				label: "Congo (Brazzaville)"
 			}, {
-				label: "Congo (Kinshasa)"
 				value: "CG"
+				label: "Congo (Kinshasa)"
 			}, {
-				label: "Cook Islands"
 				value: "CW"
+				label: "Cook Islands"
 			}, {
-				label: "Coral Sea Islands"
 				value: "CR"
+				label: "Coral Sea Islands"
 			}, {
-				label: "Costa Rica"
 				value: "CS"
+				label: "Costa Rica"
 			}, {
-				label: "Cote D'Ivoire(Ivory Coast)"
 				value: "IV"
+				label: "Cote D'Ivoire(Ivory Coast)"
 			}, {
-				label: "Croatia"
 				value: "HR"
+				label: "Croatia"
 			}, {
-				label: "Cuba"
 				value: "CU"
+				label: "Cuba"
 			}, {
-				label: "Curacao"
 				value: "UC"
+				label: "Curacao"
 			}, {
-				label: "Cyprus"
 				value: "CY"
+				label: "Cyprus"
 			}, {
-				label: "Czech Republic"
 				value: "EZ"
+				label: "Czech Republic"
 			}, {
-				label: "Denmark"
 				value: "DA"
+				label: "Denmark"
 			}, {
-				label: "Dhekelia"
 				value: "DX"
+				label: "Dhekelia"
 			}, {
-				label: "Djibouti"
 				value: "DJ"
+				label: "Djibouti"
 			}, {
-				label: "Dominica"
 				value: "DO"
+				label: "Dominica"
 			}, {
-				label: "Dominican Republic"
 				value: "DR"
+				label: "Dominican Republic"
 			}, {
-				label: "East Timor"
 				value: "TT"
+				label: "East Timor"
 			}, {
-				label: "Ecuador"
 				value: "EC"
+				label: "Ecuador"
 			}, {
-				label: "Egypt"
 				value: "EG"
+				label: "Egypt"
 			}, {
-				label: "El Salvador"
 				value: "ES"
+				label: "El Salvador"
 			}, {
-				label: "Equatorial Guinea"
 				value: "EK"
+				label: "Equatorial Guinea"
 			}, {
-				label: "Eritrea"
 				value: "ER"
+				label: "Eritrea"
 			}, {
-				label: "Estonia"
 				value: "EN"
+				label: "Estonia"
 			}, {
-				label: "Ethiopia"
 				value: "ET"
+				label: "Ethiopia"
 			}, {
-				label: "Falkland Islands (Islas Malvinas)"
 				value: "FK"
+				label: "Falkland Islands (Islas Malvinas)"
 			}, {
-				label: "Faroe Islands"
 				value: "FO"
+				label: "Faroe Islands"
 			}, {
-				label: "Federated States of Micronesia"
 				value: "FM"
+				label: "Federated States of Micronesia"
 			}, {
-				label: "Fiji"
 				value: "FJ"
+				label: "Fiji"
 			}, {
-				label: "Finland"
 				value: "FI"
+				label: "Finland"
 			}, {
-				label: "France"
 				value: "FR"
+				label: "France"
 			}, {
-				label: "French Polynesia"
 				value: "FP"
+				label: "French Polynesia"
 			}, {
-				label: "French Southern and Antarctic Lands"
 				value: "FS"
+				label: "French Southern and Antarctic Lands"
 			}, {
-				label: "Gabon"
 				value: "GB"
+				label: "Gabon"
 			}, {
-				label: "Georgia"
 				value: "GG"
+				label: "Georgia"
 			}, {
-				label: "Germany"
 				value: "GM"
+				label: "Germany"
 			}, {
-				label: "Ghana"
 				value: "GH"
+				label: "Ghana"
 			}, {
-				label: "Gibraltar"
 				value: "GI"
+				label: "Gibraltar"
 			}, {
-				label: "Greece"
 				value: "GR"
+				label: "Greece"
 			}, {
-				label: "Greenland"
 				value: "GL"
+				label: "Greenland"
 			}, {
-				label: "Grenada"
 				value: "GJ"
+				label: "Grenada"
 			}, {
-				label: "Guam"
 				value: "GQ"
+				label: "Guam"
 			}, {
-				label: "Guatemala"
 				value: "GT"
+				label: "Guatemala"
 			}, {
-				label: "Guernsey"
 				value: "GK"
+				label: "Guernsey"
 			}, {
-				label: "Guinea"
 				value: "GV"
+				label: "Guinea"
 			}, {
-				label: "Guinea-Bissau"
 				value: "PU"
+				label: "Guinea-Bissau"
 			}, {
-				label: "Guyana"
 				value: "GY"
+				label: "Guyana"
 			}, {
-				label: "Haiti"
 				value: "HA"
+				label: "Haiti"
 			}, {
-				label: "Heard Island and McDonald Islands"
 				value: "HM"
+				label: "Heard Island and McDonald Islands"
 			}, {
-				label: "Holy See"
 				value: "VT"
+				label: "Holy See"
 			}, {
-				label: "Honduras"
 				value: "HO"
+				label: "Honduras"
 			}, {
-				label: "Hong Kong"
 				value: "HK"
+				label: "Hong Kong"
 			}, {
-				label: "Howland Island"
 				value: "HQ"
+				label: "Howland Island"
 			}, {
-				label: "Hungary"
 				value: "HU"
+				label: "Hungary"
 			}, {
-				label: "Iceland"
 				value: "IC"
+				label: "Iceland"
 			}, {
-				label: "India"
 				value: "IN"
+				label: "India"
 			}, {
-				label: "Indonesia"
 				value: "ID"
+				label: "Indonesia"
 			}, {
-				label: "Iran"
 				value: "IR"
+				label: "Iran"
 			}, {
-				label: "Iraq"
 				value: "IZ"
+				label: "Iraq"
 			}, {
-				label: "Ireland"
 				value: "EI"
+				label: "Ireland"
 			}, {
-				label: "Israel"
 				value: "IS"
+				label: "Israel"
 			}, {
-				label: "Italy"
 				value: "IT"
+				label: "Italy"
 			}, {
-				label: "Jamaica"
 				value: "JM"
+				label: "Jamaica"
 			}, {
-				label: "Jan Mayen"
 				value: "JN"
+				label: "Jan Mayen"
 			}, {
-				label: "Japan"
 				value: "JA"
+				label: "Japan"
 			}, {
-				label: "Jarvis Island"
 				value: "DQ"
+				label: "Jarvis Island"
 			}, {
-				label: "Jersey"
 				value: "JE"
+				label: "Jersey"
 			}, {
-				label: "Johnston Atoll"
 				value: "JQ"
+				label: "Johnston Atoll"
 			}, {
-				label: "Jordan"
 				value: "JO"
+				label: "Jordan"
 			}, {
-				label: "Kazakhstan"
 				value: "KZ"
+				label: "Kazakhstan"
 			}, {
-				label: "Kenya"
 				value: "KE"
+				label: "Kenya"
 			}, {
-				label: "Kingman Reef"
 				value: "KQ"
+				label: "Kingman Reef"
 			}, {
-				label: "Kiribati"
 				value: "KR"
+				label: "Kiribati"
 			}, {
-				label: "Korea, Democratic People's Republic of (North)"
 				value: "KN"
+				label: "Korea, Democratic People's Republic of (North)"
 			}, {
-				label: "Korea, Republic of (South)"
 				value: "KS"
+				label: "Korea, Republic of (South)"
 			}, {
-				label: "Kosovo"
 				value: "KV"
+				label: "Kosovo"
 			}, {
-				label: "Kuwait"
 				value: "KU"
+				label: "Kuwait"
 			}, {
-				label: "Kyrgyzstan"
 				value: "KG"
+				label: "Kyrgyzstan"
 			}, {
-				label: "Laos"
 				value: "LA"
+				label: "Laos"
 			}, {
-				label: "Latvia"
 				value: "LG"
+				label: "Latvia"
 			}, {
-				label: "Lebanon"
 				value: "LE"
+				label: "Lebanon"
 			}, {
-				label: "Lesotho"
 				value: "LT"
+				label: "Lesotho"
 			}, {
-				label: "Liberia"
 				value: "LI"
+				label: "Liberia"
 			}, {
-				label: "Libya"
 				value: "LY"
+				label: "Libya"
 			}, {
-				label: "Liechtenstein"
 				value: "LS"
+				label: "Liechtenstein"
 			}, {
-				label: "Lithuania"
 				value: "LH"
+				label: "Lithuania"
 			}, {
-				label: "Luxembourg"
 				value: "LU"
+				label: "Luxembourg"
 			}, {
-				label: "Macau"
 				value: "MC"
+				label: "Macau"
 			}, {
-				label: "Macedonia"
 				value: "MK"
+				label: "Macedonia"
 			}, {
-				label: "Madagascar"
 				value: "MA"
+				label: "Madagascar"
 			}, {
-				label: "Malawi"
 				value: "MI"
+				label: "Malawi"
 			}, {
-				label: "Malaysia"
 				value: "MY"
+				label: "Malaysia"
 			}, {
-				label: "Maldives"
 				value: "MV"
+				label: "Maldives"
 			}, {
-				label: "Mali"
 				value: "ML"
+				label: "Mali"
 			}, {
-				label: "Malta"
 				value: "MT"
+				label: "Malta"
 			}, {
-				label: "Man, Isle of"
 				value: "IM"
+				label: "Man, Isle of"
 			}, {
-				label: "Marshall Islands"
 				value: "RM"
+				label: "Marshall Islands"
 			}, {
-				label: "Mauritania"
 				value: "MR"
+				label: "Mauritania"
 			}, {
-				label: "Mauritius"
 				value: "MP"
+				label: "Mauritius"
 			}, {
-				label: "Mexico"
 				value: "MX"
+				label: "Mexico"
 			}, {
-				label: "Midway Islands"
 				value: "MQ"
+				label: "Midway Islands"
 			}, {
-				label: "Moldova"
 				value: "MD"
+				label: "Moldova"
 			}, {
-				label: "Monaco"
 				value: "MN"
+				label: "Monaco"
 			}, {
-				label: "Mongolia"
 				value: "MG"
+				label: "Mongolia"
 			}, {
-				label: "Montenegro"
 				value: "MJ"
+				label: "Montenegro"
 			}, {
-				label: "Montserrat"
 				value: "MH"
+				label: "Montserrat"
 			}, {
-				label: "Morocco"
 				value: "MO"
+				label: "Morocco"
 			}, {
-				label: "Mozambique"
 				value: "MZ"
+				label: "Mozambique"
 			}, {
-				label: "Namibia"
 				value: "WA"
+				label: "Namibia"
 			}, {
-				label: "Nauru"
 				value: "NR"
+				label: "Nauru"
 			}, {
-				label: "Navassa Island"
 				value: "BQ"
+				label: "Navassa Island"
 			}, {
-				label: "Nepal"
 				value: "NP"
+				label: "Nepal"
 			}, {
-				label: "Netherlands"
 				value: "NL"
+				label: "Netherlands"
 			}, {
-				label: "New Caledonia"
 				value: "NC"
+				label: "New Caledonia"
 			}, {
-				label: "New Zealand"
 				value: "NZ"
+				label: "New Zealand"
 			}, {
-				label: "Nicaragua"
 				value: "NU"
+				label: "Nicaragua"
 			}, {
-				label: "Niger"
 				value: "NG"
+				label: "Niger"
 			}, {
-				label: "Nigeria"
 				value: "NI"
+				label: "Nigeria"
 			}, {
-				label: "Niue"
 				value: "NE"
+				label: "Niue"
 			}, {
-				label: "Norfolk Island"
 				value: "NF"
+				label: "Norfolk Island"
 			}, {
-				label: "Northern Mariana Islands"
 				value: "CQ"
+				label: "Northern Mariana Islands"
 			}, {
-				label: "Norway"
 				value: "NO"
+				label: "Norway"
 			}, {
-				label: "Oman"
 				value: "MU"
+				label: "Oman"
 			}, {
-				label: "Other Country"
 				value: "OC"
+				label: "Other Country"
 			}, {
-				label: "Pakistan"
 				value: "PK"
+				label: "Pakistan"
 			}, {
-				label: "Palau"
 				value: "PS"
+				label: "Palau"
 			}, {
-				label: "Palmyra Atoll"
 				value: "LQ"
+				label: "Palmyra Atoll"
 			}, {
-				label: "Panama"
 				value: "PM"
+				label: "Panama"
 			}, {
-				label: "Papua-New Guinea"
 				value: "PP"
+				label: "Papua-New Guinea"
 			}, {
-				label: "Paracel Islands"
 				value: "PF"
+				label: "Paracel Islands"
 			}, {
-				label: "Paraguay"
 				value: "PA"
+				label: "Paraguay"
 			}, {
-				label: "Peru"
 				value: "PE"
+				label: "Peru"
 			}, {
-				label: "Philippines"
 				value: "RP"
+				label: "Philippines"
 			}, {
-				label: "Pitcairn Islands"
 				value: "PC"
+				label: "Pitcairn Islands"
 			}, {
-				label: "Poland"
 				value: "PL"
+				label: "Poland"
 			}, {
-				label: "Portugal"
 				value: "PO"
+				label: "Portugal"
 			}, {
-				label: "Puerto Rico"
 				value: "RQ"
+				label: "Puerto Rico"
 			}, {
-				label: "Qatar"
 				value: "QA"
+				label: "Qatar"
 			}, {
-				label: "Romania"
 				value: "RO"
+				label: "Romania"
 			}, {
-				label: "Russia"
 				value: "RS"
+				label: "Russia"
 			}, {
-				label: "Rwanda"
 				value: "RW"
+				label: "Rwanda"
 			}, {
-				label: "Saint Barthelemy"
 				value: "TB"
+				label: "Saint Barthelemy"
 			}, {
-				label: "Saint Martin"
 				value: "RN"
+				label: "Saint Martin"
 			}, {
-				label: "Samoa"
 				value: "WS"
+				label: "Samoa"
 			}, {
-				label: "San Marino"
 				value: "SM"
+				label: "San Marino"
 			}, {
-				label: "Sao Tome and Principe"
 				value: "TP"
+				label: "Sao Tome and Principe"
 			}, {
-				label: "Saudi Arabia"
 				value: "SA"
+				label: "Saudi Arabia"
 			}, {
-				label: "Senegal"
 				value: "SG"
+				label: "Senegal"
 			}, {
-				label: "Serbia"
 				value: "RI"
+				label: "Serbia"
 			}, {
-				label: "Seychelles"
 				value: "SE"
+				label: "Seychelles"
 			}, {
-				label: "Sierra Leone"
 				value: "SL"
+				label: "Sierra Leone"
 			}, {
-				label: "Singapore"
 				value: "SN"
+				label: "Singapore"
 			}, {
-				label: "Sint Maarten"
 				value: "NN"
+				label: "Sint Maarten"
 			}, {
-				label: "Slovakia"
 				value: "LO"
+				label: "Slovakia"
 			}, {
-				label: "Slovenia"
 				value: "SI"
+				label: "Slovenia"
 			}, {
-				label: "Solomon Islands"
 				value: "BP"
+				label: "Solomon Islands"
 			}, {
-				label: "Somalia"
 				value: "SO"
+				label: "Somalia"
 			}, {
-				label: "South Africa"
 				value: "SF"
+				label: "South Africa"
 			}, {
-				label: "South Georgia and the South Sandwich Islands"
 				value: "SX"
+				label: "South Georgia and the South Sandwich Islands"
 			}, {
-				label: "South Sudan"
 				value: "OD"
+				label: "South Sudan"
 			}, {
-				label: "Spain"
 				value: "SP"
+				label: "Spain"
 			}, {
-				label: "Spratly Islands"
 				value: "PG"
+				label: "Spratly Islands"
 			}, {
-				label: "Sri Lanka"
 				value: "CE"
+				label: "Sri Lanka"
 			}, {
-				label: "St. Helena"
 				value: "SH"
+				label: "St. Helena"
 			}, {
-				label: "St. Kitts and Nevis"
 				value: "SC"
+				label: "St. Kitts and Nevis"
 			}, {
-				label: "St. Lucia Island"
 				value: "ST"
+				label: "St. Lucia Island"
 			}, {
-				label: "St. Pierre and Miquelon"
 				value: "SB"
+				label: "St. Pierre and Miquelon"
 			}, {
-				label: "St. Vincent and the Grenadines"
 				value: "VC"
+				label: "St. Vincent and the Grenadines"
 			}, {
-				label: "Sudan"
 				value: "SU"
+				label: "Sudan"
 			}, {
-				label: "Suriname"
 				value: "NS"
+				label: "Suriname"
 			}, {
-				label: "Svalbard"
 				value: "SV"
+				label: "Svalbard"
 			}, {
-				label: "Swaziland"
 				value: "WZ"
+				label: "Swaziland"
 			}, {
-				label: "Sweden"
 				value: "SW"
+				label: "Sweden"
 			}, {
-				label: "Switzerland"
 				value: "SZ"
+				label: "Switzerland"
 			}, {
-				label: "Syria"
 				value: "SY"
+				label: "Syria"
 			}, {
-				label: "Taiwan"
 				value: "TW"
+				label: "Taiwan"
 			}, {
-				label: "Tajikistan"
 				value: "TI"
+				label: "Tajikistan"
 			}, {
-				label: "Tanzania"
 				value: "TZ"
+				label: "Tanzania"
 			}, {
-				label: "Thailand"
 				value: "TH"
+				label: "Thailand"
 			}, {
-				label: "The Gambia"
 				value: "GA"
+				label: "The Gambia"
 			}, {
-				label: "Togo"
 				value: "TO"
+				label: "Togo"
 			}, {
-				label: "Tokelau"
 				value: "TL"
+				label: "Tokelau"
 			}, {
-				label: "Tonga"
 				value: "TN"
+				label: "Tonga"
 			}, {
-				label: "Trinidad and Tobago"
 				value: "TD"
+				label: "Trinidad and Tobago"
 			}, {
-				label: "Tunisia"
 				value: "TS"
+				label: "Tunisia"
 			}, {
-				label: "Turkey"
 				value: "TU"
+				label: "Turkey"
 			}, {
-				label: "Turkmenistan"
 				value: "TX"
+				label: "Turkmenistan"
 			}, {
-				label: "Turks and Caicos Islands"
 				value: "TK"
+				label: "Turks and Caicos Islands"
 			}, {
-				label: "Tuvalu"
 				value: "TV"
+				label: "Tuvalu"
 			}, {
-				label: "Uganda"
 				value: "UG"
+				label: "Uganda"
 			}, {
-				label: "Ukraine"
 				value: "UP"
+				label: "Ukraine"
 			}, {
-				label: "United Arab Emirates"
 				value: "AE"
+				label: "United Arab Emirates"
 			}, {
-				label: "United Kingdom (England, Northern Ireland, Scotland, and Wales)"
 				value: "UK"
+				label: "United Kingdom (England, Northern Ireland, Scotland, and Wales)"
 			}, {
-				label: "Uruguay"
 				value: "UY"
+				label: "Uruguay"
 			}, {
-				label: "Uzbekistan"
 				value: "UZ"
+				label: "Uzbekistan"
 			}, {
-				label: "Vanuatu"
 				value: "NH"
+				label: "Vanuatu"
 			}, {
-				label: "Venezuela"
 				value: "VE"
+				label: "Venezuela"
 			}, {
-				label: "Vietnam"
 				value: "VM"
+				label: "Vietnam"
 			}, {
-				label: "Virgin Islands"
 				value: "VQ"
+				label: "Virgin Islands"
 			}, {
-				label: "Wake Island"
 				value: "WQ"
+				label: "Wake Island"
 			}, {
-				label: "Wallis and Futuna"
 				value: "WF"
+				label: "Wallis and Futuna"
 			}, {
-				label: "Western Sahara"
 				value: "WI"
+				label: "Western Sahara"
 			}, {
-				label: "Yemen (Aden)"
 				value: "YM"
+				label: "Yemen (Aden)"
 			}, {
-				label: "Zambia"
 				value: "ZA"
+				label: "Zambia"
 			}, {
-				label: "Zimbabwe"
 				value: "ZI"
+				label: "Zimbabwe"
 			}]
-		title: "Select Foreign Country Name - This field is automatically populated for you"
-		type:  "combo"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtForeignState"
+		title:     "Enter Foreign Foreign province/state/county - This field is automatically populated for you"
+		maxlength: 35
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 16
+		type:      "text"
 		name:      "txtForeignZip"
+		title:     "Enter Foreign postal code"
+		maxlength: 16
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtEarlyDistF8606"
+		title:     "Early distributions included in income. For Roth IRA distributions, see instructions"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Early distributions included in income. For Roth IRA distributions, see instructions"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtExcepNbr"
+		title:     "Enter the appropriate exception number from the instructions"
+		maxlength: 2
 		tags: [
 			"NUMERIC",
 		]
-		title: "Enter the appropriate exception number from the instructions"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtExcepAmountF8606"
+		title:     "Early distributions included on line 1 that are not subject to the additional tax (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Early distributions included on line 1 that are not subject to the additional tax (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAmtSubTaxF8606"
+		title:     "Amount subject to additional tax. Subtract line 2 from line 1  - This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTaxDueF8606"
+		title:     "Additional tax. Enter 10% (0. 10) of line 3. Include this amount on Schedule 2 (Form 1040), line 8"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Additional tax. Enter 10% (0. 10) of line 3. Include this amount on Schedule 2 (Form 1040), line 8"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCoverdellEsa"
+		title:     "Distributions included in income from a Coverdell ESA, a QTP, or an ABLE account"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Distributions included in income from a Coverdell ESA, a QTP, or an ABLE account"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtNotSubAddTax"
+		title:     "Distributions included on line 5 that are not subject to the additional tax (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Distributions included on line 5 that are not subject to the additional tax (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSubAddTax"
+		title:     "Amount subject to additional tax. Subtract line 6 from line 5 - This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAddTaxEsaQtp"
+		title:     "Additional tax. Enter 10% (0. 10) of line 7. Include this amount on Schedule 2 (Form 1040), line 8"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Additional tax. Enter 10% (0. 10) of line 7. Include this amount on Schedule 2 (Form 1040), line 8"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtExcContribTIRAFrm5329"
+		title:     "Enter your excess contributions from line 16 of your 2020 Form 5329. See instructions. If zero, go to line 15"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Enter your excess contributions from line 16 of your 2020 Form 5329. See instructions. If zero, go to line 15"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTIRAContribLessAllow"
+		title:     "If your traditional IRA contributions for 2021 are less than your maximum allowable contribution, see instructions. Otherwise, enter -0-"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "If your traditional IRA contributions for 2021 are less than your maximum allowable contribution, see instructions. Otherwise, enter -0-"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTIRADist"
+		title:     "2021 traditional IRA distributions included in income (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "2021 traditional IRA distributions included in income (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDistPriorExcContribTIRA"
+		title:     "2021 distributions of prior year excess contributions (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "2021 distributions of prior year excess contributions (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAddContrib"
+		title:     "Add lines 10, 11, and 12 - This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPriorExcContribTIRA"
+		title:     "Prior year excess contributions. Subtract line 13 from line 9. If zero or less, enter -0-. This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtExcContribTIRA"
+		title:     "Excess contributions for 2021 (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Excess contributions for 2021 (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTotExcContribTIRA"
+		title:     "Total excess contributions. Add lines 14 and 15 - This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAddTaxTIRA"
+		title:     "Additional tax. Enter 6% (0. 06) of the smaller of line 16 or the value of your traditional IRAs on December 31, 2021 (including 2021 contributions made in 2022). Include this amount on Schedule 2 (Form 1040), line 8"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Additional tax. Enter 6% (0. 06) of the smaller of line 16 or the value of your traditional IRAs on December 31, 2021 (including 2021 contributions made in 2022). Include this amount on Schedule 2 (Form 1040), line 8"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtExcContribFrm5329"
+		title:     "Enter your excess contributions from line 24 of your 2020 Form 5329. See instructions. If zero, go to line 23"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Enter your excess contributions from line 24 of your 2020 Form 5329. See instructions. If zero, go to line 23"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtRothIRALessMax"
+		title:     "If your Roth IRA contributions for 2021 are less than your maximum allowable contribution, see instructions. Otherwise, enter -0-"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "If your Roth IRA contributions for 2021 are less than your maximum allowable contribution, see instructions. Otherwise, enter -0-"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDistRothIRA"
+		title:     "2021 distributions from your Roth IRAs (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "2021 distributions from your Roth IRAs (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAddIRAContribDist"
+		title:     "Add lines 19 and 20 - This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPriorExcContrib"
+		title:     "Prior year excess contributions. Subtract line 21 from line 18. If zero or less, enter -0- This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtExcContribIRA"
+		title:     "Excess contributions for 2021 (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Excess contributions for 2021 (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTotExcContrib"
+		title:     "Total excess contributions. Add lines 22 and 23 - This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAddTaxRothIRA"
+		title:     "Additional tax. Enter 6% (0. 06) of the smaller of line 24 or the value of your Roth IRAs on December 31, 2021 (including 2021 contributions made in 2022). Include this amount on Schedule 2 (Form 1040), line 8"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Additional tax. Enter 6% (0. 06) of the smaller of line 24 or the value of your Roth IRAs on December 31, 2021 (including 2021 contributions made in 2022). Include this amount on Schedule 2 (Form 1040), line 8"
-		type:  "text"
 	}, {
-		maxlength: 75
+		type:      "text"
 		name:      "txtTaxpayerName"
+		title:     "Name - This field is automatically populated for you"
+		maxlength: 75
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtTaxPayerSSN"
+		title:     "Identifying Number - This field is automatically populated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtExcContribESAFrm5329"
+		title:     "Excess contributions from line 32 of your 2020 Form 5329. See instructions. If zero, go to line 31"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Excess contributions from line 32 of your 2020 Form 5329. See instructions. If zero, go to line 31"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtArcherESALessMax"
+		title:     "If the contributions to your Coverdell ESAs for 2021 were less than the maximum allowable contribution, see instructions. Otherwise, enter -0-"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "If the contributions to your Coverdell ESAs for 2021 were less than the maximum allowable contribution, see instructions. Otherwise, enter -0-"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtESADist"
+		title:     "2021 distributions from your Coverdell ESAs (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "2021 distributions from your Coverdell ESAs (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAddArcherESADist"
+		title:     "Add lines 27 and 28  - This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtpriorExcContribESA"
+		title:     "Prior year excess contributions. Subtract line 29 from line 26. If zero or less, enter -0-. This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtExcContribESA"
+		title:     "Excess contributions for 2021 (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Excess contributions for 2021 (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTotExcContribESA"
+		title:     "Total excess contributions. Add lines 30 and 31 -This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAddTaxESA"
+		title:     "Additional tax. Enter 6% (0. 06) of the smaller of line 32 or the value of your Coverdell ESAs on December 31, 2021 (including 2021 contributions made in 2022). Include this amount on Schedule 2 (Form 1040), line 8"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Additional tax. Enter 6% (0. 06) of the smaller of line 32 or the value of your Coverdell ESAs on December 31, 2021 (including 2021 contributions made in 2022). Include this amount on Schedule 2 (Form 1040), line 8"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPrt6Ln34"
+		title:     "Enter the excess contributions from line 40 of your 2020 Form 5329. See instructions. If zero, go to line 39"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Enter the excess contributions from line 40 of your 2020 Form 5329. See instructions. If zero, go to line 39"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPrt6Ln35"
+		title:     "If the contributions to your Archer MSAs for 2021 are less than the maximum allowable contribution, see instructions. Otherwise, enter -0-"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "If the contributions to your Archer MSAs for 2021 are less than the maximum allowable contribution, see instructions. Otherwise, enter -0-"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPrt6Ln36"
+		title:     "2021 distributions from your Archer MSAs from Form 8853, line 8"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "2021 distributions from your Archer MSAs from Form 8853, line 8"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPrt6ln37"
+		title:     "Add lines 35 and 36 - This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPrt6Ln38"
+		title:     "Prior year excess contributions. Subtract line 37 from line 34. If zero or less, enter -0-. This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPrt6Ln39"
+		title:     "Excess contributions for 2021 (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Excess contributions for 2021 (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPrt6Ln40"
+		title:     "Total excess contributions. Add lines 38 and 39 - This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPrt6Ln41"
+		title:     "Additional tax. Enter 6% (0. 06) of the smaller of line 40 or the value of your Archer MSAs on December 31, 2021 (including 2021 contributions made in 2022). Include this amount on Schedule 2 (Form 1040), line 8"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Additional tax. Enter 6% (0. 06) of the smaller of line 40 or the value of your Archer MSAs on December 31, 2021 (including 2021 contributions made in 2022). Include this amount on Schedule 2 (Form 1040), line 8"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtExcContribHSAFrm5329"
+		title:     "Enter the excess contributions from line 48 of your 2020 Form 5329. If zero, go to line 47"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Enter the excess contributions from line 48 of your 2020 Form 5329. If zero, go to line 47"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtHSAContribLessMax"
+		title:     "If the contributions to your HSAs for 2021 are less than the maximum allowable contribution, see instructions. Otherwise, enter -0-"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "If the contributions to your HSAs for 2021 are less than the maximum allowable contribution, see instructions. Otherwise, enter -0-"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtHSADist"
+		title:     "2021 distributions from your HSAs from Form 8889, line 16"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "2021 distributions from your HSAs from Form 8889, line 16"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAddContribDistHSA"
+		title:     "Add lines 43 and 44 - This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPriorExcContribHSA"
+		title:     "Prior year excess contributions. Subtract line 45 from line 42. If zero or less, enter -0- This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtExcContribHSA"
+		title:     "Excess contributions for 2021 (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Excess contributions for 2021 (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTotExcContribHSA"
+		title:     "Total excess contributions. Add lines 46 and 47- This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAddTaxHSA"
+		title:     "Additional tax. Enter 6% (0. 06) of the smaller of line 48 or the value of your HSAs on December 31, 2021 (including 2021 contributions made in 2022). Include this amount on Schedule 2 (Form 1040), line 8"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Additional tax. Enter 6% (0. 06) of the smaller of line 48 or the value of your HSAs on December 31, 2021 (including 2021 contributions made in 2022). Include this amount on Schedule 2 (Form 1040), line 8"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtConABLEAccount"
+		title:     "Excess contributions for 2021 (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Excess contributions for 2021 (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAddTaxABLE"
+		title:     "Additional tax. Enter 6% (0. 06) of the smaller of line 50 or the value of your ABLE account on December 31, 2021. Include this amount on Schedule 2 (Form 1040), line 8"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Additional tax. Enter 6% (0. 06) of the smaller of line 50 or the value of your ABLE account on December 31, 2021. Include this amount on Schedule 2 (Form 1040), line 8"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtMinDist"
+		title:     "Minimum required distribution for 2021 (see instructions)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Minimum required distribution for 2021 (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtActualDist"
+		title:     "Amount actually distributed to you in 2021"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Amount actually distributed to you in 2021"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSubMinActualDist"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
+		title:     "Subtract line 53 from line 52. If zero or less, enter -0- This field is automatically calculated for you"
 		maxlength: 10
-		name:      "txtAddTaxQRP"
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
+		type:      "text"
+		name:      "txtAddTaxQRP"
+		title:     "Additional tax. Enter 50% (0. 50) of line 54. Include this amount on Schedule 2 (Form 1040), line 8 - This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:     "text"
 		name:     "txtSignature"
+		title:    "This field is automatically populated for you"
+		value:    "Verify and E-sign in Step 2"
 		readonly: true
 		tags: [
 			"UPPERCASE",
 		]
-		type:  "text"
-		value: "Verify and E-sign in Step 2"
 	}, {
+		type:     "text"
 		name:     "txtPreparerNote1"
+		title:    "This field is automatically populated for you"
+		value:    "Not for use by paid preparers"
 		readonly: true
 		tags: [
 			"UPPERCASE",
 		]
-		type:  "text"
-		value: "Not for use by paid preparers"
 	}, {
+		type:     "text"
 		name:     "txtPreparerNote"
+		title:    "This field is automatically populated for you"
+		value:    "Self-Prepared"
 		readonly: true
 		tags: [
 			"UPPERCASE",
 		]
-		type:  "text"
-		value: "Self-Prepared"
 	}]
-	id: "f5329s"
 }

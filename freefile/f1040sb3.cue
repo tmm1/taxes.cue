@@ -201,10 +201,13 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+		// Total Payer's Amount
 		txtOrdAmtTot?: #AMOUNT
 		txtOrdAmtTot?: strings.MaxRunes(10)
 		

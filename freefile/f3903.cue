@@ -30,12 +30,16 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
 		txtTaxpayerSSN?: strings.MaxRunes(9)
+		// Line 3. Add lines 1 and 2. - This field is automatically calculated for you
 		txtTotalExpenses?: #AMOUNT
 		txtTotalExpenses?: strings.MaxRunes(10)
+		// Line 5. Moving expense deduction. - This field is automatically calculated for you
 		txtMovExp?: #AMOUNT
 		txtMovExp?: strings.MaxRunes(10)
 		

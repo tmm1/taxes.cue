@@ -406,44 +406,64 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field will be automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// SSN - This field will be automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// Line 1(h). Row 1. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss1?: #AMOUNT
 		txtCapGainOrLoss1?: strings.MaxRunes(10)
+		// Line 1(h). Row 2. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss2?: #AMOUNT
 		txtCapGainOrLoss2?: strings.MaxRunes(10)
+		// Line 1(h). Row 3. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field is automatically calculated for you
 		txtCapGainOrLoss3?: #AMOUNT
 		txtCapGainOrLoss3?: strings.MaxRunes(10)
+		// Line 1(h). Row 4. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss4?: #AMOUNT
 		txtCapGainOrLoss4?: strings.MaxRunes(10)
+		// Line 1(h). Row 5. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss5?: #AMOUNT
 		txtCapGainOrLoss5?: strings.MaxRunes(10)
+		// Line 1(h). Row 6. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss6?: #AMOUNT
 		txtCapGainOrLoss6?: strings.MaxRunes(10)
+		// Line 1(h). Row 7. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss7?: #AMOUNT
 		txtCapGainOrLoss7?: strings.MaxRunes(10)
+		// Line 1(h). Row 8. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss8?: #AMOUNT
 		txtCapGainOrLoss8?: strings.MaxRunes(10)
+		// Line 1(h). Row 9. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss9?: #AMOUNT
 		txtCapGainOrLoss9?: strings.MaxRunes(10)
+		// Line 1(h). Row 10. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss10?: #AMOUNT
 		txtCapGainOrLoss10?: strings.MaxRunes(10)
+		// Line 1(h). Row 11. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss11?: #AMOUNT
 		txtCapGainOrLoss11?: strings.MaxRunes(10)
+		// Line 1(h). Row 12. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss12?: #AMOUNT
 		txtCapGainOrLoss12?: strings.MaxRunes(10)
+		// Line 1(h). Row 13. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss13?: #AMOUNT
 		txtCapGainOrLoss13?: strings.MaxRunes(10)
+		// Line 1(h). Row 14. Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g) - This field will be automatically calculated for you
 		txtCapGainOrLoss14?: #AMOUNT
 		txtCapGainOrLoss14?: strings.MaxRunes(10)
+		// Line 2. Totals - This field will be automatically calculated for you
 		txtTotSalesPrice?: #AMOUNT
 		txtTotSalesPrice?: strings.MaxRunes(10)
+		// Line 2. Totals - This field will be automatically calculated for you
 		txtTotalBuyPrice?: #AMOUNT
 		txtTotalBuyPrice?: strings.MaxRunes(10)
+		// Line 2. Totals - This field will be automatically calculated for you
 		txtTotAmtOfAdj?: #AMOUNT
 		txtTotAmtOfAdj?: strings.MaxRunes(10)
+		// Line 2. Totals - This field will be automatically calculated for you
 		txtTotCapGainOrLoss?: #AMOUNT
 		txtTotCapGainOrLoss?: strings.MaxRunes(10)
 		

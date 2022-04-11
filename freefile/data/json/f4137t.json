@@ -1,313 +1,324 @@
 {
+  "id": "f4137t",
   "fields": [
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "Name of person who received tips. If married, complete a separate Form 4137 for each spouse with unreported tips. - - This field is automatically populated for you",
+      "value": " ",
+      "maxlength": 75,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text",
-      "value": " "
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxPayerSSN",
+      "title": "Social security number - This field is automatically populated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtAaEmpName",
+      "title": "Name of employer to whom you were required to but didn't report all your tips",
+      "maxlength": 50,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Name of employer to whom you were required to but didn't report all your tips",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAbEmpIdNum",
+      "title": "Employer identification number",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Employer identification number",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAcAmtReceived",
+      "title": "Total cash and charge tips you received",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Total cash and charge tips you received",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAdAmtReported",
+      "title": "Total cash and charge tips you reported to your employer",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Total cash and charge tips you reported to your employer",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtBaEmpName",
+      "title": "Name of employer to whom you were required to but didn't report all your tips",
+      "maxlength": 50,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Name of employer to whom you were required to but didn't report all your tips",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtBbEmpIdNum",
+      "title": "Employer identification number",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Employer identification number",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtBcAmtReceived",
+      "title": "Total cash and charge tips you received",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Total cash and charge tips you received",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtBdAmtReported",
+      "title": "Total cash and charge tips you reported to your employer",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Total cash and charge tips you reported to your employer",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtCaEmpName",
+      "title": "Name of employer to whom you were required to but didn't report all your tips",
+      "maxlength": 50,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Name of employer to whom you were required to but didn't report all your tips",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCbEmpIdNum",
+      "title": "Employer identification number",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Employer identification number",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCcAmtReceived",
+      "title": "Total cash and charge tips you received",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Total cash and charge tips you received",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCdAmtReported",
+      "title": "Total cash and charge tips you reported to your employer",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Total cash and charge tips you reported to your employer",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtDaEmpName",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Name of employer to whom you were required to but didn't report all your tips",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDbEmpIdNum",
-      "tags": [
-        "EIN"
-      ],
-      "title": "Employer identification number",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDcAmtReceived",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Total cash and charge tips you received",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDdAmtReported",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Total cash and charge tips you reported to your employer",
-      "type": "text"
-    },
-    {
       "maxlength": 50,
-      "name": "txtEaEmpName",
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Name of employer to whom you were required to but didn't report all your tips",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtDbEmpIdNum",
+      "title": "Employer identification number",
       "maxlength": 10,
-      "name": "txtEbEmpIdNum",
       "tags": [
         "EIN"
-      ],
-      "title": "Employer identification number",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
-      "name": "txtEcAmtReceived",
-      "tags": [
-        "AMOUNT"
-      ],
+      "type": "text",
+      "name": "txtDcAmtReceived",
       "title": "Total cash and charge tips you received",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtEdAmtReported",
       "tags": [
         "AMOUNT"
-      ],
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDdAmtReported",
       "title": "Total cash and charge tips you reported to your employer",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtEaEmpName",
+      "title": "Name of employer to whom you were required to but didn't report all your tips",
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtEbEmpIdNum",
+      "title": "Employer identification number",
       "maxlength": 10,
+      "tags": [
+        "EIN"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtEcAmtReceived",
+      "title": "Total cash and charge tips you received",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtEdAmtReported",
+      "title": "Total cash and charge tips you reported to your employer",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtAmtReceive",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAmtReport",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSubLn3FrLn2",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAmtNotReport",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Cash and charge tips you received but didn't report to your employer because the total was less than $20 in a calendar month",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSubLn5FrLn4",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
       "name": "txtLn7",
+      "title": "Maximum amount of wages (including tips) subject to social security tax",
+      "value": "142,800",
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text",
-      "value": "142,800"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotSsWagesTips",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Total social security wages and social security tips (total of boxes 3 and 7 shown on your Form(s) W-2) and railroad retirement (RRTA) compensation",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtSubLn8FrLn7",
-      "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
+      ]
+    },
+    {
       "type": "text",
-      "value": "142,800"
+      "name": "txtSubLn8FrLn7",
+      "title": "This field is automatically calculated for you",
+      "value": "142,800",
+      "maxlength": 10,
+      "readonly": true,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtUnrepTipsSmall",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Unreported tips subject to social security tax. Enter the smaller of line 6 or line 9. If you received tips as a federal, state, or local government employee, see instructions",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMulLn10ByPt062",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMulLn6ByPt0145",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAddLn11Ln12",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f4137t"
+  ]
 }

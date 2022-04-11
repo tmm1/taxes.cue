@@ -1,117 +1,124 @@
 {
+  "id": "f1310t",
   "fields": [
     {
-      "maxlength": 4,
+      "type": "text",
       "name": "CONST_txtF1310TaxYear",
+      "title": "Tax year decedent was due a refund: Calendar year",
+      "value": "2021",
+      "maxlength": 4,
       "readonly": true,
       "tags": [
         "NUMERIC"
-      ],
-      "type": "text",
-      "value": "2021"
+      ]
     },
     {
-      "maxlength": 12,
+      "type": "text",
       "name": "txtF1310DecedName",
+      "title": "Name of decedent - This field is automatically populated for you",
+      "value": " ",
+      "maxlength": 12,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text",
-      "value": " "
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1310DeceasedDate",
+      "title": "Date of Death - This field is automatically populated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "DATE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtF1310DeceasedSsn",
+      "title": "Decedent's social security number - This field is automatically populated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtF1310PersonFName",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Enter Your Name of person claiming refund",
-      "type": "text"
+      "maxlength": 20,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 1,
+      "type": "text",
       "name": "txtF1310PersonInitial",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Enter Your Initial",
-      "type": "text"
-    },
-    {
-      "maxlength": 25,
-      "name": "txtF1310PersonLname",
+      "maxlength": 1,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Enter Your Last Name",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
+      "name": "txtF1310PersonLname",
+      "title": "Enter Your Last Name",
+      "maxlength": 25,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtF1310PersonSsn",
+      "title": "Enter Your Social Security Number",
+      "maxlength": 11,
       "tags": [
         "SSN"
-      ],
-      "title": "Enter Your Social Security Number",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 70,
+      "type": "text",
       "name": "txtF1310PersonAddr",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Enter Home address (number and street). If you have a P. O . box, see instructions",
-      "type": "text"
+      "maxlength": 70,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 6,
+      "type": "text",
       "name": "txtF1310PersonAptno",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Enter apartment number",
-      "type": "text"
-    },
-    {
-      "maxlength": 60,
-      "name": "txtF1310PersonCity",
+      "maxlength": 6,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Enter City, town or post office. If you have a foreign address, see instructions",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
+      "name": "txtF1310PersonCity",
+      "title": "Enter City, town or post office. If you have a foreign address, see instructions",
+      "maxlength": 60,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtF1310PersonZip",
+      "title": "Enter Zip code",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Enter Zip code",
-      "type": "text"
+      ]
     },
     {
+      "type": "combo",
       "name": "cboF1310PersonState",
+      "title": "Select State",
       "options": [
         {
           "value": ""
@@ -293,58 +300,55 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Select State",
-      "type": "combo"
+      ]
     },
     {
+      "type": "check",
       "name": "chkF1310SurvSpInd",
       "options": [
         {
-          "label": "Part 1. A . Surviving spouse requesting reissuance of a refund check received in the name of both the decedent and the surviving spouse",
-          "value": "1"
+          "value": "1",
+          "label": "Part 1. A . Surviving spouse requesting reissuance of a refund check received in the name of both the decedent and the surviving spouse"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkF1310CourtAppRepInd",
       "options": [
         {
-          "label": "Part 1. B . Court-appointed or certified personal representative (defined below)",
-          "value": "1"
+          "value": "1",
+          "label": "Part 1. B . Court-appointed or certified personal representative (defined below)"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkF1310CompletedInd",
       "options": [
         {
-          "label": "Part 3. C . Person, other than A or B, claiming refund for the decedent's estate. Also, complete Part II",
-          "value": "1"
+          "value": "1",
+          "label": "Part 3. C . Person, other than A or B, claiming refund for the decedent's estate. Also, complete Part II"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1310SignDate",
+      "title": "Enter Date (2 digit month, 2 digit day, 4 digit year)",
+      "maxlength": 10,
       "tags": [
         "DATE"
-      ],
-      "title": "Enter Date (2 digit month, 2 digit day, 4 digit year)",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1310PhoneNum",
+      "title": "Enter Phone no. (optional)",
+      "maxlength": 10,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Enter Phone no. (optional)",
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f1310t"
+  ]
 }

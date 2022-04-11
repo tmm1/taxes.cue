@@ -4,3 +4,4 @@ default:
 	sed -i '' -e 's,"schemas: \(..*\)":,schemas: \1:,g' *.cue
 	cue import -p data -l '"forms"' -f json/forms.json
 	mv json/forms.cue .
+	cue cmd gen

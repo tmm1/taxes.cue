@@ -63,22 +63,31 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(12)
+		// Identifying Number - This field is automatically populated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+		// Line 1c. Multiply line 1a by line 1b - This field is automatically calculated for you
 		txtF8933TonsCaptDisposAmt?: #AMOUNT
 		txtF8933TonsCaptDisposAmt?: strings.MaxRunes(10)
+		// Line 2c. Multiply line 2a by line 2b - This field is automatically calculated for you
 		txtF8933TonsCaptEorAmt?: #AMOUNT
 		txtF8933TonsCaptEorAmt?: strings.MaxRunes(10)
+		// Line 3c. Multiply line 3a by line 3b - This field is automatically calculated for you
 		txtF8933TonsCaptUseAmt?: #AMOUNT
 		txtF8933TonsCaptUseAmt?: strings.MaxRunes(10)
+		// Line 4c. Multiply line 4a by line 4b - This field is automatically calculated for you
 		txtF8933TonsCaptDispUseAmt?: #AMOUNT
 		txtF8933TonsCaptDispUseAmt?: strings.MaxRunes(10)
+		// Line 5c - Multiply line 5a by line 5b - This field is automatically calculated for you
 		txtF8933Sec45qCaptEorAmt?: #AMOUNT
 		txtF8933Sec45qCaptEorAmt?: strings.MaxRunes(10)
+		// Line 6c - Multiply line 6a by line 6b - This field is automatically calculated for you
 		txtF8933Sec45qCaptUseAmt?: #AMOUNT
 		txtF8933Sec45qCaptUseAmt?: strings.MaxRunes(10)
+		// Line 11 -  Add lines 1c, 2c, 3c, 4c, 5c, 6c, 9 , and 10. Partnerships and S corporations, report this amount on Schedule K. All others, report this amount on Form 3800, Part III, line 1x - This field is automatically calculated for you
 		txtF8933CuryrCdt?: #AMOUNT
 		txtF8933CuryrCdt?: strings.MaxRunes(10)
 		

@@ -1,345 +1,364 @@
 {
+  "id": "f6765",
   "fields": [
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "Name - This field is automatically calculated for you",
+      "maxlength": 75,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxpayerEin",
+      "title": "Identifying number - This field is automatically calculated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkCurrAltCdt",
       "options": [
         {
-          "label": "Check to Skip Sec A",
-          "value": "1"
+          "value": "1",
+          "label": "Check to Skip Sec A"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtConsortiaAmtPaid",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1 Certain amounts paid or incurred to energy consortia",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtBasResPay",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 2  Basic research payments to qualified organizations",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtOrgBasPer",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 3  Qualified organization base period amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSubLn218Ln117",
+      "title": "Line 4 Subtract line 3 from line 2. If zero or less, enter 0  - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtWagQualSer",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 5  Wages for qualified services",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCostSupp",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 6 Cost of supplies",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRentLeasComp",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 7  Rental or lease costs of computers",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtAppPerCont",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 8  Enter the applicable percentage of contract research expenses",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtAppPerCont",
+      "title": "Line 8  Enter the applicable percentage of contract research expenses",
       "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtTotQualExp",
+      "title": "Line 9  Total qualified research expenses. Add lines 5 through 8 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 8,
+      "type": "text",
       "name": "txtFixBasPer",
+      "title": "Line 10  Enter fixed-base percentage, but not more than 16%",
+      "maxlength": 8,
       "tags": [
         "PERCENT"
-      ],
-      "title": "Line 10  Enter fixed-base percentage, but not more than 16%",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAnnGrossRecp",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 11  Enter average annual gross receipts",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMulLn10Ln9P",
+      "title": "Line 12 Multiply line 11 by the percentage on line 10 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSubLn18Ln8",
+      "title": "Line 13 Subtract line 12 from line 9. If zero or less, enter 0 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMulLn850P",
+      "title": "Line 14 Multiply line 9 by 50% (0. 50)  - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMinLn12Ln13",
+      "title": "Line 15 Enter the smaller of line 13 or line 14  - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAddLn3Ln14",
+      "title": "Line 16  Add lines 1, 4 , and 15 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRegCredit",
+      "title": "Line 17  If  Yes, multiply line 16 by 15. 8% (0. 158). If  No, multiply line 16 by 20% (0. 20) and see the instructions for the statement that must be attached. Members of controlled groups or businesses under common control, see instructions for the statement that must be attached  - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtConsortiaAmtPaid1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line  18   Certain amounts paid or incurred to energy consortia",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtBasResPay1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 19  Basic research payments to qualified organizations",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtOrgBasPer1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 20  Qualified organization base period amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSubLn218Ln1172",
+      "title": "Line 21 Subtract line 20 from line 19. If zero or less, enter 0  - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAddLn18Ln21",
+      "title": "Line 22 Add lines 18 and 21 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMulLn1920",
+      "title": "Line 23 Multiply line 22 by 20% (0. 20)  - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtWagQualSer1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 24   Wages for qualified services",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCostSupp1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 25  Cost of supplies",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRentLeasComp1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 26   Rental or lease costs of computers",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAppPerCont1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 27   Enter the applicable percentage of contract research expenses",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotQualExp1",
+      "title": "Line 28  Total qualified research expenses. Add lines 24 through 27 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMulLn2615P",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 29  Enter your total qualified research expenses for the prior 3 tax years. If you had no qualified research expenses in any one of those years, skip lines 30 and 31",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSubLn29Ln25",
+      "title": "Line 30  Divide line 29 by 6. 0  - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSubLn30Ln28",
+      "title": "Line 31 Subtract line 30 from line 28. If zero or less, enter  0  - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMulLn262P",
+      "title": "Line 32  Multiply line 31 by 14% (0. 14). If you skipped lines 30 and 31, multiply line 28 by 6% (0. 06) - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAdd20353637",
-      "readonly": true,
-      "tags": [
-        "AMOUNT"
-      ],
-      "type": "text"
-    },
-    {
+      "title": "Line 33 Add lines 23 and 32 - This field is automatically calculated for you",
       "maxlength": 10,
-      "name": "txtAltIncrCredit",
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f6765p2",
-      "name": "cmdAddF6765P2",
+      "type": "text",
+      "name": "txtAltIncrCredit",
+      "title": "Line 34  If  Yes, multiply line 33 by 79% (0. 79). If  No, enter the amount from line 33 and see the line 17  instructions for the statement that must be attached. Members of controlled groups or businesses  under common control, see instructions for the statement that must be attached  - This field is automatically calculated for you",
+      "maxlength": 10,
+      "readonly": true,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
       "type": "button",
-      "value": "Add"
+      "name": "cmdAddF6765P2",
+      "value": "Add",
+      "link": "f6765p2"
     }
-  ],
-  "id": "f6765"
+  ]
 }

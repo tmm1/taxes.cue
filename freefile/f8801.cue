@@ -93,76 +93,112 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtTaxPyrName?: #UPPERCASE
 		txtTaxPyrName?: strings.MaxRunes(75)
+		// This field is automatically calculated for you
 		txtTaxPyrSSN?: #SSN
 		txtTaxPyrSSN?: strings.MaxRunes(11)
+		// Line 4. Combine lines 1, 2 , and 3. If zero or less, enter -0- here and on line 15 and go to Part II. If more than $745, 200 and you were married filing separately for 2020, see instructions
 		txtF8801CmbF6251AmtAdjNol?: #AMOUNT
 		txtF8801CmbF6251AmtAdjNol?: strings.MaxRunes(10)
+		// Line 5. Enter: $113, 400 if married filing jointly or qualifying widow(er) for 2020; $72, 900 if single or head of household for 2020; or $56, 700 if married filing separately for 2020. Estates and trusts, enter $25, 400
 		txtF8801FsAmt1?: #AMOUNT
 		txtF8801FsAmt1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SubCombAmtFsAmt2?: #AMOUNT
 		txtF8801SubCombAmtFsAmt2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801MulSubAmt25Per?: #AMOUNT
 		txtF8801MulSubAmt25Per?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SubFsAmt1MulAmt?: #AMOUNT
 		txtF8801SubFsAmt1MulAmt?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SubCombAmtSubAmt?: #AMOUNT
 		txtF8801SubCombAmtSubAmt?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801TentMinTaxExcl?: #AMOUNT
 		txtF8801TentMinTaxExcl?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801NetMinTaxExcItems?: #AMOUNT
 		txtF8801NetMinTaxExcItems?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801NetMinTaxExcItems?: #AMOUNT
 		txtF8801NetMinTaxExcItems?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SubF6251AmtMinTax?: #AMOUNT
 		txtF8801SubF6251AmtMinTax?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801CmbSubAmtCryNcs?: #AMOUNT
 		txtF8801CmbSubAmtCryNcs?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801AmtLn33FrCurrF6251?: #AMOUNT
 		txtF8801AmtLn33FrCurrF6251?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SubTaxLiabF6251Amt?: #AMOUNT
 		txtF8801SubTaxLiabF6251Amt?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801MinTaxCred?: #AMOUNT
 		txtF8801MinTaxCred?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801MinTaxCredCryNxtYr?: #AMOUNT
 		txtF8801MinTaxCredCryNxtYr?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801MinLn27Ln30?: #AMOUNT
 		txtF8801MinLn27Ln30?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SubLn31Ln27?: #AMOUNT
 		txtF8801SubLn31Ln27?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SubLn34Ln35?: #AMOUNT
 		txtF8801SubLn34Ln35?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801MinLn27Ln28?: #AMOUNT
 		txtF8801MinLn27Ln28?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801MinLn36Ln37?: #AMOUNT
 		txtF8801MinLn36Ln37?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SubLn38FrLn37?: #AMOUNT
 		txtF8801SubLn38FrLn37?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801AmtFrmLn36?: #AMOUNT
 		txtF8801AmtFrmLn36?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SumFsTaxwksh?: #AMOUNT
 		txtF8801SumFsTaxwksh?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801DiffTaxwkshFs?: #AMOUNT
 		txtF8801DiffTaxwkshFs?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SmallTaxwkshDiff?: #AMOUNT
 		txtF8801SmallTaxwkshDiff?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801MulLn4015Per?: #AMOUNT
 		txtF8801MulLn4015Per?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SumQualcap?: #AMOUNT
 		txtF8801SumQualcap?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801DiffSmallQualcap?: #AMOUNT
 		txtF8801DiffSmallQualcap?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801MulbyPercentage?: #AMOUNT
 		txtF8801MulbyPercentage?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SumOfQualfDiff?: #AMOUNT
 		txtF8801SumOfQualfDiff?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801SubLn37FrLn31?: #AMOUNT
 		txtF8801SubLn37FrLn31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801MulLn4225Per?: #AMOUNT
 		txtF8801MulLn4225Per?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801Add33394143?: #AMOUNT
 		txtF8801Add33394143?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8801MinLn44Ln45?: #AMOUNT
 		txtF8801MinLn44Ln45?: strings.MaxRunes(10)
 		

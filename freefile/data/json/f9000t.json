@@ -1,116 +1,126 @@
 {
+  "id": "f9000t",
   "fields": [
     {
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "This field is automatically calculated for you",
+      "value": " ",
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text",
-      "value": " "
+      ]
     },
     {
+      "type": "text",
       "name": "txtTaxPayerSSN",
+      "title": "This field is automatically calculated for you",
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
       "name": "txtAddress1",
+      "title": "This field is automatically calculated for you",
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
       "name": "txtApartment",
+      "title": "This field is automatically calculated for you",
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
       "name": "txtCity",
+      "title": "This field is automatically calculated for you",
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
       "name": "txtState",
+      "title": "This field is automatically calculated for you",
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
       "name": "txtZipCode",
+      "title": "This field is automatically calculated for you",
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
       "name": "txtForeignCountry",
+      "title": "This field is automatically calculated for you",
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
       "name": "txtForeignState",
+      "title": "This field is automatically calculated for you",
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
       "name": "txtForeignCode",
+      "title": "This field is automatically calculated for you",
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkF9000AlternativeMedCd",
       "options": [
         {
-          "label": "00 Standard Print (Cancels prior election)",
-          "value": "00"
+          "value": "00",
+          "label": "00 Standard Print (Cancels prior election)"
         },
         {
-          "label": "01 Large Print",
-          "value": "01"
+          "value": "01",
+          "label": "01 Large Print"
         },
         {
-          "label": "02 Braille",
-          "value": "02"
+          "value": "02",
+          "label": "02 Braille"
         },
         {
-          "label": "03 Audio (MP3)",
-          "value": "03"
+          "value": "03",
+          "label": "03 Audio (MP3)"
         },
         {
-          "label": "04 Plain Text File (TXT)",
-          "value": "04"
+          "value": "04",
+          "label": "04 Plain Text File (TXT)"
         },
         {
-          "label": "05 Braille Ready File (BRF)",
-          "value": "05"
+          "value": "05",
+          "label": "05 Braille Ready File (BRF)"
         }
-      ],
-      "type": "check"
+      ]
     }
-  ],
-  "id": "f9000t"
+  ]
 }

@@ -546,182 +546,28 @@ import "strings"
 			"MD" |
 			"ME" |
 			"MI" |
-			"MN" |
-			"MO" |
-			"MP" |
-			"MS" |
-			"MT" |
-			"NC" |
-			"ND" |
-			"NE" |
-			"NH" |
-			"NJ" |
-			"NM" |
-			"NV" |
-			"NY" |
-			"OH" |
-			"OK" |
-			"OR" |
-			"PA" |
-			"PR" |
-			"RI" |
-			"SC" |
-			"SD" |
-			"TN" |
-			"TX" |
-			"UT" |
-			"VA" |
-			"VI" |
-			"VT" |
-			"WA" |
-			"WI" |
-			"WV" |
-			"WY"
-
-		// Line 21. Child 3 - Zip Code
-		txtF8862UsZipChld3?: #NUMERIC
-		txtF8862UsZipChld3?: strings.MaxRunes(5)
-
-		// If same as shown for Child 1, check this box
-		chkF8862QualChldSameSsn4: *"" | "1"
-
-		// Line 21. Child 4 - Number and street
-		txtF8862UsAddressChld4?: #UPPERCASE
-		txtF8862UsAddressChld4?: strings.MaxRunes(50)
-
-		// Line 21. Child 4 - City
-		txtF8862UsCityChld4?: #UPPERCASE
-		txtF8862UsCityChld4?: strings.MaxRunes(50)
-
-		// Line 21. Child 4 - State
-		cboF8862UsStateChld4: *"" |
-			"AA" |
-			"AE" |
-			"AK" |
-			"AL" |
-			"AP" |
-			"AR" |
-			"AS" |
-			"AZ" |
-			"CA" |
-			"CO" |
-			"CT" |
-			"DC" |
-			"DE" |
-			"FL" |
-			"GA" |
-			"GU" |
-			"HI" |
-			"IA" |
-			"ID" |
-			"IL" |
-			"IN" |
-			"KS" |
-			"KY" |
-			"LA" |
-			"MA" |
-			"MD" |
-			"ME" |
-			"MI" |
-			"MN" |
-			"MO" |
-			"MP" |
-			"MS" |
-			"MT" |
-			"NC" |
-			"ND" |
-			"NE" |
-			"NH" |
-			"NJ" |
-			"NM" |
-			"NV" |
-			"NY" |
-			"OH" |
-			"OK" |
-			"OR" |
-			"PA" |
-			"PR" |
-			"RI" |
-			"SC" |
-			"SD" |
-			"TN" |
-			"TX" |
-			"UT" |
-			"VA" |
-			"VI" |
-			"VT" |
-			"WA" |
-			"WI" |
-			"WV" |
-			"WY"
-
-		// Line 21. Child 41- Zip Code
-		txtF8862UsZipChld4?: #NUMERIC
-		txtF8862UsZipChld4?: strings.MaxRunes(5)
-
-		
-		chkF8862OthPersonU19Ind: "1" | // Line-22. Did any other person (except your spouse, if filing jointly, and your dependents claimed on your return) live with Child 1, Child 2, Child 3, or Child 4 for more than half the year?
-			"0" // Line-22. Did any other person (except your spouse, if filing jointly, and your dependents claimed on your return) live with Child 1, Child 2, Child 3, or Child 4 for more than half the year?
-
-		// Other person living with Child 1: Name
-		txtF8862OthChldPerName1?: #UPPERCASE
-		txtF8862OthChldPerName1?: strings.MaxRunes(35)
-
-		// Other person living with Child 1: Relationship to Child 1
-		txtF8862OthChldPerRel1?: #UPPERCASE
-		txtF8862OthChldPerRel1?: strings.MaxRunes(11)
-
-		// 
-		chkF8862OthPerSameAsSsn2: *"" | "1"
-
-		// Other person living with Child 2: Name
-		txtF8862OthChldPerName2?: #UPPERCASE
-		txtF8862OthChldPerName2?: strings.MaxRunes(35)
-
-		// Other person living with Child 2: Relationship to Child 3
-		txtF8862OthChldPerRel2?: #UPPERCASE
-		txtF8862OthChldPerRel2?: strings.MaxRunes(11)
-
-		// 
-		chkF8862OthPerSameAsSsn3: *"" | "1"
-
-		// Other person living with Child 3: Name
-		txtF8862OthChldPerName3?: #UPPERCASE
-		txtF8862OthChldPerName3?: strings.MaxRunes(35)
-
-		// Other person living with Child 3: Relationship to Child 3
-		txtF8862OthChldPerRel3?: #UPPERCASE
-		txtF8862OthChldPerRel3?: strings.MaxRunes(11)
-
-		// 
-		chkF8862OthPerSameAsSsn4: *"" | "1"
-
-		// Other person living with Child 4: Name
-		txtF8862OthChldPerName4?: #UPPERCASE
-		txtF8862OthChldPerName4?: strings.MaxRunes(35)
-
-		// Other person living with Child 4: Relationship to Child 4
-		txtF8862OthChldPerRel4?: #UPPERCASE
-		txtF8862OthChldPerRel4?: strings.MaxRunes(11)
+			"MN"
 
 		
 	}
 
 	#output: {
+		// Name - automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// SSN - automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+		// Name - This field is automatically populated for you
 		txtTaxPayerName?: #UPPERCASE
 		txtTaxPayerName?: strings.MaxRunes(75)
+		// SSN - This field is automatically populated for you
 		txtTaxPayerSSN?: #UPPERCASE
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// Name - This field is automatically populated for you
 		txtTaxPayerName?: #UPPERCASE
 		txtTaxPayerName?: strings.MaxRunes(75)
-		txtTaxPayerSSN?: #UPPERCASE
-		txtTaxPayerSSN?: strings.MaxRunes(11)
-		txtTaxPayerName?: #UPPERCASE
-		txtTaxPayerName?: strings.MaxRunes(75)
+		// SSN - This field is automatically populated for you
 		txtTaxPayerSSN?: #UPPERCASE
 		txtTaxPayerSSN?: strings.MaxRunes(11)
 		

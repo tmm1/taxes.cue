@@ -65,51 +65,78 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field will be automatically populated for you
 		txtFrm8606RecName?: #UPPERCASE
 		txtFrm8606RecName?: strings.MaxRunes(75)
+		// SSN - This field will be automatically populated for you
 		txtFrm8606RecSSN?: #SSN
 		txtFrm8606RecSSN?: strings.MaxRunes(11)
+		// This Field is automatically calculated for you
 		txtAddress?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtAptNumber?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtCityStZip?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtForeignCountry?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtForeignState?: #UPPERCASE
+		// This Field is automatically calculated for you
 		txtForeignCode?: #UPPERCASE
+		// This field is automatically calculated for you
 		txtPrt1Add1?: #AMOUNT
 		txtPrt1Add1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt1Sub1?: #AMOUNT
 		txtPrt1Sub1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt1Add2?: #AMOUNT
 		txtPrt1Add2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt1Divide1?: #AMOUNT
 		txtPrt1Divide1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt1Multiply1?: #AMOUNT
 		txtPrt1Multiply1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt1Multiply2?: #AMOUNT
 		txtPrt1Multiply2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt1Add3?: #AMOUNT
 		txtPrt1Add3?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt1Sub2?: #AMOUNT
 		txtPrt1Sub2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt1Subln12FrmLn7?: #AMOUNT
 		txtPrt1Subln12FrmLn7?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt1Result?: #AMOUNT
 		txtPrt1Result?: strings.MaxRunes(10)
+		// Name - This field will be automatically populated for you
 		txtFrm8606RecName?: #UPPERCASE
 		txtFrm8606RecName?: strings.MaxRunes(75)
+		// SSN - This field will be automatically populated for you
 		txtFrm8606RecSSN?: #SSN
 		txtFrm8606RecSSN?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtPrt2Result?: #AMOUNT
 		txtPrt2Result?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt3Sub1?: #AMOUNT
 		txtPrt3Sub1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt3Sub2?: #AMOUNT
 		txtPrt3Sub2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt3SubLn24FrmLn23?: #AMOUNT
 		txtPrt3SubLn24FrmLn23?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrt3Result?: #AMOUNT
 		txtPrt3Result?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPrepareSign?: #UPPERCASE
+		// This field is automatically calculated for you
 		txtSelfPrepared?: #UPPERCASE
 		
 	}

@@ -1,287 +1,298 @@
 package data
 
 schemas: f8995aac: {
-	fields: [{
-		maxlength: 75
-		name:      "txt8995SACTaxpayerName"
-		readonly:  true
-		tags: [
-			"UPPERCASE",
-		]
-		type: "text"
-	}, {
-		maxlength: 11
-		name:      "txt8995SACTaxpayerSsn"
-		readonly:  true
-		tags: [
-			"UPPERCASE",
-		]
-		type: "text"
-	}, {
-		maxlength: 75
-		name:      "txtBusiActivityName1"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 1a. Trade or business name. Column: A "
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtBusiActivityName2"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 1a. Trade or business name. Column: B "
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtBusiActivityName3"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 1a. Trade or business name. Column: C "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtBusiActivityEin1"
-		tags: [
-			"EIN",
-		]
-		title: "Line 1b. Taxpayer identification number. Column: A . (SSN - Enter only EIN or SSN, not both)"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtBusiActivityEin2"
-		tags: [
-			"EIN",
-		]
-		title: "Line 1b. Taxpayer identification number. Column: B . (SSN - Enter only EIN or SSN, not both)"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtBusiActivityEin3"
-		tags: [
-			"EIN",
-		]
-		title: "Line 1b. Taxpayer identification number. Column: B . (SSN - Enter only EIN or SSN, not both)"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtWkshQualBusiIncLn2A"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 2. Qualified business income or (loss) from the trade or business. Column: A "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtWkshQualBusiIncLn2B"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 2. Qualified business income or (loss) from the trade or business. Column: B "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtWkshQualBusiIncLn2C"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 2. Qualified business income or (loss) from the trade or business. Column: C "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtWkshWageQualBusiLn11A"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 3. Allocable share of W-2 wages from the trade or business. Column: A "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtWkshWageQualBusiLn11B"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 3. Allocable share of W-2 wages from the trade or business. Column: B "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtWkshWageQualBusiLn11C"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 3. Allocable share of W-2 wages from the trade or business. Column: C "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtWkshUnadjBasisLn12A"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 4. Allocable share of the unadjusted basis immediately after acquisition (UBIA) of all qualified property. Column: A "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtWkshUnadjBasisLn12B"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 4. Allocable share of the unadjusted basis immediately after acquisition (UBIA) of all qualified property. Column: B "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtWkshUnadjBasisLn12C"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 4. Allocable share of the unadjusted basis immediately after acquisition (UBIA) of all qualified property. Column: C "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtQbiaIncmLossPercA"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
-		maxlength: 10
-		name:      "txtQbiaIncmLossPercB"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
-		maxlength: 10
-		name:      "txtQbiaIncmLossPercC"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
-		maxlength: 10
-		name:      "txtQbiaW2WagesPercA"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
-		maxlength: 10
-		name:      "txtQbiaW2WagesPercB"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
-		maxlength: 10
-		name:      "txtQbiaW2WagesPercC"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
-		maxlength: 10
-		name:      "txtQbiaUnadjBasisPercA"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
-		maxlength: 10
-		name:      "txtQbiaUnadjBasisPercB"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
-		maxlength: 10
-		name:      "txtQbiaUnadjBasisPercC"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
-		maxlength: 75
-		name:      "txtBusiActivityNamePrt2A"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Part 2. Publicly Traded Partnership. Line 14. Trade or business name. Column: A "
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtBusiActivityNamePrt2B"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Part 2. Publicly Traded Partnership. Line 14. Trade or business name. Column: B "
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtBusiActivityNamePrt2C"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Part 2. Publicly Traded Partnership. Line 14. Trade or business name. Column: C "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtBusiActivityEinPrt2A"
-		tags: [
-			"EIN",
-		]
-		title: "Line 15. Taxpayer identification number. Column: A . (SSN - Enter only EIN or SSN, not both)"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtBusiActivityEinPrt2B"
-		tags: [
-			"EIN",
-		]
-		title: "Line 15. Taxpayer identification number. Column: B . (SSN - Enter only EIN or SSN, not both)"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtBusiActivityEinPrt2C"
-		tags: [
-			"EIN",
-		]
-		title: "Line 15. Taxpayer identification number. Column: B . (SSN - Enter only EIN or SSN, not both)"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtQualPtpInclossAmtPrt2A"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 16. Qualified PTP income or (loss). Column: A "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtQualPtpInclossAmtPrt2B"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 16. Qualified PTP income or (loss). Column: B "
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtQualPtpInclossAmtPrt2C"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 16. Qualified PTP income or (loss). Column: C "
-		type:  "text"
-	}]
 	id:       "f8995aac"
 	multiple: true
+	fields: [{
+		type:      "text"
+		name:      "txt8995SACTaxpayerName"
+		title:     "This field is automatically calculated for you"
+		maxlength: 75
+		readonly:  true
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txt8995SACTaxpayerSsn"
+		title:     "SSN (Social security number) - This field is automatically calculated for you"
+		maxlength: 11
+		readonly:  true
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityName1"
+		title:     "Line 1a. Trade or business name. Column: A "
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityName2"
+		title:     "Line 1a. Trade or business name. Column: B "
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityName3"
+		title:     "Line 1a. Trade or business name. Column: C "
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityEin1"
+		title:     "Line 1b. Taxpayer identification number. Column: A . (SSN - Enter only EIN or SSN, not both)"
+		maxlength: 10
+		tags: [
+			"EIN",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityEin2"
+		title:     "Line 1b. Taxpayer identification number. Column: B . (SSN - Enter only EIN or SSN, not both)"
+		maxlength: 10
+		tags: [
+			"EIN",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityEin3"
+		title:     "Line 1b. Taxpayer identification number. Column: B . (SSN - Enter only EIN or SSN, not both)"
+		maxlength: 10
+		tags: [
+			"EIN",
+		]
+	}, {
+		type:      "text"
+		name:      "txtWkshQualBusiIncLn2A"
+		title:     "Line 2. Qualified business income or (loss) from the trade or business. Column: A "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtWkshQualBusiIncLn2B"
+		title:     "Line 2. Qualified business income or (loss) from the trade or business. Column: B "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtWkshQualBusiIncLn2C"
+		title:     "Line 2. Qualified business income or (loss) from the trade or business. Column: C "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtWkshWageQualBusiLn11A"
+		title:     "Line 3. Allocable share of W-2 wages from the trade or business. Column: A "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtWkshWageQualBusiLn11B"
+		title:     "Line 3. Allocable share of W-2 wages from the trade or business. Column: B "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtWkshWageQualBusiLn11C"
+		title:     "Line 3. Allocable share of W-2 wages from the trade or business. Column: C "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtWkshUnadjBasisLn12A"
+		title:     "Line 4. Allocable share of the unadjusted basis immediately after acquisition (UBIA) of all qualified property. Column: A "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtWkshUnadjBasisLn12B"
+		title:     "Line 4. Allocable share of the unadjusted basis immediately after acquisition (UBIA) of all qualified property. Column: B "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtWkshUnadjBasisLn12C"
+		title:     "Line 4. Allocable share of the unadjusted basis immediately after acquisition (UBIA) of all qualified property. Column: C "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQbiaIncmLossPercA"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQbiaIncmLossPercB"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQbiaIncmLossPercC"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQbiaW2WagesPercA"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQbiaW2WagesPercB"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQbiaW2WagesPercC"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQbiaUnadjBasisPercA"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQbiaUnadjBasisPercB"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQbiaUnadjBasisPercC"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityNamePrt2A"
+		title:     "Part 2. Publicly Traded Partnership. Line 14. Trade or business name. Column: A "
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityNamePrt2B"
+		title:     "Part 2. Publicly Traded Partnership. Line 14. Trade or business name. Column: B "
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityNamePrt2C"
+		title:     "Part 2. Publicly Traded Partnership. Line 14. Trade or business name. Column: C "
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityEinPrt2A"
+		title:     "Line 15. Taxpayer identification number. Column: A . (SSN - Enter only EIN or SSN, not both)"
+		maxlength: 10
+		tags: [
+			"EIN",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityEinPrt2B"
+		title:     "Line 15. Taxpayer identification number. Column: B . (SSN - Enter only EIN or SSN, not both)"
+		maxlength: 10
+		tags: [
+			"EIN",
+		]
+	}, {
+		type:      "text"
+		name:      "txtBusiActivityEinPrt2C"
+		title:     "Line 15. Taxpayer identification number. Column: B . (SSN - Enter only EIN or SSN, not both)"
+		maxlength: 10
+		tags: [
+			"EIN",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQualPtpInclossAmtPrt2A"
+		title:     "Line 16. Qualified PTP income or (loss). Column: A "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQualPtpInclossAmtPrt2B"
+		title:     "Line 16. Qualified PTP income or (loss). Column: B "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQualPtpInclossAmtPrt2C"
+		title:     "Line 16. Qualified PTP income or (loss). Column: C "
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}]
 }

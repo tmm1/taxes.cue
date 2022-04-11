@@ -172,28 +172,40 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #EIN
 		txtTaxpayerSSN?: strings.MaxRunes(10)
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+		// Line 14. Gain or (loss) recognized on other property given up. Subtract line 13 from line 12. Report the gain or (loss) in the same manner as if the exchange had been a sale - This field is automatically calculated for you
 		txtGainOrLossGivenup?: #AMOUNT
 		txtGainOrLossGivenup?: strings.MaxRunes(10)
+		// Line 17. Add lines 15 and 16 - This field is automatically calculated for you
 		txtAmountRealized?: #AMOUNT
 		txtAmountRealized?: strings.MaxRunes(10)
+		// Line 19. Realized gain or (loss). Subtract line 18 from line 17 - This field is automatically calculated for you
 		txtRealizedGainLoss?: #AMOUNT
 		txtRealizedGainLoss?: strings.MaxRunes(10)
+		// Line 20. Enter the smaller of line 15 or line 19, but not less than zero - This field is automatically calculated for you
 		txtSmallRealGainLiable?: #AMOUNT
 		txtSmallRealGainLiable?: strings.MaxRunes(10)
+		// Line 22. Subtract line 21 from line 20. If zero or less, enter -0-. If more than zero, enter here and on Schedule D or Form 4797, unless the installment method applies. - This field is automatically calculated for you
 		txtNetSmallMinOrdInc?: #AMOUNT
 		txtNetSmallMinOrdInc?: strings.MaxRunes(10)
+		// Line 23. Recognized gain. Add lines 21 and 22 - This field is automatically calculated for you
 		txtRecognizedGain?: #AMOUNT
 		txtRecognizedGain?: strings.MaxRunes(10)
+		// Line 24. Deferred gain or (loss). Subtract line 23 from line 19. If a related party exchange - This field is automatically calculated for you
 		txtDefferedGainLoss?: #AMOUNT
 		txtDefferedGainLoss?: strings.MaxRunes(10)
+		// Line 25. Basis of like-kind property received. Subtract line 15 from the sum of lines 18 and 23 - This field is automatically calculated for you
 		txtBasisPropReceived?: #AMOUNT
 		txtBasisPropReceived?: strings.MaxRunes(10)
 		

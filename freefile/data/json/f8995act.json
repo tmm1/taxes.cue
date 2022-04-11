@@ -1,909 +1,972 @@
 {
+  "id": "f8995act",
+  "multiple": true,
   "fields": [
     {
-      "maxlength": 87,
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 87,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxpayerSsn",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "F8995ACT",
+      "type": "button",
       "name": "btnAddstat8995A",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "F8995ACT"
     },
     {
-      "link": "F8995AA",
+      "type": "button",
       "name": "btnAddSchA",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "F8995AA"
     },
     {
-      "link": "F8995AB",
+      "type": "button",
       "name": "btnAddSchB",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "F8995AB"
     },
     {
-      "link": "F8995AC",
+      "type": "button",
       "name": "btnAddSchC",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "F8995AC"
     },
     {
-      "maxlength": 100,
+      "type": "text",
       "name": "txtQbiBaBusinNameA",
+      "title": "Line 1 A: Trade, business, or aggregation name",
+      "maxlength": 100,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1 A: Trade, business, or aggregation name",
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkQbiBaSpecServiceIndA",
       "options": [
         {
-          "label": "Line 1 A: Check if specified service",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1 A: Check if specified service"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkQbiBaAggregatedIndA",
       "options": [
         {
-          "label": "Line 1 A: Check if aggregation",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1 A: Check if aggregation"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbiBaBusinIdnoA",
+      "title": "Line 1 A: Yaxpayer identification number",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Line 1 A: Yaxpayer identification number",
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkQbiBaPatronIndA",
       "options": [
         {
-          "label": "Line 1 A: check if patron",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1 A: check if patron"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 100,
+      "type": "text",
       "name": "txtQbiBaBusinNameB",
+      "title": "Line 1 B: Trade, business, or aggregation name",
+      "maxlength": 100,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1 B: Trade, business, or aggregation name",
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkQbiBaSpecServiceIndB",
       "options": [
         {
-          "label": "Line 1 A: Check if specified service",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1 A: Check if specified service"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkQbiBaAggregatedIndB",
       "options": [
         {
-          "label": "Line 1 B: Check if aggregation",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1 B: Check if aggregation"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbiBaBusinIdnoB",
+      "title": "Line 1 B: Yaxpayer identification number",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Line 1 B: Yaxpayer identification number",
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkQbiBaPatronIndB",
       "options": [
         {
-          "label": "Line 1 B: check if patron",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1 B: check if patron"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 100,
+      "type": "text",
       "name": "txtQbiBaBusinNameC",
+      "title": "Line 1 C: Trade, business, or aggregation name",
+      "maxlength": 100,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1 C: Trade, business, or aggregation name",
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkQbiBaSpecServiceIndC",
       "options": [
         {
-          "label": "Line 1 C: Check if specified service",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1 C: Check if specified service"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkQbiBaAggregatedIndC",
       "options": [
         {
-          "label": "Line 1 C: Check if aggregation",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1 C: Check if aggregation"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbiBaBusinIdnoC",
+      "title": "Line 1 C: Yaxpayer identification number",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Line 1 C: Yaxpayer identification number",
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkQbiBaPatronIndC",
       "options": [
         {
-          "label": "Line 1 C: check if patron",
-          "value": "1"
+          "value": "1",
+          "label": "Line 1 C: check if patron"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbiBaBusinIncmLossA",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 2 A: Qualified business income from the trade, business, or aggregation",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbiBaBusinIncmLossB",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 2 B: Qualified business income from the trade, business, or aggregation",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbiBaBusinIncmLossC",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 2 C: Qualified business income from the trade, business, or aggregation",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AMulBy20A",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AMulBy20B",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AMulBy20C",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AW2WagesA",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 3 A: Allocable share of W-2 wages from the trade, business, or aggregation",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AW2WagesB",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 3 B: Allocable share of W-2 wages from the trade, business, or aggregation",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AW2WagesC",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 3 C: Allocable share of W-2 wages from the trade, business, or aggregation",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AW2WagesBy50A",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AW2WagesBy50B",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AW2WagesBy50C",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AW2WagesBy25A",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AW2WagesBy25B",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AW2WagesBy25C",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AUnadjBasisA",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 7 A: Allocable share of the 'UBIA' of all qualified property",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AUnadjBasisB",
+      "title": "Line 7 B: Allocable share of the 'UBIA' of all qualified property",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 7 B: Allocable share of the 'UBIA' of all qualified property",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AUnadjBasisC",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 7 B: Allocable share of the 'UBIA' of all qualified property",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AUnadjBy25A",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AUnadjBy25B",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AUnadjBy25C",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AAddBy25A",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AAddBy25B",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AAddBy25C",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AMaxBy2550A",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AMaxBy2550B",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AMaxBy2550C",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AQualPropLimitA",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AQualPropLimitB",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AQualPropLimitC",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AQualIncAftphaseA",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AQualIncAftphaseB",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AQualIncAftphaseC",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ABusibfPatronA",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ABusibfPatronB",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ABusibfPatronC",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "F8995SD",
-      "name": "btnAddSchD",
       "type": "button",
-      "value": "Add"
+      "name": "btnAddSchD",
+      "value": "Add",
+      "link": "F8995SD"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12APatronReducA",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 14 A: Patron reduction. Enter the amount from Schedule D (Form 8995-A), line 6, if any. See instructions",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12APatronReducB",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 14 B: Patron reduction. Enter the amount from Schedule D (Form 8995-A), line 6, if any. See instructions",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12APatronReducC",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 14 C: Patron reduction. Enter the amount from Schedule D (Form 8995-A), line 6, if any. See instructions",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ABusiComponentA",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ABusiComponentB",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ABusiComponentC",
-      "readonly": true,
-      "tags": [
-        "AMOUNT"
-      ],
-      "type": "text"
-    },
-    {
+      "title": "This field is automatically calculated for you",
       "maxlength": 10,
-      "name": "txtQualBusiIncomeComp",
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 87,
+      "type": "text",
+      "name": "txtQualBusiIncomeComp",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
+      "readonly": true,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtTaxpayerNamePg2",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 87,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxpayerSsnPg2",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtLn17Qbi12AMulBy20A",
+      "title": "Line 17 A. Enter the amounts from line 3",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtLn17Qbi12AMulBy20B",
+      "title": "Line 17 B. Enter the amounts from line 3",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtLn17Qbi12AMulBy20C",
+      "title": "Line 17 C. Enter the amounts from line 3",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtLn18Qbi12AMaxBy2550A",
+      "title": "Line 18 A. Enter the amounts from line 10",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtLn18Qbi12AMaxBy2550B",
+      "title": "Line 18 B. Enter the amounts from line 10",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtLn18Qbi12AMaxBy2550C",
+      "title": "Line 18 C. Enter the amounts from line 10",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ASubBy20Frmax50A",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ASubBy20Frmax50B",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ASubBy20Frmax50C",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtIncBfrQbiDeduction",
+      "title": "Line 20. Taxable income before qualified business income deduction",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12AThreshold",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "This field is automatically calculated for you",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ASubThrshIncome",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12APhaseInRange",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "This field is automatically calculated for you",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtQbi12APhaseInPerc",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 5,
       "readonly": true,
       "tags": [
         "NUMERIC"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12APhaseRedTotA",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12APhaseRedTotB",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12APhaseRedTotC",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtLn26Qbi12AQualIncAftphaseA",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtLn26Qbi12AQualIncAftphaseB",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtLn26Qbi12AQualIncAftphaseC",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtLn27QualBusiIncomeComp",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQualReitDivAmtLn19",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 28: Qualified REIT dividends and publicly traded partnership (PTP) income or (loss)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQualReitPtpCryfrdPy",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 29: Qualified REIT dividends and PTP (loss) carryforward from prior years",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQualAddLn19Ln20Ln21",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQual20Percentln21Ln22",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQualAddln51018Ln22Ln24",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtIncBfrQbiDeductionLn33",
+      "title": "Line 33: Taxable income before qualified business income deduction",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtNetCapitalGainsAmt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 34: Net capital gain",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtWkshTaxIncomeLn1",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtWksh20PercentLn1Ln4",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQualSmallLn4Ln25",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQbi12ASec199Adpad",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 38: DPAD under section 199A(g) allocated from an agricultural or horticultural cooperative",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotQualBusIncDed",
+      "title": "Line 39. Total qualified business income deduction. Add lines 37 and 38",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotReitIncPtpCryfrd",
+      "title": "This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f8995act",
-  "multiple": true
+  ]
 }

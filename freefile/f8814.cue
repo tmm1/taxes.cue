@@ -52,32 +52,46 @@ import "strings"
 	}
 
 	#output: {
+		// Name(s) shown on your return - This field is automatically calculated for you
 		txt8814TaxpayerName?: #UPPERCASE
 		txt8814TaxpayerName?: strings.MaxRunes(70)
+		// Your social security number - This field is automatically calculated for you
 		txt8814TaxpayerSsn?: #SSN
 		txt8814TaxpayerSsn?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtAdd1A23?: #AMOUNT
 		txtAdd1A23?: strings.MaxRunes(10)
+		// Base amount. Enter 2, 200
 		txtln5baseamt?: #AMOUNT
 		txtln5baseamt?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSubLn5Ln4?: #AMOUNT
 		txtSubLn5Ln4?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8814DivideRatio1?: #AMOUNT
 		txtF8814DivideRatio1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8814DivideRatio2?: #AMOUNT
 		txtF8814DivideRatio2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8814MultiplyAmt1?: #AMOUNT
 		txtF8814MultiplyAmt1?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8814MultiplyAmt2?: #AMOUNT
 		txtF8814MultiplyAmt2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8814AddAmt1Amt2?: #AMOUNT
 		txtF8814AddAmt1Amt2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8814Income?: #AMOUNT
 		txtF8814Income?: strings.MaxRunes(10)
+		// Amount not taxed. Enter 1, 100
 		txtln13amtnottaxed?: #AMOUNT
 		txtln13amtnottaxed?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSubLn7Ln4?: #AMOUNT
 		txtSubLn7Ln4?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtTaxAmount?: #AMOUNT
 		txtTaxAmount?: strings.MaxRunes(10)
 		

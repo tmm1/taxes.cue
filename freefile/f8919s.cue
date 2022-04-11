@@ -143,19 +143,27 @@ import "strings"
 	}
 
 	#output: {
+		// Name of person - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(95)
+		// Social security number - This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
+		// Line 6. Total wages - This field is automatically calculated for you
 		txtF8919TotalWages?: #AMOUNT
 		txtF8919TotalWages?: strings.MaxRunes(10)
+		// Line 9. Subtract line 8 from line 7 - This field is automatically calculated for you
 		txtF8919SubMaxW2F4137?: #AMOUNT
 		txtF8919SubMaxW2F4137?: strings.MaxRunes(10)
+		// Line 10. Wages subject to social security tax - This field is automatically calculated for you
 		txtF8919WagesSubjSstax?: #AMOUNT
 		txtF8919WagesSubjSstax?: strings.MaxRunes(10)
+		// Line 11. Multiply line 10 by 0. 062 - This field is automatically calculated for you
 		txtF8919MulWagesSubjSstax?: #AMOUNT
 		txtF8919MulWagesSubjSstax?: strings.MaxRunes(10)
+		// Line 12. Multiply line 6 by 0. 0145 - This field is automatically calculated for you
 		txtF8919MulTotalWages?: #AMOUNT
 		txtF8919MulTotalWages?: strings.MaxRunes(10)
+		// Line 13. Add lines 11 and 12 - This field is automatically calculated for you
 		txtF8919AddTotAmount?: #AMOUNT
 		txtF8919AddTotAmount?: strings.MaxRunes(10)
 		

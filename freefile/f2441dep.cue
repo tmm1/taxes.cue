@@ -831,12 +831,16 @@ import "strings"
 	}
 
 	#output: {
+		// Name(s) shown on return  - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+		// Your social security number  - This field is automatically calculated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+		// Total. Enter on an available line on Form 2441 line 1
 		txtCarePersonTotAmt?: #AMOUNT
 		txtCarePersonTotAmt?: strings.MaxRunes(10)
+		// Total. Enter on an available line on Form 2441 line 2
 		txtQualPersonTotAmt?: #AMOUNT
 		txtQualPersonTotAmt?: strings.MaxRunes(10)
 		

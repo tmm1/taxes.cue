@@ -1,414 +1,417 @@
 package data
 
 schemas: f1040sb3: {
-	fields: [{
-		maxlength: 75
-		name:      "txtTaxpayerName"
-		readonly:  true
-		tags: [
-			"UPPERCASE",
-		]
-		type: "text"
-	}, {
-		maxlength: 11
-		name:      "txtTaxpayerSSN"
-		readonly:  true
-		tags: [
-			"UPPERCASE",
-		]
-		type: "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer1"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt1"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer2"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt2"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer3"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt3"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer4"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt4"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer5"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt5"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer6"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt6"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer7"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt7"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer8"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt8"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer9"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt9"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer10"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt10"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer11"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt11"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer12"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt12"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer13"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt13"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer14"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt14"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer15"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt15"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer16"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt16"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer17"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt17"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer18"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt18"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer19"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt19"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer20"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt20"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer21"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt21"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer22"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt22"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer23"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt23"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 75
-		name:      "txtNamePayer24"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Payer's Name"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmt24"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Payer's Amount"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtOrdAmtTot"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}]
 	id: "f1040sb3"
+	fields: [{
+		type:      "text"
+		name:      "txtTaxpayerName"
+		title:     "Name - This field is automatically populated for you"
+		maxlength: 75
+		readonly:  true
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtTaxpayerSSN"
+		title:     "Identifying number - This field is automatically populated for you"
+		maxlength: 11
+		readonly:  true
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer1"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt1"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer2"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt2"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer3"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt3"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer4"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt4"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer5"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt5"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer6"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt6"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer7"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt7"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer8"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt8"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer9"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt9"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer10"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt10"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer11"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt11"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer12"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt12"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer13"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt13"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer14"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt14"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer15"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt15"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer16"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt16"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer17"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt17"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer18"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt18"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer19"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt19"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer20"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt20"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer21"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt21"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer22"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt22"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer23"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt23"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtNamePayer24"
+		title:     "Payer's Name"
+		maxlength: 75
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmt24"
+		title:     "Payer's Amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtOrdAmtTot"
+		title:     "Total Payer's Amount"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}]
 }

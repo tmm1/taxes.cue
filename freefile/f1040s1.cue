@@ -222,42 +222,61 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// This field is automatically calculated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtBusinessInc?: #AMOUNT
 		txtBusinessInc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtOtherGains?: #AMOUNT
 		txtOtherGains?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSuppIncome?: #AMOUNT
 		txtSuppIncome?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFarmLoss?: #AMOUNT
 		txtFarmLoss?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtTotOtherIncAmt?: #AMOUNT
 		txtTotOtherIncAmt?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtOtherInc?: #AMOUNT
 		txtOtherInc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtLn10TotIncome?: #AMOUNT
 		txtLn10TotIncome?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// This field is automatically calculated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtBusiExpReserArtist?: #AMOUNT
 		txtBusiExpReserArtist?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtHsaDed?: #AMOUNT
 		txtHsaDed?: strings.MaxRunes(10)
+		// Moving expenses for members of the Armed Forces. Attach Form 3903
 		txtMovingExp?: #AMOUNT
 		txtMovingExp?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSelfEmp50Per?: #AMOUNT
 		txtSelfEmp50Per?: strings.MaxRunes(10)
+		// Archer MSA deduction. This field is automatically calculated for you
 		txtAmsaContOtherAdj?: #AMOUNT
 		txtAmsaContOtherAdj?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtTotOtherAdjAmt?: #AMOUNT
 		txtTotOtherAdjAmt?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtOtherAdj?: #AMOUNT
 		txtOtherAdj?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtLn26TotAdjInc?: #AMOUNT
 		txtLn26TotAdjInc?: strings.MaxRunes(10)
 		

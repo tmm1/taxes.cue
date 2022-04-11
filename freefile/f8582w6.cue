@@ -73,28 +73,40 @@ import "strings"
 	}
 
 	#output: {
+		// Tax Payer Name - This field is automatically populated for you
 		txtTaxPyrName?: #UPPERCASE
 		txtTaxPyrName?: strings.MaxRunes(75)
+		// Tax Payer SSN - This field is automatically populated for you
 		txtTaxPyrSSN?: #SSN
 		txtTaxPyrSSN?: strings.MaxRunes(9)
+		// Line 1c. Subtract line 1b from line 1a. If zero or less, enter -0- - This field is automatically calculated for you
 		txtWkth7SubNetlossNetinc1?: #AMOUNT
 		txtWkth7SubNetlossNetinc1?: strings.MaxRunes(10)
+		// Line 1e. Allowed loss - This field is automatically calculated for you
 		txtWkth7AllowedLoss1?: #AMOUNT
 		txtWkth7AllowedLoss1?: strings.MaxRunes(10)
+		// Line 1c. Subtract line 1b from line 1a. If zero or less, enter -0- - This field is automatically calculated for you
 		txtWkth7SubNetlossNetinc2?: #AMOUNT
 		txtWkth7SubNetlossNetinc2?: strings.MaxRunes(10)
+		// Line 1e. Allowed loss - This field is automatically calculated for you
 		txtWkth7AllowedLoss2?: #AMOUNT
 		txtWkth7AllowedLoss2?: strings.MaxRunes(10)
+		// Line 1c. Subtract line 1b from line 1a. If zero or less, enter -0- - This field is automatically calculated for you
 		txtWkth7SubNetlossNetinc3?: #AMOUNT
 		txtWkth7SubNetlossNetinc3?: strings.MaxRunes(10)
+		// Line 1e. Allowed loss - This field is automatically calculated for you
 		txtWkth7AllowedLoss3?: #AMOUNT
 		txtWkth7AllowedLoss3?: strings.MaxRunes(10)
+		// Line 1b. Total - This field is automatically calculated for you
 		txtTotWkth7Netinc?: #AMOUNT
 		txtTotWkth7Netinc?: strings.MaxRunes(10)
+		// Line 1c. Total - This field is automatically calculated for you
 		txtTotWkth7Ratio?: #RATIO
 		txtTotWkth7Ratio?: strings.MaxRunes(7)
+		// Line 1d. Total - This field is automatically calculated for you
 		txtTotWkth7UnallowedLoss?: #AMOUNT
 		txtTotWkth7UnallowedLoss?: strings.MaxRunes(10)
+		// Line 1e. Total - This field is automatically calculated for you
 		txtTotWkth7AllowedLoss?: #AMOUNT
 		txtTotWkth7AllowedLoss?: strings.MaxRunes(10)
 		

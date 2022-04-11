@@ -1,505 +1,510 @@
 package data
 
 schemas: f4835: {
+	id:       "f4835"
+	multiple: true
 	fields: [{
-		maxlength: 11
+		type:      "text"
 		name:      "txtF4835Ssn"
+		title:     "This field is automatically calculated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtF4835Name"
+		title:     "This field is automatically calculated for you"
+		maxlength: 50
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtEmployerIdNo"
+		title:     "Employer ID Number"
+		maxlength: 10
 		tags: [
 			"EIN",
 		]
-		title: "Employer ID Number"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkActPartInd"
 		options: [{
-			label: "Yes - Did you actively participate in the operation of this farm during 2020?"
 			value: "1"
+			label: "Yes - Did you actively participate in the operation of this farm during 2020?"
 		}, {
-			label: "No - Did you actively participate in the operation of this farm during 2020?"
 			value: "0"
+			label: "No - Did you actively participate in the operation of this farm during 2020?"
 		}]
-		type: "check"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSaleOfLivestock"
+		title:     "Income from production of livestock, produce, grains, and other crops"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Income from production of livestock, produce, grains, and other crops"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTotCooperDist"
+		title:     "Cooperative distributions"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Cooperative distributions"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTaxCooperDist"
+		title:     "Cooperative distributions - taxable amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Cooperative distributions - taxable amount"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAgriPgmPay"
+		title:     "Agricultural program payments"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Agricultural program payments"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTaxAgriPay"
+		title:     "Agricultural program payments - taxable amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Agricultural program payments - taxable amount"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCccUnderElect"
+		title:     "CCC loans reported under election"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "CCC loans reported under election"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCccForfeited"
+		title:     "CCC loans forfeited"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "CCC loans forfeited"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTaxCccAmt"
+		title:     "CCC loans forfeited - taxable amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "CCC loans forfeited - taxable amount"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCropInsAmt"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Crop insurance proceeds and federal crop disaster payments - amount received"
-		type:  "text"
-	}, {
+		title:     "Crop insurance proceeds and federal crop disaster payments - amount received"
 		maxlength: 10
-		name:      "txtTaxInsurAmt"
 		tags: [
 			"AMOUNT",
 		]
-		title: "Crop insurance proceeds and federal crop disaster payments - taxable amount"
-		type:  "text"
 	}, {
+		type:      "text"
+		name:      "txtTaxInsurAmt"
+		title:     "Crop insurance proceeds and federal crop disaster payments - taxable amount"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type: "check"
 		name: "chkDeferto04Ind"
 		options: [{
-			label: "Check If election to defer to 2021 is attached"
 			value: "1"
+			label: "Check If election to defer to 2021 is attached"
 		}]
-		type: "check"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAmtDefferFr02"
+		title:     "Amount deferred from 2020"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Amount deferred from 2020"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOtherIncOnln6"
+		title:     "Other income, including federal and state gasoline or fuel tax credit or refund"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Other income, including federal and state gasoline or fuel tax credit or refund"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtGrossIncOnln7"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtPenProfitShare"
+		title:     "Expenses - Farm Rental Property - Pension and profit-sharing plans"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Pension and profit-sharing plans"
-		type:  "text"
 	}, {
-		link:  "f4562z"
-		name:  "cmdAddF4562"
 		type:  "button"
+		name:  "cmdAddF4562"
 		value: "Add"
+		link:  "f4562z"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarTruckExp"
+		title:     "Car and truck expenses"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Car and truck expenses"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtChemeicals"
+		title:     "Expenses - Farm Rental Property - Chemicals"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Chemicals"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtConservationExp"
+		title:     "Expenses - Farm Rental Property - Conservation expenses"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Conservation expenses"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtRentLeaseVehicle"
+		title:     "Expenses - Farm Rental Property - Rent or lease: Vehicles, machinery, and equipment"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Rent or lease: Vehicles, machinery, and equipment"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCustomHireMcwork"
+		title:     "Expenses - Farm Rental Property -Custom hire (machine work)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property -Custom hire (machine work)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtRentLeaseOther"
+		title:     "Expenses - Farm Rental Property - Rent or lease - Other"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Rent or lease - Other"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtRepairMaintenance"
+		title:     "Expenses - Farm Rental Property - Repairs and maintenance"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Repairs and maintenance"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepreciationExpDed"
+		title:     "Expenses - Farm Rental Property - Depreciation and section 179 expense deduction not claimed elsewhere"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Depreciation and section 179 expense deduction not claimed elsewhere"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSeedPlantPurchar"
+		title:     "Expenses - Farm Rental Property - Seeds and plants"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Seeds and plants"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtStorageWarehouse"
+		title:     "Expenses - Farm Rental Property - Storage and warehousing"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Storage and warehousing"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSuppliesPurchase"
+		title:     "Expenses - Farm Rental Property - Supplies"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Supplies"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtEmpBenfProg"
+		title:     "Expenses - Farm Rental Property - Employee benefit programs other than on line 21"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Employee benefit programs other than on line 21"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTaxesOnSchf"
+		title:     "Expenses - Farm Rental Property - Taxes"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Taxes"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFeedPurchased"
+		title:     "Expenses - Farm Rental Property - Feed"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Feed"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtUtilitiesExp"
+		title:     "Expenses - Farm Rental Property - Utilities"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Utilities"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFertilizersLime"
+		title:     "Expenses - Farm Rental Property - Fertilizers and lime"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Fertilizers and lime"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFreightTrucking"
+		title:     "Expenses - Farm Rental Property - Freight and trucking"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Freight and trucking"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtBreedingMedicine"
+		title:     "Expenses - Farm Rental Property - Veterinary, breeding, and medicine"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Veterinary, breeding, and medicine"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtGasolineFuelOil"
+		title:     "Expenses - Farm Rental Property - Gasoline, fuel, and oil"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Gasoline, fuel, and oil"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtInsuranceOthHealth"
+		title:     "Expenses - Farm Rental Property - Insurance (other than health)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Insurance (other than health)"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtDescriptionName1"
+		title:     "Expenses - Farm Rental Property - Other expenses description(a)"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses description(a)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDescripAmount1"
+		title:     "Expenses - Farm Rental Property - Other expenses amount(a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses amount(a)"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtDescriptionName2"
+		title:     "Expenses - Farm Rental Property - Other expenses description(b)"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses description(b)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDescripAmount2"
+		title:     "Expenses - Farm Rental Property - Other expenses amount(b)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses amount(b)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtMortgageIntr"
+		title:     "Expenses - Farm Rental Property - Mortgage (paid to banks, etc. )"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Mortgage (paid to banks, etc. )"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtDescriptionName3"
+		title:     "Expenses - Farm Rental Property - Other expenses description(c)"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses description(c)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDescripAmount3"
+		title:     "Expenses - Farm Rental Property - Other expenses amount(c)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses amount(c)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtOtherInterest"
+		title:     "Expenses - Farm Rental Property - Interest - Other"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Interest - Other"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtDescriptionName4"
+		title:     "Expenses - Farm Rental Property - Other expenses description(d)"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses description(d)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDescripAmount4"
+		title:     "Expenses - Farm Rental Property - Other expenses amount(d)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses amount(d)"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtDescriptionName5"
+		title:     "Expenses - Farm Rental Property - Other expenses description(e)"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses description(e)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDescripAmount5"
+		title:     "Expenses - Farm Rental Property - Other expenses amount(e)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses amount(e)"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtDescriptionName6"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Expenses - Farm Rental Property - Other expenses description(f)"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtDescripAmount6"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Expenses - Farm Rental Property - Other expenses amount(f)"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtLaborHired"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Expenses - Farm Rental Property - Labor hired (less employment credits)"
-		type:  "text"
-	}, {
+		title:     "Expenses - Farm Rental Property - Other expenses description(f)"
 		maxlength: 50
-		name:      "txtDescriptionName7"
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses description(g)"
-		type:  "text"
 	}, {
+		type:      "text"
+		name:      "txtDescripAmount6"
+		title:     "Expenses - Farm Rental Property - Other expenses amount(f)"
 		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtLaborHired"
+		title:     "Expenses - Farm Rental Property - Labor hired (less employment credits)"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDescriptionName7"
+		title:     "Expenses - Farm Rental Property - Other expenses description(g)"
+		maxlength: 50
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
 		name:      "txtDescripAmount7"
+		title:     "Expenses - Farm Rental Property - Other expenses amount(g)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Expenses - Farm Rental Property - Other expenses amount(g)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtTotaExpLn8Toln30G"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
+		title:     "This field is automatically calculated for you"
 		maxlength: 10
-		name:      "txtNetFarmProfitLoss"
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
+		type:      "text"
+		name:      "txtNetFarmProfitLoss"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type: "check"
 		name: "chkRiskInd"
 		options: [{
-			label: "All investment is at risk"
 			value: "1"
+			label: "All investment is at risk"
 		}, {
-			label: "Some investment is not at risk"
 			value: "2"
+			label: "Some investment is not at risk"
 		}]
-		type: "check"
 	}, {
-		link:  "f8582"
+		type:  "button"
 		name:  "cmdAddF8582"
-		type:  "button"
 		value: "Add Form 8582"
+		link:  "f8582"
 	}, {
-		link:  "f6198z"
-		name:  "cmdAddF6198"
 		type:  "button"
+		name:  "cmdAddF6198"
 		value: "Add Form 6198"
+		link:  "f6198z"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDeductLoss8582"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "This field is automatically calculated for you"
-		type:  "text"
 	}]
-	id:       "f4835"
-	multiple: true
 }

@@ -1,71 +1,76 @@
 package data
 
 schemas: f2441dep: {
+	id: "f2441dep"
 	fields: [{
-		maxlength: 87
+		type:      "text"
 		name:      "txtTaxpayerName"
+		title:     "Name(s) shown on return  - This field is automatically calculated for you"
+		maxlength: 87
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtTaxpayerSSN"
+		title:     "Your social security number  - This field is automatically calculated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonFname1"
+		title:     "Row 1. Line 1(a)Care provider's name  First name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 1. Line 1(a)Care provider's name  First name"
-		type:  "text"
 	}, {
-		maxlength: 70
+		type:      "text"
 		name:      "txtCarePersonAddr1"
+		title:     "Row 1. Line 1(b) Address(number, street, apt. no. , )"
+		maxlength: 70
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 1. Line 1(b) Address(number, street, apt. no. , )"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtCarePersonSSN1"
+		title:     "Row 1. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 1. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkCarePerHouseholdEmpInd1"
 		options: [{
-			label: ""
 			value: "1"
+			label: ""
 		}]
-		type: "check"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtCarePersonLname1"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Row 1. Line 1(a)Care provider's name  Last name or Business name"
-		type:  "text"
-	}, {
+		title:     "Row 1. Line 1(a)Care provider's name  Last name or Business name"
 		maxlength: 50
-		name:      "txtCarePersonCity1"
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 1. Line 1(b) City"
-		type:  "text"
 	}, {
-		name: "cboCarePersonState1"
+		type:      "text"
+		name:      "txtCarePersonCity1"
+		title:     "Row 1. Line 1(b) City"
+		maxlength: 50
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:  "combo"
+		name:  "cboCarePersonState1"
+		title: "Row 1. Line 1(b) State"
 		options: [
 			{
 				value: ""
@@ -247,81 +252,81 @@ schemas: f2441dep: {
 			{
 				value: "WY"
 			}]
-		title: "Row 1. Line 1(b) State"
-		type:  "combo"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtCarePersonZip1"
+		title:     "Row 1. Line 1(b) Zip"
+		maxlength: 5
 		tags: [
 			"NUMERIC",
 		]
-		title: "Row 1. Line 1(b) Zip"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonEIN1"
+		title:     "Row 1. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 10
 		tags: [
 			"EIN",
 		]
-		title: "Row 1. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonAmount1"
+		title:     "Row 1. Line 1(d)Amount paid"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 1. Line 1(d)Amount paid"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonFname2"
+		title:     "Row 2. Line 1(a)Care provider's  First name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 2. Line 1(a)Care provider's  First name"
-		type:  "text"
 	}, {
-		maxlength: 70
+		type:      "text"
 		name:      "txtCarePersonAddr2"
+		title:     "Row 2. Line 1(b) Address(number, street, apt. no. , )"
+		maxlength: 70
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 2. Line 1(b) Address(number, street, apt. no. , )"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtCarePersonSSN2"
+		title:     "Row 2. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 2. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkCarePerHouseholdEmpInd2"
 		options: [{
-			label: ""
 			value: "1"
+			label: ""
 		}]
-		type: "check"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonLname2"
+		title:     "Row 2. Line 1(a)Care provider's Last name or Business name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 2. Line 1(a)Care provider's Last name or Business name"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtCarePersonCity2"
+		title:     "Row 2. Line 1(b) City"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 2. Line 1(b) City"
-		type:  "text"
 	}, {
-		name: "cboCarePersonState2"
+		type:  "combo"
+		name:  "cboCarePersonState2"
+		title: "Row 2. Line 1(b) State"
 		options: [
 			{
 				value: ""
@@ -503,81 +508,81 @@ schemas: f2441dep: {
 			{
 				value: "WY"
 			}]
-		title: "Row 2. Line 1(b) State"
-		type:  "combo"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtCarePersonZip2"
+		title:     "Row 2. Line 1(b) Zip"
+		maxlength: 5
 		tags: [
 			"NUMERIC",
 		]
-		title: "Row 2. Line 1(b) Zip"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonEIN2"
+		title:     "Row 2. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 10
 		tags: [
 			"EIN",
 		]
-		title: "Row 2. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonAmount2"
+		title:     "Row 2. Line 1(d)Amount paid"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 2. Line 1(d)Amount paid"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonFname3"
+		title:     "Row 3. Line 1(a)Care provider's name  First name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 3. Line 1(a)Care provider's name  First name"
-		type:  "text"
 	}, {
-		maxlength: 70
+		type:      "text"
 		name:      "txtCarePersonAddr3"
+		title:     "Row 3. Line 1(b) Address(number, street, apt. no. , )"
+		maxlength: 70
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 3. Line 1(b) Address(number, street, apt. no. , )"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtCarePersonSSN3"
+		title:     "Row 3. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 3. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkCarePerHouseholdEmpInd3"
 		options: [{
-			label: ""
 			value: "1"
+			label: ""
 		}]
-		type: "check"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonLname3"
+		title:     "Row 3. Line 1(a)Care provider's Last name or Business name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 3. Line 1(a)Care provider's Last name or Business name"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtCarePersonCity3"
+		title:     "Row 3. Line 1(b) City"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 3. Line 1(b) City"
-		type:  "text"
 	}, {
-		name: "cboCarePersonState3"
+		type:  "combo"
+		name:  "cboCarePersonState3"
+		title: "Row 3. Line 1(b) State"
 		options: [
 			{
 				value: ""
@@ -759,81 +764,81 @@ schemas: f2441dep: {
 			{
 				value: "WY"
 			}]
-		title: "Row 3. Line 1(b) State"
-		type:  "combo"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtCarePersonZip3"
+		title:     "Row 3. Line 1(b) Zip"
+		maxlength: 5
 		tags: [
 			"NUMERIC",
 		]
-		title: "Row 3. Line 1(b) Zip"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonEIN3"
+		title:     "Row 3. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 10
 		tags: [
 			"EIN",
 		]
-		title: "Row 3. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonAmount3"
+		title:     "Row 3. Line 1(d)Amount paid"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 3. Line 1(d)Amount paid"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonFname4"
+		title:     "Row 4. Line 1(a)Care provider's  First name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 4. Line 1(a)Care provider's  First name"
-		type:  "text"
 	}, {
-		maxlength: 70
+		type:      "text"
 		name:      "txtCarePersonAddr4"
+		title:     "Row 4. Line 1(b) Address(number, street, apt. no. , )"
+		maxlength: 70
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 4. Line 1(b) Address(number, street, apt. no. , )"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtCarePersonSSN4"
+		title:     "Row 4. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 4. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkCarePerHouseholdEmpInd4"
 		options: [{
-			label: ""
 			value: "1"
+			label: ""
 		}]
-		type: "check"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonLname4"
+		title:     "Row 4. Line 1(a)Care provider's Last name or Business name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 4. Line 1(a)Care provider's Last name or Business name"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtCarePersonCity4"
+		title:     "Row 4. Line 1(b) City"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 4. Line 1(b) City"
-		type:  "text"
 	}, {
-		name: "cboCarePersonState4"
+		type:  "combo"
+		name:  "cboCarePersonState4"
+		title: "Row 4. Line 1(b) State"
 		options: [
 			{
 				value: ""
@@ -1015,81 +1020,81 @@ schemas: f2441dep: {
 			{
 				value: "WY"
 			}]
-		title: "Row 4. Line 1(b) State"
-		type:  "combo"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtCarePersonZip4"
+		title:     "Row 4. Line 1(b) Zip"
+		maxlength: 5
 		tags: [
 			"NUMERIC",
 		]
-		title: "Row 4. Line 1(b) Zip"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonEIN4"
+		title:     "Row 4. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 10
 		tags: [
 			"EIN",
 		]
-		title: "Row 4. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonAmount4"
+		title:     "Row 4. Line 1(d)Amount paid"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 4. Line 1(d)Amount paid"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonFname5"
+		title:     "Row 5. Line 1(a)Care provider's  First name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 5. Line 1(a)Care provider's  First name"
-		type:  "text"
 	}, {
-		maxlength: 70
+		type:      "text"
 		name:      "txtCarePersonAddr5"
+		title:     "Row 5. Line 1(b) Address(number, street, apt. no. , )"
+		maxlength: 70
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 5. Line 1(b) Address(number, street, apt. no. , )"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtCarePersonSSN5"
+		title:     "Row 5. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 5. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkCarePerHouseholdEmpInd5"
 		options: [{
-			label: ""
 			value: "1"
+			label: ""
 		}]
-		type: "check"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonLname5"
+		title:     "Row 5. Line 1(a)Care provider's Last name or Business name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 5. Line 1(a)Care provider's Last name or Business name"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtCarePersonCity5"
+		title:     "Row 5. Line 1(b) City"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 5. Line 1(b) City"
-		type:  "text"
 	}, {
-		name: "cboCarePersonState5"
+		type:  "combo"
+		name:  "cboCarePersonState5"
+		title: "Row 5. Line 1(b) State"
 		options: [
 			{
 				value: ""
@@ -1271,81 +1276,81 @@ schemas: f2441dep: {
 			{
 				value: "WY"
 			}]
-		title: "Row 5. Line 1(b) State"
-		type:  "combo"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtCarePersonZip5"
+		title:     "Row 5. Line 1(b) Zip"
+		maxlength: 5
 		tags: [
 			"NUMERIC",
 		]
-		title: "Row 5. Line 1(b) Zip"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonEIN5"
+		title:     "Row 5. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 10
 		tags: [
 			"EIN",
 		]
-		title: "Row 5. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonAmount5"
+		title:     "Row 5. Line 1(d)Amount paid"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 5. Line 1(d)Amount paid"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonFname6"
+		title:     "Row 6. Line 1(a)Care provider's  First name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 6. Line 1(a)Care provider's  First name"
-		type:  "text"
 	}, {
-		maxlength: 70
+		type:      "text"
 		name:      "txtCarePersonAddr6"
+		title:     "Row 6. Line 1(b) Address(number, street, apt. no. , )"
+		maxlength: 70
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 6. Line 1(b) Address(number, street, apt. no. , )"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtCarePersonSSN6"
+		title:     "Row 6. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 6. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkCarePerHouseholdEmpInd6"
 		options: [{
-			label: ""
 			value: "1"
+			label: ""
 		}]
-		type: "check"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtCarePersonLname6"
+		title:     "Row 6. Line 1(a)Care provider's Last name or Business name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 6. Line 1(a)Care provider's Last name or Business name"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtCarePersonCity6"
+		title:     "Row 6. Line 1(b) City"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 6. Line 1(b) City"
-		type:  "text"
 	}, {
-		name: "cboCarePersonState6"
+		type:  "combo"
+		name:  "cboCarePersonState6"
+		title: "Row 6. Line 1(b) State"
 		options: [
 			{
 				value: ""
@@ -1527,528 +1532,527 @@ schemas: f2441dep: {
 			{
 				value: "WY"
 			}]
-		title: "Row 6. Line 1(b) State"
-		type:  "combo"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtCarePersonZip6"
+		title:     "Row 6. Line 1(b) Zip"
+		maxlength: 5
 		tags: [
 			"NUMERIC",
 		]
-		title: "Row 6. Line 1(b) Zip"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonEIN6"
+		title:     "Row 6. Line 1(c)Identifying number (SSN or EIN)"
+		maxlength: 10
 		tags: [
 			"EIN",
 		]
-		title: "Row 6. Line 1(c)Identifying number (SSN or EIN)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonAmount6"
+		title:     "Row 6. Line 1(d)Amount paid"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 6. Line 1(d)Amount paid"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtCarePersonTotAmt"
+		title:     "Total. Enter on an available line on Form 2441 line 1"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname1"
+		title:     "Row 1. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 1. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname1"
+		title:     "Row 1. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 1. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN1"
+		title:     "Row 1. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 1. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount1"
+		title:     "Row 1. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 1. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname2"
+		title:     "Row 2. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 2. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname2"
+		title:     "Row 2. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 2. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN2"
+		title:     "Row 2. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 2. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount2"
+		title:     "Row 2. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 2. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname3"
+		title:     "Row 3. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 3. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname3"
+		title:     "Row 3. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 3. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN3"
+		title:     "Row 3. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 3. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount3"
+		title:     "Row 3. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 3. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname4"
+		title:     "Row 4. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 4. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname4"
+		title:     "Row 4. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 4. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN4"
+		title:     "Row 4. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 4. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount4"
+		title:     "Row 4 Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 4 Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname5"
+		title:     "Row 5. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 5. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname5"
+		title:     "Row 5. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 5. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN5"
+		title:     "Row 5. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 5. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount5"
+		title:     "Row 5. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 5. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname6"
+		title:     "Row 6. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 6. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname6"
+		title:     "Row 6. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 6. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN6"
+		title:     "Row 6. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 6. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount6"
+		title:     "Row 6. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 6. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname7"
+		title:     "Row 7. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 7. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname7"
+		title:     "Row 7. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 7. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN7"
+		title:     "Row 7. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 7. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount7"
+		title:     "Row 7. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 7. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname8"
+		title:     "Row 8. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 8. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname8"
+		title:     "Row 8. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 8. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN8"
+		title:     "Row 8. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 8. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount8"
+		title:     "Row 8 Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 8 Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname9"
+		title:     "Row 9. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 9. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname9"
+		title:     "Row 9. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 9. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN9"
+		title:     "Row 9. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 9. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount9"
+		title:     "Row 9. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 9. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname10"
+		title:     "Row 10. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 10. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname10"
+		title:     "Row 10. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 10. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN10"
+		title:     "Row 10. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 10. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount10"
+		title:     "Row 10 Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 10 Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname11"
+		title:     "Row 11. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 11. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname11"
+		title:     "Row 11. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 11. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN11"
+		title:     "Row 11. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 11. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount11"
+		title:     "Row 11. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 11. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname12"
+		title:     "Row 12. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 12. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname12"
+		title:     "Row 12. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 12. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN12"
+		title:     "Row 12. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 12. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount12"
+		title:     "Row 12. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 12. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname13"
+		title:     "Row 13. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 13. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname13"
+		title:     "Row 13. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 13. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN13"
+		title:     "Row 13. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Row 13. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtQualPersonAmount13"
+		title:     "Row 13. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 13. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonFname14"
+		title:     "Row 14. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 14. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtQualPersonLname14"
+		title:     "Row 14. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Row 14. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtQualPersonSSN14"
-		tags: [
-			"SSN",
-		]
-		title: "Row 14. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtQualPersonAmount14"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Row 14. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
-	}, {
-		maxlength: 20
-		name:      "txtQualPersonFname15"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Row 15. Line 1(a) Qualifying Persons First Name"
-		type:  "text"
-	}, {
-		maxlength: 20
-		name:      "txtQualPersonLname15"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Row 15. Line 1(a) Qualifying Persons Last Name"
-		type:  "text"
-	}, {
+		title:     "Row 14. Line 1(b) Qualifying Persons SSN"
 		maxlength: 11
-		name:      "txtQualPersonSSN15"
 		tags: [
 			"SSN",
 		]
-		title: "Row 15. Line 1(b) Qualifying Persons SSN"
-		type:  "text"
 	}, {
+		type:      "text"
+		name:      "txtQualPersonAmount14"
+		title:     "Row 14. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
 		maxlength: 10
-		name:      "txtQualPersonAmount15"
 		tags: [
 			"AMOUNT",
 		]
-		title: "Row 15. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
-		type:  "text"
 	}, {
+		type:      "text"
+		name:      "txtQualPersonFname15"
+		title:     "Row 15. Line 1(a) Qualifying Persons First Name"
+		maxlength: 20
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQualPersonLname15"
+		title:     "Row 15. Line 1(a) Qualifying Persons Last Name"
+		maxlength: 20
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQualPersonSSN15"
+		title:     "Row 15. Line 1(b) Qualifying Persons SSN"
+		maxlength: 11
+		tags: [
+			"SSN",
+		]
+	}, {
+		type:      "text"
+		name:      "txtQualPersonAmount15"
+		title:     "Row 15. Line 1(c) Qualified expenses you incurred and paid in 2021 for the person listed in column (a)"
 		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
 		name:      "txtQualPersonTotAmt"
+		title:     "Total. Enter on an available line on Form 2441 line 2"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}]
-	id: "f2441dep"
 }

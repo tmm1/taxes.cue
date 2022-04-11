@@ -234,15 +234,21 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field will be automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// SSN - This field will be automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
+		// Line 8e. Difference between (c) and (d). This field will be automatically calculated for you
 		txtDiffBwAmt1?: #AMOUNT
 		txtDiffBwAmt1?: strings.MaxRunes(10)
+		// Line 9e. Difference between (c) and (d). This field will be automatically calculated for you
 		txtDiffBwAmt2?: #AMOUNT
 		txtDiffBwAmt2?: strings.MaxRunes(10)
+		// Line 10e. . Difference between (c) and (d). This field will be automatically calculated for you
 		txtDiffBwAmt3?: #AMOUNT
 		txtDiffBwAmt3?: strings.MaxRunes(10)
+		// Line 11e. . Difference between (c) and (d). This field will be automatically calculated for you
 		txtDiffBwAmt4?: #AMOUNT
 		txtDiffBwAmt4?: strings.MaxRunes(10)
 		

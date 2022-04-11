@@ -1,84 +1,88 @@
 package data
 
 schemas: f3903: {
-	fields: [{
-		maxlength: 75
-		name:      "txtTaxpayerName"
-		readonly:  true
-		tags: [
-			"UPPERCASE",
-		]
-		type: "text"
-	}, {
-		maxlength: 9
-		name:      "txtTaxpayerSSN"
-		readonly:  true
-		tags: [
-			"UPPERCASE",
-		]
-		type: "text"
-	}, {
-		name: "chkMilitaryMoveInd"
-		options: [{
-			label: "Member of the Armed Forces"
-			value: "1"
-		}]
-		type: "check"
-	}, {
-		maxlength: 10
-		name:      "txtTranspCost"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 1. Transportation and storage of household goods and personal effects"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtTravelLodgeCost"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 2. Travel from your old home to your new home"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtTotalExpenses"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
-		maxlength: 10
-		name:      "txtTotalAmtTopay"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 4. Total amount the government paid you for the expenses listed on lines 1 and 2 that is not included in box 1 of your Form W-2"
-		type:  "text"
-	}, {
-		name: "chkTotalExpensesNoInd"
-		options: [{
-			label: "No"
-			value: "1"
-		}]
-		type: "check"
-	}, {
-		name: "chkTotalExpensesYesInd"
-		options: [{
-			label: "Yes"
-			value: "1"
-		}]
-		type: "check"
-	}, {
-		maxlength: 10
-		name:      "txtMovExp"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}]
 	id:       "f3903"
 	multiple: true
+	fields: [{
+		type:      "text"
+		name:      "txtTaxpayerName"
+		title:     "Name - This field is automatically populated for you"
+		maxlength: 75
+		readonly:  true
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtTaxpayerSSN"
+		title:     "Identifying number - This field is automatically populated for you"
+		maxlength: 9
+		readonly:  true
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type: "check"
+		name: "chkMilitaryMoveInd"
+		options: [{
+			value: "1"
+			label: "Member of the Armed Forces"
+		}]
+	}, {
+		type:      "text"
+		name:      "txtTranspCost"
+		title:     "Line 1. Transportation and storage of household goods and personal effects"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtTravelLodgeCost"
+		title:     "Line 2. Travel from your old home to your new home"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtTotalExpenses"
+		title:     "Line 3. Add lines 1 and 2. - This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtTotalAmtTopay"
+		title:     "Line 4. Total amount the government paid you for the expenses listed on lines 1 and 2 that is not included in box 1 of your Form W-2"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type: "check"
+		name: "chkTotalExpensesNoInd"
+		options: [{
+			value: "1"
+			label: "No"
+		}]
+	}, {
+		type: "check"
+		name: "chkTotalExpensesYesInd"
+		options: [{
+			value: "1"
+			label: "Yes"
+		}]
+	}, {
+		type:      "text"
+		name:      "txtMovExp"
+		title:     "Line 5. Moving expense deduction. - This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}]
 }

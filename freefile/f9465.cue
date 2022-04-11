@@ -161,39 +161,57 @@ import "strings"
 	}
 
 	#output: {
+		// 1a. Your first name and initial. - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Last name -  This field is automatically populated for you
 		txtTaxPayerLastName?: #UPPERCASE
 		txtTaxPayerLastName?: strings.MaxRunes(75)
+		// Your social security number. - This field is automatically populated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+		// If a joint return, spouse's first name and initial. - This field is automatically populated for you
 		txtSpFirstName?: #UPPERCASE
 		txtSpFirstName?: strings.MaxRunes(75)
+		// Spouse's Last Name. - This field is automatically populated for you
 		txtSpouseLastName?: #UPPERCASE
 		txtSpouseLastName?: strings.MaxRunes(75)
+		// Spouse's social security number. -This field is automatically populated for you
 		txtSpSSN?: #SSN
 		txtSpSSN?: strings.MaxRunes(11)
+		// Current address (number and street). If you have a P. O . box and no home delivery, enter your box number. - This field is automatically populated for you
 		txtAddress?: #UPPERCASE
+		// Apt. number. - This field is automatically populated for you
 		txtApartment?: #UPPERCASE
 		txtApartment?: strings.MaxRunes(5)
+		// City, town or post office, state, and ZIP code. If a foreign address, also complete the spaces below (see instructions). - This field is automatically populated for you
 		txtCitystatezip?: #UPPERCASE
 		txtCitystatezip?: strings.MaxRunes(12)
+		// Foreign country name. - This field is automatically populated for you
 		txtForeignCountry?: #UPPERCASE
 		txtForeignCountry?: strings.MaxRunes(75)
+		// Foreign province/state/county. - This field is automatically populated for you
 		txtForeignState?: #UPPERCASE
 		txtForeignState?: strings.MaxRunes(75)
+		// Foreign postal code. - This field is automatically populated for you
 		txtForeignzip?: #UPPERCASE
 		txtForeignzip?: strings.MaxRunes(12)
+		// Line 5. Enter the total amount you owe as shown on your tax return(s) (or notice(s)) -  This field is automatically calculated for you
 		txtF9465AmountTaxOwe?: #AMOUNT
 		txtF9465AmountTaxOwe?: strings.MaxRunes(10)
+		// Line 7. Add lines 5 and 6 and enter the result. - This field is automatically calculated for you
 		txtF9465TotOweDue?: #AMOUNT
 		txtF9465TotOweDue?: strings.MaxRunes(10)
+		// Line 9. Amount owed. Subtract line 8 from line 7 and enter the result. - This field is automatically calculated for you
 		txtF9465TottaxDueamt?: #AMOUNT
 		txtF9465TottaxDueamt?: strings.MaxRunes(10)
+		// Line 10. Divide the amount on line 9 by 72. 0 and enter the result. - This field is automatically calculated for you
 		txtF9465MnthpayAmt?: #AMOUNT
 		txtF9465MnthpayAmt?: strings.MaxRunes(10)
+		// Name -  This field is automatically populated for you
 		txtTaxpayerNamepg2?: #UPPERCASE
 		txtTaxpayerNamepg2?: strings.MaxRunes(75)
+		// SSN - This field is automatically populated for you
 		txtTaxpayerSSNpg2?: #UPPERCASE
 		txtTaxpayerSSNpg2?: strings.MaxRunes(11)
 		

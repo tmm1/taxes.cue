@@ -253,44 +253,64 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+		// This field is automatically calculated for you
 		txtTaxpayerSsn?: #SSN
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtSchdeSumPassInc?: #AMOUNT
 		txtSchdeSumPassInc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdeSumNonpassInc?: #AMOUNT
 		txtSchdeSumNonpassInc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdeSumPassLoss?: #AMOUNT
 		txtSchdeSumPassLoss?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdeSumNonpassLoss?: #AMOUNT
 		txtSchdeSumNonpassLoss?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdeSumSec179Exp?: #AMOUNT
 		txtSchdeSumSec179Exp?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdeTotIncome?: #AMOUNT
 		txtSchdeTotIncome?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdeTotLoss?: #AMOUNT
 		txtSchdeTotLoss?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdeTotPandsInc?: #AMOUNT
 		txtSchdeTotPandsInc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdePart3SumPassInc?: #AMOUNT
 		txtSchdePart3SumPassInc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdePart3SumNonpassInc?: #AMOUNT
 		txtSchdePart3SumNonpassInc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdePart3SumPassLoss?: #AMOUNT
 		txtSchdePart3SumPassLoss?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdePart3SumNonpassLoss?: #AMOUNT
 		txtSchdePart3SumNonpassLoss?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdePart3TotIncome?: #AMOUNT
 		txtSchdePart3TotIncome?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdePart3TotLoss?: #AMOUNT
 		txtSchdePart3TotLoss?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdeTotPart3Inc?: #AMOUNT
 		txtSchdeTotPart3Inc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdePart4TotAmt?: #AMOUNT
 		txtSchdePart4TotAmt?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtFarmRentIncome?: #AMOUNT
 		txtFarmRentIncome?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSchdeTotalIncomeLoss?: #AMOUNT
 		txtSchdeTotalIncomeLoss?: strings.MaxRunes(10)
 		

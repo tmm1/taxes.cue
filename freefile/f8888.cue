@@ -95,10 +95,13 @@ import "strings"
 	}
 
 	#output: {
+		// Name shown on your return - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+		// Your social security number  - This field is automatically calculated for you
 		txtSSN?: #SSN
 		txtSSN?: strings.MaxRunes(11)
+		// Line 8. Add lines 1a, 2a, 3a, 4 , 5a, 6a, and 7. The total must equal the refund amount shown on your tax  return - This field is automatically calculated for you
 		txtTotAllocRef?: #AMOUNT
 		txtTotAllocRef?: strings.MaxRunes(10)
 		

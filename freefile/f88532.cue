@@ -57,16 +57,22 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(128)
+		// This field is automatically calculated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtF8853AddQualLtcDeathBen?: #AMOUNT
 		txtF8853AddQualLtcDeathBen?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8853LargerMulAmtCostLtc?: #AMOUNT
 		txtF8853LargerMulAmtCostLtc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8853PerDiemLimit?: #AMOUNT
 		txtF8853PerDiemLimit?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8853TaxablePayment?: #AMOUNT
 		txtF8853TaxablePayment?: strings.MaxRunes(10)
 		

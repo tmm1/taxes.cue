@@ -1,609 +1,615 @@
 {
+  "id": "f1040sf",
+  "multiple": true,
   "fields": [
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtProprietorName",
+      "title": "Name of proprietor",
+      "maxlength": 75,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Name of proprietor",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtProprietorSSN",
+      "title": "Social security number (SSN)",
+      "maxlength": 11,
       "tags": [
         "SSN"
-      ],
-      "title": "Social security number (SSN)",
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkAccountingMtd",
       "options": [
         {
-          "label": "Cash. - Line C. Accounting method",
-          "value": "Cash"
+          "value": "Cash",
+          "label": "Cash. - Line C. Accounting method"
         },
         {
-          "label": "Accrual. - Line C. Accounting method",
-          "value": "Accrual"
+          "value": "Accrual",
+          "label": "Accrual. - Line C. Accounting method"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtPrincipalProd",
+      "title": "Line A. Principal crop or activity",
+      "maxlength": 50,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line A. Principal crop or activity",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 6,
+      "type": "text",
       "name": "txtProductCode",
+      "title": "Line B. Enter code from Part IV",
+      "maxlength": 6,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Line B. Enter code from Part IV",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtEmployerIdNo",
+      "title": "Line D. Employer ID number (EIN)(see instructions)",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Line D. Employer ID number (EIN)(see instructions)",
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkMaterialPartInd",
       "options": [
         {
-          "label": "Yes. Line E. Did you 'materially participate' in the operation of this business during 2021? If 'No', see instructions for limit on passive losses",
-          "value": "1"
+          "value": "1",
+          "label": "Yes. Line E. Did you 'materially participate' in the operation of this business during 2021? If 'No', see instructions for limit on passive losses"
         },
         {
-          "label": "No. Line E. Did you 'materially participate' in the operation of this business during 2021? If 'No', see instructions for limit on passive losses",
-          "value": "0"
+          "value": "0",
+          "label": "No. Line E. Did you 'materially participate' in the operation of this business during 2021? If 'No', see instructions for limit on passive losses"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkMakePayInd",
       "options": [
         {
-          "label": "Yes. Line F. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions",
-          "value": "1"
+          "value": "1",
+          "label": "Yes. Line F. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions"
         },
         {
-          "label": "No. Line F. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions",
-          "value": "0"
+          "value": "0",
+          "label": "No. Line F. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
+      "type": "check",
       "name": "chkFileReqInd",
       "options": [
         {
-          "label": "Yes. Line G. If 'Yes', did you or will you file required Form(s) 1099?",
-          "value": "1"
+          "value": "1",
+          "label": "Yes. Line G. If 'Yes', did you or will you file required Form(s) 1099?"
         },
         {
-          "label": "No. Line G. If 'Yes', did you or will you file required Form(s) 1099?",
-          "value": "0"
+          "value": "0",
+          "label": "No. Line G. If 'Yes', did you or will you file required Form(s) 1099?"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSaleOfLivestock",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1a. Sales of livestock and other resale items (see instructions)",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtCostOrBasis",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 1b. Cost or other basis of livestock or other items reported on line 1a",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtCostOrBasis",
+      "title": "Line 1b. Cost or other basis of livestock or other items reported on line 1a",
       "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtSubLn2FrLn1",
+      "title": "Line 1c. Subtract line 1b from line 1a - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSaleProdRaised",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 2. Sales of livestock, produce, grains, and other products you raised",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotCooperDist",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 3a. Cooperative distributions (Form(s) 1099-PATR)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxCooperOnLn5b",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 3b. Cooperative distributions (Form(s) 1099-PATR). Taxable Amout",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAgriPgmPay",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 4a. Agricultural program payments (see instructions)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxAgriPay",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 4b. Agricultural program payments (see instructions). Taxable Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCccUnderElect",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 5a. Commodity Credit Corporation (CCC) loans reported under election",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCccForfeited",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 5b. Commodity Credit Corporation reported under forfeited",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxCccAmt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 5c. Commodity Credit Corporation Taxable amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCropInsAmt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 6a. Crop insurance Amount received in 2021",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxInsurAmt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 6b. Crop insurance Amount received in 2021. Taxable Amount",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtAmtDefferFr02",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 6d. Amount deferred from 2020",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtAmtDefferFr02",
+      "title": "Line 6d. Amount deferred from 2020",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "check",
       "name": "chkDeferto04Ind",
       "options": [
         {
-          "label": "Line 6c. If election to defer to 2022 is attached, check here",
-          "value": "1"
+          "value": "1",
+          "label": "Line 6c. If election to defer to 2022 is attached, check here"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCustomHireMcInc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 7. Custom hire (machine work) income",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtOtherIncOnln10",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 8. Other income, including federal and state gasoline or fuel tax credit or refund (see instructions)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtGrossIncOnln11",
+      "title": "Line 9. Gross income. Add amounts in the right column (lines 1c, 2 , 3b, 4b, 5a, 5c, 6b, 6d, 7 , and 8). If you use the accrual method, enter the amount from Part III, line 50. See instructions - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtPenProfitShare",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 23. Pension and profit-sharing plans",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCarTruckExp",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Part 2. Farm Expenses-Cash and Accrual Method. Do not include personal or living expenses. See instructions. Line 10. Car and truck expenses (see instructions). Also attach Form 4562",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtChemeicals",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 11. Chemicals",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRentLeaseVehicle",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 24a. Vehicles, machinery, equipment",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtConservation",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 12. Conservation expenses",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRentLeaseOther",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 24b. Other (land, animals, etc. )",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCustomHireMcwork",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 13. Custom hire (machine work)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRepairMaintenance",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 25. Repairs and maintenance",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSeedPlantPurchar",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 26. Seeds and plants",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "link": "f4562f",
-      "name": "cmd4562Add",
       "type": "button",
-      "value": "Add"
+      "name": "cmd4562Add",
+      "value": "Add",
+      "link": "f4562f"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDepreciation",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 14. Depreciation and section 179 expense (see instructions)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtStorageWarehouse",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 27. Storage and warehousing",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSuppliesPurchase",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 28. Supplies",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtEmpBenfProg",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 15. Employee benefit programs other than on line 23",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxesOnSchf",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 29. Taxes",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFeedPurchased",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 16. Feed",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtUtilitiesExp",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 30. Utilities",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFertilizersLime",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17. Fertilizers and lime",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtBreedingMedicine",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 31. Veterinary, breeding, and medicine",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFreightTrucking",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 18. Freight and trucking",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtGasolineFuelOil",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 19. Gasoline, fuel, and oil",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtDescriptionName1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 32a. Other expenses (specify)",
-      "type": "text"
+      "maxlength": 20,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDescripAmount1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 32a, Other expenses. Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtInsuranceOthHealth",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 20. Insurance (other than health)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtDescriptionName2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 32b. Other expenses (specify)",
-      "type": "text"
+      "maxlength": 20,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDescripAmount2",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 32b, Other expenses. Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtDescriptionName3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 32c. Other expenses (specify)",
-      "type": "text"
+      "maxlength": 20,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDescripAmount3",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 32c, Other expenses. Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMortgageIntr",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 21a. Mortgage (paid to banks, etc. )",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtDescriptionName4",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 32d. Other expenses (specify)",
-      "type": "text"
+      "maxlength": 20,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtDescripAmount4",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 32d, Other expenses. Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtOtherInterest",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 21b. Other",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtDescriptionName5",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 32e. Other expenses (specify)",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtDescripAmount5",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 32e, Other expenses. Amount",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtLaborHired",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 22. Labor hired (less employment credits)",
-      "type": "text"
-    },
-    {
       "maxlength": 20,
-      "name": "txtDescriptionName6",
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 32f. Other expenses (specify)",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtDescripAmount5",
+      "title": "Line 32e, Other expenses. Amount",
       "maxlength": 10,
-      "name": "txtDescripAmount6",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 32f, Other expenses. Amount",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtLaborHired",
+      "title": "Line 22. Labor hired (less employment credits)",
       "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDescriptionName6",
+      "title": "Line 32f. Other expenses (specify)",
+      "maxlength": 20,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDescripAmount6",
+      "title": "Line 32f, Other expenses. Amount",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtTotaExpLn12Toln34F",
+      "title": "Line 33. Total expenses. Add lines 10 through 32f. If line 32f is negative, see instructions - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "combo",
       "name": "cboPassActivLossCode",
       "options": [
         {
@@ -612,219 +618,223 @@
         {
           "value": "PAL"
         }
-      ],
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtNetFarmProfitLoss",
+      "title": "Line 34. Net farm profit or (loss). Subtract line 33 from line 9. If a profit, stop here and see instructions for where to report. If a loss, complete lines 35 and 36. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "check",
       "name": "chkInvestRisk",
       "options": [
         {
-          "label": "Line 36a. All investment is at risk. Check the box that describes your investment in this activity and see instructions for where to report your loss:",
-          "value": "1"
+          "value": "1",
+          "label": "Line 36a. All investment is at risk. Check the box that describes your investment in this activity and see instructions for where to report your loss:"
         },
         {
-          "label": "Line 36b. Some investment is not at risk. Check the box that describes your investment in this activity and see instructions for where to report your loss:",
-          "value": "0"
+          "value": "0",
+          "label": "Line 36b. Some investment is not at risk. Check the box that describes your investment in this activity and see instructions for where to report your loss:"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "link": "f6198f",
-      "name": "cmd6198Addd",
       "type": "button",
-      "value": "Add"
+      "name": "cmd6198Addd",
+      "value": "Add",
+      "link": "f6198f"
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtTaxPayerNamePg2",
+      "title": "Name of proprietor - This This field is automatically calculated for you",
+      "maxlength": 75,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxPayerSSNPg2",
+      "title": "Social security number (SSN) - This field is automatically calculated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSaleOfLivestockAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 37. Sales of livestock, produce, grains, and other products",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotCooperDistAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 38a. Cooperative distributions (Form(s) 1099-PATR)",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxCooperOnLn5bAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 38b. Cooperative distributions (Form(s) 1099-PATR). Taxable Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAgriPgmPayAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 39a. Agricultural program payments",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxAgriPayAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 39b. Agricultural program payments - Taxable amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCccUnderElectAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 40a, Commodity Credit Corporation reported under election",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCccForfeitedAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 40b. Commodity Credit Corporation reported under forfeited",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxCccAmtAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 40c. Commodity Credit Corporation Taxable amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCropInsuranceProAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 41. Crop insurance proceeds",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCustomHireMcIncAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 42. Custom hire (machine work) income",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtOtherIncOnln10Acc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 43. Other Income",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotAmtLn38Toln44",
+      "title": "Line 44. Add amounts in the right column for lines 37 through 43 (lines 37, 38b, 39b, 40a, 40c, 41, 42, and 43) - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtInventBeginYrAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 45. Inventory of livestock, produce, grains, and other products at beginning of the year. Do not include sales reported on Form 4797",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCostOfStockDurYrAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 46. Cost of livestock, produce, grains, and other products purchased during the year",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSumOfLn4647",
+      "title": "Line 47. Add lines 45 and 46 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtInventEndOfYrAcc",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 48. Inventory of livestock, produce, grains, and other products at end of year",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCostOfSoldProd",
+      "title": "Line 49. Cost of livestock, produce, grains, and other products sold. Subtract line 48 from line 47 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtGrossIncOnln51",
+      "title": "Line 50. Gross income. Subtract line 49 from line 44. Enter the result here and on Part I, line 9 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f1040sf",
-  "multiple": true
+  ]
 }

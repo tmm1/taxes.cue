@@ -121,40 +121,58 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+		// This field is automatically calculated for you
 		txtTaxpayerSsn?: #SSN
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtF8936TentativeCdtSum?: #AMOUNT
 		txtF8936TentativeCdtSum?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8936TentativeCdtSumV2?: #AMOUNT
 		txtF8936TentativeCdtSumV2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtMulTentBusiPerc?: #AMOUNT
 		txtMulTentBusiPerc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtMulTentBusiPercV2?: #AMOUNT
 		txtMulTentBusiPercV2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8936SubSec179Ded?: #AMOUNT
 		txtF8936SubSec179Ded?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8936SubSec179DedV2?: #AMOUNT
 		txtF8936SubSec179DedV2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8936MulSec179Ded?: #AMOUNT
 		txtF8936MulSec179Ded?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8936MulSec179DedV2?: #AMOUNT
 		txtF8936MulSec179DedV2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSumCdtBusi?: #AMOUNT
 		txtSumCdtBusi?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8936BusiInvestCdt?: #AMOUNT
 		txtF8936BusiInvestCdt?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8936MulBusTent?: #AMOUNT
 		txtF8936MulBusTent?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8936MulBusTentV2?: #AMOUNT
 		txtF8936MulBusTentV2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSumCdtPersonalVeh?: #AMOUNT
 		txtSumCdtPersonalVeh?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtPersCdtsFrm1040?: #AMOUNT
 		txtPersCdtsFrm1040?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8936SubLn1211?: #AMOUNT
 		txtF8936SubLn1211?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8936PersPartCdt?: #AMOUNT
 		txtF8936PersPartCdt?: strings.MaxRunes(10)
 		

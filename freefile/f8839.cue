@@ -189,82 +189,121 @@ import "strings"
 	}
 
 	#output: {
+		// Name(s) shown on return - This field is automatically calculated for you
 		txtTaxPayerName?: #UPPERCASE
 		txtTaxPayerName?: strings.MaxRunes(75)
+		// Your social security number - This field is automatically calculated for you
 		txtTaxPayerSSN?: #UPPERCASE
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// Line 2. Child 1. Maximum adoption credit per child. Enter $14, 400 - This field is automatically calculated for you
 		CONST_txtChildAllowedTaxCdt?: #AMOUNT
 		CONST_txtChildAllowedTaxCdt?: strings.MaxRunes(10)
+		// Line 2. Child 2. Maximum adoption credit per child. Enter $14, 400 - This field is automatically calculated for you
 		CONST_txtChildAllowedTaxCdt?: #AMOUNT
 		CONST_txtChildAllowedTaxCdt?: strings.MaxRunes(10)
+		// Line 2. Child 3. Maximum adoption credit per child. Enter $14, 400 - This field is automatically calculated for you
 		CONST_txtChildAllowedTaxCdt?: #AMOUNT
 		CONST_txtChildAllowedTaxCdt?: strings.MaxRunes(10)
+		// Line 4. Child 1. Subtract line 3 from line 2-This field is automatically calculated for you
 		txtChildSubPriorexpLmt1?: #AMOUNT
 		txtChildSubPriorexpLmt1?: strings.MaxRunes(10)
+		// Line 4. Child 2. Subtract line 3 from line 2 - This field is automatically calculated for you
 		txtChildSubPriorexpLmt2?: #AMOUNT
 		txtChildSubPriorexpLmt2?: strings.MaxRunes(10)
+		// Line 4. Child 2. Subtract line 3 from line 2 - This field is automatically calculated for you
 		txtChildSubPriorexpLmt3?: #AMOUNT
 		txtChildSubPriorexpLmt3?: strings.MaxRunes(12)
+		// Line 6. Child 1. Enter the smaller of line 4 or line 5 - This field is automatically calculated for you
 		txtChildMinQualExp1?: #AMOUNT
 		txtChildMinQualExp1?: strings.MaxRunes(10)
+		// Line 6. Child 2. Enter the smaller of line 4 or line 5 - This field is automatically calculated for you
 		txtChildMinQualExp2?: #AMOUNT
 		txtChildMinQualExp2?: strings.MaxRunes(10)
+		// Line 6. Child 3. Enter the smaller of line 4 or line 5 - This field is automatically calculated for you
 		txtChildMinQualExp3?: #AMOUNT
 		txtChildMinQualExp3?: strings.MaxRunes(10)
+		// Line 8. Is line 7 more than $216, 660? - This field is automatically calculated for you
 		txtFr8839Ln9?: #AMOUNT
 		txtFr8839Ln9?: strings.MaxRunes(10)
+		// Line 9. Divide line 8 by $40, 000 - This field is automatically calculated for you
 		txtFr8839Ln10?: #RATIO
 		txtFr8839Ln10?: strings.MaxRunes(10)
+		// Line 10. Child 1. Multiply each amount on line 6 by line 9 - This field is automatically calculated for you
 		txtFr8839Ln11C1?: #AMOUNT
 		txtFr8839Ln11C1?: strings.MaxRunes(10)
+		// Line 10. Child 2. Multiply each amount on line 6 by line 9 - This field is automatically calculated for you
 		txtFr8839Ln11C2?: #AMOUNT
 		txtFr8839Ln11C2?: strings.MaxRunes(12)
+		// Line 10. Child 2. Multiply each amount on line 6 by line 9 - This field is automatically calculated for you
 		txtFr8839Ln11C3?: #AMOUNT
 		txtFr8839Ln11C3?: strings.MaxRunes(10)
+		// Line 11. Child 1. Subtract line 10 from line 6 - This field is automatically calculated for you
 		txtFr8839Ln12C1?: #AMOUNT
 		txtFr8839Ln12C1?: strings.MaxRunes(10)
+		// Line 11. Child 2. Subtract line 10 from line 6 - This field is automatically calculated for you
 		txtFr8839Ln12C2?: #AMOUNT
 		txtFr8839Ln12C2?: strings.MaxRunes(10)
+		// Line 11. Child 3. Subtract line 10 from line 6 - This field is automatically calculated for you
 		txtFr8839Ln12C3?: #AMOUNT
 		txtFr8839Ln12C3?: strings.MaxRunes(10)
+		// Line 12. Add the amounts on line 11 - This field is automatically calculated for you
 		txtFr8839Ln14?: #AMOUNT
 		txtFr8839Ln14?: strings.MaxRunes(10)
+		// Line 14. Add lines 12 and 13 - This field is automatically calculated for you
 		txtFr8839Ln15?: #AMOUNT
 		txtFr8839Ln15?: strings.MaxRunes(12)
+		// Line 16. Adoption Credit. Enter the smaller of line 14 or line 15 here and on Schedule 3 (Form 1040), line 6c. If line 15 is smaller than line 14, you may have a credit carryforward (see instructions) - This field is automatically calculated for you
 		txtFr8839Ln16?: #AMOUNT
 		txtFr8839Ln16?: strings.MaxRunes(10)
+		// Line 17. Child 1. Maximum exclusion per child. Enter $14, 400 (see instructions) - This field is automatically calculated for you
 		CONST_txtChildAllowedTaxCdt?: #AMOUNT
 		CONST_txtChildAllowedTaxCdt?: strings.MaxRunes(10)
+		// Line 17. Child 2. Maximum exclusion per child. Enter $14, 400 (see instructions) - This field is automatically calculated for you
 		CONST_txtChildAllowedTaxCdt?: #AMOUNT
 		CONST_txtChildAllowedTaxCdt?: strings.MaxRunes(10)
+		// Line 17. Child 3. Maximum exclusion per child. Enter $14, 400 (see instructions) - This field is automatically calculated for you
 		CONST_txtChildAllowedTaxCdt?: #AMOUNT
 		CONST_txtChildAllowedTaxCdt?: strings.MaxRunes(10)
+		// Line 19. Child 1. Subtract line 18 from line 17 - This field is automatically calculated for you
 		txtChildSubEmplmtPryr1?: #AMOUNT
 		txtChildSubEmplmtPryr1?: strings.MaxRunes(10)
+		// Line 19. Child 2. Subtract line 18 from line 17 - This field is automatically calculated for you
 		txtChildSubEmplmtPryr2?: #AMOUNT
 		txtChildSubEmplmtPryr2?: strings.MaxRunes(10)
+		// Line 19. Child 3. Subtract line 18 from line 17 - This field is automatically calculated for you
 		txtChildSubEmplmtPryr3?: #AMOUNT
 		txtChildSubEmplmtPryr3?: strings.MaxRunes(10)
+		// Line 21. Add the amounts on line 20 - This field is automatically calculated for you
 		txtFr8839Ln23?: #AMOUNT
 		txtFr8839Ln23?: strings.MaxRunes(10)
+		// Line 24. Is line 23 more than $216, 660? - This field is automatically calculated for you
 		txtFr8839Ln27?: #AMOUNT
 		txtFr8839Ln27?: strings.MaxRunes(10)
+		// Line 25. Divide line 24 by $40, 000. Do not enter more than 1. 000 - This field is automatically calculated for you
 		txtFr8839Ln28?: #RATIO
 		txtFr8839Ln28?: strings.MaxRunes(10)
+		// Line 26. Child 1. Multiply each amount on line 22 by line 25 - This field is automatically calculated for you
 		txtFr8839Ln29C1?: #AMOUNT
 		txtFr8839Ln29C1?: strings.MaxRunes(10)
+		// Line 26. Child 2. Multiply each amount on line 22 by line 25 - This field is automatically calculated for you
 		txtFr8839Ln29C2?: #AMOUNT
 		txtFr8839Ln29C2?: strings.MaxRunes(10)
+		// Line 26. Child 3. Multiply each amount on line 22 by line 25 - This field is automatically calculated for you
 		txtFr8839Ln29C3?: #AMOUNT
 		txtFr8839Ln29C3?: strings.MaxRunes(10)
+		// Line 27. Child 1. Excluded benefits. Subtract line 26 from line 22 - This field is automatically calculated for you
 		txtFr8839Ln30C1?: #AMOUNT
 		txtFr8839Ln30C1?: strings.MaxRunes(10)
+		// Line 27. Child 2. Excluded benefits. Subtract line 26 from line 22 - This field is automatically calculated for you
 		txtFr8839Ln30C2?: #AMOUNT
 		txtFr8839Ln30C2?: strings.MaxRunes(10)
+		// Line 27. Child 3. Excluded benefits. Subtract line 26 from line 22 - This field is automatically calculated for you
 		txtFr8839Ln30C3?: #AMOUNT
 		txtFr8839Ln30C3?: strings.MaxRunes(10)
+		// Line 28. Add the amounts on line 27 - This field is automatically calculated for you
 		txtFr8839Ln25?: #AMOUNT
 		txtFr8839Ln25?: strings.MaxRunes(10)
+		// Line 29. Taxable benefits. Is line 28 more than line 21? - This field is automatically calculated for you
 		txtFr8839Ln31?: #AMOUNT
 		txtFr8839Ln31?: strings.MaxRunes(10)
 		

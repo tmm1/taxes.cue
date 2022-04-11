@@ -33,8 +33,10 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying number - This field is automatically calculated for you
 		txtTaxpayerSsn?: #SSN
 		txtTaxpayerSsn?: strings.MaxRunes(11)
 		

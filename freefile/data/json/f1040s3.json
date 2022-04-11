@@ -1,478 +1,505 @@
 {
+  "id": "f1040s3",
   "fields": [
     {
-      "maxlength": 12,
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "Name - This field is automatically populated for you",
+      "maxlength": 12,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxpayerSsn",
+      "title": "Identifying Number - This field is automatically populated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f1116",
+      "type": "button",
       "name": "cmdAddF1116",
       "title": "Line 1. Attach if Form 1116 required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f1116"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtForTaxCdt",
+      "title": "Line 1. Foreign Tax Credit",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 1. Foreign Tax Credit",
-      "type": "text"
+      ]
     },
     {
-      "link": "f2441",
+      "type": "button",
       "name": "cmdLn2AddF2441",
       "title": "Line 2. Attach if Form 2441 required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f2441"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtChildDepCareCdt",
+      "title": "Line 2. Credit for child and dependent care expenses - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8863",
+      "type": "button",
       "name": "cmdAddF8863",
       "title": "Line3. Education Credits from Form 8863, line 19",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8863"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtEduCdt",
+      "title": "Line 3. Education credits from Form 8863, line 19 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8880",
+      "type": "button",
       "name": "cmdAddF8880",
       "title": "Line 4. Attach if Form 8880 required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8880"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRetSavContCdt",
+      "title": "Line 4. Retirement Saving Contribution Credits - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f5695t",
+      "type": "button",
       "name": "cmdAddF5695",
       "title": "Line 5. Attach if Form 5695 required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f5695t"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtResEnergyCdt",
+      "title": "Line 5. Residential energy credits - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f3800",
+      "type": "button",
       "name": "cmdAddF3800",
       "title": "Line 6a. Attach if Form 3800 required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f3800"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF3800CdtAllowCurrYr",
+      "title": "Line 6. General business credit. Attach Form 3800",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8801",
+      "type": "button",
       "name": "cmdAddF8801",
       "title": "Line 6b. Attach if Form 8801 required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8801"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF8801MinTaxCred",
+      "title": "Line 6b. Credit for prior year minimum tax. Attach Form 8801",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8839",
+      "type": "button",
       "name": "cmdAddF8839",
       "title": "Line 6c. Adoption credit. Attach Form 8839",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8839"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAdopCdt",
+      "title": "Line 6c. Adoption credit. Attach Form 8839",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f1040sr",
+      "type": "button",
       "name": "cmdAddSchdR",
       "title": "Line 6d. Credit for the elderly or disabled. Attach Schedule R",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f1040sr"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtEldDisabledCdt",
+      "title": "Line 6d. Credit for the elderly or disabled. Attach Schedule R",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8910",
+      "type": "button",
       "name": "cmdAddF8910",
       "title": "Line 6e. Alternative motor vehicle credit. Attach Form 8910",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8910"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF8910CdtPersonalUse",
+      "title": "Line 6e. Alternative motor vehicle credit. Attach Form 8910",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8936",
+      "type": "button",
       "name": "cmdAddF8936",
       "title": "Line 6f. Qualified plug-in motor vehicle credit. Attach Form 8936",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8936"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF8936PersonalUseCdt",
+      "title": "Line 6f. Qualified plug-in motor vehicle credit. Attach Form 8936",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8396",
+      "type": "button",
       "name": "cmdAddF8396",
       "title": "Line 6g. Mortgage interest credit. Attach Form 8396",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8396"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMortgageIntCdt",
-      "readonly": true,
-      "tags": [
-        "AMOUNT"
-      ],
-      "type": "text"
-    },
-    {
+      "title": "Line 6g. Mortgage interest credit. Attach Form 8396",
       "maxlength": 10,
-      "name": "txtCreditFrom8859",
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8859",
-      "name": "cmdAddF8859",
+      "type": "text",
+      "name": "txtCreditFrom8859",
+      "title": "Line 6h. District of Columbia first-time homebuyer credit. Attach Form 8859",
+      "maxlength": 10,
+      "readonly": true,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
       "type": "button",
-      "value": "Add"
+      "name": "cmdAddF8859",
+      "value": "Add",
+      "link": "f8859"
     },
     {
-      "link": "f8834",
+      "type": "button",
       "name": "cmdAddF8834",
       "title": "Line 6i. Qualified electric vehicle credit. Attach Form 8834",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8834"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtQualElecVehCdt",
-      "readonly": true,
-      "tags": [
-        "AMOUNT"
-      ],
-      "type": "text"
-    },
-    {
+      "title": "Line 6i. Qualified electric vehicle credit. Attach Form 8834",
       "maxlength": 10,
-      "name": "txtF8911PersonalUseCdt",
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8911",
-      "name": "cmdAddF8911",
+      "type": "text",
+      "name": "txtF8911PersonalUseCdt",
+      "title": "Line 6j. Alternative fuel vehicle refueling property credit. Attach Form 8911",
+      "maxlength": 10,
+      "readonly": true,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
       "type": "button",
-      "value": "Add"
+      "name": "cmdAddF8911",
+      "value": "Add",
+      "link": "f8911"
     },
     {
-      "maxlength": 15,
+      "type": "text",
       "name": "txtOtherCreditType",
+      "title": "LIne 6z. Other nonrefundable credit type",
+      "maxlength": 15,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "LIne 6z. Other nonrefundable credit type",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtOtherNonrefCdt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Other nonrefundable credits. List type and amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotOthCredit",
-      "readonly": true,
-      "tags": [
-        "AMOUNT"
-      ],
-      "type": "text"
-    },
-    {
+      "title": "Line 7. This field is automatically calculated for you",
       "maxlength": 10,
-      "name": "txtTotCredit",
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8962",
+      "type": "text",
+      "name": "txtTotCredit",
+      "title": "Line 8. This field is automatically calculated for you",
+      "maxlength": 10,
+      "readonly": true,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "button",
       "name": "cmdAddF8962",
       "title": "Line 8. Attach if Form 8962 required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8962"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtNetPremTaxCdt",
+      "title": "Line 8. Net premium tax credit - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAppTaxExt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 10. Amount paid with request for extension to file",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtAppTaxSsRrta",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 11. Excess social security and tier 1 RRTA tax withheld - This field is automatically calculated for you",
-      "type": "text"
+      ]
     },
     {
-      "link": "f4136",
+      "type": "text",
+      "name": "txtAppTaxSsRrta",
+      "title": "Line 11. Excess social security and tier 1 RRTA tax withheld - This field is automatically calculated for you",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "button",
       "name": "cmdAddF4136",
       "title": "Line 11. Attach if Form 4136 required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f4136"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF4136FuelsCdt",
+      "title": "Line 12. Credit for federal tax on fuels - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f2439",
+      "type": "button",
       "name": "cmdAddF2439",
       "title": "Line 12a. Attach if Form 2439 required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f2439"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF2439Payment",
-      "readonly": true,
-      "tags": [
-        "AMOUNT"
-      ],
-      "type": "text"
-    },
-    {
+      "title": "Line 13a. Form 2439 - This field is automatically calculated for you",
       "maxlength": 10,
-      "name": "txtF7202Payment",
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f1040sht",
+      "type": "text",
+      "name": "txtF7202Payment",
+      "title": "Line 13b. This field is automatically calculated for you",
+      "maxlength": 10,
+      "readonly": true,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "button",
       "name": "cmdAddFSCHHT",
       "title": "Line 12b. Attach if Form 7202 required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f1040sht"
     },
     {
-      "link": "f1040shs",
+      "type": "button",
       "name": "cmdAddFSCHHS",
       "title": "Line 12b. Attach form 7202 if required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f1040shs"
     },
     {
-      "link": "f8885t",
+      "type": "button",
       "name": "cmdAddF8885T",
       "title": "Line 12c. Attach form 8885 if required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8885t"
     },
     {
-      "link": "f8885s",
+      "type": "button",
       "name": "cmdAddF8885",
       "title": "Line 12c. Attach Form 8885 if required",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8885s"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF8885TotAmt",
+      "title": "Line 13c. Health coverage tax credit from Form 8885 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1040Irc1341Amt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 13d. Credit for repayment of amounts included in income from earlier",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "link": "f2441",
-      "name": "cmdLn13gAddF2441",
       "type": "button",
-      "value": "Add"
+      "name": "cmdLn13gAddF2441",
+      "value": "Add",
+      "link": "f2441"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRefundableDepCareExpen",
-      "readonly": true,
-      "tags": [
-        "AMOUNT"
-      ],
-      "type": "text"
-    },
-    {
+      "title": "Line 13g Credit for child and dependent care expenses from Form 2441,",
       "maxlength": 10,
-      "name": "txtschSEDeferalTaxPay",
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 100,
+      "type": "text",
+      "name": "txtschSEDeferalTaxPay",
+      "title": "Line 13h. Qualified sick and family leave credits from Schedule(s) H and",
+      "maxlength": 10,
+      "readonly": true,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtOtherPayCdtList",
+      "title": "Line 12d. Other Payment amount",
+      "maxlength": 100,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 12d. Other Payment amount",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotOtherPayCdt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 12d. Total Other Payments",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAddTot",
+      "title": "Line 14. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotPaymentsCdts",
+      "title": "Line 15. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f1040s3"
+  ]
 }

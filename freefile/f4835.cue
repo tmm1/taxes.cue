@@ -228,14 +228,19 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtF4835Ssn?: #SSN
 		txtF4835Ssn?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtF4835Name?: #UPPERCASE
 		txtF4835Name?: strings.MaxRunes(50)
+		// This field is automatically calculated for you
 		txtGrossIncOnln7?: #AMOUNT
 		txtGrossIncOnln7?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtTotaExpLn8Toln30G?: #AMOUNT
 		txtTotaExpLn8Toln30G?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtNetFarmProfitLoss?: #AMOUNT
 		txtNetFarmProfitLoss?: strings.MaxRunes(10)
 		

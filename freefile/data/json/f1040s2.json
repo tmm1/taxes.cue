@@ -1,66 +1,74 @@
 {
+  "id": "f1040s2",
   "fields": [
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "Name - This field is automatically populated for you",
+      "maxlength": 75,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxpayerSsn",
+      "title": "Your social security number - This field is automatically populated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f6251",
+      "type": "button",
       "name": "cmdAdd6251",
       "title": "Line 1 - Attach Form 6251",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f6251"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAltMinTaxAmt",
-      "readonly": true,
-      "tags": [
-        "AMOUNT"
-      ],
-      "type": "text"
-    },
-    {
+      "title": "Line 1. Alternative minimum tax. Attach Form 6251 - This field is automatically calculated for you",
       "maxlength": 10,
-      "name": "txtF8962EAPTaxCdtRepay",
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8962",
+      "type": "text",
+      "name": "txtF8962EAPTaxCdtRepay",
+      "title": "Line 2. Excess advance premium tax credit repayment. Attach Form 8962 - This field is automatically calculated for you",
+      "maxlength": 10,
+      "readonly": true,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "button",
       "name": "cmdAdd8962",
       "title": "Line 2 - Attach Form 8962",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8962"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAddLines1and2",
+      "title": "Line 3. Add lines 1 and 2. Enter here and on Form 1040, 1040-SR, or 1040-NR, line 17 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
+      "type": "combo",
       "name": "cboSelfEmpDesc",
+      "title": "Line 4. Enter codes",
       "options": [
         {
           "value": ""
@@ -77,103 +85,106 @@
         {
           "value": "EXEMPT COMMUNITY INCOME"
         }
-      ],
-      "title": "Line 4. Enter codes",
-      "type": "combo"
+      ]
     },
     {
-      "link": "f1040sset",
+      "type": "button",
       "name": "cmdAddSchSEPR",
       "title": "Line 4 - Attach Schedule SE Primary",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f1040sset"
     },
     {
-      "link": "f1040sses",
+      "type": "button",
       "name": "cmdAddSchSESP",
       "title": "Line 4 - Attach Schedule SE Spouse",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f1040sses"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSelfEmpTax",
+      "title": "Line 4. Self-employment tax. Attach Schedule SE - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f4137t",
+      "type": "button",
       "name": "cmdAdd4137PR",
       "title": "Line 5 - Attach Form 4137 Primary",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f4137t"
     },
     {
-      "link": "f4137s",
+      "type": "button",
       "name": "cmdAdd4137SP",
       "title": "Line 5 - Attach Form 4137 Spouse",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f4137s"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSsmTaxFrm4137",
+      "title": "Line 5. Social security and Medicare tax on unreported tip income. Attach Form 4137 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8919t",
+      "type": "button",
       "name": "cmdAdd8919PR",
       "title": "Line 6 - Attach Form 8919 Primary",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8919t"
     },
     {
-      "link": "f8919s",
+      "type": "button",
       "name": "cmdAdd8919SP",
       "title": "Line 6 - Attach Form 8919 Spouse",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8919s"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSsmTaxFrm8919",
-      "readonly": true,
-      "tags": [
-        "AMOUNT"
-      ],
-      "type": "text"
-    },
-    {
+      "title": "Line 6. Uncollected social security and Medicare tax on wages. Attach Form 8919 - This field is automatically calculated for you",
       "maxlength": 10,
-      "name": "txtSsmTax",
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f5329t",
+      "type": "text",
+      "name": "txtSsmTax",
+      "title": "Line 7. Total additional social security and Medicare tax. Add lines 5 and 6. This field is automatically calculated for you",
+      "maxlength": 10,
+      "readonly": true,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "button",
       "name": "cmdAdd5329PR",
       "title": "Line 8 - Attach Form 5329 Primary",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f5329t"
     },
     {
-      "link": "f5329s",
+      "type": "button",
       "name": "cmdAdd5329SP",
       "title": "Line 8 - Attach Form 5329 Spouse",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f5329s"
     },
     {
+      "type": "combo",
       "name": "cboF5329RetTaxplanCode",
       "options": [
         {
@@ -182,324 +193,333 @@
         {
           "value": "NO"
         }
-      ],
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxQualp",
+      "title": "Line 8. Additional tax on IRAs or other tax-favored accounts. Attach Form 5329 if required",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 8. Additional tax on IRAs or other tax-favored accounts. Attach Form 5329 if required",
-      "type": "text"
+      ]
     },
     {
-      "link": "f1040sht",
+      "type": "button",
       "name": "cmdAddScheduleHPR",
       "title": "Line 9 - Attach Scedule H Primary",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f1040sht"
     },
     {
-      "link": "f1040shs",
+      "type": "button",
       "name": "cmdAddScheduleHSP",
       "title": "Line 9 - Attach Scedule H Spouse",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f1040shs"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSpecificOthTax",
+      "title": "Line 9. Household employment taxes. Attach Schedule H - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f5405t",
+      "type": "button",
       "name": "cmdAdd5405",
       "title": "Line 10 - Attach Form 5405",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f5405t"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCodefthcrOtherTax",
+      "title": "Line 10. Repayment of first-time homebuyer credit. Attach Form 5405 if required",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 10. Repayment of first-time homebuyer credit. Attach Form 5405 if required",
-      "type": "text"
+      ]
     },
     {
-      "link": "f8959",
+      "type": "button",
       "name": "cmdAdd8959",
       "title": "Line 11 - Attach Form 8959",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8959"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF89591040Ln60",
+      "title": "Line 11. Additional Medicare Tax - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8960",
+      "type": "button",
       "name": "cmdAdd8960",
       "title": "Line 12 - Attach Form 8960",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8960"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF8960NetInvIndiv",
+      "title": "Line 12. Net investment income tax. Attach Form 8960  - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtUncollTipsW2Box12Amt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 13. Enter Uncollected social security and Medicare or RRTA tax on tips or group-term lifeinsurance from Form W-2, box 12",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1040453L3Tax",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 14. Enter Interest on tax due on installment income from the sale of certain residential lots and timeshares",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtF1040453AcTax",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 15. Enter Interest on the deferred tax on gain from certain installment sales with a sales price over $150, 000",
-      "type": "text"
+      ]
     },
     {
-      "link": "f8611",
+      "type": "text",
+      "name": "txtF1040453AcTax",
+      "title": "Line 15. Enter Interest on the deferred tax on gain from certain installment sales with a sales price over $150, 000",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "button",
       "name": "cmdAdd8611",
       "title": "Line 16 - Attach Form 8611",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8611"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1040F8611RecapTax",
+      "title": "Line 16. Recapture of low-income housing credit. Attach Form 8611 - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 20,
+      "type": "text",
       "name": "txtF1040RecapTotOthdec",
+      "title": "Line 17a. Other credit description",
+      "maxlength": 20,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 17a. Other credit description",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRecapInvestTax",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17a. Recapture of other credits",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtF8828Tax",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 17b. Recapture of federal mortgage subsidy. If you sold your home in 2021",
-      "type": "text"
+      ]
     },
     {
-      "link": "f8889t",
+      "type": "text",
+      "name": "txtF8828Tax",
+      "title": "Line 17b. Recapture of federal mortgage subsidy. If you sold your home in 2021",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "button",
       "name": "cmdAdd8889",
       "title": "Line 17c - Attach Form 8889",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8889t"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtHsaOtherTax",
+      "title": "Line 17c. Additional tax on HSA distributions. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8889t",
+      "type": "button",
       "name": "cmdAdd8889ind",
       "title": "Line 17d - Attach Form 8889",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8889t"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCodehdhpOtherTax",
+      "title": "Line 17d. Additional tax on an HSA because you didn�t remain an eligible individual. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8853",
+      "type": "button",
       "name": "cmdAdd8853ArcherMSA",
       "title": "Line 17e - Attach Form 8853",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8853"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtAmsaDistOtherTax",
+      "title": "Line 17e. Additional tax on Archer MSA distributions. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "link": "f8853",
+      "type": "button",
       "name": "cmdAdd8853MedMSA",
       "title": "Line 17f - Attach Form 8853",
-      "type": "button",
-      "value": "Add"
+      "value": "Add",
+      "link": "f8853"
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtMedmsaDistOtherTax",
+      "title": "Line17f. Additional tax on Medicare Advantage MSA distributions. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1040FitppTax",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17g. Recapture of a charitable contribution deduction related to a fractional interest in tangible personal property",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1040NqdcTax",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17h. Income you received from a nonqualified deferred compensation plan that fails to meet the requirements of section 409A",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1040457ATax",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17i. Compensation you received from a nonqualified deferred compensation plan described in section 457A",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF104072M5Tax",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17j. Section 72(m)(5) excess benefits tax",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtCodeeppOtherTax",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17k. Golden parachute payments",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxOnAccuDist",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line17l. Tax on accumulation distribution of trusts",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1040IscTax",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17m. Excise tax on insider stock compensation from an expatriated corporation",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFsch2LookBackInt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17n. Look-back interest under section 167(g) or 460(b) from Form 8697 or 8866",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1040NonEffect",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17o. Tax on non-effectively connected income for any part of the  year you were a nonresident alien from Form 1040-NR",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF8621IntDistribDisAmt",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17p. Any interest from Form 8621, line 16f, relating to distributions from, and dispositions of, stock of a section 1291 fund",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtF8621InterestAmt",
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 17q. Any interest from Form 8621, line 24",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtF8621InterestAmt",
+      "title": "Line 17q. Any interest from Form 8621, line 24",
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboF1040AnyOthTaxTot",
+      "title": "Line 17z. Any other taxes - Description",
       "options": [
         {
           "value": ""
@@ -546,46 +566,46 @@
         {
           "value": "1040-NR"
         }
-      ],
-      "title": "Line 17z. Any other taxes - Description",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1040AnyOthTaxTot",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 17z. Any other taxes - Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF1040TotOthTax",
+      "title": "Line 18. Total additional taxes. Add lines 17a through 17z. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF8812AddiTaxAmt",
+      "title": "Line 19. Additional tax from Schedule 8812. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotalOtherTax",
+      "title": "Line 21. Add lines 4, 7 through 16, 18, and 19. These are your total other taxes. - This field is automatically calculated for you",
+      "maxlength": 10,
       "readonly": true,
       "tags": [
         "AMOUNT"
-      ],
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f1040s2"
+  ]
 }

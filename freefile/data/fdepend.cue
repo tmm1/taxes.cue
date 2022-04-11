@@ -1,1222 +1,1224 @@
 package data
 
 schemas: fdepend: {
+	id: "fdepend"
 	fields: [{
-		maxlength: 75
+		type:      "text"
 		name:      "txtTaxPayerName"
+		title:     "Name - This field is automatically populated for you"
+		maxlength: 75
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtTaxPayerSsn"
+		title:     "Identifying Number - This field is automatically populated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtDepFirstNameR1"
+		title:     "Dependents - Enter First name"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter First name"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtDepMiddleInitialR1"
+		title:     "Dependents - Enter Middle initial"
+		maxlength: 2
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Middle initial"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtDepLastNameR1"
+		title:     "Dependents - Enter Last name"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Last name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtDepSsnR1"
+		title:     "Dependents - Enter Social Security number"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Dependents - Enter Social Security number"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepDOBR1"
+		title:     "Dependents - Enter Date of Birth"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Dependents - Enter Date of Birth"
-		type:  "text"
 	}, {
-		name: "cboDepRelationR1"
+		type:  "combo"
+		name:  "cboDepRelationR1"
+		title: "Dependents - Select Relationship to you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}]
-		title: "Dependents - Select Relationship to you"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkChildTaxCredIndR1"
 		options: [{
-			label: "Check if dependent qualifies for: Child tax credit"
 			value: "1"
+			label: "Check if dependent qualifies for: Child tax credit"
 		}, {
-			label: "Check if dependent qualifies for: Credit for other dependents"
 			value: "0"
+			label: "Check if dependent qualifies for: Credit for other dependents"
 		}]
-		type: "check"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtDepIPPINR1"
+		title:     "Dependents - Enter IP PIN"
+		maxlength: 6
 		tags: [
 			"NUMERIC",
 		]
-		title: "Dependents - Enter IP PIN"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtDepFirstNameR2"
+		title:     "Dependents - Enter First name"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter First name"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtDepMiddleInitialR2"
+		title:     "Dependents - Enter Middle initial"
+		maxlength: 2
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Middle initial"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtDepLastNameR2"
+		title:     "Dependents - Enter Last name"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Last name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtDepSsnR2"
+		title:     "Dependents - Enter Social Security number"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Dependents - Enter Social Security number"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepDOBR2"
+		title:     "Dependents - Enter Date of Birth"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Dependents - Enter Date of Birth"
-		type:  "text"
 	}, {
-		name: "cboDepRelationR2"
+		type:  "combo"
+		name:  "cboDepRelationR2"
+		title: "Dependents - Select Relationship to you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}]
-		title: "Dependents - Select Relationship to you"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkChildTaxCredIndR2"
 		options: [{
-			label: "Check if dependent qualifies for: Child tax credit"
 			value: "1"
+			label: "Check if dependent qualifies for: Child tax credit"
 		}, {
-			label: "Check if dependent qualifies for: Credit for other dependents"
 			value: "0"
+			label: "Check if dependent qualifies for: Credit for other dependents"
 		}]
-		type: "check"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtDepIPPINR2"
+		title:     "Dependents - Enter IP PIN"
+		maxlength: 6
 		tags: [
 			"NUMERIC",
 		]
-		title: "Dependents - Enter IP PIN"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtDepFirstNameR3"
+		title:     "Dependents - Enter First name"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter First name"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtDepMiddleInitialR3"
+		title:     "Dependents - Enter Middle initial"
+		maxlength: 2
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Middle initial"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtDepLastNameR3"
+		title:     "Dependents - Enter Last name"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Last name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtDepSsnR3"
+		title:     "Dependents - Enter Social Security number"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Dependents - Enter Social Security number"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepDOBR3"
+		title:     "Dependents - Enter Date of Birth"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Dependents - Enter Date of Birth"
-		type:  "text"
 	}, {
-		name: "cboDepRelationR3"
+		type:  "combo"
+		name:  "cboDepRelationR3"
+		title: "Dependents - Select Relationship to you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}]
-		title: "Dependents - Select Relationship to you"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkChildTaxCredIndR3"
 		options: [{
-			label: "Check if dependent qualifies for: Child tax credit"
 			value: "1"
+			label: "Check if dependent qualifies for: Child tax credit"
 		}, {
-			label: "Check if dependent qualifies for: Credit for other dependents"
 			value: "0"
+			label: "Check if dependent qualifies for: Credit for other dependents"
 		}]
-		type: "check"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtDepIPPINR3"
+		title:     "Dependents - Enter IP PIN"
+		maxlength: 6
 		tags: [
 			"NUMERIC",
 		]
-		title: "Dependents - Enter IP PIN"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtDepFirstNameR4"
+		title:     "Dependents - Enter First name"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter First name"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtDepMiddleInitialR4"
+		title:     "Dependents - Enter Middle initial"
+		maxlength: 2
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Middle initial"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtDepLastNameR4"
+		title:     "Dependents - Enter Last name"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Last name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtDepSsnR4"
+		title:     "Dependents - Enter Social Security number"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Dependents - Enter Social Security number"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepDOBR4"
+		title:     "Dependents - Enter Date of Birth"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Dependents - Enter Date of Birth"
-		type:  "text"
 	}, {
-		name: "cboDepRelationR4"
+		type:  "combo"
+		name:  "cboDepRelationR4"
+		title: "Dependents - Select Relationship to you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}]
-		title: "Dependents - Select Relationship to you"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkChildTaxCredIndR4"
 		options: [{
-			label: "Check if dependent qualifies for: Child tax credit"
 			value: "1"
+			label: "Check if dependent qualifies for: Child tax credit"
 		}, {
-			label: "Check if dependent qualifies for: Credit for other dependents"
 			value: "0"
+			label: "Check if dependent qualifies for: Credit for other dependents"
 		}]
-		type: "check"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtDepIPPINR4"
+		title:     "Dependents - Enter IP PIN"
+		maxlength: 6
 		tags: [
 			"NUMERIC",
 		]
-		title: "Dependents - Enter IP PIN"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtDepFirstNameR5"
+		title:     "Dependents - Enter First name"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter First name"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtDepMiddleInitialR5"
+		title:     "Dependents - Enter Middle initial"
+		maxlength: 2
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Middle initial"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtDepLastNameR5"
+		title:     "Dependents - Enter Last name"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Last name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtDepSsnR5"
+		title:     "Dependents - Enter Social Security number"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Dependents - Enter Social Security number"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepDOBR5"
+		title:     "Dependents - Enter Date of Birth"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Dependents - Enter Date of Birth"
-		type:  "text"
 	}, {
-		name: "cboDepRelationR5"
+		type:  "combo"
+		name:  "cboDepRelationR5"
+		title: "Dependents - Select Relationship to you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}]
-		title: "Dependents - Select Relationship to you"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkChildTaxCredIndR5"
 		options: [{
-			label: "Check if dependent qualifies for: Child tax credit"
 			value: "1"
+			label: "Check if dependent qualifies for: Child tax credit"
 		}, {
-			label: "Check if dependent qualifies for: Credit for other dependents"
 			value: "0"
+			label: "Check if dependent qualifies for: Credit for other dependents"
 		}]
-		type: "check"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtDepIPPINR5"
+		title:     "Enter dependent IP PINDependents - Enter IP PIN"
+		maxlength: 6
 		tags: [
 			"NUMERIC",
 		]
-		title: "Enter dependent IP PINDependents - Enter IP PIN"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtDepFirstNameR6"
+		title:     "Dependents - Enter First name"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter First name"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtDepMiddleInitialR6"
+		title:     "Dependents - Enter Middle initial"
+		maxlength: 2
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Middle initial"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtDepLastNameR6"
+		title:     "Dependents - Enter Last name"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Last name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtDepSsnR6"
+		title:     "Dependents - Enter Social Security number"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Dependents - Enter Social Security number"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepDOBR6"
+		title:     "Dependents - Enter Date of Birth"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Dependents - Enter Date of Birth"
-		type:  "text"
 	}, {
-		name: "cboDepRelationR6"
+		type:  "combo"
+		name:  "cboDepRelationR6"
+		title: "Dependents - Select Relationship to you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}]
-		title: "Dependents - Select Relationship to you"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkChildTaxCredIndR6"
 		options: [{
-			label: "Check if dependent qualifies for: Child tax credit"
 			value: "1"
+			label: "Check if dependent qualifies for: Child tax credit"
 		}, {
-			label: "Check if dependent qualifies for: Credit for other dependents"
 			value: "0"
+			label: "Check if dependent qualifies for: Credit for other dependents"
 		}]
-		type: "check"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtDepIPPINR6"
+		title:     "Dependents - Enter IP PIN"
+		maxlength: 6
 		tags: [
 			"NUMERIC",
 		]
-		title: "Dependents - Enter IP PIN"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtDepFirstNameR7"
+		title:     "Dependents - Enter First name"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter First name"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtDepMiddleInitialR7"
+		title:     "Dependents - Enter Middle initial"
+		maxlength: 2
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Middle initial"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtDepLastNameR7"
+		title:     "Dependents - Enter Last name"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Last name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtDepSsnR7"
+		title:     "Dependents - Enter Social Security number"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Dependents - Enter Social Security number"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepDOBR7"
+		title:     "Dependents - Enter Date of Birth"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Dependents - Enter Date of Birth"
-		type:  "text"
 	}, {
-		name: "cboDepRelationR7"
+		type:  "combo"
+		name:  "cboDepRelationR7"
+		title: "Dependents - Select Relationship to you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}]
-		title: "Dependents - Select Relationship to you"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkChildTaxCredIndR7"
 		options: [{
-			label: "Check if dependent qualifies for: Child tax credit"
 			value: "1"
+			label: "Check if dependent qualifies for: Child tax credit"
 		}, {
-			label: "Check if dependent qualifies for: Credit for other dependents"
 			value: "0"
+			label: "Check if dependent qualifies for: Credit for other dependents"
 		}]
-		type: "check"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtDepIPPINR7"
+		title:     "Dependents - Enter IP PIN"
+		maxlength: 6
 		tags: [
 			"NUMERIC",
 		]
-		title: "Dependents - Enter IP PIN"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtDepFirstNameR8"
+		title:     "Dependents - Enter First name"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter First name"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtDepMiddleInitialR8"
+		title:     "Dependents - Enter Middle initial"
+		maxlength: 2
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Middle initial"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtDepLastNameR8"
+		title:     "Dependents - Enter Last name"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Last name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtDepSsnR8"
+		title:     "Dependents - Enter Social Security number"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Dependents - Enter Social Security number"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepDOBR8"
+		title:     "Dependents - Enter Date of Birth"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Dependents - Enter Date of Birth"
-		type:  "text"
 	}, {
-		name: "cboDepRelationR8"
+		type:  "combo"
+		name:  "cboDepRelationR8"
+		title: "Dependents - Select Relationship to you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}]
-		title: "Dependents - Select Relationship to you"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkChildTaxCredIndR8"
 		options: [{
-			label: "Check if dependent qualifies for: Child tax credit"
 			value: "1"
+			label: "Check if dependent qualifies for: Child tax credit"
 		}, {
-			label: "Check if dependent qualifies for: Credit for other dependents"
 			value: "0"
+			label: "Check if dependent qualifies for: Credit for other dependents"
 		}]
-		type: "check"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtDepIPPINR8"
+		title:     "Dependents - Enter IP PIN"
+		maxlength: 6
 		tags: [
 			"NUMERIC",
 		]
-		title: "Dependents - Enter IP PIN"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtDepFirstNameR9"
+		title:     "Dependents - Enter First name"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter First name"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtDepMiddleInitialR9"
+		title:     "Dependents - Enter Middle initial"
+		maxlength: 2
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Middle initial"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtDepLastNameR9"
+		title:     "Dependents - Enter Last name"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Last name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtDepSsnR9"
+		title:     "Dependents - Enter Social Security number"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Dependents - Enter Social Security number"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepDOBR9"
+		title:     "Dependents - Enter Date of Birth"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Dependents - Enter Date of Birth"
-		type:  "text"
 	}, {
-		name: "cboDepRelationR9"
+		type:  "combo"
+		name:  "cboDepRelationR9"
+		title: "Dependents - Select Relationship to you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}]
-		title: "Dependents - Select Relationship to you"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkChildTaxCredIndR9"
 		options: [{
-			label: "Check if dependent qualifies for: Child tax credit"
 			value: "1"
+			label: "Check if dependent qualifies for: Child tax credit"
 		}, {
-			label: "Check if dependent qualifies for: Credit for other dependents"
 			value: "0"
+			label: "Check if dependent qualifies for: Credit for other dependents"
 		}]
-		type: "check"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtDepIPPINR9"
+		title:     "Dependents - Enter IP PIN"
+		maxlength: 6
 		tags: [
 			"NUMERIC",
 		]
-		title: "Dependents - Enter IP PIN"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtDepFirstNameR10"
+		title:     "Dependents - Enter First name"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter First name"
-		type:  "text"
 	}, {
-		maxlength: 2
+		type:      "text"
 		name:      "txtDepMiddleInitialR10"
+		title:     "Dependents - Enter Middle initial"
+		maxlength: 2
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Middle initial"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtDepLastNameR10"
+		title:     "Dependents - Enter Last name"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Dependents - Enter Last name"
-		type:  "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtDepSsnR10"
+		title:     "Dependents - Enter Social Security number"
+		maxlength: 11
 		tags: [
 			"SSN",
 		]
-		title: "Dependents - Enter Social Security number"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDepDOBR10"
+		title:     "Dependents - Enter Date of Birth"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Dependents - Enter Date of Birth"
-		type:  "text"
 	}, {
-		name: "cboDepRelationR10"
+		type:  "combo"
+		name:  "cboDepRelationR10"
+		title: "Dependents - Select Relationship to you"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}]
-		title: "Dependents - Select Relationship to you"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkChildTaxCredIndR10"
 		options: [{
-			label: "Check if depCheck if dependent qualifies for: Child tax credit"
 			value: "1"
+			label: "Check if depCheck if dependent qualifies for: Child tax credit"
 		}, {
-			label: "Check if dependent qualifies for: Credit for other dependents"
 			value: "0"
+			label: "Check if dependent qualifies for: Credit for other dependents"
 		}]
-		type: "check"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtDepIPPINR10"
+		title:     "Dependents - Enter IP PIN"
+		maxlength: 6
 		tags: [
 			"NUMERIC",
 		]
-		title: "Dependents - Enter IP PIN"
-		type:  "text"
 	}]
-	id: "fdepend"
 }

@@ -105,26 +105,37 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txt8995SACTaxpayerName?: #UPPERCASE
 		txt8995SACTaxpayerName?: strings.MaxRunes(75)
+		// SSN (Social security number) - This field is automatically calculated for you
 		txt8995SACTaxpayerSsn?: #UPPERCASE
 		txt8995SACTaxpayerSsn?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtQbiaIncmLossPercA?: #AMOUNT
 		txtQbiaIncmLossPercA?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiaIncmLossPercB?: #AMOUNT
 		txtQbiaIncmLossPercB?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiaIncmLossPercC?: #AMOUNT
 		txtQbiaIncmLossPercC?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiaW2WagesPercA?: #AMOUNT
 		txtQbiaW2WagesPercA?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiaW2WagesPercB?: #AMOUNT
 		txtQbiaW2WagesPercB?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiaW2WagesPercC?: #AMOUNT
 		txtQbiaW2WagesPercC?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiaUnadjBasisPercA?: #AMOUNT
 		txtQbiaUnadjBasisPercA?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiaUnadjBasisPercB?: #AMOUNT
 		txtQbiaUnadjBasisPercB?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiaUnadjBasisPercC?: #AMOUNT
 		txtQbiaUnadjBasisPercC?: strings.MaxRunes(10)
 		

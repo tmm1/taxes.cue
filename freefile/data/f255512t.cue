@@ -1,871 +1,876 @@
 package data
 
 schemas: f255512t: {
+	id: "f255512t"
 	fields: [{
-		maxlength: 87
+		type:      "text"
 		name:      "txtTaxpayerName"
+		title:     "This field is automatically calculated for you"
+		value:     " "
+		maxlength: 87
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type:  "text"
-		value: " "
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtTaxpayerSSN"
+		title:     "This field is automatically calculated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtF2555ForeignAdd"
+		title:     "Line 1: Foreign Address"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1: Foreign Address"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtF2555ForeignCity"
+		title:     "Line 1: Foreign City"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1: Foreign City"
-		type:  "text"
 	}, {
-		maxlength: 17
+		type:      "text"
 		name:      "txtF2555ForeignStprov"
+		title:     "Line 1: Foreign State/Province"
+		maxlength: 17
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1: Foreign State/Province"
-		type:  "text"
 	}, {
-		name: "cboF2555CountryCd"
+		type:  "combo"
+		name:  "cboF2555CountryCd"
+		title: "LIne 1: Foreign Country"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "Afghanistan"
 				value: "AF"
+				label: "Afghanistan"
 			}, {
-				label: "Akrotiri"
 				value: "AX"
+				label: "Akrotiri"
 			}, {
-				label: "Albania"
 				value: "AL"
+				label: "Albania"
 			}, {
-				label: "Algeria"
 				value: "AG"
+				label: "Algeria"
 			}, {
-				label: "American Samoa"
 				value: "AQ"
+				label: "American Samoa"
 			}, {
-				label: "Andorra"
 				value: "AN"
+				label: "Andorra"
 			}, {
-				label: "Angola"
 				value: "AO"
+				label: "Angola"
 			}, {
-				label: "Anguilla"
 				value: "AV"
+				label: "Anguilla"
 			}, {
-				label: "Antarctica"
 				value: "AY"
+				label: "Antarctica"
 			}, {
-				label: "Antigua and Barbuda"
 				value: "AC"
+				label: "Antigua and Barbuda"
 			}, {
-				label: "Argentina"
 				value: "AR"
+				label: "Argentina"
 			}, {
-				label: "Armenia"
 				value: "AM"
+				label: "Armenia"
 			}, {
-				label: "Aruba"
 				value: "AA"
+				label: "Aruba"
 			}, {
-				label: "Ashmore and Cartier Islands"
 				value: "AT"
+				label: "Ashmore and Cartier Islands"
 			}, {
-				label: "Australia"
 				value: "AS"
+				label: "Australia"
 			}, {
-				label: "Austria"
 				value: "AU"
+				label: "Austria"
 			}, {
-				label: "Azerbaijan"
 				value: "AJ"
+				label: "Azerbaijan"
 			}, {
-				label: "Bahamas"
 				value: "BF"
+				label: "Bahamas"
 			}, {
-				label: "Bahrain"
 				value: "BA"
+				label: "Bahrain"
 			}, {
-				label: "Baker Island"
 				value: "FQ"
+				label: "Baker Island"
 			}, {
-				label: "Bangladesh"
 				value: "BG"
+				label: "Bangladesh"
 			}, {
-				label: "Barbados"
 				value: "BB"
+				label: "Barbados"
 			}, {
-				label: "Belarus"
 				value: "BO"
+				label: "Belarus"
 			}, {
-				label: "Belgium"
 				value: "BE"
+				label: "Belgium"
 			}, {
-				label: "Belize"
 				value: "BH"
+				label: "Belize"
 			}, {
-				label: "Benin"
 				value: "BN"
+				label: "Benin"
 			}, {
-				label: "Bermuda"
 				value: "BD"
+				label: "Bermuda"
 			}, {
-				label: "Bhutan"
 				value: "BT"
+				label: "Bhutan"
 			}, {
-				label: "Bolivia"
 				value: "BL"
+				label: "Bolivia"
 			}, {
-				label: "Bosnia-Herzegovina"
 				value: "BK"
+				label: "Bosnia-Herzegovina"
 			}, {
-				label: "Botswana"
 				value: "BC"
+				label: "Botswana"
 			}, {
-				label: "Bouvet Island"
 				value: "BV"
+				label: "Bouvet Island"
 			}, {
-				label: "Brazil"
 				value: "BR"
+				label: "Brazil"
 			}, {
-				label: "British Indian Ocean Territory"
 				value: "IO"
+				label: "British Indian Ocean Territory"
 			}, {
-				label: "British Virgin Islands"
 				value: "VI"
+				label: "British Virgin Islands"
 			}, {
-				label: "Brunei"
 				value: "BX"
+				label: "Brunei"
 			}, {
-				label: "Bulgaria"
 				value: "BU"
+				label: "Bulgaria"
 			}, {
-				label: "Burkina Faso"
 				value: "UV"
+				label: "Burkina Faso"
 			}, {
-				label: "Burma"
 				value: "BM"
+				label: "Burma"
 			}, {
-				label: "Burundi"
 				value: "BY"
+				label: "Burundi"
 			}, {
-				label: "Cambodia"
 				value: "CB"
+				label: "Cambodia"
 			}, {
-				label: "Cameroon"
 				value: "CM"
+				label: "Cameroon"
 			}, {
-				label: "Canada"
 				value: "CA"
+				label: "Canada"
 			}, {
-				label: "Cape Verde"
 				value: "CV"
+				label: "Cape Verde"
 			}, {
-				label: "Cayman Islands"
 				value: "CJ"
+				label: "Cayman Islands"
 			}, {
-				label: "Central African Republic"
 				value: "CT"
+				label: "Central African Republic"
 			}, {
-				label: "Chad"
 				value: "CD"
+				label: "Chad"
 			}, {
-				label: "Chile"
 				value: "CI"
+				label: "Chile"
 			}, {
-				label: "China"
 				value: "CH"
+				label: "China"
 			}, {
-				label: "Christmas Island"
 				value: "KT"
+				label: "Christmas Island"
 			}, {
-				label: "Clipperton Island"
 				value: "IP"
+				label: "Clipperton Island"
 			}, {
-				label: "Cocos (Keeling) Islands"
 				value: "CK"
+				label: "Cocos (Keeling) Islands"
 			}, {
-				label: "Colombia"
 				value: "CO"
+				label: "Colombia"
 			}, {
-				label: "Comoros"
 				value: "CN"
+				label: "Comoros"
 			}, {
-				label: "Congo (Brazzaville)"
 				value: "CF"
+				label: "Congo (Brazzaville)"
 			}, {
-				label: "Congo (Kinshasa)"
 				value: "CG"
+				label: "Congo (Kinshasa)"
 			}, {
-				label: "Cook Islands"
 				value: "CW"
+				label: "Cook Islands"
 			}, {
-				label: "Coral Sea Islands"
 				value: "CR"
+				label: "Coral Sea Islands"
 			}, {
-				label: "Costa Rica"
 				value: "CS"
+				label: "Costa Rica"
 			}, {
-				label: "Cote D'Ivoire(Ivory Coast)"
 				value: "IV"
+				label: "Cote D'Ivoire(Ivory Coast)"
 			}, {
-				label: "Croatia"
 				value: "HR"
+				label: "Croatia"
 			}, {
-				label: "Cuba"
 				value: "CU"
+				label: "Cuba"
 			}, {
-				label: "Curacao"
 				value: "UC"
+				label: "Curacao"
 			}, {
-				label: "Cyprus"
 				value: "CY"
+				label: "Cyprus"
 			}, {
-				label: "Czech Republic"
 				value: "EZ"
+				label: "Czech Republic"
 			}, {
-				label: "Denmark"
 				value: "DA"
+				label: "Denmark"
 			}, {
-				label: "Dhekelia"
 				value: "DX"
+				label: "Dhekelia"
 			}, {
-				label: "Djibouti"
 				value: "DJ"
+				label: "Djibouti"
 			}, {
-				label: "Dominica"
 				value: "DO"
+				label: "Dominica"
 			}, {
-				label: "Dominican Republic"
 				value: "DR"
+				label: "Dominican Republic"
 			}, {
-				label: "East Timor"
 				value: "TT"
+				label: "East Timor"
 			}, {
-				label: "Ecuador"
 				value: "EC"
+				label: "Ecuador"
 			}, {
-				label: "Egypt"
 				value: "EG"
+				label: "Egypt"
 			}, {
-				label: "El Salvador"
 				value: "ES"
+				label: "El Salvador"
 			}, {
-				label: "Equatorial Guinea"
 				value: "EK"
+				label: "Equatorial Guinea"
 			}, {
-				label: "Eritrea"
 				value: "ER"
+				label: "Eritrea"
 			}, {
-				label: "Estonia"
 				value: "EN"
+				label: "Estonia"
 			}, {
-				label: "Ethiopia"
 				value: "ET"
+				label: "Ethiopia"
 			}, {
-				label: "Falkland Islands (Islas Malvinas)"
 				value: "FK"
+				label: "Falkland Islands (Islas Malvinas)"
 			}, {
-				label: "Faroe Islands"
 				value: "FO"
+				label: "Faroe Islands"
 			}, {
-				label: "Federated States of Micronesia"
 				value: "FM"
+				label: "Federated States of Micronesia"
 			}, {
-				label: "Fiji"
 				value: "FJ"
+				label: "Fiji"
 			}, {
-				label: "Finland"
 				value: "FI"
+				label: "Finland"
 			}, {
-				label: "France"
 				value: "FR"
+				label: "France"
 			}, {
-				label: "French Polynesia"
 				value: "FP"
+				label: "French Polynesia"
 			}, {
-				label: "French Southern and Antarctic Lands"
 				value: "FS"
+				label: "French Southern and Antarctic Lands"
 			}, {
-				label: "Gabon"
 				value: "GB"
+				label: "Gabon"
 			}, {
-				label: "Georgia"
 				value: "GG"
+				label: "Georgia"
 			}, {
-				label: "Germany"
 				value: "GM"
+				label: "Germany"
 			}, {
-				label: "Ghana"
 				value: "GH"
+				label: "Ghana"
 			}, {
-				label: "Gibraltar"
 				value: "GI"
+				label: "Gibraltar"
 			}, {
-				label: "Greece"
 				value: "GR"
+				label: "Greece"
 			}, {
-				label: "Greenland"
 				value: "GL"
+				label: "Greenland"
 			}, {
-				label: "Grenada"
 				value: "GJ"
+				label: "Grenada"
 			}, {
-				label: "Guam"
 				value: "GQ"
+				label: "Guam"
 			}, {
-				label: "Guatemala"
 				value: "GT"
+				label: "Guatemala"
 			}, {
-				label: "Guernsey"
 				value: "GK"
+				label: "Guernsey"
 			}, {
-				label: "Guinea"
 				value: "GV"
+				label: "Guinea"
 			}, {
-				label: "Guinea-Bissau"
 				value: "PU"
+				label: "Guinea-Bissau"
 			}, {
-				label: "Guyana"
 				value: "GY"
+				label: "Guyana"
 			}, {
-				label: "Haiti"
 				value: "HA"
+				label: "Haiti"
 			}, {
-				label: "Heard Island and McDonald Islands"
 				value: "HM"
+				label: "Heard Island and McDonald Islands"
 			}, {
-				label: "Holy See"
 				value: "VT"
+				label: "Holy See"
 			}, {
-				label: "Honduras"
 				value: "HO"
+				label: "Honduras"
 			}, {
-				label: "Hong Kong"
 				value: "HK"
+				label: "Hong Kong"
 			}, {
-				label: "Howland Island"
 				value: "HQ"
+				label: "Howland Island"
 			}, {
-				label: "Hungary"
 				value: "HU"
+				label: "Hungary"
 			}, {
-				label: "Iceland"
 				value: "IC"
+				label: "Iceland"
 			}, {
-				label: "India"
 				value: "IN"
+				label: "India"
 			}, {
-				label: "Indonesia"
 				value: "ID"
+				label: "Indonesia"
 			}, {
-				label: "Iran"
 				value: "IR"
+				label: "Iran"
 			}, {
-				label: "Iraq"
 				value: "IZ"
+				label: "Iraq"
 			}, {
-				label: "Ireland"
 				value: "EI"
+				label: "Ireland"
 			}, {
-				label: "Israel"
 				value: "IS"
+				label: "Israel"
 			}, {
-				label: "Italy"
 				value: "IT"
+				label: "Italy"
 			}, {
-				label: "Jamaica"
 				value: "JM"
+				label: "Jamaica"
 			}, {
-				label: "Jan Mayen"
 				value: "JN"
+				label: "Jan Mayen"
 			}, {
-				label: "Japan"
 				value: "JA"
+				label: "Japan"
 			}, {
-				label: "Jarvis Island"
 				value: "DQ"
+				label: "Jarvis Island"
 			}, {
-				label: "Jersey"
 				value: "JE"
+				label: "Jersey"
 			}, {
-				label: "Johnston Atoll"
 				value: "JQ"
+				label: "Johnston Atoll"
 			}, {
-				label: "Jordan"
 				value: "JO"
+				label: "Jordan"
 			}, {
-				label: "Kazakhstan"
 				value: "KZ"
+				label: "Kazakhstan"
 			}, {
-				label: "Kenya"
 				value: "KE"
+				label: "Kenya"
 			}, {
-				label: "Kingman Reef"
 				value: "KQ"
+				label: "Kingman Reef"
 			}, {
-				label: "Kiribati"
 				value: "KR"
+				label: "Kiribati"
 			}, {
-				label: "Korea, Democratic People's Republic of (North)"
 				value: "KN"
+				label: "Korea, Democratic People's Republic of (North)"
 			}, {
-				label: "Korea, Republic of (South)"
 				value: "KS"
+				label: "Korea, Republic of (South)"
 			}, {
-				label: "Kosovo"
 				value: "KV"
+				label: "Kosovo"
 			}, {
-				label: "Kuwait"
 				value: "KU"
+				label: "Kuwait"
 			}, {
-				label: "Kyrgyzstan"
 				value: "KG"
+				label: "Kyrgyzstan"
 			}, {
-				label: "Laos"
 				value: "LA"
+				label: "Laos"
 			}, {
-				label: "Latvia"
 				value: "LG"
+				label: "Latvia"
 			}, {
-				label: "Lebanon"
 				value: "LE"
+				label: "Lebanon"
 			}, {
-				label: "Lesotho"
 				value: "LT"
+				label: "Lesotho"
 			}, {
-				label: "Liberia"
 				value: "LI"
+				label: "Liberia"
 			}, {
-				label: "Libya"
 				value: "LY"
+				label: "Libya"
 			}, {
-				label: "Liechtenstein"
 				value: "LS"
+				label: "Liechtenstein"
 			}, {
-				label: "Lithuania"
 				value: "LH"
+				label: "Lithuania"
 			}, {
-				label: "Luxembourg"
 				value: "LU"
+				label: "Luxembourg"
 			}, {
-				label: "Macau"
 				value: "MC"
+				label: "Macau"
 			}, {
-				label: "Macedonia"
 				value: "MK"
+				label: "Macedonia"
 			}, {
-				label: "Madagascar"
 				value: "MA"
+				label: "Madagascar"
 			}, {
-				label: "Malawi"
 				value: "MI"
+				label: "Malawi"
 			}, {
-				label: "Malaysia"
 				value: "MY"
+				label: "Malaysia"
 			}, {
-				label: "Maldives"
 				value: "MV"
+				label: "Maldives"
 			}, {
-				label: "Mali"
 				value: "ML"
+				label: "Mali"
 			}, {
-				label: "Malta"
 				value: "MT"
+				label: "Malta"
 			}, {
-				label: "Man, Isle of"
 				value: "IM"
+				label: "Man, Isle of"
 			}, {
-				label: "Marshall Islands"
 				value: "RM"
+				label: "Marshall Islands"
 			}, {
-				label: "Mauritania"
 				value: "MR"
+				label: "Mauritania"
 			}, {
-				label: "Mauritius"
 				value: "MP"
+				label: "Mauritius"
 			}, {
-				label: "Mexico"
 				value: "MX"
+				label: "Mexico"
 			}, {
-				label: "Midway Islands"
 				value: "MQ"
+				label: "Midway Islands"
 			}, {
-				label: "Moldova"
 				value: "MD"
+				label: "Moldova"
 			}, {
-				label: "Monaco"
 				value: "MN"
+				label: "Monaco"
 			}, {
-				label: "Mongolia"
 				value: "MG"
+				label: "Mongolia"
 			}, {
-				label: "Montenegro"
 				value: "MJ"
+				label: "Montenegro"
 			}, {
-				label: "Montserrat"
 				value: "MH"
+				label: "Montserrat"
 			}, {
-				label: "Morocco"
 				value: "MO"
+				label: "Morocco"
 			}, {
-				label: "Mozambique"
 				value: "MZ"
+				label: "Mozambique"
 			}, {
-				label: "Namibia"
 				value: "WA"
+				label: "Namibia"
 			}, {
-				label: "Nauru"
 				value: "NR"
+				label: "Nauru"
 			}, {
-				label: "Navassa Island"
 				value: "BQ"
+				label: "Navassa Island"
 			}, {
-				label: "Nepal"
 				value: "NP"
+				label: "Nepal"
 			}, {
-				label: "Netherlands"
 				value: "NL"
+				label: "Netherlands"
 			}, {
-				label: "New Caledonia"
 				value: "NC"
+				label: "New Caledonia"
 			}, {
-				label: "New Zealand"
 				value: "NZ"
+				label: "New Zealand"
 			}, {
-				label: "Nicaragua"
 				value: "NU"
+				label: "Nicaragua"
 			}, {
-				label: "Niger"
 				value: "NG"
+				label: "Niger"
 			}, {
-				label: "Nigeria"
 				value: "NI"
+				label: "Nigeria"
 			}, {
-				label: "Niue"
 				value: "NE"
+				label: "Niue"
 			}, {
-				label: "Norfolk Island"
 				value: "NF"
+				label: "Norfolk Island"
 			}, {
-				label: "Northern Mariana Islands"
 				value: "CQ"
+				label: "Northern Mariana Islands"
 			}, {
-				label: "Norway"
 				value: "NO"
+				label: "Norway"
 			}, {
-				label: "Oman"
 				value: "MU"
+				label: "Oman"
 			}, {
-				label: "Other Country"
 				value: "OC"
+				label: "Other Country"
 			}, {
-				label: "Pakistan"
 				value: "PK"
+				label: "Pakistan"
 			}, {
-				label: "Palau"
 				value: "PS"
+				label: "Palau"
 			}, {
-				label: "Palmyra Atoll"
 				value: "LQ"
+				label: "Palmyra Atoll"
 			}, {
-				label: "Panama"
 				value: "PM"
+				label: "Panama"
 			}, {
-				label: "Papua-New Guinea"
 				value: "PP"
+				label: "Papua-New Guinea"
 			}, {
-				label: "Paracel Islands"
 				value: "PF"
+				label: "Paracel Islands"
 			}, {
-				label: "Paraguay"
 				value: "PA"
+				label: "Paraguay"
 			}, {
-				label: "Peru"
 				value: "PE"
+				label: "Peru"
 			}, {
-				label: "Philippines"
 				value: "RP"
+				label: "Philippines"
 			}, {
-				label: "Pitcairn Islands"
 				value: "PC"
+				label: "Pitcairn Islands"
 			}, {
-				label: "Poland"
 				value: "PL"
+				label: "Poland"
 			}, {
-				label: "Portugal"
 				value: "PO"
+				label: "Portugal"
 			}, {
-				label: "Puerto Rico"
 				value: "RQ"
+				label: "Puerto Rico"
 			}, {
-				label: "Qatar"
 				value: "QA"
+				label: "Qatar"
 			}, {
-				label: "Romania"
 				value: "RO"
+				label: "Romania"
 			}, {
-				label: "Russia"
 				value: "RS"
+				label: "Russia"
 			}, {
-				label: "Rwanda"
 				value: "RW"
+				label: "Rwanda"
 			}, {
-				label: "Saint Barthelemy"
 				value: "TB"
+				label: "Saint Barthelemy"
 			}, {
-				label: "Saint Martin"
 				value: "RN"
+				label: "Saint Martin"
 			}, {
-				label: "Samoa"
 				value: "WS"
+				label: "Samoa"
 			}, {
-				label: "San Marino"
 				value: "SM"
+				label: "San Marino"
 			}, {
-				label: "Sao Tome and Principe"
 				value: "TP"
+				label: "Sao Tome and Principe"
 			}, {
-				label: "Saudi Arabia"
 				value: "SA"
+				label: "Saudi Arabia"
 			}, {
-				label: "Senegal"
 				value: "SG"
+				label: "Senegal"
 			}, {
-				label: "Serbia"
 				value: "RI"
+				label: "Serbia"
 			}, {
-				label: "Seychelles"
 				value: "SE"
+				label: "Seychelles"
 			}, {
-				label: "Sierra Leone"
 				value: "SL"
+				label: "Sierra Leone"
 			}, {
-				label: "Singapore"
 				value: "SN"
+				label: "Singapore"
 			}, {
-				label: "Sint Maarten"
 				value: "NN"
+				label: "Sint Maarten"
 			}, {
-				label: "Slovakia"
 				value: "LO"
+				label: "Slovakia"
 			}, {
-				label: "Slovenia"
 				value: "SI"
+				label: "Slovenia"
 			}, {
-				label: "Solomon Islands"
 				value: "BP"
+				label: "Solomon Islands"
 			}, {
-				label: "Somalia"
 				value: "SO"
+				label: "Somalia"
 			}, {
-				label: "South Africa"
 				value: "SF"
+				label: "South Africa"
 			}, {
-				label: "South Georgia and the South Sandwich Islands"
 				value: "SX"
+				label: "South Georgia and the South Sandwich Islands"
 			}, {
-				label: "South Sudan"
 				value: "OD"
+				label: "South Sudan"
 			}, {
-				label: "Spain"
 				value: "SP"
+				label: "Spain"
 			}, {
-				label: "Spratly Islands"
 				value: "PG"
+				label: "Spratly Islands"
 			}, {
-				label: "Sri Lanka"
 				value: "CE"
+				label: "Sri Lanka"
 			}, {
-				label: "St. Helena"
 				value: "SH"
+				label: "St. Helena"
 			}, {
-				label: "St. Kitts and Nevis"
 				value: "SC"
+				label: "St. Kitts and Nevis"
 			}, {
-				label: "St. Lucia Island"
 				value: "ST"
+				label: "St. Lucia Island"
 			}, {
-				label: "St. Pierre and Miquelon"
 				value: "SB"
+				label: "St. Pierre and Miquelon"
 			}, {
-				label: "St. Vincent and the Grenadines"
 				value: "VC"
+				label: "St. Vincent and the Grenadines"
 			}, {
-				label: "Sudan"
 				value: "SU"
+				label: "Sudan"
 			}, {
-				label: "Suriname"
 				value: "NS"
+				label: "Suriname"
 			}, {
-				label: "Svalbard"
 				value: "SV"
+				label: "Svalbard"
 			}, {
-				label: "Swaziland"
 				value: "WZ"
+				label: "Swaziland"
 			}, {
-				label: "Sweden"
 				value: "SW"
+				label: "Sweden"
 			}, {
-				label: "Switzerland"
 				value: "SZ"
+				label: "Switzerland"
 			}, {
-				label: "Syria"
 				value: "SY"
+				label: "Syria"
 			}, {
-				label: "Taiwan"
 				value: "TW"
+				label: "Taiwan"
 			}, {
-				label: "Tajikistan"
 				value: "TI"
+				label: "Tajikistan"
 			}, {
-				label: "Tanzania"
 				value: "TZ"
+				label: "Tanzania"
 			}, {
-				label: "Thailand"
 				value: "TH"
+				label: "Thailand"
 			}, {
-				label: "The Gambia"
 				value: "GA"
+				label: "The Gambia"
 			}, {
-				label: "Togo"
 				value: "TO"
+				label: "Togo"
 			}, {
-				label: "Tokelau"
 				value: "TL"
+				label: "Tokelau"
 			}, {
-				label: "Tonga"
 				value: "TN"
+				label: "Tonga"
 			}, {
-				label: "Trinidad and Tobago"
 				value: "TD"
+				label: "Trinidad and Tobago"
 			}, {
-				label: "Tunisia"
 				value: "TS"
+				label: "Tunisia"
 			}, {
-				label: "Turkey"
 				value: "TU"
+				label: "Turkey"
 			}, {
-				label: "Turkmenistan"
 				value: "TX"
+				label: "Turkmenistan"
 			}, {
-				label: "Turks and Caicos Islands"
 				value: "TK"
+				label: "Turks and Caicos Islands"
 			}, {
-				label: "Tuvalu"
 				value: "TV"
+				label: "Tuvalu"
 			}, {
-				label: "Uganda"
 				value: "UG"
+				label: "Uganda"
 			}, {
-				label: "Ukraine"
 				value: "UP"
+				label: "Ukraine"
 			}, {
-				label: "United Arab Emirates"
 				value: "AE"
+				label: "United Arab Emirates"
 			}, {
-				label: "United Kingdom (England, Northern Ireland, Scotland, and Wales)"
 				value: "UK"
+				label: "United Kingdom (England, Northern Ireland, Scotland, and Wales)"
 			}, {
-				label: "Uruguay"
 				value: "UY"
+				label: "Uruguay"
 			}, {
-				label: "Uzbekistan"
 				value: "UZ"
+				label: "Uzbekistan"
 			}, {
-				label: "Vanuatu"
 				value: "NH"
+				label: "Vanuatu"
 			}, {
-				label: "Venezuela"
 				value: "VE"
+				label: "Venezuela"
 			}, {
-				label: "Vietnam"
 				value: "VM"
+				label: "Vietnam"
 			}, {
-				label: "Virgin Islands"
 				value: "VQ"
+				label: "Virgin Islands"
 			}, {
-				label: "Wake Island"
 				value: "WQ"
+				label: "Wake Island"
 			}, {
-				label: "Wallis and Futuna"
 				value: "WF"
+				label: "Wallis and Futuna"
 			}, {
-				label: "Western Sahara"
 				value: "WI"
+				label: "Western Sahara"
 			}, {
-				label: "Yemen (Aden)"
 				value: "YM"
+				label: "Yemen (Aden)"
 			}, {
-				label: "Zambia"
 				value: "ZA"
+				label: "Zambia"
 			}, {
-				label: "Zimbabwe"
 				value: "ZI"
+				label: "Zimbabwe"
 			}]
-		title: "LIne 1: Foreign Country"
-		type:  "combo"
 	}, {
-		maxlength: 16
+		type:      "text"
 		name:      "txtF2555ForeignPostalCode"
+		title:     "Line 1: Foreign Postalcode"
+		maxlength: 16
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1: Foreign Postalcode"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtF2555Occupation"
+		title:     "Line 2: Your Occupation"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 2: Your Occupation"
-		type:  "text"
 	}, {
-		maxlength: 75
+		type:      "text"
 		name:      "txtF2555EmpName"
+		title:     "Line 3: Employer name"
+		maxlength: 75
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 3: Employer name"
-		type:  "text"
 	}, {
-		maxlength: 45
+		type:      "text"
 		name:      "txtF2555EmpUsAdd"
+		title:     "Line 4a: US Address"
+		maxlength: 45
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4a: US Address"
-		type:  "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtF2555EmpUsCity"
+		title:     "Line 4a: US City"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4a: US City"
-		type:  "text"
 	}, {
-		name: "cboF2555EmpUsState"
+		type:  "combo"
+		name:  "cboF2555EmpUsState"
+		title: "Line 4a: US State"
 		options: [
 			{
 				value: ""
@@ -1047,884 +1052,884 @@ schemas: f255512t: {
 			{
 				value: "WY"
 			}]
-		title: "Line 4a: US State"
-		type:  "combo"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtF2555EmpUsZip"
+		title:     "Line 4a: US Zip Code"
+		maxlength: 5
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 4a: US Zip Code"
-		type:  "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtF2555EmpForAdd"
+		title:     "Line 4b: Employer Foreign Address"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4b: Employer Foreign Address"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtF2555EmpForCity"
+		title:     "Line 4b: Employer foreign city"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4b: Employer foreign city"
-		type:  "text"
 	}, {
-		maxlength: 17
+		type:      "text"
 		name:      "txtF2555EmpForStprov"
+		title:     "Line 4b: Employer foreign State/Province"
+		maxlength: 17
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4b: Employer foreign State/Province"
-		type:  "text"
 	}, {
-		name: "cboF2555EmpForCountryCd"
+		type:  "combo"
+		name:  "cboF2555EmpForCountryCd"
+		title: "Line 4b: Employer foreign Country"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "Afghanistan"
 				value: "AF"
+				label: "Afghanistan"
 			}, {
-				label: "Akrotiri"
 				value: "AX"
+				label: "Akrotiri"
 			}, {
-				label: "Albania"
 				value: "AL"
+				label: "Albania"
 			}, {
-				label: "Algeria"
 				value: "AG"
+				label: "Algeria"
 			}, {
-				label: "American Samoa"
 				value: "AQ"
+				label: "American Samoa"
 			}, {
-				label: "Andorra"
 				value: "AN"
+				label: "Andorra"
 			}, {
-				label: "Angola"
 				value: "AO"
+				label: "Angola"
 			}, {
-				label: "Anguilla"
 				value: "AV"
+				label: "Anguilla"
 			}, {
-				label: "Antarctica"
 				value: "AY"
+				label: "Antarctica"
 			}, {
-				label: "Antigua and Barbuda"
 				value: "AC"
+				label: "Antigua and Barbuda"
 			}, {
-				label: "Argentina"
 				value: "AR"
+				label: "Argentina"
 			}, {
-				label: "Armenia"
 				value: "AM"
+				label: "Armenia"
 			}, {
-				label: "Aruba"
 				value: "AA"
+				label: "Aruba"
 			}, {
-				label: "Ashmore and Cartier Islands"
 				value: "AT"
+				label: "Ashmore and Cartier Islands"
 			}, {
-				label: "Australia"
 				value: "AS"
+				label: "Australia"
 			}, {
-				label: "Austria"
 				value: "AU"
+				label: "Austria"
 			}, {
-				label: "Azerbaijan"
 				value: "AJ"
+				label: "Azerbaijan"
 			}, {
-				label: "Bahamas"
 				value: "BF"
+				label: "Bahamas"
 			}, {
-				label: "Bahrain"
 				value: "BA"
+				label: "Bahrain"
 			}, {
-				label: "Baker Island"
 				value: "FQ"
+				label: "Baker Island"
 			}, {
-				label: "Bangladesh"
 				value: "BG"
+				label: "Bangladesh"
 			}, {
-				label: "Barbados"
 				value: "BB"
+				label: "Barbados"
 			}, {
-				label: "Belarus"
 				value: "BO"
+				label: "Belarus"
 			}, {
-				label: "Belgium"
 				value: "BE"
+				label: "Belgium"
 			}, {
-				label: "Belize"
 				value: "BH"
+				label: "Belize"
 			}, {
-				label: "Benin"
 				value: "BN"
+				label: "Benin"
 			}, {
-				label: "Bermuda"
 				value: "BD"
+				label: "Bermuda"
 			}, {
-				label: "Bhutan"
 				value: "BT"
+				label: "Bhutan"
 			}, {
-				label: "Bolivia"
 				value: "BL"
+				label: "Bolivia"
 			}, {
-				label: "Bosnia-Herzegovina"
 				value: "BK"
+				label: "Bosnia-Herzegovina"
 			}, {
-				label: "Botswana"
 				value: "BC"
+				label: "Botswana"
 			}, {
-				label: "Bouvet Island"
 				value: "BV"
+				label: "Bouvet Island"
 			}, {
-				label: "Brazil"
 				value: "BR"
+				label: "Brazil"
 			}, {
-				label: "British Indian Ocean Territory"
 				value: "IO"
+				label: "British Indian Ocean Territory"
 			}, {
-				label: "British Virgin Islands"
 				value: "VI"
+				label: "British Virgin Islands"
 			}, {
-				label: "Brunei"
 				value: "BX"
+				label: "Brunei"
 			}, {
-				label: "Bulgaria"
 				value: "BU"
+				label: "Bulgaria"
 			}, {
-				label: "Burkina Faso"
 				value: "UV"
+				label: "Burkina Faso"
 			}, {
-				label: "Burma"
 				value: "BM"
+				label: "Burma"
 			}, {
-				label: "Burundi"
 				value: "BY"
+				label: "Burundi"
 			}, {
-				label: "Cambodia"
 				value: "CB"
+				label: "Cambodia"
 			}, {
-				label: "Cameroon"
 				value: "CM"
+				label: "Cameroon"
 			}, {
-				label: "Canada"
 				value: "CA"
+				label: "Canada"
 			}, {
-				label: "Cape Verde"
 				value: "CV"
+				label: "Cape Verde"
 			}, {
-				label: "Cayman Islands"
 				value: "CJ"
+				label: "Cayman Islands"
 			}, {
-				label: "Central African Republic"
 				value: "CT"
+				label: "Central African Republic"
 			}, {
-				label: "Chad"
 				value: "CD"
+				label: "Chad"
 			}, {
-				label: "Chile"
 				value: "CI"
+				label: "Chile"
 			}, {
-				label: "China"
 				value: "CH"
+				label: "China"
 			}, {
-				label: "Christmas Island"
 				value: "KT"
+				label: "Christmas Island"
 			}, {
-				label: "Clipperton Island"
 				value: "IP"
+				label: "Clipperton Island"
 			}, {
-				label: "Cocos (Keeling) Islands"
 				value: "CK"
+				label: "Cocos (Keeling) Islands"
 			}, {
-				label: "Colombia"
 				value: "CO"
+				label: "Colombia"
 			}, {
-				label: "Comoros"
 				value: "CN"
+				label: "Comoros"
 			}, {
-				label: "Congo (Brazzaville)"
 				value: "CF"
+				label: "Congo (Brazzaville)"
 			}, {
-				label: "Congo (Kinshasa)"
 				value: "CG"
+				label: "Congo (Kinshasa)"
 			}, {
-				label: "Cook Islands"
 				value: "CW"
+				label: "Cook Islands"
 			}, {
-				label: "Coral Sea Islands"
 				value: "CR"
+				label: "Coral Sea Islands"
 			}, {
-				label: "Costa Rica"
 				value: "CS"
+				label: "Costa Rica"
 			}, {
-				label: "Cote D'Ivoire(Ivory Coast)"
 				value: "IV"
+				label: "Cote D'Ivoire(Ivory Coast)"
 			}, {
-				label: "Croatia"
 				value: "HR"
+				label: "Croatia"
 			}, {
-				label: "Cuba"
 				value: "CU"
+				label: "Cuba"
 			}, {
-				label: "Curacao"
 				value: "UC"
+				label: "Curacao"
 			}, {
-				label: "Cyprus"
 				value: "CY"
+				label: "Cyprus"
 			}, {
-				label: "Czech Republic"
 				value: "EZ"
+				label: "Czech Republic"
 			}, {
-				label: "Denmark"
 				value: "DA"
+				label: "Denmark"
 			}, {
-				label: "Dhekelia"
 				value: "DX"
+				label: "Dhekelia"
 			}, {
-				label: "Djibouti"
 				value: "DJ"
+				label: "Djibouti"
 			}, {
-				label: "Dominica"
 				value: "DO"
+				label: "Dominica"
 			}, {
-				label: "Dominican Republic"
 				value: "DR"
+				label: "Dominican Republic"
 			}, {
-				label: "East Timor"
 				value: "TT"
+				label: "East Timor"
 			}, {
-				label: "Ecuador"
 				value: "EC"
+				label: "Ecuador"
 			}, {
-				label: "Egypt"
 				value: "EG"
+				label: "Egypt"
 			}, {
-				label: "El Salvador"
 				value: "ES"
+				label: "El Salvador"
 			}, {
-				label: "Equatorial Guinea"
 				value: "EK"
+				label: "Equatorial Guinea"
 			}, {
-				label: "Eritrea"
 				value: "ER"
+				label: "Eritrea"
 			}, {
-				label: "Estonia"
 				value: "EN"
+				label: "Estonia"
 			}, {
-				label: "Ethiopia"
 				value: "ET"
+				label: "Ethiopia"
 			}, {
-				label: "Falkland Islands (Islas Malvinas)"
 				value: "FK"
+				label: "Falkland Islands (Islas Malvinas)"
 			}, {
-				label: "Faroe Islands"
 				value: "FO"
+				label: "Faroe Islands"
 			}, {
-				label: "Federated States of Micronesia"
 				value: "FM"
+				label: "Federated States of Micronesia"
 			}, {
-				label: "Fiji"
 				value: "FJ"
+				label: "Fiji"
 			}, {
-				label: "Finland"
 				value: "FI"
+				label: "Finland"
 			}, {
-				label: "France"
 				value: "FR"
+				label: "France"
 			}, {
-				label: "French Polynesia"
 				value: "FP"
+				label: "French Polynesia"
 			}, {
-				label: "French Southern and Antarctic Lands"
 				value: "FS"
+				label: "French Southern and Antarctic Lands"
 			}, {
-				label: "Gabon"
 				value: "GB"
+				label: "Gabon"
 			}, {
-				label: "Georgia"
 				value: "GG"
+				label: "Georgia"
 			}, {
-				label: "Germany"
 				value: "GM"
+				label: "Germany"
 			}, {
-				label: "Ghana"
 				value: "GH"
+				label: "Ghana"
 			}, {
-				label: "Gibraltar"
 				value: "GI"
+				label: "Gibraltar"
 			}, {
-				label: "Greece"
 				value: "GR"
+				label: "Greece"
 			}, {
-				label: "Greenland"
 				value: "GL"
+				label: "Greenland"
 			}, {
-				label: "Grenada"
 				value: "GJ"
+				label: "Grenada"
 			}, {
-				label: "Guam"
 				value: "GQ"
+				label: "Guam"
 			}, {
-				label: "Guatemala"
 				value: "GT"
+				label: "Guatemala"
 			}, {
-				label: "Guernsey"
 				value: "GK"
+				label: "Guernsey"
 			}, {
-				label: "Guinea"
 				value: "GV"
+				label: "Guinea"
 			}, {
-				label: "Guinea-Bissau"
 				value: "PU"
+				label: "Guinea-Bissau"
 			}, {
-				label: "Guyana"
 				value: "GY"
+				label: "Guyana"
 			}, {
-				label: "Haiti"
 				value: "HA"
+				label: "Haiti"
 			}, {
-				label: "Heard Island and McDonald Islands"
 				value: "HM"
+				label: "Heard Island and McDonald Islands"
 			}, {
-				label: "Holy See"
 				value: "VT"
+				label: "Holy See"
 			}, {
-				label: "Honduras"
 				value: "HO"
+				label: "Honduras"
 			}, {
-				label: "Hong Kong"
 				value: "HK"
+				label: "Hong Kong"
 			}, {
-				label: "Howland Island"
 				value: "HQ"
+				label: "Howland Island"
 			}, {
-				label: "Hungary"
 				value: "HU"
+				label: "Hungary"
 			}, {
-				label: "Iceland"
 				value: "IC"
+				label: "Iceland"
 			}, {
-				label: "India"
 				value: "IN"
+				label: "India"
 			}, {
-				label: "Indonesia"
 				value: "ID"
+				label: "Indonesia"
 			}, {
-				label: "Iran"
 				value: "IR"
+				label: "Iran"
 			}, {
-				label: "Iraq"
 				value: "IZ"
+				label: "Iraq"
 			}, {
-				label: "Ireland"
 				value: "EI"
+				label: "Ireland"
 			}, {
-				label: "Israel"
 				value: "IS"
+				label: "Israel"
 			}, {
-				label: "Italy"
 				value: "IT"
+				label: "Italy"
 			}, {
-				label: "Jamaica"
 				value: "JM"
+				label: "Jamaica"
 			}, {
-				label: "Jan Mayen"
 				value: "JN"
+				label: "Jan Mayen"
 			}, {
-				label: "Japan"
 				value: "JA"
+				label: "Japan"
 			}, {
-				label: "Jarvis Island"
 				value: "DQ"
+				label: "Jarvis Island"
 			}, {
-				label: "Jersey"
 				value: "JE"
+				label: "Jersey"
 			}, {
-				label: "Johnston Atoll"
 				value: "JQ"
+				label: "Johnston Atoll"
 			}, {
-				label: "Jordan"
 				value: "JO"
+				label: "Jordan"
 			}, {
-				label: "Kazakhstan"
 				value: "KZ"
+				label: "Kazakhstan"
 			}, {
-				label: "Kenya"
 				value: "KE"
+				label: "Kenya"
 			}, {
-				label: "Kingman Reef"
 				value: "KQ"
+				label: "Kingman Reef"
 			}, {
-				label: "Kiribati"
 				value: "KR"
+				label: "Kiribati"
 			}, {
-				label: "Korea, Democratic People's Republic of (North)"
 				value: "KN"
+				label: "Korea, Democratic People's Republic of (North)"
 			}, {
-				label: "Korea, Republic of (South)"
 				value: "KS"
+				label: "Korea, Republic of (South)"
 			}, {
-				label: "Kosovo"
 				value: "KV"
+				label: "Kosovo"
 			}, {
-				label: "Kuwait"
 				value: "KU"
+				label: "Kuwait"
 			}, {
-				label: "Kyrgyzstan"
 				value: "KG"
+				label: "Kyrgyzstan"
 			}, {
-				label: "Laos"
 				value: "LA"
+				label: "Laos"
 			}, {
-				label: "Latvia"
 				value: "LG"
+				label: "Latvia"
 			}, {
-				label: "Lebanon"
 				value: "LE"
+				label: "Lebanon"
 			}, {
-				label: "Lesotho"
 				value: "LT"
+				label: "Lesotho"
 			}, {
-				label: "Liberia"
 				value: "LI"
+				label: "Liberia"
 			}, {
-				label: "Libya"
 				value: "LY"
+				label: "Libya"
 			}, {
-				label: "Liechtenstein"
 				value: "LS"
+				label: "Liechtenstein"
 			}, {
-				label: "Lithuania"
 				value: "LH"
+				label: "Lithuania"
 			}, {
-				label: "Luxembourg"
 				value: "LU"
+				label: "Luxembourg"
 			}, {
-				label: "Macau"
 				value: "MC"
+				label: "Macau"
 			}, {
-				label: "Macedonia"
 				value: "MK"
+				label: "Macedonia"
 			}, {
-				label: "Madagascar"
 				value: "MA"
+				label: "Madagascar"
 			}, {
-				label: "Malawi"
 				value: "MI"
+				label: "Malawi"
 			}, {
-				label: "Malaysia"
 				value: "MY"
+				label: "Malaysia"
 			}, {
-				label: "Maldives"
 				value: "MV"
+				label: "Maldives"
 			}, {
-				label: "Mali"
 				value: "ML"
+				label: "Mali"
 			}, {
-				label: "Malta"
 				value: "MT"
+				label: "Malta"
 			}, {
-				label: "Man, Isle of"
 				value: "IM"
+				label: "Man, Isle of"
 			}, {
-				label: "Marshall Islands"
 				value: "RM"
+				label: "Marshall Islands"
 			}, {
-				label: "Mauritania"
 				value: "MR"
+				label: "Mauritania"
 			}, {
-				label: "Mauritius"
 				value: "MP"
+				label: "Mauritius"
 			}, {
-				label: "Mexico"
 				value: "MX"
+				label: "Mexico"
 			}, {
-				label: "Midway Islands"
 				value: "MQ"
+				label: "Midway Islands"
 			}, {
-				label: "Moldova"
 				value: "MD"
+				label: "Moldova"
 			}, {
-				label: "Monaco"
 				value: "MN"
+				label: "Monaco"
 			}, {
-				label: "Mongolia"
 				value: "MG"
+				label: "Mongolia"
 			}, {
-				label: "Montenegro"
 				value: "MJ"
+				label: "Montenegro"
 			}, {
-				label: "Montserrat"
 				value: "MH"
+				label: "Montserrat"
 			}, {
-				label: "Morocco"
 				value: "MO"
+				label: "Morocco"
 			}, {
-				label: "Mozambique"
 				value: "MZ"
+				label: "Mozambique"
 			}, {
-				label: "Namibia"
 				value: "WA"
+				label: "Namibia"
 			}, {
-				label: "Nauru"
 				value: "NR"
+				label: "Nauru"
 			}, {
-				label: "Navassa Island"
 				value: "BQ"
+				label: "Navassa Island"
 			}, {
-				label: "Nepal"
 				value: "NP"
+				label: "Nepal"
 			}, {
-				label: "Netherlands"
 				value: "NL"
+				label: "Netherlands"
 			}, {
-				label: "New Caledonia"
 				value: "NC"
+				label: "New Caledonia"
 			}, {
-				label: "New Zealand"
 				value: "NZ"
+				label: "New Zealand"
 			}, {
-				label: "Nicaragua"
 				value: "NU"
+				label: "Nicaragua"
 			}, {
-				label: "Niger"
 				value: "NG"
+				label: "Niger"
 			}, {
-				label: "Nigeria"
 				value: "NI"
+				label: "Nigeria"
 			}, {
-				label: "Niue"
 				value: "NE"
+				label: "Niue"
 			}, {
-				label: "Norfolk Island"
 				value: "NF"
+				label: "Norfolk Island"
 			}, {
-				label: "Northern Mariana Islands"
 				value: "CQ"
+				label: "Northern Mariana Islands"
 			}, {
-				label: "Norway"
 				value: "NO"
+				label: "Norway"
 			}, {
-				label: "Oman"
 				value: "MU"
+				label: "Oman"
 			}, {
-				label: "Other Country"
 				value: "OC"
+				label: "Other Country"
 			}, {
-				label: "Pakistan"
 				value: "PK"
+				label: "Pakistan"
 			}, {
-				label: "Palau"
 				value: "PS"
+				label: "Palau"
 			}, {
-				label: "Palmyra Atoll"
 				value: "LQ"
+				label: "Palmyra Atoll"
 			}, {
-				label: "Panama"
 				value: "PM"
+				label: "Panama"
 			}, {
-				label: "Papua-New Guinea"
 				value: "PP"
+				label: "Papua-New Guinea"
 			}, {
-				label: "Paracel Islands"
 				value: "PF"
+				label: "Paracel Islands"
 			}, {
-				label: "Paraguay"
 				value: "PA"
+				label: "Paraguay"
 			}, {
-				label: "Peru"
 				value: "PE"
+				label: "Peru"
 			}, {
-				label: "Philippines"
 				value: "RP"
+				label: "Philippines"
 			}, {
-				label: "Pitcairn Islands"
 				value: "PC"
+				label: "Pitcairn Islands"
 			}, {
-				label: "Poland"
 				value: "PL"
+				label: "Poland"
 			}, {
-				label: "Portugal"
 				value: "PO"
+				label: "Portugal"
 			}, {
-				label: "Puerto Rico"
 				value: "RQ"
+				label: "Puerto Rico"
 			}, {
-				label: "Qatar"
 				value: "QA"
+				label: "Qatar"
 			}, {
-				label: "Romania"
 				value: "RO"
+				label: "Romania"
 			}, {
-				label: "Russia"
 				value: "RS"
+				label: "Russia"
 			}, {
-				label: "Rwanda"
 				value: "RW"
+				label: "Rwanda"
 			}, {
-				label: "Saint Barthelemy"
 				value: "TB"
+				label: "Saint Barthelemy"
 			}, {
-				label: "Saint Martin"
 				value: "RN"
+				label: "Saint Martin"
 			}, {
-				label: "Samoa"
 				value: "WS"
+				label: "Samoa"
 			}, {
-				label: "San Marino"
 				value: "SM"
+				label: "San Marino"
 			}, {
-				label: "Sao Tome and Principe"
 				value: "TP"
+				label: "Sao Tome and Principe"
 			}, {
-				label: "Saudi Arabia"
 				value: "SA"
+				label: "Saudi Arabia"
 			}, {
-				label: "Senegal"
 				value: "SG"
+				label: "Senegal"
 			}, {
-				label: "Serbia"
 				value: "RI"
+				label: "Serbia"
 			}, {
-				label: "Seychelles"
 				value: "SE"
+				label: "Seychelles"
 			}, {
-				label: "Sierra Leone"
 				value: "SL"
+				label: "Sierra Leone"
 			}, {
-				label: "Singapore"
 				value: "SN"
+				label: "Singapore"
 			}, {
-				label: "Sint Maarten"
 				value: "NN"
+				label: "Sint Maarten"
 			}, {
-				label: "Slovakia"
 				value: "LO"
+				label: "Slovakia"
 			}, {
-				label: "Slovenia"
 				value: "SI"
+				label: "Slovenia"
 			}, {
-				label: "Solomon Islands"
 				value: "BP"
+				label: "Solomon Islands"
 			}, {
-				label: "Somalia"
 				value: "SO"
+				label: "Somalia"
 			}, {
-				label: "South Africa"
 				value: "SF"
+				label: "South Africa"
 			}, {
-				label: "South Georgia and the South Sandwich Islands"
 				value: "SX"
+				label: "South Georgia and the South Sandwich Islands"
 			}, {
-				label: "South Sudan"
 				value: "OD"
+				label: "South Sudan"
 			}, {
-				label: "Spain"
 				value: "SP"
+				label: "Spain"
 			}, {
-				label: "Spratly Islands"
 				value: "PG"
+				label: "Spratly Islands"
 			}, {
-				label: "Sri Lanka"
 				value: "CE"
+				label: "Sri Lanka"
 			}, {
-				label: "St. Helena"
 				value: "SH"
+				label: "St. Helena"
 			}, {
-				label: "St. Kitts and Nevis"
 				value: "SC"
+				label: "St. Kitts and Nevis"
 			}, {
-				label: "St. Lucia Island"
 				value: "ST"
+				label: "St. Lucia Island"
 			}, {
-				label: "St. Pierre and Miquelon"
 				value: "SB"
+				label: "St. Pierre and Miquelon"
 			}, {
-				label: "St. Vincent and the Grenadines"
 				value: "VC"
+				label: "St. Vincent and the Grenadines"
 			}, {
-				label: "Sudan"
 				value: "SU"
+				label: "Sudan"
 			}, {
-				label: "Suriname"
 				value: "NS"
+				label: "Suriname"
 			}, {
-				label: "Svalbard"
 				value: "SV"
+				label: "Svalbard"
 			}, {
-				label: "Swaziland"
 				value: "WZ"
+				label: "Swaziland"
 			}, {
-				label: "Sweden"
 				value: "SW"
+				label: "Sweden"
 			}, {
-				label: "Switzerland"
 				value: "SZ"
+				label: "Switzerland"
 			}, {
-				label: "Syria"
 				value: "SY"
+				label: "Syria"
 			}, {
-				label: "Taiwan"
 				value: "TW"
+				label: "Taiwan"
 			}, {
-				label: "Tajikistan"
 				value: "TI"
+				label: "Tajikistan"
 			}, {
-				label: "Tanzania"
 				value: "TZ"
+				label: "Tanzania"
 			}, {
-				label: "Thailand"
 				value: "TH"
+				label: "Thailand"
 			}, {
-				label: "The Gambia"
 				value: "GA"
+				label: "The Gambia"
 			}, {
-				label: "Togo"
 				value: "TO"
+				label: "Togo"
 			}, {
-				label: "Tokelau"
 				value: "TL"
+				label: "Tokelau"
 			}, {
-				label: "Tonga"
 				value: "TN"
+				label: "Tonga"
 			}, {
-				label: "Trinidad and Tobago"
 				value: "TD"
+				label: "Trinidad and Tobago"
 			}, {
-				label: "Tunisia"
 				value: "TS"
+				label: "Tunisia"
 			}, {
-				label: "Turkey"
 				value: "TU"
+				label: "Turkey"
 			}, {
-				label: "Turkmenistan"
 				value: "TX"
+				label: "Turkmenistan"
 			}, {
-				label: "Turks and Caicos Islands"
 				value: "TK"
+				label: "Turks and Caicos Islands"
 			}, {
-				label: "Tuvalu"
 				value: "TV"
+				label: "Tuvalu"
 			}, {
-				label: "Uganda"
 				value: "UG"
+				label: "Uganda"
 			}, {
-				label: "Ukraine"
 				value: "UP"
+				label: "Ukraine"
 			}, {
-				label: "United Arab Emirates"
 				value: "AE"
+				label: "United Arab Emirates"
 			}, {
-				label: "United Kingdom (England, Northern Ireland, Scotland, and Wales)"
 				value: "UK"
+				label: "United Kingdom (England, Northern Ireland, Scotland, and Wales)"
 			}, {
-				label: "Uruguay"
 				value: "UY"
+				label: "Uruguay"
 			}, {
-				label: "Uzbekistan"
 				value: "UZ"
+				label: "Uzbekistan"
 			}, {
-				label: "Vanuatu"
 				value: "NH"
+				label: "Vanuatu"
 			}, {
-				label: "Venezuela"
 				value: "VE"
+				label: "Venezuela"
 			}, {
-				label: "Vietnam"
 				value: "VM"
+				label: "Vietnam"
 			}, {
-				label: "Virgin Islands"
 				value: "VQ"
+				label: "Virgin Islands"
 			}, {
-				label: "Wake Island"
 				value: "WQ"
+				label: "Wake Island"
 			}, {
-				label: "Wallis and Futuna"
 				value: "WF"
+				label: "Wallis and Futuna"
 			}, {
-				label: "Western Sahara"
 				value: "WI"
+				label: "Western Sahara"
 			}, {
-				label: "Yemen (Aden)"
 				value: "YM"
+				label: "Yemen (Aden)"
 			}, {
-				label: "Zambia"
 				value: "ZA"
+				label: "Zambia"
 			}, {
-				label: "Zimbabwe"
 				value: "ZI"
+				label: "Zimbabwe"
 			}]
-		title: "Line 4b: Employer foreign Country"
-		type:  "combo"
 	}, {
-		maxlength: 16
+		type:      "text"
 		name:      "txtF2555EmpForPostalCode"
+		title:     "Line 4b: Employer foreign Postal Code"
+		maxlength: 16
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4b: Employer foreign Postal Code"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkF2555EmpIsInd"
 		options: [{
-			label: "Line 5: Employer is Foreign entity"
 			value: "1"
+			label: "Line 5: Employer is Foreign entity"
 		}, {
-			label: "Line 5: Employer is U. S . Company"
 			value: "2"
+			label: "Line 5: Employer is U. S . Company"
 		}, {
-			label: "Line 5: Employer is Self"
 			value: "3"
+			label: "Line 5: Employer is Self"
 		}, {
-			label: "Line 5: Employer is foreign affiliate of a U. S . company"
 			value: "4"
+			label: "Line 5: Employer is foreign affiliate of a U. S . company"
 		}, {
-			label: "Line 5: Employer is Other"
 			value: "0"
+			label: "Line 5: Employer is Other"
 		}]
-		type: "check"
 	}, {
-		maxlength: 70
+		type:      "text"
 		name:      "txtF2555EmpIsOtherDesc"
+		title:     "LIne 5: Employer check Other to enter specify infomation"
+		maxlength: 70
 		tags: [
 			"UPPERCASE",
 		]
-		title: "LIne 5: Employer check Other to enter specify infomation"
-		type:  "text"
 	}, {
-		maxlength: 4
+		type:      "text"
 		name:      "txtF2555LastYrFiled"
+		title:     "Line 6a: If you previously filed Form 2555 or Form 2555-EZ, enter the last year you filed the form"
+		maxlength: 4
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 6a: If you previously filed Form 2555 or Form 2555-EZ, enter the last year you filed the form"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkF2555NotFiledAf1981"
 		options: [{
-			label: "Line 6b: If you didn't previously file Form 2555 or Form 2555-EZ to claim either of the exclusions, check here"
 			value: "1"
+			label: "Line 6b: If you didn't previously file Form 2555 or Form 2555-EZ to claim either of the exclusions, check here"
 		}]
-		type: "check"
 	}, {
+		type: "check"
 		name: "chkF2555RevokedExcl"
 		options: [{
-			label: "Line 6c: Yes - Have you ever revoked either of the exclusions"
 			value: "1"
+			label: "Line 6c: Yes - Have you ever revoked either of the exclusions"
 		}, {
-			label: "Line 6c: No - Have you ever revoked either of the exclusions"
 			value: "0"
+			label: "Line 6c: No - Have you ever revoked either of the exclusions"
 		}]
-		type: "check"
 	}, {
-		name: "cboF2555TypeOfExcl"
+		type:  "combo"
+		name:  "cboF2555TypeOfExcl"
+		title: "Line 6d: If you answered 'Yes, ' select the type of exclusion for which the revocation was effective"
 		options: [
 			{
 				value: ""
@@ -1936,10 +1941,10 @@ schemas: f255512t: {
 			}, {
 				value: "FOREIGN EARNED INCOME EXCLUSION AND HOUSING EXCLUSION"
 			}]
-		title: "Line 6d: If you answered 'Yes, ' select the type of exclusion for which the revocation was effective"
-		type:  "combo"
 	}, {
-		name: "cboF2555ExclTaxyear"
+		type:  "combo"
+		name:  "cboF2555ExclTaxyear"
+		title: "Line 6d: If you answered 'Yes, ' select the tax year for which the revocation was effective"
 		options: [
 			{
 				value: ""
@@ -2304,1294 +2309,1294 @@ schemas: f255512t: {
 			{
 				value: "1901"
 			}]
-		title: "Line 6d: If you answered 'Yes, ' select the tax year for which the revocation was effective"
-		type:  "combo"
 	}, {
-		name: "cboF2555CountryCitizen"
+		type:  "combo"
+		name:  "cboF2555CountryCitizen"
+		title: "Line 7: Of what country are you a citizen/national"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "Afghanistan"
 				value: "AF"
+				label: "Afghanistan"
 			}, {
-				label: "Akrotiri"
 				value: "AX"
+				label: "Akrotiri"
 			}, {
-				label: "Albania"
 				value: "AL"
+				label: "Albania"
 			}, {
-				label: "Algeria"
 				value: "AG"
+				label: "Algeria"
 			}, {
-				label: "American Samoa"
 				value: "AQ"
+				label: "American Samoa"
 			}, {
-				label: "Andorra"
 				value: "AN"
+				label: "Andorra"
 			}, {
-				label: "Angola"
 				value: "AO"
+				label: "Angola"
 			}, {
-				label: "Anguilla"
 				value: "AV"
+				label: "Anguilla"
 			}, {
-				label: "Antarctica"
 				value: "AY"
+				label: "Antarctica"
 			}, {
-				label: "Antigua and Barbuda"
 				value: "AC"
+				label: "Antigua and Barbuda"
 			}, {
-				label: "Argentina"
 				value: "AR"
+				label: "Argentina"
 			}, {
-				label: "Armenia"
 				value: "AM"
+				label: "Armenia"
 			}, {
-				label: "Aruba"
 				value: "AA"
+				label: "Aruba"
 			}, {
-				label: "Ashmore and Cartier Islands"
 				value: "AT"
+				label: "Ashmore and Cartier Islands"
 			}, {
-				label: "Australia"
 				value: "AS"
+				label: "Australia"
 			}, {
-				label: "Austria"
 				value: "AU"
+				label: "Austria"
 			}, {
-				label: "Azerbaijan"
 				value: "AJ"
+				label: "Azerbaijan"
 			}, {
-				label: "Bahamas"
 				value: "BF"
+				label: "Bahamas"
 			}, {
-				label: "Bahrain"
 				value: "BA"
+				label: "Bahrain"
 			}, {
-				label: "Baker Island"
 				value: "FQ"
+				label: "Baker Island"
 			}, {
-				label: "Bangladesh"
 				value: "BG"
+				label: "Bangladesh"
 			}, {
-				label: "Barbados"
 				value: "BB"
+				label: "Barbados"
 			}, {
-				label: "Belarus"
 				value: "BO"
+				label: "Belarus"
 			}, {
-				label: "Belgium"
 				value: "BE"
+				label: "Belgium"
 			}, {
-				label: "Belize"
 				value: "BH"
+				label: "Belize"
 			}, {
-				label: "Benin"
 				value: "BN"
+				label: "Benin"
 			}, {
-				label: "Bermuda"
 				value: "BD"
+				label: "Bermuda"
 			}, {
-				label: "Bhutan"
 				value: "BT"
+				label: "Bhutan"
 			}, {
-				label: "Bolivia"
 				value: "BL"
+				label: "Bolivia"
 			}, {
-				label: "Bosnia-Herzegovina"
 				value: "BK"
+				label: "Bosnia-Herzegovina"
 			}, {
-				label: "Botswana"
 				value: "BC"
+				label: "Botswana"
 			}, {
-				label: "Bouvet Island"
 				value: "BV"
+				label: "Bouvet Island"
 			}, {
-				label: "Brazil"
 				value: "BR"
+				label: "Brazil"
 			}, {
-				label: "British Indian Ocean Territory"
 				value: "IO"
+				label: "British Indian Ocean Territory"
 			}, {
-				label: "British Virgin Islands"
 				value: "VI"
+				label: "British Virgin Islands"
 			}, {
-				label: "Brunei"
 				value: "BX"
+				label: "Brunei"
 			}, {
-				label: "Bulgaria"
 				value: "BU"
+				label: "Bulgaria"
 			}, {
-				label: "Burkina Faso"
 				value: "UV"
+				label: "Burkina Faso"
 			}, {
-				label: "Burma"
 				value: "BM"
+				label: "Burma"
 			}, {
-				label: "Burundi"
 				value: "BY"
+				label: "Burundi"
 			}, {
-				label: "Cambodia"
 				value: "CB"
+				label: "Cambodia"
 			}, {
-				label: "Cameroon"
 				value: "CM"
+				label: "Cameroon"
 			}, {
-				label: "Canada"
 				value: "CA"
+				label: "Canada"
 			}, {
-				label: "Cape Verde"
 				value: "CV"
+				label: "Cape Verde"
 			}, {
-				label: "Cayman Islands"
 				value: "CJ"
+				label: "Cayman Islands"
 			}, {
-				label: "Central African Republic"
 				value: "CT"
+				label: "Central African Republic"
 			}, {
-				label: "Chad"
 				value: "CD"
+				label: "Chad"
 			}, {
-				label: "Chile"
 				value: "CI"
+				label: "Chile"
 			}, {
-				label: "China"
 				value: "CH"
+				label: "China"
 			}, {
-				label: "Christmas Island"
 				value: "KT"
+				label: "Christmas Island"
 			}, {
-				label: "Clipperton Island"
 				value: "IP"
+				label: "Clipperton Island"
 			}, {
-				label: "Cocos (Keeling) Islands"
 				value: "CK"
+				label: "Cocos (Keeling) Islands"
 			}, {
-				label: "Colombia"
 				value: "CO"
+				label: "Colombia"
 			}, {
-				label: "Comoros"
 				value: "CN"
+				label: "Comoros"
 			}, {
-				label: "Congo (Brazzaville)"
 				value: "CF"
+				label: "Congo (Brazzaville)"
 			}, {
-				label: "Congo (Kinshasa)"
 				value: "CG"
+				label: "Congo (Kinshasa)"
 			}, {
-				label: "Cook Islands"
 				value: "CW"
+				label: "Cook Islands"
 			}, {
-				label: "Coral Sea Islands"
 				value: "CR"
+				label: "Coral Sea Islands"
 			}, {
-				label: "Costa Rica"
 				value: "CS"
+				label: "Costa Rica"
 			}, {
-				label: "Cote D'Ivoire(Ivory Coast)"
 				value: "IV"
+				label: "Cote D'Ivoire(Ivory Coast)"
 			}, {
-				label: "Croatia"
 				value: "HR"
+				label: "Croatia"
 			}, {
-				label: "Cuba"
 				value: "CU"
+				label: "Cuba"
 			}, {
-				label: "Curacao"
 				value: "UC"
+				label: "Curacao"
 			}, {
-				label: "Cyprus"
 				value: "CY"
+				label: "Cyprus"
 			}, {
-				label: "Czech Republic"
 				value: "EZ"
+				label: "Czech Republic"
 			}, {
-				label: "Denmark"
 				value: "DA"
+				label: "Denmark"
 			}, {
-				label: "Dhekelia"
 				value: "DX"
+				label: "Dhekelia"
 			}, {
-				label: "Djibouti"
 				value: "DJ"
+				label: "Djibouti"
 			}, {
-				label: "Dominica"
 				value: "DO"
+				label: "Dominica"
 			}, {
-				label: "Dominican Republic"
 				value: "DR"
+				label: "Dominican Republic"
 			}, {
-				label: "East Timor"
 				value: "TT"
+				label: "East Timor"
 			}, {
-				label: "Ecuador"
 				value: "EC"
+				label: "Ecuador"
 			}, {
-				label: "Egypt"
 				value: "EG"
+				label: "Egypt"
 			}, {
-				label: "El Salvador"
 				value: "ES"
+				label: "El Salvador"
 			}, {
-				label: "Equatorial Guinea"
 				value: "EK"
+				label: "Equatorial Guinea"
 			}, {
-				label: "Eritrea"
 				value: "ER"
+				label: "Eritrea"
 			}, {
-				label: "Estonia"
 				value: "EN"
+				label: "Estonia"
 			}, {
-				label: "Ethiopia"
 				value: "ET"
+				label: "Ethiopia"
 			}, {
-				label: "Falkland Islands (Islas Malvinas)"
 				value: "FK"
+				label: "Falkland Islands (Islas Malvinas)"
 			}, {
-				label: "Faroe Islands"
 				value: "FO"
+				label: "Faroe Islands"
 			}, {
-				label: "Federated States of Micronesia"
 				value: "FM"
+				label: "Federated States of Micronesia"
 			}, {
-				label: "Fiji"
 				value: "FJ"
+				label: "Fiji"
 			}, {
-				label: "Finland"
 				value: "FI"
+				label: "Finland"
 			}, {
-				label: "France"
 				value: "FR"
+				label: "France"
 			}, {
-				label: "French Polynesia"
 				value: "FP"
+				label: "French Polynesia"
 			}, {
-				label: "French Southern and Antarctic Lands"
 				value: "FS"
+				label: "French Southern and Antarctic Lands"
 			}, {
-				label: "Gabon"
 				value: "GB"
+				label: "Gabon"
 			}, {
-				label: "Georgia"
 				value: "GG"
+				label: "Georgia"
 			}, {
-				label: "Germany"
 				value: "GM"
+				label: "Germany"
 			}, {
-				label: "Ghana"
 				value: "GH"
+				label: "Ghana"
 			}, {
-				label: "Gibraltar"
 				value: "GI"
+				label: "Gibraltar"
 			}, {
-				label: "Greece"
 				value: "GR"
+				label: "Greece"
 			}, {
-				label: "Greenland"
 				value: "GL"
+				label: "Greenland"
 			}, {
-				label: "Grenada"
 				value: "GJ"
+				label: "Grenada"
 			}, {
-				label: "Guam"
 				value: "GQ"
+				label: "Guam"
 			}, {
-				label: "Guatemala"
 				value: "GT"
+				label: "Guatemala"
 			}, {
-				label: "Guernsey"
 				value: "GK"
+				label: "Guernsey"
 			}, {
-				label: "Guinea"
 				value: "GV"
+				label: "Guinea"
 			}, {
-				label: "Guinea-Bissau"
 				value: "PU"
+				label: "Guinea-Bissau"
 			}, {
-				label: "Guyana"
 				value: "GY"
+				label: "Guyana"
 			}, {
-				label: "Haiti"
 				value: "HA"
+				label: "Haiti"
 			}, {
-				label: "Heard Island and McDonald Islands"
 				value: "HM"
+				label: "Heard Island and McDonald Islands"
 			}, {
-				label: "Holy See"
 				value: "VT"
+				label: "Holy See"
 			}, {
-				label: "Honduras"
 				value: "HO"
+				label: "Honduras"
 			}, {
-				label: "Hong Kong"
 				value: "HK"
+				label: "Hong Kong"
 			}, {
-				label: "Howland Island"
 				value: "HQ"
+				label: "Howland Island"
 			}, {
-				label: "Hungary"
 				value: "HU"
+				label: "Hungary"
 			}, {
-				label: "Iceland"
 				value: "IC"
+				label: "Iceland"
 			}, {
-				label: "India"
 				value: "IN"
+				label: "India"
 			}, {
-				label: "Indonesia"
 				value: "ID"
+				label: "Indonesia"
 			}, {
-				label: "Iran"
 				value: "IR"
+				label: "Iran"
 			}, {
-				label: "Iraq"
 				value: "IZ"
+				label: "Iraq"
 			}, {
-				label: "Ireland"
 				value: "EI"
+				label: "Ireland"
 			}, {
-				label: "Israel"
 				value: "IS"
+				label: "Israel"
 			}, {
-				label: "Italy"
 				value: "IT"
+				label: "Italy"
 			}, {
-				label: "Jamaica"
 				value: "JM"
+				label: "Jamaica"
 			}, {
-				label: "Jan Mayen"
 				value: "JN"
+				label: "Jan Mayen"
 			}, {
-				label: "Japan"
 				value: "JA"
+				label: "Japan"
 			}, {
-				label: "Jarvis Island"
 				value: "DQ"
+				label: "Jarvis Island"
 			}, {
-				label: "Jersey"
 				value: "JE"
+				label: "Jersey"
 			}, {
-				label: "Johnston Atoll"
 				value: "JQ"
+				label: "Johnston Atoll"
 			}, {
-				label: "Jordan"
 				value: "JO"
+				label: "Jordan"
 			}, {
-				label: "Kazakhstan"
 				value: "KZ"
+				label: "Kazakhstan"
 			}, {
-				label: "Kenya"
 				value: "KE"
+				label: "Kenya"
 			}, {
-				label: "Kingman Reef"
 				value: "KQ"
+				label: "Kingman Reef"
 			}, {
-				label: "Kiribati"
 				value: "KR"
+				label: "Kiribati"
 			}, {
-				label: "Korea, Democratic People's Republic of (North)"
 				value: "KN"
+				label: "Korea, Democratic People's Republic of (North)"
 			}, {
-				label: "Korea, Republic of (South)"
 				value: "KS"
+				label: "Korea, Republic of (South)"
 			}, {
-				label: "Kosovo"
 				value: "KV"
+				label: "Kosovo"
 			}, {
-				label: "Kuwait"
 				value: "KU"
+				label: "Kuwait"
 			}, {
-				label: "Kyrgyzstan"
 				value: "KG"
+				label: "Kyrgyzstan"
 			}, {
-				label: "Laos"
 				value: "LA"
+				label: "Laos"
 			}, {
-				label: "Latvia"
 				value: "LG"
+				label: "Latvia"
 			}, {
-				label: "Lebanon"
 				value: "LE"
+				label: "Lebanon"
 			}, {
-				label: "Lesotho"
 				value: "LT"
+				label: "Lesotho"
 			}, {
-				label: "Liberia"
 				value: "LI"
+				label: "Liberia"
 			}, {
-				label: "Libya"
 				value: "LY"
+				label: "Libya"
 			}, {
-				label: "Liechtenstein"
 				value: "LS"
+				label: "Liechtenstein"
 			}, {
-				label: "Lithuania"
 				value: "LH"
+				label: "Lithuania"
 			}, {
-				label: "Luxembourg"
 				value: "LU"
+				label: "Luxembourg"
 			}, {
-				label: "Macau"
 				value: "MC"
+				label: "Macau"
 			}, {
-				label: "Macedonia"
 				value: "MK"
+				label: "Macedonia"
 			}, {
-				label: "Madagascar"
 				value: "MA"
+				label: "Madagascar"
 			}, {
-				label: "Malawi"
 				value: "MI"
+				label: "Malawi"
 			}, {
-				label: "Malaysia"
 				value: "MY"
+				label: "Malaysia"
 			}, {
-				label: "Maldives"
 				value: "MV"
+				label: "Maldives"
 			}, {
-				label: "Mali"
 				value: "ML"
+				label: "Mali"
 			}, {
-				label: "Malta"
 				value: "MT"
+				label: "Malta"
 			}, {
-				label: "Man, Isle of"
 				value: "IM"
+				label: "Man, Isle of"
 			}, {
-				label: "Marshall Islands"
 				value: "RM"
+				label: "Marshall Islands"
 			}, {
-				label: "Mauritania"
 				value: "MR"
+				label: "Mauritania"
 			}, {
-				label: "Mauritius"
 				value: "MP"
+				label: "Mauritius"
 			}, {
-				label: "Mexico"
 				value: "MX"
+				label: "Mexico"
 			}, {
-				label: "Midway Islands"
 				value: "MQ"
+				label: "Midway Islands"
 			}, {
-				label: "Moldova"
 				value: "MD"
+				label: "Moldova"
 			}, {
-				label: "Monaco"
 				value: "MN"
+				label: "Monaco"
 			}, {
-				label: "Mongolia"
 				value: "MG"
+				label: "Mongolia"
 			}, {
-				label: "Montenegro"
 				value: "MJ"
+				label: "Montenegro"
 			}, {
-				label: "Montserrat"
 				value: "MH"
+				label: "Montserrat"
 			}, {
-				label: "Morocco"
 				value: "MO"
+				label: "Morocco"
 			}, {
-				label: "Mozambique"
 				value: "MZ"
+				label: "Mozambique"
 			}, {
-				label: "Namibia"
 				value: "WA"
+				label: "Namibia"
 			}, {
-				label: "Nauru"
 				value: "NR"
+				label: "Nauru"
 			}, {
-				label: "Navassa Island"
 				value: "BQ"
+				label: "Navassa Island"
 			}, {
-				label: "Nepal"
 				value: "NP"
+				label: "Nepal"
 			}, {
-				label: "Netherlands"
 				value: "NL"
+				label: "Netherlands"
 			}, {
-				label: "New Caledonia"
 				value: "NC"
+				label: "New Caledonia"
 			}, {
-				label: "New Zealand"
 				value: "NZ"
+				label: "New Zealand"
 			}, {
-				label: "Nicaragua"
 				value: "NU"
+				label: "Nicaragua"
 			}, {
-				label: "Niger"
 				value: "NG"
+				label: "Niger"
 			}, {
-				label: "Nigeria"
 				value: "NI"
+				label: "Nigeria"
 			}, {
-				label: "Niue"
 				value: "NE"
+				label: "Niue"
 			}, {
-				label: "Norfolk Island"
 				value: "NF"
+				label: "Norfolk Island"
 			}, {
-				label: "Northern Mariana Islands"
 				value: "CQ"
+				label: "Northern Mariana Islands"
 			}, {
-				label: "Norway"
 				value: "NO"
+				label: "Norway"
 			}, {
-				label: "Oman"
 				value: "MU"
+				label: "Oman"
 			}, {
-				label: "Other Country"
 				value: "OC"
+				label: "Other Country"
 			}, {
-				label: "Pakistan"
 				value: "PK"
+				label: "Pakistan"
 			}, {
-				label: "Palau"
 				value: "PS"
+				label: "Palau"
 			}, {
-				label: "Palmyra Atoll"
 				value: "LQ"
+				label: "Palmyra Atoll"
 			}, {
-				label: "Panama"
 				value: "PM"
+				label: "Panama"
 			}, {
-				label: "Papua-New Guinea"
 				value: "PP"
+				label: "Papua-New Guinea"
 			}, {
-				label: "Paracel Islands"
 				value: "PF"
+				label: "Paracel Islands"
 			}, {
-				label: "Paraguay"
 				value: "PA"
+				label: "Paraguay"
 			}, {
-				label: "Peru"
 				value: "PE"
+				label: "Peru"
 			}, {
-				label: "Philippines"
 				value: "RP"
+				label: "Philippines"
 			}, {
-				label: "Pitcairn Islands"
 				value: "PC"
+				label: "Pitcairn Islands"
 			}, {
-				label: "Poland"
 				value: "PL"
+				label: "Poland"
 			}, {
-				label: "Portugal"
 				value: "PO"
+				label: "Portugal"
 			}, {
-				label: "Puerto Rico"
 				value: "RQ"
+				label: "Puerto Rico"
 			}, {
-				label: "Qatar"
 				value: "QA"
+				label: "Qatar"
 			}, {
-				label: "Romania"
 				value: "RO"
+				label: "Romania"
 			}, {
-				label: "Russia"
 				value: "RS"
+				label: "Russia"
 			}, {
-				label: "Rwanda"
 				value: "RW"
+				label: "Rwanda"
 			}, {
-				label: "Saint Barthelemy"
 				value: "TB"
+				label: "Saint Barthelemy"
 			}, {
-				label: "Saint Martin"
 				value: "RN"
+				label: "Saint Martin"
 			}, {
-				label: "Samoa"
 				value: "WS"
+				label: "Samoa"
 			}, {
-				label: "San Marino"
 				value: "SM"
+				label: "San Marino"
 			}, {
-				label: "Sao Tome and Principe"
 				value: "TP"
+				label: "Sao Tome and Principe"
 			}, {
-				label: "Saudi Arabia"
 				value: "SA"
+				label: "Saudi Arabia"
 			}, {
-				label: "Senegal"
 				value: "SG"
+				label: "Senegal"
 			}, {
-				label: "Serbia"
 				value: "RI"
+				label: "Serbia"
 			}, {
-				label: "Seychelles"
 				value: "SE"
+				label: "Seychelles"
 			}, {
-				label: "Sierra Leone"
 				value: "SL"
+				label: "Sierra Leone"
 			}, {
-				label: "Singapore"
 				value: "SN"
+				label: "Singapore"
 			}, {
-				label: "Sint Maarten"
 				value: "NN"
+				label: "Sint Maarten"
 			}, {
-				label: "Slovakia"
 				value: "LO"
+				label: "Slovakia"
 			}, {
-				label: "Slovenia"
 				value: "SI"
+				label: "Slovenia"
 			}, {
-				label: "Solomon Islands"
 				value: "BP"
+				label: "Solomon Islands"
 			}, {
-				label: "Somalia"
 				value: "SO"
+				label: "Somalia"
 			}, {
-				label: "South Africa"
 				value: "SF"
+				label: "South Africa"
 			}, {
-				label: "South Georgia and the South Sandwich Islands"
 				value: "SX"
+				label: "South Georgia and the South Sandwich Islands"
 			}, {
-				label: "South Sudan"
 				value: "OD"
+				label: "South Sudan"
 			}, {
-				label: "Spain"
 				value: "SP"
+				label: "Spain"
 			}, {
-				label: "Spratly Islands"
 				value: "PG"
+				label: "Spratly Islands"
 			}, {
-				label: "Sri Lanka"
 				value: "CE"
+				label: "Sri Lanka"
 			}, {
-				label: "St. Helena"
 				value: "SH"
+				label: "St. Helena"
 			}, {
-				label: "St. Kitts and Nevis"
 				value: "SC"
+				label: "St. Kitts and Nevis"
 			}, {
-				label: "St. Lucia Island"
 				value: "ST"
+				label: "St. Lucia Island"
 			}, {
-				label: "St. Pierre and Miquelon"
 				value: "SB"
+				label: "St. Pierre and Miquelon"
 			}, {
-				label: "St. Vincent and the Grenadines"
 				value: "VC"
+				label: "St. Vincent and the Grenadines"
 			}, {
-				label: "Sudan"
 				value: "SU"
+				label: "Sudan"
 			}, {
-				label: "Suriname"
 				value: "NS"
+				label: "Suriname"
 			}, {
-				label: "Svalbard"
 				value: "SV"
+				label: "Svalbard"
 			}, {
-				label: "Swaziland"
 				value: "WZ"
+				label: "Swaziland"
 			}, {
-				label: "Sweden"
 				value: "SW"
+				label: "Sweden"
 			}, {
-				label: "Switzerland"
 				value: "SZ"
+				label: "Switzerland"
 			}, {
-				label: "Syria"
 				value: "SY"
+				label: "Syria"
 			}, {
-				label: "Taiwan"
 				value: "TW"
+				label: "Taiwan"
 			}, {
-				label: "Tajikistan"
 				value: "TI"
+				label: "Tajikistan"
 			}, {
-				label: "Tanzania"
 				value: "TZ"
+				label: "Tanzania"
 			}, {
-				label: "Thailand"
 				value: "TH"
+				label: "Thailand"
 			}, {
-				label: "The Gambia"
 				value: "GA"
+				label: "The Gambia"
 			}, {
-				label: "Togo"
 				value: "TO"
+				label: "Togo"
 			}, {
-				label: "Tokelau"
 				value: "TL"
+				label: "Tokelau"
 			}, {
-				label: "Tonga"
 				value: "TN"
+				label: "Tonga"
 			}, {
-				label: "Trinidad and Tobago"
 				value: "TD"
+				label: "Trinidad and Tobago"
 			}, {
-				label: "Tunisia"
 				value: "TS"
+				label: "Tunisia"
 			}, {
-				label: "Turkey"
 				value: "TU"
+				label: "Turkey"
 			}, {
-				label: "Turkmenistan"
 				value: "TX"
+				label: "Turkmenistan"
 			}, {
-				label: "Turks and Caicos Islands"
 				value: "TK"
+				label: "Turks and Caicos Islands"
 			}, {
-				label: "Tuvalu"
 				value: "TV"
+				label: "Tuvalu"
 			}, {
-				label: "Uganda"
 				value: "UG"
+				label: "Uganda"
 			}, {
-				label: "Ukraine"
 				value: "UP"
+				label: "Ukraine"
 			}, {
-				label: "United Arab Emirates"
 				value: "AE"
+				label: "United Arab Emirates"
 			}, {
-				label: "United Kingdom (England, Northern Ireland, Scotland, and Wales)"
 				value: "UK"
+				label: "United Kingdom (England, Northern Ireland, Scotland, and Wales)"
 			}, {
-				label: "United States of America"
 				value: "US"
+				label: "United States of America"
 			}, {
-				label: "Uruguay"
 				value: "UY"
+				label: "Uruguay"
 			}, {
-				label: "Uzbekistan"
 				value: "UZ"
+				label: "Uzbekistan"
 			}, {
-				label: "Vanuatu"
 				value: "NH"
+				label: "Vanuatu"
 			}, {
-				label: "Venezuela"
 				value: "VE"
+				label: "Venezuela"
 			}, {
-				label: "Vietnam"
 				value: "VM"
+				label: "Vietnam"
 			}, {
-				label: "Virgin Islands"
 				value: "VQ"
+				label: "Virgin Islands"
 			}, {
-				label: "Wake Island"
 				value: "WQ"
+				label: "Wake Island"
 			}, {
-				label: "Wallis and Futuna"
 				value: "WF"
+				label: "Wallis and Futuna"
 			}, {
-				label: "Western Sahara"
 				value: "WI"
+				label: "Western Sahara"
 			}, {
-				label: "Yemen (Aden)"
 				value: "YM"
+				label: "Yemen (Aden)"
 			}, {
-				label: "Zambia"
 				value: "ZA"
+				label: "Zambia"
 			}, {
-				label: "Zimbabwe"
 				value: "ZI"
+				label: "Zimbabwe"
 			}]
-		title: "Line 7: Of what country are you a citizen/national"
-		type:  "combo"
 	}, {
+		type: "check"
 		name: "chkF2555SecondForResi"
 		options: [{
-			label: "Line 8a: Yes - Did you maintain a separate foreign residence for your family because of adverse living conditions at your tax home"
 			value: "1"
+			label: "Line 8a: Yes - Did you maintain a separate foreign residence for your family because of adverse living conditions at your tax home"
 		}, {
-			label: "Line 8a: No - Did you maintain a separate foreign residence for your family because of adverse living conditions at your tax home"
 			value: "0"
+			label: "Line 8a: No - Did you maintain a separate foreign residence for your family because of adverse living conditions at your tax home"
 		}]
-		type: "check"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtF2555SecCountry"
+		title:     "Line 8b: If 'Yes', enter city and country of the separate foreign residence"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 8b: If 'Yes', enter city and country of the separate foreign residence"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtF2555SecNoofdays"
+		title:     "Line 8b: If 'Yes', enter the number of days during your tax year that you maintained a second household at that address"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 8b: If 'Yes', enter the number of days during your tax year that you maintained a second household at that address"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtF2555Taxhome"
+		title:     "Line 9: List your tax home(s) during your tax year and date(s) established"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 9: List your tax home(s) during your tax year and date(s) established"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555TaxhomeDate"
+		title:     "Line 9: Date established"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 9: Date established"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555BoResBeganDate"
+		title:     "Line 10: Date bona fide residence began"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 10: Date bona fide residence began"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555BoResEndDate"
+		title:     "Line 10: Date bona fide residence end - Enter Valid Date or Text CONTINUES"
+		maxlength: 10
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 10: Date bona fide residence end - Enter Valid Date or Text CONTINUES"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkF2555LivQuatersInd"
 		options: [{
-			label: "Line 11: Kind of living quarters in foreign country - Purchased house"
 			value: "1"
+			label: "Line 11: Kind of living quarters in foreign country - Purchased house"
 		}, {
-			label: "Line 11: Kind of living quarters in foreign country - Rented house or apartment"
 			value: "2"
+			label: "Line 11: Kind of living quarters in foreign country - Rented house or apartment"
 		}, {
-			label: "Line 11: Kind of living quarters in foreign country - Rented room"
 			value: "3"
+			label: "Line 11: Kind of living quarters in foreign country - Rented room"
 		}, {
-			label: "Line 11: Kind of living quarters in foreign country - Quarters furnished by employer"
 			value: "0"
+			label: "Line 11: Kind of living quarters in foreign country - Quarters furnished by employer"
 		}]
-		type: "check"
 	}, {
+		type: "check"
 		name: "chkF2555LiveWithYouInd"
 		options: [{
-			label: "Line 12a: Yes - Did any of your family live with you abroad during any part of the tax year"
 			value: "1"
+			label: "Line 12a: Yes - Did any of your family live with you abroad during any part of the tax year"
 		}, {
-			label: "Line 12a: No - Did any of your family live with you abroad during any part of the tax year"
 			value: "0"
+			label: "Line 12a: No - Did any of your family live with you abroad during any part of the tax year"
 		}]
-		type: "check"
 	}, {
-		name: "cboF2555LivName"
+		type:  "combo"
+		name:  "cboF2555LivName"
+		title: "Line 12b: If 'Yes', who"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}, {
-				label: "SPOUSE"
 				value: "S"
+				label: "SPOUSE"
 			}, {
-				label: "CHILD"
 				value: "C"
+				label: "CHILD"
 			}, {
-				label: "NONE"
 				value: "NO"
+				label: "NONE"
 			}]
-		title: "Line 12b: If 'Yes', who"
-		type:  "combo"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555LiveFrom"
-		tags: [
-			"DATE",
-		]
-		title: "Line 12b: If 'Yes', for what period (From)"
-		type:  "text"
-	}, {
+		title:     "Line 12b: If 'Yes', for what period (From)"
 		maxlength: 10
-		name:      "txtF2555LiveTo"
 		tags: [
 			"DATE",
 		]
-		title: "Line 12b: If 'Yes', for what period (To)"
-		type:  "text"
 	}, {
+		type:      "text"
+		name:      "txtF2555LiveTo"
+		title:     "Line 12b: If 'Yes', for what period (To)"
+		maxlength: 10
+		tags: [
+			"DATE",
+		]
+	}, {
+		type: "check"
 		name: "chkF2555BoStmtSubmit"
 		options: [{
-			label: "Line 13a: Yes - Have you submitted a statement to the authorities of the foreign country where you claim bona fide residence that you aren't a resident of that country"
 			value: "1"
+			label: "Line 13a: Yes - Have you submitted a statement to the authorities of the foreign country where you claim bona fide residence that you aren't a resident of that country"
 		}, {
-			label: "Line 13a: No - Have you submitted a statement to the authorities of the foreign country where you claim bona fide residence that you aren't a resident of that country"
 			value: "0"
+			label: "Line 13a: No - Have you submitted a statement to the authorities of the foreign country where you claim bona fide residence that you aren't a resident of that country"
 		}]
-		type: "check"
 	}, {
+		type: "check"
 		name: "chkF2555BoResTax"
 		options: [{
-			label: "Line 13b: Yes - Are you required to pay income tax to the country where you claim bona fide residence"
 			value: "1"
+			label: "Line 13b: Yes - Are you required to pay income tax to the country where you claim bona fide residence"
 		}, {
-			label: "Line 13b: No - Are you required to pay income tax to the country where you claim bona fide residence"
 			value: "0"
+			label: "Line 13b: No - Are you required to pay income tax to the country where you claim bona fide residence"
 		}]
-		type: "check"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdatearrived"
+		title:     "Line 14 (a): Date Arrived in US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 14 (a): Date Arrived in US"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdateleftUS"
+		title:     "LIne 14 (b): Date Left US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "LIne 14 (b): Date Left US"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtTotDaysInBusi"
+		title:     "Line 14 (c): Number of days in US on business"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 14 (c): Number of days in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIncomeEarned"
+		title:     "Line 14 (d): Income earned in US on business"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 14 (d): Income earned in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdatearrivedR5"
+		title:     "Line 14 (a): Date Arrived in US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 14 (a): Date Arrived in US"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdateleftUSR5"
+		title:     "LIne 14 (b): Date Left US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "LIne 14 (b): Date Left US"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtTotDaysInBusiR5"
+		title:     "Line 14 (c): Number of days in US on business"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 14 (c): Number of days in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIncomeEarnedR5"
+		title:     "Line 14 (d): Income earned in US on business"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 14 (d): Income earned in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdatearrivedR2"
+		title:     "Line 14 (a): Date Arrived in US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 14 (a): Date Arrived in US"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdateleftUSR2"
+		title:     "LIne 14 (b): Date Left US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "LIne 14 (b): Date Left US"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtTotDaysInBusiR2"
+		title:     "Line 14 (c): Number of days in US on business"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 14 (c): Number of days in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIncomeEarnedR2"
+		title:     "Line 14 (d): Income earned in US on business"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 14 (d): Income earned in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdatearrivedR6"
+		title:     "Line 14 (a): Date Arrived in US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 14 (a): Date Arrived in US"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdateleftUSR6"
+		title:     "LIne 14 (b): Date Left US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "LIne 14 (b): Date Left US"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtTotDaysInBusiR6"
+		title:     "Line 14 (c): Number of days in US on business"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 14 (c): Number of days in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIncomeEarnedR6"
+		title:     "Line 14 (d): Income earned in US on business"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 14 (d): Income earned in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdatearrivedR3"
+		title:     "Line 14 (a): Date Arrived in US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 14 (a): Date Arrived in US"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdateleftUSR3"
+		title:     "LIne 14 (b): Date Left US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "LIne 14 (b): Date Left US"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtTotDaysInBusiR3"
+		title:     "Line 14 (c): Number of days in US on business"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 14 (c): Number of days in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIncomeEarnedR3"
+		title:     "Line 14 (d): Income earned in US on business"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 14 (d): Income earned in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdatearrivedR7"
+		title:     "Line 14 (a): Date Arrived in US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 14 (a): Date Arrived in US"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdateleftUSR7"
+		title:     "LIne 14 (b): Date Left US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "LIne 14 (b): Date Left US"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtTotDaysInBusiR7"
+		title:     "Line 14 (c): Number of days in US on business"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 14 (c): Number of days in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIncomeEarnedR7"
+		title:     "Line 14 (d): Income earned in US on business"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 14 (d): Income earned in US on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdatearrivedR4"
+		title:     "Line 14 (a): Date Arrived in US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 14 (a): Date Arrived in US"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtdateleftUSR4"
+		title:     "LIne 14 (b): Date Left US"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "LIne 14 (b): Date Left US"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtTotDaysInBusiR4"
-		tags: [
-			"NUMERIC",
-		]
-		title: "Line 14 (c): Number of days in US on business"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtIncomeEarnedR4"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 14 (d): Income earned in US on business"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtdatearrivedR8"
-		tags: [
-			"DATE",
-		]
-		title: "Line 14 (a): Date Arrived in US"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtdateleftUSR8"
-		tags: [
-			"DATE",
-		]
-		title: "LIne 14 (b): Date Left US"
-		type:  "text"
-	}, {
+		title:     "Line 14 (c): Number of days in US on business"
 		maxlength: 3
-		name:      "txtTotDaysInBusiR8"
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 14 (c): Number of days in US on business"
-		type:  "text"
 	}, {
+		type:      "text"
+		name:      "txtIncomeEarnedR4"
+		title:     "Line 14 (d): Income earned in US on business"
 		maxlength: 10
-		name:      "txtIncomeEarnedR8"
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 14 (d): Income earned in US on business"
-		type:  "text"
 	}, {
-		maxlength: 80
+		type:      "text"
+		name:      "txtdatearrivedR8"
+		title:     "Line 14 (a): Date Arrived in US"
+		maxlength: 10
+		tags: [
+			"DATE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtdateleftUSR8"
+		title:     "LIne 14 (b): Date Left US"
+		maxlength: 10
+		tags: [
+			"DATE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtTotDaysInBusiR8"
+		title:     "Line 14 (c): Number of days in US on business"
+		maxlength: 3
+		tags: [
+			"NUMERIC",
+		]
+	}, {
+		type:      "text"
+		name:      "txtIncomeEarnedR8"
+		title:     "Line 14 (d): Income earned in US on business"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
 		name:      "txtF2555ContractTerms"
+		title:     "Line 15a: List any contractual terms or other conditions relating to the length of your employment abroad"
+		maxlength: 80
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 15a: List any contractual terms or other conditions relating to the length of your employment abroad"
-		type:  "text"
 	}, {
-		maxlength: 30
+		type:      "text"
 		name:      "txtF2555TypeOfVisa"
+		title:     "Line 15b: Enter the type of visa under which you entered the foreign country"
+		maxlength: 30
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 15b: Enter the type of visa under which you entered the foreign country"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkF2555VisaLimitInd"
 		options: [{
-			label: "Line 15c: Yes - Did your visa limit the length of your stay or employment in a foreign country"
 			value: "1"
+			label: "Line 15c: Yes - Did your visa limit the length of your stay or employment in a foreign country"
 		}, {
-			label: "Line 15c: No - Did your visa limit the length of your stay or employment in a foreign country"
 			value: "0"
+			label: "Line 15c: No - Did your visa limit the length of your stay or employment in a foreign country"
 		}]
-		type: "check"
 	}, {
+		type: "check"
 		name: "chkF2555HomeIndUsInd"
 		options: [{
-			label: "Line 15d: Yes - Did you maintain a home in the United States while living abroad"
 			value: "1"
+			label: "Line 15d: Yes - Did you maintain a home in the United States while living abroad"
 		}, {
-			label: "Line 15d: No - Did you maintain a home in the United States while living abroad"
 			value: "0"
+			label: "Line 15d: No - Did you maintain a home in the United States while living abroad"
 		}]
-		type: "check"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtF2555RentAdd"
+		title:     "Line 15e - Address"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 15e - Address"
-		type:  "text"
 	}, {
-		maxlength: 22
+		type:      "text"
 		name:      "txtF2555RentCity"
+		title:     "Line 15e - City"
+		maxlength: 22
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 15e - City"
-		type:  "text"
 	}, {
-		name: "cboF2555RentState"
+		type:  "combo"
+		name:  "cboF2555RentState"
+		title: "Line 15e - State"
 		options: [
 			{
 				value: ""
@@ -3773,397 +3778,399 @@ schemas: f255512t: {
 			{
 				value: "WY"
 			}]
-		title: "Line 15e - State"
-		type:  "combo"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtF2555RentZip"
+		title:     "Line 15e - Zip Code"
+		maxlength: 5
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 15e - Zip Code"
-		type:  "text"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtF2555Rented"
+		title:     "Line 15e - Rented"
+		maxlength: 6
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 15e - Rented"
-		type:  "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtF2555OccName"
+		title:     "Line 15e - Occupants"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 15e - Occupants"
-		type:  "text"
 	}, {
-		name: "cboF2555OccRealtion"
+		type:  "combo"
+		name:  "cboF2555OccRealtion"
+		title: "Line 15e - Relationship"
 		options: [
 			{
 				value: ""
 			}, {
-				label: "SON"
 				value: "SO"
+				label: "SON"
 			}, {
-				label: "DAUGHTER"
 				value: "D"
+				label: "DAUGHTER"
 			}, {
-				label: "GRANDCHILD"
 				value: "GC"
+				label: "GRANDCHILD"
 			}, {
-				label: "FOSTERCHILD"
 				value: "FC"
+				label: "FOSTERCHILD"
 			}, {
-				label: "SISTER"
 				value: "SI"
+				label: "SISTER"
 			}, {
-				label: "BROTHER"
 				value: "B"
+				label: "BROTHER"
 			}, {
-				label: "NIECE"
 				value: "NE"
+				label: "NIECE"
 			}, {
-				label: "NEPHEW"
 				value: "NW"
+				label: "NEPHEW"
 			}, {
-				label: "PARENT"
 				value: "P"
+				label: "PARENT"
 			}, {
-				label: "GRANDPARENT"
 				value: "GP"
+				label: "GRANDPARENT"
 			}, {
-				label: "AUNT"
 				value: "A"
+				label: "AUNT"
 			}, {
-				label: "UNCLE"
 				value: "U"
+				label: "UNCLE"
 			}, {
-				label: "STEPCHILD"
 				value: "SC"
+				label: "STEPCHILD"
 			}, {
-				label: "HALFBROTHER"
 				value: "HB"
+				label: "HALFBROTHER"
 			}, {
-				label: "HALFSISTER"
 				value: "HS"
+				label: "HALFSISTER"
 			}, {
-				label: "STEPBROTHER"
 				value: "SB"
+				label: "STEPBROTHER"
 			}, {
-				label: "STEPSISTER"
 				value: "SS"
+				label: "STEPSISTER"
 			}, {
-				label: "OTHER"
 				value: "O"
+				label: "OTHER"
 			}, {
-				label: "SPOUSE"
 				value: "S"
+				label: "SPOUSE"
 			}, {
-				label: "CHILD"
 				value: "C"
+				label: "CHILD"
 			}, {
-				label: "NONE"
 				value: "NO"
+				label: "NONE"
 			}]
-		title: "Line 15e - Relationship"
-		type:  "combo"
 	}, {
-		maxlength: 87
+		type:      "text"
 		name:      "txtTaxpayerNamep2"
+		title:     "This field is automatically populated for you"
+		value:     " "
+		maxlength: 87
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type:  "text"
-		value: " "
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtTaxpayerSSNp2"
+		title:     "This field is automatically populated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555PhyPreBegan"
+		title:     "Line 16: The physical presence test is based on the 12-month period from"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 16: The physical presence test is based on the 12-month period from"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555PhyPreEnd"
+		title:     "Line 16: The physical presence test is based on the 12-month period through"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 16: The physical presence test is based on the 12-month period through"
-		type:  "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtF2555PhyPrinCountry"
+		title:     "Line 17: Enter your principal country of employment during your tax year"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 17: Enter your principal country of employment during your tax year"
-		type:  "text"
 	}, {
-		name: "cboF2555PhyPreEntireInd"
-		options: [{
-			label: ""
-			value: "0"
-		}, {
-			label: "X - Physically present in a foreign country or countries for the entire 12- month period."
-			value: "1"
-		}]
-		title: "Line 18: Select if you have no travel to report during the period"
 		type:  "combo"
+		name:  "cboF2555PhyPreEntireInd"
+		title: "Line 18: Select if you have no travel to report during the period"
+		options: [{
+			value: "0"
+			label: ""
+		}, {
+			value: "1"
+			label: "X - Physically present in a foreign country or countries for the entire 12- month period."
+		}]
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtCountryName"
+		title:     "Line 18 (a) Name of country (including U. S)"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 18 (a) Name of country (including U. S)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDateArrivedLn18"
+		title:     "Line 18: (b) Date Arrived"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 18: (b) Date Arrived"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDateLeftLn18"
+		title:     "Line 18 (c) Date Left"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 18 (c) Date Left"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtDaysPreInCountry"
+		title:     "Line 18 (d) Full days present in country"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 18 (d) Full days present in country"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtTotDaysInBusip3"
+		title:     "Line 18(e) Number of days in U. S . on business"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 18(e) Number of days in U. S . on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIncomeEarnedp3"
+		title:     "Line 18(f) Income earned in U. S . on business"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 18(f) Income earned in U. S . on business"
-		type:  "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtCountryNameR2"
+		title:     "Line 18 (a) Name of country (including U. S)"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 18 (a) Name of country (including U. S)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDateArrivedLn18R2"
+		title:     "Line 18: (b) Date Arrived"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 18: (b) Date Arrived"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDateLeftLn18R2"
+		title:     "Line 18 (c) Date Left"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 18 (c) Date Left"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtDaysPreInCountryR2"
+		title:     "Line 18 (d) Full days present in country"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 18 (d) Full days present in country"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtTotDaysInBusip3R2"
+		title:     "Line 18(e) Number of days in U. S . on business"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 18(e) Number of days in U. S . on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIncomeEarnedp3R2"
+		title:     "Line 18(f) Income earned in U. S . on business"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 18(f) Income earned in U. S . on business"
-		type:  "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtCountryNameR3"
+		title:     "Line 18 (a) Name of country (including U. S)"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 18 (a) Name of country (including U. S)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDateArrivedLn18R3"
+		title:     "Line 18: (b) Date Arrived"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 18: (b) Date Arrived"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDateLeftLn18R3"
+		title:     "Line 18 (c) Date Left"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 18 (c) Date Left"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtDaysPreInCountryR3"
+		title:     "Line 18 (d) Full days present in country"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 18 (d) Full days present in country"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtTotDaysInBusip3R3"
+		title:     "Line 18(e) Number of days in U. S . on business"
+		maxlength: 3
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 18(e) Number of days in U. S . on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtIncomeEarnedp3R3"
+		title:     "Line 18(f) Income earned in U. S . on business"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 18(f) Income earned in U. S . on business"
-		type:  "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtCountryNameR4"
+		title:     "Line 18 (a) Name of country (including U. S)"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 18 (a) Name of country (including U. S)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDateArrivedLn18R4"
+		title:     "Line 18: (b) Date Arrived"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 18: (b) Date Arrived"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDateLeftLn18R4"
+		title:     "Line 18 (c) Date Left"
+		maxlength: 10
 		tags: [
 			"DATE",
 		]
-		title: "Line 18 (c) Date Left"
-		type:  "text"
 	}, {
-		maxlength: 3
+		type:      "text"
 		name:      "txtDaysPreInCountryR4"
-		tags: [
-			"NUMERIC",
-		]
-		title: "Line 18 (d) Full days present in country"
-		type:  "text"
-	}, {
+		title:     "Line 18 (d) Full days present in country"
 		maxlength: 3
-		name:      "txtTotDaysInBusip3R4"
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 18(e) Number of days in U. S . on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
+		name:      "txtTotDaysInBusip3R4"
+		title:     "Line 18(e) Number of days in U. S . on business"
+		maxlength: 3
+		tags: [
+			"NUMERIC",
+		]
+	}, {
+		type:      "text"
 		name:      "txtIncomeEarnedp3R4"
+		title:     "Line 18(f) Income earned in U. S . on business"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 18(f) Income earned in U. S . on business"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555TotalWages"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 19: Total wages, salaries, bonuses, commissions"
-		type:  "text"
-	}, {
+		title:     "Line 19: Total wages, salaries, bonuses, commissions"
 		maxlength: 10
-		name:      "txtF2555BusinessShare"
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 20(a): Allowable share of income for personal services performed - In a business (including farming) or profession"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
+		name:      "txtF2555BusinessShare"
+		title:     "Line 20(a): Allowable share of income for personal services performed - In a business (including farming) or profession"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
 		name:      "txtF2555PshipType"
+		title:     "Line 20(b): In partnership, List partnership's type of income"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 20(b): In partnership, List partnership's type of income"
-		type:  "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtF2555PshipName"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 20(b): In partnership, Enter partnership name"
-		type:  "text"
-	}, {
+		title:     "Line 20(b): In partnership, Enter partnership name"
 		maxlength: 35
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
 		name:      "txtF2555PshipAdd"
+		title:     "Line 20(b): In partnership, Enter partnership address"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 20(b): In partnership, Enter partnership address"
-		type:  "text"
 	}, {
-		maxlength: 22
+		type:      "text"
 		name:      "txtF2555PshipCity"
+		title:     "Line 20(b): In partnership, Enter partnership city"
+		maxlength: 22
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 20(b): In partnership, Enter partnership city"
-		type:  "text"
 	}, {
-		name: "cboF2555PshipState"
+		type:  "combo"
+		name:  "cboF2555PshipState"
+		title: "Line 20(b): In partnership, Select partnership state"
 		options: [
 			{
 				value: ""
@@ -4345,168 +4352,168 @@ schemas: f255512t: {
 			{
 				value: "WY"
 			}]
-		title: "Line 20(b): In partnership, Select partnership state"
-		type:  "combo"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtF2555PshipZip"
+		title:     "Line 20(b): In partnership, Enter partnership zip code"
+		maxlength: 5
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 20(b): In partnership, Enter partnership zip code"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555PshipIncome"
+		title:     "Line 20(b): Allowable share of income for personal services performed - Enter amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 20(b): Allowable share of income for personal services performed - Enter amount"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555NoncashHome"
+		title:     "Line 21(a) Home (lodging)"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 21(a) Home (lodging)"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555NoncashMeals"
+		title:     "LIne 21(b) Meals"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "LIne 21(b) Meals"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555NoncashCar"
+		title:     "Line 21(c) car"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 21(c) car"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtF2555NoncashOtherType"
+		title:     "Line 21(d) For any other purpose Description"
+		maxlength: 40
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 21(d) For any other purpose Description"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555NoncashOther"
+		title:     "Line 21(d) Other property or facilities Amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 21(d) Other property or facilities Amount"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555ExpLiving"
+		title:     "Line 22(a) Cost of living and overseas differential"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 22(a) Cost of living and overseas differential"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555ExpFamily"
+		title:     "Line 22(b) Family"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 22(b) Family"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555ExpEducation"
+		title:     "Line 22(c) Education"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 22(c) Education"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555ExpHomeleave"
+		title:     "Line 22(d) Home leave"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 22(d) Home leave"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555ExpQuaters"
+		title:     "Line 22(e) Quarters"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 22(e) Quarters"
-		type:  "text"
 	}, {
-		maxlength: 40
+		type:      "text"
 		name:      "txtF2555ExpOtherType"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 22(f): For any other purpose Descrption"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtF2555ExpOther"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 22(f) For any other purpose Amount"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtF2555TotalExp"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
+		title:     "Line 22(f): For any other purpose Descrption"
 		maxlength: 40
-		name:      "txtLn23OtherType"
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 23: Other foreign earned income Descrption"
-		type:  "text"
 	}, {
+		type:      "text"
+		name:      "txtF2555ExpOther"
+		title:     "Line 22(f) For any other purpose Amount"
 		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtF2555TotalExp"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtLn23OtherType"
+		title:     "Line 23: Other foreign earned income Descrption"
+		maxlength: 40
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
 		name:      "txtF2555OtherForInc"
+		title:     "Line 23: Other foreign earned income Amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 23: Other foreign earned income Amount"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555AddLine19Line23"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555ExcludableAmt"
+		title:     "Line 25: Total amount of meals and lodging included on line 24 that is excludable"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 25: Total amount of meals and lodging included on line 24 that is excludable"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtF2555ForeignEarnInc"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}]
-	id: "f255512t"
 }

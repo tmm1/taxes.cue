@@ -29,16 +29,22 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+		// This field is automatically calculated for you
 		txtTaxpayerSsn?: #SSN
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtAllCdtSumAmt?: #AMOUNT
 		txtAllCdtSumAmt?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtNettRegTaxAmt?: #AMOUNT
 		txtNettRegTaxAmt?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtDiffNettaxTenttax?: #AMOUNT
 		txtDiffNettaxTenttax?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQualElecVehCdt?: #AMOUNT
 		txtQualElecVehCdt?: strings.MaxRunes(10)
 		

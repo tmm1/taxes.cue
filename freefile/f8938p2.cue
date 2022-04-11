@@ -1168,8 +1168,10 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtF8938PriSpName?: #UPPERCASE
 		txtF8938PriSpName?: strings.MaxRunes(100)
+		// This field is automatically calculated for you
 		txtF8938PriSSN2?: #SSN
 		txtF8938PriSSN2?: strings.MaxRunes(11)
 		

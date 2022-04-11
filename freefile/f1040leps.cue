@@ -32,7 +32,9 @@ package freefile
 	}
 
 	#output: {
+		// Name of person making request (as shown on tax return)
 		txtTaxpayerName?: #UPPERCASE
+		// Social security number of person making request
 		txtTaxPayerSSN?: #UPPERCASE
 		
 	}

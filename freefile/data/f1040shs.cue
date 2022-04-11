@@ -1,519 +1,534 @@
 package data
 
 schemas: f1040shs: {
+	id: "f1040shs"
 	fields: [{
-		maxlength: 50
+		type:      "text"
 		name:      "txtFschhtName"
+		title:     "This field is populated calculated for you"
+		maxlength: 50
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtFschhtSsn"
+		title:     "This field is populated calculated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFschhtEin"
+		title:     "Employer Identification number"
+		maxlength: 10
 		tags: [
 			"EIN",
 		]
-		title: "Employer Identification number"
-		type:  "text"
 	}, {
+		type: "check"
 		name: "chkScheduleHQa1Ind"
 		options: [{
-			label: "Yes - Did you pay any one household employee cash wages of $2, 300 or more in 2021? (If any household employee was your spouse, your child under age 21, your parent, or anyone under age 18"
 			value: "1"
+			label: "Yes - Did you pay any one household employee cash wages of $2, 300 or more in 2021? (If any household employee was your spouse, your child under age 21, your parent, or anyone under age 18"
 		}, {
-			label: "No - Did you pay any one household employee cash wages of $2, 300 or more in 2021? (If any household employee was your spouse, your child under age 21, your parent, or anyone under age 18"
 			value: "0"
+			label: "No - Did you pay any one household employee cash wages of $2, 300 or more in 2021? (If any household employee was your spouse, your child under age 21, your parent, or anyone under age 18"
 		}]
-		type: "check"
 	}, {
+		type: "check"
 		name: "chkScheduleHQb1Ind"
 		options: [{
-			label: "Yes - Did you withhold federal income tax during 2021 for any household employee?"
 			value: "1"
+			label: "Yes - Did you withhold federal income tax during 2021 for any household employee?"
 		}, {
-			label: "No - Did you withhold federal income tax during 2021 for any household employee?"
 			value: "0"
+			label: "No - Did you withhold federal income tax during 2021 for any household employee?"
 		}]
-		type: "check"
 	}, {
+		type: "check"
 		name: "chkScheduleHQc1Ind"
 		options: [{
-			label: "No - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?"
 			value: "0"
+			label: "No - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?"
 		}, {
-			label: "Yes - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?"
 			value: "1"
+			label: "Yes - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?"
 		}]
-		type: "check"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhTotCashWagesSstax"
+		title:     "Total cash wages subject to social security tax"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Total cash wages subject to social security tax"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhQualSickFmlyWage"
+		title:     "Qualified sick and family wages for leave taken before April 1, 2021, included on line 1a"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Qualified sick and family wages for leave taken before April 1, 2021, included on line 1a"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhSsTax"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhEmpShare"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhTotSsTax"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhTotCashWagesMedtax"
+		title:     "Total cash wages subject to Medicare tax"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Total cash wages subject to Medicare tax"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhMedTax"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhTotcashAddMedtax"
+		title:     "Total cash wages subject to Additional Medicare Tax withholding"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Total cash wages subject to Additional Medicare Tax withholding"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhAddMedTax"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhFedWithheld"
+		title:     "Federal income tax withheld, if any"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Federal income tax withheld, if any"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhTotSsMedTax8a"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhNonRefCredit"
+		title:     "Nonrefundable portion of credit for qualified sick and family leave wages for leave taken before April 1, 2021"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Nonrefundable portion of credit for qualified sick and family leave wages for leave taken before April 1, 2021"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhNonRefCreditAft"
+		title:     "Nonrefundable portion of credit for qualified sick and family leave wages for leave taken after March 31, 2021"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Nonrefundable portion of credit for qualified sick and family leave wages for leave taken after March 31, 2021"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhTotSsmedTax"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhRefundableCredit"
+		title:     "Refundable portion of credit for qualified sick and family leave wages for leave taken before April 1, 2021"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Refundable portion of credit for qualified sick and family leave wages for leave taken before April 1, 2021"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhRefundableCrdtAft"
+		title:     "Refundable portion of credit for qualified sick and family leave wages for leave taken after March 31, 2021"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Refundable portion of credit for qualified sick and family leave wages for leave taken after March 31, 2021"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhQualSickLvWages"
+		title:     "Qualified sick leave wages for leave taken before April 1, 2021"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Qualified sick leave wages for leave taken before April 1, 2021"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhHealthExpSickLv"
+		title:     "Qualified health plan expenses allocable to qualified sick leave wages reported on line 8g"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Qualified health plan expenses allocable to qualified sick leave wages reported on line 8g"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhQualFamLvWages"
+		title:     "Qualified family leave wages for leave taken before April 1, 2021"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Qualified family leave wages for leave taken before April 1, 2021"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhHealthExpFamLv"
+		title:     "Qualified health plan expenses allocable to qualified family leave wages reported on line 8i"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Qualified health plan expenses allocable to qualified family leave wages reported on line 8i"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhSickLvWagesAft"
+		title:     "line 8k. Qualified sick wages for leave taken after March 31, 2021"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "line 8k. Qualified sick wages for leave taken after March 31, 2021"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhHlthExpSicklvAft"
+		title:     "line 8l. Qualified health plan expenses allocable to qualified sick leave wages reported on line 8k"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "line 8l. Qualified health plan expenses allocable to qualified sick leave wages reported on line 8k"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhFamLvWagesAft"
-		tags: [
-			"AMOUNT",
-		]
-		title: "line-8m. Qualified family leave wages for leave taken after March 31, 2021"
-		type:  "text"
-	}, {
+		title:     "line-8m. Qualified family leave wages for leave taken after March 31, 2021"
 		maxlength: 10
-		name:      "txtSchdhHlthExpFamlvAft"
 		tags: [
 			"AMOUNT",
 		]
-		title: "line 8n. Qualified health plan expenses allocable to qualified family leave wages reported on line 8m"
-		type:  "text"
 	}, {
+		type:      "text"
+		name:      "txtSchdhHlthExpFamlvAft"
+		title:     "line 8n. Qualified health plan expenses allocable to qualified family leave wages reported on line 8m"
+		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type: "check"
 		name: "chkSchdhLine9Ind"
 		options: [{
-			label: "No - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?"
 			value: "0"
+			label: "No - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?"
 		}, {
-			label: "Yes - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?"
 			value: "1"
+			label: "Yes - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?"
 		}]
-		type: "check"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtFschhtName2"
+		title:     "This field is automatically populated for you"
+		maxlength: 50
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtFschhtSsn2"
+		title:     "This field is automatically populated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
+		type: "check"
 		name: "chkSchdhUnempStInd"
 		options: [{
-			label: "Yes - Did you pay unemployment contributions to only one state?"
 			value: "1"
+			label: "Yes - Did you pay unemployment contributions to only one state?"
 		}, {
-			label: "No - Did you pay unemployment contributions to only one state?"
 			value: "0"
+			label: "No - Did you pay unemployment contributions to only one state?"
 		}]
-		type: "check"
 	}, {
+		type: "check"
 		name: "chkSchdhUnempStContInd"
 		options: [{
-			label: "Yes - Did you pay all state unemployment contributions for 2021 by April 18, 2022?"
 			value: "1"
+			label: "Yes - Did you pay all state unemployment contributions for 2021 by April 18, 2022?"
 		}, {
-			label: "No - Did you pay all state unemployment contributions for 2021 by April 18, 2022?"
 			value: "0"
+			label: "No - Did you pay all state unemployment contributions for 2021 by April 18, 2022?"
 		}]
-		type: "check"
 	}, {
+		type: "check"
 		name: "chkSchdhUnempStTaxWagesInd"
 		options: [{
-			label: "Yes - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?"
 			value: "1"
+			label: "Yes - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?"
 		}, {
-			label: "No - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?"
 			value: "0"
+			label: "No - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?"
 		}]
-		type: "check"
 	}, {
-		name: "cboSchdhStateAbbr"
-		options: [
-			{
-				value: ""
-			},
-			{
-				value: "AA"
-			},
-			{
-				value: "AE"
-			},
-			{
-				value: "AK"
-			},
-			{
-				value: "AL"
-			},
-			{
-				value: "AP"
-			},
-			{
-				value: "AR"
-			},
-			{
-				value: "AS"
-			},
-			{
-				value: "AZ"
-			},
-			{
-				value: "CA"
-			},
-			{
-				value: "CO"
-			},
-			{
-				value: "CT"
-			},
-			{
-				value: "DC"
-			},
-			{
-				value: "DE"
-			},
-			{
-				value: "FL"
-			},
-			{
-				value: "GA"
-			},
-			{
-				value: "GU"
-			},
-			{
-				value: "HI"
-			},
-			{
-				value: "IA"
-			},
-			{
-				value: "ID"
-			},
-			{
-				value: "IL"
-			},
-			{
-				value: "IN"
-			},
-			{
-				value: "KS"
-			},
-			{
-				value: "KY"
-			},
-			{
-				value: "LA"
-			},
-			{
-				value: "MA"
-			},
-			{
-				value: "MD"
-			},
-			{
-				value: "ME"
-			},
-			{
-				value: "MI"
-			},
-			{
-				value: "MN"
-			},
-			{
-				value: "MO"
-			},
-			{
-				value: "MP"
-			},
-			{
-				value: "MS"
-			},
-			{
-				value: "MT"
-			},
-			{
-				value: "NC"
-			},
-			{
-				value: "ND"
-			},
-			{
-				value: "NE"
-			},
-			{
-				value: "NH"
-			},
-			{
-				value: "NJ"
-			},
-			{
-				value: "NM"
-			},
-			{
-				value: "NV"
-			},
-			{
-				value: "NY"
-			},
-			{
-				value: "OH"
-			},
-			{
-				value: "OK"
-			},
-			{
-				value: "OR"
-			},
-			{
-				value: "PA"
-			},
-			{
-				value: "PR"
-			},
-			{
-				value: "RI"
-			},
-			{
-				value: "SC"
-			},
-			{
-				value: "SD"
-			},
-			{
-				value: "TN"
-			},
-			{
-				value: "TX"
-			},
-			{
-				value: "UT"
-			},
-			{
-				value: "VA"
-			},
-			{
-				value: "VI"
-			},
-			{
-				value: "VT"
-			},
-			{
-				value: "WA"
-			},
-			{
-				value: "WI"
-			},
-			{
-				value: "WV"
-			},
-			{
-				value: "WY"
-			}]
+		type:  "combo"
+		name:  "cboSchdhStateAbbr"
 		title: "Name of the state where you paid unemployment contributions"
-		type:  "combo"
+		options: [
+			{
+				value: ""
+			},
+			{
+				value: "AA"
+			},
+			{
+				value: "AE"
+			},
+			{
+				value: "AK"
+			},
+			{
+				value: "AL"
+			},
+			{
+				value: "AP"
+			},
+			{
+				value: "AR"
+			},
+			{
+				value: "AS"
+			},
+			{
+				value: "AZ"
+			},
+			{
+				value: "CA"
+			},
+			{
+				value: "CO"
+			},
+			{
+				value: "CT"
+			},
+			{
+				value: "DC"
+			},
+			{
+				value: "DE"
+			},
+			{
+				value: "FL"
+			},
+			{
+				value: "GA"
+			},
+			{
+				value: "GU"
+			},
+			{
+				value: "HI"
+			},
+			{
+				value: "IA"
+			},
+			{
+				value: "ID"
+			},
+			{
+				value: "IL"
+			},
+			{
+				value: "IN"
+			},
+			{
+				value: "KS"
+			},
+			{
+				value: "KY"
+			},
+			{
+				value: "LA"
+			},
+			{
+				value: "MA"
+			},
+			{
+				value: "MD"
+			},
+			{
+				value: "ME"
+			},
+			{
+				value: "MI"
+			},
+			{
+				value: "MN"
+			},
+			{
+				value: "MO"
+			},
+			{
+				value: "MP"
+			},
+			{
+				value: "MS"
+			},
+			{
+				value: "MT"
+			},
+			{
+				value: "NC"
+			},
+			{
+				value: "ND"
+			},
+			{
+				value: "NE"
+			},
+			{
+				value: "NH"
+			},
+			{
+				value: "NJ"
+			},
+			{
+				value: "NM"
+			},
+			{
+				value: "NV"
+			},
+			{
+				value: "NY"
+			},
+			{
+				value: "OH"
+			},
+			{
+				value: "OK"
+			},
+			{
+				value: "OR"
+			},
+			{
+				value: "PA"
+			},
+			{
+				value: "PR"
+			},
+			{
+				value: "RI"
+			},
+			{
+				value: "SC"
+			},
+			{
+				value: "SD"
+			},
+			{
+				value: "TN"
+			},
+			{
+				value: "TX"
+			},
+			{
+				value: "UT"
+			},
+			{
+				value: "VA"
+			},
+			{
+				value: "VI"
+			},
+			{
+				value: "VT"
+			},
+			{
+				value: "WA"
+			},
+			{
+				value: "WI"
+			},
+			{
+				value: "WV"
+			},
+			{
+				value: "WY"
+			}]
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhContStUnempfund"
+		title:     "Contributions paid to your state unemployment fund"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Contributions paid to your state unemployment fund"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhTotCashWagesFutaA"
+		title:     "Total cash wages subject to FUTA tax"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Total cash wages subject to FUTA tax"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhSecaFutaTax"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		name: "cboFutaState1"
+		type:  "combo"
+		name:  "cboFutaState1"
+		title: "Name of state"
 		options: [
 			{
 				value: ""
@@ -695,74 +710,77 @@ schemas: f1040shs: {
 			{
 				value: "WY"
 			}]
-		title: "Name of state"
-		type:  "combo"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaTaxableWages1"
+		title:     "Taxable wages"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Taxable wages"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaFromRateDate1"
-		tags: [
-			"DATE",
-		]
-		title: "from date"
-		type:  "text"
-	}, {
+		title:     "from date"
 		maxlength: 10
-		name:      "txtFutaToRateDate1"
 		tags: [
 			"DATE",
 		]
-		title: "to date"
-		type:  "text"
 	}, {
-		maxlength: 6
+		type:      "text"
+		name:      "txtFutaToRateDate1"
+		title:     "to date"
+		maxlength: 10
+		tags: [
+			"DATE",
+		]
+	}, {
+		type:      "text"
 		name:      "txtFutaStexpRate1"
+		title:     "state experience rate"
+		maxlength: 6
 		tags: [
 			"RATIO",
 		]
-		title: "state experience rate"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaColumnF1"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaMulColcCole1"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaSubColgFrmColf1"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaContStUnempFund1"
+		title:     "Contributions paid to state unemployment fund"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Contributions paid to state unemployment fund"
-		type:  "text"
 	}, {
-		name: "cboFutaState2"
+		type:  "combo"
+		name:  "cboFutaState2"
+		title: "Name of state"
 		options: [
 			{
 				value: ""
@@ -944,193 +962,205 @@ schemas: f1040shs: {
 			{
 				value: "WY"
 			}]
-		title: "Name of state"
-		type:  "combo"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaTaxableWages2"
+		title:     "Taxable wages"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Taxable wages"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaFromRateDate2"
-		tags: [
-			"DATE",
-		]
-		title: "from date"
-		type:  "text"
-	}, {
+		title:     "from date"
 		maxlength: 10
-		name:      "txtFutaToRateDate2"
 		tags: [
 			"DATE",
 		]
-		title: "to date"
-		type:  "text"
 	}, {
-		maxlength: 6
+		type:      "text"
+		name:      "txtFutaToRateDate2"
+		title:     "to date"
+		maxlength: 10
+		tags: [
+			"DATE",
+		]
+	}, {
+		type:      "text"
 		name:      "txtFutaStexpRate2"
+		title:     "state experience rate"
+		maxlength: 6
 		tags: [
 			"RATIO",
 		]
-		title: "state experience rate"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaColumnF2"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaMulColcCole2"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaSubColgFrmColf2"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFutaContStUnempFund2"
+		title:     "Contributions paid to state unemployment fund"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Contributions paid to state unemployment fund"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhLine19H"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhLine19I"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhLine20"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhTotCashWgaesFutaB"
+		title:     "Total cash wages subject to FUTA tax"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Total cash wages subject to FUTA tax"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhLine22"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
+		title:     "This field is automatically calculated for you"
 		maxlength: 10
-		name:      "txtSchdhLine23"
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
+		type:      "text"
+		name:      "txtSchdhLine23"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type: "check"
 		name: "chkCrdtStateCnt"
 		options: [{
-			label: "(If you paid state unemployment contributions late or you're in a credit reduction state, see instructions and check here)"
 			value: "1"
+			label: "(If you paid state unemployment contributions late or you're in a credit reduction state, see instructions and check here)"
 		}]
-		type: "check"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhLine24"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhSecbFutaTax"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtSchdhAmtFrmLine8"
-		readonly:  true
-		tags: [
-			"AMOUNT",
-		]
-		type: "text"
-	}, {
+		title:     "This field is automatically calculated for you"
 		maxlength: 10
-		name:      "txtSchdhAddLn26Ln17"
 		readonly:  true
 		tags: [
 			"AMOUNT",
 		]
-		type: "text"
 	}, {
+		type:      "text"
+		name:      "txtSchdhAddLn26Ln17"
+		title:     "This field is automatically calculated for you"
+		maxlength: 10
+		readonly:  true
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type: "check"
 		name: "chkSchdhLine28Ind"
 		options: [{
-			label: "Yes - Are you required to file Form 1040?"
 			value: "1"
+			label: "Yes - Are you required to file Form 1040?"
 		}, {
-			label: "No - Are you required to file Form 1040?"
 			value: "0"
+			label: "No - Are you required to file Form 1040?"
 		}]
-		type: "check"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtSchdhPart4Address"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtSchdhPart4AptNo"
+		maxlength: 5
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 22
+		type:      "text"
 		name:      "txtSchdhPart4City"
+		title:     "City"
+		maxlength: 22
 		tags: [
 			"UPPERCASE",
 		]
-		title: "City"
-		type:  "text"
 	}, {
-		name: "cboSchdhPart4State"
+		type:  "combo"
+		name:  "cboSchdhPart4State"
+		title: "State"
 		options: [
 			{
 				value: ""
@@ -1312,23 +1342,20 @@ schemas: f1040shs: {
 			{
 				value: "WY"
 			}]
-		title: "State"
-		type:  "combo"
 	}, {
-		maxlength: 5
+		type:      "text"
 		name:      "txtSchdhPart4Zip"
+		title:     "Zip"
+		maxlength: 5
 		tags: [
 			"NUMERIC",
 		]
-		title: "Zip"
-		type:  "text"
 	}, {
-		maxlength: 20
+		type:      "text"
 		name:      "txtSchdhFirmName"
+		maxlength: 20
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}]
-	id: "f1040shs"
 }

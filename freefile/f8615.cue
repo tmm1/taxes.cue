@@ -81,28 +81,40 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #SSN
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+		// This field is automatically populated for you
 		txtF8615Ln1MinusLn2?: #AMOUNT
 		txtF8615Ln1MinusLn2?: strings.MaxRunes(10)
+		// This field is automatically populated for you
 		txtF8615MinLn3Ln4?: #AMOUNT
 		txtF8615MinLn3Ln4?: strings.MaxRunes(10)
+		// This field is automatically populated for you
 		txtF8615SubTot?: #AMOUNT
 		txtF8615SubTot?: strings.MaxRunes(10)
+		// This field is automatically populated for you
 		txtF8615Ln9MinusLn10?: #AMOUNT
 		txtF8615Ln9MinusLn10?: strings.MaxRunes(10)
+		// This field is automatically populated for you
 		txtF8615AddLn5Ln7?: #AMOUNT
 		txtF8615AddLn5Ln7?: strings.MaxRunes(10)
+		// This field is automatically populated for you
 		txtF8615DivLn5Ln12a?: #AMOUNT
 		txtF8615DivLn5Ln12a?: strings.MaxRunes(10)
+		// This field is automatically populated for you
 		txtF8615MulLn11Ln12b?: #AMOUNT
 		txtF8615MulLn11Ln12b?: strings.MaxRunes(10)
+		// This field is automatically populated for you
 		txtF8615Ln4MinusLn5?: #AMOUNT
 		txtF8615Ln4MinusLn5?: strings.MaxRunes(10)
+		// This field is automatically populated for you
 		txtF8615AddLn13Ln15?: #AMOUNT
 		txtF8615AddLn13Ln15?: strings.MaxRunes(10)
+		// This field is automatically populated for you
 		txtF8615ChildTax?: #AMOUNT
 		txtF8615ChildTax?: strings.MaxRunes(10)
 		

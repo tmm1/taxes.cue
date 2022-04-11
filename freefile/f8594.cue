@@ -293,32 +293,46 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxPayerName?: #UPPERCASE
 		txtTaxPayerName?: strings.MaxRunes(75)
+		// Identifying Number - This field is automatically populated for you
 		txtTaxPayerSsn?: #SSN
 		txtTaxPayerSsn?: strings.MaxRunes(11)
+		// Line 4. Total - Aggregate fair market value - This field is automatically calculated for you
 		txtF8594TotFmvAmt?: #UPPERCASE
 		txtF8594TotFmvAmt?: strings.MaxRunes(8)
+		// Line 4. Total - Allocation of sales price - This field is automatically calculated for you
 		txtF8594TotAlocsalAmt?: #UPPERCASE
 		txtF8594TotAlocsalAmt?: strings.MaxRunes(8)
+		// Name - This field is automatically populated for you
 		txtTaxPayerName?: #UPPERCASE
 		txtTaxPayerName?: strings.MaxRunes(75)
+		// Identifying Number - This field is automatically populated for you
 		txtTaxPayerSsn?: #SSN
 		txtTaxPayerSsn?: strings.MaxRunes(11)
+		// Line 8. Class 1 Increase or (decrease) - This field is automatically calculated for you
 		txtF8594Cl1IncdecAmt?: #UPPERCASE
 		txtF8594Cl1IncdecAmt?: strings.MaxRunes(10)
+		// Line 8. Class 2 Increase or (decrease) - This field is automatically calculated for you
 		txtF8594Cl2IncdecAmt?: #UPPERCASE
 		txtF8594Cl2IncdecAmt?: strings.MaxRunes(10)
+		// Line 8. Class 3 Increase or (decrease) - This field is automatically calculated for you
 		txtF8594Cl3IncdecAmt?: #UPPERCASE
 		txtF8594Cl3IncdecAmt?: strings.MaxRunes(10)
+		// Line 8. Class 4 Increase or (decrease) - This field is automatically calculated for you
 		txtF8594Cl4IncdecAmt?: #UPPERCASE
 		txtF8594Cl4IncdecAmt?: strings.MaxRunes(10)
+		// Line 8. Class 5 Increase or (decrease) - This field is automatically calculated for you
 		txtF8594Cl5IncdecAmt?: #UPPERCASE
 		txtF8594Cl5IncdecAmt?: strings.MaxRunes(10)
+		// Line 8. Class 6 and 7 Increase or (decrease) - This field is automatically calculated for you
 		txtF8594Cl6IncdecAmt?: #UPPERCASE
 		txtF8594Cl6IncdecAmt?: strings.MaxRunes(10)
+		// Line 8. Allocation of sales price as previously - Total - This filed is automatically calculated for you
 		txtF8594TotPrevAlocsalAmt?: #UPPERCASE
 		txtF8594TotPrevAlocsalAmt?: strings.MaxRunes(10)
+		// Line 8. Redetermined allocation of sales price - Total - This field is automatically calculated for you
 		txtF8594TotRedetAlocsalAmt?: #UPPERCASE
 		txtF8594TotRedetAlocsalAmt?: strings.MaxRunes(10)
 		

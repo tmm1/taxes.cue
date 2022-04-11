@@ -80,64 +80,94 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying number - This field is automatically calculated for you
 		txtTaxpayerSsn?: #SSN
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+		// Line 4  Current year tax. Combine lines 1, 2 , and 3. If less than $1, 000, stop; you don't owe a penalty. Don't file Form 2210 - This field is automatically calculated for you
 		txtCurrYrTaxAmt?: #AMOUNT
 		txtCurrYrTaxAmt?: strings.MaxRunes(10)
+		// Line 5  Multiply line 4 by 90% (0. 90)  - This field is automatically calculated for you
 		txtMulCurrTaxBy90?: #AMOUNT
 		txtMulCurrTaxBy90?: strings.MaxRunes(10)
+		// Line 7 Subtract line 6 from line 4. If less than $1, 000, stop; you don't owe a penalty. Don't file Form 2210   - This field is automatically calculated for you
 		txtSubLn6FrLn4?: #AMOUNT
 		txtSubLn6FrLn4?: strings.MaxRunes(10)
+		// Line 9  Required annual payment. Enter the smaller of line 5 or line 8 - This field is automatically calculated for you
 		txtReqAnnPayment?: #AMOUNT
 		txtReqAnnPayment?: strings.MaxRunes(10)
+		// Name - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying number - This field is automatically calculated for you
 		txtTaxpayerSsn?: #SSN
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+		// Line 20 (b) Enter the amount, if any, from line 26 in the previous column  - This field is automatically calculated for you
 		txtPrevColLn26Colb?: #AMOUNT
 		txtPrevColLn26Colb?: strings.MaxRunes(10)
+		// Line 20 (c) Enter the amount, if any, from line 26 in the previous column  - This field is automatically calculated for you
 		txtPrevColLn26Colc?: #AMOUNT
 		txtPrevColLn26Colc?: strings.MaxRunes(10)
+		// Line 20 (d)  Enter the amount, if any, from line 26 in the previous column  - This field is automatically calculated for you
 		txtPrevColLn26Cold?: #AMOUNT
 		txtPrevColLn26Cold?: strings.MaxRunes(10)
+		// Line 21(b) Add lines 19 and 20 -  This field is automatically calculated for you
 		txtAddLns1920Colb?: #AMOUNT
 		txtAddLns1920Colb?: strings.MaxRunes(10)
+		// Line 21(c)  Add lines 19 and 20 - This field is automatically calculated for you
 		txtAddLns1920Colc?: #AMOUNT
 		txtAddLns1920Colc?: strings.MaxRunes(10)
+		// Line 21(d) Add lines 19 and 20  - This field is automatically calculated for you
 		txtAddLns1920Cold?: #AMOUNT
 		txtAddLns1920Cold?: strings.MaxRunes(10)
+		// Line 22(b) Add the amounts on lines 24 and 25 in the previous column  - This field is automatically calculated for you
 		txtPrevCol24Add25Colb?: #AMOUNT
 		txtPrevCol24Add25Colb?: strings.MaxRunes(10)
+		// Line 22(c) Add the amounts on lines 24 and 25 in the previous column  - This field is automatically calculated for you
 		txtPrevCol24Add25Colc?: #AMOUNT
 		txtPrevCol24Add25Colc?: strings.MaxRunes(10)
+		// Line 22(d) Add the amounts on lines 24 and 25 in the previous column  - This field is automatically calculated for you
 		txtPrevCol24Add25Cold?: #AMOUNT
 		txtPrevCol24Add25Cold?: strings.MaxRunes(10)
+		// Line 23(a) Subtract line 22 from line 21. If zero or less, enter -0-. For column (a) only, enter the amount from line 19 - This field is automatically calculated for you
 		txtSubLn21Ln22Cola?: #AMOUNT
 		txtSubLn21Ln22Cola?: strings.MaxRunes(10)
+		// Line 23(b) Subtract line 22 from line 21. If zero or less, enter -0-. For column (a) only, enter the amount from line 19 - This field is automatically calculated for you
 		txtSubLn21Ln22Colb?: #AMOUNT
 		txtSubLn21Ln22Colb?: strings.MaxRunes(10)
+		// Line 23(c) Subtract line 22 from line 21. If zero or less, enter -0-. For column (a) only, enter the amount from line 19 - This field is automatically calculated for you
 		txtSubLn21Ln22Colc?: #AMOUNT
 		txtSubLn21Ln22Colc?: strings.MaxRunes(10)
+		// Line 23(d) Subtract line 22 from line 21. If zero or less, enter -0-. For column (a) only, enter the amount from line 19 - This field is automatically calculated for you
 		txtSubLn21Ln22Cold?: #AMOUNT
 		txtSubLn21Ln22Cold?: strings.MaxRunes(10)
+		// Line 24(b) If line 23 is zero, subtract line 21 from line 22. Otherwise, enter 0. - This field is automatically calculated for you
 		txtAmtOnLn24Colb?: #AMOUNT
 		txtAmtOnLn24Colb?: strings.MaxRunes(10)
+		// Line 24(c) If line 23 is zero, subtract line 21 from line 22. Otherwise, enter 0. - This field is automatically calculated for you
 		txtAmtOnLn24Colc?: #AMOUNT
 		txtAmtOnLn24Colc?: strings.MaxRunes(10)
+		// Line 25(a) Underpayment. If line 18 is equal to or more than line 23, subtract line 23 from line 18. Then go to line 20 of the next column. Otherwise, go to line 26 - This field is automatically calculated for you
 		txtUnderpayAmtCola?: #AMOUNT
 		txtUnderpayAmtCola?: strings.MaxRunes(10)
+		// Line 25(b) Underpayment. If line 18 is equal to or more than line 23, subtract line 23 from line 18. Then go to line 20 of the next column. Otherwise, go to line 26 - This field is automatically calculated for you
 		txtUnderpayAmtColb?: #AMOUNT
 		txtUnderpayAmtColb?: strings.MaxRunes(10)
+		// Line 25(c) Underpayment. If line 18 is equal to or more than line 23, subtract line 23 from line 18. Then go to line 20 of the next column. Otherwise, go to line 26 - This field is automatically calculated for you
 		txtUnderpayAmtColc?: #AMOUNT
 		txtUnderpayAmtColc?: strings.MaxRunes(10)
+		// Line 25(d) Underpayment. If line 18 is equal to or more than line 23, subtract line 23 from line 18. Then go to line 20 of the next column. Otherwise, go to line 26 - This field is automatically calculated for you
 		txtUnderpayAmtCold?: #AMOUNT
 		txtUnderpayAmtCold?: strings.MaxRunes(10)
+		// Line 26(a) Overpayment. If line 23 is more than line 18, subtract line 18 from line 23. Then go to line 20 of the next column - This field is automatically calculated for you
 		txtOverpayAmtCola?: #AMOUNT
 		txtOverpayAmtCola?: strings.MaxRunes(10)
+		// Line 26(b) Overpayment. If line 23 is more than line 18, subtract line 18 from line 23. Then go to line 20 of the next column - This field is automatically calculated for you
 		txtOverpayAmtColb?: #AMOUNT
 		txtOverpayAmtColb?: strings.MaxRunes(10)
+		// Line 26(c) Overpayment. If line 23 is more than line 18, subtract line 18 from line 23. Then go to line 20 of the next column - This field is automatically calculated for you
 		txtOverpayAmtColc?: #AMOUNT
 		txtOverpayAmtColc?: strings.MaxRunes(10)
 		

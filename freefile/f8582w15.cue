@@ -529,56 +529,82 @@ import "strings"
 	}
 
 	#output: {
+		// Tax Payer Name - This field is automatically populated for you
 		txtTaxPyrName?: #UPPERCASE
 		txtTaxPyrName?: strings.MaxRunes(75)
+		// Tax Payer SSN - This field is automatically populated for you
 		txtTaxPyrSSN?: #SSN
 		txtTaxPyrSSN?: strings.MaxRunes(11)
+		// Line 1a. Total. Enter on Form 8582, lines 1a, 1b, and 1c - This field is automatically calculated for you
 		txtWkth1TotNetIncome?: #AMOUNT
 		txtWkth1TotNetIncome?: strings.MaxRunes(10)
+		// Line 1b. Total. Enter on Form 8582, lines 1a, 1b, and 1c - This field is automatically calculated for you
 		txtWkth1TotNetLosse?: #AMOUNT
 		txtWkth1TotNetLosse?: strings.MaxRunes(10)
+		// Line 1c. Total. Enter on Form 8582, lines 1a, 1b, and 1c - This field is automatically calculated for you
 		txtWkth1TotUnallowedLosse?: #AMOUNT
 		txtWkth1TotUnallowedLosse?: strings.MaxRunes(10)
+		// Line 2a. Total. Enter on Form 8582, lines 2a, 2b, and 2c
 		txtTotWkth3NetIncome?: #AMOUNT
 		txtTotWkth3NetIncome?: strings.MaxRunes(10)
+		// Line 2b. Total. Enter on Form 8582, lines 2a, 2b, and 2c
 		txtTotWkth3NetLosse?: #AMOUNT
 		txtTotWkth3NetLosse?: strings.MaxRunes(10)
+		// Line 2c. Total. Enter on Form 8582, lines 2a, 2b, and 2c
 		txtTotWkth3UnallowedLosse?: #AMOUNT
 		txtTotWkth3UnallowedLosse?: strings.MaxRunes(10)
+		// Line 3d. - This field is automatically calculated for you
 		txtWkth4SubColumnab1?: #AMOUNT
 		txtWkth4SubColumnab1?: strings.MaxRunes(10)
+		// Line 3d. - This field is automatically calculated for you
 		txtWkth4SubColumnab2?: #AMOUNT
 		txtWkth4SubColumnab2?: strings.MaxRunes(10)
+		// Line 3d. - This field is automatically calculated for you
 		txtWkth4SubColumnab3?: #AMOUNT
 		txtWkth4SubColumnab3?: strings.MaxRunes(10)
+		// Line 3d. - This field is automatically calculated for you
 		txtWkth4SubColumnab4?: #AMOUNT
 		txtWkth4SubColumnab4?: strings.MaxRunes(10)
+		// Line 3d. - This field is automatically calculated for you
 		txtWkth4SubColumnab5?: #AMOUNT
 		txtWkth4SubColumnab5?: strings.MaxRunes(10)
+		// Line 3a. Total - This field is automatically calculated for you
 		txtWkth4TotLoss?: #AMOUNT
 		txtWkth4TotLoss?: strings.MaxRunes(10)
+		// Line 3c. Total - This field is automatically calculated for you
 		txtWkth4TotSpecialAllowance?: #AMOUNT
 		txtWkth4TotSpecialAllowance?: strings.MaxRunes(10)
+		// Line 3d. Total - This field is automatically calculated for you
 		txtWkth4TotSubColumnab?: #AMOUNT
 		txtWkth4TotSubColumnab?: strings.MaxRunes(10)
+		// Line 4a. Total - This field is automatically calculated for you
 		txtTotWkth5Loss?: #AMOUNT
 		txtTotWkth5Loss?: strings.MaxRunes(10)
+		// Line 4c. Total - This field is automatically calculated for you
 		txtTotWkth5UnallowedLoss?: #AMOUNT
 		txtTotWkth5UnallowedLoss?: strings.MaxRunes(10)
+		// Line 5c. Allowed loss - This field is automatically calculated for you
 		txtWkth6AllowedLoss1?: #AMOUNT
 		txtWkth6AllowedLoss1?: strings.MaxRunes(10)
+		// Line 5c. Allowed loss - This field is automatically calculated for you
 		txtWkth6AllowedLoss2?: #AMOUNT
 		txtWkth6AllowedLoss2?: strings.MaxRunes(10)
+		// Line 5c. Allowed loss - This field is automatically calculated for you
 		txtWkth6AllowedLoss3?: #AMOUNT
 		txtWkth6AllowedLoss3?: strings.MaxRunes(10)
+		// Line 5c. Allowed loss - This field is automatically calculated for you
 		txtWkth6AllowedLoss4?: #AMOUNT
 		txtWkth6AllowedLoss4?: strings.MaxRunes(10)
+		// Line 5c. Allowed loss - This field is automatically calculated for you
 		txtWkth6AllowedLoss5?: #AMOUNT
 		txtWkth6AllowedLoss5?: strings.MaxRunes(10)
+		// Line 5a. Total - This field is automatically calculated for you
 		txtTotWkth6Loss?: #AMOUNT
 		txtTotWkth6Loss?: strings.MaxRunes(10)
+		// Line 5b. Total - This field is automatically calculated for you
 		txtTotWkth6UnallowedLoss?: #AMOUNT
 		txtTotWkth6UnallowedLoss?: strings.MaxRunes(10)
+		// Line 5c. Total - This field is automatically calculated for you
 		txtTotWkth6AllowedLoss?: #AMOUNT
 		txtTotWkth6AllowedLoss?: strings.MaxRunes(10)
 		

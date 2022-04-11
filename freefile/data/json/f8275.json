@@ -1,646 +1,651 @@
 {
+  "id": "f8275",
   "fields": [
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtTaxpayerName",
+      "title": "Name - This field is automatically populated for you",
+      "maxlength": 75,
       "readonly": true,
       "tags": [
         "UPPERCASE"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtTaxpayerSSN",
+      "title": "Identifying number - This field is automatically populated for you",
+      "maxlength": 11,
       "readonly": true,
       "tags": [
         "SSN"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 75,
+      "type": "text",
       "name": "txtFrgnEntName",
+      "title": "Name of foreign entity",
+      "maxlength": 75,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Name of foreign entity",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtFrgnEmpEin",
+      "title": "Employer identification number",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Employer identification number",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtF8275ReferenceIdNum",
+      "title": "Reference ID number",
+      "maxlength": 10,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Reference ID number",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtDetailDesc_1",
+      "title": "Line 1c. Detailed Description of Items",
+      "maxlength": 500,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1c. Detailed Description of Items",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtRevRulProcEtc_1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1a. Rev. Rul. , Rev. Proc. , etc",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtitem_1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1b. Item or Group of Items",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtDetailDesc1_1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1c. Detailed Description of Items",
-      "type": "text"
+      "maxlength": 500,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 21,
+      "type": "text",
       "name": "txtFormSch_1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1d. Form or Schedule",
-      "type": "text"
+      "maxlength": 21,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 6,
+      "type": "text",
       "name": "txtLineNo_1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1e. Line No",
-      "type": "text"
+      "maxlength": 6,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtamount_1",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1f. Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtDetailDesc_2",
+      "title": "Line 2c. Detailed Description of Items",
+      "maxlength": 500,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 2c. Detailed Description of Items",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtRevRulProcEtc_2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 2a. Rev. Rul. , Rev. Proc. , etc",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtitem_2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Item or Group of Items",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtDetailDesc1_2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 2c. Detailed Description of Items",
-      "type": "text"
+      "maxlength": 500,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 21,
+      "type": "text",
       "name": "txtFormSch_2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 2d. Form or Schedule",
-      "type": "text"
+      "maxlength": 21,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 6,
+      "type": "text",
       "name": "txtLineNo_2",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 2e. Line No",
-      "type": "text"
+      "maxlength": 6,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtamount_2",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 2f. Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtDetailDesc_3",
+      "title": "Line 3c. Detailed Description of Items",
+      "maxlength": 500,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 3c. Detailed Description of Items",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtRevRulProcEtc_3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 3a. Rev. Rul. , Rev. Proc. , etc",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtitem_3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 3b. Item or Group of Items",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtDetailDesc1_3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 3c. Detailed Description of Items",
-      "type": "text"
+      "maxlength": 500,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 21,
+      "type": "text",
       "name": "txtFormSch_3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 3d. Form or Schedule",
-      "type": "text"
+      "maxlength": 21,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 6,
+      "type": "text",
       "name": "txtLineNo_3",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 3e. Line No",
-      "type": "text"
+      "maxlength": 6,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtamount_3",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 3f. Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtDetailDesc_4",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 4c. Detailed Description of Items",
-      "type": "text"
+      "maxlength": 500,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtRevRulProcEtc_4",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 4a. Rev. Rul. , Rev. Proc. , etc",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtitem_4",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 4b. Item or Group of Items",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtDetailDesc1_4",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 4d. Detailed Description of Items",
-      "type": "text"
+      "maxlength": 500,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 21,
+      "type": "text",
       "name": "txtFormSch_4",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 4d. Form or Schedule",
-      "type": "text"
+      "maxlength": 21,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 6,
+      "type": "text",
       "name": "txtLineNo_4",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 4e. Line No",
-      "type": "text"
+      "maxlength": 6,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtamount_4",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 4f. Amount",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtDetailDesc_5",
+      "title": "Line 5c. Detailed Description of Items",
+      "maxlength": 500,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 5c. Detailed Description of Items",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtRevRulProcEtc_5",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 5a. Rev. Rul. , Rev. Proc. , etc",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtitem_5",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 5b. Item or Group of Items",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 500,
+      "type": "text",
       "name": "txtDetailDesc1_5",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 5c. Detailed Description of Items",
-      "type": "text"
+      "maxlength": 500,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 21,
+      "type": "text",
       "name": "txtFormSch_5",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 5d. Form or Schedule",
-      "type": "text"
-    },
-    {
-      "maxlength": 6,
-      "name": "txtLineNo_5",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 5e. Line No",
-      "type": "text"
-    },
-    {
-      "maxlength": 10,
-      "name": "txtamount_5",
-      "tags": [
-        "AMOUNT"
-      ],
-      "title": "Line 5f. Amount",
-      "type": "text"
-    },
-    {
-      "maxlength": 500,
-      "name": "txtDetailDesc_6",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Detailed Description of Items",
-      "type": "text"
-    },
-    {
       "maxlength": 21,
-      "name": "txtFormSch_6",
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 6d. Form or Schedule",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 50,
-      "name": "txtRevRulProcEtc_6",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 6a. Rev. Rul. , Rev. Proc. , etc",
-      "type": "text"
-    },
-    {
-      "maxlength": 50,
-      "name": "txtitem_6",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 6b. Item or Group of Items",
-      "type": "text"
-    },
-    {
-      "maxlength": 500,
-      "name": "txtDetailDesc1_6",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Detailed Description of Items",
-      "type": "text"
-    },
-    {
+      "type": "text",
+      "name": "txtLineNo_5",
+      "title": "Line 5e. Line No",
       "maxlength": 6,
-      "name": "txtLineNo_6",
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 6e. Line No",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtamount_5",
+      "title": "Line 5f. Amount",
       "maxlength": 10,
-      "name": "txtamount_6",
       "tags": [
         "AMOUNT"
-      ],
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailDesc_6",
+      "title": "Detailed Description of Items",
+      "maxlength": 500,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtFormSch_6",
+      "title": "Line 6d. Form or Schedule",
+      "maxlength": 21,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtRevRulProcEtc_6",
+      "title": "Line 6a. Rev. Rul. , Rev. Proc. , etc",
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtitem_6",
+      "title": "Line 6b. Item or Group of Items",
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailDesc1_6",
+      "title": "Detailed Description of Items",
+      "maxlength": 500,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtLineNo_6",
+      "title": "Line 6e. Line No",
+      "maxlength": 6,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtamount_6",
       "title": "Line 6f. Amount",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp1_1",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 1. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp2_1",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 1. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp3_1",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 2. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp1_2",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 1. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp2_2",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 2. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp3_2",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 2. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp1_3",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 2. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp2_3",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 3. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp3_3",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 3. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp1_4",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 4. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp2_4",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 4. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp3_4",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 4. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp1_5",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 5. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp2_5",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 5. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp3_5",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 5. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp1_6",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 6. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp2_6",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 6. Detailed Explanation",
-      "type": "text"
-    },
-    {
-      "maxlength": 1000,
-      "name": "txtDetailExp3_6",
-      "tags": [
-        "UPPERCASE"
-      ],
-      "title": "Line 6. Name",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp1_1",
+      "title": "Line 1. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp2_1",
+      "title": "Line 1. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp3_1",
+      "title": "Line 2. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp1_2",
+      "title": "Line 1. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp2_2",
+      "title": "Line 2. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp3_2",
+      "title": "Line 2. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp1_3",
+      "title": "Line 2. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp2_3",
+      "title": "Line 3. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp3_3",
+      "title": "Line 3. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp1_4",
+      "title": "Line 4. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp2_4",
+      "title": "Line 4. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp3_4",
+      "title": "Line 4. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp1_5",
+      "title": "Line 5. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp2_5",
+      "title": "Line 5. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp3_5",
+      "title": "Line 5. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp1_6",
+      "title": "Line 6. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp2_6",
+      "title": "Line 6. Detailed Explanation",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtDetailExp3_6",
+      "title": "Line 6. Name",
+      "maxlength": 1000,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtein",
+      "title": "Line 2. Identifying number of pass-through entity",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Line 2. Identifying number of pass-through entity",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 35,
+      "type": "text",
       "name": "txtName",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Name",
-      "type": "text"
+      "maxlength": 35,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtfromdate",
-      "tags": [
-        "DATE"
-      ],
       "title": "Line 3. Tax year of pass-through entity from date",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txttodate",
       "tags": [
         "DATE"
-      ],
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txttodate",
       "title": "Line 3. Tax year of pass-through entity to date",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "DATE"
+      ]
     },
     {
-      "maxlength": 70,
+      "type": "text",
       "name": "txtaddress",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Line 1. Address",
-      "type": "text"
-    },
-    {
-      "maxlength": 22,
-      "name": "txtcity",
+      "maxlength": 70,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 1. City",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtcity",
+      "title": "Line 1. City",
+      "maxlength": 22,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cbostate",
+      "title": "Line 1. State",
       "options": [
         {
           "value": ""
@@ -822,28 +827,25 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Line 1. State",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtzipcode",
+      "title": "Line 1. Zipcode",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Line 1. Zipcode",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 7,
+      "type": "text",
       "name": "txtIrsCenter",
+      "title": "Line 4. Internal Revenue Service Center where the pass-through entity filed",
+      "maxlength": 7,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Line 4. Internal Revenue Service Center where the pass-through entity filed",
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f8275"
+  ]
 }

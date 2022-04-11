@@ -1,57 +1,61 @@
 {
+  "id": "f2439",
+  "multiple": true,
   "fields": [
     {
+      "type": "check",
       "name": "chkVoid_Correct_Dup",
       "options": [
         {
-          "label": "VOID - Checkbox",
-          "value": "1"
+          "value": "1",
+          "label": "VOID - Checkbox"
         },
         {
-          "label": "CORRECTED - Checkbox",
-          "value": "2"
+          "value": "2",
+          "label": "CORRECTED - Checkbox"
         }
-      ],
-      "type": "check"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtRicReitName",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Name of RIC or REIT",
-      "type": "text"
-    },
-    {
       "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "text",
       "name": "txtRicReitName1",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Name of RIC or REIT",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 35,
+      "type": "text",
       "name": "txtRicReitAddr",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Address of RIC or REIT",
-      "type": "text"
-    },
-    {
-      "maxlength": 22,
-      "name": "txtRicReitCity",
+      "maxlength": 35,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "City of RIC or REIT",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtRicReitCity",
+      "title": "City of RIC or REIT",
+      "maxlength": 22,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "cboRicReitSt",
+      "title": "State of RIC or REIT",
       "options": [
         {
           "value": ""
@@ -233,102 +237,102 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "State of RIC or REIT",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtRicReitZip",
+      "title": "Zip Code of RIC or REIT",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "title": "Zip Code of RIC or REIT",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtRicReitSsn",
+      "title": "Identification number of RIC or REIT",
+      "maxlength": 10,
       "tags": [
         "EIN"
-      ],
-      "title": "Identification number of RIC or REIT",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTotCapGain",
+      "title": "Line 1a -  Total undistributed long-term capital gains",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 1a -  Total undistributed long-term capital gains",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 11,
+      "type": "text",
       "name": "txtShareID_Dup",
+      "title": "Shareholder's identifying number",
+      "maxlength": 11,
       "tags": [
         "SSN"
-      ],
-      "title": "Shareholder's identifying number",
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtUnrecapSec1250Gain",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1b -  Unrecaptured section 1250 gain",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 50,
+      "type": "text",
       "name": "txtShareName_Dup",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Shareholder's name",
-      "type": "text"
+      "maxlength": 50,
+      "tags": [
+        "UPPERCASE"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtSec1202Gain",
-      "tags": [
-        "AMOUNT"
-      ],
       "title": "Line 1c - Section 1202 gain",
-      "type": "text"
-    },
-    {
       "maxlength": 10,
-      "name": "txtCollectGain",
       "tags": [
         "AMOUNT"
-      ],
+      ]
+    },
+    {
+      "type": "text",
+      "name": "txtCollectGain",
       "title": "Line 1d - Collectibles (28%) gain",
-      "type": "text"
+      "maxlength": 10,
+      "tags": [
+        "AMOUNT"
+      ]
     },
     {
-      "maxlength": 35,
+      "type": "text",
       "name": "txtShareAddress_Dup",
-      "tags": [
-        "UPPERCASE"
-      ],
       "title": "Shareholder's address",
-      "type": "text"
-    },
-    {
-      "maxlength": 22,
-      "name": "txtShareCity_Dup",
+      "maxlength": 35,
       "tags": [
         "UPPERCASE"
-      ],
-      "title": "Shareholder's City",
-      "type": "text"
+      ]
     },
     {
+      "type": "text",
+      "name": "txtShareCity_Dup",
+      "title": "Shareholder's City",
+      "maxlength": 22,
+      "tags": [
+        "UPPERCASE"
+      ]
+    },
+    {
+      "type": "combo",
       "name": "txtShareState_Dup",
+      "title": "Shareholder's State",
       "options": [
         {
           "value": ""
@@ -510,28 +514,24 @@
         {
           "value": "WY"
         }
-      ],
-      "title": "Shareholder's State",
-      "type": "combo"
+      ]
     },
     {
-      "maxlength": 5,
+      "type": "text",
       "name": "txtShareZip_Dup",
+      "maxlength": 5,
       "tags": [
         "NUMERIC"
-      ],
-      "type": "text"
+      ]
     },
     {
-      "maxlength": 10,
+      "type": "text",
       "name": "txtTaxPaidRicReit",
+      "title": "Line 2 - Tax paid by the RIC or REIT on the box 1a gains",
+      "maxlength": 10,
       "tags": [
         "AMOUNT"
-      ],
-      "title": "Line 2 - Tax paid by the RIC or REIT on the box 1a gains",
-      "type": "text"
+      ]
     }
-  ],
-  "id": "f2439",
-  "multiple": true
+  ]
 }

@@ -261,42 +261,61 @@ import "strings"
 	}
 
 	#output: {
+		// Name shown on your return - This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Your social security number  - This field is automatically calculated for you
 		txtSSN?: #SSN
 		txtSSN?: strings.MaxRunes(11)
+		// Line 6a. Add lines 1 through 5 - This field is automatically calculated for you
 		txtF5695P2SoltotLn12To15?: #AMOUNT
 		txtF5695P2SoltotLn12To15?: strings.MaxRunes(10)
+		// Line 6b. Multiply line 5 by 26% (0. 26) - This field is automatically calculated for you
 		txtF5695P2SoltotPercent?: #AMOUNT
 		txtF5695P2SoltotPercent?: strings.MaxRunes(10)
+		// Line 9. Multiply line 8 by 26% (0. 26) - This field is automatically calculated for you
 		txtF5695P2FuelPercent?: #AMOUNT
 		txtF5695P2FuelPercent?: strings.MaxRunes(10)
+		// Line 10. Kilowatt capacity of property on line 8 above - This field is automatically calculated for you
 		txtF5695P2KwCapacityAmt?: #AMOUNT
 		txtF5695P2KwCapacityAmt?: strings.MaxRunes(10)
+		// Line 11. Enter the smaller of line 9 or line 10 - This field is automatically calculated for you
 		txtF5695P2FuelSmaller?: #AMOUNT
 		txtF5695P2FuelSmaller?: strings.MaxRunes(10)
+		// Line 13. Add lines 6b, 11, and 12 - This field is automatically calculated for you
 		txtF5695P2QualSolFuelTot?: #AMOUNT
 		txtF5695P2QualSolFuelTot?: strings.MaxRunes(10)
+		// Line 15. Residential energy efficient property credit. Enter the smaller of line 13 or line 14. Also include this  amount on Schedule 3 (Form 1040), line 5 - This field is automatically calculated for you
 		txtF5695P2ResiEngEffCrd?: #AMOUNT
 		txtF5695P2ResiEngEffCrd?: strings.MaxRunes(10)
+		// Line 16. Credit carryforward to 2022. If line 15 is less than line 13, subtract line 15 from line 13 - This field is automatically calculated for you
 		txtF5695P2CrdCarryfwd?: #AMOUNT
 		txtF5695P2CrdCarryfwd?: strings.MaxRunes(10)
+		// Line 19g. Subtract line 19f from line 19e. If zero or less, enter -0- This field is automatically calculated for you
 		txtSubWindowExp?: #AMOUNT
 		txtSubWindowExp?: strings.MaxRunes(10)
+		// Line 19h. Enter the smaller of line 19d or line 19g - This field is automatically calculated for you
 		txtSmallWindowExp?: #AMOUNT
 		txtSmallWindowExp?: strings.MaxRunes(10)
+		// Line 20. Add lines 19a, 19b, 19c, and 19h - This field is automatically calculated for you
 		txtF5695P1EngEffImpTot?: #UPPERCASE
 		txtF5695P1EngEffImpTot?: strings.MaxRunes(10)
+		// Line 21. Multiply line 20 by 10% (0. 10) - This field is automatically calculated for you
 		txtF5695P1EngEffImpPercent?: #AMOUNT
 		txtF5695P1EngEffImpPercent?: strings.MaxRunes(10)
+		// Line 23. Add lines 22a through 22c - This field is automatically calculated for you
 		txtSumResidentialProp?: #AMOUNT
 		txtSumResidentialProp?: strings.MaxRunes(10)
+		// Line 24. Add lines 21 and 23 - This field is automatically calculated for you
 		txtSumMulVal?: #AMOUNT
 		txtSumMulVal?: strings.MaxRunes(10)
+		// Line 27. Subtract line 26 from line 25. If zero or less, stop; you cannot take the nonbusiness energy property credit  - This field is automatically calculated for you
 		txtF5695P1SubFrmTot?: #AMOUNT
 		txtF5695P1SubFrmTot?: strings.MaxRunes(10)
+		// Line 28. Enter the smaller of line 24 or line 27  - This field is automatically calculated for you
 		txtF5695P1Smaller?: #AMOUNT
 		txtF5695P1Smaller?: strings.MaxRunes(10)
+		// Line 30. Nonbusiness energy property credit. Enter the smaller of line 28 or line 29. Also include this amount  on Schedule 3 (Form 1040), line 5 - This field is automatically calculated for you
 		txtF5695P1NonbusiEngCrd?: #AMOUNT
 		txtF5695P1NonbusiEngCrd?: strings.MaxRunes(10)
 		

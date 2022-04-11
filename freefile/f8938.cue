@@ -1382,28 +1382,40 @@ import "strings"
 	}
 
 	#output: {
+		// Number of continuation statements
 		txtF8938NoofCntusStmnt?: #UPPERCASE
 		txtF8938NoofCntusStmnt?: strings.MaxRunes(5)
+		// This field is automatically calculated for you
 		txtF8938PriName?: #UPPERCASE
 		txtF8938PriName?: strings.MaxRunes(50)
+		// This field is automatically calculated for you
 		txtF8938SpName?: #UPPERCASE
 		txtF8938SpName?: strings.MaxRunes(50)
+		// This field is automatically calculated for you
 		txtF8938PriSSN?: #SSN
 		txtF8938PriSSN?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtF8938SpSSN?: #SSN
 		txtF8938SpSSN?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtNoofrowsDepacc?: #UPPERCASE
 		txtNoofrowsDepacc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8938FdcMaxValDepacc?: #AMOUNT
 		txtF8938FdcMaxValDepacc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtNoofrowsCusacc?: #UPPERCASE
 		txtNoofrowsCusacc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8938FdcMaxValCusacc?: #AMOUNT
 		txtF8938FdcMaxValCusacc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtNoofrowsPart2?: #UPPERCASE
 		txtNoofrowsPart2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8938PriSpName?: #UPPERCASE
 		txtF8938PriSpName?: strings.MaxRunes(100)
+		// This field is automatically calculated for you
 		txtF8938PriSSN2?: #SSN
 		txtF8938PriSSN2?: strings.MaxRunes(11)
 		

@@ -430,37 +430,55 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
+		// This field is automatically calculated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// Line 6. This field is automatically calculated for you
 		txtPart2Smallest?: #AMOUNT
 		txtPart2Smallest?: strings.MaxRunes(10)
+		// Line 7. This field is automatically calculated for you
 		txtPart2AdjGrossInc?: #AMOUNT
 		txtPart2AdjGrossInc?: strings.MaxRunes(10)
+		// Line 9a. This field is automatically calculated for you
 		txtPart2Cdt?: #AMOUNT
 		txtPart2Cdt?: strings.MaxRunes(10)
+		// Line 10. This field is automatically calculated for you
 		txtPart2RefundableCredit?: #AMOUNT
 		txtPart2RefundableCredit?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtTaxpayerName_Pg2?: #UPPERCASE
+		// This field is automatically calculated for you
 		txtTaxPayerSSN_Pg2?: #UPPERCASE
+		// Line 15. This field is automatically calculated for you
 		txtPart3Diff12?: #AMOUNT
 		txtPart3Diff12?: strings.MaxRunes(10)
+		// Line 17. This field is automatically calculated for you
 		txtPart3Small14?: #AMOUNT
 		txtPart3Small14?: strings.MaxRunes(10)
+		// Line 20. This field is automatically calculated for you
 		txtPart3Small17?: #AMOUNT
 		txtPart3Small17?: strings.MaxRunes(10)
+		// Line 23. This field is automatically calculated for you
 		txtPart3SubSolepropLn14?: #AMOUNT
 		txtPart3SubSolepropLn14?: strings.MaxRunes(10)
+		// Line 24. This field is automatically calculated for you
 		txtPart3Deduct?: #AMOUNT
 		txtPart3Deduct?: strings.MaxRunes(10)
+		// Line 25. This field is automatically calculated for you
 		txtPart3ExcluBen?: #AMOUNT
 		txtPart3ExcluBen?: strings.MaxRunes(10)
+		// Line 26. This field is automatically calculated for you
 		txtPart3TaxBen?: #AMOUNT
 		txtPart3TaxBen?: strings.MaxRunes(10)
+		// Line 28. This field is automatically calculated for you
 		txtPart3AddDedExclBen?: #AMOUNT
 		txtPart3AddDedExclBen?: strings.MaxRunes(10)
+		// Line 29. This field is automatically calculated for you
 		txtPart3Line22?: #AMOUNT
 		txtPart3Line22?: strings.MaxRunes(10)
+		// Line 31. This field is automatically calculated for you
 		txtPart3Line24?: #AMOUNT
 		txtPart3Line24?: strings.MaxRunes(10)
 		

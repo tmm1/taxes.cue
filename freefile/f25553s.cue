@@ -45,40 +45,58 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+		// This field is automatically populated for you
 		txtTaxpayerSsn?: #SSN
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtF2555ForeignEarnInc?: #AMOUNT
 		txtF2555ForeignEarnInc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555SmallExp?: #AMOUNT
 		txtF2555SmallExp?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555MulLn29?: #AMOUNT
 		txtF2555MulLn29?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555SubLn28Ln30?: #AMOUNT
 		txtF2555SubLn28Ln30?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555DivLn32ByLn27?: #NUMERIC
 		txtF2555DivLn32ByLn27?: strings.MaxRunes(5)
+		// This field is automatically calculated for you
 		txtF2555HousingExclu?: #AMOUNT
 		txtF2555HousingExclu?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555Part6Ratio?: #NUMERIC
 		txtF2555Part6Ratio?: strings.MaxRunes(5)
+		// This field is automatically calculated for you
 		txtF2555MulLn35Ln37?: #AMOUNT
 		txtF2555MulLn35Ln37?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555SubLn34FrmLn27?: #AMOUNT
 		txtF2555SubLn34FrmLn27?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555ForEarnIncExclu?: #AMOUNT
 		txtF2555ForEarnIncExclu?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555AddLn34Ln40?: #AMOUNT
 		txtF2555AddLn34Ln40?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555SubLn42FrmLn41?: #AMOUNT
 		txtF2555SubLn42FrmLn41?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555SubLn34FrmLn31?: #AMOUNT
 		txtF2555SubLn34FrmLn31?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555SunLn41FrmLn27?: #AMOUNT
 		txtF2555SunLn41FrmLn27?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555MinLn44Ln45?: #AMOUNT
 		txtF2555MinLn44Ln45?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF2555HousingDeduction?: #AMOUNT
 		txtF2555HousingDeduction?: strings.MaxRunes(10)
 		

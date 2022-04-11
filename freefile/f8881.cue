@@ -29,20 +29,28 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSsn?: #UPPERCASE
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+		// Line 2. Enter one-half of line 1 - This field is automatically calculated for you
 		txtOneHalfAmt?: #AMOUNT
 		txtOneHalfAmt?: strings.MaxRunes(10)
+		// Line 3. Enter the number of employees eligible to participate in the pension plan. See instructions. X 250 - This field is automatically calculated for you
 		txtNoofEligEmpAmt?: #AMOUNT
 		txtNoofEligEmpAmt?: strings.MaxRunes(10)
+		// Line 4. Enter the greater of $500 or the amount from line 3 (Do not enter more than $5, 000) - This field is automatically calculated for you
 		txtGreater500OrLn3?: #AMOUNT
 		txtGreater500OrLn3?: strings.MaxRunes(10)
+		// Line 5. Enter the smaller of line 2 or line 4 - This field is automatically calculated for you
 		txtSmallLn2orLn4?: #AMOUNT
 		txtSmallLn2orLn4?: strings.MaxRunes(10)
+		// Line 8. Add lines 5 and 6. Partnerships and S corporations, report this amount on Schedule K. All others, report this amount on Form 3800, Part III, line 1j Part II Small Employer Auto-Enrollment Credit - This field is automatically calculated for you
 		txtAddLn5andLn6?: #AMOUNT
 		txtAddLn5andLn6?: strings.MaxRunes(10)
+		// Line 11. Add lines 9 and 10. Partnerships and S corporations, report this amount on Schedule K. All others, report this amount on Form 3800, Part III, line 1j - This field is automatically calculated for you
 		txtAddLn9andLn10?: #AMOUNT
 		txtAddLn9andLn10?: strings.MaxRunes(10)
 		

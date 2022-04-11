@@ -17,12 +17,16 @@ import "strings"
 	}
 
 	#output: {
+		// Name - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Identifying number - This field is automatically populated for you
 		txtTaxpayerSSN?: #UPPERCASE
 		txtTaxpayerSSN?: strings.MaxRunes(11)
+		// Line 3 - This field is automatically calculated for you
 		txtCurrentYrCredit?: #AMOUNT
 		txtCurrentYrCredit?: strings.MaxRunes(10)
+		// Line 4 - This field is automatically calculated for you
 		txtCreditYr2004?: #AMOUNT
 		txtCreditYr2004?: strings.MaxRunes(10)
 		

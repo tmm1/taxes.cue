@@ -101,25 +101,36 @@ import "strings"
 	}
 
 	#output: {
+		// Name of person who received tips. If married, complete a separate Form 4137 for each spouse with unreported tips. - - This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// Social security number - This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtAmtReceive?: #AMOUNT
 		txtAmtReceive?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtAmtReport?: #AMOUNT
 		txtAmtReport?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSubLn3FrLn2?: #AMOUNT
 		txtSubLn3FrLn2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtSubLn5FrLn4?: #AMOUNT
 		txtSubLn5FrLn4?: strings.MaxRunes(10)
+		// Maximum amount of wages (including tips) subject to social security tax
 		txtLn7?: #AMOUNT
+		// This field is automatically calculated for you
 		txtSubLn8FrLn7?: #AMOUNT
 		txtSubLn8FrLn7?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtMulLn10ByPt062?: #AMOUNT
 		txtMulLn10ByPt062?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtMulLn6ByPt0145?: #AMOUNT
 		txtMulLn6ByPt0145?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtAddLn11Ln12?: #AMOUNT
 		txtAddLn11Ln12?: strings.MaxRunes(10)
 		

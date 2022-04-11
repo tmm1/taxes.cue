@@ -82,25 +82,36 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically populated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(75)
+		// This field is automatically populated for you
 		txtTaxPayerSSN?: #SSN
 		txtTaxPayerSSN?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtF8960Comb4a4b?: #AMOUNT
+		// This field is automatically calculated for you
 		txtF8960Comb5a5c?: #AMOUNT
 		txtF8960Comb5a5c?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8960TotInv?: #AMOUNT
 		txtF8960TotInv?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8960Add9a9c?: #AMOUNT
 		txtF8960Add9a9c?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8960TotDedMod?: #AMOUNT
 		txtF8960TotDedMod?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8960NetInvInc?: #AMOUNT
 		txtF8960NetInvInc?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8960Sub1413?: #AMOUNT
 		txtF8960Sub1413?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8960Min1215?: #AMOUNT
 		txtF8960Min1215?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtF8960NetInvIndiv?: #AMOUNT
 		txtF8960NetInvIndiv?: strings.MaxRunes(10)
 		

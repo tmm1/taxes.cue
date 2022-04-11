@@ -49,22 +49,31 @@ import "strings"
 	}
 
 	#output: {
+		// This field is automatically calculated for you
 		txtTaxpayerName?: #UPPERCASE
 		txtTaxpayerName?: strings.MaxRunes(87)
+		// This field is automatically calculated for you
 		txtTaxpayerSsn?: #UPPERCASE
 		txtTaxpayerSsn?: strings.MaxRunes(11)
+		// This field is automatically calculated for you
 		txtQbiBaAdjustIncmLoss?: #AMOUNT
 		txtQbiBaAdjustIncmLoss?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiBaAdjustIncmLossR2?: #AMOUNT
 		txtQbiBaAdjustIncmLossR2?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiBaAdjustIncmLossR3?: #AMOUNT
 		txtQbiBaAdjustIncmLossR3?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiSchcLossTotal?: #AMOUNT
 		txtQbiSchcLossTotal?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiSchcIncTotal?: #AMOUNT
 		txtQbiSchcIncTotal?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiSchcLossNetted?: #AMOUNT
 		txtQbiSchcLossNetted?: strings.MaxRunes(10)
+		// This field is automatically calculated for you
 		txtQbiSchcNetlossCarryfwd?: #AMOUNT
 		txtQbiSchcNetlossCarryfwd?: strings.MaxRunes(10)
 		

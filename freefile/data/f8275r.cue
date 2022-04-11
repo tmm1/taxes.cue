@@ -1,575 +1,580 @@
 package data
 
 schemas: f8275r: {
+	id: "f8275r"
 	fields: [{
-		maxlength: 75
+		type:      "text"
 		name:      "txtTaxPayerName"
+		title:     "Name(s) shown on return - This field is automatically calculated for you"
+		maxlength: 75
 		readonly:  true
 		tags: [
 			"UPPERCASE",
 		]
-		type: "text"
 	}, {
-		maxlength: 11
+		type:      "text"
 		name:      "txtTaxPayerSSN"
+		title:     "Identifying number shown on return - This field is automatically calculated for you"
+		maxlength: 11
 		readonly:  true
 		tags: [
 			"SSN",
 		]
-		type: "text"
 	}, {
-		maxlength: 75
+		type:      "text"
 		name:      "txtFrgnEntName"
+		title:     "If Form 8275-R relates to an information return for a foreign entity (for example, Form 5471), enter Name of foreign entity"
+		maxlength: 75
 		tags: [
 			"UPPERCASE",
 		]
-		title: "If Form 8275-R relates to an information return for a foreign entity (for example, Form 5471), enter Name of foreign entity"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtFrgnEmpEin"
+		title:     "Employer identification number, if any"
+		maxlength: 10
 		tags: [
 			"EIN",
 		]
-		title: "Employer identification number, if any"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtF8275ReferenceIdNum"
+		title:     "Reference ID number (see instructions)"
+		maxlength: 50
 		tags: [
 			"NUMERIC",
 		]
-		title: "Reference ID number (see instructions)"
-		type:  "text"
 	}, {
-		maxlength: 500
+		type:      "text"
 		name:      "txtDetailDescLn1"
+		title:     "Line 1(c). Detailed Description of Items"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1(c). Detailed Description of Items"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtRevRulProcEtc1"
+		title:     "Part I - General Information Line 1(a) Regulation Section"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Part I - General Information Line 1(a) Regulation Section"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtItem1"
+		title:     "Line 1(b). Item or Group of Items"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1(b). Item or Group of Items"
-		type:  "text"
 	}, {
-		maxlength: 500
+		type:      "text"
 		name:      "txtDetailDesc1Ln1"
+		title:     "Line 1(c). Detailed Description of Items continued"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1(c). Detailed Description of Items continued"
-		type:  "text"
 	}, {
-		maxlength: 21
+		type:      "text"
 		name:      "txtFormSch1"
+		title:     "Line 1(d). Form or Schedule"
+		maxlength: 21
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1(d). Form or Schedule"
-		type:  "text"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtLineNo1"
+		title:     "Line 1(e). Line No"
+		maxlength: 6
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1(e). Line No"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAmount1"
+		title:     "Line 1(f). Amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 1(f). Amount"
-		type:  "text"
 	}, {
-		maxlength: 500
+		type:      "text"
 		name:      "txtDetailDescLn2"
+		title:     "Line 2(c). Detailed Description of Items"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 2(c). Detailed Description of Items"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtRevRulProcEtc2"
+		title:     "Line 2(a) Regulation Section"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 2(a) Regulation Section"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtItem2"
+		title:     "Line 2(b). Item or Group of Items"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 2(b). Item or Group of Items"
-		type:  "text"
 	}, {
-		maxlength: 500
+		type:      "text"
 		name:      "txtDetailDesc1Ln2"
+		title:     "Line 2(c). Detailed Description of Items continued"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 2(c). Detailed Description of Items continued"
-		type:  "text"
 	}, {
-		maxlength: 21
+		type:      "text"
 		name:      "txtFormSch2"
+		title:     "Line 2(d). Form or Schedule"
+		maxlength: 21
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 2(d). Form or Schedule"
-		type:  "text"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtLineNo2"
+		title:     "Line 2(e). Line No"
+		maxlength: 6
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 2(e). Line No"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAmount2"
+		title:     "Line 2(f). Amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 2(f). Amount"
-		type:  "text"
 	}, {
-		maxlength: 500
+		type:      "text"
 		name:      "txtDetailDescLn3"
+		title:     "Line 3(c). Detailed Description of Items"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 3(c). Detailed Description of Items"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtRevRulProcEtc3"
+		title:     "Line 3(b). Item or Group of Items"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 3(b). Item or Group of Items"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtItem3"
+		title:     "Line 3(b). Item or Group of Items"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 3(b). Item or Group of Items"
-		type:  "text"
 	}, {
-		maxlength: 500
+		type:      "text"
 		name:      "txtDetailDesc1Ln3"
+		title:     "Line 3(c). Detailed Description of Items continued"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 3(c). Detailed Description of Items continued"
-		type:  "text"
 	}, {
-		maxlength: 21
+		type:      "text"
 		name:      "txtFormSch3"
+		title:     "Line 3(d). Form or Schedule"
+		maxlength: 21
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 3(d). Form or Schedule"
-		type:  "text"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtLineNo3"
+		title:     "Line 3(e). Line No"
+		maxlength: 6
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 3(e). Line No"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAmount3"
+		title:     "Line 3(f). Amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 3(f). Amount"
-		type:  "text"
 	}, {
-		maxlength: 500
+		type:      "text"
 		name:      "txtDetailDescLn4"
+		title:     "Line 4(c). Detailed Description of Items"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4(c). Detailed Description of Items"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtRevRulProcEtc4"
+		title:     "Line 4(b). Item or Group of Items"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4(b). Item or Group of Items"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtItem4"
+		title:     "Line 4(b). Item or Group of Items"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4(b). Item or Group of Items"
-		type:  "text"
 	}, {
-		maxlength: 500
+		type:      "text"
 		name:      "txtDetailDesc1Ln4"
+		title:     "Line 4(c). Detailed Description of Items continued"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4(c). Detailed Description of Items continued"
-		type:  "text"
 	}, {
-		maxlength: 21
+		type:      "text"
 		name:      "txtFormSch4"
+		title:     "Line 4(d). Form or Schedule"
+		maxlength: 21
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4(d). Form or Schedule"
-		type:  "text"
 	}, {
-		maxlength: 6
+		type:      "text"
 		name:      "txtLineNo4"
+		title:     "Line 4(e). Line No"
+		maxlength: 6
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4(e). Line No"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtAmount4"
+		title:     "Line 4(f). Amount"
+		maxlength: 10
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 4(f). Amount"
-		type:  "text"
 	}, {
-		maxlength: 500
+		type:      "text"
 		name:      "txtDetailDescLn5"
+		title:     "Line 5(c). Detailed Description of Items"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 5(c). Detailed Description of Items"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtRevRulProcEtc5"
+		title:     "Line 5(b). Item or Group of Items"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 5(b). Item or Group of Items"
-		type:  "text"
 	}, {
-		maxlength: 50
+		type:      "text"
 		name:      "txtItem5"
+		title:     "Line 5(b). Item or Group of Items"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 5(b). Item or Group of Items"
-		type:  "text"
 	}, {
-		maxlength: 500
+		type:      "text"
 		name:      "txtDetailDesc1Ln5"
+		title:     "Line 5(c). Detailed Description of Items continued"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 5(c). Detailed Description of Items continued"
-		type:  "text"
 	}, {
-		maxlength: 21
+		type:      "text"
 		name:      "txtFormSch5"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 5(d). Form or Schedule"
-		type:  "text"
-	}, {
-		maxlength: 6
-		name:      "txtLineNo5"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 5(e). Line No"
-		type:  "text"
-	}, {
-		maxlength: 10
-		name:      "txtAmount5"
-		tags: [
-			"AMOUNT",
-		]
-		title: "Line 5(f). Amount"
-		type:  "text"
-	}, {
-		maxlength: 500
-		name:      "txtDetailDescLn6"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 6(c). Detailed Description of Items"
-		type:  "text"
-	}, {
-		maxlength: 50
-		name:      "txtRevRulProcEtc6"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 6(b). Item or Group of Items"
-		type:  "text"
-	}, {
-		maxlength: 50
-		name:      "txtItem6"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 6(b). Item or Group of Items"
-		type:  "text"
-	}, {
-		maxlength: 500
-		name:      "txtDetailDesc1Ln6"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 6(c). Detailed Description of Items continued"
-		type:  "text"
-	}, {
+		title:     "Line 5(d). Form or Schedule"
 		maxlength: 21
-		name:      "txtFormSch6"
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 6(d). Form or Schedule"
-		type:  "text"
 	}, {
+		type:      "text"
+		name:      "txtLineNo5"
+		title:     "Line 5(e). Line No"
 		maxlength: 6
-		name:      "txtLineNo6"
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 6(e). Line No"
-		type:  "text"
 	}, {
+		type:      "text"
+		name:      "txtAmount5"
+		title:     "Line 5(f). Amount"
 		maxlength: 10
-		name:      "txtAmount6"
 		tags: [
 			"AMOUNT",
 		]
-		title: "Line 6(f). Amount"
-		type:  "text"
 	}, {
-		maxlength: 1000
-		name:      "txtDetailExp1Ln1"
+		type:      "text"
+		name:      "txtDetailDescLn6"
+		title:     "Line 6(c). Detailed Description of Items"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Part II, Line 1. Detailed Explanation"
-		type:  "text"
 	}, {
-		maxlength: 1000
-		name:      "txtDetailExp2Ln1"
+		type:      "text"
+		name:      "txtRevRulProcEtc6"
+		title:     "Line 6(b). Item or Group of Items"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1. Detailed Explanation continued"
-		type:  "text"
 	}, {
-		maxlength: 1000
-		name:      "txtDetailExp3Ln1"
+		type:      "text"
+		name:      "txtItem6"
+		title:     "Line 6(b). Item or Group of Items"
+		maxlength: 50
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1. Detailed Explanation continued"
-		type:  "text"
 	}, {
-		maxlength: 1000
-		name:      "txtDetailExp1Ln2"
+		type:      "text"
+		name:      "txtDetailDesc1Ln6"
+		title:     "Line 6(c). Detailed Description of Items continued"
+		maxlength: 500
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1. Detailed Explanation"
-		type:  "text"
 	}, {
-		maxlength: 1000
-		name:      "txtDetailExp2Ln2"
+		type:      "text"
+		name:      "txtFormSch6"
+		title:     "Line 6(d). Form or Schedule"
+		maxlength: 21
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 2. Detailed Explanation continued"
-		type:  "text"
 	}, {
-		maxlength: 1000
-		name:      "txtDetailExp3Ln2"
+		type:      "text"
+		name:      "txtLineNo6"
+		title:     "Line 6(e). Line No"
+		maxlength: 6
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 2. Detailed Explanation continued"
-		type:  "text"
 	}, {
-		maxlength: 1000
-		name:      "txtDetailExp1Ln3"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 3. Detailed Explanation"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp2Ln3"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 3. Detailed Explanation continued"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp3Ln3"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 3. Detailed Explanation continued"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp1Ln4"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 4. Detailed Explanation"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp2Ln4"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 4. Detailed Explanation continued"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp3Ln4"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 4. Detailed Explanation continued"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp1Ln5"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 5. Detailed Explanation"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp2Ln5"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 4. Detailed Explanation continued"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp3Ln5"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 5. Detailed Explanation continued"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp1Ln6"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 6. Detailed Explanation"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp2Ln6"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 6. Detailed Explanation continued"
-		type:  "text"
-	}, {
-		maxlength: 1000
-		name:      "txtDetailExp3Ln6"
-		tags: [
-			"UPPERCASE",
-		]
-		title: "Line 6. Detailed Explanation continued"
-		type:  "text"
-	}, {
+		type:      "text"
+		name:      "txtAmount6"
+		title:     "Line 6(f). Amount"
 		maxlength: 10
+		tags: [
+			"AMOUNT",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp1Ln1"
+		title:     "Part II, Line 1. Detailed Explanation"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp2Ln1"
+		title:     "Line 1. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp3Ln1"
+		title:     "Line 1. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp1Ln2"
+		title:     "Line 1. Detailed Explanation"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp2Ln2"
+		title:     "Line 2. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp3Ln2"
+		title:     "Line 2. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp1Ln3"
+		title:     "Line 3. Detailed Explanation"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp2Ln3"
+		title:     "Line 3. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp3Ln3"
+		title:     "Line 3. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp1Ln4"
+		title:     "Line 4. Detailed Explanation"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp2Ln4"
+		title:     "Line 4. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp3Ln4"
+		title:     "Line 4. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp1Ln5"
+		title:     "Line 5. Detailed Explanation"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp2Ln5"
+		title:     "Line 4. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp3Ln5"
+		title:     "Line 5. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp1Ln6"
+		title:     "Line 6. Detailed Explanation"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp2Ln6"
+		title:     "Line 6. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
+		name:      "txtDetailExp3Ln6"
+		title:     "Line 6. Detailed Explanation continued"
+		maxlength: 1000
+		tags: [
+			"UPPERCASE",
+		]
+	}, {
+		type:      "text"
 		name:      "txtEin"
+		title:     "Line 2. Identifying number of pass-through entity"
+		maxlength: 10
 		tags: [
 			"EIN",
 		]
-		title: "Line 2. Identifying number of pass-through entity"
-		type:  "text"
 	}, {
-		maxlength: 35
+		type:      "text"
 		name:      "txtName"
+		title:     "Part 3, Information About Pass-Through Entity. To be completed by partners, shareholders, beneficiaries, or residual interest holders. Complete this part only if you are making adequate disclosure for a pass-through item. Note: A pass-through entity is a partnership, S corporation, estate, trust, regulated investment company (RIC), real estate investment trust (REIT), or real estate mortgage investment conduit (REMIC). Line 1. Name of pass-through entity"
+		maxlength: 35
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Part 3, Information About Pass-Through Entity. To be completed by partners, shareholders, beneficiaries, or residual interest holders. Complete this part only if you are making adequate disclosure for a pass-through item. Note: A pass-through entity is a partnership, S corporation, estate, trust, regulated investment company (RIC), real estate investment trust (REIT), or real estate mortgage investment conduit (REMIC). Line 1. Name of pass-through entity"
-		type:  "text"
 	}, {
-		maxlength: 70
+		type:      "text"
 		name:      "txtAddress"
+		title:     "Line 1. Address"
+		maxlength: 70
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1. Address"
-		type:  "text"
 	}, {
-		maxlength: 10
+		type:      "text"
 		name:      "txtDateFrom"
-		tags: [
-			"DATE",
-		]
-		title: "Line 3. Tax year of pass-through entity"
-		type:  "text"
-	}, {
+		title:     "Line 3. Tax year of pass-through entity"
 		maxlength: 10
-		name:      "txtDateTo"
 		tags: [
 			"DATE",
 		]
-		type: "text"
 	}, {
-		maxlength: 22
+		type:      "text"
+		name:      "txtDateTo"
+		maxlength: 10
+		tags: [
+			"DATE",
+		]
+	}, {
+		type:      "text"
 		name:      "txtCity"
+		title:     "Line 1. City"
+		maxlength: 22
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 1. City"
-		type:  "text"
 	}, {
-		name: "cboState"
+		type:  "combo"
+		name:  "cboState"
+		title: "Line 1. State"
 		options: [
 			{
 				value: ""
@@ -751,24 +756,21 @@ schemas: f8275r: {
 			{
 				value: "WY"
 			}]
-		title: "Line 1. State"
-		type:  "combo"
 	}, {
-		maxlength: 9
+		type:      "text"
 		name:      "txtZip"
+		title:     "Line 1. Zip"
+		maxlength: 9
 		tags: [
 			"NUMERIC",
 		]
-		title: "Line 1. Zip"
-		type:  "text"
 	}, {
-		maxlength: 7
+		type:      "text"
 		name:      "txtIrsCenter"
+		title:     "Line 4. Internal Revenue Service Center where the pass-through entity filed its return"
+		maxlength: 7
 		tags: [
 			"UPPERCASE",
 		]
-		title: "Line 4. Internal Revenue Service Center where the pass-through entity filed its return"
-		type:  "text"
 	}]
-	id: "f8275r"
 }
