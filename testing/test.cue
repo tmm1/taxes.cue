@@ -47,4 +47,24 @@ import "github.com/tmm1/taxes/testing"
 			out:    5050
 		}
 	}
+	test: "complex func": {
+		subject: {
+			in: int
+			out: {
+				flag: in < 10
+			}
+		}
+		"0": assert: {
+			invoke: 5
+			transform: {
+				in:  _
+				out: in.flag
+			}
+			out: true
+		}
+		"1": assert: {
+			invoke: 60
+			out: flag: false
+		}
+	}
 }).results

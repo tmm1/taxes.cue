@@ -3,6 +3,7 @@ package testing
 #T: {
 	test: [string]: {
 		subject: _
+		[string & !="subject"]: assert: pass: bool
 		[string & !="subject"]: assert: {
 			ok:     _
 			check?: _
@@ -12,10 +13,12 @@ package testing
 			check?: _
 			pass:   (*_|_ | (notOk & (check | subject))) == _|_
 		} | {
-			invoke: _
-			out:    _
-			_check: (subject & {in: invoke}).out
-			pass:   (*_|_ | (out & _check)) != _|_
+			invoke:     _
+			out:        _
+			result:     (subject & {in: invoke}).out
+			transform?: _
+			_res:       result | (transform & {in: result}).out
+			pass:       (*_|_ | (out & _res)) != _|_
 		}
 	}
 	results: {
