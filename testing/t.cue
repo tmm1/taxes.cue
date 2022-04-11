@@ -4,11 +4,13 @@ package testing
 	test: [string]: {
 		subject: _
 		[string & !="subject"]: assert: {
-			ok:   _
-			pass: (*_|_ | (ok & subject)) != _|_
+			ok:     _
+			check?: _
+			pass:   (*_|_ | (ok & (check | subject))) != _|_
 		} | {
-			notOk: _
-			pass:  (*_|_ | (notOk & subject)) == _|_
+			notOk:  _
+			check?: _
+			pass:   (*_|_ | (notOk & (check | subject))) == _|_
 		}
 	}
 	results: {
