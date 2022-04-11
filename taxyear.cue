@@ -8,16 +8,16 @@ package taxes
 	}
 	deductions: {
 		[string & =~"^(standard|additionalForBlindOrOver65)$"]: {
-			[#FilingStatus.#Type]: #amount
+			[#FilingStatus.Any]: #amount
 		}
 	}
 	taxRates: {
 		#_rate: [number & >0 | number & -1, number & >0.0 & <100.0, number & >=0]
-		[#FilingStatus.#Type]: [...#_rate]
+		[#FilingStatus.Any]: [...#_rate]
 	}
 	qualifiedTaxRates: {
 		#_rate: [number & >0 | number & -1, number & >=0.0 & <100.0]
-		[#FilingStatus.#Type]: [...#_rate]
+		[#FilingStatus.Any]: [...#_rate]
 	}
 }
 

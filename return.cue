@@ -7,7 +7,7 @@ import (
 #Return: {
 	taxYear:      #year
 	taxPayer?:    #TaxPayer
-	filingStatus: #FilingStatus.#Type
+	filingStatus: #FilingStatus.Any
 
 	form1099DIVs: [...#Form1099.#DIV]
 	form1099INTs: [...#Form1099.#INT]
@@ -184,11 +184,11 @@ import (
 
 #Return: {
 	taxPayer: spouse?: _|_
-	filingStatus: #FilingStatus.#Single |
-		#FilingStatus.#HeadOfHousehold |
-		#FilingStatus.#QualifyingWidowOrWidower
+	filingStatus: #FilingStatus.single |
+		#FilingStatus.headOfHousehold |
+		#FilingStatus.qualifyingWidowOrWidower
 } | {
 	taxPayer: #spouseExists: true & list.MinItems([ for label, _ in taxPayer if label == "spouse" {label}], 1)
-	filingStatus: #FilingStatus.#MarriedFilingJointly |
-		#FilingStatus.#MarriedFilingSeparately
+	filingStatus: #FilingStatus.marriedFilingJointly |
+		#FilingStatus.marriedFilingSeparately
 }
