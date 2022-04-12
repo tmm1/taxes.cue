@@ -83,6 +83,7 @@ import (
 			out: f1040: {
 				chkFilingStatus: "joint"
 				chkSpBlind:      "1"
+				txtDepSSN1:      "400-00-1070"
 			}
 		}
 	}

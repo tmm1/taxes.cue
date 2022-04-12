@@ -49,6 +49,9 @@ import (
 		if in.isBlind {
 			chkBlind: "1"
 		}
+		if in.isClaimedAsDependent {
+			chkExemptInd: "1"
+		}
 
 		let spouse = in.spouse
 		if spouse != _|_ {
@@ -59,6 +62,9 @@ import (
 			if spouse.isBlind {
 				chkSpBlind: "1"
 			}
+			if spouse.isClaimedAsDependent {
+				chkSpExemptInd: "1"
+			}
 		}
 
 		let address = in.address
@@ -68,6 +74,12 @@ import (
 			txtCity:      address.city
 			cboState:     address.state
 			txtZip:       address.zip
+		}
+
+		for i, dep in in.dependents {
+			"txtDepFirstName\(i+1)": dep.firstName
+			"txtDepLastName\(i+1)":  dep.lastName
+			"txtDepSSN\(i+1)":       dep.ssn
 		}
 	}
 }
