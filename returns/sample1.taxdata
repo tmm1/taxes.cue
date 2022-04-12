@@ -1,10 +1,9 @@
-import "github.com/tmm1/taxes"
-
-Form1040: (taxes.#Return & {
+{
 	taxYear:      "2021"
 	filingStatus: "single"
 
 	taxPayer: {
+		ssn:           "123-12-1234"
 		firstName:     "john"
 		middleInitial: "e"
 		lastName:      "doe"
@@ -88,4 +87,4 @@ Form1040: (taxes.#Return & {
 			shortTermCapitalGain: 50
 		},
 	]
-}).form1040
+}
