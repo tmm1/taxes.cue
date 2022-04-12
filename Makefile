@@ -11,4 +11,4 @@ check:
 
 test:
 	cue export --out cue sample.cue > sample.out
-	cue eval :test > test.out
+	cue export --out cue test.cue > test.out

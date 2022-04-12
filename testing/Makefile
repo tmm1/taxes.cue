@@ -4,4 +4,4 @@ check:
 	cue vet -c test.cue
 
 test:
-	cue eval test.cue > test.out
+	cue export --out cue test.cue > test.out
