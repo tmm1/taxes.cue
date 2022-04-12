@@ -3,6 +3,10 @@ package test
 import "github.com/tmm1/taxes/testing"
 
 (testing.#T & {
+	focus: {
+		suite: string @tag(suite)
+		test:  string @tag(test)
+	}
 	test: "simple": {
 		subject: string
 		"1": assert: ok:    ""

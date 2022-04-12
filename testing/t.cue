@@ -24,10 +24,14 @@ package testing
 			][0]
 		}
 	}
+	focus: {
+		suite: string | *""
+		test:  string | *""
+	}
 	results: {
-		for name, suite in test {
+		for name, suite in test if focus.suite == "" || focus.suite == name {
 			let asserts = {
-				for tname, x in suite if tname != "subject" {
+				for tname, x in suite if tname != "subject" && (focus.test == "" || focus.test == tname) {
 					(tname): x.assert.pass == true
 				}
 			}
