@@ -14,8 +14,8 @@ import (
 #convert: Return: {
 	in:  #Return
 	out: freefile.#Return
-	out: (#convert.taxPayer & {in:     in.taxPayer}).out
-	out: (#convert.filingStatus & {in: in.filingStatus}).out
+	out: (#convert.taxPayer & {"in":     in.taxPayer}).out
+	out: (#convert.filingStatus & {"in": in.filingStatus}).out
 }
 
 #convert: date: {
@@ -88,7 +88,7 @@ import (
 				"txtDepFirstNameR\(i+1-4)": dep.firstName
 				"txtDepLastNameR\(i+1-4)":  dep.lastName
 				"txtDepSsnR\(i+1-4)":       dep.ssn
-				"txtDepDOBR\(i+1-4)":       (#convert.date & {in: dep.dateOfBirth}).out
+				"txtDepDOBR\(i+1-4)":       (#convert.date & {"in": dep.dateOfBirth}).out
 			}
 		}
 	}
