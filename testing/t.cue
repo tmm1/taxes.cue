@@ -2,11 +2,11 @@ package testing
 
 #T: {
 	test: [string]: {
-		subject: _
-		[string & !="subject"]: {
+		subject:           _
+		[string & =~"^_"]: _ // skipped tests
+		[string & !="subject" & !~"^_"]: {
 			assert: {
 				pass: bool
-				skip: bool | *false
 			}
 			assert: {
 				ok:     _
@@ -36,10 +36,8 @@ package testing
 	results: {
 		for name, suite in test if focus.suite == "" || focus.suite == name {
 			let asserts = {
-				for tname, x in suite if tname != "subject" && (focus.test == "" || focus.test == tname) {
-					if !x.assert.skip {
-						(tname): x.assert.pass == true
-					}
+				for tname, x in suite if tname != "subject" && tname !~ "^_" && (focus.test == "" || focus.test == tname) {
+					(tname): x.assert.pass == true
 				}
 			}
 			let passes = [ for o, v in asserts if v == true {o}]

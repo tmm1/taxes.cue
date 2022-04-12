@@ -13,9 +13,8 @@ import "github.com/tmm1/taxes/testing"
 		"2": assert: notOk: 1234
 		"3": assert: ok:    1234
 		"4": assert: notOk: ""
-		"5": assert: {
+		"_5": assert: {
 			ok:   1234
-			skip: true
 		}
 	}
 	test: "range": {
