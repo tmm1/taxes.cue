@@ -15,7 +15,7 @@ import (
 	in:  #Return
 	//out: freefile.#Return
 	out: (#convert.taxPayer & {"in":     in.taxPayer}).out
-	out: (#convert.filingStatus & {"in": in.filingStatus}).out
+	out: f1040: (#convert.filingStatus & {"in": in.filingStatus}).out
 }
 
 #convert: date: {
@@ -28,8 +28,8 @@ import (
 #convert: filingStatus: {
 	let fs = #FilingStatus
 	in:  fs.Any
-	//out: freefile.#Return
-	out: f1040: chkFilingStatus: {
+	//out: freefile.#f1040.#input
+	out: chkFilingStatus: {
 		(fs.single):   "single"
 		(fs.joint):    "joint"
 		(fs.separate): "separate"

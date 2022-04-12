@@ -41,8 +41,8 @@ import (
 	test: "#convert.filingStatus": {
 		subject: taxes.#convert.filingStatus
 		let t = {
-			in:  _ //freefile.#Return
-			out: in.f1040.chkFilingStatus
+			in:  _ //freefile.#f1040.#input
+			out: in.chkFilingStatus
 		}
 		"0": assert: {
 			transform: t
