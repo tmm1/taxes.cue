@@ -3,7 +3,12 @@ package testing
 #T: {
 	test: [string]: {
 		subject: _
-		[string & !="subject"]: assert: pass: bool
+		[string & !="subject"]: {
+			assert: {
+				pass: bool
+				skip: bool | *false
+			}
+		}
 		[string & !="subject"]: assert: {
 			ok:     _
 			check?: _
@@ -32,7 +37,9 @@ package testing
 		for name, suite in test if focus.suite == "" || focus.suite == name {
 			let asserts = {
 				for tname, x in suite if tname != "subject" && (focus.test == "" || focus.test == tname) {
-					(tname): x.assert.pass == true
+					if !x.assert.skip {
+						(tname): x.assert.pass == true
+					}
 				}
 			}
 			let passes = [ for o, v in asserts if v == true {o}]
