@@ -9,7 +9,7 @@ the data is structured and validated using cuelang types, and can easily be conv
 included in taxes.cue are ["functions"](https://cuetorials.com/patterns/functions/) to summarize your data into other formats:
 
 - a text based report that can be used to fill out forms by hand
-- a json structure used by `freefilebot` to enter your tax data into freefilefillableforms.com
+- a json structure used by `freefilebot` to enter your tax data into https://freefilefillableforms.com
 
 ### usage
 
@@ -30,7 +30,7 @@ $ cat mine2021.freefile (freefilebot data)
 
 ### subprojects
 
-- [`freefilebot`](/freefile/extension): chrome extension for automation on freefilefillableforms.com
+- [`freefilebot`](/freefile/extension): chrome extension for automation on https://freefilefillableforms.com
 - [`freefile/data/json`](/freefile/data/json): json schema defining [all forms](/freefile/data/json/forms.json) and fields supported by freefilebot
 - [`freefile/data`](/freefile/data): cue [validation](/freefile/data/base.cue) for the raw freefilebot json schema
 - [`freefile`](/freefile): high-level cue schemas and validations for all freefile forms, including [`freefile.#Return`](/freefile/return.cue)
@@ -56,11 +56,10 @@ $ cat mine2021.freefile (freefilebot data)
 
 ### status
 
-this project started as a way to learn cuelang, and is still very experimental.
-however, cue has proven to be a powerful tool for this use case, and is surprisingly mature. development is
-progressing quickly and this project already has several useful pieces.
-note that many basic tax calculations are not implemented yet, so this project is not viable
-for actual tax filing.
+this project started as an experiment to learn cuelang, but has quickly grown to more than a simple prototype.
+cue has proven to be a powerful tool for this use case, and is surprisingly mature. as a result development is
+progressing quickly and taxes.cue already has several useful pieces.
+however, do note that many basic tax calculations are not implemented yet. as such, this project is more akin to a "json spreadsheet", optimized for someone who knows their way around the tax filing ecosystem. if you need something like turbotax which will do your taxes today, check out https://ustaxes.org
 
 - [x] write chrome extension to extract form fields
 - [x] build cue schema to validate and document all variations in form fields
