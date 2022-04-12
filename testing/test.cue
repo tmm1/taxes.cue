@@ -61,17 +61,19 @@ import "github.com/tmm1/taxes/testing"
 				flag: in < 10
 			}
 		}
+		let t = {
+			in: _
+			out: in.flag
+		}
 		"0": assert: {
 			invoke: 5
-			transform: {
-				in:  _
-				out: in.flag
-			}
+			transform: t
 			out: true
 		}
 		"1": assert: {
 			invoke: 60
-			out: flag: false
+			transform: t
+			out: false
 		}
 	}
 }).results
