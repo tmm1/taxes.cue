@@ -12,7 +12,7 @@ import (
 }
 
 #convert: Return: {
-	in:  #Return
+	in: #Return
 	//out: freefile.#Return
 	out: (#convert.taxPayer & {"in":     in.taxPayer}).out
 	out: (#convert.filingStatus & {"in": in.filingStatus}).out
@@ -27,7 +27,7 @@ import (
 
 #convert: filingStatus: {
 	let fs = #FilingStatus
-	in:  fs.Any
+	in: fs.Any
 	//out: freefile.#Return
 	out: f1040: chkFilingStatus: {
 		(fs.single):   "single"
@@ -39,7 +39,7 @@ import (
 }
 
 #convert: taxPayer: {
-	in:  #TaxPayer
+	in: #TaxPayer
 	//out: freefile.#Return
 	out: f1040: {
 		txtFirstName: in.firstName
