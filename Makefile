@@ -1,4 +1,4 @@
-default: format test
+default: format check test
 
 %: %.cue
 	cue export --out cue $(<)
@@ -6,7 +6,9 @@ default: format test
 format:
 	cue fmt
 
-test:
+check:
 	cue eval -c .:taxes
+
+test:
 	cue export --out cue sample.cue > sample.out
 	cue eval :test > test.out

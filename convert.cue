@@ -7,6 +7,12 @@ import "github.com/tmm1/taxes/freefile"
 	out: freefile.#Return
 }
 
+#convert: Return: {
+	in: #Return
+	out: (#convert.taxPayer & {in: in.taxPayer}).out
+	out: (#convert.filingStatus & {in: in.filingStatus}).out
+}
+
 #convert: filingStatus: {
 	let fs = #FilingStatus
 	in: fs.Any

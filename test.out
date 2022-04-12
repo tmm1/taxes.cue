@@ -2,4 +2,5 @@ pass: {
     "Return.filingStatus": ["0", "1", "2"]
     "#convert.filingStatus": ["0", "1", "2"]
     "#convert.taxPayer": ["0", "1"]
+    "#convert.Return": ["0"]
 }

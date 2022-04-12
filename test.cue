@@ -59,4 +59,17 @@ import (
 			out: f1040: chkSpBlind: "1"
 		}
 	}
+	test: "#convert.Return": {
+		subject: taxes.#convert.Return
+		"0": assert: {
+			invoke: taxes.#Return & {
+				taxPayer: fixtures.taxPayer.samGardenia
+				filingStatus: "marriedFilingJointly"
+			}
+			out: f1040: {
+				chkFilingStatus: "joint"
+				chkSpBlind: "1"
+			}
+		}
+	}
 }).results
