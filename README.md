@@ -30,7 +30,7 @@ $ cat mine2021.freefile (freefilebot data)
 
 ### subprojects
 
-- [`freefilebot`](/freefile/extension): chrome extension for automation on https://freefilefillableforms.com
+- [`freefile/extension`](/freefile/extension): `freefilebot` chrome extension for automation on https://freefilefillableforms.com
 - [`freefile/data/json`](/freefile/data/json): json schema defining [all forms](/freefile/data/json/forms.json) and fields supported by freefilebot
 - [`freefile/data`](/freefile/data): cue [validation](/freefile/data/base.cue) for the raw freefilebot json schema
 - [`freefile`](/freefile): high-level cue schemas and validations for all freefile forms, including [`freefile.#Return`](/freefile/return.cue)
