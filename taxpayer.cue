@@ -34,8 +34,8 @@ import "list"
 
 #TaxPayer: {
 	#TaxablePerson
-	address?: #address
-	spouse?:  #Spouse
+	address?:   #address
+	spouse?:    #Spouse
 	dependents: [...#Dependent] & list.MaxItems(14)
 }
 
