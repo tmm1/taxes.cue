@@ -12,5 +12,9 @@ check:
 	cue eval -c .:taxes
 
 test:
-	make returns/sample1
 	cue export --out cue test.cue > test.out
+	make returns
+
+returns: \
+	returns/sample1 \
+	returns/sample2
