@@ -5,16 +5,16 @@ package taxes
 	wages: #amount
 
 	// line 2a Tax-exempt interest
-	taxExemptInterest: #amount
+	taxExemptInterest?: number
 
 	// line 3a Qualified dividends
-	qualifiedDividends: #amount
+	qualifiedDividends?: number
 
 	// line 3b Ordinary dividends
-	ordinaryDividends: #amount
+	ordinaryDividends?: number
 
 	// line 25a Federal income tax withheld (W-2)
-	w2TaxWithheld: #amount
+	w2TaxWithheld?: number
 
 	// Schedule B: Interest and Ordinary Dividends
 	scheduleB?: #ScheduleB

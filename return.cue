@@ -31,9 +31,9 @@ import (
 			wages:                         list.Sum([ for w in w2s {w.wages}])
 			w2TaxWithheld:                 list.Sum([ for w in w2s {w.incomeTax}])
 			interest:                      list.Sum([ for d in form1099INTs {d.interestIncome}, for k in k1s {k.interestIncome}])
-			dividends:                     list.Sum([ for d in form1099DIVs {d.totalOrdinaryDividends}, for k in k1s {k.ordinaryDividends}])
+			ordinaryDividends:             list.Sum([ for d in form1099DIVs {d.totalOrdinaryDividends}, for k in k1s {k.ordinaryDividends}])
 			qualifiedDividends:            list.Sum([ for d in form1099DIVs {d.qualifiedDividends}, for k in k1s {k.qualifiedDividends}])
-			exemptInterestDividends:       list.Sum([ for d in form1099DIVs {d.exemptInterestDividends}])
+			taxExemptInterest:             list.Sum([ for d in form1099DIVs {d.exemptInterestDividends}])
 			longTermProceeds:              list.Sum([ for d in form1099Bs {d.longTermProceeds}])
 			longTermCostBasis:             list.Sum([ for d in form1099Bs {d.longTermCostBasis}])
 			shortTermProceeds:             list.Sum([ for d in form1099Bs {d.shortTermProceeds}])
@@ -69,7 +69,7 @@ import (
 			}
 		}
 		schedulesRequired: {
-			B: income.dividends > 1500
+			B: income.ordinaryDividends > 1500
 			D: (income.longTermGains + income.shortTermGains) > 0
 		}
 	}
@@ -78,11 +78,12 @@ import (
 
 	// Form 1040
 	form1040: #Form1040 & {
-		wages:              _computed.income.wages
-		taxExemptInterest:  _computed.income.exemptInterestDividends
-		qualifiedDividends: _computed.income.qualifiedDividends
-		ordinaryDividends:  _computed.income.dividends
-		w2TaxWithheld:      _computed.income.w2TaxWithheld
+		for field in ["wages", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld"] {
+			let n = _computed.income[field]
+			if n != 0 {
+				(field): n
+			}
+		}
 
 		if _computed.schedulesRequired.B {
 			scheduleB: #Form1040.#ScheduleB & {
@@ -99,7 +100,7 @@ import (
 						total: _computed.income.interest
 					}
 				}
-				if _computed.income.dividends > 0 {
+				if _computed.income.ordinaryDividends > 0 {
 					partII: {
 						list: [
 							for d in form1099DIVs {
@@ -109,7 +110,7 @@ import (
 								[k.name, k.ordinaryDividends]
 							},
 						]
-						total: _computed.income.dividends
+						total: _computed.income.ordinaryDividends
 					}
 				}
 			}

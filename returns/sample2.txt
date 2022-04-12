@@ -2,15 +2,6 @@ Form1040: {
 	// line 1 Wages
 	wages: 36323
 
-	// line 2a Tax-exempt interest
-	taxExemptInterest: 0
-
-	// line 3a Qualified dividends
-	qualifiedDividends: 0
-
-	// line 3b Ordinary dividends
-	ordinaryDividends: 0
-
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 1126
 }
