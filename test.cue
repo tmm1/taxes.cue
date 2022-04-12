@@ -2,7 +2,7 @@ package test
 
 import (
 	"github.com/tmm1/taxes/fixtures"
-	"github.com/tmm1/taxes/freefile"
+	//"github.com/tmm1/taxes/freefile"
 	"github.com/tmm1/taxes/testing"
 	"github.com/tmm1/taxes"
 )
@@ -41,7 +41,7 @@ import (
 	test: "#convert.filingStatus": {
 		subject: taxes.#convert.filingStatus
 		let t = {
-			in:  freefile.#Return
+			in:  _ //freefile.#Return
 			out: in.f1040.chkFilingStatus
 		}
 		"0": assert: {
