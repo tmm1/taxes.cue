@@ -8,25 +8,25 @@ package testing
 				pass: bool
 				skip: bool | *false
 			}
-		}
-		[string & !="subject"]: assert: {
-			ok:     _
-			check?: _
-			pass:   (ok & (check | subject)) != _|_
-		} | {
-			notOk:  _
-			check?: _
-			pass:   (notOk & (check | subject)) == _|_
-		} | {
-			invoke:     _
-			out:        _
-			result:     (subject & {in: invoke}).out
-			transform?: _
-			pass:       (out & _res) != _|_
-			_res:       [
-					if transform != _|_ {(transform & {in: result}).out},
-					result,
-			][0]
+			assert: {
+				ok:     _
+				check?: _
+				pass:   (ok & (check | subject)) != _|_
+			} | {
+				notOk:  _
+				check?: _
+				pass:   (notOk & (check | subject)) == _|_
+			} | {
+				invoke:     _
+				out:        _
+				result:     (subject & {in: invoke}).out
+				transform?: _
+				pass:       (out & _res) != _|_
+				_res:       [
+						if transform != _|_ {(transform & {in: result}).out},
+						result,
+				][0]
+			}
 		}
 	}
 	focus: {
