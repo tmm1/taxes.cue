@@ -55,7 +55,7 @@ import (
 				])
 			}])
 			form1099BTransactionsByCode: {
-				for _, c in ['A', 'B', 'C', 'D', 'E', 'F'] {
+				for _, c in ["A", "B", "C", "D", "E", "F"] {
 					"\(c)": {
 						transactions: list.FlattenN([ for d in form1099Bs if len(d.transactions) != 0 {
 							[ for t in d.transactions if t.code == c {t}]

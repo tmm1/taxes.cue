@@ -50,7 +50,7 @@ Form1040: (taxes.#Return & {
 			payerName: "brokerage 1"
 			transactions: [
 				{
-					code:         'E'
+					code:         "E"
 					dateAcquired: "2010-01-01"
 					dateSold:     "2020-10-10"
 					costBasis:    5000

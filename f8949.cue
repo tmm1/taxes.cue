@@ -2,7 +2,7 @@ package taxes
 
 #Form8949: {
 	#Transaction: {
-		code:         'A' | 'B' | 'C' | 'D' | 'E' | 'F'
+		code:         "A" | "B" | "C" | "D" | "E" | "F"
 		dateAcquired: #date
 		dateSold:     #date
 		proceeds:     #amount
@@ -13,10 +13,10 @@ package taxes
 	}
 	#ShortTerm: {
 		#Transaction
-		code: 'A' | 'B' | 'C'
+		code: "A" | "B" | "C"
 	}
 	#LongTerm: {
 		#Transaction
-		code: 'D' | 'E' | 'F'
+		code: "D" | "E" | "F"
 	}
 }
