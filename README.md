@@ -1,39 +1,78 @@
 ## taxes.cue
 
-tax organizer and calculator in [CUE](https://cuelang.org/)
+tax organizer, calculator, and toolkit in [CUE](https://cuelang.org/)
 
-taxes.cue aims to let you collect all your tax data for a given year into a single human-editable version-controllable text file, written in cue.
+taxes.cue lets you collect all your tax data for a given year into a single human-editable version-controllable text file, written in cue.
 
-the data is structured and validated using cuelang types, and can easily be converted into json or yaml for export into other systems.
+the data is structured and validated using cuelang types, and can easily be converted into for export into other systems.
 
-additionally, included is a [`taxes.#Return`](/return.cue) ["function"](https://cuetorials.com/patterns/functions/) which summarizes your data into a new structure, mirroring the layout of the IRS Form 1040 and its related Schedules.
+included in taxes.cue are ["functions"](https://cuetorials.com/patterns/functions/) to summarize your data into other formats:
 
-the generated return can be used to e-file by transcribing fields into the [free file system](https://www.freefilefillableforms.com/).
-eventually PDFs could also be generated from the data, or it could be converted into the [MeF](https://www.irs.gov/e-file-providers/modernized-e-file-overview) format for e-filing directly with the IRS.
-
+- a text based report that can be used to fill out forms by hand
+- a json structure used by `freefilebot` to enter your tax data into freefilefillableforms.com
 
 ### usage
 
 ```
-$ cp returns/sample1.taxdata returns/mine2021.taxdata
-$ make returns/mine2021
-$ cat returns/mine2021.txt
+$ brew install cue # or equivalent, see cuelang.org
+$ cd returns
+$ cp sample1.taxdata mine2021.taxdata
+$ make mine2021
+$ cat mine2021.txt (manual fill instructions)
+$ cat mine2021.freefile (freefilebot data)
 ```
 
 ### example
 
 - input: [sample.taxdata](/returns/sample1.taxdata)
-- output: [sample.txt](/returns/sample1.txt)
+- manual fill instructions: [sample.txt](/returns/sample1.txt)
+- freefilebot data: [sample.freefile](/returns/sample1.freefile)
+
+### subprojects
+
+- [`freefilebot`](/freefile/extension): chrome extension for automation on freefilefillableforms.com
+- [`freefile/data/json`](/freefile/data/json): json schemas for all forms supported by freefilebot
+- [`freefile/data`](/freefile/data): cue schemas and validations for freefile forms
 
 ### inspiration
 
 - [excel1040](http://excel1040.com)
 - [OpenTaxSolver](http://opentaxsolver.sourceforge.net/)
 - [UsTaxes.org](https://github.com/UsTaxes/UsTaxes)
+
+### other free tax tools and software
+
 - [taxfloss](https://github.com/linuxrocks123/taxfloss)
+- [1040.js](https://github.com/b-k/1040.js)
+- [py1040](https://github.com/b-k/py1040)
+- [irs-efile-viewer](https://github.com/betson/irs-efile-viewer)
 
 ### learn cue
 
 - https://cuelang.org/docs/tutorials/tour/intro/json/
 - https://cuetorials.com/
 - https://bitfieldconsulting.com/golang/cuelang-exciting
+
+### status
+
+this project started as an experiment to learn cuelang, and is still very experimental.
+
+however cue has proven to be a powerful tool for this use case already, and development is
+progressing quickly.
+
+still, note that many basic tax calculations are not yet implemented and it is not yet viable
+for actual tax filing.
+
+- [x] write chrome extension to extract form fields
+- [x] build cue schema to validate and document all variations in form fields
+- [x] convert schemas to cue definitions
+- [x] build cue definitions for taxpayer data and commonly received documents
+- [x] import tax tables
+- [x] prototype manual report generator
+- [x] build unit and integration testing harness
+- [x] prototype freefile export generator
+- [ ] compute tax owed for manual report
+- [ ] implement common 1040 schedules in freefile export
+- [ ] add form filling to freefilebot extension js
+- [ ] import html views for visualizing freefile data
+- [ ] interop with ustaxes
