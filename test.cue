@@ -25,6 +25,14 @@ import (
 		}
 	}
 
+	test: "#convert.date": {
+		subject: taxes.#convert.date
+		"0": assert: {
+			invoke: "2012-12-25"
+			out:    "12/25/2012"
+		}
+	}
+
 	test: "#convert.filingStatus": {
 		subject: taxes.#convert.filingStatus
 		let t = {
@@ -59,16 +67,17 @@ import (
 			out: f1040: chkSpBlind: "1"
 		}
 	}
+
 	test: "#convert.Return": {
 		subject: taxes.#convert.Return
 		"0": assert: {
 			invoke: taxes.#Return & {
-				taxPayer: fixtures.taxPayer.samGardenia
+				taxPayer:     fixtures.taxPayer.samGardenia
 				filingStatus: "marriedFilingJointly"
 			}
 			out: f1040: {
 				chkFilingStatus: "joint"
-				chkSpBlind: "1"
+				chkSpBlind:      "1"
 			}
 		}
 	}

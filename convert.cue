@@ -1,21 +1,34 @@
 package taxes
 
-import "github.com/tmm1/taxes/freefile"
+import (
+	"strings"
+	"time"
+	"github.com/tmm1/taxes/freefile"
+)
 
 #convert: [_]: {
 	in:  _
-	out: freefile.#Return
+	out: _
 }
 
 #convert: Return: {
-	in: #Return
-	out: (#convert.taxPayer & {in: in.taxPayer}).out
+	in:  #Return
+	out: freefile.#Return
+	out: (#convert.taxPayer & {in:     in.taxPayer}).out
 	out: (#convert.filingStatus & {in: in.filingStatus}).out
+}
+
+#convert: date: {
+	in:    time.Format("2006-01-02")
+	out:   time.Format("01/02/2006")
+	parts: strings.SplitN(in, "-", 3)
+	out:   "\(parts[1])/\(parts[2])/\(parts[0])"
 }
 
 #convert: filingStatus: {
 	let fs = #FilingStatus
-	in: fs.Any
+	in:  fs.Any
+	out: freefile.#Return
 	out: f1040: chkFilingStatus: {
 		(fs.single):   "single"
 		(fs.joint):    "joint"
@@ -26,7 +39,8 @@ import "github.com/tmm1/taxes/freefile"
 }
 
 #convert: taxPayer: {
-	in: #TaxPayer
+	in:  #TaxPayer
+	out: freefile.#Return
 	out: f1040: {
 		txtFirstName:     in.firstName
 		txtMiddleInitial: in.middleInitial
