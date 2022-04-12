@@ -1,5 +1,7 @@
 package taxes
 
+import "list"
+
 #address: {
 	street: string
 	aptNo?: string
@@ -25,7 +27,7 @@ package taxes
 #Dependent: {
 	#TaxablePerson
 	relationship:          "son" | "daughter" | "grandchild" | "fosterchild" | "sister" | "brother" | "niece" | "nephew" | "parent" | "grandparent" | "aunt" | "uncle" | "stepchild" | "halfbrother" | "halfsister" | "stepbrother" | "stepsister" | "other"
-	isFullTimeStudent:     bool
+	isFullTimeStudent:     bool | *false
 	monthsLivingTogether?: int
 	isClaimedAsDependent:  true
 }
@@ -34,7 +36,7 @@ package taxes
 	#TaxablePerson
 	address?: #address
 	spouse?:  #Spouse
-	dependents?: [...#Dependent]
+	dependents: [...#Dependent] & list.MaxItems(14)
 }
 
 #FilingStatus: {

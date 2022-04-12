@@ -76,10 +76,20 @@ import (
 			txtZip:       address.zip
 		}
 
-		for i, dep in in.dependents {
+		for i, dep in in.dependents if i < 4 {
 			"txtDepFirstName\(i+1)": dep.firstName
 			"txtDepLastName\(i+1)":  dep.lastName
 			"txtDepSSN\(i+1)":       dep.ssn
+		}
+	}
+	if len(in.dependents) > 4 {
+		out: fdepend: {
+			for i, dep in in.dependents if i >= 4 {
+				"txtDepFirstNameR\(i+1-4)": dep.firstName
+				"txtDepLastNameR\(i+1-4)":  dep.lastName
+				"txtDepSsnR\(i+1-4)":       dep.ssn
+				"txtDepDOBR\(i+1-4)":       (#convert.date & {in: dep.dateOfBirth}).out
+			}
 		}
 	}
 }

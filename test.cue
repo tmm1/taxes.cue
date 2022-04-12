@@ -77,6 +77,7 @@ import (
 		subject: taxes.#convert.Return
 		"0": assert: {
 			invoke: taxes.#Return & {
+				taxYear:      "2021"
 				taxPayer:     fixtures.taxPayer.samGardenia
 				filingStatus: "marriedFilingJointly"
 			}
