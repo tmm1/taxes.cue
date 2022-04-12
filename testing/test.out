@@ -1,0 +1,10 @@
+pass: {
+    simple: ["1", "2"]
+    range: ["1", "2", "3", "4"]
+    complex: ["1", "2"]
+    function: ["0", "1"]
+    "complex func": ["0", "1"]
+}
+fail: {
+    simple: ["3", "4"]
+}
