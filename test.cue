@@ -8,6 +8,11 @@ import (
 )
 
 (testing.#T & {
+	focus: {
+		suite: string @tag(suite)
+		test:  string @tag(test)
+	}
+
 	test: "Return.filingStatus": {
 		subject: taxes.#Return
 		"0": assert: ok: {
