@@ -7,17 +7,17 @@ package testing
 		[string & !="subject"]: assert: this={
 			ok:     _
 			check?: _
-			pass:   (*_|_ | (ok & (check | subject))) != _|_
+			pass:   (ok & (check | subject)) != _|_
 		} | {
 			notOk:  _
 			check?: _
-			pass:   (*_|_ | (notOk & (check | subject))) == _|_
+			pass:   (notOk & (check | subject)) == _|_
 		} | {
 			invoke:     _
 			out:        _
 			result:     (subject & {in: invoke}).out
 			transform?: _
-			pass:       (*_|_ | (out & _res)) != _|_
+			pass:       (out & _res) != _|_
 			_res:       [
 					for k, v in this if k == "transform" {(v & {in: result}).out},
 					result,
