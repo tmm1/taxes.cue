@@ -6,6 +6,12 @@ format:
 check:
 	cue eval -c .:taxes
 
-test:
+test: unittests returns
+
+unittests:
 	cue export --out cue test.cue > test.out
+
+returns:
 	make -C returns
+
+.PHONY: format check test unittests returns
