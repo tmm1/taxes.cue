@@ -42,10 +42,12 @@ import (
 	in:  #TaxPayer
 	out: freefile.#Return
 	out: f1040: {
-		txtFirstName:     in.firstName
-		txtMiddleInitial: in.middleInitial
-		txtLastName:      in.lastName
-		txtSSN:           in.ssn
+		txtFirstName: in.firstName
+		if in.middleInitial != _|_ {
+			txtMiddleInitial: in.middleInitial
+		}
+		txtLastName: in.lastName
+		txtSSN:      in.ssn
 		if in.isBlind {
 			chkBlind: "1"
 		}
@@ -55,10 +57,12 @@ import (
 
 		let spouse = in.spouse
 		if spouse != _|_ {
-			txtSpFirstName:     spouse.firstName
-			txtSpMiddleInitial: spouse.middleInitial
-			txtSpLastName:      spouse.lastName
-			txtSpSSN:           spouse.ssn
+			txtSpFirstName: spouse.firstName
+			if spouse.middleInitial != _|_ {
+				txtSpMiddleInitial: spouse.middleInitial
+			}
+			txtSpLastName: spouse.lastName
+			txtSpSSN:      spouse.ssn
 			if spouse.isBlind {
 				chkSpBlind: "1"
 			}
@@ -69,11 +73,13 @@ import (
 
 		let address = in.address
 		if address != _|_ {
-			txtAddress1:  address.street
-			txtApartment: address.aptNo
-			txtCity:      address.city
-			cboState:     address.state
-			txtZip:       address.zip
+			txtAddress1: address.street
+			if address.aptNo != _|_ {
+				txtApartment: address.aptNo
+			}
+			txtCity:  address.city
+			cboState: address.state
+			txtZip:   address.zip
 		}
 
 		for i, dep in in.dependents if i < 4 {
