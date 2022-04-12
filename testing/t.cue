@@ -4,7 +4,7 @@ package testing
 	test: [string]: {
 		subject: _
 		[string & !="subject"]: assert: pass: bool
-		[string & !="subject"]: assert: this={
+		[string & !="subject"]: assert: {
 			ok:     _
 			check?: _
 			pass:   (ok & (check | subject)) != _|_
@@ -19,7 +19,7 @@ package testing
 			transform?: _
 			pass:       (out & _res) != _|_
 			_res:       [
-					for k, v in this if k == "transform" {(v & {in: result}).out},
+					if transform != _|_ {(transform & {in: result}).out},
 					result,
 			][0]
 		}
