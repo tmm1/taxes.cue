@@ -7,7 +7,7 @@ package taxes
 		dateSold:     #date
 		proceeds:     #amount
 		costBasis:    #amount
-		adjustCodes:  string
+		adjustCodes:  string | *""
 		adjustAmount: #amount
 		gainOrLoss:   proceeds - costBasis + adjustAmount
 	}

@@ -15,14 +15,15 @@ eventually PDFs could also be generated from the data, or it could be converted 
 ### usage
 
 ```
-$ cp sample.cue _myreturn2021.cue
-$ make _myreturn2021
+$ cp returns/sample1.taxdata returns/mine2021.taxdata
+$ make returns/mine2021
+$ cat returns/mine2021.txt
 ```
 
 ### example
 
-- input: [sample.cue](/sample.cue)
-- output: [sample.out](/sample.out)
+- input: [sample.taxdata](/returns/sample1.taxdata)
+- output: [sample.txt](/returns/sample1.txt)
 
 ### inspiration
 

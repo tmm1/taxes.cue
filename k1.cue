@@ -17,8 +17,8 @@ package taxes
 		partnershipEIN?:     #EIN
 		partnershipName:     string
 		partnershipAddress?: string
-		isPassive:           bool
-		isForeign:           bool
+		isPassive:           bool | *false
+		isForeign:           bool | *false
 	}
 	#Form1120S: {
 		#_base
@@ -28,8 +28,8 @@ package taxes
 	}
 	#Form: f={
 		#Form1065 | #Form1120S
-		name:    f.partnershipName | f.corporationName
-		ein:     f.partnershipEIN | f.corporationEIN
-		address: f.partnershipAddress | f.corporationAddress
+		name:     f.partnershipName | f.corporationName
+		ein?:     f.partnershipEIN | f.corporationEIN
+		address?: f.partnershipAddress | f.corporationAddress
 	}
 }
