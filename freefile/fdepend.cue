@@ -26,8 +26,7 @@ import "strings"
 		txtDepDOBR1?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR1: *"" |
-			"SO" | // SON
+		cboDepRelationR1?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -75,8 +74,7 @@ import "strings"
 		txtDepDOBR2?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR2: *"" |
-			"SO" | // SON
+		cboDepRelationR2?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -124,8 +122,7 @@ import "strings"
 		txtDepDOBR3?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR3: *"" |
-			"SO" | // SON
+		cboDepRelationR3?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -173,8 +170,7 @@ import "strings"
 		txtDepDOBR4?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR4: *"" |
-			"SO" | // SON
+		cboDepRelationR4?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -222,8 +218,7 @@ import "strings"
 		txtDepDOBR5?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR5: *"" |
-			"SO" | // SON
+		cboDepRelationR5?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -271,8 +266,7 @@ import "strings"
 		txtDepDOBR6?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR6: *"" |
-			"SO" | // SON
+		cboDepRelationR6?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -320,8 +314,7 @@ import "strings"
 		txtDepDOBR7?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR7: *"" |
-			"SO" | // SON
+		cboDepRelationR7?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -369,8 +362,7 @@ import "strings"
 		txtDepDOBR8?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR8: *"" |
-			"SO" | // SON
+		cboDepRelationR8?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -418,8 +410,7 @@ import "strings"
 		txtDepDOBR9?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR9: *"" |
-			"SO" | // SON
+		cboDepRelationR9?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -467,8 +458,7 @@ import "strings"
 		txtDepDOBR10?: strings.MaxRunes(10)
 
 		// Dependents - Select Relationship to you
-		cboDepRelationR10: *"" |
-			"SO" | // SON
+		cboDepRelationR10?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD

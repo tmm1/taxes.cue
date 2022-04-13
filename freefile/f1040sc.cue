@@ -38,8 +38,7 @@ import "strings"
 		txtSchCBusinessCity?: strings.MaxRunes(22)
 
 		// Line E. Select State
-		cboSchCbusinessState: *"" |
-			"AA" |
+		cboSchCbusinessState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -243,8 +242,7 @@ import "strings"
 		txtSchCexpBusiUseHome?: strings.MaxRunes(10)
 
 		// Indicate that you are including prior year passive activity losses by entering - PAL
-		cboNetProfitLossLiteral: *"" |
-			"PAL"
+		cboNetProfitLossLiteral?: "PAL"
 
 		// Net profit or (loss)
 		txtSchcNetProfitLoss?: #NEGAMOUNT

@@ -30,8 +30,7 @@ import "strings"
 		txtCityDonee1?: strings.MaxRunes(30)
 
 		// Line 1A(a). State of the donee organization
-		cboStDonee1: *"" |
-			"AA" |
+		cboStDonee1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -129,8 +128,7 @@ import "strings"
 		txtCityDonee2?: strings.MaxRunes(30)
 
 		// Line 1B(a). State of the donee organization
-		cboStDonee2: *"" |
-			"AA" |
+		cboStDonee2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -228,8 +226,7 @@ import "strings"
 		txtCityDonee3?: strings.MaxRunes(30)
 
 		// Line 1C(a). State of the donee organization
-		cboStDonee3: *"" |
-			"AA" |
+		cboStDonee3?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -327,8 +324,7 @@ import "strings"
 		txtCityDonee4?: strings.MaxRunes(30)
 
 		// Line 1D(a). State of the donee organization
-		cboStDonee4: *"" |
-			"AA" |
+		cboStDonee4?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -426,8 +422,7 @@ import "strings"
 		txtCityDonee5?: strings.MaxRunes(30)
 
 		// Line 1E(a). State of the donee organization
-		cboStDonee5: *"" |
-			"AA" |
+		cboStDonee5?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -766,8 +761,7 @@ import "strings"
 		txtPartiiDoneeCity?: strings.MaxRunes(40)
 
 		// Line 4c - Name and address of each organization to which any such contribution was made in a prior year (complete only if different from the donee organization above): state
-		cboPartiiDoneeState: *"" |
-			"AA" |
+		cboPartiiDoneeState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -888,8 +882,7 @@ import "strings"
 		txtP4AppraiserCity?: strings.MaxRunes(22)
 
 		// Part IV. Business State
-		cboP4AppraiserSt: *"" |
-			"AA" |
+		cboP4AppraiserSt?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -978,8 +971,7 @@ import "strings"
 		txtCityDoneePart5?: strings.MaxRunes(30)
 
 		// Part V - State of charitable organization (donee)
-		cboStDoneePart5: *"" |
-			"AA" |
+		cboStDoneePart5?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

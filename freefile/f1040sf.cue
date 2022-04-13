@@ -249,8 +249,7 @@ import "strings"
 		txtDescripAmount6?: strings.MaxRunes(10)
 
 		
-		cboPassActivLossCode: *"" |
-			"PAL"
+		cboPassActivLossCode?: "PAL"
 
 		
 		chkInvestRisk?: "1" | // Line 36a. All investment is at risk. Check the box that describes your investment in this activity and see instructions for where to report your loss:

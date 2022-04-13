@@ -363,8 +363,7 @@ import "strings"
 		txtF8862UsCityChld1?: strings.MaxRunes(50)
 
 		// Line 21. Child 1 - state
-		cboF8862UsStateChld1: *"" |
-			"AA" |
+		cboF8862UsStateChld1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -440,8 +439,7 @@ import "strings"
 		txtF8862UsCityChld2?: strings.MaxRunes(50)
 
 		// Line 21. Child 2 - State
-		cboF8862UsStateChld2: *"" |
-			"AA" |
+		cboF8862UsStateChld2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -517,8 +515,7 @@ import "strings"
 		txtF8862UsCityChld3?: strings.MaxRunes(50)
 
 		// Line 21. Child 3 - State
-		cboF8862UsStateChld3: *"" |
-			"AA" |
+		cboF8862UsStateChld3?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

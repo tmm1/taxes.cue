@@ -32,8 +32,7 @@ import "strings"
 		txtPayerCity?: strings.MaxRunes(22)
 
 		// Payer's State
-		cboPayerState: *"" |
-			"AA" |
+		cboPayerState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -107,8 +106,7 @@ import "strings"
 		txtFedIncTaxWith?: strings.MaxRunes(10)
 
 		// Payer's foreign country
-		cboW2gPayerFrgnCountry: *"" |
-			"AF" | // Afghanistan
+		cboW2gPayerFrgnCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -428,8 +426,7 @@ import "strings"
 		txtWinAddress?: strings.MaxRunes(70)
 
 		// Line 13. State
-		cboW2gState: *"" |
-			"AA" |
+		cboW2gState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -503,8 +500,7 @@ import "strings"
 		txtWinCity?: strings.MaxRunes(22)
 
 		// Winner's State
-		cboWinState: *"" |
-			"AA" |
+		cboWinState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -578,8 +574,7 @@ import "strings"
 		txtW2GLocWinnings?: strings.MaxRunes(10)
 
 		// Winner's foreign country
-		cboW2gRecipFrgnCountry: *"" |
-			"AF" | // Afghanistan
+		cboW2gRecipFrgnCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria

@@ -18,12 +18,10 @@ import "strings"
 		txtAlimonyReceivedDate?: strings.MaxRunes(10)
 
 		// Other gains or (losses) - Form 4684 Code
-		cboOtherGainsCode: *"" |
-			"F4684" // FORM 4684
+		cboOtherGainsCode?: "F4684" // FORM 4684
 
 		// Unemployment compensation Description
-		cboG1099PrRepayDesc: *"" |
-			"REPAID"
+		cboG1099PrRepayDesc?: "REPAID"
 
 		// Unemployment compensation Repaid Amount
 		txtG1099PrRepayAmt?: #AMOUNT
@@ -98,8 +96,7 @@ import "strings"
 		txtAbleOthIncAmt?: strings.MaxRunes(10)
 
 		// Other income. List type
-		cboOtherInc: *"" |
-			"MSA" |
+		cboOtherInc?: "MSA" |
 			"LTC" |
 			"MED MSA" |
 			"FORM 8814" |
@@ -127,8 +124,7 @@ import "strings"
 		txtEduExp?: strings.MaxRunes(10)
 
 		// Moving expenses for members of the Armed Forces - Code
-		cboMovingExpCode: *"" |
-			"STORAGE"
+		cboMovingExpCode?: "STORAGE"
 
 		// Self-employed SEP, SIMPLE, and qualified plans
 		txtSelfEmpSimSepDed?: #AMOUNT
@@ -155,8 +151,7 @@ import "strings"
 		txtAlimonyDivorceDate?: strings.MaxRunes(10)
 
 		// IRA deduction - Code
-		cboIraDeductionCode: *"" |
-			"D"
+		cboIraDeductionCode?: "D"
 
 		// IRA deduction
 		txtIraDeduction?: #AMOUNT

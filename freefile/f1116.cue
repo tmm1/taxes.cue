@@ -15,8 +15,7 @@ import "strings"
 			"8" // f . Certain income re-sourced by treaty. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
 
 		// Line f. Resident of (name of country)
-		cboF1116ResidentCountry: *"" |
-			"AF" | // Afghanistan
+		cboF1116ResidentCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -277,8 +276,7 @@ import "strings"
 			"ZI" // Zimbabwe
 
 		// Note: If you paid taxes to only one foreign country or U. S . possession, use column A in Part I and line A in Part II. If you paid taxes to more than one foreign country or U. S . possession, use a separate column and line for each country or possession. Part 1. Taxable Income or Loss From Sources Outside the United States (for Category Checked Above). Line i column A. Enter the name of the foreign country or U. S . possession
-		cboF1116ForeignCountry1: *"" |
-			"AF" | // Afghanistan
+		cboF1116ForeignCountry1?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -542,8 +540,7 @@ import "strings"
 			"95" // 951A - FOREIGN REGULATED INVESTMENT COMP CODE
 
 		// Note: If you paid taxes to only one foreign country or U. S . possession, use column A in Part I and line A in Part II. If you paid taxes to more than one foreign country or U. S . possession, use a separate column and line for each country or possession. Part 1. Taxable Income or Loss From Sources Outside the United States (for Category Checked Above). Line i column A. Enter the name of the foreign country or U. S . possession
-		cboF1116ForeignCountry2: *"" |
-			"AF" | // Afghanistan
+		cboF1116ForeignCountry2?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -807,8 +804,7 @@ import "strings"
 			"95" // 951A - FOREIGN REGULATED INVESTMENT COMP CODE
 
 		// Note: If you paid taxes to only one foreign country or U. S . possession, use column A in Part I and line A in Part II. If you paid taxes to more than one foreign country or U. S . possession, use a separate column and line for each country or possession. Part 1. Taxable Income or Loss From Sources Outside the United States (for Category Checked Above). Line i column A. Enter the name of the foreign country or U. S . possession
-		cboF1116ForeignCountry3: *"" |
-			"AF" | // Afghanistan
+		cboF1116ForeignCountry3?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria

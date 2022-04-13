@@ -106,8 +106,7 @@ import "strings"
 			"0" // No - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?
 
 		// Name of the state where you paid unemployment contributions
-		cboSchdhStateAbbr: *"" |
-			"AA" |
+		cboSchdhStateAbbr?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -176,8 +175,7 @@ import "strings"
 		txtSchdhTotCashWagesFutaA?: strings.MaxRunes(10)
 
 		// Name of state
-		cboFutaState1: *"" |
-			"AA" |
+		cboFutaState1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -258,8 +256,7 @@ import "strings"
 		txtFutaContStUnempFund1?: strings.MaxRunes(10)
 
 		// Name of state
-		cboFutaState2: *"" |
-			"AA" |
+		cboFutaState2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -363,8 +360,7 @@ import "strings"
 		txtSchdhPart4City?: strings.MaxRunes(22)
 
 		// State
-		cboSchdhPart4State: *"" |
-			"AA" |
+		cboSchdhPart4State?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

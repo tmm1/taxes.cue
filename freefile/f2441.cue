@@ -42,8 +42,7 @@ import "strings"
 		txtLn1bCity1?: strings.MaxRunes(22)
 
 		// State
-		cboLn1bState1: *"" |
-			"AA" |
+		cboLn1bState1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -139,8 +138,7 @@ import "strings"
 		txtLn1bCity2?: strings.MaxRunes(22)
 
 		// State
-		cboLn1bState2: *"" |
-			"AA" |
+		cboLn1bState2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -236,8 +234,7 @@ import "strings"
 		txtLn1bCity3?: strings.MaxRunes(22)
 
 		// State
-		cboLn1bState3: *"" |
-			"AA" |
+		cboLn1bState3?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

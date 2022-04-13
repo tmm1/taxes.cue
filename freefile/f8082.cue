@@ -37,8 +37,7 @@ import "strings"
 		txtCityPassThrghEnty?: strings.MaxRunes(22)
 
 		// Line 4. State of Pass-through Entity
-		cboStatePassThrghEnty: *"" |
-			"AA" |
+		cboStatePassThrghEnty?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

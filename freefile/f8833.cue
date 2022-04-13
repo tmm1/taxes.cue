@@ -34,8 +34,7 @@ import "strings"
 		txtF8833UsAddress?: strings.MaxRunes(70)
 
 		// Address in country of residence - Foriegn Country
-		cboF8833ResForgnCountry: *"" |
-			"AF" | // Afghanistan
+		cboF8833ResForgnCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -299,8 +298,7 @@ import "strings"
 		txtF8833UsCity?: strings.MaxRunes(22)
 
 		// Address in the United States - State
-		cboF8833UsState: *"" |
-			"AA" |
+		cboF8833UsState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -402,8 +400,7 @@ import "strings"
 		txtF8833PayerCity?: strings.MaxRunes(22)
 
 		// Payer's State
-		cboF8833PayerState: *"" |
-			"AA" |
+		cboF8833PayerState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

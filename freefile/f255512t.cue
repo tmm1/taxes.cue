@@ -18,8 +18,7 @@ import "strings"
 		txtF2555ForeignStprov?: strings.MaxRunes(17)
 
 		// LIne 1: Foreign Country
-		cboF2555CountryCd: *"" |
-			"AF" | // Afghanistan
+		cboF2555CountryCd?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -299,8 +298,7 @@ import "strings"
 		txtF2555EmpUsCity?: strings.MaxRunes(35)
 
 		// Line 4a: US State
-		cboF2555EmpUsState: *"" |
-			"AA" |
+		cboF2555EmpUsState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -377,8 +375,7 @@ import "strings"
 		txtF2555EmpForStprov?: strings.MaxRunes(17)
 
 		// Line 4b: Employer foreign Country
-		cboF2555EmpForCountryCd: *"" |
-			"AF" | // Afghanistan
+		cboF2555EmpForCountryCd?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -664,14 +661,12 @@ import "strings"
 			"0" // Line 6c: No - Have you ever revoked either of the exclusions
 
 		// Line 6d: If you answered 'Yes, ' select the type of exclusion for which the revocation was effective
-		cboF2555TypeOfExcl: *"" |
-			"FOREIGN EARNED INCOME EXCLUSION" |
+		cboF2555TypeOfExcl?: "FOREIGN EARNED INCOME EXCLUSION" |
 			"HOUSING EXCLUSION" |
 			"FOREIGN EARNED INCOME EXCLUSION AND HOUSING EXCLUSION"
 
 		// Line 6d: If you answered 'Yes, ' select the tax year for which the revocation was effective
-		cboF2555ExclTaxyear: *"" |
-			"2020" |
+		cboF2555ExclTaxyear?: "2020" |
 			"2019" |
 			"2018" |
 			"2017" |
@@ -793,8 +788,7 @@ import "strings"
 			"1901"
 
 		// Line 7: Of what country are you a citizen/national
-		cboF2555CountryCitizen: *"" |
-			"AF" | // Afghanistan
+		cboF2555CountryCitizen?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -1093,8 +1087,7 @@ import "strings"
 			"0" // Line 12a: No - Did any of your family live with you abroad during any part of the tax year
 
 		// Line 12b: If 'Yes', who
-		cboF2555LivName: *"" |
-			"SO" | // SON
+		cboF2555LivName?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -1285,8 +1278,7 @@ import "strings"
 		txtF2555RentCity?: strings.MaxRunes(22)
 
 		// Line 15e - State
-		cboF2555RentState: *"" |
-			"AA" |
+		cboF2555RentState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -1359,8 +1351,7 @@ import "strings"
 		txtF2555OccName?: strings.MaxRunes(35)
 
 		// Line 15e - Relationship
-		cboF2555OccRealtion: *"" |
-			"SO" | // SON
+		cboF2555OccRealtion?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -1519,8 +1510,7 @@ import "strings"
 		txtF2555PshipCity?: strings.MaxRunes(22)
 
 		// Line 20(b): In partnership, Select partnership state
-		cboF2555PshipState: *"" |
-			"AA" |
+		cboF2555PshipState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

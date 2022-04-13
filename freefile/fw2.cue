@@ -58,8 +58,7 @@ import "strings"
 		txtEmployerCity?: strings.MaxRunes(22)
 
 		// Line c. Employer State
-		cboEmployerState: *"" |
-			"AA" |
+		cboEmployerState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -125,8 +124,7 @@ import "strings"
 		txtEmployerZip?: strings.MaxRunes(9)
 
 		// Line c. Employer Foreign Country
-		cboEmployerForeignCountryCode: *"" |
-			"AF" | // Afghanistan
+		cboEmployerForeignCountryCode?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -466,8 +464,7 @@ import "strings"
 		txtEmpCity?: strings.MaxRunes(50)
 
 		// Line e. employee's state
-		cboEmpState: *"" |
-			"AA" |
+		cboEmpState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -533,8 +530,7 @@ import "strings"
 		txtEmpZip?: strings.MaxRunes(9)
 
 		// Line e. Foreign Country
-		cboEmpForeignCountryCd: *"" |
-			"AF" | // Afghanistan
+		cboEmpForeignCountryCd?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -852,8 +848,7 @@ import "strings"
 		txtOther14Amount4?: strings.MaxRunes(10)
 
 		// Line15. Row 1. State
-		cboW2State1: *"" |
-			"AA" |
+		cboW2State1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -938,8 +933,7 @@ import "strings"
 		txtState1Locality?: strings.MaxRunes(35)
 
 		// Line 15. Row 2. State
-		cboW2State2: *"" |
-			"AA" |
+		cboW2State2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

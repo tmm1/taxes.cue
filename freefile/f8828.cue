@@ -18,8 +18,7 @@ import "strings"
 		txtF8828City?: strings.MaxRunes(22)
 
 		// Part I - Description of Home Subject to Federally Subsidized Debt Line 1 Address of property (State)
-		cboF8828State: *"" |
-			"AA" |
+		cboF8828State?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -90,8 +89,7 @@ import "strings"
 		chkF8828CreditInd: *"" | "1"
 
 		// Line 3. Name of the bond or certificate issuer. Select State
-		cboF8828IssuerState: *"" |
-			"AA" |
+		cboF8828IssuerState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -172,8 +170,7 @@ import "strings"
 		txtF8828LenderCity?: strings.MaxRunes(22)
 
 		// Line 4. Select State
-		cboF8828LenderState: *"" |
-			"AA" |
+		cboF8828LenderState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

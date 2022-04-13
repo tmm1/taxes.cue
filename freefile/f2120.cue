@@ -38,8 +38,7 @@ import "strings"
 		txtF2120EligibleCity1?: strings.MaxRunes(22)
 
 		// Row 1. Eligible person's state
-		cboF2120EligibleState1: *"" |
-			"AA" |
+		cboF2120EligibleState1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -124,8 +123,7 @@ import "strings"
 		txtF2120EligibleCity2?: strings.MaxRunes(22)
 
 		// Row 2. Eligible person's state
-		cboF2120EligibleState2: *"" |
-			"AA" |
+		cboF2120EligibleState2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -210,8 +208,7 @@ import "strings"
 		txtF2120EligibleCity3?: strings.MaxRunes(22)
 
 		// Row 3. Eligible person's state
-		cboF2120EligibleState3: *"" |
-			"AA" |
+		cboF2120EligibleState3?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -296,8 +293,7 @@ import "strings"
 		txtF2120EligibleCity4?: strings.MaxRunes(22)
 
 		// Row 4. Eligible person's state
-		cboF2120EligibleState4: *"" |
-			"AA" |
+		cboF2120EligibleState4?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

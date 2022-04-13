@@ -62,8 +62,7 @@ import "strings"
 		txtRelCity?: strings.MaxRunes(22)
 
 		// Select State
-		cboRelState: *"" |
-			"AA" |
+		cboRelState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

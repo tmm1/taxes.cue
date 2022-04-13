@@ -22,8 +22,7 @@ import "strings"
 		txtScheCityA?: strings.MaxRunes(50)
 
 		// Line 1a. Property A. Select State
-		cboScheStateA: *"" |
-			"AA" |
+		cboScheStateA?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -96,8 +95,7 @@ import "strings"
 		txtScheCityB?: strings.MaxRunes(50)
 
 		// Line 1a. Property B. Select State
-		cboScheStateB: *"" |
-			"AA" |
+		cboScheStateB?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -170,8 +168,7 @@ import "strings"
 		txtScheCityC?: strings.MaxRunes(50)
 
 		// Line 1a. Property C. Select State
-		cboScheStateC: *"" |
-			"AA" |
+		cboScheStateC?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -239,8 +236,7 @@ import "strings"
 		chkScheQJVA: *"" | "1"
 
 		// Line 1b. Property A. Slect Type of Property
-		cboSchdePropertyTypeA: *"" |
-			"1" | // Single Family Residence
+		cboSchdePropertyTypeA?: "1" | // Single Family Residence
 			"2" | // Multi Family Residence
 			"3" | // Vacation/Short-Term Rental
 			"4" | // Commercial
@@ -261,8 +257,7 @@ import "strings"
 		chkScheQJVB: *"" | "1"
 
 		// Line 1b. Property B. Select Type of Property
-		cboSchdePropertyTypeB: *"" |
-			"1" | // Single Family Residence
+		cboSchdePropertyTypeB?: "1" | // Single Family Residence
 			"2" | // Multi Family Residence
 			"3" | // Vacation/Short-Term Rental
 			"4" | // Commercial
@@ -283,8 +278,7 @@ import "strings"
 		chkScheQJVC: *"" | "1"
 
 		// LIne 1b. Property C. Select Type of Property
-		cboSchdePropertyTypeC: *"" |
-			"1" | // Single Family Residence
+		cboSchdePropertyTypeC?: "1" | // Single Family Residence
 			"2" | // Multi Family Residence
 			"3" | // Vacation/Short-Term Rental
 			"4" | // Commercial

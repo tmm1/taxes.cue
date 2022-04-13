@@ -26,8 +26,7 @@ import "strings"
 		txtRicReitCity?: strings.MaxRunes(22)
 
 		// State of RIC or REIT
-		cboRicReitSt: *"" |
-			"AA" |
+		cboRicReitSt?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -128,8 +127,7 @@ import "strings"
 		txtShareCity_Dup?: strings.MaxRunes(22)
 
 		// Shareholder's State
-		txtShareState_Dup: *"" |
-			"AA" |
+		txtShareState_Dup?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

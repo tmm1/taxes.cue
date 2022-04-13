@@ -110,8 +110,7 @@ import "strings"
 		txtF8379City?: strings.MaxRunes(22)
 
 		// Line 12. State
-		cboF8379State: *"" |
-			"AA" |
+		cboF8379State?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

@@ -276,8 +276,7 @@ import "strings"
 		txtF8938FdcFfiCity?: strings.MaxRunes(50)
 
 		// State
-		cboF8938FdcFfiState: *"" |
-			"AA" |
+		cboF8938FdcFfiState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -342,8 +341,7 @@ import "strings"
 		txtF8938FdcFfiZip?: strings.MaxRunes(9)
 
 		// Foreign Country
-		cboF8938FdcFfiCountry: *"" |
-			"AF" | // Afghanistan
+		cboF8938FdcFfiCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -682,8 +680,7 @@ import "strings"
 		txtF8938OfaFfiCity?: strings.MaxRunes(50)
 
 		// State
-		cboF8938OfaFfiState: *"" |
-			"AA" |
+		cboF8938OfaFfiState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -748,8 +745,7 @@ import "strings"
 		txtF8938OfaFfiZip?: strings.MaxRunes(9)
 
 		// Country
-		cboF8938OfaFfiCountry: *"" |
-			"AF" | // Afghanistan
+		cboF8938OfaFfiCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -1044,8 +1040,7 @@ import "strings"
 		txtF8938OfaNtCity?: strings.MaxRunes(50)
 
 		// State
-		cboF8938OfaNtState: *"" |
-			"AA" |
+		cboF8938OfaNtState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -1110,8 +1105,7 @@ import "strings"
 		txtF8938OfaNtZip?: strings.MaxRunes(9)
 
 		// Country
-		cboF8938OfaNtCuntryName: *"" |
-			"AF" | // Afghanistan
+		cboF8938OfaNtCuntryName?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria

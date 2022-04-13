@@ -9,8 +9,7 @@ import "strings"
 		chkAmdReturnInd: *"" | "1"
 
 		// Select State - This field is automatically populated for you
-		cboState: *"" |
-			"AA" |
+		cboState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -71,8 +70,7 @@ import "strings"
 			"WY"
 
 		// Select Foreign Country Name - This field is automatically populated for you
-		cboForeignCountry: *"" |
-			"AF" | // Afghanistan
+		cboForeignCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria

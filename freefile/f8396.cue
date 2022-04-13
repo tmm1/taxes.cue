@@ -14,8 +14,7 @@ import "strings"
 		txtChangeCity?: strings.MaxRunes(22)
 
 		// State
-		cboChangeState: *"" |
-			"AA" |
+		cboChangeState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

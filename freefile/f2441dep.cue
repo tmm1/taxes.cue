@@ -29,8 +29,7 @@ import "strings"
 		txtCarePersonCity1?: strings.MaxRunes(50)
 
 		// Row 1. Line 1(b) State
-		cboCarePersonState1: *"" |
-			"AA" |
+		cboCarePersonState1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -126,8 +125,7 @@ import "strings"
 		txtCarePersonCity2?: strings.MaxRunes(50)
 
 		// Row 2. Line 1(b) State
-		cboCarePersonState2: *"" |
-			"AA" |
+		cboCarePersonState2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -223,8 +221,7 @@ import "strings"
 		txtCarePersonCity3?: strings.MaxRunes(50)
 
 		// Row 3. Line 1(b) State
-		cboCarePersonState3: *"" |
-			"AA" |
+		cboCarePersonState3?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -320,8 +317,7 @@ import "strings"
 		txtCarePersonCity4?: strings.MaxRunes(50)
 
 		// Row 4. Line 1(b) State
-		cboCarePersonState4: *"" |
-			"AA" |
+		cboCarePersonState4?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -417,8 +413,7 @@ import "strings"
 		txtCarePersonCity5?: strings.MaxRunes(50)
 
 		// Row 5. Line 1(b) State
-		cboCarePersonState5: *"" |
-			"AA" |
+		cboCarePersonState5?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -514,8 +509,7 @@ import "strings"
 		txtCarePersonCity6?: strings.MaxRunes(50)
 
 		// Row 6. Line 1(b) State
-		cboCarePersonState6: *"" |
-			"AA" |
+		cboCarePersonState6?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

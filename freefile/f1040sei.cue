@@ -81,8 +81,7 @@ import "strings"
 			"N" // No The child is not a qualifying child - Line 4b. Was the child permanently and totally disabled during any part of 2021?
 
 		// Line 5 Child's relationship to you (for example, son, daughter, grandchild, niece, nephew, eligible foster child, etc. )
-		cboRelationChild1: *"" |
-			"SO" | // SON
+		cboRelationChild1?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -102,8 +101,7 @@ import "strings"
 			"O" // OTHER
 
 		// Line 5 Child's relationship to you (for example, son, daughter, grandchild, niece, nephew, eligible foster child, etc. )
-		cboRelationChild2: *"" |
-			"SO" | // SON
+		cboRelationChild2?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -123,8 +121,7 @@ import "strings"
 			"O" // OTHER
 
 		// Line 5 Child's relationship to you (for example, son, daughter, grandchild, niece, nephew, eligible foster child, etc. )
-		cboRelationChild3: *"" |
-			"SO" | // SON
+		cboRelationChild3?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -144,8 +141,7 @@ import "strings"
 			"O" // OTHER
 
 		// Line 6 Number of months child lived with you in the United States during 2021 If the child lived with you for more than half of 2021 but less than 7 months, enter 7. If the child was born or died in 2021 and your home was the child's home for more than half the time he or she was alive during 2021, enter 12
-		cboNoMonthsLivedChild1: *"" |
-			"7" |
+		cboNoMonthsLivedChild1?: "7" |
 			"8" |
 			"9" |
 			"10" |
@@ -153,8 +149,7 @@ import "strings"
 			"12"
 
 		// Line 6 Number of months child lived with you in the United States during 2021 If the child lived with you for more than half of 2021 but less than 7 months, enter 7. If the child was born or died in 2021 and your home was the child's home for more than half the time he or she was alive during 2021, enter 12
-		cboNoMonthsLivedChild2: *"" |
-			"7" |
+		cboNoMonthsLivedChild2?: "7" |
 			"8" |
 			"9" |
 			"10" |
@@ -162,8 +157,7 @@ import "strings"
 			"12"
 
 		// Line 6 Number of months child lived with you in the United States during 2021 If the child lived with you for more than half of 2021 but less than 7 months, enter 7. If the child was born or died in 2021 and your home was the child's home for more than half the time he or she was alive during 2021, enter 12
-		cboNoMonthsLivedChild3: *"" |
-			"7" |
+		cboNoMonthsLivedChild3?: "7" |
 			"8" |
 			"9" |
 			"10" |

@@ -89,8 +89,7 @@ import "strings"
 		txtTaxYearEnd?: strings.MaxRunes(10)
 
 		// Select the State The corporation is organized in
-		cboStateOfInc: *"" |
-			"AA" |
+		cboStateOfInc?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

@@ -42,8 +42,7 @@ import "strings"
 		txtCityFuelCell?: strings.MaxRunes(22)
 
 		// Line 7b. State
-		cboStateFuelCell: *"" |
-			"AA" |
+		cboStateFuelCell?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -140,8 +139,7 @@ import "strings"
 		txtCity?: strings.MaxRunes(22)
 
 		// Line 17b. State
-		cboState: *"" |
-			"AA" |
+		cboState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

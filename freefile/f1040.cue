@@ -6,8 +6,7 @@ import "strings"
 #f1040: {
 	#input: {
 		// If Primary is deceased, select the option
-		cboDeceasedPr: *"" |
-			"PRIMARY DECEASED"
+		cboDeceasedPr?: "PRIMARY DECEASED"
 
 		// Date of death Primary
 		// If Primary is deceased, enter deceaased date
@@ -15,8 +14,7 @@ import "strings"
 		txtDeceasedDatePr?: strings.MaxRunes(10)
 
 		// If Spouse is deceased, select the option
-		cboDeceasedSp: *"" |
-			"SPOUSE DECEASED"
+		cboDeceasedSp?: "SPOUSE DECEASED"
 
 		// Date of death Spouse
 		// If Spouse deceased, enter spouse deceased date
@@ -92,8 +90,7 @@ import "strings"
 		txtCity?: strings.MaxRunes(22)
 
 		// Select State
-		cboState: *"" |
-			"AA" |
+		cboState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -164,8 +161,7 @@ import "strings"
 		chkSpPresFundInd: *"" | "1"
 
 		// Select foreign country name
-		cboForeignCountryCode: *"" |
-			"AF" | // Afghanistan
+		cboForeignCountryCode?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -470,8 +466,7 @@ import "strings"
 		txtDepSSN1?: strings.MaxRunes(11)
 
 		// Dependents - Select Relationship to you
-		cboDepRelation1: *"" |
-			"SO" | // SON
+		cboDepRelation1?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -509,8 +504,7 @@ import "strings"
 		txtDepSSN2?: strings.MaxRunes(11)
 
 		// Dependents - Select Relationship to you
-		cboDepRelation2: *"" |
-			"SO" | // SON
+		cboDepRelation2?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -548,8 +542,7 @@ import "strings"
 		txtDepSSN3?: strings.MaxRunes(11)
 
 		// Dependents - Select Relationship to you
-		cboDepRelation3: *"" |
-			"SO" | // SON
+		cboDepRelation3?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -590,8 +583,7 @@ import "strings"
 		txtDepSSN4?: strings.MaxRunes(11)
 
 		// Dependents - Select Relationship to you
-		cboDepRelation4: *"" |
-			"SO" | // SON
+		cboDepRelation4?: "SO" | // SON
 			"D" | // DAUGHTER
 			"GC" | // GRANDCHILD
 			"FC" | // FOSTERCHILD
@@ -617,8 +609,7 @@ import "strings"
 		ChkDepOtherInd4: *"" | "1"
 
 		// Line 1. If applicable, select code. See instructions for any entry
-		cboOtherWageType: *"" |
-			"DFC" |
+		cboOtherWageType?: "DFC" |
 			"PRI" |
 			"HSH" |
 			"PSO" |
@@ -657,16 +648,14 @@ import "strings"
 		txtOrdDiv?: strings.MaxRunes(10)
 
 		// Line 3a. If applicable, select code from the picklist. See instructions for entry
-		cboF8814QualDiv1040: *"" |
-			"FORM 8814"
+		cboF8814QualDiv1040?: "FORM 8814"
 
 		// Line 3a. Enter amount from code Form 8814. See instructions
 		txtF8814QualDiv1040?: #AMOUNT
 		txtF8814QualDiv1040?: strings.MaxRunes(10)
 
 		// Line 3b. If applicable, select code from the picklist. See instructions for entry
-		cboF8814OrdDiv1040: *"" |
-			"FORM 8814"
+		cboF8814OrdDiv1040?: "FORM 8814"
 
 		// Line 3b. Enter amount from code Form 8814. See instructions
 		txtF8814OrdDiv1040?: #AMOUNT
@@ -677,8 +666,7 @@ import "strings"
 		txtTotIraDist?: strings.MaxRunes(10)
 
 		// Line 4b. If applicable, select the IRA code from the picklist. (See instructions)
-		cboIRAType: *"" |
-			"ROLLOVER" |
+		cboIRAType?: "ROLLOVER" |
 			"QCD" |
 			"HFD"
 
@@ -691,8 +679,7 @@ import "strings"
 		txtTotPen?: strings.MaxRunes(10)
 
 		// Line 5b. If applicable, select the Pensions and Annuities code from picklist. (See instructions)
-		cboPenAnnType: *"" |
-			"ROLLOVER" |
+		cboPenAnnType?: "ROLLOVER" |
 			"PSO" |
 			"ROLLOVER AND PSO"
 
@@ -705,8 +692,7 @@ import "strings"
 		txtSsBenefits?: strings.MaxRunes(10)
 
 		// Line 6b. If applicable, select a code from the picklist. See instructions for entry
-		cboSSAType: *"" |
-			"D" |
+		cboSSAType?: "D" |
 			"LSE" |
 			"D AND LSE"
 
@@ -722,8 +708,7 @@ import "strings"
 		txtCapitalGains?: strings.MaxRunes(10)
 
 		// Line 7. If applicable, select code from the picklist. See instructions for entry
-		cboF8814CapGain1040: *"" |
-			"FORM 8814"
+		cboF8814CapGain1040?: "FORM 8814"
 
 		// Line 7. Enter amount from code Form 8814. See instructions
 		txtF8814CapGain1040?: #AMOUNT
@@ -759,8 +744,7 @@ import "strings"
 		txtForm8814TaxAmt?: strings.MaxRunes(10)
 
 		
-		cboF1040OtherTaxCode: *"" |
-			"ECR" |
+		cboF1040OtherTaxCode?: "ECR" |
 			"HCTC" |
 			"MLR" |
 			"FORM 8978" |
@@ -786,8 +770,7 @@ import "strings"
 		txtFedTaxWithheldOther?: strings.MaxRunes(10)
 
 		// 2021 estimated tax payments and amount applied from 2020 return - Divorced Literal Code
-		cboPryrEstpayDivCode: *"" |
-			"DIV"
+		cboPryrEstpayDivCode?: "DIV"
 
 		// 2021 estimated tax payments and amount applied from 2020 return - Divorced Spouse SSN
 		txtPryrEstpayDivSpSSN?: #SSN
@@ -798,8 +781,7 @@ import "strings"
 		txtAppTaxFrmPrevYr?: strings.MaxRunes(10)
 
 		// Line 27: select an option if applicable. (see instructions)
-		cboEicEligLiteralCode: *"" |
-			"CLERGY" |
+		cboEicEligLiteralCode?: "CLERGY" |
 			"NO"
 
 		// Line 27a. Earned income credit (EIC)
@@ -822,8 +804,7 @@ import "strings"
 		txtRecovRebateCdt?: strings.MaxRunes(10)
 
 		// Line 33. Payment Type
-		cboF8689TotPayment1040: *"" |
-			"FORM 8689"
+		cboF8689TotPayment1040?: "FORM 8689"
 
 		// Line 33. Other Payments Amount
 		txtF8689TotPayment1040?: #AMOUNT

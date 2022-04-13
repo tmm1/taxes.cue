@@ -14,8 +14,7 @@ import "strings"
 		txtF8611BuildCity?: strings.MaxRunes(20)
 
 		// Line C. State
-		cboF8611BuildState: *"" |
-			"AA" |
+		cboF8611BuildState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -84,8 +83,7 @@ import "strings"
 		txtF8611BuildBin?: strings.MaxRunes(11)
 
 		// Line E. Date placed in service (Month)
-		cboF8611ServiceMonth: *"" |
-			"01" |
+		cboF8611ServiceMonth?: "01" |
 			"02" |
 			"03" |
 			"04" |
@@ -99,8 +97,7 @@ import "strings"
 			"12"
 
 		// Line E. Date placed in service (Day)
-		cboF8611ServiceDay: *"" |
-			"01" |
+		cboF8611ServiceDay?: "01" |
 			"02" |
 			"03" |
 			"04" |
@@ -133,8 +130,7 @@ import "strings"
 			"31"
 
 		// Line E. Date placed in service (Year)
-		cboF8611ServiceYear: *"" |
-			"2021" |
+		cboF8611ServiceYear?: "2021" |
 			"2020" |
 			"2019" |
 			"2018" |
@@ -261,8 +257,7 @@ import "strings"
 		txtF8611IssuerName?: strings.MaxRunes(35)
 
 		// Line F(2). Date of issue(Month)
-		cboF8611IssueMonth: *"" |
-			"01" |
+		cboF8611IssueMonth?: "01" |
 			"02" |
 			"03" |
 			"04" |
@@ -276,8 +271,7 @@ import "strings"
 			"12"
 
 		// Line F(2). Date of issue(Day)
-		cboF8611IssueDay: *"" |
-			"01" |
+		cboF8611IssueDay?: "01" |
 			"02" |
 			"03" |
 			"04" |
@@ -310,8 +304,7 @@ import "strings"
 			"31"
 
 		// Line F(2). Date of issue(Year)
-		cboF8611IssueYear: *"" |
-			"2021" |
+		cboF8611IssueYear?: "2021" |
 			"2020" |
 			"2019" |
 			"2018" |
@@ -450,8 +443,7 @@ import "strings"
 		txtF8611AddnQualiBasis?: strings.MaxRunes(10)
 
 		// Line 4. Credit recapture percentage
-		cboF8611RecapPerYr: *"" |
-			"0.333" |
+		cboF8611RecapPerYr?: "0.333" |
 			"0.267" |
 			"0.200" |
 			"0.133" |

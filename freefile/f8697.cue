@@ -18,8 +18,7 @@ import "strings"
 		chkPartnr: *"" | "4"
 
 		// Select State
-		cboState: *"" |
-			"AA" |
+		cboState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

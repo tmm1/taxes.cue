@@ -30,8 +30,7 @@ import "strings"
 		txtF8815City1?: strings.MaxRunes(22)
 
 		// State
-		cboF8815State1: *"" |
-			"AA" |
+		cboF8815State1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -120,8 +119,7 @@ import "strings"
 		txtF8815City2?: strings.MaxRunes(22)
 
 		// State
-		cboF8815State2: *"" |
-			"AA" |
+		cboF8815State2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -210,8 +208,7 @@ import "strings"
 		txtF8815City3?: strings.MaxRunes(22)
 
 		// State
-		cboF8815State3: *"" |
-			"AA" |
+		cboF8815State3?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

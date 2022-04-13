@@ -34,8 +34,7 @@ import "strings"
 		txtLine8Agincome?: strings.MaxRunes(10)
 
 		// Line 9. Enter the applicable decimal amount from the table below
-		cboLine9Deciamt: *"" |
-			"0.0" |
+		cboLine9Deciamt?: "0.0" |
 			"0.1" |
 			"0.2" |
 			"0.5"

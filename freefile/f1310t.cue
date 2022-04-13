@@ -38,8 +38,7 @@ import "strings"
 		txtF1310PersonZip?: strings.MaxRunes(5)
 
 		// Select State
-		cboF1310PersonState: *"" |
-			"AA" |
+		cboF1310PersonState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

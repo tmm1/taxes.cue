@@ -28,8 +28,7 @@ import "strings"
 		txtF8594PartyCity?: strings.MaxRunes(25)
 
 		// Select State
-		cboF8594PartyState: *"" |
-			"AA" |
+		cboF8594PartyState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

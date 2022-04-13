@@ -6,15 +6,13 @@ import "strings"
 #f1040s2: {
 	#input: {
 		// Line 4. Enter codes
-		cboSelfEmpDesc: *"" |
-			"EXEMPT-F4029" |
+		cboSelfEmpDesc?: "EXEMPT-F4029" |
 			"EXEMPT-F4361" |
 			"EXEMPT-NOTARY" |
 			"EXEMPT COMMUNITY INCOME"
 
 		
-		cboF5329RetTaxplanCode: *"" |
-			"NO"
+		cboF5329RetTaxplanCode?: "NO"
 
 		// Line 8. Additional tax on IRAs or other tax-favored accounts. Attach Form 5329 if required
 		txtTaxQualp?: #AMOUNT
@@ -93,8 +91,7 @@ import "strings"
 		txtF8621InterestAmt?: strings.MaxRunes(10)
 
 		// Line 17z. Any other taxes - Description
-		cboF1040AnyOthTaxTot: *"" |
-			"S72P" |
+		cboF1040AnyOthTaxTot?: "S72P" |
 			"UT" |
 			"ADT" |
 			"ICR" |

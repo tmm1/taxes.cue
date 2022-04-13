@@ -238,8 +238,7 @@ import "strings"
 		txtOrdAmt15?: strings.MaxRunes(10)
 
 		
-		cboForCountry: *"" |
-			"AF" | // Afghanistan
+		cboForCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria

@@ -282,8 +282,7 @@ import "strings"
 		txtCity?: strings.MaxRunes(22)
 
 		// Line 1. State
-		cboState: *"" |
-			"AA" |
+		cboState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

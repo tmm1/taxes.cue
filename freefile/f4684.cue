@@ -25,8 +25,7 @@ import "strings"
 		txtPropCity1?: strings.MaxRunes(25)
 
 		// Line 1. Property A - State
-		cboPropState1: *"" |
-			"AA" |
+		cboPropState1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -103,8 +102,7 @@ import "strings"
 		txtPropCity2?: strings.MaxRunes(25)
 
 		// Line 1. Property B - State
-		cboPropState2: *"" |
-			"AA" |
+		cboPropState2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -181,8 +179,7 @@ import "strings"
 		txtPropCity3?: strings.MaxRunes(25)
 
 		// Line 1. Property C - State
-		cboPropState3: *"" |
-			"AA" |
+		cboPropState3?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -259,8 +256,7 @@ import "strings"
 		txtPropCity4?: strings.MaxRunes(25)
 
 		// Line 1. Property D - State
-		cboPropState4: *"" |
-			"AA" |
+		cboPropState4?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

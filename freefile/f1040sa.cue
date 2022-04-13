@@ -60,8 +60,7 @@ import "strings"
 		txtPerCity?: strings.MaxRunes(30)
 
 		// Line 8b: Select person's state
-		cboPerSt: *"" |
-			"AA" |
+		cboPerSt?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -158,8 +157,7 @@ import "strings"
 		txtGiftsToChar?: strings.MaxRunes(10)
 
 		// Line 16: Other - from list in instructions. List type
-		cboItemDesc16a: *"" |
-			"AMORTIZABLE BOND PREMIUMS" |
+		cboItemDesc16a?: "AMORTIZABLE BOND PREMIUMS" |
 			"CASUALTY AND THEFT LOSS" |
 			"FEDERAL ESTATE TAX" |
 			"GAMBLING LOSSES" |
@@ -177,8 +175,7 @@ import "strings"
 		txtItemAmt16a?: strings.MaxRunes(10)
 
 		// Line 16: Other - from list in instructions. List type
-		cboItemDesc16b: *"" |
-			"AMORTIZABLE BOND PREMIUMS" |
+		cboItemDesc16b?: "AMORTIZABLE BOND PREMIUMS" |
 			"CASUALTY AND THEFT LOSS" |
 			"FEDERAL ESTATE TAX" |
 			"GAMBLING LOSSES" |

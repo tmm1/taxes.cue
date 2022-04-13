@@ -6,8 +6,7 @@ import "strings"
 #f8886: {
 	#input: {
 		// State
-		cboF8886State: *"" |
-			"AA" |
+		cboF8886State?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -169,8 +168,7 @@ import "strings"
 		txtF8886FeePaidCity1?: strings.MaxRunes(22)
 
 		// State
-		cboF8886FeePaidState1: *"" |
-			"AA" |
+		cboF8886FeePaidState1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -255,8 +253,7 @@ import "strings"
 		txtF8886FeePaidCity2?: strings.MaxRunes(22)
 
 		// State
-		cboF8886FeePaidState2: *"" |
-			"AA" |
+		cboF8886FeePaidState2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -411,8 +408,7 @@ import "strings"
 		txtF8886TransCityA?: strings.MaxRunes(22)
 
 		// State
-		cboF8886TransStateA: *"" |
-			"AA" |
+		cboF8886TransStateA?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -513,8 +509,7 @@ import "strings"
 		txtF8886TransCityB?: strings.MaxRunes(22)
 
 		// State
-		cboF8886TransStateB: *"" |
-			"AA" |
+		cboF8886TransStateB?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

@@ -6,8 +6,7 @@ import "strings"
 #f8919t: {
 	#input: {
 		// Line 1(c). Enter reason code
-		cboF8919ReasonCodes1: *"" |
-			"A" | // I filed Form SS-8 and received a determination letter stating that I am an employee of this firm
+		cboF8919ReasonCodes1?: "A" | // I filed Form SS-8 and received a determination letter stating that I am an employee of this firm
 			"C" | // I received other correspondence from the IRS that states I am an employee
 			"G" | // I filed Form SS-8 with the IRS and haven't received a reply
 			"H" // I received a Form W-2 and a Form 1099-MISC and/or 1099-NEC from this firm for 2021. The amount on Form 1099-MISC and/or 1099-NEC should have been included as wages on Form W-2
@@ -32,8 +31,7 @@ import "strings"
 		txtF8919TotwagesExceptSsmedi1?: strings.MaxRunes(10)
 
 		// Line 2(c). Enter reason code
-		cboF8919ReasonCodes2: *"" |
-			"A" | // I filed Form SS-8 and received a determination letter stating that I am an employee of this firm
+		cboF8919ReasonCodes2?: "A" | // I filed Form SS-8 and received a determination letter stating that I am an employee of this firm
 			"C" | // I received other correspondence from the IRS that states I am an employee
 			"G" | // I filed Form SS-8 with the IRS and haven't received a reply
 			"H" // I received a Form W-2 and a Form 1099-MISC and/or 1099-NEC from this firm for 2021. The amount on Form 1099-MISC and/or 1099-NEC should have been included as wages on Form W-2
@@ -58,8 +56,7 @@ import "strings"
 		txtF8919TotwagesExceptSsmedi2?: strings.MaxRunes(10)
 
 		// Line 3(c). Enter reason code
-		cboF8919ReasonCodes3: *"" |
-			"A" | // I filed Form SS-8 and received a determination letter stating that I am an employee of this firm
+		cboF8919ReasonCodes3?: "A" | // I filed Form SS-8 and received a determination letter stating that I am an employee of this firm
 			"C" | // I received other correspondence from the IRS that states I am an employee
 			"G" | // I filed Form SS-8 with the IRS and haven't received a reply
 			"H" // I received a Form W-2 and a Form 1099-MISC and/or 1099-NEC from this firm for 2021. The amount on Form 1099-MISC and/or 1099-NEC should have been included as wages on Form W-2
@@ -84,8 +81,7 @@ import "strings"
 		txtF8919TotwagesExceptSsmedi3?: strings.MaxRunes(10)
 
 		// Line 4(c). Enter reason code
-		cboF8919ReasonCodes4: *"" |
-			"A" | // I filed Form SS-8 and received a determination letter stating that I am an employee of this firm
+		cboF8919ReasonCodes4?: "A" | // I filed Form SS-8 and received a determination letter stating that I am an employee of this firm
 			"C" | // I received other correspondence from the IRS that states I am an employee
 			"G" | // I filed Form SS-8 with the IRS and haven't received a reply
 			"H" // I received a Form W-2 and a Form 1099-MISC and/or 1099-NEC from this firm for 2021. The amount on Form 1099-MISC and/or 1099-NEC should have been included as wages on Form W-2
@@ -110,8 +106,7 @@ import "strings"
 		txtF8919TotwagesExceptSsmedi4?: strings.MaxRunes(10)
 
 		// Line 5(c). Enter reason code
-		cboF8919ReasonCodes5: *"" |
-			"A" | // I filed Form SS-8 and received a determination letter stating that I am an employee of this firm
+		cboF8919ReasonCodes5?: "A" | // I filed Form SS-8 and received a determination letter stating that I am an employee of this firm
 			"C" | // I received other correspondence from the IRS that states I am an employee
 			"G" | // I filed Form SS-8 with the IRS and haven't received a reply
 			"H" // I received a Form W-2 and a Form 1099-MISC and/or 1099-NEC from this firm for 2021. The amount on Form 1099-MISC and/or 1099-NEC should have been included as wages on Form W-2

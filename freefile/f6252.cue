@@ -10,8 +10,7 @@ import "strings"
 		txtDescOfProperty?: strings.MaxRunes(100)
 
 		// Select property type code
-		cboInstSalePropTypecd: *"" | // -
-			"1" | // 1-Sale property is timeshare or residential lot
+		cboInstSalePropTypecd?: "1" | // 1-Sale property is timeshare or residential lot
 			"2" | // 2-Sale by an individual of personal use property (within the meaning of section 1275(b)(3))
 			"3" | // 3-Sale of any property used or produced in the trade or business of farming (within the meaning of section 2032A(e)(4) or (5))
 			"4" // 4-All other installment sales not listed
@@ -85,8 +84,7 @@ import "strings"
 		txtRelParCity?: strings.MaxRunes(50)
 
 		// Line 27. Select state of related property
-		cboRelParSt: *"" |
-			"AA" |
+		cboRelParSt?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

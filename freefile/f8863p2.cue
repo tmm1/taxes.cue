@@ -38,8 +38,7 @@ import "strings"
 		txtF1098TFilercity1?: strings.MaxRunes(50)
 
 		// Line 22a. (1) Select State
-		cboF1098TFilerstate1: *"" |
-			"AA" |
+		cboF1098TFilerstate1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -108,8 +107,7 @@ import "strings"
 		txtF1098TFilercity2?: strings.MaxRunes(50)
 
 		// Line 22b. (1) Select State
-		cboF1098TFilerstate2: *"" |
-			"AA" |
+		cboF1098TFilerstate2?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

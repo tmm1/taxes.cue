@@ -18,8 +18,7 @@ import "strings"
 		txtF2555ForeignStprov?: strings.MaxRunes(17)
 
 		// LIne 1: Foreign Country
-		cboF2555CountryCd: *"" |
-			"AF" | // Afghanistan
+		cboF2555CountryCd?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -299,8 +298,7 @@ import "strings"
 		txtF2555EmpUsCity?: strings.MaxRunes(35)
 
 		// Line 4a: US State
-		cboF2555EmpUsState: *"" |
-			"AA" |
+		cboF2555EmpUsState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -377,8 +375,7 @@ import "strings"
 		txtF2555EmpForStprov?: strings.MaxRunes(17)
 
 		// Line 4b: Employer foreign Country
-		cboF2555EmpForCountryCd: *"" |
-			"AF" | // Afghanistan
+		cboF2555EmpForCountryCd?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria

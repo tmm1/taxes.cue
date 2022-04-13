@@ -18,8 +18,7 @@ import "strings"
 		txtF3468LessorCity?: strings.MaxRunes(22)
 
 		// Line 2. State
-		cboF3468LessorState: *"" |
-			"AA" |
+		cboF3468LessorState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |

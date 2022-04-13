@@ -65,10 +65,13 @@ files: [
 						{{$f.name}}: *"" | "{{(index $f.options 0).value}}"
 						{{- else if or (eq $f.type "combo") (eq $f.type "check") -}}
 						{{- $lastLabel := "" -}}
+						{{- $lastEmpty := false -}}
 						{{$f.name}}{{range $idx, $o := $f.options -}}
-						{{if $idx}} |{{if $lastLabel}} // {{$lastLabel}}{{end}}
-							"{{$o.value}}"
-						{{- else}}{{if eq $o.value ""}}: *{{else if eq $f.type "check"}}?: {{else}}: {{end}}"{{$o.value}}"{{end}}
+						{{if $idx}}{{if ne $lastEmpty true}} |{{if $lastLabel}} // {{$lastLabel}}{{end}}
+							{{end}}"{{$o.value}}"
+						{{- else}}{{if eq $o.value ""}}?: {{else if eq $f.type "check"}}?: "{{$o.value}}"{{else}}: "{{$o.value}}"{{end}}
+						{{- end}}
+						{{- $lastEmpty = (eq "" $o.value) -}}
 						{{- $lastLabel = $o.label -}}
 						{{- end}}{{if $lastLabel}} // {{$lastLabel}}{{end}}
 						{{- end}}

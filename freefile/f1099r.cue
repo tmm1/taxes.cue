@@ -32,8 +32,7 @@ import "strings"
 		txtPayerCity?: strings.MaxRunes(50)
 
 		// Payer's State
-		cboPayerState: *"" |
-			"AA" |
+		cboPayerState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -103,8 +102,7 @@ import "strings"
 		txtTaxAmtInp?: strings.MaxRunes(10)
 
 		// Payer's foreign country
-		cboR1099PayerFrgnCountry: *"" |
-			"AF" | // Afghanistan
+		cboR1099PayerFrgnCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -419,8 +417,7 @@ import "strings"
 		txtRecipientCity?: strings.MaxRunes(50)
 
 		// Recipient's State
-		cboRecipientState: *"" |
-			"AA" |
+		cboRecipientState?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -486,8 +483,7 @@ import "strings"
 		txtRecipientZip?: strings.MaxRunes(5)
 
 		// Line 7. Distribution code
-		cboDistCode1: *"" |
-			"1" |
+		cboDistCode1?: "1" |
 			"2" |
 			"3" |
 			"4" |
@@ -518,8 +514,7 @@ import "strings"
 			"W"
 
 		// Line 7. If applicable enter second Distribution code
-		cboDistCode2: *"" |
-			"1" |
+		cboDistCode2?: "1" |
 			"2" |
 			"3" |
 			"4" |
@@ -561,8 +556,7 @@ import "strings"
 		txtR1099OthDistPerc?: strings.MaxRunes(5)
 
 		// Recipient's Foreign country
-		cboR1099RecipFrgnCountry: *"" |
-			"AF" | // Afghanistan
+		cboR1099RecipFrgnCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
 			"AG" | // Algeria
@@ -844,8 +838,7 @@ import "strings"
 		txtStTaxWithheld?: strings.MaxRunes(10)
 
 		// Line 15. Row 1. Select State
-		cboPayersSt: *"" |
-			"AA" |
+		cboPayersSt?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
@@ -929,8 +922,7 @@ import "strings"
 		txtStTaxWithheld1?: strings.MaxRunes(10)
 
 		// Line 15. Row 2. Select State
-		cboPayersSt1: *"" |
-			"AA" |
+		cboPayersSt1?: "AA" |
 			"AE" |
 			"AK" |
 			"AL" |
