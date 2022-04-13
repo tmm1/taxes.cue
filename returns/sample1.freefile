@@ -1,1 +1,9 @@
-{"f1040":{"txtFirstName":"john","txtLastName":"doe","chkFilingStatus":"single","txtMiddleInitial":"e","txtSSN":"123-12-1234"}}
+{
+  "f1040": {
+    "txtFirstName": "john",
+    "txtLastName": "doe",
+    "chkFilingStatus": "single",
+    "txtMiddleInitial": "e",
+    "txtSSN": "123-12-1234"
+  }
+}

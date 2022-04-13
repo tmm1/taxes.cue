@@ -28,6 +28,6 @@ command: "compute": {
 
 	write: file.Create & {
 		filename: strings.TrimSuffix(name, ".json")+".freefile"
-		contents: json.Marshal(freefile)
+		contents: json.Indent(json.Marshal(freefile), "", "  ")
 	}
 }
