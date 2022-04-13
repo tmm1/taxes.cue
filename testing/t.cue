@@ -21,8 +21,8 @@ package testing
 				out:        _
 				res:        (subject & {in: invoke}).out
 				transform?: _
-				pass:       (out & _res) != _|_
-				_res:       [
+				pass:       (out & tres) != _|_
+				tres:       [
 						if transform != _|_ {(transform & {in: res}).out},
 						res,
 				][0]
@@ -49,6 +49,10 @@ package testing
 			let fails = [ for o, v in asserts if v == false {o}]
 			if len(fails) > 0 {
 				fail: (name): fails
+			}
+
+			if focus.suite == name && focus.test != "" {
+				debug: suite[focus.test].assert
 			}
 		}
 	}
