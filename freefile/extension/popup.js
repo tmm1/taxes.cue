@@ -27,7 +27,7 @@ buttonForms.addEventListener('click', e => {
         if (key.startsWith('schema_f')) {
           let id = key.replace(/^schema_/, '')
           let filename = id + '.json'
-          let blob = new Blob([data[key]],{type: 'application/json'})
+          let blob = new Blob([data[key]], {type: 'text/plain'})
           let url = window.URL.createObjectURL(blob)
           chrome.downloads.download({url, filename})
         }
