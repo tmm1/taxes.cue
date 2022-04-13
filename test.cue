@@ -85,6 +85,7 @@ import (
 				chkFilingStatus: "joint"
 				chkSpBlind:      "1"
 				txtDepSSN1:      "400-00-1070"
+				cboDepRelation:  "SO"
 			}
 		}
 	}
