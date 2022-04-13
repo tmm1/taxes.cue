@@ -120,4 +120,7 @@ package taxes
 			longTermFromK1?: number
 		}
 	}
+
+	// Additional forms attached are only available in freefile output
+	additionalFreeFileOnlyForms?: bool
 }

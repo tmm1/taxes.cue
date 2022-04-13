@@ -16,6 +16,9 @@ import (
 	//out: freefile.#Return
 	out: (#convert.taxPayer & {"in":     in.taxPayer}).out
 	out: (#convert.filingStatus & {"in": in.filingStatus}).out
+	if in.freefile != _|_ {
+		out: in.freefile
+	}
 }
 
 #convert: date: {

@@ -1,0 +1,7 @@
+Form1040: {
+	// line 1 Wages
+	wages: 0
+
+	// Additional forms attached are only available in freefile output
+	additionalFreeFileOnlyForms: true
+}

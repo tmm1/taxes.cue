@@ -1,0 +1,41 @@
+// Form 1040 - U.S. Individual Income Tax Return
+f1040: {
+	// Enter Your First Name
+	txtFirstName: "Morgan"
+
+	// Enter Your Last Name
+	txtLastName: "Gardner"
+
+	// Enter Your Social Security Number
+	txtSSN: "400-00-1037"
+
+	// chkFilingStatus
+	chkFilingStatus: "single"
+
+	// Enter home address (number and street). If you have a P. O . box, see instructions
+	txtAddress1: "2250 West Sahara Avenue"
+
+	// Enter City, town, or post office. If you have a foreign address, also complete spaces below
+	txtCity: "New York"
+
+	// Select State
+	cboState: "NY"
+
+	// Enter ZIP code
+	txtZip: "89146"
+}
+
+// Schedule F - Profit or Loss From Farming
+f1040sf: [{
+	// Name of proprietor
+	txtProprietorName: "Farmer Bobs Vineyard"
+
+	// chkAccountingMtd
+	chkAccountingMtd: "Cash"
+
+	// Line A. Principal crop or activity
+	txtPrincipalProd: "grapes"
+
+	// Line 7. Custom hire (machine work) income
+	txtCustomHireMcInc: "500"
+}]

@@ -1,0 +1,12 @@
+import "github.com/tmm1/taxes/fixtures"
+
+taxYear:      "2021"
+taxPayer:     fixtures.taxPayer.morganGardner
+filingStatus: "single"
+
+freefile: f1040sf: [{
+	txtProprietorName:  "Farmer Bobs Vineyard"
+	chkAccountingMtd:   "Cash"
+	txtPrincipalProd:   "grapes"
+	txtCustomHireMcInc: "500"
+}]

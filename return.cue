@@ -191,6 +191,10 @@ import (
 				}
 			}
 		}
+
+		if data.freefile != _|_ {
+			additionalFreeFileOnlyForms: true
+		}
 	}
 }
 
