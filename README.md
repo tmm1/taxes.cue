@@ -11,15 +11,21 @@ included in `taxes.cue` are conversion ["functions"](https://cuetorials.com/patt
 - a text based report that can be used to fill out forms by hand
 - a json structure used by `freefilebot` to enter your tax data into https://freefilefillableforms.com
 
-### usage
+### setup
 
 ```
 $ brew install cue # or equivalent, see cuelang.org
-$ cd returns
+$ git clone https://github.com/tmm1/taxes.cue
+```
+
+### usage
+
+```
+$ cd taxes.cue/returns
 $ cp sample1.taxdata mine2021.taxdata
 $ make mine2021
-$ cat mine2021.txt (manual fill instructions)
-$ cat mine2021.freefile (freefilebot data)
+$ cat mine2021.txt # manual fill instructions
+$ cat mine2021.freefile # freefilebot data
 ```
 
 ### example
