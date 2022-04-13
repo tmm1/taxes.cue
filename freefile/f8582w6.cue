@@ -5,7 +5,7 @@ import "strings"
 // Form 8582 - Passive Activity Loss Limitations Page 3
 #f8582w6: {
 	#input: {
-		
+		// txtWkth7NameActivity1
 		txtWkth7NameActivity1?: #UPPERCASE
 		txtWkth7NameActivity1?: strings.MaxRunes(25)
 
@@ -29,7 +29,7 @@ import "strings"
 		txtWkth7UnallowedLoss1?: #AMOUNT
 		txtWkth7UnallowedLoss1?: strings.MaxRunes(10)
 
-		
+		// txtWkth7SchFormreported2
 		txtWkth7SchFormreported2?: #UPPERCASE
 		txtWkth7SchFormreported2?: strings.MaxRunes(20)
 
@@ -49,7 +49,7 @@ import "strings"
 		txtWkth7UnallowedLoss2?: #AMOUNT
 		txtWkth7UnallowedLoss2?: strings.MaxRunes(10)
 
-		
+		// txtWkth7SchFormreported3
 		txtWkth7SchFormreported3?: #UPPERCASE
 		txtWkth7SchFormreported3?: strings.MaxRunes(20)
 

@@ -21,7 +21,7 @@ import "strings"
 		txtF8615ParentSsn?: #SSN
 		txtF8615ParentSsn?: strings.MaxRunes(11)
 
-		
+		// chkF8615ParFilStatus
 		chkF8615ParFilStatus?: "1" | // Parent's Filing Status-Single
 			"2" | // Parent's Filing Status -Joint
 			"3" | // Parent's Filing Status -Separate
@@ -55,7 +55,7 @@ import "strings"
 		txtF8615SubTotTax?: #AMOUNT
 		txtF8615SubTotTax?: strings.MaxRunes(10)
 
-		
+		// chkF8615ParCapGainInd
 		chkF8615ParCapGainInd?: "1" |
 			"1"
 

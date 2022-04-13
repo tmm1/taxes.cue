@@ -13,7 +13,7 @@ import "strings"
 		txtRoutingNbrAcc1?: #NUMERIC
 		txtRoutingNbrAcc1?: strings.MaxRunes(9)
 
-		
+		// chkAccTypeAcc1
 		chkAccTypeAcc1?: "0" | // Line 1c. Checking
 			"1" // Line 1c. Savings
 
@@ -29,7 +29,7 @@ import "strings"
 		txtRoutingNbrAcc2?: #NUMERIC
 		txtRoutingNbrAcc2?: strings.MaxRunes(9)
 
-		
+		// chkAccTypeAcc2
 		chkAccTypeAcc2?: "0" | // Line 2c. Checking
 			"1" // Line 2c. Savings
 
@@ -45,7 +45,7 @@ import "strings"
 		txtRoutingNbrAcc3?: #NUMERIC
 		txtRoutingNbrAcc3?: strings.MaxRunes(9)
 
-		
+		// chkAccTypeAcc3
 		chkAccTypeAcc3?: "0" | // Line 3c. Checking
 			"1" // Line 3c. Savings
 

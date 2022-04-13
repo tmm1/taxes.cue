@@ -5,7 +5,7 @@ import "strings"
 // Form 2439 - Notice to Shareholder of Undistributed Long-Term Capital Gains
 #f2439: {
 	#input: {
-		
+		// chkVoid_Correct_Dup
 		chkVoid_Correct_Dup?: "1" | // VOID - Checkbox
 			"2" // CORRECTED - Checkbox
 
@@ -187,7 +187,7 @@ import "strings"
 			"WV" |
 			"WY"
 
-		
+		// txtShareZip_Dup
 		txtShareZip_Dup?: #NUMERIC
 		txtShareZip_Dup?: strings.MaxRunes(5)
 

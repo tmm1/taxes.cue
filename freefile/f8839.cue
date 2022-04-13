@@ -89,7 +89,7 @@ import "strings"
 		// Line 1(g). Child 3. Check if adoption became final in 2020 or earlier
 		chkAdoptionFinalInd3?: "1"
 
-		
+		// chkChildAmtFrPryrInd
 		chkChildAmtFrPryrInd?: "0" | // No. Enter -0-. Line 3. Did you file Form 8839 for a prior year for the same Child?
 			"1" // Yes. See instructions for the amount to enter. Line 3. Did you file Form 8839 for a prior year for the same Child?
 
@@ -121,7 +121,7 @@ import "strings"
 		txtFr8839Ln8?: #AMOUNT
 		txtFr8839Ln8?: strings.MaxRunes(10)
 
-		
+		// chkFr8839Ln8Ind
 		chkFr8839Ln8Ind?: "0" | // Line 8. Is line 7 more than $216, 660? If No. Skip lines 8 and 9, and enter -0- on line 10 - This field is automatically calculated for you
 			"1" // Line 8. Is line 7 more than $216, 660? If Yes. Subtract $214, 520 from line 7 -  - This field is automatically calculated for you
 
@@ -133,7 +133,7 @@ import "strings"
 		txtFr8839Ln18?: #AMOUNT
 		txtFr8839Ln18?: strings.MaxRunes(10)
 
-		
+		// chkChildEmpBenPryrInd
 		chkChildEmpBenPryrInd?: "0" | // No. Enter -0-. Line 18. Did you receive employer-provided adoption benefits for a prior year for the same child?
 			"1" // Yes. See instructions for the amount to enter. Line 18. Did you receive employer-provided adoption benefits for a prior year for the same child?
 
@@ -177,11 +177,11 @@ import "strings"
 		txtFr8839Ln26?: #AMOUNT
 		txtFr8839Ln26?: strings.MaxRunes(10)
 
-		
+		// chkFr8839Ln24Ind
 		chkFr8839Ln24Ind?: "0" | // Line 24. No. Skip lines 24 and 25, and enter -0- on line 26 - This field is automatically calculated for you
 			"1" // Line 24. Yes. Subtract $216, 660 from line 23 - This field is automatically calculated for you
 
-		
+		// chkTaxBenLn29Ind
 		chkTaxBenLn29Ind?: "0" | // No. Subtract line 28 from line 21. Also, include this amount, if more than zero, on ine 1 of Form 1040 or 1040-SR or line 1a of Form 1040-NR - This field is automatically calculated for you
 			"1" // Yes. Subtract line 21 from line 28. Enter the result as a negative number. Reduce the total you would enter on line 1 of Form 1040 or 1040-SR or line 1a of Form 1040-NR by the amount on Form 8839, line 29. - This field is automatically calculated for you
 

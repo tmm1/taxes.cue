@@ -12,7 +12,7 @@ import "strings"
 		// Line 2. I (or my spouse if married) am, or was, a member of the uniformed services or Foreign Service, or an employee of the intelligence community. I sold the home, or it ceased to be my main home, in connection with U. S . Government orders for qualified official extended duty service. No repayment of the credit is required. See instructions. Stop here. If you meet the conditions, check here
 		chkPart3FrgnInteliCommuInd?: "1"
 
-		
+		// chkF5405PartIHomeInd
 		chkF5405PartIHomeInd?: "4" | // Line 3a. I sold (including through foreclosure) the home to a person who isn''t related to me and had a gain on the sale (as figured in Part III below). Go to Part II below
 			"1" | // Line 3b. I sold (including through foreclosure) the home to a person who isn't related to me and didn't have a gain on the sale (as figured in Part III below). No repayment of the credit is required. Stop here
 			"5" | // Line 3c. I sold the home to a related person OR I gave the home to someone other than my spouse (or ex-spouse as part of my divorce settlement). Go to Part II below

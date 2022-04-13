@@ -25,7 +25,7 @@ import "strings"
 		txtF5695QualBiomassCost?: #AMOUNT
 		txtF5695QualBiomassCost?: strings.MaxRunes(10)
 
-		
+		// chkCellPropInd
 		chkCellPropInd?: "1" | // Yes - Line 7a. Was qualified fuel cell property installed on, or in connection with, your main home located in the United States?
 			"0" // No - Line 7a. Was qualified fuel cell property installed on, or in connection with, your main home located in the United States?
 
@@ -122,7 +122,7 @@ import "strings"
 		txtF5695P2SubFrmTot?: #AMOUNT
 		txtF5695P2SubFrmTot?: strings.MaxRunes(10)
 
-		
+		// chkF5695HomeLocInd
 		chkF5695HomeLocInd?: "1" | // Yes - Line 17a Were the qualified energy efficiency improvements or residential energy property costs for your main home located in the United States? (see instructions)
 			"0" // No - Line 17a Were the qualified energy efficiency improvements or residential energy property costs for your main home located in the United States? (see instructions)
 
@@ -203,7 +203,7 @@ import "strings"
 		txtZip?: #NUMERIC
 		txtZip?: strings.MaxRunes(5)
 
-		
+		// chkImporveInd
 		chkImporveInd?: "1" | // Yes - Line 17c. Were any of these improvements related to the construction of this main home?
 			"0" // No - Line 17c. Were any of these improvements related to the construction of this main home?
 

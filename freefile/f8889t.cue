@@ -5,7 +5,7 @@ import "strings"
 // Form 8889 - Health Savings Accounts (HSAs) - Taxpayer
 #f8889t: {
 	#input: {
-		
+		// chkF8889CovTypeP2IndPr
 		chkF8889CovTypeP2IndPr?: "S" | // Line 1. Self-only. Check the box to indicate your coverage under a high-deductible health plan (HDHP) during 2021
 			"F" // Line 1. Family. Check the box to indicate your coverage under a high-deductible health plan (HDHP) during 2021
 

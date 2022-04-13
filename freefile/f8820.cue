@@ -269,7 +269,7 @@ import "strings"
 		txtDrugDesigDate21?: #DATE
 		txtDrugDesigDate21?: strings.MaxRunes(10)
 
-		
+		// txtOrphanDrugName22
 		txtOrphanDrugName22?: #UPPERCASE
 		txtOrphanDrugName22?: strings.MaxRunes(50)
 

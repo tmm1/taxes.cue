@@ -238,7 +238,7 @@ import "strings"
 		txtF8828ClosingDate?: #DATE
 		txtF8828ClosingDate?: strings.MaxRunes(10)
 
-		
+		// txtF8828SaleDate
 		txtF8828SaleDate?: #DATE
 		txtF8828SaleDate?: strings.MaxRunes(10)
 

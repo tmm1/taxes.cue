@@ -5,7 +5,7 @@ import "strings"
 // Form 8938 - Statement of Specified Foreign Financial Assets - Continuation Statement
 #f8938p2: {
 	#input: {
-		
+		// chkF8938FdcAcctTypeInd
 		chkF8938FdcAcctTypeInd?: "0" | // Type of account - Deposit
 			"1" // Type of account - Custodial
 
@@ -29,7 +29,7 @@ import "strings"
 		txtF8938FdcMaxVal?: #AMOUNT
 		txtF8938FdcMaxVal?: strings.MaxRunes(10)
 
-		
+		// chkF8938FdcExchangeInd
 		chkF8938FdcExchangeInd?: "1" | // Yes -Did you use a foreign currency exchange rate to convert the value of the account into U. S . dollars?
 			"0" // No - Did you use a foreign currency exchange rate to convert the value of the account into U. S . dollars?
 
@@ -416,7 +416,7 @@ import "strings"
 		// Check if no tax item reported in Part III with respect to this asset
 		chkF8938OfaAccNotaxInd?: "1"
 
-		
+		// chkF8938OfaAssetMaxInd
 		chkF8938OfaAssetMaxInd?: "0" | // $0�$50, 000 - Maximum value of asset during tax year (check box that applies)
 			"1" | // $50, 001�$100, 000 - Maximum value of asset during tax year (check box that applies)
 			"2" | // $100, 001�$150, 000  - Maximum value of asset during tax year (check box that applies)
@@ -427,7 +427,7 @@ import "strings"
 		txtF8938OfaAssetMaxVal?: #AMOUNT
 		txtF8938OfaAssetMaxVal?: strings.MaxRunes(10)
 
-		
+		// chkF8938OfaExchangeInd
 		chkF8938OfaExchangeInd?: "1" | // Yes - Did you use a foreign currency exchange rate to convert the value of the asset into U. S . dollars?
 			"0" // No - Did you use a foreign currency exchange rate to convert the value of the asset into U. S . dollars?
 
@@ -451,7 +451,7 @@ import "strings"
 		txtF8938OfaGiinNo?: #UPPERCASE
 		txtF8938OfaGiinNo?: strings.MaxRunes(19)
 
-		
+		// chkF8938OfaForTypeInd
 		chkF8938OfaForTypeInd?: "0" | // Partnership - Name of foreign entity
 			"1" | // Corporation - Name of foreign entity
 			"2" | // Trust - Name of foreign entity
@@ -802,18 +802,18 @@ import "strings"
 		txtF8938OfaNtName?: #UPPERCASE
 		txtF8938OfaNtName?: strings.MaxRunes(22)
 
-		
+		// chkF8938OfaNtIssrInd
 		chkF8938OfaNtIssrInd?: "0" | // Check if issuer
 			"1"
 
-		
+		// chkF8938OfaNtCountInd
 		chkF8938OfaNtCountInd?: "0" | // Individual - Type of issuer or counterparty
 			"1" | // Partnership - Type of issuer or counterparty
 			"2" | // Corporation - Type of issuer or counterparty
 			"3" | // Trust - Type of issuer or counterparty
 			"4" // Estate - Type of issuer or counterparty
 
-		
+		// chkF8938OfaNtForIssrInd
 		chkF8938OfaNtForIssrInd?: "0" | // Check if issuer or counterparty is a US person
 			"1" // Check if issuer or counterparty is a Foreign person
 

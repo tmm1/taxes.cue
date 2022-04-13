@@ -9,7 +9,7 @@ import "strings"
 		txtMrkPlaceIdenify?: #UPPERCASE
 		txtMrkPlaceIdenify?: strings.MaxRunes(20)
 
-		
+		// chkShopMrkPlaceInd
 		chkShopMrkPlaceInd?: "1" | // Yes - Did you pay premiums during your tax year for employee health insurance coverage you provided through a Small Business Health Options Program Marketplace
 			"0" // No - Did you pay premiums during your tax year for employee health insurance coverage you provided through a Small Business Health Options Program Marketplace
 
@@ -17,7 +17,7 @@ import "strings"
 		txtEin?: #EIN
 		txtEin?: strings.MaxRunes(10)
 
-		
+		// chkFiledinPrevyrInd
 		chkFiledinPrevyrInd?: "1" | // Yes - Does a tax return you (or any predecessor) filed for a tax year beginning after 2013 and before 2020 include a Form 8941 with line A
 			"0" // No - Does a tax return you (or any predecessor) filed for a tax year beginning after 2013 and before 2020 include a Form 8941 with line A
 

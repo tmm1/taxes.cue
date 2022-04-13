@@ -5,7 +5,7 @@ import "strings"
 // Form 1116 - Foreign Tax Credit
 #f1116: {
 	#input: {
-		
+		// chkF1116ForeigntxTyinc
 		chkF1116ForeigntxTyinc?: "4" | // a . Section 951A category income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
 			"0" | // c . Passive category income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
 			"7" | // e . Section 901(j) income. - Use a separate Form 1116 for each catagory of income listed below. See Catagories of Income in the instructions. Check only one box on each Form 1116. Report all amounts in U. S . dollars except where specified in Part II below
@@ -1190,7 +1190,7 @@ import "strings"
 		txtF1116LoseeForen3?: #AMOUNT
 		txtF1116LoseeForen3?: strings.MaxRunes(10)
 
-		
+		// chkF1116CreditInd
 		chkF1116CreditInd?: "1" | // (j) Paid. - Part 2. Foreign Taxes Paid or Accrued. (See instructions). Country. Credit is claimed for taxes (you must check one)
 			"0" // (k) Accrued. - Part 2. Foreign Taxes Paid or Accrued. (See instructions). Country. Credit is claimed for taxes (you must check one)
 

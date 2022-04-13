@@ -13,7 +13,7 @@ import "strings"
 		txtProprietorSSN?: #SSN
 		txtProprietorSSN?: strings.MaxRunes(11)
 
-		
+		// chkAccountingMtd
 		chkAccountingMtd?: "Cash" | // Cash. - Line C. Accounting method
 			"Accrual" // Accrual. - Line C. Accounting method
 
@@ -29,15 +29,15 @@ import "strings"
 		txtEmployerIdNo?: #EIN
 		txtEmployerIdNo?: strings.MaxRunes(10)
 
-		
+		// chkMaterialPartInd
 		chkMaterialPartInd?: "1" | // Yes. Line E. Did you 'materially participate' in the operation of this business during 2021? If 'No', see instructions for limit on passive losses
 			"0" // No. Line E. Did you 'materially participate' in the operation of this business during 2021? If 'No', see instructions for limit on passive losses
 
-		
+		// chkMakePayInd
 		chkMakePayInd?: "1" | // Yes. Line F. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions
 			"0" // No. Line F. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions
 
-		
+		// chkFileReqInd
 		chkFileReqInd?: "1" | // Yes. Line G. If 'Yes', did you or will you file required Form(s) 1099?
 			"0" // No. Line G. If 'Yes', did you or will you file required Form(s) 1099?
 
@@ -248,10 +248,10 @@ import "strings"
 		txtDescripAmount6?: #AMOUNT
 		txtDescripAmount6?: strings.MaxRunes(10)
 
-		
+		// cboPassActivLossCode
 		cboPassActivLossCode?: "PAL"
 
-		
+		// chkInvestRisk
 		chkInvestRisk?: "1" | // Line 36a. All investment is at risk. Check the box that describes your investment in this activity and see instructions for where to report your loss:
 			"0" // Line 36b. Some investment is not at risk. Check the box that describes your investment in this activity and see instructions for where to report your loss:
 

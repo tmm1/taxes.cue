@@ -37,7 +37,7 @@ import "strings"
 		txtDatePropReceived?: #DATE
 		txtDatePropReceived?: strings.MaxRunes(10)
 
-		
+		// chkWasRelPartyInd
 		chkWasRelPartyInd?: "1" | // Line 7. Was the exchange of the property given up or received made with a related party, either directly or indirectly (such as through an intermediary)? See instructions. If �Yes, � complete Part II. If �No, � go to Part III
 			"0" // Line 7. Was the exchange of the property given up or received made with a related party, either directly or indirectly (such as through an intermediary)? See instructions. If �Yes, � complete Part II. If �No, � go to Part III
 
@@ -130,15 +130,15 @@ import "strings"
 		txtRelZipExt?: #NUMERIC
 		txtRelZipExt?: strings.MaxRunes(4)
 
-		
+		// chkDurYrRelPartySellInd
 		chkDurYrRelPartySellInd?: "1" | // Line 9. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did the related party sell or dispose of any part of the like-kind property received from you (or an intermediary) in the exchange?
 			"0" // Line 9. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did the related party sell or dispose of any part of the like-kind property received from you (or an intermediary) in the exchange?
 
-		
+		// chkDurYrTaxpayerSellInd
 		chkDurYrTaxpayerSellInd?: "1" | // Line 10. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did you sell or dispose of any part of the like-kind property you received?
 			"0" // Line 10. During this tax year (and before the date that is 2 years after the last transfer of property that was part of  the exchange), did you sell or dispose of any part of the like-kind property you received?
 
-		
+		// chkDisposInd
 		chkDisposInd?: "1" | // Line 11a. The disposition was after the death of either of the related parties
 			"2" | // Line 11b. The disposition was an involuntary conversion, and the threat of conversion occurred after the exchange
 			"3" // Line 11c. You can establish to the satisfaction of the IRS that neither the exchange nor the disposition had tax avoidance as one of  its principal purposes. If this box is checked, attach an explanation. See instructions

@@ -23,7 +23,7 @@ import "strings"
 		txtF8962TotdepModagi?: #AMOUNT
 		txtF8962TotdepModagi?: strings.MaxRunes(10)
 
-		
+		// chkF8962StLiveInd
 		chkF8962StLiveInd?: "AK" | // Line 4(a). Alaska - Check the appropriate box for the federal poverty table used
 			"HI" | // Line 4(b). Hawaii - Check the appropriate box for the federal poverty table used
 			"OTHER" // Line 4(c). Other 48 states and DC - Check the appropriate box for the federal poverty table used
@@ -40,11 +40,11 @@ import "strings"
 		txtF8962ApplicableFig?: #RATIO
 		txtF8962ApplicableFig?: strings.MaxRunes(6)
 
-		
+		// chkF8962ShrPlcyMarInd
 		chkF8962ShrPlcyMarInd?: "1" | // Yes. Skip to Part IV, Allocation of Policy Amounts, or Part V, Alternative Calculation for Year of Marriage Line 9. Are you allocating policy amounts with another taxpayer or do you want to use the alternative calculation for year of marriage? See instructions
 			"0" // No. Continue to line 10. Line 9. Are you allocating policy amounts with another taxpayer or do you want to use the alternative calculation for year of marriage? See instructions
 
-		
+		// chkF8962All1095ATaxhhInd
 		chkF8962All1095ATaxhhInd?: "1" | // Yes. Continue to line 11. Compute your annual PTC. Then skip lines 12-23 and continue to line 24. Line 10 See the instructions to determine if you can use line 11 or must complete lines 12 through 23
 			"0" // No. Continue to lines 12-23. Compute your monthly PTC and continue to line 24. Line 10. See the instructions to determine if you can use line 11 or must complete lines 12 through 23
 
@@ -448,7 +448,7 @@ import "strings"
 		txtF8962AdvPtcPercent4?: #NUMERIC
 		txtF8962AdvPtcPercent4?: strings.MaxRunes(3)
 
-		
+		// chkF8962SharePlcyPyrInd
 		chkF8962SharePlcyPyrInd?: "1" | // Yes. Multiply the amounts on Form 1095-A by the allocation percentages entered by policy. Add all allocated policy amounts and non-allocated policy amounts from Forms 1095-A, if any, to compute a combined total for each month. Enter the combined total for each month on lines 12-23, columns (a), (b), and (f). Compute the amounts for lines 12-23, columns (c)-e), and continue to line 24. Line 34. Have you completed all policy amount allocations?
 			"0" // No. See the instructions to report additional policy amount allocations. Line 34. Have you completed all policy amount allocations?
 

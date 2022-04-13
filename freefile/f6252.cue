@@ -23,11 +23,11 @@ import "strings"
 		txtDateSold?: #DATE
 		txtDateSold?: strings.MaxRunes(10)
 
-		
+		// chkWasSoldRelParty
 		chkWasSoldRelParty?: "1" | // Line 3. Yes. Was the property sold to a related party (see instructions) after May 14, 1980? If �No, � skip line 4
 			"0" // Line 3. No. Was the property sold to a related party (see instructions) after May 14, 1980? If �No, � skip line 4
 
-		
+		// chkWasMarkSec
 		chkWasMarkSec?: "1" | // Line 4. Yes. Was the property you sold to a related party a marketable security? If �Yes, � complete Part III. If �No, � complete Part III for the year of sale and the 2 years after the year of sale
 			"0" // Line 4. No. Was the property you sold to a related party a marketable security? If �Yes, � complete Part III. If �No, � complete Part III for the year of sale and the 2 years after the year of sale
 
@@ -39,7 +39,7 @@ import "strings"
 		txtMortDebtLiab?: #AMOUNT
 		txtMortDebtLiab?: strings.MaxRunes(10)
 
-		
+		// txtCostOrBasis
 		txtCostOrBasis?: #AMOUNT
 		txtCostOrBasis?: strings.MaxRunes(10)
 
@@ -152,7 +152,7 @@ import "strings"
 		txtRelParSsn?: #EIN
 		txtRelParSsn?: strings.MaxRunes(10)
 
-		
+		// chkReselDispDuryrInd
 		chkReselDispDuryrInd?: "1" | // Line 28. Yes. Did the related party resell or dispose of the property (�second disposition�) during this tax year?
 			"0" // Line 28. No. Did the related party resell or dispose of the property (�second disposition�) during this tax year?
 

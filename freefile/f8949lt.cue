@@ -5,7 +5,7 @@ import "strings"
 // Form 8949 - Sales and Other Dispositions of Capital Assets - Page 2
 #f8949lt: {
 	#input: {
-		
+		// chkF1099BInd
 		chkF1099BInd?: "0" | // (A) Long-term transactions reported on Form(s) 1099-B showing basis was reported to the IRS
 			"1" | // (B) Long-term transactions reported on Form(s) 1099-B showing basis wasn't reported to the IRS
 			"2" // (C) Long-term transactions not reported to you on Form 1099-B

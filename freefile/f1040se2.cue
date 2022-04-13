@@ -5,7 +5,7 @@ import "strings"
 // Schedule E - Supplemental Income and Loss (From rental real estate, royalties, partnerships, S corporations, estates, trusts, REMICs, etc.), page 2
 #f1040se2: {
 	#input: {
-		
+		// chkSchdePg2Ind
 		chkSchdePg2Ind?: "1" |
 			"0"
 

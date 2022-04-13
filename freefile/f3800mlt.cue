@@ -5,7 +5,7 @@ import "strings"
 // Form 3800, page 3 - General Business Credits Or Eligible Small Business Credits
 #f3800mlt: {
 	#input: {
-		
+		// chkF3800P3BoxType
 		chkF3800P3BoxType?: "A" | // Line A  General Business Credit From a Non-Passive Activity
 			"B" | // Line B  General Business Credit From a Passive Activity
 			"C" | // Line C General Business Credit Carryforwards

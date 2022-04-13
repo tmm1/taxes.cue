@@ -464,11 +464,11 @@ import "strings"
 		txtF8833PayerZip?: #NUMERIC
 		txtF8833PayerZip?: strings.MaxRunes(5)
 
-		
+		// chkDisclosTrtySec3016114Ind
 		chkDisclosTrtySec3016114Ind?: "1" | // disclosing a treaty-based return position
 			"0" // disclosing a treaty-based return position
 
-		
+		// txtDisclosTrtySecExpl
 		txtDisclosTrtySecExpl?: #UPPERCASE
 		txtDisclosTrtySecExpl?: strings.MaxRunes(12)
 

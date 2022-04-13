@@ -60,6 +60,8 @@ files: [
 						// {{$f.title}}
 						{{- else if and (eq $f.type "check") (eq (len $f.options) 1) -}}
 						// {{(index $f.options 0).label}}
+						{{- else if not $f.placeholder -}}
+						// {{$f.name}}
 						{{- end}}
 						{{if eq $f.type "text" -}}
 						{{$f.name}}?: {{range $idx, $t := $f.tags}}{{if $idx}} | {{end}}#{{$t}}{{end}}

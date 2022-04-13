@@ -5,7 +5,7 @@ import "strings"
 // Form 2555 - Foreign Earned Income, Page 3 - Taxpayer
 #f25553t: {
 	#input: {
-		
+		// chkF2555HousingExcluInd
 		chkF2555HousingExcluInd?: "1" | // Line 27: Yes - claiming the housing exclusion or housing deduction
 			"2" // Line 27: No - claiming the housing exclusion or housing deduction
 

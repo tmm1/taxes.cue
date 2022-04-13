@@ -273,7 +273,7 @@ import "strings"
 		txtDateFrom?: #DATE
 		txtDateFrom?: strings.MaxRunes(10)
 
-		
+		// txtDateTo
 		txtDateTo?: #DATE
 		txtDateTo?: strings.MaxRunes(10)
 

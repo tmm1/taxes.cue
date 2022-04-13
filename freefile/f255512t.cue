@@ -638,7 +638,7 @@ import "strings"
 		txtF2555EmpForPostalCode?: #UPPERCASE
 		txtF2555EmpForPostalCode?: strings.MaxRunes(16)
 
-		
+		// chkF2555EmpIsInd
 		chkF2555EmpIsInd?: "1" | // Line 5: Employer is Foreign entity
 			"2" | // Line 5: Employer is U. S . Company
 			"3" | // Line 5: Employer is Self
@@ -656,7 +656,7 @@ import "strings"
 		// Line 6b: If you didn't previously file Form 2555 or Form 2555-EZ to claim either of the exclusions, check here
 		chkF2555NotFiledAf1981?: "1"
 
-		
+		// chkF2555RevokedExcl
 		chkF2555RevokedExcl?: "1" | // Line 6c: Yes - Have you ever revoked either of the exclusions
 			"0" // Line 6c: No - Have you ever revoked either of the exclusions
 
@@ -1048,7 +1048,7 @@ import "strings"
 			"ZA" | // Zambia
 			"ZI" // Zimbabwe
 
-		
+		// chkF2555SecondForResi
 		chkF2555SecondForResi?: "1" | // Line 8a: Yes - Did you maintain a separate foreign residence for your family because of adverse living conditions at your tax home
 			"0" // Line 8a: No - Did you maintain a separate foreign residence for your family because of adverse living conditions at your tax home
 
@@ -1076,13 +1076,13 @@ import "strings"
 		txtF2555BoResEndDate?: #UPPERCASE
 		txtF2555BoResEndDate?: strings.MaxRunes(10)
 
-		
+		// chkF2555LivQuatersInd
 		chkF2555LivQuatersInd?: "1" | // Line 11: Kind of living quarters in foreign country - Purchased house
 			"2" | // Line 11: Kind of living quarters in foreign country - Rented house or apartment
 			"3" | // Line 11: Kind of living quarters in foreign country - Rented room
 			"0" // Line 11: Kind of living quarters in foreign country - Quarters furnished by employer
 
-		
+		// chkF2555LiveWithYouInd
 		chkF2555LiveWithYouInd?: "1" | // Line 12a: Yes - Did any of your family live with you abroad during any part of the tax year
 			"0" // Line 12a: No - Did any of your family live with you abroad during any part of the tax year
 
@@ -1117,11 +1117,11 @@ import "strings"
 		txtF2555LiveTo?: #DATE
 		txtF2555LiveTo?: strings.MaxRunes(10)
 
-		
+		// chkF2555BoStmtSubmit
 		chkF2555BoStmtSubmit?: "1" | // Line 13a: Yes - Have you submitted a statement to the authorities of the foreign country where you claim bona fide residence that you aren't a resident of that country
 			"0" // Line 13a: No - Have you submitted a statement to the authorities of the foreign country where you claim bona fide residence that you aren't a resident of that country
 
-		
+		// chkF2555BoResTax
 		chkF2555BoResTax?: "1" | // Line 13b: Yes - Are you required to pay income tax to the country where you claim bona fide residence
 			"0" // Line 13b: No - Are you required to pay income tax to the country where you claim bona fide residence
 
@@ -1261,11 +1261,11 @@ import "strings"
 		txtF2555TypeOfVisa?: #UPPERCASE
 		txtF2555TypeOfVisa?: strings.MaxRunes(30)
 
-		
+		// chkF2555VisaLimitInd
 		chkF2555VisaLimitInd?: "1" | // Line 15c: Yes - Did your visa limit the length of your stay or employment in a foreign country
 			"0" // Line 15c: No - Did your visa limit the length of your stay or employment in a foreign country
 
-		
+		// chkF2555HomeIndUsInd
 		chkF2555HomeIndUsInd?: "1" | // Line 15d: Yes - Did you maintain a home in the United States while living abroad
 			"0" // Line 15d: No - Did you maintain a home in the United States while living abroad
 

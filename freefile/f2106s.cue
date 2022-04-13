@@ -37,7 +37,7 @@ import "strings"
 		txtReinbursMeal?: #AMOUNT
 		txtReinbursMeal?: strings.MaxRunes(10)
 
-		
+		// txtFrm2106Line9Colb
 		txtFrm2106Line9Colb?: #AMOUNT
 		txtFrm2106Line9Colb?: strings.MaxRunes(10)
 
@@ -81,19 +81,19 @@ import "strings"
 		txtCommutingMilesVh2?: #NUMERIC
 		txtCommutingMilesVh2?: strings.MaxRunes(9)
 
-		
+		// chkVehichePersonalUseInd
 		chkVehichePersonalUseInd?: "1" | // Was your vehicle available for personal use during off-duty hours?
 			"0" // Was your vehicle available for personal use during off-duty hours?
 
-		
+		// chkAnotherVehicheInd
 		chkAnotherVehicheInd?: "1" | // Do you (or your spouse) have another vehicle available for personal use?
 			"0" // Do you (or your spouse) have another vehicle available for personal use?
 
-		
+		// chkEvidenceInd
 		chkEvidenceInd?: "1" | // Do you have evidence to support your deduction?
 			"0" // Do you have evidence to support your deduction?
 
-		
+		// chkWrittenEvidenceInd
 		chkWrittenEvidenceInd?: "1" | // If �Yes, � is the evidence written?
 			"0" // If �Yes, � is the evidence written?
 

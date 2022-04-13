@@ -9,15 +9,15 @@ import "strings"
 		txtFschhtEin?: #EIN
 		txtFschhtEin?: strings.MaxRunes(10)
 
-		
+		// chkScheduleHQa1Ind
 		chkScheduleHQa1Ind?: "1" | // Yes - Did you pay any one household employee cash wages of $2, 300 or more in 2021? (If any household employee was your spouse, your child under age 21, your parent, or anyone under age 18
 			"0" // No - Did you pay any one household employee cash wages of $2, 300 or more in 2021? (If any household employee was your spouse, your child under age 21, your parent, or anyone under age 18
 
-		
+		// chkScheduleHQb1Ind
 		chkScheduleHQb1Ind?: "1" | // Yes - Did you withhold federal income tax during 2021 for any household employee?
 			"0" // No - Did you withhold federal income tax during 2021 for any household employee?
 
-		
+		// chkScheduleHQc1Ind
 		chkScheduleHQc1Ind?: "0" | // No - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
 			"1" // Yes - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
 
@@ -89,19 +89,19 @@ import "strings"
 		txtSchdhHlthExpFamlvAft?: #AMOUNT
 		txtSchdhHlthExpFamlvAft?: strings.MaxRunes(10)
 
-		
+		// chkSchdhLine9Ind
 		chkSchdhLine9Ind?: "0" | // No - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
 			"1" // Yes - Did you pay total cash wages of $1, 000 or more in any calendar quarter of 2020 or 2021 to all household employees?
 
-		
+		// chkSchdhUnempStInd
 		chkSchdhUnempStInd?: "1" | // Yes - Did you pay unemployment contributions to only one state?
 			"0" // No - Did you pay unemployment contributions to only one state?
 
-		
+		// chkSchdhUnempStContInd
 		chkSchdhUnempStContInd?: "1" | // Yes - Did you pay all state unemployment contributions for 2021 by April 18, 2022?
 			"0" // No - Did you pay all state unemployment contributions for 2021 by April 18, 2022?
 
-		
+		// chkSchdhUnempStTaxWagesInd
 		chkSchdhUnempStTaxWagesInd?: "1" | // Yes - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?
 			"0" // No - Were all wages that are taxable for FUTA tax also taxable for your state's unemployment tax?
 
@@ -343,15 +343,15 @@ import "strings"
 		// (If you paid state unemployment contributions late or you're in a credit reduction state, see instructions and check here)
 		chkCrdtStateCnt?: "1"
 
-		
+		// chkSchdhLine28Ind
 		chkSchdhLine28Ind?: "1" | // Yes - Are you required to file Form 1040?
 			"0" // No - Are you required to file Form 1040?
 
-		
+		// txtSchdhPart4Address
 		txtSchdhPart4Address?: #UPPERCASE
 		txtSchdhPart4Address?: strings.MaxRunes(50)
 
-		
+		// txtSchdhPart4AptNo
 		txtSchdhPart4AptNo?: #UPPERCASE
 		txtSchdhPart4AptNo?: strings.MaxRunes(5)
 
@@ -424,7 +424,7 @@ import "strings"
 		txtSchdhPart4Zip?: #NUMERIC
 		txtSchdhPart4Zip?: strings.MaxRunes(5)
 
-		
+		// txtSchdhFirmName
 		txtSchdhFirmName?: #UPPERCASE
 		txtSchdhFirmName?: strings.MaxRunes(20)
 

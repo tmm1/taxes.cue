@@ -5,7 +5,7 @@ import "strings"
 // Schedule R - Credit for the Elderly or the Disabled
 #f1040sr: {
 	#input: {
-		
+		// chkPart
 		chkPart?: "1" | // You were 65 or older
 			"2" | // You were under 65 and you retired on permanent and total disability
 			"3" | // Both spouses were 65 or older

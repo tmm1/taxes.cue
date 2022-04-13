@@ -45,7 +45,7 @@ import "strings"
 			"SS" | // STEPSISTER
 			"O" // OTHER
 
-		
+		// chkChildTaxCredIndR1
 		chkChildTaxCredIndR1?: "1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
@@ -93,7 +93,7 @@ import "strings"
 			"SS" | // STEPSISTER
 			"O" // OTHER
 
-		
+		// chkChildTaxCredIndR2
 		chkChildTaxCredIndR2?: "1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
@@ -141,7 +141,7 @@ import "strings"
 			"SS" | // STEPSISTER
 			"O" // OTHER
 
-		
+		// chkChildTaxCredIndR3
 		chkChildTaxCredIndR3?: "1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
@@ -189,7 +189,7 @@ import "strings"
 			"SS" | // STEPSISTER
 			"O" // OTHER
 
-		
+		// chkChildTaxCredIndR4
 		chkChildTaxCredIndR4?: "1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
@@ -237,7 +237,7 @@ import "strings"
 			"SS" | // STEPSISTER
 			"O" // OTHER
 
-		
+		// chkChildTaxCredIndR5
 		chkChildTaxCredIndR5?: "1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
@@ -285,7 +285,7 @@ import "strings"
 			"SS" | // STEPSISTER
 			"O" // OTHER
 
-		
+		// chkChildTaxCredIndR6
 		chkChildTaxCredIndR6?: "1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
@@ -333,7 +333,7 @@ import "strings"
 			"SS" | // STEPSISTER
 			"O" // OTHER
 
-		
+		// chkChildTaxCredIndR7
 		chkChildTaxCredIndR7?: "1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
@@ -381,7 +381,7 @@ import "strings"
 			"SS" | // STEPSISTER
 			"O" // OTHER
 
-		
+		// chkChildTaxCredIndR8
 		chkChildTaxCredIndR8?: "1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
@@ -429,7 +429,7 @@ import "strings"
 			"SS" | // STEPSISTER
 			"O" // OTHER
 
-		
+		// chkChildTaxCredIndR9
 		chkChildTaxCredIndR9?: "1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
@@ -477,7 +477,7 @@ import "strings"
 			"SS" | // STEPSISTER
 			"O" // OTHER
 
-		
+		// chkChildTaxCredIndR10
 		chkChildTaxCredIndR10?: "1" | // Check if depCheck if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 

@@ -9,7 +9,7 @@ import "strings"
 		txtPart2NoF8609Attach?: #NUMERIC
 		txtPart2NoF8609Attach?: strings.MaxRunes(8)
 
-		
+		// chkPart2IncQualBasInd
 		chkPart2IncQualBasInd?: "1" | // Line 9. If Yes, enter the building identification numbers (BINs) of the buildings that had a decreased basis
 			"0" // Line 9. No
 

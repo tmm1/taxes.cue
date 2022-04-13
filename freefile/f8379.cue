@@ -9,19 +9,19 @@ import "strings"
 		txtF8379Taxyear?: #UPPERCASE
 		txtF8379Taxyear?: strings.MaxRunes(4)
 
-		
+		// chkFilingJoint
 		chkFilingJoint?: "1" | // Line 2. Did you (or will you) file a joint return? . Yes. Go to line 3
 			"0" // Line 2. Did you (or will you) file a joint return? . No. Stop here. Do not file this form. You are not an injured spouse
 
-		
+		// chkF8379OverpayInd
 		chkF8379OverpayInd?: "1" | // Line 3. Did (or will) the IRS use the joint overpayment to pay any of the following legally enforceable past-due debt(s) owed only by your  spouse? (see instructions). yes Go to line 4
 			"0" // Line 3. Did (or will) the IRS use the joint overpayment to pay any of the following legally enforceable past-due debt(s) owed only by your spouse? See instructions. No. Stop here. Do not file this form. You are not an injured spouse
 
-		
+		// chkF8379PastdueAmtInd
 		chkF8379PastdueAmtInd?: "1" | // Line 4. Are you legally obligated to pay this past-due amount? Yes. Stop here. Do not file this form. You are not an injured spouse
 			"0" // Line 4. Are you legally obligated to pay this past-due amount? No. Go to line 5a
 
-		
+		// chkF8379CommPropStInd
 		chkF8379CommPropStInd?: "1" | // Line 5a Were you a resident of a community property state at any time during the tax year entered on line 1? (see instructions) Yes. Enter the name(s) of the community property state(s)
 			"0" // Line 5a. Were you a resident of a community property state at any time during the tax year entered on line 1? No. Skip line 5b and go to line 6
 
@@ -52,23 +52,23 @@ import "strings"
 		// WISCONSIN
 		chkWI?: "WI"
 
-		
+		// chkF8379LawsCommPropInd
 		chkF8379LawsCommPropInd?: "1" | // Line 5b. If you answered �Yes� on line 5a, was your marriage recognized under the laws of the community property state(s)? See instructions)Yes. Skip lines 6 through 9. Go to Part II and complete the rest of this form
 			"0" // Line 5b. If you answered �Yes� on line 5a, was your marriage recognized under the laws of the community property state(s)? (see  instructions) No. Go to line 6
 
-		
+		// chkF8379PaymentsInd
 		chkF8379PaymentsInd?: "1" | // Line 6. Did you make and report payments, such as federal income tax withholding or estimated tax payments? Yes. Skip lines 7 through 9 and go to Part II and complete the rest of this form
 			"0" // Line 6. Did you make and report payments, such as federal income tax withholding or estimated tax payments? No. Go to line 7
 
-		
+		// chkF8379EarnedIncInd
 		chkF8379EarnedIncInd?: "1" | // Line 7. Did you have earned income, such as wages, salaries, or self-employment income? Yes. Go to line 8
 			"0" // Line 7. Did you have earned income, such as wages, salaries, or self-employment income? No. Skip line 8 and go to line 9
 
-		
+		// chkF8379EicAddctcInd
 		chkF8379EicAddctcInd?: "1" | // Line 8. Did (or will) you claim the earned income credit or additional child tax credit? Yes. Skip line 9 and go to Part II and complete the rest of this form
 			"0" // Line 8. Did (or will) you claim the earned income credit or additional child tax credit? No. Go to line 9
 
-		
+		// chkRefTaxcdtInd
 		chkRefTaxcdtInd?: "1" | // Line 9. Did (or will) you claim a refundable tax credit? (see instructions)Yes. Go to Part II and complete the rest of this form
 			"0" // Line 9. Did (or will) you claim a refundable tax credit? (see instructions)No. Stop here. Do not file this form. You are not an injured spouse
 
@@ -97,7 +97,7 @@ import "strings"
 		// Line 11. Check this box only if you want your refund issued in both names. Otherwise, separate refunds will be issued for each  spouse, if applicable
 		chkF8379DivorceInd?: "1"
 
-		
+		// chkF8379AddrDiffInd
 		chkF8379AddrDiffInd?: "1" | // Yes. Line 12. Do you want any injured spouse refund mailed to an address different from the one on your joint return?
 			"0" // No. Line 12 Do you want any injured spouse refund mailed to an address different from the one on your joint return?
 

@@ -5,7 +5,7 @@ package freefile
 // Form 9000 - Alternative Media Preference - Taxpayer
 #f9000t: {
 	#input: {
-		
+		// chkF9000AlternativeMedCd
 		chkF9000AlternativeMedCd?: "00" | // 00 Standard Print (Cancels prior election)
 			"01" | // 01 Large Print
 			"02" | // 02 Braille

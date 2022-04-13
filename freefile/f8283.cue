@@ -615,7 +615,7 @@ import "strings"
 		txtMethodToDet5?: #UPPERCASE
 		txtMethodToDet5?: strings.MaxRunes(28)
 
-		
+		// chkMore
 		chkMore?: "artmore" | // Line 2 - A. Check the box that describes the type of property donated - Art* (contribution of $20, 000 or more)
 			"realestate" | // Line 2 - e. Check the box that describes the type of property donated - Other Real Estate
 			"vehicle" | // Line 2 - i. Check the box that describes the type of property donated - Vehicles
@@ -833,15 +833,15 @@ import "strings"
 		txtPartiiActualNamePoss?: #UPPERCASE
 		txtPartiiActualNamePoss?: strings.MaxRunes(50)
 
-		
+		// chkPartiiRestrDonatedInd
 		chkPartiiRestrDonatedInd?: "1" | // Yes - Line 5a. Is there a restriction, either temporary or permanent, on the donee's right to use or dispose of the donated property?
 			"0" // No - Line 5a. Is there a restriction, either temporary or permanent, on the donee's right to use or dispose of the donated property?
 
-		
+		// chkPartiiOtherDoneeInd
 		chkPartiiOtherDoneeInd?: "1" | // Yes - Line 5b. Did you give to anyone (other than the donee organization or another organization participating with the donee organization in cooperative fundraising) the right to the income from the donated property or to the possession of the property, including the right to vote donated securities, to acquire the property by purchase or otherwise, or to designate the person having such income, possession, or right to acquire?
 			"0" // No - Line 5b. Did you give to anyone (other than the donee organization or another organization participating with the donee organization in cooperative fundraising) the right to the income from the donated property or to the possession of the property, including the right to vote donated securities, to acquire the property by purchase or otherwise, or to designate the person having such income, possession, or right to acquire?
 
-		
+		// chkPartiiRestLimitInd
 		chkPartiiRestLimitInd?: "1" | // Yes - Line 5c. Is there a restriction limiting the donated property for a particular use?
 			"0" // No - Line 5c. Is there a restriction limiting the donated property for a particular use?
 
@@ -861,7 +861,7 @@ import "strings"
 		txtP4AppraiserSignDate?: #DATE
 		txtP4AppraiserSignDate?: strings.MaxRunes(10)
 
-		
+		// txtP4AppraiserName
 		txtP4AppraiserName?: #UPPERCASE
 		txtP4AppraiserName?: strings.MaxRunes(75)
 
@@ -950,7 +950,7 @@ import "strings"
 		txtDateOfContPart5?: #DATE
 		txtDateOfContPart5?: strings.MaxRunes(10)
 
-		
+		// chkBUnrelatedpropertyPart5
 		chkBUnrelatedpropertyPart5?: "1" | // Yes - Part V. Does the organization intend to use the property for an unrelated use?
 			"0" // No - Part V. Does the organization intend to use the property for an unrelated use?
 
@@ -1039,7 +1039,7 @@ import "strings"
 		txtAuthSig_Dup?: #UPPERCASE
 		txtAuthSig_Dup?: strings.MaxRunes(100)
 
-		
+		// txtPart5Title_Dup
 		txtPart5Title_Dup?: #UPPERCASE
 		txtPart5Title_Dup?: strings.MaxRunes(50)
 

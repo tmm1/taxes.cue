@@ -237,7 +237,7 @@ import "strings"
 		txtOrdAmt15?: #AMOUNT
 		txtOrdAmt15?: strings.MaxRunes(10)
 
-		
+		// cboForCountry
 		cboForCountry?: "AF" | // Afghanistan
 			"AX" | // Akrotiri
 			"AL" | // Albania
@@ -497,7 +497,7 @@ import "strings"
 			"ZA" | // Zambia
 			"ZI" // Zimbabwe
 
-		
+		// txtForCountry
 		txtForCountry?: #UPPERCASE
 
 		

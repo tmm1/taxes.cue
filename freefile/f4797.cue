@@ -9,11 +9,11 @@ import "strings"
 		txtF4797GrossProceeds?: #AMOUNT
 		txtF4797GrossProceeds?: strings.MaxRunes(10)
 
-		
+		// txtF4797TotgainOnMacrs
 		txtF4797TotgainOnMacrs?: #AMOUNT
 		txtF4797TotgainOnMacrs?: strings.MaxRunes(10)
 
-		
+		// txtF4797TotlossOnMacrs
 		txtF4797TotlossOnMacrs?: #AMOUNT
 		txtF4797TotlossOnMacrs?: strings.MaxRunes(10)
 

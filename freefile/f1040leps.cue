@@ -5,7 +5,7 @@ package freefile
 // Schedule LEP - Request for Change in Language Preference - Spouse
 #f1040leps: {
 	#input: {
-		
+		// chkLangPrefCode
 		chkLangPrefCode?: "000" | // I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. English
 			"011" | // I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. French
 			"001" | // I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Spanish

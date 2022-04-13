@@ -26,7 +26,7 @@ import "strings"
 		txtincareofName?: #UPPERCASE
 		txtincareofName?: strings.MaxRunes(35)
 
-		
+		// chkFilingStatus
 		chkFilingStatus?: "single" | // Filing status. Check onlyone box - Single
 			"joint" | // Filing status. Check onlyone box - Married Filing Jointly
 			"separate" | // Filing status. Check onlyone box - Married Filing Separate
@@ -428,7 +428,7 @@ import "strings"
 		txtForeignZip?: #UPPERCASE
 		txtForeignZip?: strings.MaxRunes(10)
 
-		
+		// rdoVirtCurrency
 		rdoVirtCurrency?: "1" | // Yes - At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
 			"0" // No -At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
 
@@ -739,11 +739,11 @@ import "strings"
 		txtTaxWoAmt?: #AMOUNT
 		txtTaxWoAmt?: strings.MaxRunes(10)
 
-		
+		// txtForm8814TaxAmt
 		txtForm8814TaxAmt?: #AMOUNT
 		txtForm8814TaxAmt?: strings.MaxRunes(10)
 
-		
+		// cboF1040OtherTaxCode
 		cboF1040OtherTaxCode?: "ECR" |
 			"HCTC" |
 			"MLR" |
@@ -817,7 +817,7 @@ import "strings"
 		txtRoutingNbr?: #NUMERIC
 		txtRoutingNbr?: strings.MaxRunes(9)
 
-		
+		// chkAccountType
 		chkAccountType?: "C" | // Line 35c. Account Type - Checking
 			"S" // Line 35c. Account Type - Savings
 
@@ -829,7 +829,7 @@ import "strings"
 		txtNstyresttax?: #AMOUNT
 		txtNstyresttax?: strings.MaxRunes(10)
 
-		
+		// chkDiscussInd
 		chkDiscussInd?: "1" | // Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - Yes
 			"0" // Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - No
 
@@ -849,7 +849,7 @@ import "strings"
 		txtOccupation?: #UPPERCASE
 		txtOccupation?: strings.MaxRunes(35)
 
-		
+		// txtIdentTheftPin
 		txtIdentTheftPin?: #NUMERIC
 		txtIdentTheftPin?: strings.MaxRunes(6)
 
@@ -857,7 +857,7 @@ import "strings"
 		txtSpOccupation?: #UPPERCASE
 		txtSpOccupation?: strings.MaxRunes(35)
 
-		
+		// txtIdentTheftPinSp
 		txtIdentTheftPinSp?: #NUMERIC
 		txtIdentTheftPinSp?: strings.MaxRunes(6)
 

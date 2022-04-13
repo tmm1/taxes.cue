@@ -8,7 +8,7 @@ import "strings"
 		// If the casualty or theft loss is attributable to a federally declared disaster, check here
 		chkF8915Ftaxyear?: "2021"
 
-		
+		// chkF8915FCalenderYear
 		chkF8915FCalenderYear?: "2020" | // Calendar year in which disaster occurred
 			"2021" | // Calendar year in which disaster occurred
 			"2022" | // Calendar year in which disaster occurred
@@ -117,7 +117,7 @@ import "strings"
 		txtIncProdPropShort?: #AMOUNT
 		txtIncProdPropShort?: strings.MaxRunes(10)
 
-		
+		// chkF8915FQualDistRetInd
 		chkF8915FQualDistRetInd?: "0" | // This field is automatically calculated for you
 			"1" // This field is automatically calculated for you
 
@@ -136,11 +136,11 @@ import "strings"
 		txtF8915FAmtRepaymtPrt2?: #AMOUNT
 		txtF8915FAmtRepaymtPrt2?: strings.MaxRunes(10)
 
-		
+		// chkF8915FQualDistSepIra
 		chkF8915FQualDistSepIra?: "1" | // This field is automatically calculated for you
 			"0" // This field is automatically calculated for you
 
-		
+		// chkF8915FQualDistSep8606
 		chkF8915FQualDistSep8606?: "1" | // Line 17. Did you receive a qualified disaster distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required to be reported on this year�s Form 8606? - Yes
 			"0" // Line 17. Did you receive a qualified disaster distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required  to be reported on this year�s Form 8606? - No
 
@@ -183,7 +183,7 @@ import "strings"
 		txtF8915FP4LastDisDate?: #DATE
 		txtF8915FP4LastDisDate?: strings.MaxRunes(10)
 
-		
+		// chkF8915FP4DistSep8606
 		chkF8915FP4DistSep8606?: "1" | // Yes - Line 27. Did you receive a qualified distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required to be reported on this year's Form 8606?
 			"0" // No - Line 27. Did you receive a qualified distribution from a traditional, SEP, SIMPLE, or Roth IRA that is required to be reported on this year's Form 8606?
 

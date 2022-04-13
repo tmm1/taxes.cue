@@ -5,7 +5,7 @@ import "strings"
 // Schedule D - Capital Gains and Losses
 #f1040sd: {
 	#input: {
-		
+		// chkSchdDispInvstQofInd
 		chkSchdDispInvstQofInd?: "1" | // Yes. If 'Yes', attach Form 8949 and see its instructions for additional requirements for reporting your gain or loss. - Did you dispose of any investment(s) in a qualified opportunity fund during the tax year?
 			"0" // No. - Did you dispose of any investment(s) in a qualified opportunity fund during the tax year?
 
@@ -61,7 +61,7 @@ import "strings"
 		txtLongTermLossCo?: #AMOUNT
 		txtLongTermLossCo?: strings.MaxRunes(10)
 
-		
+		// chkSchdBothGainInd
 		chkSchdBothGainInd?: "Y" | // Yes. Go to line 18. - Line 17. Are lines 15 and 16 both gains?
 			"N" // No. Skip lines 18 through 21, and go to line 22. - Line 17. Are lines 15 and 16 both gains?
 
@@ -73,7 +73,7 @@ import "strings"
 		txtRecapSecGain?: #AMOUNT
 		txtRecapSecGain?: strings.MaxRunes(10)
 
-		
+		// chkSchdBothZeroInd
 		chkSchdBothZeroInd?: "Y" | // Yes. Complete the Qualified Dividends and Capital Gain Tax Worksheet in the instructions for Forms 1040 and 1040-SR, line 16. Don't complete lines 21 and 22 below. - Line 20. Are lines 18 and 19 both zero or blank and are you not filing Form 4952?
 			"N" // No. Complete the Schedule D Tax Worksheet in the instructions. Don't complete lines 21and 22 below. - Line 20. Are lines 18 and 19 both zero or blank and are you not filing Form 4952?
 
@@ -81,7 +81,7 @@ import "strings"
 		txtSmallNetlossLimit?: #AMOUNT
 		txtSmallNetlossLimit?: strings.MaxRunes(10)
 
-		
+		// chkSchdHasQualDivInd
 		chkSchdHasQualDivInd?: "Y" | // Yes. Complete the Qualified Dividends and Capital Gain Tax Worksheet in the instructions for Forms 1040 and 1040-SR, line 16. - Line 22. Do you have qualified dividends on Form 1040, 1040-SR, or 1040-NR, line 3a?
 			"N" // No. Complete the rest of Form 1040, 1040-SR, or 1040-NR. - Line 22. Do you have qualified dividends on Form 1040, 1040-SR, or 1040-NR, line 3a?
 

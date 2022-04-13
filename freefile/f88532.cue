@@ -21,11 +21,11 @@ import "strings"
 		txtF8853InsSsn?: #SSN
 		txtF8853InsSsn?: strings.MaxRunes(11)
 
-		
+		// chkF8853OtherRecPayInd
 		chkF8853OtherRecPayInd?: "1" | // Line 15. In 2021, did anyone other than you receive payments on a per diem or other periodic basis under a qualified LTC insurance contract covering the insured or receive accelerated death benefits under a life insurance policy covering the insured?
 			"0" // Line 15. In 2021, did anyone other than you receive payments on a per diem or other periodic basis under a qualified LTC insurance contract covering the insured or receive accelerated death benefits under a life insurance policy covering the insured?
 
-		
+		// chkF8853InsTerIllInd
 		chkF8853InsTerIllInd?: "1" | // Line 16. Was the insured a terminally ill individual?
 			"0" // Line 16. Was the insured a terminally ill individual?
 
