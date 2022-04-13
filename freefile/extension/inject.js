@@ -31,6 +31,8 @@ function populateFormData(data) {
       if (e.onblur) e.onblur()
     }
   }
+
+  document.querySelector('#btnPerformMath').click()
 }
 
 function extractFormSchema() {
