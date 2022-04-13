@@ -8,16 +8,13 @@ package freefile
 	fdepend?: #fdepend.#input
 
 	// Form W-2 - Wage and Tax Statement
-	fw2?: #fw2.#input
-	fw2_extra?: [...#fw2.#input]
+	fw2?: [...#fw2.#input]
 
 	// Form W-2G - Certain Gambling Winnings
-	fw2g?: #fw2g.#input
-	fw2g_extra?: [...#fw2g.#input]
+	fw2g?: [...#fw2g.#input]
 
 	// Form 1099-R - Distributions From Pensions, Annuities, Retirement or Profit-Sharing Plans, IRAs, Insurance Contracts, etc.
-	f1099r?: #f1099r.#input
-	f1099r_extra?: [...#f1099r.#input]
+	f1099r?: [...#f1099r.#input]
 
 	// Form 1040-V - Payment Voucher
 	f1040v?: #f1040v.#input
@@ -47,15 +44,13 @@ package freefile
 	f1040sb3?: #f1040sb3.#input
 
 	// Schedule C - Profit or Loss From Business (Sole Proprietorship)
-	f1040sc?: #f1040sc.#input
-	f1040sc_extra?: [...#f1040sc.#input]
+	f1040sc?: [...#f1040sc.#input]
 
 	// Schedule D - Capital Gains and Losses
 	f1040sd?: #f1040sd.#input
 
 	// Schedule E - Supplemental Income and Loss (From rental real estate, royalties, partnerships, S corporations, estates, trusts, REMICs, etc.)
-	f1040se1?: #f1040se1.#input
-	f1040se1_extra?: [...#f1040se1.#input]
+	f1040se1?: [...#f1040se1.#input]
 
 	// Schedule E - Supplemental Income and Loss (From rental real estate, royalties, partnerships, S corporations, estates, trusts, REMICs, etc.), page 2
 	f1040se2?: #f1040se2.#input
@@ -64,8 +59,7 @@ package freefile
 	f1040sei?: #f1040sei.#input
 
 	// Schedule F - Profit or Loss From Farming
-	f1040sf?: #f1040sf.#input
-	f1040sf_extra?: [...#f1040sf.#input]
+	f1040sf?: [...#f1040sf.#input]
 
 	// Schedule H - Household Employment Taxes - Taxpayer
 	f1040sht?: #f1040sht.#input
@@ -95,8 +89,7 @@ package freefile
 	f982?: #f982.#input
 
 	// Form 1116 - Foreign Tax Credit
-	f1116?: #f1116.#input
-	f1116_extra?: [...#f1116.#input]
+	f1116?: [...#f1116.#input]
 
 	// Form 1310 - Statement of Person Claiming Refund Due a Deceased Taxpayer - Taxpayer
 	f1310t?: #f1310t.#input
@@ -105,16 +98,13 @@ package freefile
 	f1310s?: #f1310s.#input
 
 	// Form 2106 - Employee Business Expenses - Taxpayer
-	f2106t?: #f2106t.#input
-	f2106t_extra?: [...#f2106t.#input]
+	f2106t?: [...#f2106t.#input]
 
 	// Form 2106 - Employee Business Expenses - Spouse
-	f2106s?: #f2106s.#input
-	f2106s_extra?: [...#f2106s.#input]
+	f2106s?: [...#f2106s.#input]
 
 	// Form 2120 - Multiple Support Declaration
-	f2120?: #f2120.#input
-	f2120_extra?: [...#f2120.#input]
+	f2120?: [...#f2120.#input]
 
 	// Form 2210 - Underpayment of Estimated Tax by Individuals, Estates, and Trusts
 	f2210?: #f2210.#input
@@ -126,8 +116,7 @@ package freefile
 	f2210f?: #f2210f.#input
 
 	// Form 2439 - Notice to Shareholder of Undistributed Long-Term Capital Gains
-	f2439?: #f2439.#input
-	f2439_extra?: [...#f2439.#input]
+	f2439?: [...#f2439.#input]
 
 	// Form 2441 - Child and Dependent Care Expenses
 	f2441?: #f2441.#input
@@ -154,12 +143,10 @@ package freefile
 	f3800?: #f3800.#input
 
 	// Form 3800, page 3 - General Business Credits Or Eligible Small Business Credits
-	f3800mlt?: #f3800mlt.#input
-	f3800mlt_extra?: [...#f3800mlt.#input]
+	f3800mlt?: [...#f3800mlt.#input]
 
 	// Form 3903 - Moving Expenses
-	f3903?: #f3903.#input
-	f3903_extra?: [...#f3903.#input]
+	f3903?: [...#f3903.#input]
 
 	// Form 4136 - Credit for Federal Tax Paid On Fuels
 	f4136?: #f4136.#input
@@ -174,19 +161,16 @@ package freefile
 	f4255?: #f4255.#input
 
 	// Form 4684 - Casualties and Thefts
-	f4684?: #f4684.#input
-	f4684_extra?: [...#f4684.#input]
+	f4684?: [...#f4684.#input]
 
 	// Form 4797 - Sales of Business Property Page 1
 	f4797?: #f4797.#input
 
 	// Form 4797 - Sales of Business Property Page 2
-	f47972?: #f47972.#input
-	f47972_extra?: [...#f47972.#input]
+	f47972?: [...#f47972.#input]
 
 	// Form 4835 - Farm Rental Income and Expenses (Crop and Livestock Shares (Not Cash) Received by Landowner (or Sub-Lessor)) (Income not subject to self-employment tax)
-	f4835?: #f4835.#input
-	f4835_extra?: [...#f4835.#input]
+	f4835?: [...#f4835.#input]
 
 	// Form 4952 - Investment Interest Expense Deduction
 	f4952?: #f4952.#input
@@ -222,8 +206,7 @@ package freefile
 	f6251?: #f6251.#input
 
 	// Form 6252 - Installment Sale Income
-	f6252?: #f6252.#input
-	f6252_extra?: [...#f6252.#input]
+	f6252?: [...#f6252.#input]
 
 	// Form 6765 - Credit for Increasing Research Activities
 	f6765?: #f6765.#input
@@ -235,8 +218,7 @@ package freefile
 	f6781?: #f6781.#input
 
 	// Form 8082 - Notice of Inconsistent Treatment or Administrative Adjustment Request (AAR)
-	f8082?: #f8082.#input
-	f8082_extra?: [...#f8082.#input]
+	f8082?: [...#f8082.#input]
 
 	// Form 8275 - Disclosure Statement
 	f8275?: #f8275.#input
@@ -245,8 +227,7 @@ package freefile
 	f8275r?: #f8275r.#input
 
 	// Form 8283 - Noncash Charitable Contributions
-	f8283?: #f8283.#input
-	f8283_extra?: [...#f8283.#input]
+	f8283?: [...#f8283.#input]
 
 	// Form 8379 - Injured Spouse Allocation
 	f8379?: #f8379.#input
@@ -261,12 +242,10 @@ package freefile
 	f8582?: #f8582.#input
 
 	// Form 8582 - Passive Activity Loss Limitations Page 2
-	f8582w15?: #f8582w15.#input
-	f8582w15_extra?: [...#f8582w15.#input]
+	f8582w15?: [...#f8582w15.#input]
 
 	// Form 8582 - Passive Activity Loss Limitations Page 3
-	f8582w6?: #f8582w6.#input
-	f8582w6_extra?: [...#f8582w6.#input]
+	f8582w6?: [...#f8582w6.#input]
 
 	// Form 8582-CR - Passive Activity Credit Limitations
 	f8582cr?: #f8582cr.#input
@@ -287,8 +266,7 @@ package freefile
 	f8609a?: #f8609a.#input
 
 	// Form 8611 - Recapture of Low-Income Housing Credit
-	f8611?: #f8611.#input
-	f8611_extra?: [...#f8611.#input]
+	f8611?: [...#f8611.#input]
 
 	// Form 8615 - Tax for Certain Children Who Have Unearned Income
 	f8615?: #f8615.#input
@@ -303,8 +281,7 @@ package freefile
 	f8801?: #f8801.#input
 
 	// Form 8814 - Parents' Election to Report Child's Interest and Dividends
-	f8814?: #f8814.#input
-	f8814_extra?: [...#f8814.#input]
+	f8814?: [...#f8814.#input]
 
 	// Form 8815 - Exclusion of Interest From Series EE and I U.S. Savings Bonds Issued After 1989
 	f8815?: #f8815.#input
@@ -313,8 +290,7 @@ package freefile
 	f8820?: #f8820.#input
 
 	// Form 8824 - Like-Kind Exchanges
-	f8824?: #f8824.#input
-	f8824_extra?: [...#f8824.#input]
+	f8824?: [...#f8824.#input]
 
 	// Form 8826 - Disabled Access Credit
 	f8826?: #f8826.#input
@@ -323,16 +299,13 @@ package freefile
 	f8828?: #f8828.#input
 
 	// Form 8833 - Treaty-Based Return Position Disclosure Under Section 6114 or 7701(b)
-	f8833?: #f8833.#input
-	f8833_extra?: [...#f8833.#input]
+	f8833?: [...#f8833.#input]
 
 	// Form 8834 - Qualified Electric Vehicle Credit
-	f8834?: #f8834.#input
-	f8834_extra?: [...#f8834.#input]
+	f8834?: [...#f8834.#input]
 
 	// Form 8839 - Qualified Adoption Expenses
-	f8839?: #f8839.#input
-	f8839_extra?: [...#f8839.#input]
+	f8839?: [...#f8839.#input]
 
 	// Form 8844 - Empowerment Zone Employment Credit
 	f8844?: #f8844.#input
@@ -356,15 +329,13 @@ package freefile
 	f8862?: #f8862.#input
 
 	// Form 8862 - Additional Information Statement for Part III and Part IV
-	f8862p3?: #f8862p3.#input
-	f8862p3_extra?: [...#f8862p3.#input]
+	f8862p3?: [...#f8862p3.#input]
 
 	// Form 8863 - Education Credits (American Opportunity and Lifetime Learning Credits)
 	f8863?: #f8863.#input
 
 	// Form 8863 Page 2 - Student and Educational Institution Information
-	f8863p2?: #f8863p2.#input
-	f8863p2_extra?: [...#f8863p2.#input]
+	f8863p2?: [...#f8863p2.#input]
 
 	// Form 8880 - Credit for Qualified Retirement Savings Contributions
 	f8880?: #f8880.#input
@@ -379,8 +350,7 @@ package freefile
 	f8885s?: #f8885s.#input
 
 	// Form 8886 - Reportable Transaction Disclosure Statement
-	f8886?: #f8886.#input
-	f8886_extra?: [...#f8886.#input]
+	f8886?: [...#f8886.#input]
 
 	// Form 8888 - Allocation of Refund (Including Savings Bond Purchases)
 	f8888?: #f8888.#input
@@ -428,15 +398,13 @@ package freefile
 	f8936?: #f8936.#input
 
 	// Form 8936 - Qualified Plug-In Electric Drive Motor Vehicle Credit (Including Qualified Two-Wheeled Plug-in Electric Vehicles) - Additional Vehicles Statement
-	f8936wks?: #f8936wks.#input
-	f8936wks_extra?: [...#f8936wks.#input]
+	f8936wks?: [...#f8936wks.#input]
 
 	// Form 8938 - Statement of Specified Foreign Financial Assets
 	f8938?: #f8938.#input
 
 	// Form 8938 - Statement of Specified Foreign Financial Assets - Continuation Statement
-	f8938p2?: #f8938p2.#input
-	f8938p2_extra?: [...#f8938p2.#input]
+	f8938p2?: [...#f8938p2.#input]
 
 	// Form 8941 - Credit for Small Employer Health Insurance Premiums - Taxpayer
 	f8941t?: #f8941t.#input
@@ -445,12 +413,10 @@ package freefile
 	f8941s?: #f8941s.#input
 
 	// Form 8949 - Sales and Other Dispositions of Capital Assets - Page 1
-	f8949st?: #f8949st.#input
-	f8949st_extra?: [...#f8949st.#input]
+	f8949st?: [...#f8949st.#input]
 
 	// Form 8949 - Sales and Other Dispositions of Capital Assets - Page 2
-	f8949lt?: #f8949lt.#input
-	f8949lt_extra?: [...#f8949lt.#input]
+	f8949lt?: [...#f8949lt.#input]
 
 	// Form 8959 - Additional Medicare Tax
 	f8959?: #f8959.#input
@@ -465,37 +431,31 @@ package freefile
 	f8995?: #f8995.#input
 
 	// Form 8995 - Qualified Business Income Deduction Simplified Computation - Additional Information Statement
-	f8995ct?: #f8995ct.#input
-	f8995ct_extra?: [...#f8995ct.#input]
+	f8995ct?: [...#f8995ct.#input]
 
 	// Form 8995-A Qualified Business Income Deduction
 	f8995a?: #f8995a.#input
 
 	// Form 8995-A Qualified Business Income Deduction - Continuation Statement
-	f8995act?: #f8995act.#input
-	f8995act_extra?: [...#f8995act.#input]
+	f8995act?: [...#f8995act.#input]
 
 	// Form 8995-A Schedule A - Specified Service Trades or Businesses
 	f8995aa?: #f8995aa.#input
 
 	// Form 8995-A Schedule A - Specified Service Trades or Businesses - Continuation Statement
-	f8995aac?: #f8995aac.#input
-	f8995aac_extra?: [...#f8995aac.#input]
+	f8995aac?: [...#f8995aac.#input]
 
 	// Form 8995-A Schedule B - Aggregation of Business Operations
-	f8995ab?: #f8995ab.#input
-	f8995ab_extra?: [...#f8995ab.#input]
+	f8995ab?: [...#f8995ab.#input]
 
 	// Form 8995-A Schedule C - Loss Netting and Carryforward
 	f8995ac?: #f8995ac.#input
 
 	// Form 8995-A Schedule C - Loss Netting and Carryforward - Continuation Statement
-	f8995acc?: #f8995acc.#input
-	f8995acc_extra?: [...#f8995acc.#input]
+	f8995acc?: [...#f8995acc.#input]
 
 	// Form 8995-A Schedule D - Special Rules for Patrons of Agricultural or Horticultural Cooperatives
-	f8995ad?: #f8995ad.#input
-	f8995ad_extra?: [...#f8995ad.#input]
+	f8995ad?: [...#f8995ad.#input]
 
 	// Form 9000 - Alternative Media Preference - Taxpayer
 	f9000t?: #f9000t.#input

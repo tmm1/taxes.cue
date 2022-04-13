@@ -17,9 +17,10 @@ files: [
 			#Return: {
 				{{range $f := .list -}}
 				// {{$f.name}}
-				{{$f.id}}?: #{{$f.id}}.#input
 				{{- if $f.multiple}}
-				{{$f.id}}_extra?: [...#{{$f.id}}.#input]
+				{{$f.id}}?: [...#{{$f.id}}.#input]
+				{{- else}}
+				{{$f.id}}?: #{{$f.id}}.#input
 				{{- end}}
 
 				{{end}}
