@@ -23,8 +23,9 @@ $ git clone https://github.com/tmm1/taxes.cue
 ```
 $ cd taxes.cue/returns
 $ cp sample1.taxdata mine2021.taxdata
+
 $ make mine2021
-$ cat mine2021.txt # manual fill instructions
+$ cat mine2021.txt      # manual fill instructions
 $ cat mine2021.freefile # freefilebot data
 ```
 
@@ -37,8 +38,8 @@ $ cat mine2021.freefile # freefilebot data
 ### subprojects
 
 - [`freefile/extension`](/freefile/extension): `freefilebot` chrome extension for automation on https://freefilefillableforms.com
-- [`freefile/data/json`](/freefile/data/json): json schema defining [all forms](/freefile/data/json/forms.json) and fields supported by freefilebot
-- [`freefile/data`](/freefile/data): cue [validation](/freefile/data/base.cue) for the raw freefilebot json schema
+- [`freefile/data/json`](/freefile/data/json): json schema defining [all forms](/freefile/data/json/forms.json) and [fields](/freefile/data/json/f1040.json) supported by `freefilebot`
+- [`freefile/data`](/freefile/data): cue [validation](/freefile/data/base.cue) for the raw `freefilebot` json schema
 - [`freefile`](/freefile): high-level cue schemas and validations for all freefile forms, including [`freefile.#Return`](/freefile/return.cue)
 
 ### inspiration
