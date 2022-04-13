@@ -1,12 +1,10 @@
 import "github.com/tmm1/taxes/fixtures"
 
-{
-	taxYear:      "2021"
-	taxPayer:     fixtures.taxPayer.samGardenia
-	filingStatus: "marriedFilingJointly"
+taxYear:      "2021"
+taxPayer:     fixtures.taxPayer.samGardenia
+filingStatus: "marriedFilingJointly"
 
-	w2s: [
-		fixtures.w2.saksFifth,
-		fixtures.w2.wellsFargo,
-	]
-}
+w2s: [
+	fixtures.w2.saksFifth,
+	fixtures.w2.wellsFargo,
+]
