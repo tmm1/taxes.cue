@@ -24,6 +24,10 @@ files: [
 
 				{{end}}
 			}
+
+			#Form: {{range $idx, $f := .list}}
+			{{- if $idx}} |
+				{{end}}#{{$f.id}}.#input{{end}}
 			"""
 	},
 	for f in forms {
