@@ -6,7 +6,7 @@ import "strings"
 #f3903: {
 	#input: {
 		// Member of the Armed Forces
-		chkMilitaryMoveInd: *"" | "1"
+		chkMilitaryMoveInd?: "1"
 
 		// Line 1. Transportation and storage of household goods and personal effects
 		txtTranspCost?: #AMOUNT
@@ -21,10 +21,10 @@ import "strings"
 		txtTotalAmtTopay?: strings.MaxRunes(10)
 
 		// No
-		chkTotalExpensesNoInd: *"" | "1"
+		chkTotalExpensesNoInd?: "1"
 
 		// Yes
-		chkTotalExpensesYesInd: *"" | "1"
+		chkTotalExpensesYesInd?: "1"
 
 		
 	}

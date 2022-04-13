@@ -83,10 +83,10 @@ import "strings"
 		txtF8886Taxyear?: strings.MaxRunes(4)
 
 		// Check the box if - Initial year filer
-		chkF8886InitYearFileInd: *"" | "1"
+		chkF8886InitYearFileInd?: "1"
 
 		// Check the box if - Protective disclosure
-		chkF8886ProtectDisInd: *"" | "1"
+		chkF8886ProtectDisInd?: "1"
 
 		// Name of reportable transaction
 		txtF8886ReportTransName?: #UPPERCASE
@@ -101,19 +101,19 @@ import "strings"
 		txtF8886SheltRegNo?: strings.MaxRunes(11)
 
 		// Identify the type of reportable transaction - Listed
-		chkF8886ListTransInd: *"" | "1"
+		chkF8886ListTransInd?: "1"
 
 		// Identify the type of reportable transaction - Contractual protection
-		chkF8886ContProtectInd: *"" | "1"
+		chkF8886ContProtectInd?: "1"
 
 		// Identify the type of reportable transaction - Transaction of interest
-		chkF8886TransIntInd: *"" | "1"
+		chkF8886TransIntInd?: "1"
 
 		// Identify the type of reportable transaction - Confidential
-		chkF8886ConfidentialInd: *"" | "1"
+		chkF8886ConfidentialInd?: "1"
 
 		// Identify the type of reportable transaction - Loss
-		chkF8886LossInd: *"" | "1"
+		chkF8886LossInd?: "1"
 
 		// If you checked box 2a or 2e, enter the published guidance number for the listed transaction or transaction of interest
 		txtF8886PubGuideNo?: #UPPERCASE
@@ -318,34 +318,34 @@ import "strings"
 		txtF8886FeePaidZip2?: strings.MaxRunes(5)
 
 		// Identify the type of tax benefit - Deductions
-		chkF8886FactDedInd: *"" | "1"
+		chkF8886FactDedInd?: "1"
 
 		// Identify the type of tax benefit - Exclusions from gross income
-		chkF8886FactExclincInd: *"" | "1"
+		chkF8886FactExclincInd?: "1"
 
 		// Identify the type of tax benefit - Absence of adjustments to basis
-		chkF8886FactAbsadjbasisInd: *"" | "1"
+		chkF8886FactAbsadjbasisInd?: "1"
 
 		// Identify the type of tax benefit - Tax credits
-		chkF8886FactTaxcrdInd: *"" | "1"
+		chkF8886FactTaxcrdInd?: "1"
 
 		// Identify the type of tax benefit - Capital loss
-		chkF8886FactCaplossInd: *"" | "1"
+		chkF8886FactCaplossInd?: "1"
 
 		// Identify the type of tax benefit - Nonrecognition of gain
-		chkF8886FactNonrecgainInd: *"" | "1"
+		chkF8886FactNonrecgainInd?: "1"
 
 		// Identify the type of tax benefit - Deferral
-		chkF8886FactDefferalInd: *"" | "1"
+		chkF8886FactDefferalInd?: "1"
 
 		// Identify the type of tax benefit - Ordinary loss
-		chkF8886FactOrdlossInd: *"" | "1"
+		chkF8886FactOrdlossInd?: "1"
 
 		// Identify the type of tax benefit - Adjustments to basis
-		chkF8886FactAdjbbasisInd: *"" | "1"
+		chkF8886FactAdjbbasisInd?: "1"
 
 		// Identify the type of tax benefit - Other
-		chkF8886FactOtherInd: *"" | "1"
+		chkF8886FactOtherInd?: "1"
 
 		// Other description
 		txtF8886FactOtherDesc?: #UPPERCASE

@@ -49,7 +49,7 @@ import "strings"
 		txtF8615OthChildLn5?: strings.MaxRunes(10)
 
 		// 
-		chkF8615ParTaxtype: *"" | "1"
+		chkF8615ParTaxtype?: "1"
 
 		// Enter the tax on the amount on line 8 based on the parent�s filing status above
 		txtF8615SubTotTax?: #AMOUNT
@@ -64,7 +64,7 @@ import "strings"
 		txtF8615ParTax?: strings.MaxRunes(10)
 
 		// 
-		chkF8615Ln4MinusLn5Div: *"" | "1"
+		chkF8615Ln4MinusLn5Div?: "1"
 
 		// Enter the tax on the amount on line 14 based on the child�s filing status
 		txtF8615Ln14Tax?: #AMOUNT
@@ -75,7 +75,7 @@ import "strings"
 		txtF8615Ln4Tax?: strings.MaxRunes(10)
 
 		// 
-		chkF8615Line17Ind: *"" | "1"
+		chkF8615Line17Ind?: "1"
 
 		
 	}

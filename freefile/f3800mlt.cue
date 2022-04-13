@@ -13,7 +13,7 @@ import "strings"
 			"D" // Line D General Business Credit Carrybacks
 
 		// If you are filing more than one Part III with box A or B checked, complete and attach first an additional Part III combining amounts from all Parts III with box A or B checked. Check here if this is the consolidated Part III
-		chkF3800P3BoxTypeI: *"" | "1"
+		chkF3800P3BoxTypeI?: "1"
 
 		// Line 1a Investment (Form 3468, Part II only) (attach Form 3468)
 		txtF3468InvestCdtEin?: #EIN

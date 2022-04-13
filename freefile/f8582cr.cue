@@ -74,7 +74,7 @@ import "strings"
 		txtP4TaxAttribAmt?: strings.MaxRunes(10)
 
 		// Part 5, Election To Increase Basis of Credit Property. Line 38, If you disposed of your entire interest in a passive activity or former passive activity in a fully taxable transaction, and you elect to increase your basis in credit property used in that activity by the unallowed credit that reduced your basis in the property, check this box. See instructions
-		chkElectIncCdtporp: *"" | "1"
+		chkElectIncCdtporp?: "1"
 
 		// Line 39, Name of passive activity disposed of
 		txtNamePassActDisp?: #UPPERCASE

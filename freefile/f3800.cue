@@ -22,7 +22,7 @@ import "strings"
 		txtCarryfwdToThisyr?: strings.MaxRunes(10)
 
 		// Check this box if the carryforward was changed or revised from the original reported amount
-		chkCryfwdRevisedInd: *"" | "1"
+		chkCryfwdRevisedInd?: "1"
 
 		// Line 5 - Carryback of general business credit from 2021. Enter the amount from line 2 of Part III with box D  checked
 		txtCarrybckToNxtyr?: #AMOUNT
@@ -61,7 +61,7 @@ import "strings"
 		txtLn5BoxcLn6Boxg?: strings.MaxRunes(10)
 
 		// Check this box if the carryforward was changed or revised from the original reported amount
-		chkLine34a: *"" | "1"
+		chkLine34a?: "1"
 
 		// Line 35 Carryback of business credit from 2022. Enter the amount from line 5 of Part III with box D checked
 		txtLn5BoxdLn6Boxh?: #AMOUNT

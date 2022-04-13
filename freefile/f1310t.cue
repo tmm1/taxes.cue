@@ -99,13 +99,13 @@ import "strings"
 			"WY"
 
 		// Part 1. A . Surviving spouse requesting reissuance of a refund check received in the name of both the decedent and the surviving spouse
-		chkF1310SurvSpInd: *"" | "1"
+		chkF1310SurvSpInd?: "1"
 
 		// Part 1. B . Court-appointed or certified personal representative (defined below)
-		chkF1310CourtAppRepInd: *"" | "1"
+		chkF1310CourtAppRepInd?: "1"
 
 		// Part 3. C . Person, other than A or B, claiming refund for the decedent's estate. Also, complete Part II
-		chkF1310CompletedInd: *"" | "1"
+		chkF1310CompletedInd?: "1"
 
 		// Enter Date (2 digit month, 2 digit day, 4 digit year)
 		txtF1310SignDate?: #DATE

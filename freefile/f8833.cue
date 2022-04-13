@@ -363,13 +363,13 @@ import "strings"
 		txtF8833UsZip?: strings.MaxRunes(5)
 
 		// The taxpayer is disclosing a treaty-based return position as required by section 6114
-		chkF8833Sec6114Ind: *"" | "1"
+		chkF8833Sec6114Ind?: "1"
 
 		// The taxpayer is a dual-resident taxpayer and is disclosing a treaty-based return position as required by
-		chkF8833Reg301RtnInd: *"" | "1"
+		chkF8833Reg301RtnInd?: "1"
 
 		// Check this box if the taxpayer is a U. S . citizen or resident or is incorporated in the United States
-		chkF8833UsCitizenInd: *"" | "1"
+		chkF8833UsCitizenInd?: "1"
 
 		// Treaty country
 		txtF8833TreatyCountyName?: #UPPERCASE

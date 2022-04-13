@@ -6,7 +6,7 @@ import "strings"
 #f8915fs: {
 	#input: {
 		// If the casualty or theft loss is attributable to a federally declared disaster, check here
-		chkF8915Ftaxyear: *"" | "2021"
+		chkF8915Ftaxyear?: "2021"
 
 		
 		chkF8915FCalenderYear?: "2020" | // Calendar year in which disaster occurred
@@ -44,7 +44,7 @@ import "strings"
 		txtF8915FFemaNumber6?: strings.MaxRunes(50)
 
 		// 
-		chkF8915FCovindDisInd: *"" | "1"
+		chkF8915FCovindDisInd?: "1"
 
 		// Disaster FEMA number
 		txtDistFEMAnum1?: #UPPERCASE
@@ -71,7 +71,7 @@ import "strings"
 		txtDistFEMAenddate2?: strings.MaxRunes(10)
 
 		// 
-		chkF8915FFemaMorethan2Ind: *"" | "1"
+		chkF8915FFemaMorethan2Ind?: "1"
 
 		// Date first distribution made this year
 		txtF8915FFirstDisdate?: #DATE
@@ -126,7 +126,7 @@ import "strings"
 		txtF8915FAppCostOfDist?: strings.MaxRunes(10)
 
 		// Line 11. If you elect NOT to spread the taxable amount over 3 years, check this box
-		chkF8915FNotTaxyrO3YrPt2: *"" | "1"
+		chkF8915FNotTaxyrO3YrPt2?: "1"
 
 		// Line 12. Enter the amount, if any, from Worksheet 2 in the instructions. This is your income for prior years from  other-than-IRA retirement plan qualified disaster distributions
 		txtF8915FQualRetPryrPrt2?: #AMOUNT
@@ -153,7 +153,7 @@ import "strings"
 		txtF8915FAmtfrm8606Ln25B?: strings.MaxRunes(10)
 
 		// Line 22. If you elect NOT to spread the taxable amount over 3 years, check this box
-		chkF8915FNotTaxyrO3YrPt3: *"" | "1"
+		chkF8915FNotTaxyrO3YrPt3?: "1"
 
 		// Line 23. Enter the amount, if any, from Worksheet 4 in the instructions. This is your income for prior years from IRA- retirement-plan qualified disaster distributions
 		txtF8915FQualRetPryrPrt3?: #AMOUNT

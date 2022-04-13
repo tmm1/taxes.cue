@@ -26,31 +26,31 @@ import "strings"
 			"0" // Line 5a. Were you a resident of a community property state at any time during the tax year entered on line 1? No. Skip line 5b and go to line 6
 
 		// ARIZONA
-		chkAZ: *"" | "AZ"
+		chkAZ?: "AZ"
 
 		// NEW MEXICO
-		chkCA: *"" | "CA"
+		chkCA?: "CA"
 
 		// IDAHO
-		chkID: *"" | "ID"
+		chkID?: "ID"
 
 		// LOUISIANA
-		chkLA: *"" | "LA"
+		chkLA?: "LA"
 
 		// NEVADA
-		chkNV: *"" | "NV"
+		chkNV?: "NV"
 
 		// NEW MEXICO
-		chkNM: *"" | "NM"
+		chkNM?: "NM"
 
 		// 
-		chkTX: *"" | "TX"
+		chkTX?: "TX"
 
 		// WASHINGTON
-		chkWA: *"" | "WA"
+		chkWA?: "WA"
 
 		// WISCONSIN
-		chkWI: *"" | "WI"
+		chkWI?: "WI"
 
 		
 		chkF8379LawsCommPropInd?: "1" | // Line 5b. If you answered �Yes� on line 5a, was your marriage recognized under the laws of the community property state(s)? See instructions)Yes. Skip lines 6 through 9. Go to Part II and complete the rest of this form
@@ -81,7 +81,7 @@ import "strings"
 		txtF8379FirstPerSsn?: strings.MaxRunes(11)
 
 		// Line 10. If Injured Spouse
-		chkF8379InjurePer1Ind: *"" | "1"
+		chkF8379InjurePer1Ind?: "1"
 
 		// Line 10. Enter the following information exactly as it is shown on the tax return for which you are filing this formThe spouse's name and social security number shown first on that tax return must also be shown first below. First name, initial, and last name shown second on the return
 		txtF8379SecondPerName?: #UPPERCASE
@@ -92,10 +92,10 @@ import "strings"
 		txtF8379SecondPerSsn?: strings.MaxRunes(11)
 
 		// Line 10. If Injured Spouse
-		chkF8379InjurePer2Ind: *"" | "1"
+		chkF8379InjurePer2Ind?: "1"
 
 		// Line 11. Check this box only if you want your refund issued in both names. Otherwise, separate refunds will be issued for each  spouse, if applicable
-		chkF8379DivorceInd: *"" | "1"
+		chkF8379DivorceInd?: "1"
 
 		
 		chkF8379AddrDiffInd?: "1" | // Yes. Line 12. Do you want any injured spouse refund mailed to an address different from the one on your joint return?

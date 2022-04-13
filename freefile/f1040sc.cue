@@ -116,7 +116,7 @@ import "strings"
 			"0" // No. - Line G. Did you 'materially participate' in the operation of this business during 2021? If 'No, ' see instructions for limit on losses
 
 		// Line H. If you started or acquired this business during 2021, check here
-		chkSchCStartedAcquiredInd: *"" | "1"
+		chkSchCStartedAcquiredInd?: "1"
 
 		
 		chkMakePayInd?: "1" | // Yes. - Line I. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions
@@ -127,7 +127,7 @@ import "strings"
 			"0" // No. - Line J. If 'Yes, ' did you or will you file required Form(s) 1099? 
 
 		// Line 1. if this income was reported to you on Form W-2 and the 'Statutory employee' box on that form was checked. Check here
-		chkSchcStatutoryEmpInd: *"" | "1"
+		chkSchcStatutoryEmpInd?: "1"
 
 		// Part 1. Income. Line 1 - Gross receipts or sales. See instructions for line 1
 		txtSchCGrossReceiptsSales?: #AMOUNT

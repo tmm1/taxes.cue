@@ -155,10 +155,10 @@ import "strings"
 		txtZip?: strings.MaxRunes(9)
 
 		// You - Presidential Election Campaign. Check here if you, or your spouse if filing jointly, want $3 to go to this fund. Checking a box below will not change your tax or refund
-		chkPresFundInd: *"" | "1"
+		chkPresFundInd?: "1"
 
 		// Spouse - Presidential Election Campaign. Check here if you, or your spouse if filing jointly, want $3 to go to this fund. Checking a box below will not change your tax or refund
-		chkSpPresFundInd: *"" | "1"
+		chkSpPresFundInd?: "1"
 
 		// Select foreign country name
 		cboForeignCountryCode?: "AF" | // Afghanistan
@@ -433,25 +433,25 @@ import "strings"
 			"0" // No -At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
 
 		// Standard Deduction. Someone can claim: You as a dependent
-		chkExemptInd: *"" | "1"
+		chkExemptInd?: "1"
 
 		// Standard Deduction. Someone can claim: Your Spouse as a dependent
-		chkSpExemptInd: *"" | "1"
+		chkSpExemptInd?: "1"
 
 		// Standard Deduction - Spouse itemizes on a separate return or you were a dual-status alien
-		chkSpItemizeDed: *"" | "1"
+		chkSpItemizeDed?: "1"
 
 		// Age/Blindness - You were born before January 2, 1957
-		chkAgeO65: *"" | "1"
+		chkAgeO65?: "1"
 
 		// Age/Blindness -  You are blind
-		chkBlind: *"" | "1"
+		chkBlind?: "1"
 
 		// Age/Blindness - Your Spouse was born before January 2, 1957
-		chkSpAgeO65: *"" | "1"
+		chkSpAgeO65?: "1"
 
 		// Age/Blindness - Your Spouse is blind
-		chkSpBlind: *"" | "1"
+		chkSpBlind?: "1"
 
 		// Dependents - Enter First name
 		txtDepFirstName1?: #UPPERCASE
@@ -486,10 +486,10 @@ import "strings"
 			"O" // OTHER
 
 		// Dependents - Check if qualifies for (see instructions): Child tax credit
-		chkDepCTCInd1: *"" | "1"
+		chkDepCTCInd1?: "1"
 
 		// Dependents - Check if Credit for other dependents
-		ChkDepOtherInd1: *"" | "1"
+		ChkDepOtherInd1?: "1"
 
 		// Dependents - Enter First name
 		txtDepFirstName2?: #UPPERCASE
@@ -524,10 +524,10 @@ import "strings"
 			"O" // OTHER
 
 		// Dependents - Check if qualifies for (see instructions): Child tax credit
-		chkDepCTCInd2: *"" | "1"
+		chkDepCTCInd2?: "1"
 
 		// Dependents - Check if Credit for other dependents
-		ChkDepOtherInd2: *"" | "1"
+		ChkDepOtherInd2?: "1"
 
 		// Dependents - Enter First name
 		txtDepFirstName3?: #UPPERCASE
@@ -562,13 +562,13 @@ import "strings"
 			"O" // OTHER
 
 		// Dependents - Check if qualifies for (see instructions): Child tax credit
-		chkDepCTCInd3: *"" | "1"
+		chkDepCTCInd3?: "1"
 
 		// Dependents - Check if Credit for other dependents
-		ChkDepOtherInd3: *"" | "1"
+		ChkDepOtherInd3?: "1"
 
 		// check here, If more than four dependents, see instructions
-		chkMoreDepInd: *"" | "1"
+		chkMoreDepInd?: "1"
 
 		// Dependents - Enter First name
 		txtDepFirstName4?: #UPPERCASE
@@ -603,10 +603,10 @@ import "strings"
 			"O" // OTHER
 
 		// Dependents - Check if qualifies for (see instructions): Child tax credit
-		chkDepCTCInd4: *"" | "1"
+		chkDepCTCInd4?: "1"
 
 		// Dependents - Check if Credit for other dependents
-		ChkDepOtherInd4: *"" | "1"
+		ChkDepOtherInd4?: "1"
 
 		// Line 1. If applicable, select code. See instructions for any entry
 		cboOtherWageType?: "DFC" |
@@ -701,7 +701,7 @@ import "strings"
 		txtTaxSsBenefits?: strings.MaxRunes(10)
 
 		// Line 7. Capital gain or (loss). Attach Schedule D if required. If not required, check here
-		chkSchdNotRequiredInd: *"" | "1"
+		chkSchdNotRequiredInd?: "1"
 
 		// Line 7. Capital gain or (loss). Attach Schedule D if required
 		txtCapitalGains?: #AMOUNT | #NEGAMOUNT
@@ -723,13 +723,13 @@ import "strings"
 		txtCharContWithStdDed?: strings.MaxRunes(3)
 
 		// Tax (see instructions). Check if any from Form(s): 8814
-		chkTax8814Ind: *"" | "1"
+		chkTax8814Ind?: "1"
 
 		// Tax (see instructions). Check if any from Form(s): 4972
-		chkTax4972Ind: *"" | "1"
+		chkTax4972Ind?: "1"
 
 		// Tax (see instructions). Check if any from Form(s): Other Form
-		chkTaxOtherInd: *"" | "1"
+		chkTaxOtherInd?: "1"
 
 		// Tax (see instructions). Check if any from Form(s): Tax from Other Forms
 		txtTaxOtherAmt?: #AMOUNT
@@ -789,7 +789,7 @@ import "strings"
 		txtEIC?: strings.MaxRunes(10)
 
 		// 
-		chkEicUnderAge19Ind: *"" | "1"
+		chkEicUnderAge19Ind?: "1"
 
 		// Line 27b. Nontaxable combat pay election
 		txtPriorYrCombatpay?: #AMOUNT
@@ -811,7 +811,7 @@ import "strings"
 		txtF8689TotPayment1040?: strings.MaxRunes(10)
 
 		// Line 35a - Check if Form 8888 is Attached
-		chkForm8888Ind: *"" | "1"
+		chkForm8888Ind?: "1"
 
 		// Line 35b. Routing number
 		txtRoutingNbr?: #NUMERIC

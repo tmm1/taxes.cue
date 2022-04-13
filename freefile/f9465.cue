@@ -14,7 +14,7 @@ import "strings"
 		txtF9465TaxYear?: strings.MaxRunes(4)
 
 		// 1b. If this address is new since you filed your last tax return, check here
-		chkF9465NewAddrInd: *"" | "1"
+		chkF9465NewAddrInd?: "1"
 
 		// Line 2. Name of your business (must no longer be operating)
 		txtF9465BsinessName?: #UPPERCASE
@@ -61,7 +61,7 @@ import "strings"
 		txtF9465RevisedMnthpayAmt?: strings.MaxRunes(10)
 
 		// If you can't increase your payment on line 11b to more than or equal to the amount shown on line 10, check the box. Also, complete and attach Form 433-F, Collection Information Statement. If the amount on line 11a (or 11b, if applicable) is more than or equal to the amount on line 10 and the amount you owe is over $25, 000 but not more than $50, 000, then you don't have to complete Form 433-F. However, if you don't complete Form 433-F, then you must complete either line 13 or 14. ; If the amount on line 9 is greater than $50, 000, complete and attach Form 433-F
-		chkF9465ValidationInd: *"" | "1"
+		chkF9465ValidationInd?: "1"
 
 		// Line 12. Enter the date you want to make your payment each month. Don't enter a date later than the 28th
 		txtF9465MonthPayDate?: #NUMERIC
@@ -76,10 +76,10 @@ import "strings"
 		txtF9465AccountNbr?: strings.MaxRunes(17)
 
 		// c . Low-income taxpayers only. If you're unable to make electronic payments through a debit instrument by providing your banking information on lines 13a and 13b, check this box and your user fee will be reimbursed upon completion of your installment agreement. See instructions
-		chkF9465LowinTaxpyrInd: *"" | "1"
+		chkF9465LowinTaxpyrInd?: "1"
 
 		// 14. Line If you want to make payments by payroll deduction, check this box and attach a completed Form 2159
-		chkF9465PayroldedcAgrmntInd: *"" | "1"
+		chkF9465PayroldedcAgrmntInd?: "1"
 
 		// Line 15. In which county is your primary residence?
 		txtF9465ResiCntrynam?: #UPPERCASE

@@ -157,23 +157,23 @@ import "strings"
 			"0" // Line 28. No. Did the related party resell or dispose of the property (�second disposition�) during this tax year?
 
 		// Line 29. If the answer to question 28 is �Yes, � complete lines 30 through 37 below unless one of the following conditions is met. Check the box that applies. a . The second disposition was more than 2 years after the first disposition (other than dispositions of marketable securities)
-		chkSecDispMore2YrInd: *"" | "1"
+		chkSecDispMore2YrInd?: "1"
 
 		// Line 29. a . If box a is checked, enter the date of disposition (mm/dd/yy)
 		txtSecDispDate?: #DATE
 		txtSecDispDate?: strings.MaxRunes(10)
 
 		// Line 29. b . The first disposition was a sale or exchange of stock to the issuing corporation
-		chkFirDispSalExInd: *"" | "1"
+		chkFirDispSalExInd?: "1"
 
 		// Line 29. c . The second disposition was an involuntary conversion and the threat of conversion occurred after the first disposition
-		chkSecDispInvolInd: *"" | "1"
+		chkSecDispInvolInd?: "1"
 
 		// Line 29. d . The second disposition occurred after the death of the original seller or buyer
-		chkSecDispAftDeathInd: *"" | "1"
+		chkSecDispAftDeathInd?: "1"
 
 		// Line 29. e . It can be established to the satisfaction of the IRS that tax avoidance wasn�t a principal purpose for either of the dispositions. If this box is checked, attach an explanation. See instructions
-		chkSatIrsInd: *"" | "1"
+		chkSatIrsInd?: "1"
 
 		// Line 30. Selling price of property sold by related party (see instructions)
 		txtSellPriceRelParty?: #AMOUNT

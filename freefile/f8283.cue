@@ -6,7 +6,7 @@ import "strings"
 #f8283: {
 	#input: {
 		// Line 1A(b). If donated property is a vehicle (see instructions), check the box
-		chkVehicleInd1: *"" | "1"
+		chkVehicleInd1?: "1"
 
 		// Vehicle identification number
 		// Line 1A(b). enter the vehicle identification number
@@ -104,7 +104,7 @@ import "strings"
 		txtDescripProp1C?: strings.MaxRunes(128)
 
 		// Line 1B(b). If donated property is a vehicle (see instructions), check the box
-		chkVehicleInd2: *"" | "1"
+		chkVehicleInd2?: "1"
 
 		// Vehicle identification number
 		// Line 1B(b). enter the vehicle identification number
@@ -202,7 +202,7 @@ import "strings"
 		txtDescripProp2C?: strings.MaxRunes(128)
 
 		// Line 1C(b). If donated property is a vehicle (see instructions), check the box
-		chkVehicleInd3: *"" | "1"
+		chkVehicleInd3?: "1"
 
 		// Vehicle identification number
 		// Line 1C(b). enter the vehicle identification number
@@ -300,7 +300,7 @@ import "strings"
 		txtDescripProp3C?: strings.MaxRunes(128)
 
 		// Line 1D(b). If donated property is a vehicle (see instructions), check the box
-		chkVehicleInd4: *"" | "1"
+		chkVehicleInd4?: "1"
 
 		// Vehicle identification number
 		// Line 1D(b). enter the vehicle identification number
@@ -398,7 +398,7 @@ import "strings"
 		txtDescripProp4C?: strings.MaxRunes(128)
 
 		// Line 1E(b). If donated property is a vehicle (see instructions), check the box
-		chkVehicleInd5: *"" | "1"
+		chkVehicleInd5?: "1"
 
 		// Vehicle identification number
 		// Line 1E(b). enter the vehicle identification number

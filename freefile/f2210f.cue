@@ -6,10 +6,10 @@ import "strings"
 #f2210f: {
 	#input: {
 		// Part 1. Reasons for Filing. Check applicable boxes. If neither applies, do not file Form 2210-F. Line A. You request a waiver. In certain circumstances, the IRS will waive all or part of the penalty. See Waiver of Penalty in the instructions
-		chkReqWaiverInd: *"" | "1"
+		chkReqWaiverInd?: "1"
 
 		// Line B. You filed or are filing a joint return for either 2019 or 2020, but not for both years, and line 10 below is smaller than line 7 below
-		chkReqAnnPayInd: *"" | "1"
+		chkReqAnnPayInd?: "1"
 
 		// Part 2. Figure Your Underpayment. Line 1. Enter your 2020 tax after credits from Form 1040, 1040-SR, or 1040-NR, line 22; or Form 1041, Schedule G, line 3
 		txtTotTaxAmtFr1040?: #AMOUNT

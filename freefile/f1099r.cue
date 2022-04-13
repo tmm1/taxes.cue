@@ -6,7 +6,7 @@ import "strings"
 #f1099r: {
 	#input: {
 		// Corrected(if checked)
-		chkR1099CorrectedInd: *"" | "1"
+		chkR1099CorrectedInd?: "1"
 
 		// Payer's Name
 		// Payer's Name
@@ -372,10 +372,10 @@ import "strings"
 		txtR1099PayerFrgnZip?: strings.MaxRunes(16)
 
 		// Line 2b. Checkbox. Taxable Amount not determined
-		chkTaxAmtNotDet: *"" | "1"
+		chkTaxAmtNotDet?: "1"
 
 		// Line 2b. Checkbox. Total distribution
-		chkTotDistInd: *"" | "1"
+		chkTotDistInd?: "1"
 
 		// PAYER's TIN(9 digits)
 		txtPayerIn?: #EIN
@@ -545,7 +545,7 @@ import "strings"
 			"W"
 
 		// Line 7. Checkbox. ITA/SEP/SIMPLE
-		chkIraSepSimpInd: *"" | "1"
+		chkIraSepSimpInd?: "1"
 
 		// Line 8. Other
 		txtOtherAmount?: #AMOUNT
@@ -915,7 +915,7 @@ import "strings"
 		txtRothContrib?: strings.MaxRunes(4)
 
 		// Line 12. Checkbox. FATCA filing requirement
-		chkFatcaFilingReqInd: *"" | "1"
+		chkFatcaFilingReqInd?: "1"
 
 		// Line 14. Row 2. State Tax withheld
 		txtStTaxWithheld1?: #AMOUNT

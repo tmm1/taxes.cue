@@ -50,7 +50,7 @@ import "strings"
 		txtF8889UnreimQualMedExpPr?: strings.MaxRunes(10)
 
 		// Line 17a. If any of the distributions included on line 16 meet any of the Exceptions to the Addtional 20% tax (see instructions), check here
-		chkF8889Add10PerTaxIndPr: *"" | "1"
+		chkF8889Add10PerTaxIndPr?: "1"
 
 		// Line 17b. Additional 20% tax (see instructions). Enter 20% (0. 20) of the distributions included on line 16 that  are subject to the additional 20% tax. Also, include this amount in the total on Schedule 2 (Form  1040), Part II, line 17c
 		txtF8889Add10PerTaxPr?: #AMOUNT

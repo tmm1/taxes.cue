@@ -22,7 +22,7 @@ import "strings"
 		txtChildSsn?: strings.MaxRunes(11)
 
 		// Line C. If more than one Form 8814 is attached, check here
-		chk8814More: *"" | "0"
+		chk8814More?: "0"
 
 		// Line 1a. Enter your child's taxable interest. If this amount is different from the amounts shown on the child�s Forms 1099-INT and 1099-OID, see the instructions
 		txtChildTaxable?: #AMOUNT

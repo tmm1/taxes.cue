@@ -6,19 +6,19 @@ import "strings"
 #f982: {
 	#input: {
 		// Line 1a - Discharge of indebtedness in a title 11 case
-		chkIndebtedIntitle11: *"" | "1"
+		chkIndebtedIntitle11?: "1"
 
 		// Line 1b - Discharge of indebtedness to the extent insolvent (not in a title 11 case)
-		chkIndebtedExtentInsolve: *"" | "1"
+		chkIndebtedExtentInsolve?: "1"
 
 		// Lie 1c - Discharge of qualified farm indebtedness
-		chkQualifiedFarmIndebted: *"" | "1"
+		chkQualifiedFarmIndebted?: "1"
 
 		// Line 1d - Discharge of qualified real property business indebtedness
-		chkQualifiedRealProperty: *"" | "1"
+		chkQualifiedRealProperty?: "1"
 
 		// Line 1e - Discharge of qualified principal residence indebtedness (Caution: See instructions before checking this box if debt was discharged after 2017. )
-		chkPrinceresiIndebtInd: *"" | "1"
+		chkPrinceresiIndebtInd?: "1"
 
 		// Line 2 - Total amount of discharged indebtedness excluded from gross income
 		txtTotAmtIndebted?: #AMOUNT

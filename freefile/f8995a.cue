@@ -10,51 +10,51 @@ import "strings"
 		txtQbiBaBusinNameA?: strings.MaxRunes(100)
 
 		// Line 1 A: Check if specified service
-		chkQbiBaSpecServiceIndA: *"" | "1"
+		chkQbiBaSpecServiceIndA?: "1"
 
 		// Line 1 A: Check if aggregation
-		chkQbiBaAggregatedIndA: *"" | "1"
+		chkQbiBaAggregatedIndA?: "1"
 
 		// Line 1 A: Yaxpayer identification number
 		txtQbiBaBusinIdnoA?: #EIN
 		txtQbiBaBusinIdnoA?: strings.MaxRunes(10)
 
 		// Line 1 A: check if patron
-		chkQbiBaPatronIndA: *"" | "1"
+		chkQbiBaPatronIndA?: "1"
 
 		// Line 1 B: Trade, business, or aggregation name
 		txtQbiBaBusinNameB?: #UPPERCASE
 		txtQbiBaBusinNameB?: strings.MaxRunes(100)
 
 		// Line 1 A: Check if specified service
-		chkQbiBaSpecServiceIndB: *"" | "1"
+		chkQbiBaSpecServiceIndB?: "1"
 
 		// Line 1 B: Check if aggregation
-		chkQbiBaAggregatedIndB: *"" | "1"
+		chkQbiBaAggregatedIndB?: "1"
 
 		// Line 1 B: Yaxpayer identification number
 		txtQbiBaBusinIdnoB?: #EIN
 		txtQbiBaBusinIdnoB?: strings.MaxRunes(10)
 
 		// Line 1 B: check if patron
-		chkQbiBaPatronIndB: *"" | "1"
+		chkQbiBaPatronIndB?: "1"
 
 		// Line 1 C: Trade, business, or aggregation name
 		txtQbiBaBusinNameC?: #UPPERCASE
 		txtQbiBaBusinNameC?: strings.MaxRunes(100)
 
 		// Line 1 C: Check if specified service
-		chkQbiBaSpecServiceIndC: *"" | "1"
+		chkQbiBaSpecServiceIndC?: "1"
 
 		// Line 1 C: Check if aggregation
-		chkQbiBaAggregatedIndC: *"" | "1"
+		chkQbiBaAggregatedIndC?: "1"
 
 		// Line 1 C: Yaxpayer identification number
 		txtQbiBaBusinIdnoC?: #EIN
 		txtQbiBaBusinIdnoC?: strings.MaxRunes(10)
 
 		// Line 1 C: check if patron
-		chkQbiBaPatronIndC: *"" | "1"
+		chkQbiBaPatronIndC?: "1"
 
 		// Line 2 A: Qualified business income from the trade, business, or aggregation
 		txtQbiBaBusinIncmLossA?: #AMOUNT

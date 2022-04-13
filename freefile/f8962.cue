@@ -6,10 +6,10 @@ import "strings"
 #f8962: {
 	#input: {
 		// If you received, or were eligible to receive, unemployment compensation for any week in 2021, check the box. See instructions
-		chkF8962UnempCompInd: *"" | "1"
+		chkF8962UnempCompInd?: "1"
 
 		// You cannot take the PTC if your filing status is married filing separately unless you qualify for an exception. See instructions. If you qualify, check the box
-		chkF8962ReliefInd: *"" | "1"
+		chkF8962ReliefInd?: "1"
 
 		// Line 1. Tax family size. Enter your tax family size. See instructions
 		txtF8962Noofexemps?: #NUMERIC

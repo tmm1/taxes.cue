@@ -10,7 +10,7 @@ import "strings"
 		txtF5405DateMainhome?: strings.MaxRunes(10)
 
 		// Line 2. I (or my spouse if married) am, or was, a member of the uniformed services or Foreign Service, or an employee of the intelligence community. I sold the home, or it ceased to be my main home, in connection with U. S . Government orders for qualified official extended duty service. No repayment of the credit is required. See instructions. Stop here. If you meet the conditions, check here
-		chkPart3FrgnInteliCommuInd: *"" | "1"
+		chkPart3FrgnInteliCommuInd?: "1"
 
 		
 		chkF5405PartIHomeInd?: "4" | // Line 3a. I sold (including through foreclosure) the home to a person who isn''t related to me and had a gain on the sale (as figured in Part III below). Go to Part II below

@@ -6,7 +6,7 @@ import "strings"
 #f1040sei: {
 	#input: {
 		// 
-		chkseicseparate: *"" | "1"
+		chkseicseparate?: "1"
 
 		// Child1's First name
 		txtFirstNameChild1?: #UPPERCASE

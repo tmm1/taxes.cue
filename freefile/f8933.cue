@@ -6,16 +6,16 @@ import "strings"
 #f8933: {
 	#input: {
 		// Part 1. Line 1. Captured qualified carbon oxide during the tax year
-		chkF8933CapQualifiedInd: *"" | "1"
+		chkF8933CapQualifiedInd?: "1"
 
 		// Line 2. Physically disposed, used, or utilized captured qualified carbon oxide during the tax year
-		chkF8933PhysiQualifiedInd: *"" | "1"
+		chkF8933PhysiQualifiedInd?: "1"
 
 		// Line 3. Elected to allow another taxpayer to claim the carbon oxide sequestration credit that you would've otherwise been
-		chkF8933ElectAllowInd: *"" | "1"
+		chkF8933ElectAllowInd?: "1"
 
 		// Line 4. Another taxpayer elected to allow you to claim the carbon oxide sequestration credit that they would've otherwise been
-		chkF8933ElectAllowYouInd: *"" | "1"
+		chkF8933ElectAllowYouInd?: "1"
 
 		// Line 1a. Metric tons captured and disposed of
 		txtF8933TonsCaptDispose?: #AMOUNT
@@ -42,10 +42,10 @@ import "strings"
 		txtF8933Sec45qCaptUse?: strings.MaxRunes(10)
 
 		// Line 7. Section 45Q(b)(3) election. Check the box if you are making the election under section 45Q(b)(3)
-		chkF8933Sec45QbEleInd: *"" | "1"
+		chkF8933Sec45QbEleInd?: "1"
 
 		// Line 6. Section 45Q(f)(6) election. Check the box if you are making the election under section 45Q(f)(6)
-		chkF8933Sec45QfEleInd: *"" | "1"
+		chkF8933Sec45QfEleInd?: "1"
 
 		// Line 9 - Carbon oxide sequestration credit for which another taxpayer elected under section 45Q(f)(3)(B) to allow you to claim. See instructions for attaching Model Certificates ELECT, EOR-Owner, DISP-Owner, and UTZ
 		txtF8933Sec45qSequCrtAmt?: #AMOUNT

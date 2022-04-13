@@ -14,16 +14,16 @@ import "strings"
 		txtF8938FdcAcctNo?: strings.MaxRunes(100)
 
 		// Check if, Account opened during tax year
-		chkF8938FdcAccOpenInd: *"" | "1"
+		chkF8938FdcAccOpenInd?: "1"
 
 		// Check if, Account closed during tax year
-		chkF8938FdcAccCloseInd: *"" | "1"
+		chkF8938FdcAccCloseInd?: "1"
 
 		// Check if, Account jointly owned with spouse
-		chkF8938FdcAccJtInd: *"" | "1"
+		chkF8938FdcAccJtInd?: "1"
 
 		// check if, No tax item reported in Part III with respect to this asset
-		chkF8938FdcAccNotaxInd: *"" | "1"
+		chkF8938FdcAccNotaxInd?: "1"
 
 		// Maximum value of account during tax year
 		txtF8938FdcMaxVal?: #AMOUNT
@@ -411,10 +411,10 @@ import "strings"
 		txtF8938OfaDisDate?: strings.MaxRunes(10)
 
 		// Check if asset jointly owned with spouse
-		chkF8938OfaAccJtInd: *"" | "1"
+		chkF8938OfaAccJtInd?: "1"
 
 		// Check if no tax item reported in Part III with respect to this asset
-		chkF8938OfaAccNotaxInd: *"" | "1"
+		chkF8938OfaAccNotaxInd?: "1"
 
 		
 		chkF8938OfaAssetMaxInd?: "0" | // $0�$50, 000 - Maximum value of asset during tax year (check box that applies)

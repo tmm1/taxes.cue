@@ -341,7 +341,7 @@ import "strings"
 		txtSchdhTotCashWgaesFutaB?: strings.MaxRunes(10)
 
 		// (If you paid state unemployment contributions late or you're in a credit reduction state, see instructions and check here)
-		chkCrdtStateCnt: *"" | "1"
+		chkCrdtStateCnt?: "1"
 
 		
 		chkSchdhLine28Ind?: "1" | // Yes - Are you required to file Form 1040?

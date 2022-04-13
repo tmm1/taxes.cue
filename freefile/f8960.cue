@@ -6,13 +6,13 @@ import "strings"
 #f8960: {
 	#input: {
 		// Investment Income - Section 6013(g) election
-		chkF8960Sec6013Ind: *"" | "1"
+		chkF8960Sec6013Ind?: "1"
 
 		// Investment Income - Section 6013(h) election
-		chkF8960Sec6013hInd: *"" | "1"
+		chkF8960Sec6013hInd?: "1"
 
 		// Investment Income - Regulations section 1. 1411-10(g) election
-		chkF8960RefSecInd: *"" | "1"
+		chkF8960RefSecInd?: "1"
 
 		// Line 1. Taxable interest (see instructions)
 		txtF8960TaxInt?: #AMOUNT

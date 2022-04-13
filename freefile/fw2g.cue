@@ -6,7 +6,7 @@ import "strings"
 #fw2g: {
 	#input: {
 		// Corrected (if checked)
-		chkNonStandardW2GInd: *"" | "1"
+		chkNonStandardW2GInd?: "1"
 
 		// Payer's Name
 		// Payer's Name

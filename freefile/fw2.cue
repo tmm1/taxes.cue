@@ -442,13 +442,13 @@ import "strings"
 		txtEmpAddress?: strings.MaxRunes(35)
 
 		// Line 13. Statutory employee
-		chkStatutoryEmp: *"" | "1"
+		chkStatutoryEmp?: "1"
 
 		// Line 13. Retirement plan
-		chkRetirementPlan: *"" | "1"
+		chkRetirementPlan?: "1"
 
 		// Line 13. Third-party sick pay
-		chkThirdPartySickPay: *"" | "1"
+		chkThirdPartySickPay?: "1"
 
 		// line 12b. Code. See instructions for box 12b
 		txtBox12BCode?: #UPPERCASE

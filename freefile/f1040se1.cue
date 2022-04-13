@@ -233,7 +233,7 @@ import "strings"
 		txtScheZipC?: strings.MaxRunes(5)
 
 		// Line 2. Property A. Checked QJV
-		chkScheQJVA: *"" | "1"
+		chkScheQJVA?: "1"
 
 		// Line 1b. Property A. Slect Type of Property
 		cboSchdePropertyTypeA?: "1" | // Single Family Residence
@@ -254,7 +254,7 @@ import "strings"
 		txtSchePersonaldayA?: strings.MaxRunes(3)
 
 		// Property B. Checked QJV
-		chkScheQJVB: *"" | "1"
+		chkScheQJVB?: "1"
 
 		// Line 1b. Property B. Select Type of Property
 		cboSchdePropertyTypeB?: "1" | // Single Family Residence
@@ -275,7 +275,7 @@ import "strings"
 		txtSchePersonaldayB?: strings.MaxRunes(3)
 
 		// Property C. Checked QJV
-		chkScheQJVC: *"" | "1"
+		chkScheQJVC?: "1"
 
 		// LIne 1b. Property C. Select Type of Property
 		cboSchdePropertyTypeC?: "1" | // Single Family Residence

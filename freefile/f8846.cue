@@ -14,7 +14,7 @@ import "strings"
 		txtTipsNotCredit?: strings.MaxRunes(10)
 
 		// Check here, If you had any tipped employees whose wages (including tips) exceeded $142, 800
-		chkWageExceedInd: *"" | "1"
+		chkWageExceedInd?: "1"
 
 		// Line 4. Multiply line 3 by 7. 65% (0. 0765). If you had any tipped employees whose wages (including  atips) exceeded $142, 800 - This field is automatically calculated for you
 		txtMulLin3765?: #AMOUNT

@@ -6,16 +6,16 @@ import "strings"
 #f6781: {
 	#input: {
 		// Checkbox A. Mixed straddle election
-		chkMixdStradElectInd: *"" | "1"
+		chkMixdStradElectInd?: "1"
 
 		// Checkbox C. Mixed straddle account election
-		chkMixdStradAcctElectInd: *"" | "1"
+		chkMixdStradAcctElectInd?: "1"
 
 		// Checkbox B. Straddle-by-straddle identification election
-		chkStradIdentElectInd: *"" | "1"
+		chkStradIdentElectInd?: "1"
 
 		// Checkbox D. Net section 1256 contracts loss election
-		chkNet1256ElectInd: *"" | "1"
+		chkNet1256ElectInd?: "1"
 
 		// Part I. Section 1256 Contracts Marked to Market. Line 1(a). Identification of account
 		txtLn1AccountIdent_1?: #UPPERCASE

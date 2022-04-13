@@ -6,7 +6,7 @@ import "strings"
 #f6765: {
 	#input: {
 		// Check to Skip Sec A
-		chkCurrAltCdt: *"" | "1"
+		chkCurrAltCdt?: "1"
 
 		// Line 1 Certain amounts paid or incurred to energy consortia
 		txtConsortiaAmtPaid?: #AMOUNT

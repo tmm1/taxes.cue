@@ -1092,7 +1092,7 @@ import "strings"
 		txtF1116GrossIncome3?: strings.MaxRunes(10)
 
 		// Check this box if your total compensation from all sources is $250, 000 or more for personal services as an employee, and you used an alternative method to determine its source
-		chkF1116P1IncomeAlt: *"" | "1"
+		chkF1116P1IncomeAlt?: "1"
 
 		// Line 2A. Deductions and losses (Caution: See instructions. ) : Line 2A. Expenses definitely related to the income on line 1a (attach statement)
 		txtF1116ExpenseIn1?: #AMOUNT

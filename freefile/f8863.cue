@@ -18,7 +18,7 @@ import "strings"
 		txtRefAocLline13?: strings.MaxRunes(10)
 
 		// Line 7 Check box. cannot take the refundable credit
-		chkRefAocLine15Ind: *"" | "1"
+		chkRefAocLine15Ind?: "1"
 
 		// Line 13. Enter: $180, 000 if married filing jointly; $90, 000 if single, head of household, or qualifying widow(er)
 		txtStdAmt?: #AMOUNT

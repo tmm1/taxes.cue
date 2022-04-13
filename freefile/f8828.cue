@@ -83,10 +83,10 @@ import "strings"
 		txtF8828Zip?: strings.MaxRunes(5)
 
 		// a . Mortgage loan from the proceeds of a tax exempt bond. - Line 2. Check the box that describes the type of federal subsidy you had on the loan for your home
-		chkF8828TaxexemptInd: *"" | "1"
+		chkF8828TaxexemptInd?: "1"
 
 		// b . Mortgage credit certificate. - Line 2. Check the box that describes the type of federal subsidy you had on the loan for your home
-		chkF8828CreditInd: *"" | "1"
+		chkF8828CreditInd?: "1"
 
 		// Line 3. Name of the bond or certificate issuer. Select State
 		cboF8828IssuerState?: "AA" |

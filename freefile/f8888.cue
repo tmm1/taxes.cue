@@ -66,7 +66,7 @@ import "strings"
 		txtOwnerNameBondReg?: strings.MaxRunes(35)
 
 		// Line 5c. If beneficiary, also check here
-		chkBenefcryInd: *"" | "1"
+		chkBenefcryInd?: "1"
 
 		// Line 5c. If you would like to add a co-owner or beneficiary, enter the name here (First then Last). If beneficiary
 		txtCoOwnerBenefcry?: #UPPERCASE
@@ -81,7 +81,7 @@ import "strings"
 		txtOwnerNameBond1Reg?: strings.MaxRunes(35)
 
 		// Line 6c. If beneficiary, also check here
-		chkCoOwnerBenefcry1: *"" | "1"
+		chkCoOwnerBenefcry1?: "1"
 
 		// Line 6c. If you would like to add a co-owner or beneficiary, enter the name here (First then Last)
 		txtCoOwnerBenefcry1?: #UPPERCASE

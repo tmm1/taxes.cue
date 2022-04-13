@@ -62,7 +62,7 @@ files: [
 						{{$f.name}}?: strings.MaxRunes({{$f.maxlength}})
 						{{- end}}
 						{{- else if and (eq $f.type "check") (eq (len $f.options) 1) -}}
-						{{$f.name}}: *"" | "{{(index $f.options 0).value}}"
+						{{$f.name}}?: "{{(index $f.options 0).value}}"
 						{{- else if or (eq $f.type "combo") (eq $f.type "check") -}}
 						{{- $lastLabel := "" -}}
 						{{- $lastEmpty := false -}}

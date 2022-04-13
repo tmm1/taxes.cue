@@ -18,7 +18,7 @@ import "strings"
 		txtCarePersonSSN1?: strings.MaxRunes(11)
 
 		// 
-		chkCarePerHouseholdEmpInd1: *"" | "1"
+		chkCarePerHouseholdEmpInd1?: "1"
 
 		// Row 1. Line 1(a)Care provider's name  Last name or Business name
 		txtCarePersonLname1?: #UPPERCASE
@@ -114,7 +114,7 @@ import "strings"
 		txtCarePersonSSN2?: strings.MaxRunes(11)
 
 		// 
-		chkCarePerHouseholdEmpInd2: *"" | "1"
+		chkCarePerHouseholdEmpInd2?: "1"
 
 		// Row 2. Line 1(a)Care provider's Last name or Business name
 		txtCarePersonLname2?: #UPPERCASE
@@ -210,7 +210,7 @@ import "strings"
 		txtCarePersonSSN3?: strings.MaxRunes(11)
 
 		// 
-		chkCarePerHouseholdEmpInd3: *"" | "1"
+		chkCarePerHouseholdEmpInd3?: "1"
 
 		// Row 3. Line 1(a)Care provider's Last name or Business name
 		txtCarePersonLname3?: #UPPERCASE
@@ -306,7 +306,7 @@ import "strings"
 		txtCarePersonSSN4?: strings.MaxRunes(11)
 
 		// 
-		chkCarePerHouseholdEmpInd4: *"" | "1"
+		chkCarePerHouseholdEmpInd4?: "1"
 
 		// Row 4. Line 1(a)Care provider's Last name or Business name
 		txtCarePersonLname4?: #UPPERCASE
@@ -402,7 +402,7 @@ import "strings"
 		txtCarePersonSSN5?: strings.MaxRunes(11)
 
 		// 
-		chkCarePerHouseholdEmpInd5: *"" | "1"
+		chkCarePerHouseholdEmpInd5?: "1"
 
 		// Row 5. Line 1(a)Care provider's Last name or Business name
 		txtCarePersonLname5?: #UPPERCASE
@@ -498,7 +498,7 @@ import "strings"
 		txtCarePersonSSN6?: strings.MaxRunes(11)
 
 		// 
-		chkCarePerHouseholdEmpInd6: *"" | "1"
+		chkCarePerHouseholdEmpInd6?: "1"
 
 		// Row 6. Line 1(a)Care provider's Last name or Business name
 		txtCarePersonLname6?: #UPPERCASE

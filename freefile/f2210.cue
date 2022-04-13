@@ -26,19 +26,19 @@ import "strings"
 		txtMaxReqAnulpayLn8?: strings.MaxRunes(10)
 
 		// Part II Line A  You request a waiver (see instructions) of your entire penalty. You must check this box and file page 1 of Form 2210, but you aren't required to figure your penalty
-		chkReqEntireWaiverInd: *"" | "1"
+		chkReqEntireWaiverInd?: "1"
 
 		// Part II Line B You request a waiver (see instructions) of part of your penalty. You must figure your penalty and waiver amount and file Form 2210
-		chkReqPartWaiverInd: *"" | "1"
+		chkReqPartWaiverInd?: "1"
 
 		// Part II Line C Your income varied during the year and your penalty is reduced or eliminated when figured using the annualized income installment method. You must figure the penalty using Schedule Al and file Form 2210
-		chkAnnualIncInsMtdInd: *"" | "1"
+		chkAnnualIncInsMtdInd?: "1"
 
 		// Part II Line D Your penalty is lower when figured by treating the federal income tax withheld from your income as paid on the dates it was  actually withheld, instead of in equal amounts on the payment due dates. You must figure your penalty and file Form 2210
-		chkPenLowFedwithInd: *"" | "1"
+		chkPenLowFedwithInd?: "1"
 
 		// Part II Line E You filed or are filing a joint return for either 2019 or 2020, but not for both years, and line 8 above is smaller than line 5 above. You must file page 1 of Form 2210, but you aren't required to figure your penalty (unless box B, C , or D applies)
-		chkFiledJntRetInd: *"" | "1"
+		chkFiledJntRetInd?: "1"
 
 		// Line 18 (a)  Required installments. If box C in Part II applies, combine the Schedule AI, line 27, columns (a) and(b) amounts and enter the result here in column (a), then enter the Schedule AI, line 27, columns (c) and(d) amounts in the corresponding columns (c) and(d) here. Otherwise, calendar year filers, enter the following percentages of Form 2210, line 9, as follows: 50% (0. 50) in column (a) and 25% (0. 25) in columns (c) and (d) (skip column (b) entirely). For fiscal year filers, see instructions
 		txtReqInstallCola?: #AMOUNT

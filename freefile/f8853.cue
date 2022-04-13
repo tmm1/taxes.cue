@@ -34,7 +34,7 @@ import "strings"
 		txtF8853UnreimQualMedExp?: strings.MaxRunes(10)
 
 		// Line 9a. If any of the distributions included on line 8 meet any of the Exceptions to the Additional 20% Tax, check here
-		chkF8853ExcepAdd15PerTaxInd: *"" | "1"
+		chkF8853ExcepAdd15PerTaxInd?: "1"
 
 		// Line 9b. Additional 20% tax (see instructions). Enter 20% (0. 20) of the distributions included on line 8 that are subject to the additional 20% tax. Also include this amount in the total on Schedule 2 (Form 1040), line 17e
 		txtF8853Additional15PerTax?: #AMOUNT
@@ -49,7 +49,7 @@ import "strings"
 		txtF8853MediUnreimQualMedExp?: strings.MaxRunes(10)
 
 		// Line 13a. If any of the distributions included on line 12 meet any of the Exceptions to the Additional 50% Tax, check here
-		chkF8853ExcepAdd50PerTaxInd: *"" | "1"
+		chkF8853ExcepAdd50PerTaxInd?: "1"
 
 		// Line 13b. Additional 50% tax. Enter 50% (0. 50) of the distributions included on line 12 that are subject to the additional 50% tax. See instructions for the amount to enter if you had a Medicare Advantage MSA  at the end of 2020. Also include this amount in the total on Schedule 2 (Form 1040), line 17f
 		txtF8853Additional50PerTax?: #AMOUNT

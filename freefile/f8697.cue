@@ -6,16 +6,16 @@ import "strings"
 #f8697: {
 	#input: {
 		// 
-		chkCorp: *"" | "1"
+		chkCorp?: "1"
 
 		// 
-		chkSCrop: *"" | "2"
+		chkSCrop?: "2"
 
 		// 
-		chkIndiv: *"" | "3"
+		chkIndiv?: "3"
 
 		// 
-		chkPartnr: *"" | "4"
+		chkPartnr?: "4"
 
 		// Select State
 		cboState?: "AA" |
@@ -79,7 +79,7 @@ import "strings"
 			"WY"
 
 		// 
-		chkEstate: *"" | "5"
+		chkEstate?: "5"
 
 		// Line C. Name of entity
 		txtEntityName?: #UPPERCASE

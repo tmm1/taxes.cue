@@ -21,7 +21,7 @@ import "strings"
 		txtSchrSpouseName?: strings.MaxRunes(25)
 
 		// Due to your continued disabled condition, you were unable to engage in any substantial gainful activity in 2020
-		chkDisableContinueInd: *"" | "1"
+		chkDisableContinueInd?: "1"
 
 		// Line 11. If you checked (in Part 1): Box 6, add $5, 000 to the taxable disability income of the spouse who was under age 65, enter the total; Box 2, 4 , or 9, enter your taxable disability income; Box 5, add your taxable disability income to your spouse's taxable disability income, enter the total
 		txtLine11?: #AMOUNT

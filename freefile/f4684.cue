@@ -6,7 +6,7 @@ import "strings"
 #f4684: {
 	#input: {
 		// If the casualty or theft loss is attributable to a federally declared disaster, check here
-		chkF4684FederallyDisInd: *"" | "1"
+		chkF4684FederallyDisInd?: "1"
 
 		// Enter the  declaration number assigned by FEMA
 		txtF4684FemaDeclNumDR?: #UPPERCASE

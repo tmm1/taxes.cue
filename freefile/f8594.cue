@@ -6,10 +6,10 @@ import "strings"
 #f8594: {
 	#input: {
 		// Check the box that identifies you: Purchaser
-		chkF8594PurchaserInd: *"" | "1"
+		chkF8594PurchaserInd?: "1"
 
 		// Check the box that identifies you: Seller
-		chkF8594SellerInd: *"" | "1"
+		chkF8594SellerInd?: "1"
 
 		// Enter Name of other party to the transaction
 		txtF8594PartyName?: #UPPERCASE

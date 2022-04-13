@@ -54,7 +54,7 @@ import "strings"
 		txtTaxInsurAmt?: strings.MaxRunes(10)
 
 		// Check If election to defer to 2021 is attached
-		chkDeferto04Ind: *"" | "1"
+		chkDeferto04Ind?: "1"
 
 		// Amount deferred from 2020
 		txtAmtDefferFr02?: #AMOUNT

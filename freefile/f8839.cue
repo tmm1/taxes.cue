@@ -18,20 +18,20 @@ import "strings"
 		txtChildBirthyear1?: strings.MaxRunes(4)
 
 		// Line 1(C). Child 1. Check if child was born before 2003 and disabled
-		chkChildDisabledInd1: *"" | "1"
+		chkChildDisabledInd1?: "1"
 
 		// Line 1(d). Child 1. Check if child was a child with special needs
-		chkChildSplneedsInd1: *"" | "1"
+		chkChildSplneedsInd1?: "1"
 
 		// Caution: If the child was a foreign child, see Special rules in the instructions for line 1, column (e). before you complete Part II or Part III. If you received employer-provided adoption benefits, complete Part III on the back next. Line 1(e), Child 1. Check if child was a foreign child
-		chkChildForchildInd1: *"" | "1"
+		chkChildForchildInd1?: "1"
 
 		// Line 1(f). Child 1. Child's identifying number
 		txtChildIdenNo1?: #SSN
 		txtChildIdenNo1?: strings.MaxRunes(11)
 
 		// Line 1(g). Child 1. Check if adoption became final in 2020 or earlier
-		chkAdoptionFinalInd1: *"" | "1"
+		chkAdoptionFinalInd1?: "1"
 
 		// Line 1(a). Child 2. First name
 		txtChildFirstname2?: #UPPERCASE
@@ -46,20 +46,20 @@ import "strings"
 		txtChildBirthyear2?: strings.MaxRunes(4)
 
 		// Line 1(C). Child 2. Check if child was born before 2003 and disabled
-		chkChildDisabledInd2: *"" | "1"
+		chkChildDisabledInd2?: "1"
 
 		// Line 1(d). Child 2. Check if child was a child with special needs
-		chkChildSplneedsInd2: *"" | "1"
+		chkChildSplneedsInd2?: "1"
 
 		// Caution: If the child was a foreign child, see Special rules in the instructions for line 1, column (e). before you complete Part II or Part III. If you received employer-provided adoption benefits, complete Part III on the back next. Line 1(e), Child 2. Check if child was a foreign child
-		chkChildForchildInd2: *"" | "1"
+		chkChildForchildInd2?: "1"
 
 		// Line 1(f). Child 2. Child's identifying number
 		txtChildIdenNo2?: #SSN
 		txtChildIdenNo2?: strings.MaxRunes(11)
 
 		// Line 1(g). Child 2. Check if adoption became final in 2020 or earlier
-		chkAdoptionFinalInd2: *"" | "1"
+		chkAdoptionFinalInd2?: "1"
 
 		// Line 1(a). Child 3. First name
 		txtChildFirstname3?: #UPPERCASE
@@ -74,20 +74,20 @@ import "strings"
 		txtChildBirthyear3?: strings.MaxRunes(4)
 
 		// Line 1(C). Child 3. Check if child was born before 2003 and disabled
-		chkChildDisabledInd3: *"" | "1"
+		chkChildDisabledInd3?: "1"
 
 		// Line 1(d). Child 3. Check if child was a child with special needs
-		chkChildSplneedsInd3: *"" | "1"
+		chkChildSplneedsInd3?: "1"
 
 		// Caution: If the child was a foreign child, see Special rules in the instructions for line 1, column (e). before you complete Part II or Part III. If you received employer-provided adoption benefits, complete Part III on the back next. Line 1(e), Child 3 Check if child was a foreign child
-		chkChildForchildInd3: *"" | "1"
+		chkChildForchildInd3?: "1"
 
 		// Line 1(f). Child 3. Child's identifying number
 		txtChildIdenNo3?: #SSN
 		txtChildIdenNo3?: strings.MaxRunes(11)
 
 		// Line 1(g). Child 3. Check if adoption became final in 2020 or earlier
-		chkAdoptionFinalInd3: *"" | "1"
+		chkAdoptionFinalInd3?: "1"
 
 		
 		chkChildAmtFrPryrInd?: "0" | // No. Enter -0-. Line 3. Did you file Form 8839 for a prior year for the same Child?

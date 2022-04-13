@@ -18,23 +18,23 @@ import "strings"
 		txtPandScorpA?: strings.MaxRunes(1)
 
 		// Line 28A (c) Check if foreign partnership
-		chkSchdeForeignPartA: *"" | "1"
+		chkSchdeForeignPartA?: "1"
 
 		// Line 28A (d) Employer identification number
 		txtSchdeEmpIdNumA?: #EIN
 		txtSchdeEmpIdNumA?: strings.MaxRunes(10)
 
 		// Line 28A (e) Check if basis computation is required
-		chkSchdeBasisCompIndA: *"" | "1"
+		chkSchdeBasisCompIndA?: "1"
 
 		// Line 28A (f) Check if any amount is not at risk
-		chkSchdeAtRiskIndA: *"" | "1"
+		chkSchdeAtRiskIndA?: "1"
 
 		// Line 28B (e) Check if basis computation is required
-		chkSchdeBasisCompIndB: *"" | "1"
+		chkSchdeBasisCompIndB?: "1"
 
 		// Line 28B (f) Check if any amount is not at risk
-		chkSchdeAtRiskIndB: *"" | "1"
+		chkSchdeAtRiskIndB?: "1"
 
 		// Line 28. Name(b)
 		txtSchdePart2NameB?: #UPPERCASE
@@ -45,20 +45,20 @@ import "strings"
 		txtPandScorpB?: strings.MaxRunes(1)
 
 		// Line 28B (c) Check if foreign partnership
-		chkSchdeForeignPartB: *"" | "1"
+		chkSchdeForeignPartB?: "1"
 
 		// Line 28B (d) Employer identification number
 		txtSchdeEmpIdNumB?: #EIN
 		txtSchdeEmpIdNumB?: strings.MaxRunes(10)
 
 		// Line 28C (c) Check if foreign partnership
-		chkSchdeForeignPartC: *"" | "1"
+		chkSchdeForeignPartC?: "1"
 
 		// Line 28C (e) Check if basis computation is required
-		chkSchdeBasisCompIndC: *"" | "1"
+		chkSchdeBasisCompIndC?: "1"
 
 		// Line 28C (f) Check if any amount is not at risk
-		chkSchdeAtRiskIndC: *"" | "1"
+		chkSchdeAtRiskIndC?: "1"
 
 		// Line 28. Name(c)
 		txtSchdePart2NameC?: #UPPERCASE
@@ -73,17 +73,17 @@ import "strings"
 		txtSchdeEmpIdNumC?: strings.MaxRunes(10)
 
 		// Line 28D (c) Check if foreign partnership
-		chkSchdeForeignPartD: *"" | "1"
+		chkSchdeForeignPartD?: "1"
 
 		// Line 28C (d) Employer identification number
 		txtSchdeEmpIdNumD?: #EIN
 		txtSchdeEmpIdNumD?: strings.MaxRunes(10)
 
 		// Line 28D (e) Check if basis computation is required
-		chkSchdeBasisCompIndD: *"" | "1"
+		chkSchdeBasisCompIndD?: "1"
 
 		// Line 28D (f) Check if any amount is not at risk
-		chkSchdeAtRiskIndD: *"" | "1"
+		chkSchdeAtRiskIndD?: "1"
 
 		// Line 28. Name(d)
 		txtSchdePart2NameD?: #UPPERCASE

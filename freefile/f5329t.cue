@@ -6,7 +6,7 @@ import "strings"
 #f5329t: {
 	#input: {
 		// If this is an amended return, check here (Not Supported)
-		chkAmdReturnInd: *"" | "1"
+		chkAmdReturnInd?: "1"
 
 		// Select State - This field is automatically populated for you
 		cboState?: "AA" |

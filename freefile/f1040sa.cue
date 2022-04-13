@@ -10,7 +10,7 @@ import "strings"
 		txtMedDenExp?: strings.MaxRunes(10)
 
 		// Line 5a: State and local income taxes or general sales taxes. You may include either income taxes or general sales taxes on line 5a, but not both. If you elect to include general sales taxes instead of income taxes, check this box
-		chkGenSalesTaxInd: *"" | "1"
+		chkGenSalesTaxInd?: "1"
 
 		// Line 5a: State and local income taxes or general sales taxes. You may include either income taxes or general sales taxes on line 5a, but not both. If you elect to include general sales taxes instead of income taxes
 		txtstLocIncTax?: #AMOUNT
@@ -37,7 +37,7 @@ import "strings"
 		txtItemAmount?: strings.MaxRunes(10)
 
 		// Line 8: Home mortgage interest and points. If you didn�t use all of your home mortgage loan(s) to buy, build, or improve your home, see instructions and check this box
-		chkSchAP936ImproveInd: *"" | "1"
+		chkSchAP936ImproveInd?: "1"
 
 		// Line 8a: Home mortgage interest and points reported to you on Form 1098
 		txtSchALn10Temp?: #AMOUNT
@@ -193,7 +193,7 @@ import "strings"
 		txtItemAmt16b?: strings.MaxRunes(10)
 
 		// Line 18: If you elect to itemize deductions even though they are less than your standard deduction, check this box
-		chkForceItemizeInd: *"" | "1"
+		chkForceItemizeInd?: "1"
 
 		
 	}

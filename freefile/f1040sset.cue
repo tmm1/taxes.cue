@@ -6,7 +6,7 @@ import "strings"
 #f1040sset: {
 	#input: {
 		// If you are a minister, member of a religious order, or Christian Science practitioner and you filed Form 4361, but you had $400 or more of other net earnings from self-employment, check here and continue with Part I
-		chkSchSEChurchEmpIncInd: *"" | "1"
+		chkSchSEChurchEmpIncInd?: "1"
 
 		// Net farm profit or (loss) from Schedule F, line 34, and farm partnerships, Schedule K-1 (Form 1065),
 		txtSchSENetFarmProfit?: #AMOUNT | #NEGAMOUNT

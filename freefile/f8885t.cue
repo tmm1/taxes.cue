@@ -6,40 +6,40 @@ import "strings"
 #f8885t: {
 	#input: {
 		// Part I. Election To Take the Health Coverage Tax Credit. Line 1. Check the box below for the first month in your tax year that you elect to take the Health Coverage Tax Credit (HCTC). All of the following statements must be true as of the first day of that month. You must also check the box for each month after yourelection month that all of the following statements were true as of the first day of that month. Month checkbox: January
-		chkJanuaryInd: *"" | "1"
+		chkJanuaryInd?: "1"
 
 		// Month checkbox: February
-		chkFebruaryInd: *"" | "1"
+		chkFebruaryInd?: "1"
 
 		// Month checkbox: March
-		chkMarchInd: *"" | "1"
+		chkMarchInd?: "1"
 
 		// Month checkbox: April
-		chkAprilInd: *"" | "1"
+		chkAprilInd?: "1"
 
 		// Month checkbox: May
-		chkMayInd: *"" | "1"
+		chkMayInd?: "1"
 
 		// Month checkbox: June
-		chkJuneInd: *"" | "1"
+		chkJuneInd?: "1"
 
 		// Month checkbox: July
-		chkJulyInd: *"" | "1"
+		chkJulyInd?: "1"
 
 		// Month checkbox: August
-		chkAugustInd: *"" | "1"
+		chkAugustInd?: "1"
 
 		// Month checkbox: September
-		chkSeptemberInd: *"" | "1"
+		chkSeptemberInd?: "1"
 
 		// Month checkbox: October
-		chkOctoberInd: *"" | "1"
+		chkOctoberInd?: "1"
 
 		// Month checkbox: November
-		chkNovemberInd: *"" | "1"
+		chkNovemberInd?: "1"
 
 		// Month checkbox: December
-		chkDecemberInd: *"" | "1"
+		chkDecemberInd?: "1"
 
 		// Part II. Health Coverage Tax Credit. Line 2. Enter the total amount paid directly to your health plan for HCTC-qualified health insurance coverage for the months checked on line 1. See instructions. Do not include on line 2 any insurance premiums paid to 'US Treasury-HCTC' or any advance monthly payments made on your behalf as shown on Form 1099-H or any insurance premiums you paid for which you received a reimbursement of the HCTC during the year by filing Form 14095
 		txtAmtHlthInsColb?: #AMOUNT

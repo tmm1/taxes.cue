@@ -10,13 +10,13 @@ import "strings"
 		txtF8862ClaimYear?: strings.MaxRunes(4)
 
 		// Line 2. Check the box(es) that applies to the credit(s) you are claiming and complete the part(s) that matches the box(es) you marked. : Earned Income Credit (Complete Part II)
-		chkEICind: *"" | "1"
+		chkEICind?: "1"
 
 		// Line 2. Check the box(es) that applies to the credit(s) you are claiming and complete the part(s) that matches the box(es) you marked Credit/Credit for Other Dependents (Complete Part III)
-		chkTaxCrdInd: *"" | "1"
+		chkTaxCrdInd?: "1"
 
 		// Line 2. Check the box(es) that applies to the credit(s) you are claiming and complete the part(s) that matches the box(es) you marked: American Opportunity Tax Credit (Complete Part IV)
-		chkAmericanOppInd: *"" | "1"
+		chkAmericanOppInd?: "1"
 
 		
 		chkF8862EicDisallowInd?: "1" | // Line-3. If the only reason your EIC was reduced or disallowed was because you incorrectly reported your earned  income or investment income, check �Yes. � Otherwise, check �No. �
@@ -428,7 +428,7 @@ import "strings"
 		txtF8862UsZipChld1?: strings.MaxRunes(5)
 
 		// If same as shown for Child 1, check this box
-		chkF8862QualChldSameSsn2: *"" | "1"
+		chkF8862QualChldSameSsn2?: "1"
 
 		// Line 21. Child 2 - Number and street
 		txtF8862UsAddressChld2?: #UPPERCASE
@@ -504,7 +504,7 @@ import "strings"
 		txtF8862UsZipChld2?: strings.MaxRunes(5)
 
 		// If same as shown for Child 1, check this box
-		chkF8862QualChldSameSsn3: *"" | "1"
+		chkF8862QualChldSameSsn3?: "1"
 
 		// Line 21. Child 3 - Number and street
 		txtF8862UsAddressChld3?: #UPPERCASE

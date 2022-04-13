@@ -94,7 +94,7 @@ import "strings"
 		txtAmtDefferFr02?: strings.MaxRunes(10)
 
 		// Line 6c. If election to defer to 2022 is attached, check here
-		chkDeferto04Ind: *"" | "1"
+		chkDeferto04Ind?: "1"
 
 		// Line 7. Custom hire (machine work) income
 		txtCustomHireMcInc?: #AMOUNT

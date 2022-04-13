@@ -46,7 +46,7 @@ import "strings"
 		txtPart2Line2Dc?: strings.MaxRunes(9)
 
 		// Line 3. Checkbox. Exception. If any of the diesel fuel included in this claim did contain visible evidence of dye
-		chkF4136EvidenceId3: *"" | "1"
+		chkF4136EvidenceId3?: "1"
 
 		// Line 3a(a) Type of use
 		txtPart3Line3Aa?: #NUMERIC
@@ -77,7 +77,7 @@ import "strings"
 		txtPart3Line3Ec?: strings.MaxRunes(9)
 
 		// Line 4. Checkbox. Exception. If any of the diesel fuel included in this claim did contain visible evidence of dye
-		chkF4136EvidenceId4: *"" | "1"
+		chkF4136EvidenceId4?: "1"
 
 		// Line 4a(a) Type of use
 		txtPart4Line4Aa?: #NUMERIC
@@ -148,7 +148,7 @@ import "strings"
 		txtF4136uvRegNo6?: strings.MaxRunes(50)
 
 		// Line 6. Checkbox. Exception. If any of the diesel fuel included in this claim did contain visible evidence of dye
-		chkF4136EvidenceId6: *"" | "1"
+		chkF4136EvidenceId6?: "1"
 
 		// Line 6A(c) Gallons
 		txtPart6Line6Ac?: #NUMERIC
@@ -163,7 +163,7 @@ import "strings"
 		txtF4136uvRegNo7?: strings.MaxRunes(50)
 
 		// Line 7. Checkbox. Exception. If any of the diesel fuel included in this claim did contain visible evidence of dye
-		chkF4136EvidenceId7: *"" | "1"
+		chkF4136EvidenceId7?: "1"
 
 		// Line 7a(c) Gallons
 		txtPart7Line7Ac?: #NUMERIC

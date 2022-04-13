@@ -654,7 +654,7 @@ import "strings"
 		txtF2555LastYrFiled?: strings.MaxRunes(4)
 
 		// Line 6b: If you didn't previously file Form 2555 or Form 2555-EZ to claim either of the exclusions, check here
-		chkF2555NotFiledAf1981: *"" | "1"
+		chkF2555NotFiledAf1981?: "1"
 
 		
 		chkF2555RevokedExcl?: "1" | // Line 6c: Yes - Have you ever revoked either of the exclusions

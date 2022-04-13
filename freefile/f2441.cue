@@ -6,13 +6,13 @@ import "strings"
 #f2441: {
 	#input: {
 		// You cannot claim a credit for child and dependent care expenses if your filing status is married filing separately unless you meet the requirements listed in the instructions under �Married Persons Filing Separately. � If you meet these requirements, check this box
-		chkFilingRequirement: *"" | "1"
+		chkFilingRequirement?: "1"
 
 		// Line B. For 2021, your credit for child and dependent care expenses is refundable if you, or your spouse if married filing jointly, had a principal place of abode in the United States for more than half of 2021. If you meet these requirements, check this box
-		chkF2441AbodeUSMrHlfInd: *"" | "1"
+		chkF2441AbodeUSMrHlfInd?: "1"
 
 		// This field is automatically calculated for you - If you have more than three care providers, see the instructions and check this box
-		chkMoreCareProvidersInd: *"" | "1"
+		chkMoreCareProvidersInd?: "1"
 
 		// Part 1. Persons or Organizations Who Provided the Care- You must complete this part. (If you have more than two care providers, see the instructions. ) . Line 1(a). Item 1. Care Providers Name
 		txtLn1aProviderFName1?: #UPPERCASE
@@ -27,7 +27,7 @@ import "strings"
 		txtLn1cSSN1?: strings.MaxRunes(11)
 
 		// 
-		chkCarePerHouseholdEmpInd1: *"" | "1"
+		chkCarePerHouseholdEmpInd1?: "1"
 
 		// Line 1(d). Item 1. Amount paid (see instructions)
 		txtLn1dPaidAmt1?: #AMOUNT
@@ -123,7 +123,7 @@ import "strings"
 		txtLn1cSSN2?: strings.MaxRunes(11)
 
 		// 
-		chkCarePerHouseholdEmpInd2: *"" | "1"
+		chkCarePerHouseholdEmpInd2?: "1"
 
 		// Line 1(e). Item 2. Amount paid (see instructions)
 		txtLn1dPaidAmt2?: #AMOUNT
@@ -219,7 +219,7 @@ import "strings"
 		txtLn1cSSN3?: strings.MaxRunes(11)
 
 		// 
-		chkCarePerHouseholdEmpInd3: *"" | "1"
+		chkCarePerHouseholdEmpInd3?: "1"
 
 		// Line 1(d). Item 3. Amount paid (see instructions)
 		txtLn1dPaidAmt3?: #AMOUNT
@@ -303,7 +303,7 @@ import "strings"
 		txtLn1cEIN3?: strings.MaxRunes(10)
 
 		// This field is automatically calculated for you - Information about your qualifying person(s). If you have more than three qualifying persons, see the instructions and check this box
-		chkMoreDepCareExpInd: *"" | "1"
+		chkMoreDepCareExpInd?: "1"
 
 		// Part II. Credit for Child and Dependent Care Expenses. Information about your qualifying person(s). Ln 2(a). Qualifying person's name
 		txtLn2aQualPersonFname1?: #UPPERCASE
@@ -406,10 +406,10 @@ import "strings"
 		txtPart3LimitOn22?: strings.MaxRunes(10)
 
 		// No. Enter Zero. - Line 22. Is any amount on line 12 or 13 from your sole proprietorship or partnership?
-		chkLn22SolePropNoInd: *"" | "0"
+		chkLn22SolePropNoInd?: "0"
 
 		// Yes. Enter the amount here. - Line 22. Is any amount on line 12 or 13 from your sole proprietorship or partnership?
-		chkLn22SolePropYesInd: *"" | "1"
+		chkLn22SolePropYesInd?: "1"
 
 		// Line 22. If Yes. Enter the amount here
 		txtAmtReceiPship?: #AMOUNT

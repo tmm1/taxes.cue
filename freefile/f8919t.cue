@@ -12,7 +12,7 @@ import "strings"
 			"H" // I received a Form W-2 and a Form 1099-MISC and/or 1099-NEC from this firm for 2021. The amount on Form 1099-MISC and/or 1099-NEC should have been included as wages on Form W-2
 
 		// Line 1(e). Check if Form 1099-MISC and/or 1099-NEC was received
-		chkF89191099MiscReceiveInd1: *"" | "1"
+		chkF89191099MiscReceiveInd1?: "1"
 
 		// Line 1(a). Name of firm
 		txtF8919FirmName1?: #UPPERCASE
@@ -37,7 +37,7 @@ import "strings"
 			"H" // I received a Form W-2 and a Form 1099-MISC and/or 1099-NEC from this firm for 2021. The amount on Form 1099-MISC and/or 1099-NEC should have been included as wages on Form W-2
 
 		// Line 2(e). Check if Form 1099-MISC and/or 1099-NEC was received
-		chkF89191099MiscReceiveInd2: *"" | "1"
+		chkF89191099MiscReceiveInd2?: "1"
 
 		// Line 2(a). Name of firm
 		txtF8919FirmName2?: #UPPERCASE
@@ -62,7 +62,7 @@ import "strings"
 			"H" // I received a Form W-2 and a Form 1099-MISC and/or 1099-NEC from this firm for 2021. The amount on Form 1099-MISC and/or 1099-NEC should have been included as wages on Form W-2
 
 		// Line 3(e). Check if Form 1099-MISC and/or 1099-NEC was received
-		chkF89191099MiscReceiveInd3: *"" | "1"
+		chkF89191099MiscReceiveInd3?: "1"
 
 		// Line 3(a). Name of firm
 		txtF8919FirmName3?: #UPPERCASE
@@ -87,7 +87,7 @@ import "strings"
 			"H" // I received a Form W-2 and a Form 1099-MISC and/or 1099-NEC from this firm for 2021. The amount on Form 1099-MISC and/or 1099-NEC should have been included as wages on Form W-2
 
 		// Line 4(e). Check if Form 1099-MISC and/or 1099-NEC was received
-		chkF89191099MiscReceiveInd4: *"" | "1"
+		chkF89191099MiscReceiveInd4?: "1"
 
 		// Line 4(a). Name of firm
 		txtF8919FirmName4?: #UPPERCASE
@@ -112,7 +112,7 @@ import "strings"
 			"H" // I received a Form W-2 and a Form 1099-MISC and/or 1099-NEC from this firm for 2021. The amount on Form 1099-MISC and/or 1099-NEC should have been included as wages on Form W-2
 
 		// Line 5(e). Check if Form 1099-MISC and/or 1099-NEC was received
-		chkF89191099MiscReceiveInd5: *"" | "1"
+		chkF89191099MiscReceiveInd5?: "1"
 
 		// Line 5(a). Name of firm
 		txtF8919FirmName5?: #UPPERCASE

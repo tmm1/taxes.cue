@@ -6,7 +6,7 @@ import "strings"
 #f8082: {
 	#input: {
 		// Part I General Information. Check boxes that apply. Line 1(a). Notice of inconsistent treatment
-		chkNoticeInconsTreatInd: *"" | "1"
+		chkNoticeInconsTreatInd?: "1"
 
 		// Line 3. Employer identification number of pass-through entity
 		txtEinPassThrghEnty?: #EIN
@@ -114,10 +114,10 @@ import "strings"
 		txtF8082ItemDesc1?: strings.MaxRunes(60)
 
 		// Line 8b. CheckBox Inconsistency is in, or AAR is to correct(check boxes that apply). Amount of item
-		chkAmtOfItemInd1: *"" | "1"
+		chkAmtOfItemInd1?: "1"
 
 		// Line 8b. CheckBox Inconsistency is in, or AAR is to correct(check boxes that apply). Treatment of item
-		chkTreatOfItemInd1: *"" | "1"
+		chkTreatOfItemInd1?: "1"
 
 		// Line 8c. Amount as shown on Schedule K-1, Schedule Q, or similar statement, a foreign trust statement, or your return, whichever applies (see instructions)
 		txtOriginalItemAmt1?: #AMOUNT
@@ -132,10 +132,10 @@ import "strings"
 		txtF8082ItemDesc2?: strings.MaxRunes(60)
 
 		// Line 9b. CheckBox Inconsistency is in, or AAR is to correct(check boxes that apply). Amount of item
-		chkAmtOfItemInd2: *"" | "1"
+		chkAmtOfItemInd2?: "1"
 
 		// Line 9b. CheckBox Inconsistency is in, or AAR is to correct(check boxes that apply). Treatment of item
-		chkTreatOfItemInd2: *"" | "1"
+		chkTreatOfItemInd2?: "1"
 
 		// Line 9c. Amount as shown on Schedule K-1, Schedule Q, or similar statement, a foreign trust statement, or your return, whichever applies (see instructions)
 		txtOriginalItemAmt2?: #AMOUNT
@@ -150,10 +150,10 @@ import "strings"
 		txtF8082ItemDesc3?: strings.MaxRunes(60)
 
 		// Line 10b. CheckBox Inconsistency is in, or AAR is to correct(check boxes that apply). Amount of item
-		chkAmtOfItemInd3: *"" | "1"
+		chkAmtOfItemInd3?: "1"
 
 		// Line 10b. CheckBox Inconsistency is in, or AAR is to correct(check boxes that apply). Treatment of item
-		chkTreatOfItemInd3: *"" | "1"
+		chkTreatOfItemInd3?: "1"
 
 		// Line 10c. Amount as shown on Schedule K-1, Schedule Q, or similar statement, a foreign trust statement, or your return, whichever applies (see instructions)
 		txtOriginalItemAmt3?: #AMOUNT
@@ -168,10 +168,10 @@ import "strings"
 		txtF8082ItemDesc4?: strings.MaxRunes(60)
 
 		// Line 11b. CheckBox Inconsistency is in, or AAR is to correct(check boxes that apply). Amount of item
-		chkAmtOfItemInd4: *"" | "1"
+		chkAmtOfItemInd4?: "1"
 
 		// Line 11b. CheckBox Inconsistency is in, or AAR is to correct(check boxes that apply). Treatment of item
-		chkTreatOfItemInd4: *"" | "1"
+		chkTreatOfItemInd4?: "1"
 
 		// Line 11c. Amount as shown on Schedule K-1, Schedule Q, or similar statement, a foreign trust statement, or your return, whichever applies (see instructions)
 		txtOriginalItemAmt4?: #AMOUNT

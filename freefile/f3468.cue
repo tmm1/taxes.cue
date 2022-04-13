@@ -119,7 +119,7 @@ import "strings"
 		txtUnuseCooperCdtBef?: strings.MaxRunes(10)
 
 		// Line 11a. Check this box if you have Rehabilitation Credit
-		chkExpenIntoAcntInd: *"" | "1"
+		chkExpenIntoAcntInd?: "1"
 
 		// Line 11b. Enter the dates on which the 24- or 60-month measuring period begins
 		txtMeasurBeginDt?: #DATE
