@@ -63,7 +63,7 @@ $ cat mine2021.freefile # freefilebot data
 ### status
 
 this project started as an experiment to learn cuelang, but has quickly grown to more than a simple prototype.
-cue has proven to be a powerful tool for this use case, and is surprisingly mature. as a result development is
+cue has proven to be a powerful tool for this use-case, and is surprisingly mature. as a result development is
 progressing quickly and `taxes.cue` already has several useful pieces.
 however, do note that many basic tax calculations are not implemented yet. as such, this project is more akin to a "json spreadsheet", optimized for someone who knows their way around the tax filing ecosystem. if you need something like turbotax which will do your taxes today, check out https://ustaxes.org
 
