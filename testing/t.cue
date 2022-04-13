@@ -19,12 +19,12 @@ package testing
 			} | {
 				invoke:     _
 				out:        _
-				result:     (subject & {in: invoke}).out
+				res:        (subject & {in: invoke}).out
 				transform?: _
 				pass:       (out & _res) != _|_
 				_res:       [
-						if transform != _|_ {(transform & {in: result}).out},
-						result,
+						if transform != _|_ {(transform & {in: res}).out},
+						res,
 				][0]
 			}
 		}
@@ -34,9 +34,11 @@ package testing
 		test:  string | *""
 	}
 	results: {
-		for name, suite in test if focus.suite == "" || focus.suite == name {
+		for name, suite in test
+		if focus.suite == "" || focus.suite == name {
 			let asserts = {
-				for tname, x in suite if tname != "subject" && tname !~ "^_" && (focus.test == "" || focus.test == tname) {
+				for tname, x in suite
+				if tname != "subject" && tname !~ "^_" && (focus.test == "" || focus.test == tname) {
 					(tname): x.assert.pass == true
 				}
 			}
