@@ -10,6 +10,29 @@ if (chrome.runtime.getURL) {
   ;(document.head || document.documentElement).appendChild(s)
 }
 
+function populateFormData(data) {
+  let formDoc = document.querySelector('#iFrameFilingForm').contentDocument
+  let form = formDoc.querySelector('form')
+  let formId = form.id
+  let formData = data[formId]
+  if (!formData) {
+    return
+  }
+
+  for (let k in formData) {
+    let v = formData[k]
+    let e = form.elements[k]
+    if (Object.prototype.toString.call(e) == '[object RadioNodeList]') {
+      form.querySelector(`input[name=${k}][value=${v}]`).click()
+    } else if (e.type == 'checkbox') {
+      e.checked = e.value == v
+    } else {
+      e.value = v
+      if (e.onblur) e.onblur()
+    }
+  }
+}
+
 function extractFormSchema() {
   let formDoc = document.querySelector('#iFrameFilingForm').contentDocument
   let formId = formDoc.querySelector('form').id
