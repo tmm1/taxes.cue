@@ -1,19 +1,169 @@
-{
-  "f1040": {
-    "txtFirstName": "Sam",
-    "txtLastName": "Gardenia",
-    "chkFilingStatus": "joint",
-    "txtSpFirstName": "Gloria",
-    "txtSpLastName": "Jones",
-    "txtAddress1": "123 Blackberry Street",
-    "txtCity": "New York",
-    "cboState": "NY",
-    "chkSpBlind": "1",
-    "txtDepFirstName1": "Timothy",
-    "txtDepLastName1": "Gardenia",
-    "txtSSN": "400-00-1038",
-    "txtSpSSN": "400-00-1071",
-    "txtZip": "10011",
-    "txtDepSSN1": "400-00-1070"
-  }
+// Form 1040 - U.S. Individual Income Tax Return
+f1040: {
+	// If Primary is deceased, select the option
+	cboDeceasedPr: ""
+
+	// Enter Your First Name
+	txtFirstName: "Sam"
+
+	// Enter Your Last Name
+	txtLastName: "Gardenia"
+
+	// Enter Your Social Security Number
+	txtSSN:          "400-00-1038"
+	chkFilingStatus: "joint"
+
+	// If Spouse is deceased, select the option
+	cboDeceasedSp: ""
+
+	// If Joint Return, Enter Your Spouse First Name
+	txtSpFirstName: "Gloria"
+
+	// If Joint Return, Enter Your Spouse Last Name
+	txtSpLastName: "Jones"
+
+	// If Joint Return, Enter Your Spouse Social Security Number
+	txtSpSSN: "400-00-1071"
+
+	// Enter home address (number and street). If you have a P. O . box, see instructions
+	txtAddress1: "123 Blackberry Street"
+
+	// Enter City, town, or post office. If you have a foreign address, also complete spaces below
+	txtCity: "New York"
+
+	// Select State
+	cboState: "NY"
+
+	// Enter ZIP code
+	txtZip: "10011"
+
+	// You - Presidential Election Campaign. Check here if you, or your spouse if filing jointly, want $3 to go to this fund. Checking a box below will not change your tax or refund
+	chkPresFundInd: ""
+
+	// Spouse - Presidential Election Campaign. Check here if you, or your spouse if filing jointly, want $3 to go to this fund. Checking a box below will not change your tax or refund
+	chkSpPresFundInd: ""
+
+	// Select foreign country name
+	cboForeignCountryCode: ""
+	rdoVirtCurrency:       ""
+
+	// Standard Deduction. Someone can claim: You as a dependent
+	chkExemptInd: ""
+
+	// Standard Deduction. Someone can claim: Your Spouse as a dependent
+	chkSpExemptInd: ""
+
+	// Standard Deduction - Spouse itemizes on a separate return or you were a dual-status alien
+	chkSpItemizeDed: ""
+
+	// Age/Blindness - You were born before January 2, 1957
+	chkAgeO65: ""
+
+	// Age/Blindness -  You are blind
+	chkBlind: ""
+
+	// Age/Blindness - Your Spouse was born before January 2, 1957
+	chkSpAgeO65: ""
+
+	// Age/Blindness - Your Spouse is blind
+	chkSpBlind: "1"
+
+	// Dependents - Enter First name
+	txtDepFirstName1: "Timothy"
+
+	// Dependents - Enter Last name
+	txtDepLastName1: "Gardenia"
+
+	// Dependents - Enter Social security number
+	txtDepSSN1: "400-00-1070"
+
+	// Dependents - Select Relationship to you
+	cboDepRelation1: ""
+
+	// Dependents - Check if qualifies for (see instructions): Child tax credit
+	chkDepCTCInd1: ""
+
+	// Dependents - Check if Credit for other dependents
+	ChkDepOtherInd1: ""
+
+	// Dependents - Select Relationship to you
+	cboDepRelation2: ""
+
+	// Dependents - Check if qualifies for (see instructions): Child tax credit
+	chkDepCTCInd2: ""
+
+	// Dependents - Check if Credit for other dependents
+	ChkDepOtherInd2: ""
+
+	// Dependents - Select Relationship to you
+	cboDepRelation3: ""
+
+	// Dependents - Check if qualifies for (see instructions): Child tax credit
+	chkDepCTCInd3: ""
+
+	// Dependents - Check if Credit for other dependents
+	ChkDepOtherInd3: ""
+
+	// check here, If more than four dependents, see instructions
+	chkMoreDepInd: ""
+
+	// Dependents - Select Relationship to you
+	cboDepRelation4: ""
+
+	// Dependents - Check if qualifies for (see instructions): Child tax credit
+	chkDepCTCInd4: ""
+
+	// Dependents - Check if Credit for other dependents
+	ChkDepOtherInd4: ""
+
+	// Line 1. If applicable, select code. See instructions for any entry
+	cboOtherWageType: ""
+
+	// Line 3a. If applicable, select code from the picklist. See instructions for entry
+	cboF8814QualDiv1040: ""
+
+	// Line 3b. If applicable, select code from the picklist. See instructions for entry
+	cboF8814OrdDiv1040: ""
+
+	// Line 4b. If applicable, select the IRA code from the picklist. (See instructions)
+	cboIRAType: ""
+
+	// Line 5b. If applicable, select the Pensions and Annuities code from picklist. (See instructions)
+	cboPenAnnType: ""
+
+	// Line 6b. If applicable, select a code from the picklist. See instructions for entry
+	cboSSAType: ""
+
+	// Line 7. Capital gain or (loss). Attach Schedule D if required. If not required, check here
+	chkSchdNotRequiredInd: ""
+
+	// Line 7. If applicable, select code from the picklist. See instructions for entry
+	cboF8814CapGain1040: ""
+
+	// Tax (see instructions). Check if any from Form(s): 8814
+	chkTax8814Ind: ""
+
+	// Tax (see instructions). Check if any from Form(s): 4972
+	chkTax4972Ind: ""
+
+	// Tax (see instructions). Check if any from Form(s): Other Form
+	chkTaxOtherInd:       ""
+	cboF1040OtherTaxCode: ""
+
+	// 2021 estimated tax payments and amount applied from 2020 return - Divorced Literal Code
+	cboPryrEstpayDivCode: ""
+
+	// Line 27: select an option if applicable. (see instructions)
+	cboEicEligLiteralCode: ""
+
+	// 
+	chkEicUnderAge19Ind: ""
+
+	// Line 33. Payment Type
+	cboF8689TotPayment1040: ""
+
+	// Line 35a - Check if Form 8888 is Attached
+	chkForm8888Ind: ""
+	chkAccountType: ""
+	chkDiscussInd:  ""
 }

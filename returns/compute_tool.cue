@@ -18,16 +18,23 @@ command: "compute": {
 		asjson: json.Unmarshal(contents)
 	}
 
-	return: load.asjson & taxes.#Return
+	returnData: taxes.#ReturnData
+	returnData: load.asjson
 
-	freefile: (taxes.#convert.Return & {in: return}).out
+	return: (taxes.#computeF1040 & {in: returnData}).out
+	freefile: (taxes.#convert.Return & {in: returnData}).out
 
 	_debug: cli.Print & {
 		text: json.Marshal(freefile)
 	}
 
-	write: file.Create & {
-		filename: strings.TrimSuffix(name, ".json")+".freefile"
+	writetxt: file.Create & {
+		filename: strings.TrimSuffix(name, ".taxdata.json")+".txt"
+		contents: json.Indent(json.Marshal(return), "", "  ")
+	}
+
+	writeff: file.Create & {
+		filename: strings.TrimSuffix(name, ".taxdata.json")+".freefile.json"
 		contents: json.Indent(json.Marshal(freefile), "", "  ")
 	}
 }
