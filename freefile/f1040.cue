@@ -29,7 +29,8 @@ import "strings"
 		txtincareofName?: strings.MaxRunes(35)
 
 		
-		chkFilingStatus: "single" | // Filing status. Check onlyone box - Single
+		chkFilingStatus: *"" |
+			"single" | // Filing status. Check onlyone box - Single
 			"joint" | // Filing status. Check onlyone box - Married Filing Jointly
 			"separate" | // Filing status. Check onlyone box - Married Filing Separate
 			"hoh" | // Filing status. Check onlyone box - Head of Household
@@ -433,7 +434,8 @@ import "strings"
 		txtForeignZip?: strings.MaxRunes(10)
 
 		
-		rdoVirtCurrency: "1" | // Yes - At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
+		rdoVirtCurrency: *"" |
+			"1" | // Yes - At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
 			"0" // No -At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency?
 
 		// Standard Deduction. Someone can claim: You as a dependent
@@ -837,7 +839,8 @@ import "strings"
 		txtRoutingNbr?: strings.MaxRunes(9)
 
 		
-		chkAccountType: "C" | // Line 35c. Account Type - Checking
+		chkAccountType: *"" |
+			"C" | // Line 35c. Account Type - Checking
 			"S" // Line 35c. Account Type - Savings
 
 		// Line 35d. Account Number
@@ -849,7 +852,8 @@ import "strings"
 		txtNstyresttax?: strings.MaxRunes(10)
 
 		
-		chkDiscussInd: "1" | // Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - Yes
+		chkDiscussInd: *"" |
+			"1" | // Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - Yes
 			"0" // Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - No
 
 		// Third Party Designee - Do you want to allow another person to discuss this return with the IRS? See instructions - Name

@@ -6,7 +6,8 @@ import "strings"
 #f2439: {
 	#input: {
 		
-		chkVoid_Correct_Dup: "1" | // VOID - Checkbox
+		chkVoid_Correct_Dup: *"" |
+			"1" | // VOID - Checkbox
 			"2" // CORRECTED - Checkbox
 
 		// Name of RIC or REIT

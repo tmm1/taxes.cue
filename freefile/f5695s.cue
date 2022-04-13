@@ -26,7 +26,8 @@ import "strings"
 		txtF5695QualBiomassCost?: strings.MaxRunes(10)
 
 		
-		chkCellPropInd: "1" | // Yes - Line 7a. Was qualified fuel cell property installed on, or in connection with, your main home located in the United States?
+		chkCellPropInd: *"" |
+			"1" | // Yes - Line 7a. Was qualified fuel cell property installed on, or in connection with, your main home located in the United States?
 			"0" // No - Line 7a. Was qualified fuel cell property installed on, or in connection with, your main home located in the United States?
 
 		// Line 7b. Print the complete address of the main home where you installed the fuel cell property. Number and street
@@ -124,7 +125,8 @@ import "strings"
 		txtF5695P2SubFrmTot?: strings.MaxRunes(10)
 
 		
-		chkF5695HomeLocInd: "1" | // Yes - Line 17a Were the qualified energy efficiency improvements or residential energy property costs for your main home located in the United States? (see instructions)
+		chkF5695HomeLocInd: *"" |
+			"1" | // Yes - Line 17a Were the qualified energy efficiency improvements or residential energy property costs for your main home located in the United States? (see instructions)
 			"0" // No - Line 17a Were the qualified energy efficiency improvements or residential energy property costs for your main home located in the United States? (see instructions)
 
 		// Line 17b. Print the complete address of the main home where you made the qualifying improvements. Number and street
@@ -206,7 +208,8 @@ import "strings"
 		txtZip?: strings.MaxRunes(5)
 
 		
-		chkImporveInd: "1" | // Yes - Line 17c. Were any of these improvements related to the construction of this main home?
+		chkImporveInd: *"" |
+			"1" | // Yes - Line 17c. Were any of these improvements related to the construction of this main home?
 			"0" // No - Line 17c. Were any of these improvements related to the construction of this main home?
 
 		// Line 18. Lifetime limitation. Enter the amount from the Lifetime Limitation Worksheet (see instructions)

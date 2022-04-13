@@ -47,7 +47,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		chkChildTaxCredIndR1: "1" | // Check if dependent qualifies for: Child tax credit
+		chkChildTaxCredIndR1: *"" |
+			"1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
@@ -96,7 +97,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		chkChildTaxCredIndR2: "1" | // Check if dependent qualifies for: Child tax credit
+		chkChildTaxCredIndR2: *"" |
+			"1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
@@ -145,7 +147,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		chkChildTaxCredIndR3: "1" | // Check if dependent qualifies for: Child tax credit
+		chkChildTaxCredIndR3: *"" |
+			"1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
@@ -194,7 +197,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		chkChildTaxCredIndR4: "1" | // Check if dependent qualifies for: Child tax credit
+		chkChildTaxCredIndR4: *"" |
+			"1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
@@ -243,7 +247,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		chkChildTaxCredIndR5: "1" | // Check if dependent qualifies for: Child tax credit
+		chkChildTaxCredIndR5: *"" |
+			"1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Enter dependent IP PINDependents - Enter IP PIN
@@ -292,7 +297,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		chkChildTaxCredIndR6: "1" | // Check if dependent qualifies for: Child tax credit
+		chkChildTaxCredIndR6: *"" |
+			"1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
@@ -341,7 +347,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		chkChildTaxCredIndR7: "1" | // Check if dependent qualifies for: Child tax credit
+		chkChildTaxCredIndR7: *"" |
+			"1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
@@ -390,7 +397,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		chkChildTaxCredIndR8: "1" | // Check if dependent qualifies for: Child tax credit
+		chkChildTaxCredIndR8: *"" |
+			"1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
@@ -439,7 +447,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		chkChildTaxCredIndR9: "1" | // Check if dependent qualifies for: Child tax credit
+		chkChildTaxCredIndR9: *"" |
+			"1" | // Check if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN
@@ -488,7 +497,8 @@ import "strings"
 			"O" // OTHER
 
 		
-		chkChildTaxCredIndR10: "1" | // Check if depCheck if dependent qualifies for: Child tax credit
+		chkChildTaxCredIndR10: *"" |
+			"1" | // Check if depCheck if dependent qualifies for: Child tax credit
 			"0" // Check if dependent qualifies for: Credit for other dependents
 
 		// Dependents - Enter IP PIN

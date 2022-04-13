@@ -6,7 +6,8 @@ import "strings"
 #f8949st: {
 	#input: {
 		
-		chkF1099BInd: "0" | // (A) Short-term transactions reported on Form(s) 1099-B showing basis was reported to the IRS
+		chkF1099BInd: *"" |
+			"0" | // (A) Short-term transactions reported on Form(s) 1099-B showing basis was reported to the IRS
 			"1" | // (B) Short-term transactions reported on Form(s) 1099-B showing basis wasn't reported to the IRS
 			"2" // (C) Short-term transactions not reported to you on Form 1099-B
 

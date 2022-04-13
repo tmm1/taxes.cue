@@ -14,7 +14,8 @@ import "strings"
 		txtRoutingNbrAcc1?: strings.MaxRunes(9)
 
 		
-		chkAccTypeAcc1: "0" | // Line 1c. Checking
+		chkAccTypeAcc1: *"" |
+			"0" | // Line 1c. Checking
 			"1" // Line 1c. Savings
 
 		// Line 1d. Account number
@@ -30,7 +31,8 @@ import "strings"
 		txtRoutingNbrAcc2?: strings.MaxRunes(9)
 
 		
-		chkAccTypeAcc2: "0" | // Line 2c. Checking
+		chkAccTypeAcc2: *"" |
+			"0" | // Line 2c. Checking
 			"1" // Line 2c. Savings
 
 		// Line 2d. Account number
@@ -46,7 +48,8 @@ import "strings"
 		txtRoutingNbrAcc3?: strings.MaxRunes(9)
 
 		
-		chkAccTypeAcc3: "0" | // Line 3c. Checking
+		chkAccTypeAcc3: *"" |
+			"0" | // Line 3c. Checking
 			"1" // Line 3c. Savings
 
 		// Line 3d. Account number

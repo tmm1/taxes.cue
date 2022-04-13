@@ -14,7 +14,8 @@ import "strings"
 		txtProprietorSSN?: strings.MaxRunes(11)
 
 		
-		chkAccountingMtd: "Cash" | // Cash. - Line C. Accounting method
+		chkAccountingMtd: *"" |
+			"Cash" | // Cash. - Line C. Accounting method
 			"Accrual" // Accrual. - Line C. Accounting method
 
 		// Line A. Principal crop or activity
@@ -30,15 +31,18 @@ import "strings"
 		txtEmployerIdNo?: strings.MaxRunes(10)
 
 		
-		chkMaterialPartInd: "1" | // Yes. Line E. Did you 'materially participate' in the operation of this business during 2021? If 'No', see instructions for limit on passive losses
+		chkMaterialPartInd: *"" |
+			"1" | // Yes. Line E. Did you 'materially participate' in the operation of this business during 2021? If 'No', see instructions for limit on passive losses
 			"0" // No. Line E. Did you 'materially participate' in the operation of this business during 2021? If 'No', see instructions for limit on passive losses
 
 		
-		chkMakePayInd: "1" | // Yes. Line F. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions
+		chkMakePayInd: *"" |
+			"1" | // Yes. Line F. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions
 			"0" // No. Line F. Did you make any payments in 2021 that would require you to file Form(s) 1099? See instructions
 
 		
-		chkFileReqInd: "1" | // Yes. Line G. If 'Yes', did you or will you file required Form(s) 1099?
+		chkFileReqInd: *"" |
+			"1" | // Yes. Line G. If 'Yes', did you or will you file required Form(s) 1099?
 			"0" // No. Line G. If 'Yes', did you or will you file required Form(s) 1099?
 
 		// Line 1a. Sales of livestock and other resale items (see instructions)
@@ -253,7 +257,8 @@ import "strings"
 			"PAL"
 
 		
-		chkInvestRisk: "1" | // Line 36a. All investment is at risk. Check the box that describes your investment in this activity and see instructions for where to report your loss:
+		chkInvestRisk: *"" |
+			"1" | // Line 36a. All investment is at risk. Check the box that describes your investment in this activity and see instructions for where to report your loss:
 			"0" // Line 36b. Some investment is not at risk. Check the box that describes your investment in this activity and see instructions for where to report your loss:
 
 		// Line 37. Sales of livestock, produce, grains, and other products

@@ -6,7 +6,8 @@ package freefile
 #f9000t: {
 	#input: {
 		
-		chkF9000AlternativeMedCd: "00" | // 00 Standard Print (Cancels prior election)
+		chkF9000AlternativeMedCd: *"" |
+			"00" | // 00 Standard Print (Cancels prior election)
 			"01" | // 01 Large Print
 			"02" | // 02 Braille
 			"03" | // 03 Audio (MP3)

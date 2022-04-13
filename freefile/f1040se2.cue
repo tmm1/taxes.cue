@@ -6,7 +6,8 @@ import "strings"
 #f1040se2: {
 	#input: {
 		
-		chkSchdePg2Ind: "1" |
+		chkSchdePg2Ind: *"" |
+			"1" |
 			"0"
 
 		// Line 28. Name(a)
