@@ -1,4 +1,4 @@
-default: fromjson tocue consts
+default: fromjson tocue
 
 fromjson:
 	cue import -p data --with-context -l 'schemas:' -l 'path.Base(strings.TrimSuffix(filename,".json"))' -f json/*.json
@@ -8,7 +8,3 @@ fromjson:
 
 tocue:
 	cue cmd gen
-
-consts:
-	printf "package taxes\n\n#states: " > ../../states.cue
-	cue eval ../ -e '#f1040.#input.cboState & !=""' >> ../../states.cue
