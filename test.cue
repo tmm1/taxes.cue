@@ -73,8 +73,8 @@ import (
 		}
 	}
 
-	test: "#convert.Return": {
-		subject: taxes.#convert.Return
+	test: "#convert.ReturnData": {
+		subject: taxes.#convert.ReturnData
 		"0": assert: {
 			invoke: {
 				taxYear:      "2021"

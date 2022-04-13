@@ -11,7 +11,7 @@ import (
 	out: _
 }
 
-#convert: Return: {
+#convert: ReturnData: {
 	in: #ReturnData
 	//out: freefile.#Return
 	out: (#convert.taxPayer & {"in":     in.taxPayer}).out
