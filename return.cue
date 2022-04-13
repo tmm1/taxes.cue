@@ -86,10 +86,11 @@ import (
 	in:        #ReturnData
 	data:      in
 	_computed: (#summarizeReturn & {"in": data}).out
+	income:    _computed.income
 	out:       #Form1040
 	out: {
 		for field in ["wages", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld"] {
-			let n = _computed.income[field]
+			let n = income[field]
 			if n != 0 {
 				(field): n
 			}
@@ -97,7 +98,7 @@ import (
 
 		if _computed.schedulesRequired.B {
 			scheduleB: #Form1040.#ScheduleB & {
-				if _computed.income.interest > 0 {
+				if income.interest > 0 {
 					partI: {
 						list: [
 							for d in data.form1099INTs {
@@ -107,10 +108,10 @@ import (
 								[k.name, k.interestIncome]
 							},
 						]
-						total: _computed.income.interest
+						total: income.interest
 					}
 				}
-				if _computed.income.ordinaryDividends > 0 {
+				if income.ordinaryDividends > 0 {
 					partII: {
 						list: [
 							for d in data.form1099DIVs {
@@ -120,7 +121,7 @@ import (
 								[k.name, k.ordinaryDividends]
 							},
 						]
-						total: _computed.income.ordinaryDividends
+						total: income.ordinaryDividends
 					}
 				}
 			}
@@ -128,16 +129,16 @@ import (
 
 		if _computed.schedulesRequired.D {
 			scheduleD: #Form1040.#ScheduleD & {
-				if _computed.income.shortTermGains > 0 {
+				if income.shortTermGains > 0 {
 					partI: {
-						let shortTermGains = _computed.income.shortTermProceeds - _computed.income.shortTermCostBasis
+						let shortTermGains = income.shortTermProceeds - income.shortTermCostBasis
 						if shortTermGains != 0 {
-							shortTermReportedProceeds: _computed.income.shortTermProceeds
-							shortTermReportedBasis:    _computed.income.shortTermCostBasis
+							shortTermReportedProceeds: income.shortTermProceeds
+							shortTermReportedBasis:    income.shortTermCostBasis
 							shortTermReportedGain:     shortTermGains
 						}
 
-						let txByCode = _computed.income.form1099BTransactionsByCode
+						let txByCode = income.form1099BTransactionsByCode
 						for _, c in ["A", "B", "C"] {
 							let bucket = txByCode[c]
 							let proceeds = bucket.proceeds
@@ -152,22 +153,22 @@ import (
 							}
 						}
 
-						let shortTermK1 = _computed.income.shortTermGainsFromK1s
+						let shortTermK1 = income.shortTermGainsFromK1s
 						if shortTermK1 != 0 {
 							shortTermFromK1: shortTermK1
 						}
 					}
 				}
-				if _computed.income.longTermGains > 0 {
+				if income.longTermGains > 0 {
 					partII: {
-						let longTermGains = _computed.income.longTermProceeds - _computed.income.longTermCostBasis
+						let longTermGains = income.longTermProceeds - income.longTermCostBasis
 						if longTermGains != 0 {
-							longTermReportedProceeds: _computed.income.longTermProceeds
-							longTermReportedBasis:    _computed.income.longTermCostBasis
+							longTermReportedProceeds: income.longTermProceeds
+							longTermReportedBasis:    income.longTermCostBasis
 							longTermReportedGain:     longTermGains
 						}
 
-						let txByCode = _computed.income.form1099BTransactionsByCode
+						let txByCode = income.form1099BTransactionsByCode
 						for _, c in ["D", "E", "F"] {
 							let bucket = txByCode[c]
 							let proceeds = bucket.proceeds
@@ -182,7 +183,7 @@ import (
 							}
 						}
 
-						let longTermK1 = _computed.income.longTermGainsFromK1s
+						let longTermK1 = income.longTermGainsFromK1s
 						if longTermK1 != 0 {
 							longTermFromK1: longTermK1
 						}
