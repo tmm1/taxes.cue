@@ -7,7 +7,9 @@ f1040: {
 	txtLastName: "doe"
 
 	// Enter Your Social Security Number
-	txtSSN:          "123-12-1234"
+	txtSSN: "123-12-1234"
+
+	// chkFilingStatus
 	chkFilingStatus: "single"
 
 	// Enter Your Initial

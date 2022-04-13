@@ -7,7 +7,9 @@ f1040: {
 	txtLastName: "Gardenia"
 
 	// Enter Your Social Security Number
-	txtSSN:          "400-00-1038"
+	txtSSN: "400-00-1038"
+
+	// chkFilingStatus
 	chkFilingStatus: "joint"
 
 	// If Joint Return, Enter Your Spouse First Name
