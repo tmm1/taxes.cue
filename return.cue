@@ -2,6 +2,7 @@ package taxes
 
 import (
 	"list"
+	ff "github.com/tmm1/taxes/freefile"
 )
 
 #ReturnData: {
@@ -25,6 +26,8 @@ import (
 		charitableGiftsByCashOrCheck: #amount
 		charitableGiftsOfPublicStock: [...#Form8283.#DonatedPublicStock]
 	}
+
+	freefile?: ff.#Return
 }
 
 #summarizeReturn: {
