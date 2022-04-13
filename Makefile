@@ -6,9 +6,7 @@ format:
 check:
 	cue eval -c .:taxes
 
-test: unittests returns
-
-unittests:
+test:
 	cue export --out cue test.cue > test.out
 
 returns:
