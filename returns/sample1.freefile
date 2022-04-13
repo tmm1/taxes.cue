@@ -1,8 +1,5 @@
 // Form 1040 - U.S. Individual Income Tax Return
 f1040: {
-	// If Primary is deceased, select the option
-	cboDeceasedPr: ""
-
 	// Enter Your First Name
 	txtFirstName: "john"
 
@@ -13,24 +10,14 @@ f1040: {
 	txtSSN:          "123-12-1234"
 	chkFilingStatus: "single"
 
-	// If Spouse is deceased, select the option
-	cboDeceasedSp: ""
-
 	// Enter Your Initial
 	txtMiddleInitial: "e"
-
-	// Select State
-	cboState: ""
 
 	// You - Presidential Election Campaign. Check here if you, or your spouse if filing jointly, want $3 to go to this fund. Checking a box below will not change your tax or refund
 	chkPresFundInd: ""
 
 	// Spouse - Presidential Election Campaign. Check here if you, or your spouse if filing jointly, want $3 to go to this fund. Checking a box below will not change your tax or refund
 	chkSpPresFundInd: ""
-
-	// Select foreign country name
-	cboForeignCountryCode: ""
-	rdoVirtCurrency:       ""
 
 	// Standard Deduction. Someone can claim: You as a dependent
 	chkExemptInd: ""
@@ -53,26 +40,17 @@ f1040: {
 	// Age/Blindness - Your Spouse is blind
 	chkSpBlind: ""
 
-	// Dependents - Select Relationship to you
-	cboDepRelation1: ""
-
 	// Dependents - Check if qualifies for (see instructions): Child tax credit
 	chkDepCTCInd1: ""
 
 	// Dependents - Check if Credit for other dependents
 	ChkDepOtherInd1: ""
 
-	// Dependents - Select Relationship to you
-	cboDepRelation2: ""
-
 	// Dependents - Check if qualifies for (see instructions): Child tax credit
 	chkDepCTCInd2: ""
 
 	// Dependents - Check if Credit for other dependents
 	ChkDepOtherInd2: ""
-
-	// Dependents - Select Relationship to you
-	cboDepRelation3: ""
 
 	// Dependents - Check if qualifies for (see instructions): Child tax credit
 	chkDepCTCInd3: ""
@@ -83,38 +61,14 @@ f1040: {
 	// check here, If more than four dependents, see instructions
 	chkMoreDepInd: ""
 
-	// Dependents - Select Relationship to you
-	cboDepRelation4: ""
-
 	// Dependents - Check if qualifies for (see instructions): Child tax credit
 	chkDepCTCInd4: ""
 
 	// Dependents - Check if Credit for other dependents
 	ChkDepOtherInd4: ""
 
-	// Line 1. If applicable, select code. See instructions for any entry
-	cboOtherWageType: ""
-
-	// Line 3a. If applicable, select code from the picklist. See instructions for entry
-	cboF8814QualDiv1040: ""
-
-	// Line 3b. If applicable, select code from the picklist. See instructions for entry
-	cboF8814OrdDiv1040: ""
-
-	// Line 4b. If applicable, select the IRA code from the picklist. (See instructions)
-	cboIRAType: ""
-
-	// Line 5b. If applicable, select the Pensions and Annuities code from picklist. (See instructions)
-	cboPenAnnType: ""
-
-	// Line 6b. If applicable, select a code from the picklist. See instructions for entry
-	cboSSAType: ""
-
 	// Line 7. Capital gain or (loss). Attach Schedule D if required. If not required, check here
 	chkSchdNotRequiredInd: ""
-
-	// Line 7. If applicable, select code from the picklist. See instructions for entry
-	cboF8814CapGain1040: ""
 
 	// Tax (see instructions). Check if any from Form(s): 8814
 	chkTax8814Ind: ""
@@ -123,23 +77,11 @@ f1040: {
 	chkTax4972Ind: ""
 
 	// Tax (see instructions). Check if any from Form(s): Other Form
-	chkTaxOtherInd:       ""
-	cboF1040OtherTaxCode: ""
-
-	// 2021 estimated tax payments and amount applied from 2020 return - Divorced Literal Code
-	cboPryrEstpayDivCode: ""
-
-	// Line 27: select an option if applicable. (see instructions)
-	cboEicEligLiteralCode: ""
+	chkTaxOtherInd: ""
 
 	// 
 	chkEicUnderAge19Ind: ""
 
-	// Line 33. Payment Type
-	cboF8689TotPayment1040: ""
-
 	// Line 35a - Check if Form 8888 is Attached
 	chkForm8888Ind: ""
-	chkAccountType: ""
-	chkDiscussInd:  ""
 }
