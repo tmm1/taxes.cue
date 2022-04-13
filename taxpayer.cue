@@ -24,9 +24,11 @@ import "list"
 	#TaxablePerson
 }
 
+#DependentRelationship: "son" | "daughter" | "grandchild" | "fosterchild" | "sister" | "brother" | "niece" | "nephew" | "parent" | "grandparent" | "aunt" | "uncle" | "stepchild" | "halfbrother" | "halfsister" | "stepbrother" | "stepsister" | "other"
+
 #Dependent: {
 	#TaxablePerson
-	relationship:          "son" | "daughter" | "grandchild" | "fosterchild" | "sister" | "brother" | "niece" | "nephew" | "parent" | "grandparent" | "aunt" | "uncle" | "stepchild" | "halfbrother" | "halfsister" | "stepbrother" | "stepsister" | "other"
+	relationship:          #DependentRelationship
 	isFullTimeStudent:     bool | *false
 	monthsLivingTogether?: int
 	isClaimedAsDependent:  true

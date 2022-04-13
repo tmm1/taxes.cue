@@ -42,4 +42,7 @@ f1040: {
 
 	// Dependents - Enter Social security number
 	txtDepSSN1: "400-00-1070"
+
+	// Dependents - Select Relationship to you
+	cboDepRelation1: "SO"
 }

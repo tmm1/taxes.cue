@@ -38,6 +38,30 @@ import (
 	}[in]
 }
 
+#convert: dependentRelationship: {
+	in:  #DependentRelationship
+	out: {
+		"son":         "SO"
+		"daughter":    "D"
+		"grandchild":  "GC"
+		"fosterchild": "FC"
+		"sister":      "SI"
+		"brother":     "B"
+		"niece":       "NE"
+		"nephew":      "NW"
+		"parent":      "P"
+		"grandparent": "GP"
+		"aunt":        "A"
+		"uncle":       "U"
+		"stepchild":   "SC"
+		"halfbrother": "HB"
+		"halfsister":  "HS"
+		"stepbrother": "SB"
+		"stepsister":  "SS"
+		"other":       "O"
+	}[in]
+}
+
 #convert: taxPayer: {
 	in: #TaxPayer
 	//out: freefile.#Return
@@ -83,6 +107,7 @@ import (
 		}
 
 		for i, dep in in.dependents if i < 4 {
+			"cboDepRelation\(i+1)":  (#convert.dependentRelationship & {"in": dep.relationship}).out
 			"txtDepFirstName\(i+1)": dep.firstName
 			"txtDepLastName\(i+1)":  dep.lastName
 			"txtDepSSN\(i+1)":       dep.ssn
@@ -91,6 +116,7 @@ import (
 	if len(in.dependents) > 4 {
 		out: fdepend: {
 			for i, dep in in.dependents if i >= 4 {
+				"cboDepRelationR\(i+1-4)":  (#convert.dependentRelationship & {"in": dep.relationship}).out
 				"txtDepFirstNameR\(i+1-4)": dep.firstName
 				"txtDepLastNameR\(i+1-4)":  dep.lastName
 				"txtDepSsnR\(i+1-4)":       dep.ssn

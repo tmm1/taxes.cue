@@ -28,7 +28,7 @@ import (
 }
 
 #summarizeReturn: {
-	in: #ReturnData
+	in:   #ReturnData
 	data: in
 	out: {
 		income: {
@@ -80,10 +80,10 @@ import (
 }
 
 #computeF1040: {
-	in: #ReturnData
-	data: in
+	in:        #ReturnData
+	data:      in
 	_computed: (#summarizeReturn & {"in": data}).out
-	out: #Form1040
+	out:       #Form1040
 	out: {
 		for field in ["wages", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld"] {
 			let n = _computed.income[field]
