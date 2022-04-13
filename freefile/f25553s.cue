@@ -6,8 +6,7 @@ import "strings"
 #f25553s: {
 	#input: {
 		
-		chkF2555HousingExcluInd: *"" |
-			"1" | // Line 27: Yes - claiming the housing exclusion or housing deduction
+		chkF2555HousingExcluInd?: "1" | // Line 27: Yes - claiming the housing exclusion or housing deduction
 			"2" // Line 27: No - claiming the housing exclusion or housing deduction
 
 		// Line 28: Qualified housing expenses for the tax year

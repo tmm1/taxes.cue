@@ -86,13 +86,11 @@ import "strings"
 		txtF9465ResiCntrynam?: strings.MaxRunes(16)
 
 		
-		chkF9465Maritalstatus: *"" |
-			"1" | // Line 16a. Single. Skip question 16b and go to question 17
+		chkF9465Maritalstatus?: "1" | // Line 16a. Single. Skip question 16b and go to question 17
 			"2" // Line 16a. Married. Go to question 16b
 
 		
-		chkF9465HhexpnSpouse: *"" |
-			"1" | // Line 16b. Do you share household expenses with your spouse? : Yes
+		chkF9465HhexpnSpouse?: "1" | // Line 16b. Do you share household expenses with your spouse? : Yes
 			"0" // Line 16b. Do you share household expenses with your spouse? : No
 
 		// Line 17. How many dependents will you be able to claim on this year's tax return?
@@ -104,8 +102,7 @@ import "strings"
 		txtF9465Age65oldrhhcnt?: strings.MaxRunes(9)
 
 		
-		chkF9465PriHowpaid: *"" |
-			"1" | // Line 19. How often are you paid? : Once a week
+		chkF9465PriHowpaid?: "1" | // Line 19. How often are you paid? : Once a week
 			"2" | // Line 19. How often are you paid? : Once every 2 weeks
 			"3" | // Line 19 How often are you paid? : Once a month
 			"4" // Line 19 How often are you paid? : Twice a month
@@ -115,8 +112,7 @@ import "strings"
 		txtF9465PriNetincomPay?: strings.MaxRunes(10)
 
 		
-		chkf9465SpHowpaid: *"" |
-			"1" | // Line 21. How often is your spouse paid? : Once a week
+		chkf9465SpHowpaid?: "1" | // Line 21. How often is your spouse paid? : Once a week
 			"2" | // Line 21. How often is your spouse paid? : Once every 2 weeks
 			"3" | // Line 21. How often is your spouse paid? : Once a month
 			"4" // Line 21. How often is your spouse paid? : Twice a month
@@ -134,13 +130,11 @@ import "strings"
 		txtF9465CarpaymntCnt?: strings.MaxRunes(9)
 
 		
-		chkF9465HealthinsurInd: *"" |
-			"1" | // Line 25a. Do you have health insurance? : Yes. Go to question 25b
+		chkF9465HealthinsurInd?: "1" | // Line 25a. Do you have health insurance? : Yes. Go to question 25b
 			"0" // Line 25a. Do you have health insurance? : No. Skip question 25b and go to question 26a
 
 		
-		chkF9465HlthinsurDedcInd: *"" |
-			"1" | // Line 25b. Are your health insurance premiums deducted from your paycheck? : Yes. Skip question 25c and go to question 26a
+		chkF9465HlthinsurDedcInd?: "1" | // Line 25b. Are your health insurance premiums deducted from your paycheck? : Yes. Skip question 25c and go to question 26a
 			"0" // Line 25b. b Are your health insurance premiums deducted from your paycheck? : No. Go to question 25c
 
 		// Line 25. How much are your monthly health insurance premiums?
@@ -148,13 +142,11 @@ import "strings"
 		txtF9465HlthinsurpremAmt?: strings.MaxRunes(10)
 
 		
-		chkF9465Courtordpay: *"" |
-			"1" | // Line 26a. Do you make court-ordered payments? : Yes. Go to question 26b
+		chkF9465Courtordpay?: "1" | // Line 26a. Do you make court-ordered payments? : Yes. Go to question 26b
 			"0" // Line 26a. Do you make court-ordered payments? : No. Go to question 27
 
 		
-		chkF9465CourtordpayDedc: *"" |
-			"1" | // Line 26b. Are your court-ordered payments deducted from your paycheck? : Yes. Go to question 27
+		chkF9465CourtordpayDedc?: "1" | // Line 26b. Are your court-ordered payments deducted from your paycheck? : Yes. Go to question 27
 			"0" // Line 26b. Are your court-ordered payments deducted from your paycheck? : No. Go to question 26c
 
 		// Line 26c. How much are your court-ordered payments each month?

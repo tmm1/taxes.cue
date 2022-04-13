@@ -57,33 +57,27 @@ import "strings"
 		txtDateOfBirthChild3?: strings.MaxRunes(4)
 
 		
-		chkUnderAge24Child1: *"" |
-			"Y" | // yes Go to line 5 - Was the child under age 24 at the end of 2021, a student, and younger than you (or your spouse, if filing jointly)?
+		chkUnderAge24Child1?: "Y" | // yes Go to line 5 - Was the child under age 24 at the end of 2021, a student, and younger than you (or your spouse, if filing jointly)?
 			"N" // no Go to line 4b Was the child under age 24 at the end of 2021, a student, and younger than you (or your spouse, if filing jointly)?
 
 		
-		chkUnderAge24Child2: *"" |
-			"Y" | // yes Go to line 5 - Was the child under age 24 at the end of 2021, a student, and younger than you (or your spouse, if filing jointly)?
+		chkUnderAge24Child2?: "Y" | // yes Go to line 5 - Was the child under age 24 at the end of 2021, a student, and younger than you (or your spouse, if filing jointly)?
 			"N" // no Go to line 4b - Was the child under age 24 at the end of 2021, a student, and younger than you (or your spouse, if filing jointly)?
 
 		
-		chkUnderAge24Child3: *"" |
-			"Y" | // yes Go to line 5 - Was the child under age 24 at the end of 2021, a student, and younger than you (or your spouse, if filing jointly)?
+		chkUnderAge24Child3?: "Y" | // yes Go to line 5 - Was the child under age 24 at the end of 2021, a student, and younger than you (or your spouse, if filing jointly)?
 			"N" // no Go to line 4b - Was the child under age 24 at the end of 2021, a student, and younger than you (or your spouse, if filing jointly)?
 
 		
-		chkDisabledChild1: *"" |
-			"Y" | // Yes Go to line 5 - Was the child permanently and totally disabled during any part of 2021?
+		chkDisabledChild1?: "Y" | // Yes Go to line 5 - Was the child permanently and totally disabled during any part of 2021?
 			"N" // No The child is not a qualifying child - Line 4b. Was the child permanently and totally disabled during any part of 2021?
 
 		
-		chkDisabledChild2: *"" |
-			"Y" | // Yes Go to line 5 - Was the child permanently and totally disabled during any part of 2021?
+		chkDisabledChild2?: "Y" | // Yes Go to line 5 - Was the child permanently and totally disabled during any part of 2021?
 			"N" // No The child is not a qualifying child - Line 4b. Was the child permanently and totally disabled during any part of 2021?
 
 		
-		chkDisabledChild3: *"" |
-			"Y" | // Yes Go to line 5 - Was the child permanently and totally disabled during any part of 2021?
+		chkDisabledChild3?: "Y" | // Yes Go to line 5 - Was the child permanently and totally disabled during any part of 2021?
 			"N" // No The child is not a qualifying child - Line 4b. Was the child permanently and totally disabled during any part of 2021?
 
 		// Line 5 Child's relationship to you (for example, son, daughter, grandchild, niece, nephew, eligible foster child, etc. )

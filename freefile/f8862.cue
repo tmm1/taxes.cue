@@ -19,13 +19,11 @@ import "strings"
 		chkAmericanOppInd: *"" | "1"
 
 		
-		chkF8862EicDisallowInd: *"" |
-			"1" | // Line-3. If the only reason your EIC was reduced or disallowed was because you incorrectly reported your earned  income or investment income, check �Yes. � Otherwise, check �No. �
+		chkF8862EicDisallowInd?: "1" | // Line-3. If the only reason your EIC was reduced or disallowed was because you incorrectly reported your earned  income or investment income, check �Yes. � Otherwise, check �No. �
 			"0" // Line-3. If the only reason your EIC was reduced or disallowed was because you incorrectly reported your earned income or investment income, check �Yes. � Otherwise, check �No. �
 
 		
-		chkF8862QualDepOthPer: *"" |
-			"1" | // Line-4. Could you (or your spouse if filing jointly) be claimed as a qualifying child of another taxpayer for the year entered on line 1?
+		chkF8862QualDepOthPer?: "1" | // Line-4. Could you (or your spouse if filing jointly) be claimed as a qualifying child of another taxpayer for the year entered on line 1?
 			"0" // Line-4. Could you (or your spouse if filing jointly) be claimed as a qualifying child of another taxpayer for the year entered on line 1?
 
 		// 5a. Child 1 - First Name
@@ -53,8 +51,7 @@ import "strings"
 		txtF8862ChildLName3?: strings.MaxRunes(20)
 
 		
-		chkf8862QualChildEicInd: *"" |
-			"1" | // Line-6. Does your completed Schedule EIC for the year entered on line 1 show that you had a qualifying child for the EIC?
+		chkf8862QualChildEicInd?: "1" | // Line-6. Does your completed Schedule EIC for the year entered on line 1 show that you had a qualifying child for the EIC?
 			"0" // Line-6. Does your completed Schedule EIC for the year entered on line 1 show that you had a qualifying child for the EIC?
 
 		// Line 7. Enter the number of days each child lived with you in the United States during the year entered on line 1 - Child 1
@@ -110,13 +107,11 @@ import "strings"
 		txtF8862SpouseAgeEndYr?: strings.MaxRunes(3)
 
 		
-		chkF8862PriClmDepAnoRtn: *"" |
-			"1" | // Line-11a. Can you be claimed as a dependent on another taxpayer�s return?
+		chkF8862PriClmDepAnoRtn?: "1" | // Line-11a. Can you be claimed as a dependent on another taxpayer�s return?
 			"0" // Line-11a. Can you be claimed as a dependent on another taxpayer�s return?
 
 		
-		chkF8862SpoClmDepAnoRtn: *"" |
-			"1" | // Line-11b. Can your spouse (if filing jointly) be claimed as a dependent on another taxpayer�s return?
+		chkF8862SpoClmDepAnoRtn?: "1" | // Line-11b. Can your spouse (if filing jointly) be claimed as a dependent on another taxpayer�s return?
 			"0" // Line-11b. Can your spouse (if filing jointly) be claimed as a dependent on another taxpayer�s return?
 
 		// Line 12. Child 1 - First Name
@@ -184,123 +179,99 @@ import "strings"
 		txtOtherDepLastName4?: strings.MaxRunes(20)
 
 		
-		chkF8862Child1LivemoreHfyr: *"" |
-			"1" | // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
+		chkF8862Child1LivemoreHfyr?: "1" | // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
 			"0" // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
 
 		
-		chkF8862Child2LivemoreHfyr: *"" |
-			"1" | // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
+		chkF8862Child2LivemoreHfyr?: "1" | // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
 			"0" // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
 
 		
-		chkF8862Child3LivemoreHfyr: *"" |
-			"1" | // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
+		chkF8862Child3LivemoreHfyr?: "1" | // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
 			"0" // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
 
 		
-		chkF8862Child4LivemoreHfyr: *"" |
-			"1" | // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
+		chkF8862Child4LivemoreHfyr?: "1" | // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
 			"0" // Line-14. For each child listed in response to question 12, did the child live with you for more than half of the year or meet an exception described in the instructions?
 
 		
-		chkF8862ReqQualChild1Clm: *"" |
-			"1" | // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
+		chkF8862ReqQualChild1Clm?: "1" | // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
 			"0" // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
 
 		
-		chkF8862ReqQualChild2Clm: *"" |
-			"1" | // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
+		chkF8862ReqQualChild2Clm?: "1" | // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
 			"0" // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
 
 		
-		chkF8862ReqQualChild3Clm: *"" |
-			"1" | // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
+		chkF8862ReqQualChild3Clm?: "1" | // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
 			"0" // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
 
 		
-		chkF8862ReqQualChild4Clm: *"" |
-			"1" | // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
+		chkF8862ReqQualChild4Clm?: "1" | // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
 			"0" // Line-15. For each child listed in response to question 12, did the child meet the requirements to be a qualifying child for the CTC/RCTC/ACTC?
 
 		
-		chkF8862CTCChild1asDep: *"" |
-			"1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 1
+		chkF8862CTCChild1asDep?: "1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 1
 			"0" // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 1
 
 		
-		chkF8862CTCChild2asDep: *"" |
-			"1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 2
+		chkF8862CTCChild2asDep?: "1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 2
 			"0" // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 2
 
 		
-		chkF8862CTCChild3asDep: *"" |
-			"1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 3
+		chkF8862CTCChild3asDep?: "1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 3
 			"0" // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 3
 
 		
-		chkF8862CTCChild4asDep: *"" |
-			"1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 4
+		chkF8862CTCChild4asDep?: "1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 4
 			"0" // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? - Child 4
 
 		
-		chkF8862ODCChildasDep2: *"" |
-			"1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 2
+		chkF8862ODCChildasDep2?: "1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 2
 			"0" // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 2
 
 		
-		chkF8862ODCChildasDep1: *"" |
-			"1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 1
+		chkF8862ODCChildasDep1?: "1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 1
 			"0" // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 1
 
 		
-		chkF8862ODCChildasDep4: *"" |
-			"1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 4
+		chkF8862ODCChildasDep4?: "1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 4
 			"0" // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 4
 
 		
-		chkF8862ODCChildasDep3: *"" |
-			"1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 3
+		chkF8862ODCChildasDep3?: "1" | // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 3
 			"0" // Line-16. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person your dependent? -  Other Dependent 3
 
 		
-		chkF8862CTCUScitiDep1: *"" |
-			"1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Child 1
+		chkF8862CTCUScitiDep1?: "1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Child 1
 			"0" // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Child 1
 
 		
-		chkF8862CTCUScitiDep2: *"" |
-			"1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Child 2
+		chkF8862CTCUScitiDep2?: "1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Child 2
 			"0" // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Child 2
 
 		
-		chkF8862CTCUScitiDep3: *"" |
-			"1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? -  Child 3
+		chkF8862CTCUScitiDep3?: "1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? -  Child 3
 			"0" // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Child 3
 
 		
-		chkF8862CTCUScitiDep4: *"" |
-			"1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Child 4
+		chkF8862CTCUScitiDep4?: "1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Child 4
 			"0" // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Child 4
 
 		
-		chkF8862ODCUScitiDep1: *"" |
-			"1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 1
+		chkF8862ODCUScitiDep1?: "1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 1
 			"0" // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 1
 
 		
-		chkF8862ODCUScitiDep2: *"" |
-			"1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 2
+		chkF8862ODCUScitiDep2?: "1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 2
 			"0" // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 2
 
 		
-		chkF8862ODCUScitiDep3: *"" |
-			"1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 3
+		chkF8862ODCUScitiDep3?: "1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 3
 			"0" // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 3
 
 		
-		chkF8862ODCUScitiDep4: *"" |
-			"1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 4
+		chkF8862ODCUScitiDep4?: "1" | // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 4
 			"0" // Line-17. For each person claimed as a qualifying child or other dependent for the CTC/RCTC/ACTC/ODC, is that person a citizen, national, or resident of the United States? - Other Dependent 4
 
 		// 18a. Student 1 - First Name
@@ -328,33 +299,27 @@ import "strings"
 		txtStdLastName3?: strings.MaxRunes(20)
 
 		
-		chkF8862StuReqEliAOTC1: *"" |
-			"1" | // Line-19a. Did the student meet the requirements to be an eligible student for purposes of the AOTC for the year entered on line 1? - Student 1
+		chkF8862StuReqEliAOTC1?: "1" | // Line-19a. Did the student meet the requirements to be an eligible student for purposes of the AOTC for the year entered on line 1? - Student 1
 			"0" // Line-19a. Did the student meet the requirements to be an eligible student for purposes of the AOTC for the year entered on line 1? - Student 1
 
 		
-		chkF8862StuReqEliAOTC2: *"" |
-			"1" | // Line-19a. Did the student meet the requirements to be an eligible student for purposes of the AOTC for the year entered on line 1? - Student 2
+		chkF8862StuReqEliAOTC2?: "1" | // Line-19a. Did the student meet the requirements to be an eligible student for purposes of the AOTC for the year entered on line 1? - Student 2
 			"0" // Line-19a. Did the student meet the requirements to be an eligible student for purposes of the AOTC for the year entered on line 1? - Student 2
 
 		
-		chkF8862StuReqEliAOTC3: *"" |
-			"1" | // Line-19a. Did the student meet the requirements to be an eligible student for purposes of the AOTC for the year entered on line 1? - Student 3
+		chkF8862StuReqEliAOTC3?: "1" | // Line-19a. Did the student meet the requirements to be an eligible student for purposes of the AOTC for the year entered on line 1? - Student 3
 			"0" // Line-19a. Did the student meet the requirements to be an eligible student for purposes of the AOTC for the year entered on line 1? - Student 3
 
 		
-		chkF8862ScholarAmeoppClm1: *"" |
-			"0" | // Line-19b. Has the Hope Scholarship Credit or AOTC been claimed for the student for any 4 tax years before the year entered on line 1? - Student 1
+		chkF8862ScholarAmeoppClm1?: "0" | // Line-19b. Has the Hope Scholarship Credit or AOTC been claimed for the student for any 4 tax years before the year entered on line 1? - Student 1
 			"1" // Line-19b. Has the Hope Scholarship Credit or AOTC been claimed for the student for any 4 tax years before the year entered on line 1? - Student 1
 
 		
-		chkF8862ScholarAmeoppClm2: *"" |
-			"1" | // Line-19b. Has the Hope Scholarship Credit or AOTC been claimed for the student for any 4 tax years before the year entered on line 1? - Student 2
+		chkF8862ScholarAmeoppClm2?: "1" | // Line-19b. Has the Hope Scholarship Credit or AOTC been claimed for the student for any 4 tax years before the year entered on line 1? - Student 2
 			"0" // Line-19b. Has the Hope Scholarship Credit or AOTC been claimed for the student for any 4 tax years before the year entered on line 1? - Student 2
 
 		
-		chkF8862ScholarAmeoppClm3: *"" |
-			"1" | // Line-19b. Has the Hope Scholarship Credit or AOTC been claimed for the student for any 4 tax years before the year entered on line 1? - Student 3
+		chkF8862ScholarAmeoppClm3?: "1" | // Line-19b. Has the Hope Scholarship Credit or AOTC been claimed for the student for any 4 tax years before the year entered on line 1? - Student 3
 			"0" // Line-19b. Has the Hope Scholarship Credit or AOTC been claimed for the student for any 4 tax years before the year entered on line 1? - Student 3
 
 		// 20a. Child 1 - First Name

@@ -13,8 +13,7 @@ import "strings"
 		chkPart3FrgnInteliCommuInd: *"" | "1"
 
 		
-		chkF5405PartIHomeInd: *"" |
-			"4" | // Line 3a. I sold (including through foreclosure) the home to a person who isn''t related to me and had a gain on the sale (as figured in Part III below). Go to Part II below
+		chkF5405PartIHomeInd?: "4" | // Line 3a. I sold (including through foreclosure) the home to a person who isn''t related to me and had a gain on the sale (as figured in Part III below). Go to Part II below
 			"1" | // Line 3b. I sold (including through foreclosure) the home to a person who isn't related to me and didn't have a gain on the sale (as figured in Part III below). No repayment of the credit is required. Stop here
 			"5" | // Line 3c. I sold the home to a related person OR I gave the home to someone other than my spouse (or ex-spouse as part of my divorce settlement). Go to Part II below
 			"6" | // Line 3d. I converted the entire home to a rental or business use OR I still own the home but no longer use it as my main home. Go to Part II

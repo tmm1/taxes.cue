@@ -6,8 +6,7 @@ import "strings"
 #f3800mlt: {
 	#input: {
 		
-		chkF3800P3BoxType: *"" |
-			"A" | // Line A  General Business Credit From a Non-Passive Activity
+		chkF3800P3BoxType?: "A" | // Line A  General Business Credit From a Non-Passive Activity
 			"B" | // Line B  General Business Credit From a Passive Activity
 			"C" | // Line C General Business Credit Carryforwards
 			"G" | // Line G Eligible Small Business Credit Carryforwards

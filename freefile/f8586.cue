@@ -10,8 +10,7 @@ import "strings"
 		txtPart2NoF8609Attach?: strings.MaxRunes(8)
 
 		
-		chkPart2IncQualBasInd: *"" |
-			"1" | // Line 9. If Yes, enter the building identification numbers (BINs) of the buildings that had a decreased basis
+		chkPart2IncQualBasInd?: "1" | // Line 9. If Yes, enter the building identification numbers (BINs) of the buildings that had a decreased basis
 			"0" // Line 9. No
 
 		// Line 2 (i). Has there been a decrease in the qualified basis of any buildings accounted for on line 8 since the close of the preceding tax year?

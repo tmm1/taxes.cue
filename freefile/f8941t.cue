@@ -10,8 +10,7 @@ import "strings"
 		txtMrkPlaceIdenify?: strings.MaxRunes(20)
 
 		
-		chkShopMrkPlaceInd: *"" |
-			"1" | // Yes - Did you pay premiums during your tax year for employee health insurance coverage you provided through a Small Business Health Options Program Marketplace
+		chkShopMrkPlaceInd?: "1" | // Yes - Did you pay premiums during your tax year for employee health insurance coverage you provided through a Small Business Health Options Program Marketplace
 			"0" // No - Did you pay premiums during your tax year for employee health insurance coverage you provided through a Small Business Health Options Program Marketplace
 
 		// Enter the employer identification number (EIN) used to report employment taxes for individuals included on line 1 below if different from the identifying number listed above
@@ -19,8 +18,7 @@ import "strings"
 		txtEin?: strings.MaxRunes(10)
 
 		
-		chkFiledinPrevyrInd: *"" |
-			"1" | // Yes - Does a tax return you (or any predecessor) filed for a tax year beginning after 2013 and before 2020 include a Form 8941 with line A
+		chkFiledinPrevyrInd?: "1" | // Yes - Does a tax return you (or any predecessor) filed for a tax year beginning after 2013 and before 2020 include a Form 8941 with line A
 			"0" // No - Does a tax return you (or any predecessor) filed for a tax year beginning after 2013 and before 2020 include a Form 8941 with line A
 
 		// Enter the number of individuals you employed during the tax year who are considered  employees for purposes of this credit (total from Worksheet 1, column (a))

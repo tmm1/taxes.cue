@@ -22,13 +22,11 @@ import "strings"
 		txtF8853InsSsn?: strings.MaxRunes(11)
 
 		
-		chkF8853OtherRecPayInd: *"" |
-			"1" | // Line 15. In 2021, did anyone other than you receive payments on a per diem or other periodic basis under a qualified LTC insurance contract covering the insured or receive accelerated death benefits under a life insurance policy covering the insured?
+		chkF8853OtherRecPayInd?: "1" | // Line 15. In 2021, did anyone other than you receive payments on a per diem or other periodic basis under a qualified LTC insurance contract covering the insured or receive accelerated death benefits under a life insurance policy covering the insured?
 			"0" // Line 15. In 2021, did anyone other than you receive payments on a per diem or other periodic basis under a qualified LTC insurance contract covering the insured or receive accelerated death benefits under a life insurance policy covering the insured?
 
 		
-		chkF8853InsTerIllInd: *"" |
-			"1" | // Line 16. Was the insured a terminally ill individual?
+		chkF8853InsTerIllInd?: "1" | // Line 16. Was the insured a terminally ill individual?
 			"0" // Line 16. Was the insured a terminally ill individual?
 
 		// Line 17. Gross LTC payments received on a per diem or other periodic basis. Enter the total of the amounts from box 1 of all Forms 1099-LTC you received with respect to the insured on which the �Per diem� box in box 3 is checked

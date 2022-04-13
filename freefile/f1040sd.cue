@@ -6,8 +6,7 @@ import "strings"
 #f1040sd: {
 	#input: {
 		
-		chkSchdDispInvstQofInd: *"" |
-			"1" | // Yes. If 'Yes', attach Form 8949 and see its instructions for additional requirements for reporting your gain or loss. - Did you dispose of any investment(s) in a qualified opportunity fund during the tax year?
+		chkSchdDispInvstQofInd?: "1" | // Yes. If 'Yes', attach Form 8949 and see its instructions for additional requirements for reporting your gain or loss. - Did you dispose of any investment(s) in a qualified opportunity fund during the tax year?
 			"0" // No. - Did you dispose of any investment(s) in a qualified opportunity fund during the tax year?
 
 		// Part 1. Short-Term Capital Gains and Losses-Generally Assets Held One Year or Less (see instructions). See instructions for how to figure the amounts to enter on thenes below. This form may be easier to complete if you round off cents to whole dollars. Line 1a. Column (d) Proceeds (sales price). Totals for all short-term transactions reported on Form 1099-B for which basis was reported to the IRS and for which you have no adjustments (see instructions). However, if you choose to report all these transactions on Form 8949, leave this line blank and go to line 1b
@@ -63,8 +62,7 @@ import "strings"
 		txtLongTermLossCo?: strings.MaxRunes(10)
 
 		
-		chkSchdBothGainInd: *"" |
-			"Y" | // Yes. Go to line 18. - Line 17. Are lines 15 and 16 both gains?
+		chkSchdBothGainInd?: "Y" | // Yes. Go to line 18. - Line 17. Are lines 15 and 16 both gains?
 			"N" // No. Skip lines 18 through 21, and go to line 22. - Line 17. Are lines 15 and 16 both gains?
 
 		// Line 18. If you are required to complete the 28% Rate Gain Worksheet (see instructions), enter the amount, if any, from line 7 of that worksheet
@@ -76,8 +74,7 @@ import "strings"
 		txtRecapSecGain?: strings.MaxRunes(10)
 
 		
-		chkSchdBothZeroInd: *"" |
-			"Y" | // Yes. Complete the Qualified Dividends and Capital Gain Tax Worksheet in the instructions for Forms 1040 and 1040-SR, line 16. Don't complete lines 21 and 22 below. - Line 20. Are lines 18 and 19 both zero or blank and are you not filing Form 4952?
+		chkSchdBothZeroInd?: "Y" | // Yes. Complete the Qualified Dividends and Capital Gain Tax Worksheet in the instructions for Forms 1040 and 1040-SR, line 16. Don't complete lines 21 and 22 below. - Line 20. Are lines 18 and 19 both zero or blank and are you not filing Form 4952?
 			"N" // No. Complete the Schedule D Tax Worksheet in the instructions. Don't complete lines 21and 22 below. - Line 20. Are lines 18 and 19 both zero or blank and are you not filing Form 4952?
 
 		// Line 21. If line 16 is a loss, enter here and on Form 1040, 1040-SR, or 1040-NR, line 7, the smaller of: The loss on line 16; or ($3, 000), or if married filing separately, ($1, 500). Note: When figuring which amount is smaller, treat both amounts as positive numbers
@@ -85,8 +82,7 @@ import "strings"
 		txtSmallNetlossLimit?: strings.MaxRunes(10)
 
 		
-		chkSchdHasQualDivInd: *"" |
-			"Y" | // Yes. Complete the Qualified Dividends and Capital Gain Tax Worksheet in the instructions for Forms 1040 and 1040-SR, line 16. - Line 22. Do you have qualified dividends on Form 1040, 1040-SR, or 1040-NR, line 3a?
+		chkSchdHasQualDivInd?: "Y" | // Yes. Complete the Qualified Dividends and Capital Gain Tax Worksheet in the instructions for Forms 1040 and 1040-SR, line 16. - Line 22. Do you have qualified dividends on Form 1040, 1040-SR, or 1040-NR, line 3a?
 			"N" // No. Complete the rest of Form 1040, 1040-SR, or 1040-NR. - Line 22. Do you have qualified dividends on Form 1040, 1040-SR, or 1040-NR, line 3a?
 
 		

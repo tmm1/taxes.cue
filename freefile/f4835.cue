@@ -10,8 +10,7 @@ import "strings"
 		txtEmployerIdNo?: strings.MaxRunes(10)
 
 		
-		chkActPartInd: *"" |
-			"1" | // Yes - Did you actively participate in the operation of this farm during 2020?
+		chkActPartInd?: "1" | // Yes - Did you actively participate in the operation of this farm during 2020?
 			"0" // No - Did you actively participate in the operation of this farm during 2020?
 
 		// Income from production of livestock, produce, grains, and other crops
@@ -218,8 +217,7 @@ import "strings"
 		txtDescripAmount7?: strings.MaxRunes(10)
 
 		
-		chkRiskInd: *"" |
-			"1" | // All investment is at risk
+		chkRiskInd?: "1" | // All investment is at risk
 			"2" // Some investment is not at risk
 
 		// This field is automatically calculated for you

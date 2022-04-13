@@ -22,8 +22,7 @@ import "strings"
 		txtF8615ParentSsn?: strings.MaxRunes(11)
 
 		
-		chkF8615ParFilStatus: *"" |
-			"1" | // Parent's Filing Status-Single
+		chkF8615ParFilStatus?: "1" | // Parent's Filing Status-Single
 			"2" | // Parent's Filing Status -Joint
 			"3" | // Parent's Filing Status -Separate
 			"4" | // Parent's Filing Status -head of household
@@ -57,8 +56,7 @@ import "strings"
 		txtF8615SubTotTax?: strings.MaxRunes(10)
 
 		
-		chkF8615ParCapGainInd: *"" |
-			"1" |
+		chkF8615ParCapGainInd?: "1" |
 			"1"
 
 		// Enter the parent�s tax from Form 1040 or 1040-NR, line 16, minus any alternative minimum tax

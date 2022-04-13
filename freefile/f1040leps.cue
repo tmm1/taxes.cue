@@ -6,8 +6,7 @@ package freefile
 #f1040leps: {
 	#input: {
 		
-		chkLangPrefCode: *"" |
-			"000" | // I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. English
+		chkLangPrefCode?: "000" | // I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. English
 			"011" | // I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. French
 			"001" | // I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Spanish
 			"012" | // I would prefer to receive written communications (see instructions) from the IRS in the following language. Check only one. Japanese

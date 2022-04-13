@@ -6,8 +6,7 @@ import "strings"
 #f1040sr: {
 	#input: {
 		
-		chkPart: *"" |
-			"1" | // You were 65 or older
+		chkPart?: "1" | // You were 65 or older
 			"2" | // You were under 65 and you retired on permanent and total disability
 			"3" | // Both spouses were 65 or older
 			"4" | // Both spouses were under 65, but only one spouse retired on permanent and total disability
