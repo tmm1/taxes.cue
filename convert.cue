@@ -12,7 +12,7 @@ import (
 }
 
 #convert: Return: {
-	in: #Return
+	in: #ReturnData
 	//out: freefile.#Return
 	out: (#convert.taxPayer & {"in":     in.taxPayer}).out
 	out: (#convert.filingStatus & {"in": in.filingStatus}).out

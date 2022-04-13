@@ -14,7 +14,7 @@ import (
 	}
 
 	test: "Return.filingStatus": {
-		subject: taxes.#Return
+		subject: taxes.#ReturnData
 		"0": assert: ok: {
 			filingStatus: "single"
 		}
@@ -76,7 +76,7 @@ import (
 	test: "#convert.Return": {
 		subject: taxes.#convert.Return
 		"0": assert: {
-			invoke: taxes.#Return & {
+			invoke: {
 				taxYear:      "2021"
 				taxPayer:     fixtures.taxPayer.samGardenia
 				filingStatus: "marriedFilingJointly"

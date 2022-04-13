@@ -4,7 +4,7 @@ import (
 	"list"
 )
 
-#Return: {
+#ReturnData: {
 	taxYear:      #year
 	taxPayer?:    #TaxPayer
 	filingStatus: #FilingStatus.Any
@@ -25,31 +25,35 @@ import (
 		charitableGiftsByCashOrCheck: #amount
 		charitableGiftsOfPublicStock: [...#Form8283.#DonatedPublicStock]
 	}
+}
 
-	_computed: {
+#summarizeReturn: {
+	in: #ReturnData
+	data: in
+	out: {
 		income: {
-			wages:                         list.Sum([ for w in w2s {w.wages}])
-			w2TaxWithheld:                 list.Sum([ for w in w2s {w.incomeTax}])
-			interest:                      list.Sum([ for d in form1099INTs {d.interestIncome}, for k in k1s {k.interestIncome}])
-			ordinaryDividends:             list.Sum([ for d in form1099DIVs {d.totalOrdinaryDividends}, for k in k1s {k.ordinaryDividends}])
-			qualifiedDividends:            list.Sum([ for d in form1099DIVs {d.qualifiedDividends}, for k in k1s {k.qualifiedDividends}])
-			taxExemptInterest:             list.Sum([ for d in form1099DIVs {d.exemptInterestDividends}])
-			longTermProceeds:              list.Sum([ for d in form1099Bs {d.longTermProceeds}])
-			longTermCostBasis:             list.Sum([ for d in form1099Bs {d.longTermCostBasis}])
-			shortTermProceeds:             list.Sum([ for d in form1099Bs {d.shortTermProceeds}])
-			shortTermCostBasis:            list.Sum([ for d in form1099Bs {d.shortTermCostBasis}])
+			wages:                         list.Sum([ for w in data.w2s {w.wages}])
+			w2TaxWithheld:                 list.Sum([ for w in data.w2s {w.incomeTax}])
+			interest:                      list.Sum([ for d in data.form1099INTs {d.interestIncome}, for k in data.k1s {k.interestIncome}])
+			ordinaryDividends:             list.Sum([ for d in data.form1099DIVs {d.totalOrdinaryDividends}, for k in data.k1s {k.ordinaryDividends}])
+			qualifiedDividends:            list.Sum([ for d in data.form1099DIVs {d.qualifiedDividends}, for k in data.k1s {k.qualifiedDividends}])
+			taxExemptInterest:             list.Sum([ for d in data.form1099DIVs {d.exemptInterestDividends}])
+			longTermProceeds:              list.Sum([ for d in data.form1099Bs {d.longTermProceeds}])
+			longTermCostBasis:             list.Sum([ for d in data.form1099Bs {d.longTermCostBasis}])
+			shortTermProceeds:             list.Sum([ for d in data.form1099Bs {d.shortTermProceeds}])
+			shortTermCostBasis:            list.Sum([ for d in data.form1099Bs {d.shortTermCostBasis}])
 			shortTermGains:                shortTermGainsFromTransactions + shortTermGainsFromReported + shortTermGainsFromK1s
 			longTermGains:                 longTermGainsFromTransactions + longTermGainsFromReported + longTermGainsFromK1s
-			shortTermGainsFromK1s:         list.Sum([ for k in k1s {k.shortTermCapitalGain}])
-			longTermGainsFromK1s:          list.Sum([ for k in k1s {k.longTermCapitalGain}])
-			longTermGainsFromReported:     list.Sum([ for d in form1099Bs {d.longTermProceeds - d.longTermCostBasis}])
-			shortTermGainsFromReported:    list.Sum([ for d in form1099Bs {d.shortTermProceeds - d.shortTermCostBasis}])
-			longTermGainsFromTransactions: list.Sum([ for d in form1099Bs if len(d.transactions) > 0 {
+			shortTermGainsFromK1s:         list.Sum([ for k in data.k1s {k.shortTermCapitalGain}])
+			longTermGainsFromK1s:          list.Sum([ for k in data.k1s {k.longTermCapitalGain}])
+			longTermGainsFromReported:     list.Sum([ for d in data.form1099Bs {d.longTermProceeds - d.longTermCostBasis}])
+			shortTermGainsFromReported:    list.Sum([ for d in data.form1099Bs {d.shortTermProceeds - d.shortTermCostBasis}])
+			longTermGainsFromTransactions: list.Sum([ for d in data.form1099Bs if len(d.transactions) > 0 {
 				list.Sum([
 					for t in d.transactions if (t & #Form8949.#LongTerm) != _|_ {t.gainOrLoss},
 				])
 			}])
-			shortTermGainsFromTransactions: list.Sum([ for d in form1099Bs if len(d.transactions) > 0 {
+			shortTermGainsFromTransactions: list.Sum([ for d in data.form1099Bs if len(d.transactions) > 0 {
 				list.Sum([
 					for t in d.transactions if (t & #Form8949.#ShortTerm) != _|_ {t.gainOrLoss},
 				])
@@ -57,7 +61,7 @@ import (
 			form1099BTransactionsByCode: {
 				for _, c in ["A", "B", "C", "D", "E", "F"] {
 					"\(c)": {
-						transactions: list.FlattenN([ for d in form1099Bs if len(d.transactions) != 0 {
+						transactions: list.FlattenN([ for d in data.form1099Bs if len(d.transactions) != 0 {
 							[ for t in d.transactions if t.code == c {t}]
 						}], 1)
 						proceeds:    list.Sum([ for t in transactions {t.proceeds}])
@@ -73,11 +77,14 @@ import (
 			D: (income.longTermGains + income.shortTermGains) > 0
 		}
 	}
+}
 
-	_debug: computed: _computed
-
-	// Form 1040
-	form1040: #Form1040 & {
+#computeF1040: {
+	in: #ReturnData
+	data: in
+	_computed: (#summarizeReturn & {"in": data}).out
+	out: #Form1040
+	out: {
 		for field in ["wages", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld"] {
 			let n = _computed.income[field]
 			if n != 0 {
@@ -90,10 +97,10 @@ import (
 				if _computed.income.interest > 0 {
 					partI: {
 						list: [
-							for d in form1099INTs {
+							for d in data.form1099INTs {
 								[d.payerName, d.interestIncome]
 							},
-							for k in k1s if k.interestIncome > 0 {
+							for k in data.k1s if k.interestIncome > 0 {
 								[k.name, k.interestIncome]
 							},
 						]
@@ -103,10 +110,10 @@ import (
 				if _computed.income.ordinaryDividends > 0 {
 					partII: {
 						list: [
-							for d in form1099DIVs {
+							for d in data.form1099DIVs {
 								[d.payerName, d.totalOrdinaryDividends]
 							},
-							for k in k1s if k.ordinaryDividends > 0 {
+							for k in data.k1s if k.ordinaryDividends > 0 {
 								[k.name, k.ordinaryDividends]
 							},
 						]
@@ -183,7 +190,7 @@ import (
 	}
 }
 
-#Return: {
+#ReturnData: {
 	taxPayer: spouse?: _|_
 	filingStatus: #FilingStatus.single |
 		#FilingStatus.headOfHousehold |
