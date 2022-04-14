@@ -21,10 +21,20 @@ import (
 		out: in.freefile
 	}
 	_computed: (#summarizeReturn & {"in": in}).out
-	_income: _computed.income
+	_income:   _computed.income
 	out: f1040: {
-		if _income.wages != 0 {
-			txtWagesSalariesTips: (#convert.amount & {"in": _income.wages}).out
+		let lookup = {
+			wages:              "txtWagesSalariesTips"
+			taxExemptInterest:  "txtTaxExemptInt"
+			qualifiedDividends: "txtQualDiv"
+			ordinaryDividends:  "txtOrdDiv"
+			w2TaxWithheld:      "txtW2TaxWithheld"
+		}
+		for k, v in lookup {
+			let val = _income[k]
+			if val != 0 {
+				(v): (#convert.amount & {"in": val}).out
+			}
 		}
 	}
 }

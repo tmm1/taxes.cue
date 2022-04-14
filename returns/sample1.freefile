@@ -17,4 +17,16 @@ f1040: {
 
 	// Line 1. Wages, salaries, tips, etc. Attach Form (or Forms) W-2
 	txtWagesSalariesTips: "50000"
+
+	// Line 2a. Tax-exempt interest (Attach Schedule B if required)
+	txtTaxExemptInt: "50"
+
+	// Line 3a. Qualified dividends
+	txtQualDiv: "200"
+
+	// Line 3b. Ordinary dividends
+	txtOrdDiv: "3201"
+
+	// Line 25a. Federal income tax withheld from: Form(s) W-2
+	txtW2TaxWithheld: "4500"
 }

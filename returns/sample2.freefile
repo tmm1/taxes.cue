@@ -50,4 +50,7 @@ f1040: {
 
 	// Line 1. Wages, salaries, tips, etc. Attach Form (or Forms) W-2
 	txtWagesSalariesTips: "36323"
+
+	// Line 25a. Federal income tax withheld from: Form(s) W-2
+	txtW2TaxWithheld: "1126"
 }
