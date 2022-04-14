@@ -10,7 +10,7 @@ import "list"
 	zip:    =~"^\\d{5}"
 }
 
-#TaxablePerson: {
+#Person: {
 	ssn:                  #SSN
 	firstName:            string
 	middleInitial?:       string
@@ -21,13 +21,13 @@ import "list"
 }
 
 #Spouse: {
-	#TaxablePerson
+	#Person
 }
 
 #DependentRelationship: "son" | "daughter" | "grandchild" | "fosterchild" | "sister" | "brother" | "niece" | "nephew" | "parent" | "grandparent" | "aunt" | "uncle" | "stepchild" | "halfbrother" | "halfsister" | "stepbrother" | "stepsister" | "other"
 
 #Dependent: {
-	#TaxablePerson
+	#Person
 	relationship:          #DependentRelationship
 	isFullTimeStudent:     bool | *false
 	monthsLivingTogether?: int
@@ -35,7 +35,7 @@ import "list"
 }
 
 #TaxPayer: {
-	self:       #TaxablePerson
+	self:       #Person
 	address?:   #address
 	spouse?:    #Spouse
 	dependents: [...#Dependent] & list.MaxItems(14)
