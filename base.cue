@@ -3,6 +3,8 @@ package taxes
 import "time"
 
 #amount: number | *0
+#amount: >=0
+#negamount: number | *0
 
 #date: string & time.Format("2006-01-02")
 #year: string & time.Format("2006")
