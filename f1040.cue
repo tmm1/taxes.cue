@@ -7,6 +7,9 @@ package taxes
 	// line 2a Tax-exempt interest
 	taxExemptInterest?: number
 
+	// line 2b Taxable interest
+	taxableInterest?: number
+
 	// line 3a Qualified dividends
 	qualifiedDividends?: number
 

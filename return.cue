@@ -37,7 +37,7 @@ import (
 		income: {
 			wages:                         list.Sum([ for w in data.w2s {w.wages}])
 			w2TaxWithheld:                 list.Sum([ for w in data.w2s {w.incomeTax}])
-			interest:                      list.Sum([ for d in data.form1099INTs {d.interestIncome}, for k in data.k1s {k.interestIncome}])
+			taxableInterest:               list.Sum([ for d in data.form1099INTs {d.interestIncome}, for k in data.k1s {k.interestIncome}])
 			ordinaryDividends:             list.Sum([ for d in data.form1099DIVs {d.totalOrdinaryDividends}, for k in data.k1s {k.ordinaryDividends}])
 			qualifiedDividends:            list.Sum([ for d in data.form1099DIVs {d.qualifiedDividends}, for k in data.k1s {k.qualifiedDividends}])
 			taxExemptInterest:             list.Sum([ for d in data.form1099DIVs {d.exemptInterestDividends}])
@@ -89,7 +89,7 @@ import (
 	income:    _computed.income
 	out:       #Form1040
 	out: {
-		for field in ["wages", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld"] {
+		for field in ["wages", "taxableInterest", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld"] {
 			let n = income[field]
 			if n != 0 {
 				(field): n
@@ -98,7 +98,7 @@ import (
 
 		if _computed.schedulesRequired.B {
 			scheduleB: #Form1040.#ScheduleB & {
-				if income.interest > 0 {
+				if income.taxableInterest > 0 {
 					partI: {
 						list: [
 							for d in data.form1099INTs {
@@ -108,7 +108,7 @@ import (
 								[k.name, k.interestIncome]
 							},
 						]
-						total: income.interest
+						total: income.taxableInterest
 					}
 				}
 				if income.ordinaryDividends > 0 {

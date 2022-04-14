@@ -21,6 +21,9 @@ f1040: {
 	// Line 2a. Tax-exempt interest (Attach Schedule B if required)
 	txtTaxExemptInt: "50"
 
+	// Line 2b. Taxable interest
+	txtTaxableInt: "31"
+
 	// Line 3a. Qualified dividends
 	txtQualDiv: "200"
 

@@ -26,6 +26,7 @@ import (
 	out: f1040: {
 		let lookup = {
 			wages:              "txtWagesSalariesTips"
+			taxableInterest:    "txtTaxableInt"
 			taxExemptInterest:  "txtTaxExemptInt"
 			qualifiedDividends: "txtQualDiv"
 			ordinaryDividends:  "txtOrdDiv"

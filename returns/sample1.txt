@@ -5,6 +5,9 @@ Form1040: {
 	// line 2a Tax-exempt interest
 	taxExemptInterest: 50
 
+	// line 2b Taxable interest
+	taxableInterest: 31
+
 	// line 3a Qualified dividends
 	qualifiedDividends: 200
 
