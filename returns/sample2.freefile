@@ -54,3 +54,86 @@ f1040: {
 	// Line 25a. Federal income tax withheld from: Form(s) W-2
 	txtW2TaxWithheld: "1126"
 }
+
+// Form W-2 - Wage and Tax Statement
+fw2: [{
+	// Line 1. Wages, tips, other compensation
+	txtWagesTips: "28921"
+
+	// Line 3. Social security wages
+	txtSocSecWages: "28921"
+
+	// Line 5. Medicare wages and tips
+	txtMedicareWagesTips: "28921"
+
+	// Line 2. Federal income tax withheld
+	txtFedIncTaxWithheld: "1023"
+
+	// Line 4. Social security tax withheld
+	txtSocSecTaxWithheld: "1793"
+
+	// Line 6. Medicare tax withheld
+	txtMedicareTaxWithheld: "419"
+
+	// Line b. Employer identification number (EIN)
+	txtEmployerIdNum: "00-0000011"
+
+	// Employer's Name 1
+	// Line c. Employer�s name
+	txtEmployerName: "Saks Fifth Avenue"
+
+	// Employer's Street
+	// Line c. Employer�s address
+	txtEmployerAddress: "611 Fifth Avenue"
+
+	// Employer's City
+	// Line c. Employers City
+	txtEmployerCity: "New York"
+
+	// Line c. Employer State
+	cboEmployerState: "NY"
+
+	// Employer's Zip
+	// Line c. Employer Zip
+	txtEmployerZip: "10022"
+}, {
+	// Line 1. Wages, tips, other compensation
+	txtWagesTips: "7402"
+
+	// Line 3. Social security wages
+	txtSocSecWages: "7402"
+
+	// Line 5. Medicare wages and tips
+	txtMedicareWagesTips: "7402"
+
+	// Line 2. Federal income tax withheld
+	txtFedIncTaxWithheld: "103"
+
+	// Line 4. Social security tax withheld
+	txtSocSecTaxWithheld: "459"
+
+	// Line 6. Medicare tax withheld
+	txtMedicareTaxWithheld: "107"
+
+	// Line b. Employer identification number (EIN)
+	txtEmployerIdNum: "00-0000013"
+
+	// Employer's Name 1
+	// Line c. Employer�s name
+	txtEmployerName: "Wells Fargo"
+
+	// Employer's Street
+	// Line c. Employer�s address
+	txtEmployerAddress: "1111 8th Street"
+
+	// Employer's City
+	// Line c. Employers City
+	txtEmployerCity: "New York"
+
+	// Line c. Employer State
+	cboEmployerState: "NY"
+
+	// Employer's Zip
+	// Line c. Employer Zip
+	txtEmployerZip: "10004"
+}]

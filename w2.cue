@@ -7,6 +7,7 @@ package taxes
 }
 
 #W2: {
+	employee?: #TaxablePerson
 	employer?: #Employer
 
 	// box 1 Wages

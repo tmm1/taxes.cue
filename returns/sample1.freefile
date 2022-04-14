@@ -31,6 +31,31 @@ f1040: {
 	txtW2TaxWithheld: "4500"
 }
 
+// Form W-2 - Wage and Tax Statement
+fw2: [{
+	// Line 1. Wages, tips, other compensation
+	txtWagesTips: "50000"
+
+	// Line 3. Social security wages
+	txtSocSecWages: "50000"
+
+	// Line 5. Medicare wages and tips
+	txtMedicareWagesTips: "50000"
+
+	// Line 2. Federal income tax withheld
+	txtFedIncTaxWithheld: "4500"
+
+	// Line 4. Social security tax withheld
+	txtSocSecTaxWithheld: "0"
+
+	// Line 6. Medicare tax withheld
+	txtMedicareTaxWithheld: "0"
+
+	// Employer's Name 1
+	// Line c. Employer�s name
+	txtEmployerName: "employer 1"
+}]
+
 // Schedule B - Interest & Ordinary Dividends
 f1040sb: {
 	// Line 1. List name of payer

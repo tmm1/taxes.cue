@@ -38,6 +38,48 @@ import (
 			}
 		}
 	}
+	if len(in.w2s) > 0 {
+		out: fw2: [
+			for w2 in in.w2s {
+				{
+					let employee = w2.employee
+					if employee != _|_ {
+						txtEmplyerSSN:   employee.ssn
+						txtEmpFirstName: employee.firstName
+						if employee.middleInitial != _|_ {
+							txtEmpMidInitial: employee.middleInitial
+						}
+						txtEmpLastName: employee.lastName
+					}
+
+					let employer = w2.employer
+					if employer != _|_ {
+						if employer.ein != _|_ {
+							txtEmployerIdNum: employer.ein
+						}
+						txtEmployerName: employer.name
+						//xxx: split over 35 chars into second line
+						//txtEmployerName2:
+						let address = employer.address
+						if address != _|_ {
+							txtEmployerAddress: address.street
+							txtEmployerCity:    address.city
+							cboEmployerState:   address.state
+							txtEmployerZip:     address.zip
+						}
+					}
+
+					txtWagesTips:         (#convert.amount & {"in": w2.wages}).out
+					txtSocSecWages:       (#convert.amount & {"in": w2.ssWages}).out
+					txtMedicareWagesTips: (#convert.amount & {"in": w2.medicareWages}).out
+
+					txtFedIncTaxWithheld:   (#convert.amount & {"in": w2.incomeTax}).out
+					txtSocSecTaxWithheld:   (#convert.amount & {"in": w2.ssTax}).out
+					txtMedicareTaxWithheld: (#convert.amount & {"in": w2.medicareTax}).out
+				}
+			},
+		]
+	}
 	if _f1040.scheduleB != _|_ {
 		let _f1040sb = _f1040.scheduleB
 		out: f1040sb: {
