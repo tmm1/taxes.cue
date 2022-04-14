@@ -1,2 +1,9 @@
 /*.taxdata.json
 /*.taxdata.cue
+
+*.taxdata
+*.freefile
+*.txt
+!sample*.taxdata
+!sample*.freefile
+!sample*.txt
