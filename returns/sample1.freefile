@@ -106,3 +106,24 @@ f1040sd: {
 	// Line 12. Net long-term gain or (loss) from partnerships, S corporations, estates, and trusts from Schedule(s) K-1
 	txtLngTrmSchk: "100"
 }
+
+// Form 8949 - Sales and Other Dispositions of Capital Assets - Page 1
+f8949st: [{
+	// chkF1099BInd
+	chkF1099BInd: "1"
+
+	// Line 1(a). Row 1. Description of property (Example: 100 sh. XYZ Co. )
+	txtDescrip1: "10 shares TSLA stock"
+
+	// Line 1(b). Row 1. Date acquired(MM/DD/YYYY)
+	txtAcqDate1: "01/01/2010"
+
+	// Line 1(c). Row 1. Date sold or disposed of(MM/DD/YYYY)
+	txtSaleDate1: "10/10/2020"
+
+	// Line 1(d). Row 1. Proceeds(sales price)(see instructions)
+	txtSalesPrice1: "5555"
+
+	// Line 1(e). Row 1. Cost or other basis. See the Note below and see Column (e) in the separate instructions
+	txtBuyPrice1: "5000"
+}]

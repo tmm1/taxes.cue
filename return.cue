@@ -129,7 +129,7 @@ import (
 
 		if _computed.schedulesRequired.D {
 			scheduleD: #Form1040.#ScheduleD & {
-				if income.shortTermGains > 0 {
+				if income.shortTermGains != 0 {
 					partI: {
 						let shortTermGains = income.shortTermProceeds - income.shortTermCostBasis
 						if shortTermGains != 0 {
@@ -159,7 +159,7 @@ import (
 						}
 					}
 				}
-				if income.longTermGains > 0 {
+				if income.longTermGains != 0 {
 					partII: {
 						let longTermGains = income.longTermProceeds - income.longTermCostBasis
 						if longTermGains != 0 {

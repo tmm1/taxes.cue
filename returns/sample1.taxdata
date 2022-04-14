@@ -49,6 +49,7 @@ form1099Bs: [
 		transactions: [
 			{
 				code:         "E"
+				description:  "10 shares TSLA stock"
 				dateAcquired: "2010-01-01"
 				dateSold:     "2020-10-10"
 				costBasis:    5000

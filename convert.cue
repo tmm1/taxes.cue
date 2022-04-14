@@ -89,6 +89,7 @@ import (
 					"txtInterest\(idx+1)":    o[0]
 					"txtInterestAmt\(idx+1)": (#convert.amount & {"in": o[1]}).out
 				}
+				// todo: for more than 14 entries, attach f1040sb2
 			}
 			let partII = _f1040sb.partII
 			if partII != _|_ {
@@ -96,6 +97,7 @@ import (
 					"txtNamePayer\(idx+1)": o[0]
 					"txtOrdAmt\(idx+1)":    (#convert.amount & {"in": o[1]}).out
 				}
+				// todo: for more than 14 entries, attach f1040sb3
 			}
 		}
 	}
@@ -133,6 +135,57 @@ import (
 				}
 			}
 		}
+	}
+	let txByCode = _income.form1099BTransactionsByCode
+	let lt = [ for _, c in ["A", "B", "C"] if txByCode[c].proceeds > 0 {
+		let bucket = txByCode[c]
+		chkF1099BInd: {
+			"A": "0"
+			"B": "1"
+			"C": "2"
+		}[c]
+		for idx, t in bucket.transactions {
+			"txtDescrip\(idx+1)":    t.description
+			"txtAcqDate\(idx+1)":    (#convert.date & {"in":   t.dateAcquired}).out
+			"txtSaleDate\(idx+1)":   (#convert.date & {"in":   t.dateSold}).out
+			"txtSalesPrice\(idx+1)": (#convert.amount & {"in": t.proceeds}).out
+			"txtBuyPrice\(idx+1)":   (#convert.amount & {"in": t.costBasis}).out
+			if t.adjustAmount != 0 {
+				"txtAmtOfAdj\(idx+1)": t.adjustAmount
+			}
+			if t.adjustCodes != "" {
+				"txtCode\(idx+1)": t.adjustCodes
+			}
+		}
+	}]
+	if len(lt) > 0 {
+		// todo: for more than 14 entries, attach multiple copies
+		out: f8949lt: lt
+	}
+	let st = [ for _, c in ["D", "E", "F"] if txByCode[c].proceeds > 0 {
+		let bucket = txByCode[c]
+		chkF1099BInd: {
+			"D": "0"
+			"E": "1"
+			"F": "2"
+		}[c]
+		for idx, t in bucket.transactions {
+			"txtDescrip\(idx+1)":    t.description
+			"txtAcqDate\(idx+1)":    (#convert.date & {"in":   t.dateAcquired}).out
+			"txtSaleDate\(idx+1)":   (#convert.date & {"in":   t.dateSold}).out
+			"txtSalesPrice\(idx+1)": (#convert.amount & {"in": t.proceeds}).out
+			"txtBuyPrice\(idx+1)":   (#convert.amount & {"in": t.costBasis}).out
+			if t.adjustAmount != 0 {
+				"txtAmtOfAdj\(idx+1)": t.adjustAmount
+			}
+			if t.adjustCodes != "" {
+				"txtCode\(idx+1)": t.adjustCodes
+			}
+		}
+	}]
+	if len(st) > 0 {
+		// todo: for more than 14 entries, attach multiple copies
+		out: f8949st: st
 	}
 }
 

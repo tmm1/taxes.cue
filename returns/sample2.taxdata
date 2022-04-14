@@ -15,15 +15,15 @@ w2s: [
 freefile: fw2: [
 	// add w2 state info to generated w2s manually
 	{
-		cboW2State1: "NY"
+		cboW2State1:      "NY"
 		txtSt1EmployerId: "00-0000056"
-		txtSt1WagesTips: (taxes.#convert.amount & {in: w2s[0].wages}).out
-		txtSt1IncTax: "876"
+		txtSt1WagesTips:  (taxes.#convert.amount & {in: w2s[0].wages}).out
+		txtSt1IncTax:     "876"
 	},
 	{
-		cboW2State1: "NY"
+		cboW2State1:      "NY"
 		txtSt1EmployerId: "00-0000056"
-		txtSt1WagesTips: (taxes.#convert.amount & {in: w2s[1].wages}).out
-		txtSt1IncTax: "102"
+		txtSt1WagesTips:  (taxes.#convert.amount & {in: w2s[1].wages}).out
+		txtSt1IncTax:     "102"
 	},
 ]

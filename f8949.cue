@@ -3,6 +3,7 @@ package taxes
 #Form8949: {
 	#Transaction: {
 		code:         "A" | "B" | "C" | "D" | "E" | "F"
+		description:  string
 		dateAcquired: #date
 		dateSold:     #date
 		proceeds:     #amount

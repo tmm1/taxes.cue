@@ -82,7 +82,8 @@ however, do note that many basic tax calculations are not implemented yet. as su
   - [x] schedule b
   - [x] schedule d
   - [x] w2
-  - [ ] form 8949
+  - [x] form 8949 (cap gains transactions)
+  - [ ] form 8889 (hsa)
 - [ ] add form filling to freefilebot extension js
 - [ ] import html views for visualizing freefile data
 - [ ] interop with ustaxes
