@@ -47,4 +47,7 @@ f1040: {
 
 	// Dependents - Select Relationship to you
 	cboDepRelation1: "SO"
+
+	// Line 1. Wages, salaries, tips, etc. Attach Form (or Forms) W-2
+	txtWagesSalariesTips: "36323"
 }

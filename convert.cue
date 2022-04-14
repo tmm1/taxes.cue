@@ -1,6 +1,7 @@
 package taxes
 
 import (
+	"strconv"
 	"strings"
 	"time"
 	"github.com/tmm1/taxes/freefile"
@@ -12,13 +13,28 @@ import (
 }
 
 #convert: ReturnData: {
-	in: #ReturnData
+	in:  #ReturnData
 	out: freefile.#Return
 	out: (#convert.taxPayer & {"in":     in.taxPayer}).out
 	out: (#convert.filingStatus & {"in": in.filingStatus}).out
 	if in.freefile != _|_ {
 		out: in.freefile
 	}
+	_computed: (#summarizeReturn & {"in": in}).out
+	_income: _computed.income
+	out: f1040: {
+		if _income.wages != 0 {
+			txtWagesSalariesTips: (#convert.amount & {"in": _income.wages}).out
+		}
+	}
+}
+
+#convert: amount: {
+	in:  number
+	out: [
+		if (in & int) != _|_ {strconv.FormatInt(in, 10)},
+		if (in & float) != _|_ {strconv.FormatFloat(in, 'f', 2, 64)},
+	][0]
 }
 
 #convert: date: {
@@ -30,7 +46,7 @@ import (
 
 #convert: filingStatus: {
 	let fs = #FilingStatus
-	in: fs.Any
+	in:  fs.Any
 	out: freefile.#Return
 	out: f1040: chkFilingStatus: {
 		(fs.single):   "single"
@@ -66,7 +82,7 @@ import (
 }
 
 #convert: taxPayer: {
-	in: #TaxPayer
+	in:  #TaxPayer
 	out: freefile.#Return
 	out: f1040: {
 		txtFirstName: in.firstName

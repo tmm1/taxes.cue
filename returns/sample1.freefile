@@ -14,4 +14,7 @@ f1040: {
 
 	// Enter Your Initial
 	txtMiddleInitial: "e"
+
+	// Line 1. Wages, salaries, tips, etc. Attach Form (or Forms) W-2
+	txtWagesSalariesTips: "50000"
 }
