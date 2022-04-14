@@ -57,6 +57,18 @@ f1040: {
 
 // Form W-2 - Wage and Tax Statement
 fw2: [{
+	// Line15. Row 1. State
+	cboW2State1: "NY"
+
+	// Line 16. Row 1. Employer�s state ID number
+	txtSt1EmployerId: "00-0000056"
+
+	// Line 16. Row 1. State wages, tips, etc
+	txtSt1WagesTips: "28921"
+
+	// Line 17. Row 1. State income tax
+	txtSt1IncTax: "876"
+
 	// Line 1. Wages, tips, other compensation
 	txtWagesTips: "28921"
 
@@ -107,6 +119,18 @@ fw2: [{
 	// Line e. employee's last name
 	txtEmpLastName: "Gardenia"
 }, {
+	// Line15. Row 1. State
+	cboW2State1: "NY"
+
+	// Line 16. Row 1. Employer�s state ID number
+	txtSt1EmployerId: "00-0000056"
+
+	// Line 16. Row 1. State wages, tips, etc
+	txtSt1WagesTips: "7402"
+
+	// Line 17. Row 1. State income tax
+	txtSt1IncTax: "102"
+
 	// Line 1. Wages, tips, other compensation
 	txtWagesTips: "7402"
 

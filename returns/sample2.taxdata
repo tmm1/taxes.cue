@@ -1,4 +1,7 @@
-import "github.com/tmm1/taxes/fixtures"
+import (
+	"github.com/tmm1/taxes"
+	"github.com/tmm1/taxes/fixtures"
+)
 
 taxYear:      "2021"
 taxPayer:     fixtures.taxPayer.samGardenia
@@ -7,4 +10,20 @@ filingStatus: "marriedFilingJointly"
 w2s: [
 	fixtures.w2.saksFifth & {employee:  taxPayer.self},
 	fixtures.w2.wellsFargo & {employee: taxPayer.spouse},
+]
+
+freefile: fw2: [
+	// add w2 state info to generated w2s manually
+	{
+		cboW2State1: "NY"
+		txtSt1EmployerId: "00-0000056"
+		txtSt1WagesTips: (taxes.#convert.amount & {in: w2s[0].wages}).out
+		txtSt1IncTax: "876"
+	},
+	{
+		cboW2State1: "NY"
+		txtSt1EmployerId: "00-0000056"
+		txtSt1WagesTips: (taxes.#convert.amount & {in: w2s[1].wages}).out
+		txtSt1IncTax: "102"
+	},
 ]
