@@ -1,6 +1,7 @@
 package taxes
 
 import (
+	"math"
 	"strconv"
 	"strings"
 	"time"
@@ -31,6 +32,7 @@ import (
 			qualifiedDividends: "txtQualDiv"
 			ordinaryDividends:  "txtOrdDiv"
 			w2TaxWithheld:      "txtW2TaxWithheld"
+			f1099TaxWithheld:   "txtFedTaxWithheld1099"
 		}
 		for k, v in lookup {
 			let val = _income[k]
@@ -216,7 +218,7 @@ import (
 	in:  number
 	out: [
 		if (in & int) != _|_ {strconv.FormatInt(in, 10)},
-		if (in & float) != _|_ {strconv.FormatFloat(in, 'f', 2, 64)},
+		if (in & float) != _|_ {strconv.FormatInt(math.Round(in), 10)},
 	][0]
 }
 

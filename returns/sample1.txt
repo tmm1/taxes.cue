@@ -17,6 +17,9 @@ Form1040: {
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 4500
 
+	// line 25b Federal income tax withheld (Form 1099)
+	f1099TaxWithheld: 5
+
 	// Schedule B: Interest and Ordinary Dividends
 	scheduleB: {
 		// Part I Interest

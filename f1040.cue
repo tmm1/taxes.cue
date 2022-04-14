@@ -19,6 +19,9 @@ package taxes
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld?: number
 
+	// line 25b Federal income tax withheld (Form 1099)
+	f1099TaxWithheld?: number
+
 	// Schedule B: Interest and Ordinary Dividends
 	scheduleB?: #ScheduleB
 

@@ -29,6 +29,7 @@ form1099DIVs: [
 		payerName:              "brokerage 1"
 		totalOrdinaryDividends: 1200
 		qualifiedDividends:     200
+		taxWithheld:            5
 	},
 	{
 		payerName:                     "brokerage 2"

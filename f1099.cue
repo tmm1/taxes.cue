@@ -4,6 +4,9 @@ package taxes
 	#Base: {
 		payerTIN?:  #TaxpayerID
 		payerName?: string
+
+		// box 4 Tax Withheld
+		taxWithheld: #amount
 	}
 	#DIV: {
 		#Base
@@ -16,6 +19,9 @@ package taxes
 
 		// box 2b Total capital gain distributions
 		totalCapitalGainDistributions: #amount
+
+		// box 5 Section 199A dividends
+		section199ADividends: #amount
 
 		// box 11 Exempt-interest dividends
 		exemptInterestDividends: #amount
@@ -36,5 +42,11 @@ package taxes
 		shortTermCostBasis: #amount
 
 		transactions: [...#Form8949.#Transaction]
+	}
+	#MISC: {
+		#Base
+	}
+	#OID: {
+		#Base
 	}
 }

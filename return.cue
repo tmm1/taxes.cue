@@ -34,9 +34,15 @@ import (
 	in:   #ReturnData
 	data: in
 	out: {
+		form1099s: list.FlattenN([
+			for d in data.form1099DIVs {d},
+			for d in data.form1099INTs {d},
+			for d in data.form1099Bs {d},
+		], 1)
 		income: {
 			wages:                         list.Sum([ for w in data.w2s {w.wages}])
 			w2TaxWithheld:                 list.Sum([ for w in data.w2s {w.incomeTax}])
+			f1099TaxWithheld:              list.Sum([ for d in form1099s {d.taxWithheld}])
 			taxableInterest:               list.Sum([ for d in data.form1099INTs {d.interestIncome}, for k in data.k1s {k.interestIncome}])
 			ordinaryDividends:             list.Sum([ for d in data.form1099DIVs {d.totalOrdinaryDividends}, for k in data.k1s {k.ordinaryDividends}])
 			qualifiedDividends:            list.Sum([ for d in data.form1099DIVs {d.qualifiedDividends}, for k in data.k1s {k.qualifiedDividends}])
@@ -89,7 +95,7 @@ import (
 	income:    _computed.income
 	out:       #Form1040
 	out: {
-		for field in ["wages", "taxableInterest", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld"] {
+		for field in ["wages", "taxableInterest", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld", "f1099TaxWithheld"] {
 			let n = income[field]
 			if n != 0 {
 				(field): n
