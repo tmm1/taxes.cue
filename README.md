@@ -77,7 +77,12 @@ however, do note that many basic tax calculations are not implemented yet. as su
 - [x] build unit and integration testing harness
 - [x] prototype freefile export generator
 - [ ] compute tax owed for manual report
-- [ ] implement common 1040 schedules in freefile export
+- [ ] implement common 1040 forms/schedules in freefile export
+  - [ ] schedule a
+  - [x] schedule b
+  - [x] schedule d
+  - [ ] w2
+  - [ ] form 8949
 - [ ] add form filling to freefilebot extension js
 - [ ] import html views for visualizing freefile data
 - [ ] interop with ustaxes
