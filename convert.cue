@@ -192,16 +192,17 @@ import (
 	in:  #TaxPayer
 	out: freefile.#Return
 	out: f1040: {
-		txtFirstName: in.firstName
-		if in.middleInitial != _|_ {
-			txtMiddleInitial: in.middleInitial
+		let self = in.self
+		txtFirstName: self.firstName
+		if self.middleInitial != _|_ {
+			txtMiddleInitial: self.middleInitial
 		}
-		txtLastName: in.lastName
-		txtSSN:      in.ssn
-		if in.isBlind {
+		txtLastName: self.lastName
+		txtSSN:      self.ssn
+		if self.isBlind {
 			chkBlind: "1"
 		}
-		if in.isClaimedAsDependent {
+		if self.isClaimedAsDependent {
 			chkExemptInd: "1"
 		}
 

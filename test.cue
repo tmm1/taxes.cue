@@ -65,7 +65,10 @@ import (
 		subject: taxes.#convert.taxPayer
 		"0": assert: {
 			invoke: fixtures.taxPayer.morganGardner
-			out: f1040: txtSSN: "400-00-1037"
+			out: f1040: {
+				txtSSN:       "400-00-1037"
+				txtFirstName: "Morgan"
+			}
 		}
 		"1": assert: {
 			invoke: fixtures.taxPayer.samGardenia

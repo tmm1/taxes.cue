@@ -1,7 +1,7 @@
 taxYear:      "2021"
 filingStatus: "single"
 
-taxPayer: {
+taxPayer: self: {
 	ssn:           "123-12-1234"
 	firstName:     "john"
 	middleInitial: "e"
