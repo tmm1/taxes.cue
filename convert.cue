@@ -20,8 +20,9 @@ import (
 	if in.freefile != _|_ {
 		out: in.freefile
 	}
-	_computed: (#summarizeReturn & {"in": in}).out
+	_computed: (#computeF1040 & {"in": in})
 	_income:   _computed.income
+	_f1040:    _computed.out
 	out: f1040: {
 		let lookup = {
 			wages:              "txtWagesSalariesTips"
@@ -34,6 +35,25 @@ import (
 			let val = _income[k]
 			if val != 0 {
 				(v): (#convert.amount & {"in": val}).out
+			}
+		}
+	}
+	if _f1040.scheduleB != _|_ {
+		let _f1040sb = _f1040.scheduleB
+		out: f1040sb: {
+			let partI = _f1040sb.partI
+			if partI != _|_ {
+				for idx, o in partI.list {
+					"txtInterest\(idx+1)": o[0]
+					"txtInterestAmt\(idx+1)": (#convert.amount & {"in": o[1]}).out
+				}
+			}
+			let partII = _f1040sb.partII
+			if partII != _|_ {
+				for idx, o in partII.list {
+					"txtNamePayer\(idx+1)": o[0]
+					"txtOrdAmt\(idx+1)": (#convert.amount & {"in": o[1]}).out
+				}
 			}
 		}
 	}

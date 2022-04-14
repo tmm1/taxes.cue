@@ -30,3 +30,36 @@ f1040: {
 	// Line 25a. Federal income tax withheld from: Form(s) W-2
 	txtW2TaxWithheld: "4500"
 }
+
+// Schedule B - Interest & Ordinary Dividends
+f1040sb: {
+	// Line 1. List name of payer
+	txtInterest1: "bank 1"
+
+	// Line 1. Interest Amount
+	txtInterestAmt1: "15"
+
+	// Line 1. List name of payer
+	txtInterest2: "passive investors llc"
+
+	// Line 1. Interest Amount
+	txtInterestAmt2: "16"
+
+	// Line 5. List name of payer
+	txtNamePayer1: "brokerage 1"
+
+	// Line 5. Ordinary Dividend Amount
+	txtOrdAmt1: "1200"
+
+	// Line 5. List name of payer
+	txtNamePayer2: "brokerage 2"
+
+	// Line 5. Ordinary Dividend Amount
+	txtOrdAmt2: "2000"
+
+	// Line 5. List name of payer
+	txtNamePayer3: "acme corp llc"
+
+	// Line 5. Ordinary Dividend Amount
+	txtOrdAmt3: "1"
+}
