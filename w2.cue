@@ -7,8 +7,14 @@ package taxes
 }
 
 #W2: {
-	employee?: #Person
+	// box c Employer
 	employer?: #Employer
+
+	// box e Employee
+	employee?: {
+		#Person
+		address?: #address
+	}
 
 	// box 1 Wages
 	wages: #amount
@@ -27,4 +33,24 @@ package taxes
 
 	// box 6 Medicare tax withheld
 	medicareTax: #amount
+
+	// box 14 Other
+	otherInfo: [...#otherInfo]
+	#otherInfo: [string, #amount]
+
+	// box 15-20 State
+	stateInfo: [...#stateInfo]
+	#stateInfo: {
+		// box 15 State
+		state: #states
+
+		// box 15 Employer's state ID number
+		id: string
+
+		// box 16 State wages
+		wages: #amount
+
+		// box 17 State income tax
+		incomeTax: #amount
+	}
 }

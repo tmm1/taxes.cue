@@ -18,6 +18,12 @@ w2: saksFifth: {
 	incomeTax:   1_023
 	ssTax:       1_793
 	medicareTax: 419
+	stateInfo: [{
+		state:     "NY"
+		id:        "00-0000056"
+		"wages":   wages
+		incomeTax: 876
+	}]
 }
 
 w2: wellsFargo: {
@@ -26,4 +32,10 @@ w2: wellsFargo: {
 	incomeTax:   103
 	ssTax:       459
 	medicareTax: 107
+	stateInfo: [{
+		state:     "NY"
+		id:        "00-0000056"
+		"wages":   wages
+		incomeTax: 102
+	}]
 }

@@ -3,7 +3,7 @@ returns: $(patsubst %.taxdata,%,$(wildcard *.taxdata))
 format:
 	cue fmt cue: *.taxdata
 
-%.taxdata.json: %.taxdata
+%.taxdata.json: %.taxdata ../fixtures/*.cue
 	cue export cue: $(<) -fo $(@)
 
 %.taxdata.cue: %.taxdata.json

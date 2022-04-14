@@ -50,6 +50,14 @@ import (
 							txtEmpMidInitial: employee.middleInitial
 						}
 						txtEmpLastName: employee.lastName
+
+						let address = employee.address
+						if address != _|_ {
+							cboEmpState:   address.state
+							txtEmpCity:    address.city
+							txtEmpAddress: address.street
+							txtEmpZip:     address.zip
+						}
 					}
 
 					let employer = w2.employer
@@ -76,6 +84,20 @@ import (
 					txtFedIncTaxWithheld:   (#convert.amount & {"in": w2.incomeTax}).out
 					txtSocSecTaxWithheld:   (#convert.amount & {"in": w2.ssTax}).out
 					txtMedicareTaxWithheld: (#convert.amount & {"in": w2.medicareTax}).out
+
+					for idx, o in w2.otherInfo {
+						let n = idx + 1
+						"txtOther14Type\(n)":   o[0]
+						"txtOther14Amount\(n)": (#convert.amount & {"in": o[1]}).out
+					}
+
+					for idx, s in w2.stateInfo {
+						let n = idx + 1
+						"cboW2State\(n)":      s.state
+						"txtSt\(n)EmployerId": s.id
+						"txtSt\(n)WagesTips":  (#convert.amount & {"in": s.wages}).out
+						"txtSt\(n)IncTax":     (#convert.amount & {"in": s.incomeTax}).out
+					}
 				}
 			},
 		]

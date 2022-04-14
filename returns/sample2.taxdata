@@ -8,22 +8,23 @@ taxPayer:     fixtures.taxPayer.samGardenia
 filingStatus: "marriedFilingJointly"
 
 w2s: [
-	fixtures.w2.saksFifth & {employee:  taxPayer.self},
-	fixtures.w2.wellsFargo & {employee: taxPayer.spouse},
+	fixtures.w2.saksFifth & {
+		employee: {
+			taxPayer.self
+			address: taxPayer.address
+		}
+	},
+	fixtures.w2.wellsFargo & {
+		employee: {
+			taxPayer.spouse
+			address: taxPayer.address
+		}
+	},
 ]
 
-freefile: fw2: [
-	// add w2 state info to generated w2s manually
-	{
-		cboW2State1:      "NY"
-		txtSt1EmployerId: "00-0000056"
-		txtSt1WagesTips:  (taxes.#convert.amount & {in: w2s[0].wages}).out
-		txtSt1IncTax:     "876"
+_freefile: fw2: [
+	{// mark saks fifth w2 with box 13 statutory employee
+		chkStatutoryEmp: "1"
 	},
-	{
-		cboW2State1:      "NY"
-		txtSt1EmployerId: "00-0000056"
-		txtSt1WagesTips:  (taxes.#convert.amount & {in: w2s[1].wages}).out
-		txtSt1IncTax:     "102"
-	},
+	...,
 ]
