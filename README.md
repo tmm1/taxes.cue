@@ -81,7 +81,7 @@ however, do note that many basic tax calculations are not implemented yet. as su
   - [ ] schedule a
   - [x] schedule b
   - [x] schedule d
-  - [ ] w2
+  - [x] w2
   - [ ] form 8949
 - [ ] add form filling to freefilebot extension js
 - [ ] import html views for visualizing freefile data
