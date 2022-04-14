@@ -12,6 +12,9 @@ f1040: {
 	// chkFilingStatus
 	chkFilingStatus: "single"
 
+	// You - Presidential Election Campaign. Check here if you, or your spouse if filing jointly, want $3 to go to this fund. Checking a box below will not change your tax or refund
+	chkPresFundInd: "1"
+
 	// Enter home address (number and street). If you have a P. O . box, see instructions
 	txtAddress1: "2250 West Sahara Avenue"
 
