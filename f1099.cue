@@ -23,8 +23,14 @@ package taxes
 		// box 5 Section 199A dividends
 		section199ADividends: #amount
 
-		// box 11 Exempt-interest dividends
+		// box 7 Foreign taxes paid
+		foreignTaxPaid: #amount
+
+		// box 11 Exempt-interest dividends (includes box 12)
 		exemptInterestDividends: #amount
+
+		// box 12 Specified private activity bond interest dividends (AMT)
+		specifiedBondInterestDividends: #amount
 	}
 	#INT: {
 		#Base
