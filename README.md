@@ -76,14 +76,27 @@ however, do note that many basic tax calculations are not implemented yet. as su
 - [x] prototype manual report generator
 - [x] build unit and integration testing harness
 - [x] prototype freefile export generator
+- [ ] build schemas for common input forms
+  - [x] w2
+  - [ ] w2g
+  - [x] 1099-b
+  - [x] 1099-int
+  - [x] 1099-div
+  - [ ] 1099-misc
+  - [ ] 1099-oid
+  - [ ] 1099-r
 - [ ] compute tax owed for manual report
 - [ ] implement common 1040 forms/schedules in freefile export
+  - [ ] schedule 1
+  - [ ] schedule 2
   - [ ] schedule a
   - [x] schedule b
   - [x] schedule d
   - [x] w2
   - [x] form 8949 (cap gains transactions)
   - [ ] form 8889 (hsa)
+  - [ ] form 1116 (foreign tax credit)
+  - [ ] form 4952 (margin interest payments)
 - [ ] add form filling to freefilebot extension js
 - [ ] import html views for visualizing freefile data
 - [ ] interop with ustaxes
