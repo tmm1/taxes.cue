@@ -3,7 +3,7 @@ package taxes
 import (
 	"strings"
 	"time"
-	//"github.com/tmm1/taxes/freefile"
+	"github.com/tmm1/taxes/freefile"
 )
 
 #convert: [_]: {
@@ -13,7 +13,7 @@ import (
 
 #convert: ReturnData: {
 	in: #ReturnData
-	//out: freefile.#Return
+	out: freefile.#Return
 	out: (#convert.taxPayer & {"in":     in.taxPayer}).out
 	out: (#convert.filingStatus & {"in": in.filingStatus}).out
 	if in.freefile != _|_ {
@@ -31,7 +31,7 @@ import (
 #convert: filingStatus: {
 	let fs = #FilingStatus
 	in: fs.Any
-	//out: freefile.#Return
+	out: freefile.#Return
 	out: f1040: chkFilingStatus: {
 		(fs.single):   "single"
 		(fs.joint):    "joint"
@@ -67,7 +67,7 @@ import (
 
 #convert: taxPayer: {
 	in: #TaxPayer
-	//out: freefile.#Return
+	out: freefile.#Return
 	out: f1040: {
 		txtFirstName: in.firstName
 		if in.middleInitial != _|_ {
