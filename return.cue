@@ -82,7 +82,7 @@ import (
 			}
 		}
 		schedulesRequired: {
-			B: income.ordinaryDividends > 1500
+			B: (income.taxableInterest + income.ordinaryDividends) > 1500
 			D: (income.longTermGains + income.shortTermGains) > 0
 		}
 	}
