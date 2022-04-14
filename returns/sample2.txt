@@ -4,4 +4,7 @@ Form1040: {
 
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 1126
+
+	// Additional forms attached are only available in freefile output
+	additionalFreeFileOnlyForms: true
 }

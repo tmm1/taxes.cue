@@ -22,9 +22,9 @@ w2s: [
 	},
 ]
 
-_freefile: fw2: [
+freefile: fw2: [
 	{// mark saks fifth w2 with box 13 statutory employee
 		chkStatutoryEmp: "1"
 	},
-	...,
+	{},
 ]

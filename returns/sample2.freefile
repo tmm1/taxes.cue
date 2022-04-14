@@ -57,6 +57,9 @@ f1040: {
 
 // Form W-2 - Wage and Tax Statement
 fw2: [{
+	// Line 13. Statutory employee
+	chkStatutoryEmp: "1"
+
 	// Line 1. Wages, tips, other compensation
 	txtWagesTips: "28921"
 
