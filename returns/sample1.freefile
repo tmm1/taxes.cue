@@ -63,3 +63,21 @@ f1040sb: {
 	// Line 5. Ordinary Dividend Amount
 	txtOrdAmt3: "1"
 }
+
+// Schedule D - Capital Gains and Losses
+f1040sd: {
+	// Line 5. Net short-term gain or (loss) from partnerships, S corporations, estates, and trusts fromSchedule(s) K-1
+	txtShtTrmSchk: "50"
+
+	// Part 2. Long-Term Capital Gains and Losses-Generally Assets Held More Than One Year (see instructions). See instructions for how to figure the amounts to enter on the lines below. This form may be easier to complete if you round off cents to whole dollars. Line 8a. Column (d) Proceeds (sales price). Totals for all long-term transactions reported on Form 1099-B for which basis was reported to the IRS and for which you have no adjustments (see instructions). However, if you choose to report all these transactions on Form 8949, leave this line blank and go to line 8b
+	txtSchdTotLsellpra1: "50000"
+
+	// Line 8a. Column (e) Cost (or other basis). Totals for all long-term transactions reported on Form 1099-B for which basis was reported to the IRS and for which you have no adjustments (see instructions). However, if you choose to report all these transactions on Form 8949, leave this line blank and go to line 8b
+	txtSchdTotLbuypra1: "25000"
+
+	// Line 8a. Column (h) Gain or (loss) Subtract column (e) from column (d) and combine the result with column (g). Totals for all long-term transactions reported on Form 1099-B for which basis was reported to the IRS and for which you have no adjustments (see instructions). However, if you choose to report all these transactions on Form 8949, leave this line blank and go to line 8b
+	txtSchdTotlgnlossa1: "25000"
+
+	// Line 12. Net long-term gain or (loss) from partnerships, S corporations, estates, and trusts from Schedule(s) K-1
+	txtLngTrmSchk: "100"
+}

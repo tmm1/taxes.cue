@@ -44,7 +44,7 @@ import (
 			let partI = _f1040sb.partI
 			if partI != _|_ {
 				for idx, o in partI.list {
-					"txtInterest\(idx+1)": o[0]
+					"txtInterest\(idx+1)":    o[0]
 					"txtInterestAmt\(idx+1)": (#convert.amount & {"in": o[1]}).out
 				}
 			}
@@ -52,7 +52,42 @@ import (
 			if partII != _|_ {
 				for idx, o in partII.list {
 					"txtNamePayer\(idx+1)": o[0]
-					"txtOrdAmt\(idx+1)": (#convert.amount & {"in": o[1]}).out
+					"txtOrdAmt\(idx+1)":    (#convert.amount & {"in": o[1]}).out
+				}
+			}
+		}
+	}
+	if _f1040.scheduleD != _|_ {
+		let _f1040sd = _f1040.scheduleD
+		out: f1040sd: {
+			let partI = _f1040sd.partI
+			if partI != _|_ {
+				let lookup = {
+					shortTermReportedProceeds: "txtSchdTotSsellpra1"
+					shortTermReportedBasis:    "txtSchdTotSbuypra1"
+					shortTermReportedGain:     "txtSchdTotSgnlossa1"
+					shortTermFromK1:           "txtShtTrmSchk"
+				}
+				for k, v in lookup {
+					let val = partI[k]
+					if val != _|_ {
+						(v): (#convert.amount & {"in": val}).out
+					}
+				}
+			}
+			let partII = _f1040sd.partII
+			if partII != _|_ {
+				let lookup = {
+					longTermReportedProceeds: "txtSchdTotLsellpra1"
+					longTermReportedBasis:    "txtSchdTotLbuypra1"
+					longTermReportedGain:     "txtSchdTotlgnlossa1"
+					longTermFromK1:           "txtLngTrmSchk"
+				}
+				for k, v in lookup {
+					let val = partII[k]
+					if val != _|_ {
+						(v): (#convert.amount & {"in": val}).out
+					}
 				}
 			}
 		}
