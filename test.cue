@@ -2,7 +2,7 @@ package test
 
 import (
 	"github.com/tmm1/taxes/fixtures"
-	//"github.com/tmm1/taxes/freefile"
+	"github.com/tmm1/taxes/freefile"
 	"github.com/tmm1/taxes/testing"
 	"github.com/tmm1/taxes"
 )
@@ -75,17 +75,19 @@ import (
 
 	test: "#convert.ReturnData": {
 		subject: taxes.#convert.ReturnData
+		let sam = taxes.#ReturnData & {
+			taxYear:      "2021"
+			taxPayer:     fixtures.taxPayer.samGardenia
+			filingStatus: "marriedFilingJointly"
+		}
 		"0": assert: {
-			invoke: {
-				taxYear:      "2021"
-				taxPayer:     fixtures.taxPayer.samGardenia
-				filingStatus: "marriedFilingJointly"
-			}
+			invoke: sam
+			out: freefile.#Return
 			out: f1040: {
 				chkFilingStatus: "joint"
 				chkSpBlind:      "1"
 				txtDepSSN1:      "400-00-1070"
-				cboDepRelation:  "SO"
+				cboDepRelation1: "SO"
 			}
 		}
 	}
