@@ -90,5 +90,14 @@ import (
 				cboDepRelation1: "SO"
 			}
 		}
+		"1": assert: {
+			invoke: sam & {
+				w2s: [fixtures.w2.saksFifth]
+			}
+			out: freefile.#Return
+			out: f1040: {
+				txtWagesSalariesTips: "28921"
+			}
+		}
 	}
 }).results
