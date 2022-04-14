@@ -74,6 +74,8 @@ fw2: [{
 
 	// Line 6. Medicare tax withheld
 	txtMedicareTaxWithheld: "419"
+	// Line a. Employee�s social security number
+	txtEmplyerSSN: "400-00-1038"
 
 	// Line b. Employer identification number (EIN)
 	txtEmployerIdNum: "00-0000011"
@@ -96,6 +98,14 @@ fw2: [{
 	// Employer's Zip
 	// Line c. Employer Zip
 	txtEmployerZip: "10022"
+
+	// Employee's First Name
+	// Line e. employee's first name
+	txtEmpFirstName: "Sam"
+
+	// Employee's Last Name
+	// Line e. employee's last name
+	txtEmpLastName: "Gardenia"
 }, {
 	// Line 1. Wages, tips, other compensation
 	txtWagesTips: "7402"
@@ -114,6 +124,8 @@ fw2: [{
 
 	// Line 6. Medicare tax withheld
 	txtMedicareTaxWithheld: "107"
+	// Line a. Employee�s social security number
+	txtEmplyerSSN: "400-00-1071"
 
 	// Line b. Employer identification number (EIN)
 	txtEmployerIdNum: "00-0000013"
@@ -136,4 +148,12 @@ fw2: [{
 	// Employer's Zip
 	// Line c. Employer Zip
 	txtEmployerZip: "10004"
+
+	// Employee's First Name
+	// Line e. employee's first name
+	txtEmpFirstName: "Gloria"
+
+	// Employee's Last Name
+	// Line e. employee's last name
+	txtEmpLastName: "Jones"
 }]

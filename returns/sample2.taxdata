@@ -5,6 +5,6 @@ taxPayer:     fixtures.taxPayer.samGardenia
 filingStatus: "marriedFilingJointly"
 
 w2s: [
-	fixtures.w2.saksFifth,
-	fixtures.w2.wellsFargo,
+	fixtures.w2.saksFifth & {employee:  taxPayer.self},
+	fixtures.w2.wellsFargo & {employee: taxPayer.spouse},
 ]
