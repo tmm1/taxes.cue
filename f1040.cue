@@ -121,6 +121,7 @@ package taxes
 		}
 	}
 
-	// Additional forms attached are only available in freefile output
+	// Additional data and/or forms are only available in the freefile output
+	// This generally means you've specified a freefile: label in your .taxdata
 	additionalFreeFileOnlyForms?: bool
 }
