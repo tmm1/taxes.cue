@@ -33,7 +33,13 @@ package taxes
 		specifiedBondInterestDividends: #amount
 
 		// Portion of box 11 exempt-interest dividends that are tax-free in the residency state as well
-		residentStateExemptDividends: number | [...[string, number]]
+		residentStateExemptDividends: #amount
+
+		// Portion of box 1a from foreign sources
+		foreignPortionOfOrdinaryDividends: #amount
+
+		// Portion of box 1b from foreign sources
+		foreignPortionOfQualifiedDividends: #amount
 	}
 	#INT: {
 		#Base
