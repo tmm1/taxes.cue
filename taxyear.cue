@@ -1,6 +1,6 @@
 package taxes
 
-#TaxYear: {
+#TaxYear: #Info: {
 	year: #year
 	hsa?: contributionLimits: {
 		selfOnly: int
@@ -21,7 +21,7 @@ package taxes
 	}
 }
 
-#TY2020: #TaxYear & {
+#TaxYear: "2020": #TaxYear.#Info & {
 	year: "2020"
 	hsa: contributionLimits: {
 		selfOnly: 3_550
@@ -107,7 +107,7 @@ package taxes
 	}
 }
 
-#TY2021: #TaxYear & {
+#TaxYear: "2021": #TaxYear.#Info & {
 	year: "2021"
 	hsa: contributionLimits: {
 		selfOnly: 3_600

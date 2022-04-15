@@ -1,6 +1,24 @@
 Form1040: {
+	// Tax Year
+	taxYear: "2021"
+
+	// Filing Status
+	filingStatus: "marriedFilingJointly"
+
 	// line 1 Wages
 	wages: 36323
+
+	// line 9 Total income
+	totalIncome: 36323
+
+	// line 11 Adjusted gross income
+	adjustedGrossIncome: 36323
+
+	// line 12a Standard or itemized deduction
+	standardOrItemizedDeduction: 25100
+
+	// line 15 Taxable income
+	taxableIncome: 11223
 
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 1126

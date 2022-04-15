@@ -95,12 +95,18 @@ import (
 	income:    _computed.income
 	out:       #Form1040
 	out: {
+		taxYear: data.taxYear
+		filingStatus: data.filingStatus
+
 		for field in ["wages", "taxableInterest", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld", "f1099TaxWithheld"] {
 			let n = income[field]
 			if n != 0 {
 				(field): n
 			}
 		}
+
+		let standardDeduction = #TaxYear[data.taxYear].deductions.standard[data.filingStatus]
+		standardOrItemizedDeduction: standardDeduction
 
 		if _computed.schedulesRequired.B {
 			scheduleB: #Form1040.#ScheduleB & {
@@ -196,6 +202,7 @@ import (
 					}
 				}
 			}
+			capitalGainOrLoss: scheduleD.partIII.netGainOrLoss
 		}
 
 		if data.freefile != _|_ {

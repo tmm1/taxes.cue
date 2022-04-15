@@ -1,6 +1,24 @@
 Form1040: {
+	// Tax Year
+	taxYear: "2021"
+
+	// Filing Status
+	filingStatus: "single"
+
 	// line 1 Wages
 	wages: 0
+
+	// line 9 Total income
+	totalIncome: 0
+
+	// line 11 Adjusted gross income
+	adjustedGrossIncome: 0
+
+	// line 12a Standard or itemized deduction
+	standardOrItemizedDeduction: 12550
+
+	// line 15 Taxable income
+	taxableIncome: 0
 
 	// Additional data and/or forms are only available in the freefile output
 	// This generally means you've specified a freefile: label in your .taxdata

@@ -1,4 +1,10 @@
 Form1040: {
+	// Tax Year
+	taxYear: "2021"
+
+	// Filing Status
+	filingStatus: "single"
+
 	// line 1 Wages
 	wages: 50000
 
@@ -13,6 +19,21 @@ Form1040: {
 
 	// line 3b Ordinary dividends
 	ordinaryDividends: 3201
+
+	// line 7 Capital gain or loss
+	capitalGainOrLoss: 25705
+
+	// line 9 Total income
+	totalIncome: 53232
+
+	// line 11 Adjusted gross income
+	adjustedGrossIncome: 53232
+
+	// line 12a Standard or itemized deduction
+	standardOrItemizedDeduction: 12550
+
+	// line 15 Taxable income
+	taxableIncome: 40682
 
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 4500
@@ -44,6 +65,9 @@ Form1040: {
 		partI: {
 			// line 5 Short-term gain from K1s
 			shortTermFromK1: 50
+
+			// line 7 Net short-term capital gain or loss
+			shortTermNetGainOrLoss: 50
 		}
 
 		// Part II Long-Term Capital Gains and Losses
@@ -61,9 +85,20 @@ Form1040: {
 			longTermEBasis: 5000
 			// line 9h Gain or loss
 			longTermEGain: 555
-
 			// line 12 Long-term gain from K1s
 			longTermFromK1: 100
+
+			// line 15 Net long-term capital gain or loss
+			longTermNetGainOrLoss: 25655
+		}
+
+		// Part III Summary
+		partIII: {
+			// line 16 Net short-term and long-term gain or loss
+			netGainOrLoss: 25705
+
+			// line 17 Are lines 15 and 16 both gains?
+			stillHaveGainsAfterShortTermLosses: true
 		}
 	}
 }
