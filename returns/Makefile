@@ -1,16 +1,25 @@
-returns: $(patsubst %.taxdata,%,$(wildcard *.taxdata))
+TARGETS := $(patsubst %.taxdata,%,$(wildcard *.taxdata))
+
+default: returns
 
 format:
 	cue fmt cue: *.taxdata
 
-%.taxdata.json: %.taxdata ../fixtures/*.cue
+%.taxdata.json: %.taxdata $(wildcard ../fixtures/*.cue)
 	cue export cue: $(<) -fo $(@)
 
-%.taxdata.cue: %.taxdata.json
+%.taxdata.cue: %.taxdata.json $(wildcard ../*.cue)
 	cue import -l data: -f $(<)
 
-%: %.taxdata.cue
-	cue export --out cue compute.cue $(@).taxdata.cue -e 'FreeFile' > $(@).freefile
-	cue export --out cue compute.cue $(@).taxdata.cue -e '{"Form1040": Form1040}' > $(@).txt
+%.freefile: %.taxdata.cue
+	cue export --out cue compute.cue $(<) -e 'FreeFile' > $(@)
 
-.PHONY: returns format
+%.txt: %.taxdata.cue
+	cue export --out cue compute.cue $(<) -e '{"Form1040": Form1040}' > $(@)
+
+returns: $(TARGETS)
+
+$(TARGETS):
+	make $(@).freefile $(@).txt
+
+.PHONY: returns format $(TARGETS)
