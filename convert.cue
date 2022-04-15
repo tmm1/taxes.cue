@@ -176,7 +176,7 @@ import (
 			"txtSalesPrice\(idx+1)": (#convert.amount & {"in": t.proceeds}).out
 			"txtBuyPrice\(idx+1)":   (#convert.amount & {"in": t.costBasis}).out
 			if t.adjustAmount != 0 {
-				"txtAmtOfAdj\(idx+1)": t.adjustAmount
+				"txtAmtOfAdj\(idx+1)": (#convert.amount & {"in": t.adjustAmount}).out
 			}
 			if t.adjustCodes != "" {
 				"txtCode\(idx+1)": t.adjustCodes
