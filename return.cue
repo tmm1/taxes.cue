@@ -204,7 +204,8 @@ import (
 	}
 }
 
-#ReturnData: {
+#validateReturnData: #ReturnData
+#validateReturnData: {
 	taxPayer: spouse?: _|_
 	filingStatus: #FilingStatus.single |
 		#FilingStatus.headOfHousehold |
