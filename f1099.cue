@@ -31,6 +31,9 @@ package taxes
 
 		// box 12 Specified private activity bond interest dividends (AMT)
 		specifiedBondInterestDividends: #amount
+
+		// Portion of box 11 exempt-interest dividends that are tax-free in the residency state as well
+		residentStateExemptDividends: [...[string, number]]
 	}
 	#INT: {
 		#Base
