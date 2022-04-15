@@ -14,7 +14,7 @@ import (
 	}
 
 	test: "Return.filingStatus": {
-		subject: taxes.#ReturnData
+		subject: taxes.#validateReturnData
 		"0": assert: ok: {
 			filingStatus: "single"
 		}
