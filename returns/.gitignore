@@ -1,5 +1,6 @@
 /*.taxdata.json
 /*.taxdata.cue
+/mine
 
 *.taxdata
 *.freefile

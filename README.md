@@ -22,11 +22,11 @@ $ git clone https://github.com/tmm1/taxes.cue
 
 ```
 $ cd taxes.cue/returns
-$ cp sample1.taxdata mine2021.taxdata
+$ cp sample1.taxdata mine/2021.taxdata
 
-$ make mine2021
-$ cat mine2021.txt      # manual fill instructions
-$ cat mine2021.freefile # freefilebot data
+$ make mine/2021
+$ cat mine/2021.txt      # manual fill instructions
+$ cat mine/2021.freefile # freefilebot data
 ```
 
 ### example

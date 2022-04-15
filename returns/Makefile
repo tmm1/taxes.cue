@@ -1,4 +1,6 @@
-TARGETS := $(patsubst %.taxdata,%,$(wildcard *.taxdata))
+TARGETS := \
+	$(patsubst %.taxdata,%,$(wildcard **/*.taxdata)) \
+	$(patsubst %.taxdata,%,$(wildcard *.taxdata))
 
 default: returns
 
