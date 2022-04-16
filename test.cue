@@ -4,6 +4,7 @@ import (
 	"github.com/tmm1/taxes/fixtures"
 	"github.com/tmm1/taxes/freefile"
 	"github.com/tmm1/taxes/testing"
+	"github.com/tmm1/taxes/worksheets"
 	"github.com/tmm1/taxes"
 )
 
@@ -101,6 +102,31 @@ import (
 			out: f1040: {
 				txtWagesSalariesTips: "28921"
 			}
+		}
+	}
+
+	test: "worksheets.qualifiedDividendsAndCapitalGainTax": {
+		let return = taxes.#ReturnData & {
+			taxYear:      "2021"
+			taxPayer:     fixtures.taxPayer.samGardenia
+			filingStatus: "marriedFilingJointly"
+			form1099DIVs: [{
+				payerName: "brokerage"
+				totalOrdinaryDividends: 5000
+				qualifiedDividends: 5000
+			}]
+		}
+
+		subject: worksheets.#qualifiedDividendsAndCapitalGainTax
+		"0": assert: {
+			invoke: {
+				f1040: (taxes.#computeF1040 & {in: return}).out
+				computeTax: {
+					in: number
+					out: 5
+				}
+			}
+			out: 5
 		}
 	}
 }).results
