@@ -3,6 +3,7 @@ package taxes
 import (
 	"list"
 	ff "github.com/tmm1/taxes/freefile"
+	"github.com/tmm1/taxes/worksheets"
 )
 
 #ReturnData: {
@@ -203,6 +204,31 @@ import (
 		if data.freefile != _|_ {
 			additionalFreeFileOnlyForms: true
 		}
+	}
+}
+
+#computeTax: {
+	in:   #Form1040
+	data: in
+	out: in & {
+		_computeTax: {
+			in:  number
+			out: (#TaxYear.#computeTax & {"in": {
+				income:       in
+				"taxYear": data.taxYear
+				"filingStatus": data.filingStatus
+			}}).out
+		}
+
+		tax: [
+			if data.scheduleD != _|_ {
+				(worksheets.#qualifiedDividendsAndCapitalGainTax & {"in": {
+					f1040: data
+					computeTax: _computeTax
+				}}).out
+			},
+			(_computeTax & {"in": data.taxableIncome}).out
+		][0]
 	}
 }
 

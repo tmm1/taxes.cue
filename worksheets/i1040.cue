@@ -10,7 +10,7 @@ import "list"
 		_form1040: {
 			l3a: f1040.qualifiedDividends
 			l15: f1040.taxableIncome
-			l7: f1040.capitalGainOrLoss | *0
+			l7: *f1040.capitalGainOrLoss | 0
 		}
 		_scheduleD?: {
 			l15: number

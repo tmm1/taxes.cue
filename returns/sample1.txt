@@ -36,7 +36,7 @@ Form1040: {
 	taxableIncome: 66387
 
 	// line 16 Tax
-	tax: 10354
+	tax: 8544.75
 
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 4500
