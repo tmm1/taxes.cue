@@ -105,9 +105,6 @@ import (
 			}
 		}
 
-		let standardDeduction = #TaxYear[data.taxYear].deductions.standard[data.filingStatus]
-		standardOrItemizedDeduction: standardDeduction
-
 		if _computed.schedulesRequired.B {
 			scheduleB: #Form1040.#ScheduleB & {
 				if income.taxableInterest > 0 {

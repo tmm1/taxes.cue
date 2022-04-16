@@ -106,21 +106,16 @@ import (
 	}
 
 	test: "worksheets.qualifiedDividendsAndCapitalGainTax": {
-		let return = taxes.#ReturnData & {
-			taxYear:      "2021"
-			taxPayer:     fixtures.taxPayer.samGardenia
-			filingStatus: "marriedFilingJointly"
-			form1099DIVs: [{
-				payerName: "brokerage"
-				totalOrdinaryDividends: 5000
-				qualifiedDividends: 5000
-			}]
-		}
 
 		subject: worksheets.#qualifiedDividendsAndCapitalGainTax
 		"0": assert: {
 			invoke: {
-				f1040: (taxes.#computeF1040 & {in: return}).out
+				f1040: taxes.#Form1040 & {
+					taxYear: "2021"
+					filingStatus: "marriedFilingJointly"
+					qualifiedDividends: 5000
+					taxableIncome: 0
+				}
 				computeTax: {
 					in: number
 					out: 5

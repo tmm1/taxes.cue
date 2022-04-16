@@ -40,7 +40,7 @@ import "list"
 	adjustedGrossIncome: totalIncome - (adjustmentsToIncomeFromSchedule1 | *0)
 
 	// line 12a Standard or itemized deduction
-	standardOrItemizedDeduction: number
+	standardOrItemizedDeduction: number | *#TaxYear[taxYear].deductions.standard[filingStatus]
 
 	// line 13 Qualified business income deduction
 	qualifiedBusinessIncomeDeduction?: number
