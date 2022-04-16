@@ -20,6 +20,9 @@ Form1040: {
 	// line 15 Taxable income
 	taxableIncome: 0
 
+	// line 16 Tax
+	tax: 0
+
 	// Additional data and/or forms are only available in the freefile output
 	// This generally means you've specified a freefile: label in your .taxdata
 	additionalFreeFileOnlyForms: true

@@ -20,6 +20,9 @@ Form1040: {
 	// line 15 Taxable income
 	taxableIncome: 11223
 
+	// line 16 Tax
+	tax: 1122
+
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 1126
 

@@ -48,6 +48,13 @@ import "list"
 	// line 15 Taxable income
 	taxableIncome: list.Max([0, adjustedGrossIncome - standardOrItemizedDeduction - (qualifiedBusinessIncomeDeduction | *0)])
 
+	// line 16 Tax
+	tax: (#TaxYear.#computeTax & {"in": {
+		income: taxableIncome
+		"taxYear": taxYear
+		"filingStatus": filingStatus
+	}}).out
+
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld?: number
 
