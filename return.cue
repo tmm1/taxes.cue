@@ -69,7 +69,7 @@ import (
 			}])
 			form1099BTransactionsByCode: {
 				for _, c in ["A", "B", "C", "D", "E", "F"] {
-					"\(c)": {
+					(c): {
 						transactions: list.FlattenN([ for d in data.form1099Bs if len(d.transactions) != 0 {
 							[ for t in d.transactions if t.code == c {t}]
 						}], 1)
@@ -150,11 +150,10 @@ import (
 						let txByCode = income.form1099BTransactionsByCode
 						for _, c in ["A", "B", "C"] {
 							let bucket = txByCode[c]
-							let proceeds = bucket.proceeds
-							if proceeds > 0 {
-								"shortTerm\(c)Proceeds": proceeds
+							if bucket.gainOrLoss != 0 || bucket.costBasis != 0 {
+								"shortTerm\(c)Proceeds": bucket.proceeds
 								"shortTerm\(c)Basis":    bucket.costBasis
-								"shortTerm\(c)Gain":     bucket.gainOrLoss
+								"shortTerm\(c)Gain":     number
 								let adjustments = bucket.adjustments
 								if adjustments != 0 {
 									"shortTerm\(c)Adjustments": adjustments
@@ -180,11 +179,10 @@ import (
 						let txByCode = income.form1099BTransactionsByCode
 						for _, c in ["D", "E", "F"] {
 							let bucket = txByCode[c]
-							let proceeds = bucket.proceeds
-							if proceeds > 0 {
-								"longTerm\(c)Proceeds": proceeds
+							if bucket.gainOrLoss != 0 || bucket.costBasis != 0 {
+								"longTerm\(c)Proceeds": bucket.proceeds
 								"longTerm\(c)Basis":    bucket.costBasis
-								"longTerm\(c)Gain":     bucket.gainOrLoss
+								"longTerm\(c)Gain":     number
 								let adjustments = bucket.adjustments
 								if adjustments != 0 {
 									"longTerm\(c)Adjustments": adjustments

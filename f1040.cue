@@ -101,7 +101,7 @@ import "list"
 			// line 1bg Adjustments
 			shortTermAAdjustments?: number
 			// line 1bh Gain or loss
-			shortTermAGain?: shortTermAProceeds - shortTermABasis + (shortTermAAdjustments | *0)
+			shortTermAGain?: shortTermAProceeds - shortTermABasis + (*shortTermAAdjustments | 0)
 
 			// line 2d Proceeds
 			shortTermBProceeds?: number
@@ -110,7 +110,7 @@ import "list"
 			// line 2g Adjustments
 			shortTermBAdjustments?: number
 			// line 2h Gain or loss
-			shortTermBGain?: shortTermBProceeds - shortTermBBasis + (shortTermBAdjustments | *0)
+			shortTermBGain?: shortTermBProceeds - shortTermBBasis + (*shortTermBAdjustments | 0)
 
 			// line 3d Proceeds
 			shortTermCProceeds?: number
@@ -119,7 +119,7 @@ import "list"
 			// line 3g Adjustments
 			shortTermCAdjustments?: number
 			// line 3h Gain or loss
-			shortTermCGain?: shortTermCProceeds - shortTermCBasis + (shortTermCAdjustments | *0)
+			shortTermCGain?: shortTermCProceeds - shortTermCBasis + (*shortTermCAdjustments | 0)
 
 			// line 4 Short term gain from Forms 6252, 4684, 6781, and 8824
 			shortTermOtherGain?: number
@@ -148,7 +148,7 @@ import "list"
 			// line 8bg Adjustments
 			longTermDAdjustments?: number
 			// line 8bh Gain or loss
-			longTermDGain?: longTermDProceeds - longTermDBasis + (longTermDAdjustments | *0)
+			longTermDGain?: longTermDProceeds - longTermDBasis + (*longTermDAdjustments | 0)
 
 			// line 9d Proceeds
 			longTermEProceeds?: number
@@ -157,7 +157,7 @@ import "list"
 			// line 9g Adjustments
 			longTermEAdjustments?: number
 			// line 9h Gain or loss
-			longTermEGain?: longTermEProceeds - longTermEBasis + (longTermEAdjustments | *0)
+			longTermEGain?: longTermEProceeds - longTermEBasis + (*longTermEAdjustments | 0)
 
 			// line 10d Proceeds
 			longTermFProceeds?: number
@@ -166,7 +166,7 @@ import "list"
 			// line 10g Adjustments
 			longTermFAdjustments?: number
 			// line 10h Gain or loss
-			longTermFGain?: longTermFProceeds - longTermFBasis + (longTermFAdjustments | *0)
+			longTermFGain?: longTermFProceeds - longTermFBasis + (*longTermFAdjustments | 0)
 
 			// line 11 Long term gain from other forms
 			longTermOtherGain?: number
