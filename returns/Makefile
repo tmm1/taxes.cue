@@ -13,11 +13,11 @@ format:
 %.taxdata.cue: %.taxdata.json $(wildcard ../*.cue)
 	cue import -l data: -f $(<)
 
-%.freefile: %.taxdata.cue
-	cue export --out cue compute.cue $(<) -e 'FreeFile' > $(@)
+%.freefile: compute.cue %.taxdata.cue
+	cue export --out cue $(^) -e 'FreeFile' > $(@)
 
-%.txt: %.taxdata.cue
-	cue export --out cue compute.cue $(<) -e '{"Form1040": Form1040}' > $(@)
+%.txt: compute.cue %.taxdata.cue
+	cue export --out cue $(^) -e '{"Form1040": Form1040}' > $(@)
 
 returns: $(TARGETS)
 
