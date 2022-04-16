@@ -38,7 +38,7 @@ import "math"
 	out: [
 		if (in.income & int) != _|_ {
 			math.Round(_res)
-		}
+		},
 		_res
 	][0]
 }

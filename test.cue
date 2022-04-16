@@ -122,17 +122,21 @@ import (
 		"0": assert: {
 			invoke: {
 				f1040: taxes.#Form1040 & {
-					taxYear: "2021"
-					filingStatus: "marriedFilingJointly"
-					qualifiedDividends: 5000
-					taxableIncome: 0
+					taxYear:            "2021"
+					filingStatus:       "marriedFilingJointly"
+					ordinaryDividends:  200K
+					qualifiedDividends: 200K
 				}
 				computeTax: {
-					in: number
-					out: 5
+					in:  number
+					out: (taxes.#TaxYear.#computeTax & {"in": {
+						taxYear:      f1040.taxYear
+						filingStatus: f1040.filingStatus
+						income:       in
+					}}).out
 				}
 			}
-			out: 5
+			out: 14115
 		}
 	}
 }).results
