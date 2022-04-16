@@ -37,7 +37,7 @@ import "list"
 	adjustmentsToIncomeFromSchedule1?: number
 
 	// line 11 Adjusted gross income
-	adjustedGrossIncome: totalIncome - (adjustmentsToIncomeFromSchedule1 | *0)
+	adjustedGrossIncome: totalIncome - (*adjustmentsToIncomeFromSchedule1 | 0)
 
 	// line 12a Standard or itemized deduction
 	standardOrItemizedDeduction: number | *#TaxYear[taxYear].deductions.standard[filingStatus]
@@ -46,7 +46,7 @@ import "list"
 	qualifiedBusinessIncomeDeduction?: number
 
 	// line 15 Taxable income
-	taxableIncome: list.Max([0, adjustedGrossIncome - standardOrItemizedDeduction - (qualifiedBusinessIncomeDeduction | *0)])
+	taxableIncome: list.Max([0, adjustedGrossIncome - standardOrItemizedDeduction - (*qualifiedBusinessIncomeDeduction | 0)])
 
 	// line 16 Tax
 	tax: number

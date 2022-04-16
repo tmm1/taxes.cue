@@ -26,6 +26,9 @@ f1040: {
 
 	// Enter ZIP code
 	txtZip: "89146"
+
+	// Line 12a. Standard Deduction for - Single or Married filing separately, $12, 550. Married filing jointly or Qualifying widow(er), $25, 100. Head of household, $18, 800. If you checked any box under Standard Deduction, see instructions. Line 12a. Standard deduction or itemized deductions (from Schedule A)
+	txtStdDed: "12550"
 }
 
 // Schedule F - Profit or Loss From Farming

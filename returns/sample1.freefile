@@ -30,6 +30,15 @@ f1040: {
 	// Line 3b. Ordinary dividends
 	txtOrdDiv: "3201"
 
+	// Line 7. Capital gain or (loss). Attach Schedule D if required
+	txtCapitalGains: "25705"
+
+	// Line 12a. Standard Deduction for - Single or Married filing separately, $12, 550. Married filing jointly or Qualifying widow(er), $25, 100. Head of household, $18, 800. If you checked any box under Standard Deduction, see instructions. Line 12a. Standard deduction or itemized deductions (from Schedule A)
+	txtStdDed: "12550"
+
+	// Line 16. Tax (see instructions)
+	txtTaxWoAmt: "8545"
+
 	// Line 25a. Federal income tax withheld from: Form(s) W-2
 	txtW2TaxWithheld: "4500"
 

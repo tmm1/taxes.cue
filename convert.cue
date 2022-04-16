@@ -23,12 +23,12 @@ import (
 	}
 	_computed: (#computeF1040 & {"in": in})
 	_income:   _computed.income
-	_f1040:    _computed.out
+	_f1040:    (#computeTax & {"in": _computed.out}).out
 	out: f1040: {
 		let lookup = {
 			wages:              "txtWagesSalariesTips"
-			taxableInterest:    "txtTaxableInt"
 			taxExemptInterest:  "txtTaxExemptInt"
+			taxableInterest:    "txtTaxableInt"
 			qualifiedDividends: "txtQualDiv"
 			ordinaryDividends:  "txtOrdDiv"
 			w2TaxWithheld:      "txtW2TaxWithheld"
@@ -38,6 +38,19 @@ import (
 			let val = _income[k]
 			if val != 0 {
 				(v): (#convert.amount & {"in": val}).out
+			}
+		}
+		let fields = {
+			capitalGainOrLoss:           "txtCapitalGains"
+			standardOrItemizedDeduction: "txtStdDed"
+			tax:                         "txtTaxWoAmt"
+		}
+		for k, v in fields {
+			if _f1040[k] != _|_ {
+				let val = _f1040[k]
+				if val != 0 {
+					(v): (#convert.amount & {"in": val}).out
+				}
 			}
 		}
 	}

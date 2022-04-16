@@ -51,6 +51,12 @@ f1040: {
 	// Line 1. Wages, salaries, tips, etc. Attach Form (or Forms) W-2
 	txtWagesSalariesTips: "36323"
 
+	// Line 12a. Standard Deduction for - Single or Married filing separately, $12, 550. Married filing jointly or Qualifying widow(er), $25, 100. Head of household, $18, 800. If you checked any box under Standard Deduction, see instructions. Line 12a. Standard deduction or itemized deductions (from Schedule A)
+	txtStdDed: "25100"
+
+	// Line 16. Tax (see instructions)
+	txtTaxWoAmt: "1122"
+
 	// Line 25a. Federal income tax withheld from: Form(s) W-2
 	txtW2TaxWithheld: "1126"
 }
