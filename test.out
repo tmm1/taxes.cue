@@ -4,5 +4,6 @@ pass: {
 	"#convert.filingStatus": ["0", "1", "2"]
 	"#convert.taxPayer": ["0", "1"]
 	"#convert.ReturnData": ["0", "1"]
+	"#TaxYear.#computeTax": ["0"]
 	"worksheets.qualifiedDividendsAndCapitalGainTax": ["0"]
 }

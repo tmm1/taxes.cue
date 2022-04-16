@@ -86,7 +86,7 @@ import (
 		}
 		"0": assert: {
 			invoke: sam
-			out: freefile.#Return
+			out:    freefile.#Return
 			out: f1040: {
 				chkFilingStatus: "joint"
 				chkSpBlind:      "1"
@@ -105,8 +105,19 @@ import (
 		}
 	}
 
-	test: "worksheets.qualifiedDividendsAndCapitalGainTax": {
+	test: "#TaxYear.#computeTax": {
+		subject: taxes.#TaxYear.#computeTax
+		"0": assert: {
+			invoke: {
+				taxYear:      "2021"
+				filingStatus: "single"
+				income:       5K
+			}
+			out: 500
+		}
+	}
 
+	test: "worksheets.qualifiedDividendsAndCapitalGainTax": {
 		subject: worksheets.#qualifiedDividendsAndCapitalGainTax
 		"0": assert: {
 			invoke: {

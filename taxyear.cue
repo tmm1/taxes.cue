@@ -1,5 +1,7 @@
 package taxes
 
+import "math"
+
 #TaxYear: #Info: {
 	year: #year
 	hsa?: contributionLimits: {
@@ -19,6 +21,26 @@ package taxes
 		#_rate: [number & >0 | number & -1, number & >=0.0 & <100.0]
 		[#FilingStatus.Any]: [...#_rate]
 	}
+}
+
+#TaxYear: #computeTax: {
+	in: {
+		income: number & >=0
+		taxYear: #year
+		filingStatus: #FilingStatus.Any
+	}
+	_taxRates: #TaxYear[in.taxYear].taxRates[in.filingStatus]
+	_res: [
+		for r in _taxRates if in.income <= r[0] || r[0] == -1 {
+			(r[1] * in.income) / 100 - r[2]
+		}
+	][0]
+	out: [
+		if (in.income & int) != _|_ {
+			math.Round(_res)
+		}
+		_res
+	][0]
 }
 
 #TaxYear: "2020": #TaxYear.#Info & {
