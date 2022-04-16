@@ -24,19 +24,19 @@ Form1040: {
 	capitalGainOrLoss: 25705
 
 	// line 9 Total income
-	totalIncome: 53232
+	totalIncome: 78937
 
 	// line 11 Adjusted gross income
-	adjustedGrossIncome: 53232
+	adjustedGrossIncome: 78937
 
 	// line 12a Standard or itemized deduction
 	standardOrItemizedDeduction: 12550
 
 	// line 15 Taxable income
-	taxableIncome: 40682
+	taxableIncome: 66387
 
 	// line 16 Tax
-	tax: 4699
+	tax: 10354
 
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 4500

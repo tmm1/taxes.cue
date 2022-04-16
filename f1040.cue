@@ -31,7 +31,7 @@ import "list"
 	otherIncomeFromSchedule1?: number
 
 	// line 9 Total income
-	totalIncome: list.Sum([ for o in [wages, taxableInterest, ordinaryDividends, otherIncomeFromSchedule1] if o != _|_ {o}])
+	totalIncome: list.Sum([ for o in [wages, taxableInterest, ordinaryDividends, capitalGainOrLoss, otherIncomeFromSchedule1] if o != _|_ {o}])
 
 	// line 10 Adjustments to income from Schedule 1
 	adjustmentsToIncomeFromSchedule1?: number
