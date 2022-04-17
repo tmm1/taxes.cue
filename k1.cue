@@ -2,7 +2,7 @@ package taxes
 
 #K1: {
 	#_base: {
-		ordinaryBusinessIncome: #amount
+		ordinaryBusinessIncome: #negamount
 		rentalRealEstateIncome: #amount
 		otherRentalIncome:      #amount
 		interestIncome:         #amount
