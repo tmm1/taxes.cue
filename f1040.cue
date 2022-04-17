@@ -39,8 +39,14 @@ import "list"
 	// line 11 Adjusted gross income
 	adjustedGrossIncome: totalIncome - (*adjustmentsToIncomeFromSchedule1 | 0)
 
+	// line 12a Standard deduction
+	standardDeduction: #TaxYear[taxYear].deductions.standard[filingStatus]
+
+	// line 12a Itemized deduction
+	itemizedDeduction: number | *0
+
 	// line 12a Standard or itemized deduction
-	standardOrItemizedDeduction: number | *#TaxYear[taxYear].deductions.standard[filingStatus]
+	standardOrItemizedDeduction: list.Max([itemizedDeduction, standardDeduction])
 
 	// line 13 Qualified business income deduction
 	qualifiedBusinessIncomeDeduction?: number
@@ -57,11 +63,55 @@ import "list"
 	// line 25b Federal income tax withheld (Form 1099)
 	f1099TaxWithheld?: number
 
+	// Schedule A: Itemized Deductions
+	scheduleA?: #ScheduleA
+
 	// Schedule B: Interest and Ordinary Dividends
 	scheduleB?: #ScheduleB
 
 	// Schedule D: Capital Gains and Losses
 	scheduleD?: #ScheduleD
+
+	#ScheduleA: {
+		// Taxes You Paid
+		taxesPaid: {
+			// line 5 State and local taxes
+			stateAndLocal?: number
+
+			// line 5a General sales tax
+			generalSalesTax?: number
+			if generalSalesTax != _|_ {
+				useGeneralSalesTax: true
+			}
+
+			// line 5b Real estate taxes
+			stateAndLocalRealEstate?: number
+
+			// line 5c Personal property taxes
+			personalProperty?: number
+
+			// line 7 Total
+			total?: number
+		}
+
+		// Gifts to Charity
+		giftsToCharity: {
+			// line 11 Gifts by cash or check
+			byCashOrCheck?: number
+
+			// line 12 Other than by cash or check (Form 8283)
+			otherThanByCashOrCheck?: number
+
+			// line 13 Carryover from prior year
+			carryOver?: number
+
+			// line 14 Total
+			total: list.Sum([ for o in [byCashOrCheck, otherThanByCashOrCheck, carryOver] if o != _|_ {o}])
+		}
+
+		// line 17 Total
+		total: list.Sum([ for o in [taxesPaid.total, giftsToCharity.total] if o !=_|_ {o}])
+	}
 
 	#ScheduleB: {
 		// Part I Interest
@@ -71,6 +121,7 @@ import "list"
 			// line 2 Total
 			total: #amount
 		}
+
 		// Part II Ordinary Dividends
 		partII?: {
 			// line 5 List name of Payer + Amount

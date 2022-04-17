@@ -14,6 +14,12 @@ Form1040: {
 	// line 11 Adjusted gross income
 	adjustedGrossIncome: 0
 
+	// line 12a Standard deduction
+	standardDeduction: 12550
+
+	// line 12a Itemized deduction
+	itemizedDeduction: 0
+
 	// line 12a Standard or itemized deduction
 	standardOrItemizedDeduction: 12550
 

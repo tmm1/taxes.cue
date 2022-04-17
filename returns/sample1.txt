@@ -29,20 +29,47 @@ Form1040: {
 	// line 11 Adjusted gross income
 	adjustedGrossIncome: 78937
 
+	// line 12a Standard deduction
+	standardDeduction: 12550
+
+	// line 12a Itemized deduction
+	itemizedDeduction: 15100
+
 	// line 12a Standard or itemized deduction
-	standardOrItemizedDeduction: 12550
+	standardOrItemizedDeduction: 15100
 
 	// line 15 Taxable income
-	taxableIncome: 66387
+	taxableIncome: 63837
 
 	// line 16 Tax
-	tax: 8544.75
+	tax: 7868.55
 
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 4500
 
 	// line 25b Federal income tax withheld (Form 1099)
 	f1099TaxWithheld: 5
+
+	// Schedule A: Itemized Deductions
+	scheduleA: {
+		// Taxes You Paid
+		taxesPaid: {}
+
+		// Gifts to Charity
+		giftsToCharity: {
+			// line 11 Gifts by cash or check
+			byCashOrCheck: 100
+
+			// line 12 Other than by cash or check (Form 8283)
+			otherThanByCashOrCheck: 15000
+
+			// line 14 Total
+			total: 15100
+		}
+
+		// line 17 Total
+		total: 15100
+	}
 
 	// Schedule B: Interest and Ordinary Dividends
 	scheduleB: {
@@ -53,6 +80,7 @@ Form1040: {
 			// line 2 Total
 			total: 31
 		}
+
 		// Part II Ordinary Dividends
 		partII: {
 			// line 5 List name of Payer + Amount

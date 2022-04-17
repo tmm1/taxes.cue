@@ -82,7 +82,13 @@ import (
 				}
 			}
 		}
+		deductions: {
+			let itemized = data.itemizedDeductions
+			byCashOrCheck: itemized.charitableGiftsByCashOrCheck
+			otherThanByCashOrCheck: list.Sum([ for s in itemized.charitableGiftsOfPublicStock {s.fairMarketValue}])
+		}
 		schedulesRequired: {
+			A: deductions.otherThanByCashOrCheck > 0
 			B: (income.taxableInterest + income.ordinaryDividends) > 1500
 			D: (income.longTermGains + income.shortTermGains) > 0
 		}
@@ -94,6 +100,7 @@ import (
 	data:      in
 	_computed: (#summarizeReturn & {"in": data}).out
 	income:    _computed.income
+	deductions:_computed.deductions
 	out:       #Form1040
 	out: {
 		taxYear: data.taxYear
@@ -104,6 +111,19 @@ import (
 			if n != 0 {
 				(field): n
 			}
+		}
+
+		if _computed.schedulesRequired.A {
+			scheduleA: #Form1040.#ScheduleA & {
+				for field in ["byCashOrCheck", "otherThanByCashOrCheck"] {
+					let n = deductions[field]
+					if n != 0 {
+						giftsToCharity: (field): n
+					}
+				}
+			}
+
+			itemizedDeduction: scheduleA.total
 		}
 
 		if _computed.schedulesRequired.B {

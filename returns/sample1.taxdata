@@ -69,8 +69,8 @@ itemizedDeductions: {
 			description:     "1 share AAPL"
 			dateAcquired:    "2010-10-10"
 			dateDonated:     "2020-10-10"
-			costBasis:       100
-			fairMarketValue: 1000
+			costBasis:       1K
+			fairMarketValue: 15K
 			appraisalMethod: "average stock price"
 		},
 	]
