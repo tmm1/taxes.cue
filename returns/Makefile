@@ -22,6 +22,6 @@ format:
 returns: $(TARGETS)
 
 $(TARGETS):
-	make $(@).freefile $(@).txt
+	make $(@).txt $(@).freefile
 
 .PHONY: returns format $(TARGETS)

@@ -1,6 +1,8 @@
 package taxes
 
-import "list"
+import (
+	"list"
+)
 
 #Form1040: {
 	// Tax Year
@@ -62,6 +64,43 @@ import "list"
 
 	// line 25b Federal income tax withheld (Form 1099)
 	f1099TaxWithheld?: number
+
+	// line 25d Total withheld
+	totalWithheld?: number
+
+	_totalWithheld: list.Sum([ for o in [w2TaxWithheld, f1099TaxWithheld] if o != _|_ {o}])
+	if _totalWithheld != 0 {
+		totalWithheld: _totalWithheld
+	}
+
+	// line 26 Estimated tax payments
+	estimatedTaxPayments?: number
+
+	// line 26 Tax payment amount applied from prior year
+	priorYearAppliedTaxPayment?: number
+
+	// line 26 Estimated tax payments and amount applied from prior return
+	estimatedTaxPaymentsTotal?: number
+
+	_estimatedTaxPaymentsTotal: (*estimatedTaxPayments | 0) + (*priorYearAppliedTaxPayment | 0)
+	if _estimatedTaxPaymentsTotal != _|_ {
+		estimatedTaxPaymentsTotal: _estimatedTaxPaymentsTotal
+	}
+
+	// line 32 Total other payments
+	totalOtherPayments: #amount
+
+	// line 33 Total payments
+	totalPayments: list.Sum([ for o in [totalWithheld, estimatedTaxPaymentsTotal, totalOtherPayments] if o != _|_ {o}])
+
+	// line 34 Tax overpaid
+	taxOverpaid?: number
+
+	// line 35 Tax refund
+	taxRefund?: number
+
+	// line 37 Amount you owe
+	taxOwed?: number
 
 	// Schedule A: Itemized Deductions
 	scheduleA?: #ScheduleA

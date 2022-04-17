@@ -9,6 +9,10 @@ taxPayer: self: {
 	dateOfBirth:   "1982-01-01"
 }
 
+taxPayments: federal: [
+	{date: "2021-06-14", payment: 5K},
+]
+
 w2s: [
 	{
 		employer: name: "employer 1"

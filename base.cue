@@ -15,3 +15,8 @@ import "time"
 #EIN: =~"^\\d{2}-\\d{7}$"
 
 #TaxpayerID: #SSN | #EIN
+
+#taxPayment: {
+	date:    #date
+	payment: #amount
+}

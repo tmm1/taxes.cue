@@ -2,6 +2,7 @@ package taxes
 
 import (
 	"list"
+	"math"
 	ff "github.com/tmm1/taxes/freefile"
 	"github.com/tmm1/taxes/worksheets"
 )
@@ -16,6 +17,11 @@ import (
 	form1099Bs: [...#Form1099.#B]
 	w2s: [...#W2]
 	k1s: [...#K1.#Form]
+
+	taxPayments: {
+		federal: [...#taxPayment]
+		state: [#states]: [...#taxPayment]
+	}
 
 	itemizedDeductions: {
 		medicalAndDentalExpenses: #amount
@@ -86,6 +92,7 @@ import (
 			let itemized = data.itemizedDeductions
 			byCashOrCheck: itemized.charitableGiftsByCashOrCheck
 			otherThanByCashOrCheck: list.Sum([ for s in itemized.charitableGiftsOfPublicStock {s.fairMarketValue}])
+			estimatedTaxPayments: list.Sum([ for p in data.taxPayments.federal {p.payment} ])
 		}
 		schedulesRequired: {
 			A: deductions.otherThanByCashOrCheck > 0
@@ -108,6 +115,13 @@ import (
 
 		for field in ["wages", "taxableInterest", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld", "f1099TaxWithheld"] {
 			let n = income[field]
+			if n != 0 {
+				(field): n
+			}
+		}
+
+		for field in ["estimatedTaxPayments"] {
+			let n = deductions[field]
 			if n != 0 {
 				(field): n
 			}
@@ -249,6 +263,14 @@ import (
 			},
 			(_computeTax & {"in": data.taxableIncome}).out
 		][0]
+
+		_taxBalance: tax - in.totalPayments
+		if _taxBalance > 0 {
+			taxRefund: _taxBalance
+		}
+		if _taxBalance < 0 {
+			taxOverpaid: math.Abs(_taxBalance)
+		}
 	}
 }
 

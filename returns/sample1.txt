@@ -50,6 +50,21 @@ Form1040: {
 	// line 25b Federal income tax withheld (Form 1099)
 	f1099TaxWithheld: 5
 
+	// line 26 Estimated tax payments
+	estimatedTaxPayments: 5000
+
+	// line 26 Estimated tax payments and amount applied from prior return
+	estimatedTaxPaymentsTotal: 5000
+
+	// line 32 Total other payments
+	totalOtherPayments: 0
+
+	// line 33 Total payments
+	totalPayments: 5000
+
+	// line 35 Tax refund
+	taxRefund: 2868.55
+
 	// Schedule A: Itemized Deductions
 	scheduleA: {
 		// Taxes You Paid
