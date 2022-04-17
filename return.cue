@@ -90,9 +90,9 @@ import (
 		}
 		deductions: {
 			let itemized = data.itemizedDeductions
-			byCashOrCheck: itemized.charitableGiftsByCashOrCheck
+			byCashOrCheck:          itemized.charitableGiftsByCashOrCheck
 			otherThanByCashOrCheck: list.Sum([ for s in itemized.charitableGiftsOfPublicStock {s.fairMarketValue}])
-			estimatedTaxPayments: list.Sum([ for p in data.taxPayments.federal {p.payment} ])
+			estimatedTaxPayments:   list.Sum([ for p in data.taxPayments.federal {p.payment}])
 		}
 		schedulesRequired: {
 			A: deductions.otherThanByCashOrCheck > 0
@@ -103,14 +103,14 @@ import (
 }
 
 #computeF1040: {
-	in:        #ReturnData
-	data:      in
-	_computed: (#summarizeReturn & {"in": data}).out
-	income:    _computed.income
-	deductions:_computed.deductions
-	out:       #Form1040
+	in:         #ReturnData
+	data:       in
+	_computed:  (#summarizeReturn & {"in": data}).out
+	income:     _computed.income
+	deductions: _computed.deductions
+	out:        #Form1040
 	out: {
-		taxYear: data.taxYear
+		taxYear:      data.taxYear
 		filingStatus: data.filingStatus
 
 		for field in ["wages", "taxableInterest", "taxExemptInterest", "qualifiedDividends", "ordinaryDividends", "w2TaxWithheld", "f1099TaxWithheld"] {
@@ -244,12 +244,12 @@ import (
 #computeTax: {
 	in:   #Form1040
 	data: in
-	out: in & {
+	out:  in & {
 		_computeTax: {
 			in:  number
 			out: (#TaxYear.#computeTax & {"in": {
-				income:       in
-				"taxYear": data.taxYear
+				income:         in
+				"taxYear":      data.taxYear
 				"filingStatus": data.filingStatus
 			}}).out
 		}
@@ -257,11 +257,11 @@ import (
 		tax: [
 			if data.scheduleD != _|_ {
 				(worksheets.#qualifiedDividendsAndCapitalGainTax & {"in": {
-					f1040: data
+					f1040:      data
 					computeTax: _computeTax
 				}}).out
 			},
-			(_computeTax & {"in": data.taxableIncome}).out
+			(_computeTax & {"in": data.taxableIncome}).out,
 		][0]
 
 		_taxBalance: tax - in.totalPayments
