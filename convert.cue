@@ -229,10 +229,7 @@ import (
 
 #convert: amount: {
 	in:  number
-	out: [
-		if (in & int) != _|_ {strconv.FormatInt(in, 10)},
-		if (in & float) != _|_ {strconv.FormatInt(math.Round(in), 10)},
-	][0]
+	out: strconv.FormatInt(math.Round(in), 10)
 }
 
 #convert: date: {
