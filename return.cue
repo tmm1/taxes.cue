@@ -3,6 +3,7 @@ package taxes
 import (
 	"list"
 	"math"
+	"strings"
 	ff "github.com/tmm1/taxes/freefile"
 	"github.com/tmm1/taxes/worksheets"
 )
@@ -26,9 +27,12 @@ import (
 	itemizedDeductions: {
 		medicalAndDentalExpenses: #amount
 
-		stateAndLocalTaxes:                 #amount
-		stateAndLocalTaxesRealEstate:       #amount
-		stateAndLocalTaxesPersonalProperty: #amount
+		stateAndLocal: {
+			tax:                 #amount
+			generalSalesTax:     #amount
+			realEstateTax:       #amount
+			personalPropertyTax: #amount
+		}
 
 		charitableGiftsByCashOrCheck: #amount
 		charitableGiftsOfPublicStock: [...#Form8283.#DonatedPublicStock]
@@ -93,6 +97,12 @@ import (
 			byCashOrCheck:          itemized.charitableGiftsByCashOrCheck
 			otherThanByCashOrCheck: list.Sum([ for s in itemized.charitableGiftsOfPublicStock {s.fairMarketValue}])
 			estimatedTaxPayments:   list.Sum([ for p in data.taxPayments.federal {p.payment}])
+
+			let sal = itemized.stateAndLocal
+			stateAndLocal:    sal.tax
+			generalSalesTax:  sal.generalSalesTax
+			realEstate:       sal.realEstateTax
+			personalProperty: sal.personalPropertyTax
 		}
 		schedulesRequired: {
 			A: deductions.otherThanByCashOrCheck > 0
@@ -129,12 +139,20 @@ import (
 
 		if _computed.schedulesRequired.A {
 			scheduleA: #Form1040.#ScheduleA & {
-				for field in ["byCashOrCheck", "otherThanByCashOrCheck"] {
+				for o in ["giftsToCharity.byCashOrCheck", "giftsToCharity.otherThanByCashOrCheck", "taxesPaid.stateAndLocal", "taxesPaid.generalSalesTax", "taxesPaid.realEstate", "taxesPaid.personalProperty"] {
+					let parts = strings.SplitN(o, ".", 2)
+					let section = parts[0]
+					let field = parts[1]
 					let n = deductions[field]
 					if n != 0 {
-						giftsToCharity: (field): n
+						(section): (field): n
 					}
 				}
+
+				taxesPaid: _saltLimit: [
+					if filingStatus == "marriedFilingSeparately" { 5K },
+					10K
+				][0]
 			}
 
 			itemizedDeduction: scheduleA.total

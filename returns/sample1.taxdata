@@ -65,6 +65,11 @@ form1099Bs: [
 ]
 
 itemizedDeductions: {
+	stateAndLocal: {
+		tax: 15K
+		personalPropertyTax: 32K
+	}
+
 	charitableGiftsByCashOrCheck: 100
 	charitableGiftsOfPublicStock: [
 		{

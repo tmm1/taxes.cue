@@ -33,16 +33,16 @@ Form1040: {
 	standardDeduction: 12550
 
 	// line 12a Itemized deduction
-	itemizedDeduction: 15100
+	itemizedDeduction: 25100
 
 	// line 12a Standard or itemized deduction
-	standardOrItemizedDeduction: 15100
+	standardOrItemizedDeduction: 25100
 
 	// line 15 Taxable income
-	taxableIncome: 63837
+	taxableIncome: 53837
 
 	// line 16 Tax
-	tax: 7868.55
+	tax: 5168.55
 
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 4500
@@ -63,12 +63,21 @@ Form1040: {
 	totalPayments: 5000
 
 	// line 35 Tax refund
-	taxRefund: 2868.55
+	taxRefund: 168.55
 
 	// Schedule A: Itemized Deductions
 	scheduleA: {
 		// Taxes You Paid
-		taxesPaid: {}
+		taxesPaid: {
+			// line 5 State and local taxes
+			stateAndLocal: 15000
+
+			// line 5c Personal property taxes
+			personalProperty: 32000
+
+			// line 7 Total
+			total: 10000
+		}
 
 		// Gifts to Charity
 		giftsToCharity: {
@@ -83,7 +92,7 @@ Form1040: {
 		}
 
 		// line 17 Total
-		total: 15100
+		total: 25100
 	}
 
 	// Schedule B: Interest and Ordinary Dividends

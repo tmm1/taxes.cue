@@ -117,6 +117,9 @@ import (
 			// line 5 State and local taxes
 			stateAndLocal?: number
 
+			// line 5a Elect to use general sales tax instead of income tax
+			useGeneralSalesTax?: bool
+
 			// line 5a General sales tax
 			generalSalesTax?: number
 			if generalSalesTax != _|_ {
@@ -124,13 +127,23 @@ import (
 			}
 
 			// line 5b Real estate taxes
-			stateAndLocalRealEstate?: number
+			realEstate?: number
 
 			// line 5c Personal property taxes
 			personalProperty?: number
 
+			_saltOrGeneralSalesTax: [
+				if useGeneralSalesTax != _|_ {generalSalesTax},
+				stateAndLocal
+			][0]
+
+			_saltLimit: number
+
 			// line 7 Total
-			total?: number
+			total: list.Min([
+				_saltLimit,
+				list.Sum([ for o in [_saltOrGeneralSalesTax, realEstate, personalProperty] if o != _|_ {o}])
+			])
 		}
 
 		// Gifts to Charity
