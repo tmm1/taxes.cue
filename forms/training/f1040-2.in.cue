@@ -1,0 +1,15 @@
+name:        "2021 Form 1040"
+description: "U.S. Individual Income Tax Return"
+fields: {
+	c1_02_0_: "Presidential Election Campaign. Check here if you, or your spouse if filing jointly, want $3 to go to this fund. Checking a box below will not change your tax or refund. Yes. "
+	c1_03_0_: "Spouse. "
+	c1_04_0_: "At any time during 2021, did you receive, sell, exchange, or otherwise dispose of any financial interest in any virtual currency? Yes. "
+	c1_04_1_: "No. "
+	c1_05_0_: "Standard Deduction. Someone can claim: You as a dependent. "
+	c1_06_0_: "Your spouse as a dependent. "
+	c1_07_0_: "Spouse itemizes on a separate return or you were a dual-status alien. "
+	c1_08_0_: "Age/Blindness. You: Were born before January 2, 1957. "
+	c1_09_0_: "Are blind. "
+	c1_10_0_: "Spouse: Was born before January 2, 1957. "
+	c1_11_0_: "Is blind. "
+}
