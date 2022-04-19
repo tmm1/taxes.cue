@@ -175,7 +175,7 @@ import (
 		}
 	}
 	let txByCode = _income.form1099BTransactionsByCode
-	let lt = [ for _, c in ["A", "B", "C"] if txByCode[c].proceeds > 0 {
+	let lt = [ for _, c in ["A", "B", "C"] if txByCode[c].gainOrLoss != 0 || txByCode[c].costBasis != 0 {
 		let bucket = txByCode[c]
 		chkF1099BInd: {
 			"A": "0"
@@ -183,9 +183,13 @@ import (
 			"C": "2"
 		}[c]
 		for idx, t in bucket.transactions {
-			"txtDescrip\(idx+1)":    t.description
-			"txtAcqDate\(idx+1)":    (#convert.date & {"in":   t.dateAcquired}).out
-			"txtSaleDate\(idx+1)":   (#convert.date & {"in":   t.dateSold}).out
+			"txtDescrip\(idx+1)": t.description
+			if t.dateAcquired != "" {
+				"txtAcqDate\(idx+1)": (#convert.date & {"in": t.dateAcquired}).out
+			}
+			if t.dateSold != "" {
+				"txtSaleDate\(idx+1)": (#convert.date & {"in": t.dateSold}).out
+			}
 			"txtSalesPrice\(idx+1)": (#convert.amount & {"in": t.proceeds}).out
 			"txtBuyPrice\(idx+1)":   (#convert.amount & {"in": t.costBasis}).out
 			if t.adjustAmount != 0 {
@@ -200,7 +204,7 @@ import (
 		// todo: for more than 14 entries, attach multiple copies
 		out: f8949lt: lt
 	}
-	let st = [ for _, c in ["D", "E", "F"] if txByCode[c].proceeds > 0 {
+	let st = [ for _, c in ["D", "E", "F"] if txByCode[c].gainOrLoss != 0 || txByCode[c].costBasis != 0 {
 		let bucket = txByCode[c]
 		chkF1099BInd: {
 			"D": "0"
@@ -208,9 +212,13 @@ import (
 			"F": "2"
 		}[c]
 		for idx, t in bucket.transactions {
-			"txtDescrip\(idx+1)":    t.description
-			"txtAcqDate\(idx+1)":    (#convert.date & {"in":   t.dateAcquired}).out
-			"txtSaleDate\(idx+1)":   (#convert.date & {"in":   t.dateSold}).out
+			"txtDescrip\(idx+1)": t.description
+			if t.dateAcquired != "" {
+				"txtAcqDate\(idx+1)": (#convert.date & {"in": t.dateAcquired}).out
+			}
+			if t.dateSold != "" {
+				"txtSaleDate\(idx+1)": (#convert.date & {"in": t.dateSold}).out
+			}
 			"txtSalesPrice\(idx+1)": (#convert.amount & {"in": t.proceeds}).out
 			"txtBuyPrice\(idx+1)":   (#convert.amount & {"in": t.costBasis}).out
 			if t.adjustAmount != 0 {

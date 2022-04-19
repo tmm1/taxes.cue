@@ -9,15 +9,17 @@ package taxes
 		ordinaryDividends:      #amount
 		qualifiedDividends:     #amount
 		royalties:              #amount
-		shortTermCapitalGain:   #amount
-		longTermCapitalGain:    #amount
+		shortTermCapitalGain:   #negamount
+		longTermCapitalGain:    #negamount
+
+		transactions: [...#Form8949.#Transaction]
 	}
 	#Form1065: {
 		#_base
 		partnershipEIN?:     #EIN
 		partnershipName:     string
 		partnershipAddress?: string
-		isPassive:           bool | *false
+		isPassive:           bool | *true
 		isForeign:           bool | *false
 	}
 	#Form1120S: {

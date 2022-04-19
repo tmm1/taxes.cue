@@ -25,8 +25,8 @@ import (
 	}
 
 	itemizedDeductions: {
-		ira: #amount
-		hsa: #amount
+		ira:                      #amount
+		hsa:                      #amount
 		medicalAndDentalExpenses: #amount
 
 		stateAndLocal: {
@@ -83,9 +83,14 @@ import (
 			form1099BTransactionsByCode: {
 				for _, c in ["A", "B", "C", "D", "E", "F"] {
 					(c): {
-						transactions: list.FlattenN([ for d in data.form1099Bs if len(d.transactions) != 0 {
-							[ for t in d.transactions if t.code == c {t}]
-						}], 1)
+						transactions: list.FlattenN([
+							for d in data.form1099Bs if len(d.transactions) != 0 {
+								[ for t in d.transactions if t.code == c {t}]
+							},
+							for k in data.k1s if len(k.transactions) != 0 {
+								[ for t in k.transactions if t.code == c {t}]
+							},
+						], 1)
 						proceeds:    list.Sum([ for t in transactions {t.proceeds}])
 						costBasis:   list.Sum([ for t in transactions {t.costBasis}])
 						gainOrLoss:  list.Sum([ for t in transactions {t.gainOrLoss}])
@@ -111,7 +116,7 @@ import (
 		}
 		schedulesRequired: {
 			let itemized = data.itemizedDeductions
-			One: (itemized.ira + itemized.hsa) > 0 || len(data.k1s) > 0
+			One: (itemized.ira+itemized.hsa) > 0 || len(data.k1s) > 0
 
 			A: deductions.otherThanByCashOrCheck > 0
 			B: (income.taxableInterest + income.ordinaryDividends) > 1500

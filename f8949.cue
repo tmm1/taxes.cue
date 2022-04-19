@@ -4,8 +4,8 @@ package taxes
 	#Transaction: {
 		code:         "A" | "B" | "C" | "D" | "E" | "F"
 		description:  string
-		dateAcquired: #date
-		dateSold:     #date
+		dateAcquired: #date | *""
+		dateSold:     #date | *""
 		proceeds:     #amount
 		costBasis:    #amount
 		adjustCodes:  string | *""
