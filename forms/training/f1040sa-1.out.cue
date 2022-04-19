@@ -42,11 +42,10 @@ import "list"
 			personalProperty?: number
 
 			// 5d. Add lines 5a through 5c.
-			l5d: list.Sum([ for o in [stateAndLocal, realEstate, personalProperty] if o != _|_ {o}])
+			l5d: list.Sum(_l5d), _l5d: [ for o in [stateAndLocal, realEstate, personalProperty] if o != _|_ {o}]
 
 			// 5e. Enter the smaller of line 5d or $10,000 ($5,000 if married filing separately).
-			l5e:        list.Min([l5d, _saltLimit])
-			_saltLimit: 5K | 10K
+			l5e: list.Min([l5d, _saltLimit]), _saltLimit: 5K | 10K
 
 			// 6. Other taxes. List type.
 			otherTaxesLine1?: string
@@ -56,7 +55,7 @@ import "list"
 			otherTaxes?: number
 
 			// 7. Add lines 5e and 6.
-			total: list.Sum([ for o in [l5e, otherTaxes] if o != _|_ {o}])
+			total: list.Sum(_total), _total: [ for o in [l5e, otherTaxes] if o != _|_ {o}]
 		}
 	}
 

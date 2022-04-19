@@ -33,7 +33,7 @@ import (
 	otherIncomeFromSchedule1?: number
 
 	// line 9 Total income
-	totalIncome: list.Sum([ for o in [wages, taxableInterest, ordinaryDividends, capitalGainOrLoss, otherIncomeFromSchedule1] if o != _|_ {o}])
+	totalIncome: list.Sum(_totalIncome), _totalIncome: [ for o in [wages, taxableInterest, ordinaryDividends, capitalGainOrLoss, otherIncomeFromSchedule1] if o != _|_ {o}]
 
 	// line 10 Adjustments to income from Schedule 1
 	adjustmentsToIncomeFromSchedule1?: number
@@ -68,7 +68,7 @@ import (
 	// line 25d Total withheld
 	totalWithheld?: number
 
-	_totalWithheld: list.Sum([ for o in [w2TaxWithheld, f1099TaxWithheld] if o != _|_ {o}])
+	_totalWithheld: list.Sum(_totalWithheldL), _totalWithheldL: [ for o in [w2TaxWithheld, f1099TaxWithheld] if o != _|_ {o}]
 	if _totalWithheld != 0 {
 		totalWithheld: _totalWithheld
 	}
@@ -91,7 +91,7 @@ import (
 	totalOtherPayments: #amount
 
 	// line 33 Total payments
-	totalPayments: list.Sum([ for o in [totalWithheld, estimatedTaxPaymentsTotal, totalOtherPayments] if o != _|_ {o}])
+	totalPayments: list.Sum(_totalPayments), _totalPayments: [ for o in [totalWithheld, estimatedTaxPaymentsTotal, totalOtherPayments] if o != _|_ {o}]
 
 	// line 34 Tax overpaid
 	taxOverpaid?: number
@@ -124,7 +124,7 @@ import (
 			scheduleEIncome?: number
 
 			// line 10 Total
-			total: list.Sum([ for o in [scheduleCIncome, scheduleEIncome] if o != _|_ {o}])
+			total: list.Sum(_total), _total: [ for o in [scheduleCIncome, scheduleEIncome] if o != _|_ {o}]
 		}
 
 		// Part II Adjustments to Income
@@ -139,7 +139,7 @@ import (
 			iraDeduction?: number
 
 			// line 16 Total adjustments
-			total: list.Sum([ for o in [hsaDeduction, studentLoanInterest, iraDeduction] if o != _|_ {o}])
+			total: list.Sum(_total), _total: [ for o in [hsaDeduction, studentLoanInterest, iraDeduction] if o != _|_ {o}]
 		}
 	}
 
@@ -174,8 +174,8 @@ import (
 			// line 7 Total
 			total: list.Min([
 				_saltLimit,
-				list.Sum([ for o in [_saltOrGeneralSalesTax, realEstate, personalProperty] if o != _|_ {o}])
-			])
+				list.Sum(_total),
+			]), _total: [ for o in [_saltOrGeneralSalesTax, realEstate, personalProperty] if o != _|_ {o}]
 		}
 
 		// Gifts to Charity
@@ -190,11 +190,11 @@ import (
 			carryOver?: number
 
 			// line 14 Total
-			total: list.Sum([ for o in [byCashOrCheck, otherThanByCashOrCheck, carryOver] if o != _|_ {o}])
+			total: list.Sum(_total), _total: [ for o in [byCashOrCheck, otherThanByCashOrCheck, carryOver] if o != _|_ {o}]
 		}
 
 		// line 17 Total
-		total: list.Sum([ for o in [taxesPaid.total, giftsToCharity.total] if o !=_|_ {o}])
+		total: list.Sum(_total), _total: [ for o in [taxesPaid.total, giftsToCharity.total] if o != _|_ {o}]
 	}
 
 	#ScheduleB: {
@@ -260,7 +260,7 @@ import (
 			shortTermLossCarryover?: number & <0
 
 			// line 7 Net short-term capital gain or loss
-			shortTermNetGainOrLoss: list.Sum([ for o in [shortTermReportedGain, shortTermAGain, shortTermBGain, shortTermCGain, shortTermOtherGain, shortTermFromK1, shortTermLossCarryover] if o != _|_ {o}])
+			shortTermNetGainOrLoss: list.Sum(_shortTermNetGainOrLoss), _shortTermNetGainOrLoss: [ for o in [shortTermReportedGain, shortTermAGain, shortTermBGain, shortTermCGain, shortTermOtherGain, shortTermFromK1, shortTermLossCarryover] if o != _|_ {o}]
 		}
 
 		// Part II Long-Term Capital Gains and Losses
@@ -309,13 +309,13 @@ import (
 			longTermLossCarryover?: number & <0
 
 			// line 15 Net long-term capital gain or loss
-			longTermNetGainOrLoss: list.Sum([ for o in [longTermReportedGain, longTermDGain, longTermEGain, longTermFGain, longTermOtherGain, longTermFromK1, longTermDistributions, longTermLossCarryover] if o != _|_ {o}])
+			longTermNetGainOrLoss: list.Sum(_longTermNetGainOrLoss), _longTermNetGainOrLoss: [ for o in [longTermReportedGain, longTermDGain, longTermEGain, longTermFGain, longTermOtherGain, longTermFromK1, longTermDistributions, longTermLossCarryover] if o != _|_ {o}]
 		}
 
 		// Part III Summary
 		partIII: {
 			// line 16 Net short-term and long-term gain or loss
-			netGainOrLoss: list.Sum([ for o in [partI.shortTermNetGainOrLoss, partII.longTermNetGainOrLoss] if o != _|_ {o}])
+			netGainOrLoss: list.Sum(_netGainOrLoss), _netGainOrLoss: [ for o in [partI.shortTermNetGainOrLoss, partII.longTermNetGainOrLoss] if o != _|_ {o}]
 
 			// line 17 Are lines 15 and 16 both gains?
 			stillHaveGainsAfterShortTermLosses: [
@@ -324,7 +324,7 @@ import (
 						true
 					}
 				},
-				false
+				false,
 			][0]
 		}
 	}

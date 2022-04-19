@@ -46,7 +46,7 @@
 		otherIncome?: number
 
 		// 9. Add lines 1, 2b, 3b, 4b, 5b, 6b, 7, and 8. This is your total income.
-		totalIncome: list.Sum([ for o in [wages, taxableInterest, ordinaryDividends, iraDistributionsTaxable, pensionsAndAnnuitiesTaxable, socialSecurityBenefitsTaxable, capitalGainOrLoss, otherIncome] if o != _|_ {o}])
+		totalIncome: list.Sum(_totalIncome), _totalIncome: [ for o in [wages, taxableInterest, ordinaryDividends, iraDistributionsTaxable, pensionsAndAnnuitiesTaxable, socialSecurityBenefitsTaxable, capitalGainOrLoss, otherIncome] if o != _|_ {o}]
 
 		// 10. Adjustments to income from Schedule 1, line 26.
 		adjustmentsToIncome?: number
