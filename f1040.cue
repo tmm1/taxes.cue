@@ -114,6 +114,9 @@ import (
 	// Schedule D: Capital Gains and Losses
 	scheduleD?: #ScheduleD
 
+	// Schedule E: Supplemental Income and Loss
+	scheduleE?: #ScheduleE
+
 	#Schedule1: {
 		// Part I Additional Income
 		partI?: {
@@ -326,6 +329,73 @@ import (
 				},
 				false,
 			][0]
+		}
+	}
+
+	#ScheduleE: {
+		#incomeOrLossFromK1: {
+			// line 28a Name
+			name: string
+
+			// line 28b Partnership or S Corp
+			type: "P" | "S"
+
+			// line 28c Foreign partnership?
+			isForeign: bool | *false
+
+			// line 28d EIN
+			ein: #EIN
+
+			// line 28e Basis computation required
+			isBasisComputationRequired: bool | *false
+
+			// line 28f Not at risk?
+			isNotAtRisk: bool | *false
+
+			// line 28g Passive loss allowed
+			passiveLossAllowed?: number
+
+			// line 28h Passive income
+			passiveIncome?: number
+
+			// line 28i Nonpassive loss allowed
+			nonPassiveLossAllowed?: number
+
+			// line 28j Section 179 expense deduction (Form 4562)
+			section179Expense?: number
+
+			// line 28k Nonpassive income
+			nonPassiveIncome?: number
+		}
+
+		// Part II Income or Loss from Partnerships or S Corporations
+		partII?: {
+			// line 28
+			entities: [...#incomeOrLossFromK1]
+
+			// line 29ah Total passive income
+			totalPassiveIncome: list.Sum(_totalPassiveIncome), _totalPassiveIncome: [ for k in entities if k.passiveIncome != _|_ {k.passiveIncome}]
+
+			// line 29ak Total nonpassive income
+			totalNonPassiveIncome: list.Sum(_totalNonPassiveIncome), _totalNonPassiveIncome: [ for k in entities if k.nonPassiveIncome != _|_ {k.nonPassiveIncome}]
+
+			// line 29bg Total passive loss allowed
+			totalPassiveLoss: list.Sum(_totalPassiveLoss), _totalPassiveLoss: [ for k in entities if k.passiveLossAllowed != _|_ {k.passiveLossAllowed}]
+
+			// line 29bi Total nonpassive loss allowed
+			totalNonPassiveLoss: list.Sum(_totalNonPassiveLoss), _totalNonPassiveLoss: [ for k in entities if k.nonPassiveLossAllowed != _|_ {k.nonPassiveLossAllowed}]
+
+			// line 29bj Total section 179 expenses deduction (from Form 4562)
+			totalSection179Expense: list.Sum(_totalSection179Expense), _totalSection179Expense: [ for k in entities if k.section179Expense != _|_ {k.section179Expense}]
+
+			// line 30 Total income
+			totalIncome: totalPassiveIncome + totalNonPassiveIncome
+
+			// line 31 Total loss + deductions
+			totalLoss: totalPassiveLoss + totalNonPassiveLoss + totalSection179Expense
+
+			// line 32 Total partnership and S corporation income or (loss)
+			total: totalIncome + totalLoss
 		}
 	}
 

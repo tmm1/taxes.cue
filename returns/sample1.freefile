@@ -37,7 +37,7 @@ f1040: {
 	txtStdDed: "25100"
 
 	// Line 16. Tax (see instructions)
-	txtTaxWoAmt: "3925"
+	txtTaxWoAmt: "9865"
 
 	// Line 25a. Federal income tax withheld from: Form(s) W-2
 	txtW2TaxWithheld: "4500"

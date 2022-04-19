@@ -90,15 +90,20 @@ itemizedDeductions: {
 
 k1s: [
 	{
+		partnershipEIN:      "00-0000001"
 		partnershipName:     "passive investors llc"
 		interestIncome:      16
 		longTermCapitalGain: 100
 	},
 	{
+		corporationEIN:       "00-0000002"
 		corporationName:      "acme corp llc"
 		ordinaryDividends:    1
+
+		ordinaryBusinessIncome: 22K
 	},
 	{
+		partnershipEIN:       "00-0000003"
 		partnershipName:      "startup fund llc"
 		shortTermCapitalGain: 50
 		longTermCapitalGain:  8989

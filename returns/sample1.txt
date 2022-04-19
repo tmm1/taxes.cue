@@ -23,14 +23,17 @@ Form1040: {
 	// line 7 Capital gain or loss
 	capitalGainOrLoss: 34694
 
+	// line 8 Other income from Schedule 1
+	otherIncomeFromSchedule1: 22000
+
 	// line 9 Total income
-	totalIncome: 87926
+	totalIncome: 109926
 
 	// line 10 Adjustments to income from Schedule 1
 	adjustmentsToIncomeFromSchedule1: 9600
 
 	// line 11 Adjusted gross income
-	adjustedGrossIncome: 78326
+	adjustedGrossIncome: 100326
 
 	// line 12a Standard deduction
 	standardDeduction: 12550
@@ -42,10 +45,10 @@ Form1040: {
 	standardOrItemizedDeduction: 25100
 
 	// line 15 Taxable income
-	taxableIncome: 53226
+	taxableIncome: 75226
 
 	// line 16 Tax
-	tax: 3924.90
+	tax: 9864.90
 
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 4500
@@ -65,14 +68,20 @@ Form1040: {
 	// line 33 Total payments
 	totalPayments: 5000
 
-	// line 34 Tax overpaid
-	taxOverpaid: 1075.10
-
-	// line 35 Tax refund
-	taxRefund: 1075.10
+	// line 37 Amount you owe
+	taxOwed: 4864.90
 
 	// Schedule 1: Additional Income and Adjustments to Income
 	schedule1: {
+		// Part I Additional Income
+		partI: {
+			// line 5 Partnerships and S Corporations
+			scheduleEIncome: 22000
+
+			// line 10 Total
+			total: 22000
+		}
+
 		// Part II Adjustments to Income
 		partII: {
 			// line 13 HSA deduction (Form 8889)
@@ -188,6 +197,60 @@ Form1040: {
 
 			// line 17 Are lines 15 and 16 both gains?
 			stillHaveGainsAfterShortTermLosses: true
+		}
+	}
+
+	// Schedule E: Supplemental Income and Loss
+	scheduleE: {
+		// Part II Income or Loss from Partnerships or S Corporations
+		partII: {
+			// line 28
+			entities: [{
+				// line 28a Name
+				name: "acme corp llc"
+
+				// line 28d EIN
+				ein: "00-0000002"
+
+				// line 28b Partnership or S Corp
+				type: "S"
+
+				// line 28c Foreign partnership?
+				isForeign: false
+
+				// line 28e Basis computation required
+				isBasisComputationRequired: false
+
+				// line 28f Not at risk?
+				isNotAtRisk: false
+
+				// line 28k Nonpassive income
+				nonPassiveIncome: 22000
+			}]
+
+			// line 29ah Total passive income
+			totalPassiveIncome: 0
+
+			// line 29ak Total nonpassive income
+			totalNonPassiveIncome: 22000
+
+			// line 29bg Total passive loss allowed
+			totalPassiveLoss: 0
+
+			// line 29bi Total nonpassive loss allowed
+			totalNonPassiveLoss: 0
+
+			// line 29bj Total section 179 expenses deduction (from Form 4562)
+			totalSection179Expense: 0
+
+			// line 30 Total income
+			totalIncome: 22000
+
+			// line 31 Total loss + deductions
+			totalLoss: 0
+
+			// line 32 Total partnership and S corporation income or (loss)
+			total: 22000
 		}
 	}
 }

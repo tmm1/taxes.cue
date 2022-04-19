@@ -121,6 +121,7 @@ import (
 			A: deductions.otherThanByCashOrCheck > 0
 			B: (income.taxableInterest + income.ordinaryDividends) > 1500
 			D: (income.longTermGains + income.shortTermGains) > 0
+			E: len(data.k1s) > 0
 		}
 	}
 }
@@ -277,6 +278,44 @@ import (
 				}
 			}
 			capitalGainOrLoss: scheduleD.partIII.netGainOrLoss
+		}
+
+		if _computed.schedulesRequired.E {
+			scheduleE: #Form1040.#ScheduleE & {
+				_k1sWithIncome: [ for k in data.k1s if k.ordinaryBusinessIncome != 0 {k}]
+				if len(_k1sWithIncome) > 0 {
+					partII: entities: [
+						for k in _k1sWithIncome {{
+							name: k.name
+							ein:  k.ein
+							type: k.type
+
+							isForeign: k.isForeign
+							if k.isPassive {
+								let k1income = k.ordinaryBusinessIncome
+								if k1income > 0 {
+									passiveIncome: k1income
+								}
+								if k1income < 0 {
+									passiveLossAllowed: k1income // todo: f8582
+								}
+							}
+							if !k.isPassive {
+								let k1income = k.ordinaryBusinessIncome
+								if k1income > 0 {
+									nonPassiveIncome: k1income
+								}
+								if k1income < 0 {
+									nonPassiveLossAllowed: k1income // todo: f8582
+								}
+							}
+						}}
+					]
+				}
+			}
+
+			schedule1: partI: scheduleEIncome: scheduleE.partII.total
+			otherIncomeFromSchedule1: schedule1.partI.total
 		}
 
 		if data.freefile != _|_ {

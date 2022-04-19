@@ -16,22 +16,26 @@ package taxes
 	}
 	#Form1065: {
 		#_base
-		partnershipEIN?:     #EIN
+		partnershipEIN:      #EIN
 		partnershipName:     string
 		partnershipAddress?: string
 		isPassive:           bool | *true
 		isForeign:           bool | *false
+		type:                "P"
 	}
 	#Form1120S: {
 		#_base
-		corporationEIN?:     #EIN
+		corporationEIN:      #EIN
 		corporationName:     string
 		corporationAddress?: string
+		isForeign:           false
+		isPassive:           false
+		type:                "S"
 	}
 	#Form: f={
 		#Form1065 | #Form1120S
 		name:     f.partnershipName | f.corporationName
-		ein?:     f.partnershipEIN | f.corporationEIN
+		ein:      f.partnershipEIN | f.corporationEIN
 		address?: f.partnershipAddress | f.corporationAddress
 	}
 }
