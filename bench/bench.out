@@ -1,29 +1,36 @@
+
 bench0.cue
-2.02s user 0.03s system 126% cpu 1.619 total
+        1.61 real         2.01 user         0.02 sys
 
 bench1.cue
-5.46s user 0.07s system 141% cpu 3.909 total
+        3.93 real         5.52 user         0.07 sys
+
+bench10.cue
+        1.62 real         2.02 user         0.02 sys
+
+bench11.cue
+        1.63 real         2.02 user         0.02 sys
 
 bench2.cue
-9.18s user 0.13s system 144% cpu 6.426 total
+        6.48 real         9.22 user         0.12 sys
 
 bench3.cue
-2.05s user 0.03s system 126% cpu 1.648 total
+        1.62 real         2.02 user         0.02 sys
 
 bench4.cue
-2.04s user 0.03s system 125% cpu 1.646 total
+        1.63 real         2.02 user         0.02 sys
 
 bench5.cue
-5.46s user 0.07s system 141% cpu 3.907 total
+        3.90 real         5.47 user         0.07 sys
 
 bench6.cue
-2.37s user 0.03s system 122% cpu 1.965 total
+        1.91 real         2.32 user         0.03 sys
 
 bench7.cue
-2.00s user 0.03s system 125% cpu 1.615 total
+        1.62 real         2.01 user         0.02 sys
 
 bench8.cue
-5.51s user 0.08s system 142% cpu 3.930 total
+        3.93 real         5.50 user         0.07 sys
 
 bench9.cue
-2.43s user 0.03s system 122% cpu 2.009 total
+        2.02 real         2.44 user         0.02 sys
