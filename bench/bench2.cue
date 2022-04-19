@@ -7,7 +7,7 @@ import "list"
 }
 
 _temp: {
-	for i, _ in [1]*5000 {
+	for i, _ in [1]*2000 {
 		_n: #a & {}
 		_t: _n.total
 		"a\(i)": _t

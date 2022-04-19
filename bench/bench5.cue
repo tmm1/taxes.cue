@@ -1,9 +1,9 @@
 import "list"
 
 #a: {
-	x: number
-	y: number
-	total: list.Sum([x, y])
+	x?: number
+	y?: number
+	total: (*x | 0) + (*y | 0)
 }
 
 _temp: {

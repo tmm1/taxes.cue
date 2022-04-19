@@ -1,8 +1,8 @@
 import "list"
 
 #a: {
-	x: number
-	y: number
+	x?: number | *0
+	y?: number | *0
 	total: list.Sum([x, y])
 }
 

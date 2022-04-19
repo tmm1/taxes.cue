@@ -1,9 +1,8 @@
-import "list"
-
 #a: {
 	x: number
 	y: number
-	total: list.Sum([x, y])
+	let l = [x, y]
+	total: l[0] + l[1]
 }
 
 _temp: {

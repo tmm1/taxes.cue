@@ -1,9 +1,9 @@
 import "list"
 
 #a: {
-	x: number
-	y: number
-	total: list.Sum([x, y])
+	x?: number | *0
+	y?: number | *0
+	total: list.Sum([for o in [x, y] if o != _|_ {o}])
 }
 
 _temp: {
