@@ -7,7 +7,7 @@ check:
 	cue eval -c .:taxes
 
 test:
-	cue export --out cue test.cue > test.out
+	/usr/bin/time cue export --out cue test.cue > test.out
 	git diff test.out
 
 loc:
