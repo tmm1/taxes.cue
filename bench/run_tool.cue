@@ -1,6 +1,7 @@
 package bench
 
 import (
+	"strings"
 	"tool/file"
 	"tool/exec"
 	"tool/cli"
@@ -13,16 +14,20 @@ command: bench: {
 
 	for i, f in find.files {
 		(f): {
-			run: exec.Run & {
+			setup: cli.Print & {
 				if i > 0 {
-					$after: command.bench[find.files[i-1]].$done
+					$dep: command.bench[find.files[i-1]].print.$done
 				}
+				text: "\(f):"
+			}
+			run: exec.Run & {
+				$dep: setup.$done
 				cmd: ["/usr/bin/time", "-o", "/dev/stdout", "cue", "export", "--out", "cue", f]
 				stdout: string
 			}
 			print: cli.Print & {
-				$after: run.success
-				text: "\(f): \(run.stdout)"
+				$dep: run.success
+				text: "\t"+strings.TrimSpace(run.stdout)
 			}
 		}
 	}
