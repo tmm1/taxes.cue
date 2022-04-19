@@ -113,10 +113,13 @@ import (
 
 			hsaDeduction: itemized.hsa
 			iraDeduction: itemized.ira
+
+			foreignTaxCredit: list.Sum(_foreignTaxCredit), _foreignTaxCredit: [ for d in data.form1099DIVs {d.foreignTaxPaid}]
 		}
 		schedulesRequired: {
 			let itemized = data.itemizedDeductions
-			One: (itemized.ira+itemized.hsa) > 0 || len(data.k1s) > 0
+			One:   (itemized.ira+itemized.hsa) > 0 || len(data.k1s) > 0
+			Three: deductions.foreignTaxCredit > 0
 
 			A: deductions.otherThanByCashOrCheck > 0
 			B: (income.taxableInterest + income.ordinaryDividends) > 1500
@@ -162,6 +165,20 @@ import (
 			}
 
 			adjustmentsToIncomeFromSchedule1: schedule1.partII.total
+		}
+
+		if _computed.schedulesRequired.Three {
+			schedule3: #Form1040.#Schedule3 & {
+				for field in ["foreignTaxCredit"] {
+					let n = deductions[field]
+					if n != 0 {
+						partI: (field): n
+					}
+				}
+			}
+
+			totalNonRefundableCreditsFromSchedule3: schedule3.partI.total
+			//otherPaymentsFromSchedule3: schedule3.partII.total
 		}
 
 		if _computed.schedulesRequired.A {
@@ -347,7 +364,7 @@ import (
 			(_computeTax & {"in": data.taxableIncome}).out,
 		][0]
 
-		_taxBalance: tax - in.totalPayments
+		_taxBalance: in.totalTax + tax - in.totalPayments
 		if _taxBalance > 0 {
 			taxOwed: _taxBalance
 		}

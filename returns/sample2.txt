@@ -29,6 +29,18 @@ Form1040: {
 	// line 16 Tax
 	tax: 1122
 
+	// line 18
+	taxPlusAdditionalTax: 1122
+
+	// line 21 Total nonrefundable credits
+	totalNonRefundableCredits: 0
+
+	// line 22 Tax after nonrefundable credits
+	taxAfterNonRefundableCredits: 1122
+
+	// line 24 Total tax
+	totalTax: 1122
+
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 1126
 

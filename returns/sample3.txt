@@ -29,6 +29,18 @@ Form1040: {
 	// line 16 Tax
 	tax: 0
 
+	// line 18
+	taxPlusAdditionalTax: 0
+
+	// line 21 Total nonrefundable credits
+	totalNonRefundableCredits: 0
+
+	// line 22 Tax after nonrefundable credits
+	taxAfterNonRefundableCredits: 0
+
+	// line 24 Total tax
+	totalTax: 0
+
 	// line 26 Estimated tax payments and amount applied from prior return
 	estimatedTaxPaymentsTotal: 0
 

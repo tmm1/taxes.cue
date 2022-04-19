@@ -59,6 +59,30 @@ import (
 	// line 16 Tax
 	tax: number
 
+	// line 17 Additional tax from Schedule 2 (AMT)
+	additionalTaxFromSchedule2?: number
+
+	// line 18
+	taxPlusAdditionalTax: tax + list.Sum(_taxPlusAdditionalTax), _taxPlusAdditionalTax: [ for o in [additionalTaxFromSchedule2] if o != _|_ {o}]
+
+	// line 19 Nonrefundable child tax credit
+	nonRefundableTaxCredit?: number
+
+	// line 20 Total nonrefundable credits from Schedule 3
+	totalNonRefundableCreditsFromSchedule3?: number
+
+	// line 21 Total nonrefundable credits
+	totalNonRefundableCredits: list.Sum(_totalNonRefundableCredits), _totalNonRefundableCredits: [ for o in [nonRefundableTaxCredit, totalNonRefundableCreditsFromSchedule3] if o != _|_ {o}]
+
+	// line 22 Tax after nonrefundable credits
+	taxAfterNonRefundableCredits: list.Max(_taxAfterNonRefundableCredits), _taxAfterNonRefundableCredits: [0, taxPlusAdditionalTax - totalNonRefundableCredits]
+
+	// line 23 Schedule 2, line 21 (SE tax)
+	totalOtherTaxesFromSchedule2?: number
+
+	// line 24 Total tax
+	totalTax: list.Sum(_totalTax), _totalTax: [ for o in [taxAfterNonRefundableCredits, totalOtherTaxesFromSchedule2] if o != _|_ {o}]
+
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld?: number
 
@@ -87,8 +111,11 @@ import (
 		estimatedTaxPaymentsTotal: _estimatedTaxPaymentsTotal
 	}
 
+	// line 31 Other Payments and Refundable Credits from Schedule 3
+	otherPaymentsFromSchedule3?: number
+
 	// line 32 Total other payments
-	totalOtherPayments: #amount
+	totalOtherPayments: list.Sum(_totalOtherPayments), _totalOtherPayments: [ for o in [otherPaymentsFromSchedule3] if o != _|_ {o}]
 
 	// line 33 Total payments
 	totalPayments: list.Sum(_totalPayments), _totalPayments: [ for o in [totalWithheld, estimatedTaxPaymentsTotal, totalOtherPayments] if o != _|_ {o}]
@@ -104,6 +131,12 @@ import (
 
 	// Schedule 1: Additional Income and Adjustments to Income
 	schedule1?: #Schedule1
+
+	// Schedule 2: Additional Taxes
+	schedule2?: #Schedule2
+
+	// Schedule 3: Additional Credits and Payments
+	schedule3?: #Schedule3
 
 	// Schedule A: Itemized Deductions
 	scheduleA?: #ScheduleA
@@ -144,6 +177,44 @@ import (
 			// line 16 Total adjustments
 			total: list.Sum(_total), _total: [ for o in [hsaDeduction, studentLoanInterest, iraDeduction] if o != _|_ {o}]
 		}
+	}
+
+	#Schedule2: {
+		// Part I Tax
+		partI?: {
+			// line 1 AMT (Form 6251)
+			amt?: number
+
+			// line 2 Excess advance premium tax credit repayment (Form 8962)
+			excessTaxCreditRepayment?: number
+
+			// line 3 Total
+			total: list.Sum(_total), _total: [ for o in [amt, excessTaxCreditRepayment] if o != _|_ {o}]
+		}
+
+		// Part II Other Taxes
+		partII?: {
+			// line 12 Net investment income tax (Form 8960)
+			netInvestmentIncomeTax?: number
+		}
+	}
+
+	#Schedule3: {
+		// Part I Nonrefundable Credits
+		partI?: {
+			// line 1 Foreign tax credit (Form 1116)
+			foreignTaxCredit?: number
+
+			// line 8 Total
+			total: list.Sum(_total), _total: [ for o in [foreignTaxCredit] if o != _|_ {o}]
+		}
+
+		// Part II Other Payments and Refundable Credits
+		partII?: {
+			// line 10 Amount paid with extension to file
+			amountPaidWithExtensionToFile?: number
+		}
+
 	}
 
 	#ScheduleA: {
