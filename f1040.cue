@@ -102,6 +102,9 @@ import (
 	// line 37 Amount you owe
 	taxOwed?: number
 
+	// Schedule 1: Additional Income and Adjustments to Income
+	schedule1?: #Schedule1
+
 	// Schedule A: Itemized Deductions
 	scheduleA?: #ScheduleA
 
@@ -110,6 +113,35 @@ import (
 
 	// Schedule D: Capital Gains and Losses
 	scheduleD?: #ScheduleD
+
+	#Schedule1: {
+		// Part I Additional Income
+		partI?: {
+			// line 3 Business income or loss
+			scheduleCIncome?: number
+
+			// line 5 Partnerships and S Corporations
+			scheduleEIncome?: number
+
+			// line 10 Total
+			total: list.Sum([ for o in [scheduleCIncome, scheduleEIncome] if o != _|_ {o}])
+		}
+
+		// Part II Adjustments to Income
+		partII?: {
+			// line 13 HSA deduction (Form 8889)
+			hsaDeduction?: number
+
+			// line 21 Student loan interest deduction
+			studentLoanInterest?: number
+
+			// line 20 IRA deduction
+			iraDeduction?: number
+
+			// line 16 Total adjustments
+			total: list.Sum([ for o in [hsaDeduction, studentLoanInterest, iraDeduction] if o != _|_ {o}])
+		}
+	}
 
 	#ScheduleA: {
 		// Taxes You Paid

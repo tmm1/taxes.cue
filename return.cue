@@ -25,6 +25,8 @@ import (
 	}
 
 	itemizedDeductions: {
+		ira: #amount
+		hsa: #amount
 		medicalAndDentalExpenses: #amount
 
 		stateAndLocal: {
@@ -103,8 +105,14 @@ import (
 			generalSalesTax:  sal.generalSalesTax
 			realEstate:       sal.realEstateTax
 			personalProperty: sal.personalPropertyTax
+
+			hsaDeduction: itemized.hsa
+			iraDeduction: itemized.ira
 		}
 		schedulesRequired: {
+			let itemized = data.itemizedDeductions
+			One: (itemized.ira + itemized.hsa) > 0 || len(data.k1s) > 0
+
 			A: deductions.otherThanByCashOrCheck > 0
 			B: (income.taxableInterest + income.ordinaryDividends) > 1500
 			D: (income.longTermGains + income.shortTermGains) > 0
@@ -135,6 +143,19 @@ import (
 			if n != 0 {
 				(field): n
 			}
+		}
+
+		if _computed.schedulesRequired.One {
+			schedule1: #Form1040.#Schedule1 & {
+				for field in ["hsaDeduction", "iraDeduction"] {
+					let n = deductions[field]
+					if n != 0 {
+						partII: (field): n
+					}
+				}
+			}
+
+			adjustmentsToIncomeFromSchedule1: schedule1.partII.total
 		}
 
 		if _computed.schedulesRequired.A {
