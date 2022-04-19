@@ -5,7 +5,7 @@ bench1.cue
 5.46s user 0.07s system 141% cpu 3.909 total
 
 bench2.cue
-2.46s user 0.03s system 122% cpu 2.040 total
+9.18s user 0.13s system 144% cpu 6.426 total
 
 bench3.cue
 2.05s user 0.03s system 126% cpu 1.648 total
@@ -26,4 +26,4 @@ bench8.cue
 5.51s user 0.08s system 142% cpu 3.930 total
 
 bench9.cue
-9.18s user 0.13s system 145% cpu 6.380 total
+2.43s user 0.03s system 122% cpu 2.009 total
