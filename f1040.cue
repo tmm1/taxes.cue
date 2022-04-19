@@ -77,7 +77,7 @@ import (
 	// line 22 Tax after nonrefundable credits
 	taxAfterNonRefundableCredits: list.Max(_taxAfterNonRefundableCredits), _taxAfterNonRefundableCredits: [0, taxPlusAdditionalTax - totalNonRefundableCredits]
 
-	// line 23 Schedule 2, line 21 (SE tax)
+	// line 23 Schedule 2, line 21 (SE tax, NII tax, etc)
 	totalOtherTaxesFromSchedule2?: number
 
 	// line 24 Total tax
@@ -199,6 +199,9 @@ import (
 		partII?: {
 			// line 12 Net investment income tax (Form 8960)
 			netInvestmentIncomeTax?: number
+
+			// line 21 Total other taxes
+			total: list.Sum(_total), _total: [ for o in [netInvestmentIncomeTax] if o != _|_ {o}]
 		}
 	}
 

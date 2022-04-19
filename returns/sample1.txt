@@ -81,7 +81,7 @@ Form1040: {
 	totalPayments: 5000
 
 	// line 37 Amount you owe
-	taxOwed: 4864.90
+	taxOwed: 4864.900
 
 	// Schedule 1: Additional Income and Adjustments to Income
 	schedule1: {

@@ -354,6 +354,24 @@ import (
 			}}).out
 		}
 
+		_netInvestmentIncome: list.Sum([ for o in [in.taxableInterest, in.ordinaryDividends, in.capitalGainOrLoss] if o != _|_ {o}])
+		_netInvestmentIncomeThreshold: {
+			marriedFilingJointly: 250K
+			qualifyingWidowOrWidower: marriedFilingJointly
+			marriedFilingSeparately: 125K
+			single: 200K
+			headOfHousehold: single
+		}[in.filingStatus]
+
+		let niit = 0.038 * list.Min([_netInvestmentIncome, list.Max([0, in.adjustedGrossIncome - _netInvestmentIncomeThreshold])])
+		if niit != 0 {
+			schedule2: #Form1040.#Schedule2 & {
+				partII: netInvestmentIncomeTax: niit
+			}
+
+			totalOtherTaxesFromSchedule2: schedule2.partII.total
+		}
+
 		tax: [
 			if data.scheduleD != _|_ {
 				(worksheets.#qualifiedDividendsAndCapitalGainTax & {"in": {
@@ -364,7 +382,7 @@ import (
 			(_computeTax & {"in": data.taxableIncome}).out,
 		][0]
 
-		_taxBalance: in.totalTax + tax - in.totalPayments
+		_taxBalance: in.totalTax + tax + niit - in.totalPayments
 		if _taxBalance > 0 {
 			taxOwed: _taxBalance
 		}

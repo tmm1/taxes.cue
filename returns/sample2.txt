@@ -54,7 +54,7 @@ Form1040: {
 	totalPayments: 0
 
 	// line 37 Amount you owe
-	taxOwed: 1122
+	taxOwed: 1122.000
 
 	// Additional data and/or forms are only available in the freefile output
 	// This generally means you've specified a freefile: label in your .taxdata
