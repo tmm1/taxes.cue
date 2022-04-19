@@ -29,6 +29,15 @@ Form1040: {
 	// line 16 Tax
 	tax: 0
 
+	// line 26 Estimated tax payments and amount applied from prior return
+	estimatedTaxPaymentsTotal: 0
+
+	// line 32 Total other payments
+	totalOtherPayments: 0
+
+	// line 33 Total payments
+	totalPayments: 0
+
 	// Additional data and/or forms are only available in the freefile output
 	// This generally means you've specified a freefile: label in your .taxdata
 	additionalFreeFileOnlyForms: true

@@ -31,13 +31,13 @@ f1040: {
 	txtOrdDiv: "3201"
 
 	// Line 7. Capital gain or (loss). Attach Schedule D if required
-	txtCapitalGains: "25705"
+	txtCapitalGains: "34694"
 
 	// Line 12a. Standard Deduction for - Single or Married filing separately, $12, 550. Married filing jointly or Qualifying widow(er), $25, 100. Head of household, $18, 800. If you checked any box under Standard Deduction, see instructions. Line 12a. Standard deduction or itemized deductions (from Schedule A)
 	txtStdDed: "25100"
 
 	// Line 16. Tax (see instructions)
-	txtTaxWoAmt: "5169"
+	txtTaxWoAmt: "3925"
 
 	// Line 25a. Federal income tax withheld from: Form(s) W-2
 	txtW2TaxWithheld: "4500"
@@ -119,7 +119,7 @@ f1040sd: {
 	txtSchdTotlgnlossa1: "25000"
 
 	// Line 12. Net long-term gain or (loss) from partnerships, S corporations, estates, and trusts from Schedule(s) K-1
-	txtLngTrmSchk: "100"
+	txtLngTrmSchk: "9089"
 }
 
 // Form 8949 - Sales and Other Dispositions of Capital Assets - Page 1
@@ -141,4 +141,31 @@ f8949st: [{
 
 	// Line 1(e). Row 1. Cost or other basis. See the Note below and see Column (e) in the separate instructions
 	txtBuyPrice1: "5000"
+}, {
+	// chkF1099BInd
+	chkF1099BInd: "2"
+
+	// Line 1(a). Row 1. Description of property (Example: 100 sh. XYZ Co. )
+	txtDescrip1: "Section 1061 Adjustment"
+
+	// Line 1(d). Row 1. Proceeds(sales price)(see instructions)
+	txtSalesPrice1: "0"
+
+	// Line 1(e). Row 1. Cost or other basis. See the Note below and see Column (e) in the separate instructions
+	txtBuyPrice1: "8989"
+}]
+
+// Form 8949 - Sales and Other Dispositions of Capital Assets - Page 2
+f8949lt: [{
+	// chkF1099BInd
+	chkF1099BInd: "2"
+
+	// Line 1(a). Row 1. Description of property (Example: 100 sh. XYZ Co. )
+	txtDescrip1: "Section 1061 Adjustment"
+
+	// Line 1(d). Row 1. Proceeds(sales price)(see instructions)
+	txtSalesPrice1: "8989"
+
+	// Line 1(e). Row 1. Cost or other basis. See the Note below and see Column (e) in the separate instructions
+	txtBuyPrice1: "0"
 }]

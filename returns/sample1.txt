@@ -21,13 +21,16 @@ Form1040: {
 	ordinaryDividends: 3201
 
 	// line 7 Capital gain or loss
-	capitalGainOrLoss: 25705
+	capitalGainOrLoss: 34694
 
 	// line 9 Total income
-	totalIncome: 78937
+	totalIncome: 87926
+
+	// line 10 Adjustments to income from Schedule 1
+	adjustmentsToIncomeFromSchedule1: 9600
 
 	// line 11 Adjusted gross income
-	adjustedGrossIncome: 78937
+	adjustedGrossIncome: 78326
 
 	// line 12a Standard deduction
 	standardDeduction: 12550
@@ -39,10 +42,10 @@ Form1040: {
 	standardOrItemizedDeduction: 25100
 
 	// line 15 Taxable income
-	taxableIncome: 53837
+	taxableIncome: 53226
 
 	// line 16 Tax
-	tax: 5168.55
+	tax: 3924.90
 
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 4500
@@ -62,8 +65,26 @@ Form1040: {
 	// line 33 Total payments
 	totalPayments: 5000
 
+	// line 34 Tax overpaid
+	taxOverpaid: 1075.10
+
 	// line 35 Tax refund
-	taxRefund: 168.55
+	taxRefund: 1075.10
+
+	// Schedule 1: Additional Income and Adjustments to Income
+	schedule1: {
+		// Part II Adjustments to Income
+		partII: {
+			// line 13 HSA deduction (Form 8889)
+			hsaDeduction: 3600
+
+			// line 20 IRA deduction
+			iraDeduction: 6000
+
+			// line 16 Total adjustments
+			total: 9600
+		}
+	}
 
 	// Schedule A: Itemized Deductions
 	scheduleA: {
@@ -118,11 +139,17 @@ Form1040: {
 	scheduleD: {
 		// Part I Short-Term Capital Gains and Losses
 		partI: {
+			// line 3d Proceeds
+			shortTermCProceeds: 8989
+			// line 3e Cost
+			shortTermCBasis: 0
+			// line 3h Gain or loss
+			shortTermCGain: 8989
 			// line 5 Short-term gain from K1s
 			shortTermFromK1: 50
 
 			// line 7 Net short-term capital gain or loss
-			shortTermNetGainOrLoss: 50
+			shortTermNetGainOrLoss: 9039
 		}
 
 		// Part II Long-Term Capital Gains and Losses
@@ -140,8 +167,15 @@ Form1040: {
 			longTermEBasis: 5000
 			// line 9h Gain or loss
 			longTermEGain: 555
+
+			// line 10d Proceeds
+			longTermFProceeds: 0
+			// line 10e Cost
+			longTermFBasis: 8989
+			// line 10h Gain or loss
+			longTermFGain: -8989
 			// line 12 Long-term gain from K1s
-			longTermFromK1: 100
+			longTermFromK1: 9089
 
 			// line 15 Net long-term capital gain or loss
 			longTermNetGainOrLoss: 25655
@@ -150,7 +184,7 @@ Form1040: {
 		// Part III Summary
 		partIII: {
 			// line 16 Net short-term and long-term gain or loss
-			netGainOrLoss: 25705
+			netGainOrLoss: 34694
 
 			// line 17 Are lines 15 and 16 both gains?
 			stillHaveGainsAfterShortTermLosses: true

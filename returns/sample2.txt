@@ -32,6 +32,18 @@ Form1040: {
 	// line 25a Federal income tax withheld (W-2)
 	w2TaxWithheld: 1126
 
+	// line 26 Estimated tax payments and amount applied from prior return
+	estimatedTaxPaymentsTotal: 0
+
+	// line 32 Total other payments
+	totalOtherPayments: 0
+
+	// line 33 Total payments
+	totalPayments: 0
+
+	// line 37 Amount you owe
+	taxOwed: 1122
+
 	// Additional data and/or forms are only available in the freefile output
 	// This generally means you've specified a freefile: label in your .taxdata
 	additionalFreeFileOnlyForms: true

@@ -310,10 +310,11 @@ import (
 
 		_taxBalance: tax - in.totalPayments
 		if _taxBalance > 0 {
-			taxRefund: _taxBalance
+			taxOwed: _taxBalance
 		}
 		if _taxBalance < 0 {
 			taxOverpaid: math.Abs(_taxBalance)
+			taxRefund:   math.Abs(_taxBalance)
 		}
 	}
 }

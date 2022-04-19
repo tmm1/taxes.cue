@@ -65,6 +65,9 @@ form1099Bs: [
 ]
 
 itemizedDeductions: {
+	ira: 6K
+	hsa: 3.6K
+
 	stateAndLocal: {
 		tax: 15K
 		personalPropertyTax: 32K
