@@ -1,45 +1,51 @@
 
 bench0.cue
-        1.63 real         2.02 user         0.02 sys
+        1.61 real         2.02 user         0.02 sys
 
 bench1.cue
-        3.93 real         5.47 user         0.07 sys
+        3.92 real         5.48 user         0.07 sys
 
 bench10.cue
         1.63 real         2.03 user         0.02 sys
 
 bench11.cue
-        1.63 real         2.02 user         0.02 sys
+        1.60 real         1.99 user         0.02 sys
 
 bench2.cue
-        6.42 real         9.19 user         0.12 sys
+        6.41 real         9.20 user         0.12 sys
 
 bench20.cue
-        4.13 real         5.76 user         0.07 sys
+        4.12 real         5.73 user         0.07 sys
 
 bench21.cue
-        1.62 real         2.04 user         0.02 sys
+        1.63 real         2.03 user         0.02 sys
 
 bench22.cue
-        1.64 real         2.03 user         0.02 sys
+        1.62 real         2.02 user         0.02 sys
+
+bench23.cue
+        6.39 real         9.56 user         0.10 sys
+
+bench24.cue
+        1.62 real         2.02 user         0.02 sys
 
 bench3.cue
-        1.62 real         2.01 user         0.02 sys
+        1.64 real         2.03 user         0.02 sys
 
 bench4.cue
-        1.64 real         2.02 user         0.02 sys
+        1.63 real         2.03 user         0.02 sys
 
 bench5.cue
-        3.91 real         5.43 user         0.07 sys
+        3.89 real         5.46 user         0.07 sys
 
 bench6.cue
-        1.94 real         2.35 user         0.02 sys
+        1.90 real         2.30 user         0.02 sys
 
 bench7.cue
-        1.61 real         2.01 user         0.02 sys
+        1.62 real         2.01 user         0.02 sys
 
 bench8.cue
         3.90 real         5.47 user         0.07 sys
 
 bench9.cue
-        2.02 real         2.44 user         0.02 sys
+        2.03 real         2.44 user         0.02 sys
