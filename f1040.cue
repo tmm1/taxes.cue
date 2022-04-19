@@ -144,6 +144,9 @@ import (
 	// Schedule B: Interest and Ordinary Dividends
 	scheduleB?: #ScheduleB
 
+	// Schedule C: Profit or Loss From Business
+	scheduleC?: #ScheduleC
+
 	// Schedule D: Capital Gains and Losses
 	scheduleD?: #ScheduleD
 
@@ -287,6 +290,9 @@ import (
 			// line 6 Total
 			total: #amount
 		}
+	}
+
+	#ScheduleC: {
 	}
 
 	#ScheduleD: {
