@@ -121,13 +121,13 @@ import (
 	totalPayments: list.Sum(_totalPayments), _totalPayments: [ for o in [totalWithheld, estimatedTaxPaymentsTotal, totalOtherPayments] if o != _|_ {o}]
 
 	// line 34 Tax overpaid
-	taxOverpaid?: number
+	taxOverpaid: list.Max([0, totalPayments - totalTax])
 
 	// line 35 Tax refund
-	taxRefund?: number
+	taxRefund: number | *taxOverpaid
 
 	// line 37 Amount you owe
-	taxOwed?: number
+	taxOwed: list.Max([0, totalTax - totalPayments])
 
 	// Schedule 1: Additional Income and Adjustments to Income
 	schedule1?: #Schedule1

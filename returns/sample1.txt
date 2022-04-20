@@ -80,8 +80,14 @@ Form1040: {
 	// line 33 Total payments
 	totalPayments: 5000
 
+	// line 34 Tax overpaid
+	taxOverpaid: 0
+
+	// line 35 Tax refund
+	taxRefund: 0
+
 	// line 37 Amount you owe
-	taxOwed: 4864.900
+	taxOwed: 4864.90
 
 	// Schedule 1: Additional Income and Adjustments to Income
 	schedule1: {

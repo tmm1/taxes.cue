@@ -2,7 +2,6 @@ package taxes
 
 import (
 	"list"
-	"math"
 	"strings"
 	ff "github.com/tmm1/taxes/freefile"
 	"github.com/tmm1/taxes/worksheets"
@@ -381,15 +380,6 @@ import (
 			},
 			(_computeTax & {"in": data.taxableIncome}).out,
 		][0]
-
-		_taxBalance: in.totalTax + tax + niit - in.totalPayments
-		if _taxBalance > 0 {
-			taxOwed: _taxBalance
-		}
-		if _taxBalance < 0 {
-			taxOverpaid: math.Abs(_taxBalance)
-			taxRefund:   math.Abs(_taxBalance)
-		}
 	}
 }
 

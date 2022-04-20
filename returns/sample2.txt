@@ -53,8 +53,14 @@ Form1040: {
 	// line 33 Total payments
 	totalPayments: 0
 
+	// line 34 Tax overpaid
+	taxOverpaid: 0
+
+	// line 35 Tax refund
+	taxRefund: 0
+
 	// line 37 Amount you owe
-	taxOwed: 1122.000
+	taxOwed: 1122
 
 	// Additional data and/or forms are only available in the freefile output
 	// This generally means you've specified a freefile: label in your .taxdata
