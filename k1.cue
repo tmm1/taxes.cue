@@ -11,8 +11,7 @@ package taxes
 		royalties:              #amount
 		shortTermCapitalGain:   #negamount
 		longTermCapitalGain:    #negamount
-
-		transactions: [...#Form8949.#Transaction]
+		section1061Adjustment:  #amount
 	}
 	#Form1065: {
 		#_base

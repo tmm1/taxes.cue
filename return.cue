@@ -86,8 +86,21 @@ import (
 							for d in data.form1099Bs if len(d.transactions) != 0 {
 								[ for t in d.transactions if t.code == c {t}]
 							},
-							for k in data.k1s if len(k.transactions) != 0 {
-								[ for t in k.transactions if t.code == c {t}]
+							for k in data.k1s if k.section1061Adjustment != 0 {
+								[ for t in [
+									#Form8949.#Transaction & {
+										code: "C"
+										description:  "Section 1061 Adjustment"
+										costBasis:    0
+										proceeds:     k.section1061Adjustment
+									},
+									#Form8949.#Transaction & {
+										code: "F"
+										description:  "Section 1061 Adjustment"
+										costBasis:    k.section1061Adjustment
+										proceeds:     0
+									}
+								] if t.code == c {t}]
 							},
 						], 1)
 						proceeds:    list.Sum(_proceeds), _proceeds: [ for t in transactions {t.proceeds}]

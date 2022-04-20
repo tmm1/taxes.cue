@@ -103,24 +103,10 @@ k1s: [
 		ordinaryBusinessIncome: 22K
 	},
 	{
-		partnershipEIN:       "00-0000003"
-		partnershipName:      "startup fund llc"
-		shortTermCapitalGain: 50
-		longTermCapitalGain:  8989
-
-		transactions: [
-			{
-				code: "C"
-				description:  "Section 1061 Adjustment"
-				costBasis:    0
-				proceeds:     8989
-			},
-			{
-				code: "F"
-				description:  "Section 1061 Adjustment"
-				costBasis:    8989
-				proceeds:     0
-			}
-		]
+		partnershipEIN:        "00-0000003"
+		partnershipName:       "startup fund llc"
+		shortTermCapitalGain:  50
+		longTermCapitalGain:   8989
+		section1061Adjustment: 8989
 	}
 ]
