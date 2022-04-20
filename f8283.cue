@@ -2,6 +2,7 @@ package taxes
 
 #Form8283: {
 	#DonatedProperty: {
+		doneeEIN?:       #EIN
 		doneeName:       string
 		doneeAddress:    string
 		description:     string
