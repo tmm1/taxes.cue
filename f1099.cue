@@ -35,12 +35,17 @@ package taxes
 		// Portion of box 11 exempt-interest dividends that are tax-free in the residency state as well
 		residentStateExemptDividends: #amount
 
+		// Portion of box 11 exempt-interest dividends from outside your resident state
+		outOfStateExemptDividends: exemptInterestDividends - residentStateExemptDividends
+
 		// Portion of total dividends from foreign sources
 		foreignPortionOfDividends: {
-			// Portion of qualified dividends from foreign sources
-			qualified:    #amount
-			// Portion of remaining dividends (ordinary - qualified) from foreign sources
-			nonQualified: #amount
+			// Portion of ordinary dividends (box 1a) from foreign sources
+			ordinary: #amount
+			// Portion of qualified dividends (box 1b) from foreign sources
+			qualified: #amount
+			// Portion of non-qualified dividends from foreign sources
+			nonQualified: ordinary - qualified
 		}
 	}
 	#INT: {
