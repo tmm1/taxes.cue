@@ -64,9 +64,10 @@ import (
 			shortTermProceeds:             list.Sum(_shortTermProceeds), _shortTermProceeds: [ for d in data.form1099Bs {d.shortTermProceeds}]
 			shortTermCostBasis:            list.Sum(_shortTermCostBasis), _shortTermCostBasis: [ for d in data.form1099Bs {d.shortTermCostBasis}]
 			shortTermGains:                shortTermGainsFromTransactions + shortTermGainsFromReported + shortTermGainsFromK1s
-			longTermGains:                 longTermGainsFromTransactions + longTermGainsFromReported + longTermGainsFromK1s
+			longTermGains:                 longTermGainsFromTransactions + longTermGainsFromReported + longTermGainsFromK1s + longTermGainsFromDIVs
 			shortTermGainsFromK1s:         list.Sum(_shortTermGainsFromK1s), _shortTermGainsFromK1s: [ for k in data.k1s {k.shortTermCapitalGain}]
 			longTermGainsFromK1s:          list.Sum(_longTermGainsFromK1s), _longTermGainsFromK1s: [ for k in data.k1s {k.longTermCapitalGain}]
+			longTermGainsFromDIVs:         list.Sum(_longTermGainsFromDIVs), _longTermGainsFromDIVs: [ for d in data.form1099DIVs {d.totalCapitalGainDistributions}]
 			longTermGainsFromReported:     list.Sum(_longTermGainsFromReported), _longTermGainsFromReported: [ for d in data.form1099Bs {d.longTermProceeds - d.longTermCostBasis}]
 			shortTermGainsFromReported:    list.Sum(_shortTermGainsFromReported), _shortTermGainsFromReported: [ for d in data.form1099Bs {d.shortTermProceeds - d.shortTermCostBasis}]
 			longTermGainsFromTransactions: list.Sum([ for d in data.form1099Bs if len(d.transactions) > 0 {
@@ -302,6 +303,11 @@ import (
 						let longTermK1 = income.longTermGainsFromK1s
 						if longTermK1 != 0 {
 							longTermFromK1: longTermK1
+						}
+
+						let longTermDIV = income.longTermGainsFromDIVs
+						if longTermDIV != 0 {
+							longTermDistributions: longTermDIV
 						}
 					}
 				}
