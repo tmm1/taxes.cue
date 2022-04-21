@@ -326,7 +326,7 @@ import (
 							type: k.type
 
 							isForeign: k.isForeign
-							if k.isPassive {
+							if k.isPassive && false { // todo: f8582 only allows passive losses if active real estate income present
 								let k1income = k.ordinaryBusinessIncome
 								if k1income > 0 {
 									passiveIncome: k1income
