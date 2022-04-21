@@ -90,12 +90,7 @@ import (
 	f1099TaxWithheld?: number
 
 	// line 25d Total withheld
-	totalWithheld?: number
-
-	_totalWithheld: list.Sum(_totalWithheldL), _totalWithheldL: [ for o in [w2TaxWithheld, f1099TaxWithheld] if o != _|_ {o}]
-	if _totalWithheld != 0 {
-		totalWithheld: _totalWithheld
-	}
+	totalWithheld: list.Sum(_totalWithheld), _totalWithheld: [ for o in [w2TaxWithheld, f1099TaxWithheld] if o != _|_ {o}]
 
 	// line 26 Estimated tax payments
 	estimatedTaxPayments?: number
