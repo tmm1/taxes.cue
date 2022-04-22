@@ -381,15 +381,17 @@ import (
 		}[in.filingStatus]
 
 		_netInvestmentIncome: list.Sum([ for o in [in.taxableInterest, in.ordinaryDividends, in.capitalGainOrLoss] if o != _|_ {o}])
-		_niiDeduction: (_netInvestmentIncome / in.adjustedGrossIncome) * (*in.scheduleA.taxesPaid.total | 0)
-		_nii: _netInvestmentIncome - _niiDeduction
-		let niit = 0.038 * list.Min([_nii, list.Max([0, in.adjustedGrossIncome - _netInvestmentIncomeThreshold])])
-		if niit != 0 {
-			schedule2: #Form1040.#Schedule2 & {
-				partII: netInvestmentIncomeTax: niit
-			}
+		if _netInvestmentIncome > 0 && in.adjustedGrossIncome > 0 {
+			_niiDeduction: (_netInvestmentIncome / in.adjustedGrossIncome) * (*in.scheduleA.taxesPaid.total | 0)
+			_nii: _netInvestmentIncome - _niiDeduction
+			let niit = 0.038 * list.Min([_nii, list.Max([0, in.adjustedGrossIncome - _netInvestmentIncomeThreshold])])
+			if niit != 0 {
+				schedule2: #Form1040.#Schedule2 & {
+					partII: netInvestmentIncomeTax: niit
+				}
 
-			totalOtherTaxesFromSchedule2: schedule2.partII.total
+				totalOtherTaxesFromSchedule2: schedule2.partII.total
+			}
 		}
 
 		tax: [

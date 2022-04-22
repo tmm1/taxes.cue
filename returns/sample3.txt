@@ -41,6 +41,9 @@ Form1040: {
 	// line 24 Total tax
 	totalTax: 0
 
+	// line 25d Total withheld
+	totalWithheld: 0
+
 	// line 26 Estimated tax payments and amount applied from prior return
 	estimatedTaxPaymentsTotal: 0
 

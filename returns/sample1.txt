@@ -68,6 +68,9 @@ Form1040: {
 	// line 25b Federal income tax withheld (Form 1099)
 	f1099TaxWithheld: 5
 
+	// line 25d Total withheld
+	totalWithheld: 4505
+
 	// line 26 Estimated tax payments
 	estimatedTaxPayments: 5000
 
@@ -78,7 +81,7 @@ Form1040: {
 	totalOtherPayments: 0
 
 	// line 33 Total payments
-	totalPayments: 5000
+	totalPayments: 9505
 
 	// line 34 Tax overpaid
 	taxOverpaid: 0
@@ -87,7 +90,7 @@ Form1040: {
 	taxRefund: 0
 
 	// line 37 Amount you owe
-	taxOwed: 4879.90
+	taxOwed: 374.90
 
 	// Schedule 1: Additional Income and Adjustments to Income
 	schedule1: {
