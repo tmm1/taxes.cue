@@ -7,5 +7,5 @@
 %_accessible.pdf:
 	wget https://www.irs.gov/pub/irs-access/$(@)
 
-%.cue: %_accessible.cue
-	cue export --out cue convert.cue $(^) -e 'out' > $(@) || rm -f $(@)
+f%.cue: f%_accessible.cue convert.cue
+	cue export --out cue $(^) -e 'out' > $(@) || rm -f $(@)

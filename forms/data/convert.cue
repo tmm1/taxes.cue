@@ -10,28 +10,28 @@ out: {
 		for n, p in Pages {
 			{
 				page: n+1
-				data: {
+				data: [
 					for b in p.Boxsets {
-						for x in b.boxes {
-							(x.id.Id): {
-								TU: x.TU
-								"x": x.x
-								y: x.y
-								w: x.w
-								h: x.h
-							}
+						for bx in b.boxes {
+							[bx.id.Id, {
+								TU: bx.TU
+								x: bx.x
+								y: bx.y
+								w: bx.w
+								h: bx.h
+							}]
 						}
-					}
+					},
 					for f in p.Fields {
-						(f.id.Id): {
+						[f.id.Id, {
 							TU: f.TU
-							"x": f.x
+							x: f.x
 							y: f.y
 							w: f.w
 							h: f.h
-						}
+						}]
 					}
-				}
+				]
 			}
 		}
 	]
@@ -48,10 +48,9 @@ out: {
 			][0]
 		}
 		for p in _data {
-			let fieldList = [for k, v in p.data { [k, v] }]
-			let sorted = list.Sort(fieldList, cmp)
-			for v in sorted {
-				(v[0]): v[1].TU
+			let sorted = list.Sort(p.data, cmp)
+			for i, v in sorted {
+				"pg\(p.page)_in\(i)_\(v[0])": v[1].TU
 			}
 		}
 	}
