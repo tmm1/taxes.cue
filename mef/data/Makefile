@@ -2,10 +2,10 @@ f%.jsonschema.cue: f%.jsonschema
 	cue import -f json: $(^) -o $(@)
 
 f%.jsonschema.transformed: f%.jsonschema.cue f%.labels.cue transform.cue
-	cue export --out json $(^) -e out -o $(@)
+	cue export -f --out json $(^) -e out -o $(@)
 
-f%.labels.cue: f%.xsd
-	go run convert.go $(^) > $(@)
+f%.labels.cue: f%.xsd convert.go
+	go run convert.go $(<) > $(@)
 
 f%.jsonschema: f%.xsd activation.jar
 	java -cp node_modules/jsonix-schema-compiler/lib/jsonix-schema-compiler-full.jar:./activation.jar \
