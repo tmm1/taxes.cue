@@ -1,0 +1,7 @@
+/f*.labels.cue
+/f*.jsonschema
+/f*.jsonschema.cue
+/f*.jsonschema.transformed
+/f*.js
+/*.jar
+/node_modules
