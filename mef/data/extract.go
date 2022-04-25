@@ -95,6 +95,7 @@ func (s *state) walkZip(zipfs fs.FS) error {
 		case ".xsd":
 			path = path[strings.Index(opath, "/")+1:]
 			if !strings.HasPrefix(path, "Shared/") &&
+				!strings.HasPrefix(path, "Common/") &&
 				!strings.HasPrefix(path, "IndividualIncomeTax/Common/") &&
 				!strings.HasPrefix(path, "IndividualIncomeTax/Ind1040/") {
 				return nil
