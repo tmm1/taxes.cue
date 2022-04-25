@@ -8,6 +8,13 @@ import (
 	"strings"
 )
 
+type state struct {
+	dec              *xml.Decoder
+	name, desc, line string
+	isDesc, isLine   bool
+	seen             map[string]bool
+}
+
 func main() {
 	err := convert()
 	if err != nil {
@@ -22,13 +29,17 @@ func convert() error {
 	}
 	defer f.Close()
 
+	s := &state{
+		dec:  xml.NewDecoder(f),
+		seen: make(map[string]bool),
+	}
+	return s.convert()
+}
+
+func (s *state) convert() error {
 	fmt.Printf("labels: {\n")
-	dec := xml.NewDecoder(f)
-	seen := make(map[string]bool)
-	var curName, curLine, curDesc string
-	var isLine, isDesc bool
 	for {
-		t, err := dec.Token()
+		t, err := s.dec.Token()
 		if err == io.EOF {
 			break
 		} else if err != nil {
@@ -37,30 +48,31 @@ func convert() error {
 
 		switch tok := t.(type) {
 		case xml.StartElement:
-			isDesc = false
-			isLine = false
+			s.isDesc = false
+			s.isLine = false
 
 			if tok.Name.Local == "element" {
-				curName = tok.Attr[0].Value
+				s.name = tok.Attr[0].Value
 			} else if tok.Name.Local == "Description" {
-				isDesc = true
+				s.isDesc = true
 			} else if tok.Name.Local == "LineNumber" {
-				isLine = true
+				s.isLine = true
 			}
 		case xml.CharData:
-			if isLine {
-				curLine = string(tok)
-				isLine = false
+			if s.isLine {
+				s.line = string(tok)
+				s.isLine = false
 			}
-			if isDesc {
-				curDesc = string(tok)
-				isDesc = false
+			if s.isDesc {
+				s.desc = string(tok)
+				s.isDesc = false
 			}
 		case xml.EndElement:
 			if tok.Name.Local == "documentation" {
-				if curName != "" && !seen[curName] {
-					fmt.Printf("\t%s: {name: %q, desc: %q, line: %q}\n", strings.ToLower(curName), curName, curDesc, curLine)
-					seen[curName] = true
+				if s.name != "" && !s.seen[s.name] {
+					fmt.Printf("\t%s: {name: %q, desc: %q, line: %q}\n",
+						strings.ToLower(s.name), s.name, s.desc, s.line)
+					s.seen[s.name] = true
 				}
 			}
 		}
