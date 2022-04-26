@@ -30,18 +30,21 @@ type documentation struct {
 	TaxYear       string
 	MaturityLevel string
 	ReleaseDate   string
+	LineNumber    string
 }
 
 type element struct {
 	XMLName     *xml.Name    `xml:"element"`
 	Name        string       `xml:"name,attr"`
+	Ref         string       `xml:"ref,attr"`
 	Type        string       `xml:"type,attr"`
 	MinOccurs   string       `xml:"minOccurs,attr"`
 	MaxOccurs   string       `xml:"maxOccurs,attr"`
-	Description string       `xml:"annotation>documentation>Description"`
-	LineNumber  string       `xml:"annotation>documentation>LineNumber"`
 	SimpleType  *simpleType  `xml:"simpleType"`
 	ComplexType *complexType `xml:"complexType"`
+	Doc         *struct {
+		Data string `xml:",innerxml"`
+	} `xml:"annotation>documentation"`
 }
 
 type simpleType struct {
@@ -245,22 +248,48 @@ func (st *simpleType) ToCue(indent string) string {
 	return out
 }
 
+func (d *documentation) doc() string {
+	out := ""
+	if d.LineNumber != "" {
+		out += fmt.Sprintf("Line %s: ", d.LineNumber)
+	}
+	if d.Description != "" {
+		out += d.Description
+	}
+	return out
+}
+
+func (e *element) doc() string {
+	if e.Doc == nil {
+		return e.name()
+	}
+	doc := strings.TrimSpace(e.Doc.Data)
+	if strings.HasPrefix(doc, "<") {
+		var d *documentation
+		err := xml.Unmarshal([]byte("<xsd:documentation>"+doc+"</xsd:documentation>"), &d)
+		if err != nil {
+			panic(err)
+		}
+		return d.doc()
+	}
+	return doc
+}
+
+func (e *element) name() string {
+	if e.Ref != "" {
+		return e.Ref
+	}
+	return e.Name
+}
+
 func (e *element) ToCue(indent string) string {
 	if e.MaxOccurs == "" {
 		e.MaxOccurs = "1"
 	}
 	out := ""
-	out = indent + "// "
-	if e.LineNumber != "" {
-		out += fmt.Sprintf("Line %s: ", e.LineNumber)
-	}
-	if e.Description != "" {
-		out += e.Description
-	} else {
-		out += e.Name
-	}
+	out = indent + "// " + e.doc()
 	out += "\n" + indent
-	name := camelToLower(e.Name)
+	name := camelToLower(e.name())
 	out += name
 	if e.MinOccurs == "0" && e.MaxOccurs == "1" {
 		out += "?: "
