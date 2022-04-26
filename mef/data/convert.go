@@ -66,20 +66,16 @@ type complexType struct {
 	Extension   *extension `xml:"simpleContent>extension"`
 }
 
+type value struct {
+	Value string `xml:"value,attr"`
+}
+
 type restriction struct {
-	BaseType string `xml:"base,attr"`
-	Enum     []struct {
-		Value string `xml:"value,attr"`
-	} `xml:"enumeration"`
-	TotalDigits *struct {
-		Value string `xml:"value,attr"`
-	} `xml:"totalDigits"`
-	Pattern *struct {
-		Value string `xml:"value,attr"`
-	} `xml:"pattern"`
-	Length *struct {
-		Value string `xml:"value,attr"`
-	} `xml:"length"`
+	BaseType    string   `xml:"base,attr"`
+	Enum        []*value `xml:"enumeration"`
+	TotalDigits *value   `xml:"totalDigits"`
+	Pattern     *value   `xml:"pattern"`
+	Length      *value   `xml:"length"`
 }
 
 type extension struct {
@@ -120,6 +116,7 @@ func convert() error {
 }
 
 func (s *state) convert() error {
+	fmt.Printf("package mef\n\n")
 	for {
 		t, err := s.dec.Token()
 		if err == io.EOF {
