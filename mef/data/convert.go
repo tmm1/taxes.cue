@@ -64,6 +64,7 @@ type simpleType struct {
 	Restriction restriction `xml:"restriction"`
 	Doc         *doc        `xml:"annotation>documentation"`
 	List        *list       `xml:"list"`
+	Union       *union      `xml:"union"`
 }
 
 type complexType struct {
@@ -74,6 +75,12 @@ type complexType struct {
 
 type list struct {
 	ItemType string `xml:"itemType,attr"`
+}
+
+type union struct {
+	XMLName     xml.Name    `xml:"union"`
+	MemberTypes string      `xml:"memberTypes,attr"`
+	SimpleType  *simpleType `xml:"simpleType"`
 }
 
 type sequence struct {
@@ -299,12 +306,12 @@ func (st *simpleType) ToCue(indent string) string {
 		}
 	}
 	switch len(st.Restriction.Enum) {
-	case 1:
-		out += " | true"
 	case 0:
-		if st.List != nil {
-			typ = st.List.ItemType
-			out += "[..." + convertType(typ) + "]"
+		if l := st.List; l != nil {
+			out += "[..." + convertType(l.ItemType) + "]"
+		} else if u := st.Union; u != nil {
+			out += convertType(u.MemberTypes) + " | "
+			out += u.SimpleType.ToCue(indent)
 		} else {
 			out += convertType(typ)
 		}
