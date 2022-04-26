@@ -140,11 +140,16 @@ func (s *state) convert() error {
 					break
 				}
 				form := getAttr(tok, "name", os.Args[1])
-				form = strings.TrimPrefix(form, "IRS")
-				form = strings.TrimSuffix(form, "Type")
-				form = strings.Replace(form, "Schedule", "s", 1)
-				form = strings.ToLower(form)
-				fmt.Printf("#f%s: {\n", form)
+				if s.seenComplexTypes == 1 {
+					form = strings.TrimPrefix(form, "IRS")
+					form = strings.TrimSuffix(form, "Type")
+					form = strings.Replace(form, "Schedule", "s", 1)
+					form = strings.ToLower(form)
+					form = "#f" + form
+				} else {
+					form = "#" + camelToLower(form)
+				}
+				fmt.Printf("%s: {\n", form)
 
 			case "choice":
 				s.nestingChoice++
