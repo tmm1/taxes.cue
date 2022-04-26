@@ -341,7 +341,7 @@ func convertType(in string) string {
 		return "#amount"
 	case "USAmountNNType":
 		return "#amount & >= 0"
-	case "CheckboxType":
+	case "CheckboxType", "BooleanType":
 		return "bool"
 	case "TextType", "StringType":
 		return "string"
