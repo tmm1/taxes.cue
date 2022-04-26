@@ -43,7 +43,9 @@ type element struct {
 	SimpleType  *simpleType  `xml:"simpleType"`
 	ComplexType *complexType `xml:"complexType"`
 	Doc         *struct {
-		Data string `xml:",innerxml"`
+		Description string
+		LineNumber  string
+		Data        string `xml:",innerxml"`
 	} `xml:"annotation>documentation"`
 }
 
@@ -248,31 +250,21 @@ func (st *simpleType) ToCue(indent string) string {
 	return out
 }
 
-func (d *documentation) doc() string {
-	out := ""
-	if d.LineNumber != "" {
-		out += fmt.Sprintf("Line %s: ", d.LineNumber)
-	}
-	if d.Description != "" {
-		out += d.Description
-	}
-	return out
-}
-
 func (e *element) doc() string {
 	if e.Doc == nil {
 		return e.name()
 	}
-	doc := strings.TrimSpace(e.Doc.Data)
-	if strings.HasPrefix(doc, "<") {
-		var d *documentation
-		err := xml.Unmarshal([]byte("<xsd:documentation>"+doc+"</xsd:documentation>"), &d)
-		if err != nil {
-			panic(err)
+	if d := e.Doc; d.Description != "" || d.LineNumber != "" {
+		out := ""
+		if d.LineNumber != "" {
+			out += fmt.Sprintf("Line %s: ", d.LineNumber)
 		}
-		return d.doc()
+		if d.Description != "" {
+			out += d.Description
+		}
+		return out
 	}
-	return doc
+	return strings.TrimSpace(e.Doc.Data)
 }
 
 func (e *element) name() string {
