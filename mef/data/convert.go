@@ -5,9 +5,14 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"regexp"
 	"strings"
 
 	"github.com/fatih/camelcase"
+)
+
+var (
+	matchIRSForm = regexp.MustCompile(`^IRS(\d+|W2|RRB|SSA)`)
 )
 
 type state struct {
@@ -22,6 +27,7 @@ type state struct {
 	choiceElements  int
 
 	seenComplexTypes int
+	isReturn         bool
 }
 
 type documentation struct {
@@ -145,15 +151,7 @@ func (s *state) convert() error {
 					break
 				}
 				form := getAttr(tok, "name", os.Args[1])
-				if s.seenComplexTypes == 1 {
-					form = strings.TrimPrefix(form, "IRS")
-					form = strings.TrimSuffix(form, "Type")
-					form = strings.Replace(form, "Schedule", "s", 1)
-					form = strings.ToLower(form)
-					form = "#f" + form
-				} else {
-					form = "#" + camelToLower(form)
-				}
+				form = "#" + convertFormName(form)
 				fmt.Printf("%s: {\n", form)
 
 			case "choice":
@@ -162,7 +160,14 @@ func (s *state) convert() error {
 				s.choiceElements = 0
 
 			case "element":
-				if s.seenComplexTypes == 0 {
+				name := getAttr(tok, "name", "")
+				if strings.HasPrefix(name, "IRS") &&
+					!strings.HasSuffix(name, "Type") {
+					break
+				}
+				if name == "ReturnData" {
+					s.isReturn = true
+					fmt.Printf("#Return: {\n")
 					break
 				}
 				var e *element
@@ -179,6 +184,11 @@ func (s *state) convert() error {
 						fmt.Printf("\t{\n")
 					}
 					fmt.Printf("%s", e.ToCue("\t\t"))
+				} else if n := e.name(); s.isReturn &&
+					(strings.HasSuffix(n, "Statement") ||
+						strings.HasSuffix(n, "Statmnt") ||
+						strings.HasSuffix(n, "Stmt")) {
+					// skip
 				} else {
 					fmt.Printf("%s\n", e.ToCue("\t"))
 				}
@@ -188,6 +198,10 @@ func (s *state) convert() error {
 		case xml.EndElement:
 			s.nesting--
 			switch tok.Name.Local {
+			case "schema":
+				if s.isReturn {
+					fmt.Printf("}\n")
+				}
 			case "complexType":
 				if s.nesting == 1 {
 					fmt.Printf("}\n")
@@ -264,12 +278,14 @@ func (e *element) doc() string {
 		}
 		return out
 	}
-	return strings.TrimSpace(e.Doc.Data)
+	doc := strings.TrimSpace(e.Doc.Data)
+	doc = strings.TrimPrefix(doc, "IRS ")
+	return doc
 }
 
 func (e *element) name() string {
 	if e.Ref != "" {
-		return e.Ref
+		return convertFormName(e.Ref)
 	}
 	return e.Name
 }
@@ -298,6 +314,9 @@ func (e *element) ToCue(indent string) string {
 			} else if len(ct.SeqElements) > 0 {
 				typ = "#" + name
 			}
+		}
+		if e.Ref != "" {
+			typ = e.Ref
 		}
 		typ = convertType(typ)
 		switch typ {
@@ -374,8 +393,20 @@ func convertType(in string) string {
 	case "TextType", "StringType":
 		return "string"
 	default:
-		return "#" + camelToLower(strings.TrimSuffix(in, "Type"))
+		return "#" + convertFormName(in)
 	}
+}
+
+func convertFormName(in string) string {
+	if !matchIRSForm.MatchString(in) {
+		return camelToLower(strings.TrimSuffix(in, "Type"))
+	}
+	in = strings.TrimPrefix(in, "IRS")
+	in = strings.TrimSuffix(in, "Type")
+	in = strings.Replace(in, "Schedule", "s", 1)
+	in = strings.ToLower(in)
+	in = "f" + in
+	return in
 }
 
 func camelToLower(in string) string {
