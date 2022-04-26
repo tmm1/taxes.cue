@@ -40,7 +40,7 @@ type documentation struct {
 }
 
 type element struct {
-	XMLName     *xml.Name    `xml:"element"`
+	XMLName     xml.Name     `xml:"element"`
 	Name        string       `xml:"name,attr"`
 	Ref         string       `xml:"ref,attr"`
 	Type        string       `xml:"type,attr"`
@@ -56,14 +56,31 @@ type element struct {
 }
 
 type simpleType struct {
-	XMLName     *xml.Name   `xml:"simpleType"`
+	XMLName     xml.Name    `xml:"simpleType"`
 	Restriction restriction `xml:"restriction"`
 }
 
 type complexType struct {
-	XMLName     *xml.Name  `xml:"complexType"`
-	SeqElements []*element `xml:"sequence>element"`
-	Extension   *extension `xml:"simpleContent>extension"`
+	XMLName   xml.Name   `xml:"complexType"`
+	Seq       *sequence  `xml:"sequence"`
+	Extension *extension `xml:"simpleContent>extension"`
+}
+
+type sequence struct {
+	Items []*seqItem `xml:",any"`
+}
+
+type seqItem struct {
+	XMLName xml.Name
+	Attrs   []xml.Attr `xml:",any,attr"`
+	Content string     `xml:",innerxml"`
+}
+
+type choice struct {
+	XMLName   xml.Name   `xml:"choice"`
+	MinOccurs string     `xml:"minOccurs,attr"`
+	MaxOccurs string     `xml:"maxOccurs,attr"`
+	Elements  []*element `xml:"element"`
 }
 
 type value struct {
@@ -79,9 +96,9 @@ type restriction struct {
 }
 
 type extension struct {
-	XMLName  *xml.Name `xml:"extension"`
-	BaseType string    `xml:"base,attr"`
-	Attrs    []*attr   `xml:"attribute"`
+	XMLName  xml.Name `xml:"extension"`
+	BaseType string   `xml:"base,attr"`
+	Attrs    []*attr  `xml:"attribute"`
 }
 
 type attr struct {
@@ -217,7 +234,11 @@ func (s *state) convert() error {
 }
 
 func getAttr(tok xml.StartElement, name, defaultValue string) string {
-	for _, attr := range tok.Attr {
+	return getAttrFrom(tok.Attr, name, defaultValue)
+}
+
+func getAttrFrom(attrs []xml.Attr, name, defaultValue string) string {
+	for _, attr := range attrs {
 		if attr.Name.Local == name {
 			return attr.Value
 		}
@@ -308,7 +329,7 @@ func (e *element) ToCue(indent string) string {
 		if ct := e.ComplexType; ct != nil {
 			if ct.Extension != nil {
 				typ = ct.Extension.BaseType
-			} else if len(ct.SeqElements) > 0 {
+			} else if ct.Seq != nil && len(ct.Seq.Items) > 0 {
 				typ = "#" + name
 			}
 		}
@@ -362,15 +383,54 @@ func (e *element) ToCue(indent string) string {
 			out += indent + name + `_referenceDocumentId: [...#` + name + `_referenceDocumentName]` + "\n"
 		}
 	}
-	if ct := e.ComplexType; ct != nil && len(ct.SeqElements) > 0 {
+	if ct := e.ComplexType; ct != nil && ct.Seq != nil && len(ct.Seq.Items) > 0 {
 		out += indent + "#" + name + ": {\n"
-		for i, e := range ct.SeqElements {
-			if i > 0 {
-				out += "\n"
-			}
-			out += e.ToCue(indent + "\t")
-		}
+		out += ct.Seq.ToCue(indent + "\t")
 		out += indent + "}\n"
+	}
+	return out
+}
+
+func (s *sequence) ToCue(indent string) string {
+	out := ""
+	for i, o := range s.Items {
+		if i > 0 {
+			out += "\n"
+		}
+		switch o.XMLName.Local {
+		case "element":
+			var e *element
+			err := xml.NewDecoder(strings.NewReader(o.Content)).DecodeElement(&e, &xml.StartElement{
+				Name: o.XMLName,
+				Attr: o.Attrs,
+			})
+			if err != nil && err != io.EOF {
+				panic(err)
+			}
+			out += e.ToCue(indent)
+		case "choice":
+			var c *choice
+			err := xml.NewDecoder(strings.NewReader(o.Content)).DecodeElement(&c, &xml.StartElement{
+				Name: o.XMLName,
+				Attr: o.Attrs,
+			})
+			if err != nil && err != io.EOF {
+				panic(err)
+			}
+			for j, e := range c.Elements {
+				if j > 0 {
+					out += indent + "} | {\n"
+				} else {
+					out += indent + "{\n"
+				}
+				out += e.ToCue(indent + "\t")
+			}
+			out += indent + "}"
+			if c.MinOccurs == "0" {
+				out += " | {\n" + indent + "\t...\n" + indent + "}"
+			}
+			out += "\n\n"
+		}
 	}
 	return out
 }
