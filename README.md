@@ -51,6 +51,7 @@ $ cat mine/2021.freefile # freefilebot data
 ### other free tax tools and software
 
 - [taxfloss](https://github.com/linuxrocks123/taxfloss)
+- [tenforty](https://github.com/divergentdave/tenforty)
 - [1040.js](https://github.com/b-k/1040.js)
 - [py1040](https://github.com/b-k/py1040)
 - [irs-efile-viewer](https://github.com/betson/irs-efile-viewer)
