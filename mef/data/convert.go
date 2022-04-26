@@ -315,7 +315,9 @@ func (e *element) ToCue(indent string) string {
 			}
 		}
 		if refDocTypes != "" {
-			out += indent + name + "_referenceDocumentId: [...string] // " + refDocTypes + "\n"
+			types := strings.Split(refDocTypes, " ")
+			out += indent + "#" + name + `_referenceDocumentName: =~"^(` + strings.Join(types, "|") + `)(\\.\\d+)?$"` + "\n"
+			out += indent + name + `_referenceDocumentId: [...#` + name + `_referenceDocumentName]` + "\n"
 		}
 	}
 	if ct := e.ComplexType; ct != nil && len(ct.SeqElements) > 0 {
