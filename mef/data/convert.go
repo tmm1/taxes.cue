@@ -29,7 +29,9 @@ type state struct {
 	choiceElements  int
 
 	seenComplexTypes int
-	isReturn         bool
+
+	isReturn bool
+	isTypes  bool
 }
 
 type documentation struct {
@@ -179,7 +181,10 @@ func (s *state) convert() error {
 					parts := strings.SplitN(d.Description, " - ", 2)
 					form := strings.Replace(parts[1], "IRS ", "Form ", 1)
 					form = strings.Replace(form, "Form Form", "Form", 1)
-					if !strings.HasPrefix(form, "Base types") {
+					if strings.HasPrefix(form, "Base types") {
+						s.isTypes = true
+						fmt.Printf("import \"strings\"\n\n")
+					} else {
 						fmt.Printf("// %s (%s)\n", form, d.TaxYear)
 					}
 				}
@@ -207,7 +212,7 @@ func (s *state) convert() error {
 
 			case "complexType":
 				s.seenComplexTypes++
-				if s.nesting != 1 {
+				if s.nesting != 1 && !s.isTypes {
 					break
 				}
 				form := getAttr(tok, "name", os.Args[1])
@@ -260,8 +265,11 @@ func (s *state) convert() error {
 					fmt.Printf("}\n")
 				}
 			case "complexType":
-				if s.nesting == 1 {
+				if s.nesting == 1 || s.isTypes {
 					fmt.Printf("}\n")
+					if s.isTypes {
+						fmt.Printf("\n")
+					}
 				}
 			case "choice":
 				s.nestingChoice--
@@ -320,7 +328,14 @@ func (st *simpleType) ToCue(indent string) string {
 			r.MinExclusive != nil ||
 			r.MaxExclusive != nil {
 			if mi := r.MinInclusive; mi != nil {
-				out += fmt.Sprintf(" & >=%s", mi.Value)
+				v := mi.Value
+				v = strings.TrimLeft(v, "0")
+				if v == "" {
+					v = "0"
+				} else if v[0] == '.' {
+					v = "0" + v
+				}
+				out += fmt.Sprintf(" & >=%s", v)
 			}
 			if mi := r.MaxInclusive; mi != nil {
 				out += fmt.Sprintf(" & <=%s", mi.Value)
