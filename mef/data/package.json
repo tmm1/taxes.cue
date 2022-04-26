@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "jsonix-schema-compiler": "^2.3.9",
-    "xsd2json": "^1.12.20"
-  }
-}
