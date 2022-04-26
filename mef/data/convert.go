@@ -386,6 +386,10 @@ func camelToLower(in string) string {
 	if len(parts) == 0 {
 		return in
 	}
-	parts[0] = strings.ToLower(parts[0])
+	if strings.HasPrefix(parts[0], "IRS") {
+		parts[0] = "irs" + parts[0][3:]
+	} else {
+		parts[0] = strings.ToLower(parts[0])
+	}
 	return strings.Join(parts, "")
 }
