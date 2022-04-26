@@ -12,7 +12,8 @@ import (
 )
 
 var (
-	matchIRSForm = regexp.MustCompile(`^IRS(\d+|W2|RRB|SSA)`)
+	matchIRSForm      = regexp.MustCompile(`^IRS(\d+|W2|RRB|SSA)`)
+	matchIRSWhitelist = regexp.MustCompile(`^f(1040|8949|8995|8888|w2)`)
 )
 
 type state struct {
@@ -198,10 +199,7 @@ func (s *state) convert() error {
 						fmt.Printf("\t{\n")
 					}
 					fmt.Printf("%s", e.ToCue("\t\t"))
-				} else if n := e.name(); s.isReturn &&
-					(strings.HasSuffix(n, "Statement") ||
-						strings.HasSuffix(n, "Statmnt") ||
-						strings.HasSuffix(n, "Stmt")) {
+				} else if n := e.name(); s.isReturn && !matchIRSWhitelist.MatchString(n) {
 					// skip
 				} else {
 					fmt.Printf("%s\n", e.ToCue("\t"))
