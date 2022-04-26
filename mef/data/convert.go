@@ -6,6 +6,7 @@ import (
 	"io"
 	"os"
 	"regexp"
+	"strconv"
 	"strings"
 
 	"github.com/fatih/camelcase"
@@ -13,7 +14,7 @@ import (
 
 var (
 	matchIRSForm      = regexp.MustCompile(`^IRS(\d+|W2|RRB|SSA)`)
-	matchIRSWhitelist = regexp.MustCompile(`^f(1040|8949|8995|8888|w2)`)
+	matchIRSWhitelist = regexp.MustCompile(`^f(1040$|1040(x|s[123a])|8949|8995a$|w2$)`)
 )
 
 type state struct {
@@ -32,12 +33,18 @@ type state struct {
 }
 
 type documentation struct {
-	XMLName       *xml.Name `xml:"documentation"`
+	XMLName       xml.Name `xml:"documentation"`
 	Description   string
 	TaxYear       string
 	MaturityLevel string
 	ReleaseDate   string
 	LineNumber    string
+}
+
+type doc struct {
+	Description string
+	LineNumber  string
+	Data        string `xml:",innerxml"`
 }
 
 type element struct {
@@ -49,22 +56,24 @@ type element struct {
 	MaxOccurs   string       `xml:"maxOccurs,attr"`
 	SimpleType  *simpleType  `xml:"simpleType"`
 	ComplexType *complexType `xml:"complexType"`
-	Doc         *struct {
-		Description string
-		LineNumber  string
-		Data        string `xml:",innerxml"`
-	} `xml:"annotation>documentation"`
+	Doc         *doc         `xml:"annotation>documentation"`
 }
 
 type simpleType struct {
 	XMLName     xml.Name    `xml:"simpleType"`
 	Restriction restriction `xml:"restriction"`
+	Doc         *doc        `xml:"annotation>documentation"`
+	List        *list       `xml:"list"`
 }
 
 type complexType struct {
 	XMLName   xml.Name   `xml:"complexType"`
 	Seq       *sequence  `xml:"sequence"`
 	Extension *extension `xml:"simpleContent>extension"`
+}
+
+type list struct {
+	ItemType string `xml:"itemType,attr"`
 }
 
 type sequence struct {
@@ -89,11 +98,17 @@ type value struct {
 }
 
 type restriction struct {
-	BaseType    string   `xml:"base,attr"`
-	Enum        []*value `xml:"enumeration"`
-	TotalDigits *value   `xml:"totalDigits"`
-	Pattern     *value   `xml:"pattern"`
-	Length      *value   `xml:"length"`
+	BaseType     string   `xml:"base,attr"`
+	Enum         []*value `xml:"enumeration"`
+	TotalDigits  *value   `xml:"totalDigits"`
+	FracDigits   *value   `xml:"fractionDigits"`
+	MaxLength    *value   `xml:"maxLength"`
+	MinInclusive *value   `xml:"minInclusive"`
+	MaxInclusive *value   `xml:"maxInclusive"`
+	MinExclusive *value   `xml:"minExclusive"`
+	MaxExclusive *value   `xml:"maxExclusive"`
+	Pattern      *value   `xml:"pattern"`
+	Length       *value   `xml:"length"`
 }
 
 type extension struct {
@@ -157,8 +172,31 @@ func (s *state) convert() error {
 					parts := strings.SplitN(d.Description, " - ", 2)
 					form := strings.Replace(parts[1], "IRS ", "Form ", 1)
 					form = strings.Replace(form, "Form Form", "Form", 1)
-					fmt.Printf("// %s (%s)\n", form, d.TaxYear)
+					if !strings.HasPrefix(form, "Base types") {
+						fmt.Printf("// %s (%s)\n", form, d.TaxYear)
+					}
 				}
+
+			case "simpleType":
+				var st *simpleType
+				err := s.dec.DecodeElement(&st, &tok)
+				if err != nil {
+					return err
+				}
+				s.nesting--
+				name := convertType(getAttr(tok, "name", ""))
+				switch name {
+				case "string", "#uri", "bool", "int":
+					continue
+				default:
+					if strings.Contains(name, " ") {
+						continue
+					}
+				}
+				if d := st.Doc.doc(); d != "" {
+					fmt.Printf("// %s\n", d)
+				}
+				fmt.Printf("%s: %s\n\n", name, st.ToCue("\t"))
 
 			case "complexType":
 				s.seenComplexTypes++
@@ -252,9 +290,9 @@ func (st *simpleType) ToCue(indent string) string {
 			out += " | "
 		}
 		switch typ {
-		case "TextType", "StringType":
+		case "TextType", "StringType", "xsd:string":
 			out += fmt.Sprintf("%q", v.Value)
-		case "IntegerNNType", "IntegerType":
+		case "IntegerNNType", "IntegerType", "xsd:integer":
 			out += fmt.Sprintf("%s", v.Value)
 		default:
 			panic(typ)
@@ -264,19 +302,65 @@ func (st *simpleType) ToCue(indent string) string {
 	case 1:
 		out += " | true"
 	case 0:
-		out += convertType(typ)
-		if td := st.Restriction.TotalDigits; td != nil {
-			out += fmt.Sprintf(" & <= math.Pow(10, %s)", td.Value)
+		if st.List != nil {
+			typ = st.List.ItemType
+			out += "[..." + convertType(typ) + "]"
+		} else {
+			out += convertType(typ)
+		}
+		if r := st.Restriction; r.MinInclusive != nil ||
+			r.MaxInclusive != nil ||
+			r.MinExclusive != nil ||
+			r.MaxExclusive != nil {
+			if mi := r.MinInclusive; mi != nil {
+				out += fmt.Sprintf(" & >=%s", mi.Value)
+			}
+			if mi := r.MaxInclusive; mi != nil {
+				out += fmt.Sprintf(" & <=%s", mi.Value)
+			}
+			if mx := r.MinExclusive; mx != nil {
+				out += fmt.Sprintf(" & >%s", mx.Value)
+			}
+			if mx := r.MaxExclusive; mx != nil {
+				out += fmt.Sprintf(" & <%s", mx.Value)
+			}
+		} else if td := st.Restriction.TotalDigits; td != nil {
+			n, _ := strconv.Atoi(td.Value)
+			if fd := st.Restriction.FracDigits; fd != nil {
+				p, _ := strconv.Atoi(fd.Value)
+				n -= p
+			}
+			out += fmt.Sprintf(" & <1%s", strings.Repeat("0", n))
 		}
 	}
 	if st.Restriction.Pattern != nil {
 		out += fmt.Sprintf(" & =~%q", st.Restriction.Pattern.Value)
 	}
-	if st.Restriction.Length != nil {
+	if ml := st.Restriction.MaxLength; ml != nil {
+		out += fmt.Sprintf(" & strings.MaxRunes(%s)", ml.Value)
+	} else if l := st.Restriction.Length; l != nil {
 		out += fmt.Sprintf(" & strings.MinRunes(%s) & strings.MaxRunes(%s)",
-			st.Restriction.Length.Value,
-			st.Restriction.Length.Value)
+			l.Value, l.Value)
 	}
+	return out
+}
+
+func (d *doc) doc() string {
+	out := ""
+	if d == nil {
+		return out
+	}
+	if d.LineNumber != "" {
+		out += fmt.Sprintf("Line %s: ", d.LineNumber)
+	}
+	if d.Description != "" {
+		out += d.Description
+	}
+	if out != "" {
+		return out
+	}
+	out = strings.TrimSpace(d.Data)
+	out = strings.TrimPrefix(out, "IRS ")
 	return out
 }
 
@@ -284,19 +368,7 @@ func (e *element) doc() string {
 	if e.Doc == nil {
 		return e.name()
 	}
-	if d := e.Doc; d.Description != "" || d.LineNumber != "" {
-		out := ""
-		if d.LineNumber != "" {
-			out += fmt.Sprintf("Line %s: ", d.LineNumber)
-		}
-		if d.Description != "" {
-			out += d.Description
-		}
-		return out
-	}
-	doc := strings.TrimSpace(e.Doc.Data)
-	doc = strings.TrimPrefix(doc, "IRS ")
-	return doc
+	return e.Doc.doc()
 }
 
 func (e *element) name() string {
@@ -435,17 +507,27 @@ func (s *sequence) ToCue(indent string) string {
 
 func convertType(in string) string {
 	switch in {
-	case "IntegerType":
+	case "IntegerType", "xsd:integer", "xsd:long":
 		return "int"
-	case "IntegerNNType":
-		return "int & >= 0"
+	case "IntegerNNType", "xsd:nonNegativeInteger":
+		return "int & >=0"
+	case "xsd:nonPositiveInteger":
+		return "int & <=0"
+	case "xsd:negativeInteger":
+		return "int & <0"
+	case "xsd:positiveInteger":
+		return "int & >0"
+	case "xsd:decimal":
+		return "float"
 	case "USAmountType":
-		return "#amount"
+		return "#usAmount"
 	case "USAmountNNType":
-		return "#amount & >= 0"
+		return "#usAmount & >=0"
 	case "CheckboxType", "BooleanType":
 		return "bool"
-	case "TextType", "StringType":
+	case "TextType", "StringType", "xsd:string":
+		return "string"
+	case "xsd:date", "xsd:dateTime", "xsd:time":
 		return "string"
 	default:
 		return "#" + convertFormName(in)
