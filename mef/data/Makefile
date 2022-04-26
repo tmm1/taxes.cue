@@ -1,2 +1,2 @@
-f%.cue: f%.xsd convert.go
+%.cue: %.xsd convert.go
 	go run convert.go $(<) > $(@)
