@@ -160,9 +160,6 @@ func (s *state) convert() error {
 				if err != nil {
 					return err
 				}
-				if e.MaxOccurs == "" {
-					e.MaxOccurs = "1"
-				}
 				s.nesting--
 				if s.nestingChoice != 0 {
 					s.choiceElements++
@@ -244,6 +241,9 @@ func (st *simpleType) ToCue(indent string) string {
 }
 
 func (e *element) ToCue(indent string) string {
+	if e.MaxOccurs == "" {
+		e.MaxOccurs = "1"
+	}
 	out := ""
 	out = indent + "// "
 	if e.LineNumber != "" {
