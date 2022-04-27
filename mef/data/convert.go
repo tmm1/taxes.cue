@@ -14,7 +14,7 @@ import (
 
 var (
 	matchIRSForm      = regexp.MustCompile(`^IRS(\d+|W2|RRB|SSA)`)
-	matchIRSWhitelist = regexp.MustCompile(`^f(1040$|1040(x|s[123a])|8949|8995a$|w2$)`)
+	matchIRSWhitelist = regexp.MustCompile(`^f(1040$|1040(s[123a])|8949|8995a$|w2$)`)
 )
 
 type state struct {
@@ -183,7 +183,6 @@ func (s *state) convert() error {
 					form = strings.Replace(form, "Form Form", "Form", 1)
 					if strings.HasPrefix(form, "Base types") {
 						s.isTypes = true
-						fmt.Printf("import \"strings\"\n\n")
 					} else {
 						fmt.Printf("// %s (%s)\n", form, d.TaxYear)
 					}
@@ -356,7 +355,11 @@ func (st *simpleType) ToCue(indent string) string {
 		}
 	}
 	if st.Restriction.Pattern != nil {
-		out += fmt.Sprintf(" & =~%q", st.Restriction.Pattern.Value)
+		if convertType(typ) == "float" {
+			out += fmt.Sprintf(" // =~%q", st.Restriction.Pattern.Value)
+		} else {
+			out += fmt.Sprintf(" & =~%q", st.Restriction.Pattern.Value)
+		}
 	}
 	if ml := st.Restriction.MaxLength; ml != nil {
 		out += fmt.Sprintf(" & strings.MaxRunes(%s)", ml.Value)
