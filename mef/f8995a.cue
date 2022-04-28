@@ -109,13 +109,13 @@ package mef
 	// Line 20 - Use value from Line 33
 
 	// Line 21: Filing Status Threshold Code
-	filingStatusThresholdCd?: "164900" | "164925" | "329800"
+	filingStatusThresholdCd?: 164900 | 164925 | 329800
 
 	// Line 22: Taxable Income Before QBI Deduction Less Threshold Amount
 	txiBfrQBIDedLessThresholdAmt?: #usAmount
 
 	// Line 23: Filing Status Phase-In Range Code
-	filingStatusPhaseInRangeCd?: "50000" | "100000"
+	filingStatusPhaseInRangeCd?: 50000 | 100000
 
 	// Line 24: Phase In Percentage
 	phaseInPct?: #ratio

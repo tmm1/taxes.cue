@@ -414,6 +414,11 @@ func (e *element) ToCue(indent string) string {
 	}
 	var typ string
 	if st := e.SimpleType; st != nil {
+		if strings.HasPrefix(name, "filingStatus") &&
+			(strings.HasSuffix(name, "RangeCd") ||
+				strings.HasSuffix(name, "ThresholdCd")) {
+			st.Restriction.BaseType = "IntegerType"
+		}
 		typ = st.ToCue(indent)
 	} else {
 		typ = e.Type

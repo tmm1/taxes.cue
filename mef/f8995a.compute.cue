@@ -2,7 +2,6 @@ package mef
 
 import (
 	"math"
-	"strconv"
 )
 
 // Form 8995-A (2021)
@@ -74,18 +73,18 @@ import (
 	let l20 = l33
 
 	// Line 21: Filing Status Threshold Code
-	l21=filingStatusThresholdCd?: "164900" | "164925" | "329800"
+	l21=filingStatusThresholdCd?: _
 
 	// Line 22: Taxable Income Before QBI Deduction Less Threshold Amount
-	l22=txiBfrQBIDedLessThresholdAmt: l20 - strconv.Atoi(l21)
+	l22=txiBfrQBIDedLessThresholdAmt: l20 - l21
 
 	// Line 23: Filing Status Phase-In Range Code
-	l23=filingStatusPhaseInRangeCd?: "50000" | "100000"
+	l23=filingStatusPhaseInRangeCd?: _
 
 	// Line 24: Phase In Percentage
 	phaseInPct: [
-		if l20 > strconv.Atoi(l21) && l20 <= strconv.Atoi(l23) {
-			l22 / strconv.Atoi(l23)
+		if l20 > l21 && l20 < l21+l23 {
+			l22 / l23
 		},
 		0.0,
 	][0]
