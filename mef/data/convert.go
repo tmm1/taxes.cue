@@ -15,6 +15,8 @@ import (
 var (
 	matchIRSForm      = regexp.MustCompile(`^IRS(\d+|W2|RRB|SSA)`)
 	matchIRSWhitelist = regexp.MustCompile(`^f(1040$|1040(s[123abd])|8949|8995a$|w2$)`)
+
+	matchPartHeader = regexp.MustCompile(`^(=+)?\s*(Part|PART)\s`)
 )
 
 type state struct {
@@ -539,7 +541,7 @@ func (s *sequence) ToCue(indent string) string {
 			wasComment = false
 		case string:
 			if strings.HasPrefix(o, "Line ") ||
-				strings.HasPrefix(o, "Part ") ||
+				matchPartHeader.MatchString(o) ||
 				strings.HasSuffix(o, " Section") {
 				out += indent + "// " + o + "\n"
 				lastComment = ""
