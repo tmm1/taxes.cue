@@ -54,6 +54,7 @@ type element struct {
 	SimpleType  *simpleType  `xml:"simpleType"`
 	ComplexType *complexType `xml:"complexType"`
 	Doc         *doc         `xml:"annotation>documentation"`
+	lastComment string
 }
 
 type simpleType struct {
@@ -382,6 +383,9 @@ func (d *doc) doc() string {
 
 func (e *element) doc() string {
 	if e.Doc == nil {
+		if e.lastComment != "" {
+			return e.lastComment
+		}
 		return e.name()
 	}
 	return e.Doc.doc()
@@ -507,24 +511,34 @@ func (s *sequence) ToCue(indent string) string {
 			}
 		case xml.Comment:
 			comment := strings.TrimSpace(string(tok))
-			if strings.HasPrefix(comment, "Line ") ||
-				strings.HasPrefix(comment, "Part ") {
-				items = append(items, comment)
-			}
+			items = append(items, comment)
 		}
 	}
 	out := ""
+	var lastComment string
+	var wasComment bool
 	for i, o := range items {
-		if i > 0 {
+		if i > 0 && !wasComment {
 			out += "\n"
 		}
 		switch o := o.(type) {
 		case *element:
+			o.lastComment = lastComment
 			out += o.ToCue(indent)
+			wasComment = false
 		case *choice:
 			out += o.ToCue(indent)
+			wasComment = false
 		case string:
-			out += indent + "// " + o + "\n"
+			if strings.HasPrefix(o, "Line ") ||
+				strings.HasPrefix(o, "Part ") {
+				out += indent + "// " + o + "\n"
+				lastComment = ""
+				wasComment = false
+			} else {
+				lastComment = o
+				wasComment = true
+			}
 		}
 	}
 	return out
