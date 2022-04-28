@@ -376,7 +376,11 @@ func (d *doc) doc() string {
 		return out
 	}
 	if d.LineNumber != "" {
-		out += fmt.Sprintf("Line %s: ", d.LineNumber)
+		if strings.HasPrefix(d.LineNumber, "Part") {
+			out += fmt.Sprintf("%s: ", d.LineNumber)
+		} else {
+			out += fmt.Sprintf("Line %s: ", d.LineNumber)
+		}
 	}
 	if d.Description != "" {
 		out += d.Description
