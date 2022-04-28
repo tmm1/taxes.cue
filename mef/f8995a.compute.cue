@@ -62,7 +62,7 @@ import (
 	}
 
 	// Line 16: Total Qualified Business Income Component Amount
-	l16=totalQBIComponentAmt: list.Sum([ for e in qbiDeductionInformationGrp if e.qbiComponentAmt != _|_ { e.qbiComponentAmt }])
+	l16=totalQBIComponentAmt: list.Sum([ for e in qbiDeductionInformationGrp {e.qbiComponentAmt}])
 
 	let l20 = l33
 
@@ -80,7 +80,7 @@ import (
 		if l20 > strconv.Atoi(l21) && l20 <= strconv.Atoi(l23) {
 			l22 / strconv.Atoi(l23)
 		},
-		0.0
+		0.0,
 	][0]
 
 	let l27 = l16
@@ -123,5 +123,4 @@ import (
 
 	// Line 40: Total Qualified REIT Dividends And PTP Loss Carryforward Amount
 	totQlfyREITDivPTPLossCfwdAmt: math.Abs(list.Min([l28 - (*l29 | 0), 0]))
-
 }
