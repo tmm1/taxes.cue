@@ -388,6 +388,9 @@ func (e *element) doc() string {
 		}
 		return e.name()
 	}
+	if e.Doc.Description == "" && e.lastComment != "" {
+		e.Doc.Description = e.lastComment
+	}
 	return e.Doc.doc()
 }
 
