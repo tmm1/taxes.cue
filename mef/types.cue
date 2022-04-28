@@ -319,25 +319,25 @@ package mef
 }
 
 #nameAndAddress: {
-	{
-		// PersonNm
-		personNm: #personName
-	} | {
-		// BusinessName
-		businessName: #businessName
-	} | {
-		...
-	}
+	// PersonNm
+	personNm?: #personName
 
-	{
-		// USAddress
-		usAddress: #usAddress
-	} | {
-		// ForeignAddress
-		foreignAddress: #foreignAddress
-	} | {
-		...
-	}
+	// BusinessName
+	businessName?: #businessName
+
+	#validatePersonNmAndBusinessName: true &
+		list.MaxItems(_validatePersonNmAndBusinessName, 1)
+	_validatePersonNmAndBusinessName: [ for o in [personNm, businessName] if o != _|_ {o}]
+
+	// USAddress
+	usAddress?: #usAddress
+
+	// ForeignAddress
+	foreignAddress?: #foreignAddress
+
+	#validateUSAddressAndForeignAddress: true &
+		list.MaxItems(_validateUSAddressAndForeignAddress, 1)
+	_validateUSAddressAndForeignAddress: [ for o in [usAddress, foreignAddress] if o != _|_ {o}]
 
 }
 
@@ -418,13 +418,16 @@ package mef
 #iPv6: string & =~"[0-9A-F:]{1,39}"
 
 #ipAddress: {
-	{
-		// IPv4AddressTxt
-		iPv4AddressTxt: #iPv4
-	} | {
-		// IPv6AddressTxt
-		iPv6AddressTxt: #iPv6
-	}
+	// IPv4AddressTxt
+	iPv4AddressTxt?: #iPv4
+
+	// IPv6AddressTxt
+	iPv6AddressTxt?: #iPv6
+
+	#validateIPv4AddressTxtAndIPv6AddressTxt: true &
+		// list.MinItems(_validateIPv4AddressTxtAndIPv6AddressTxt, 1) &
+		list.MaxItems(_validateIPv4AddressTxtAndIPv6AddressTxt, 1)
+	_validateIPv4AddressTxtAndIPv6AddressTxt: [ for o in [iPv4AddressTxt, iPv6AddressTxt] if o != _|_ {o}]
 
 }
 

@@ -13,11 +13,20 @@ package mef
 		// Line 1(a): Person Name
 		personNm?: #personName
 
+		#validateTradeOrBusinessNameAndPersonNm: true &
+			// list.MinItems(_validateTradeOrBusinessNameAndPersonNm, 1) &
+			list.MaxItems(_validateTradeOrBusinessNameAndPersonNm, 1)
+		_validateTradeOrBusinessNameAndPersonNm: [ for o in [tradeOrBusinessName, personNm] if o != _|_ {o}]
+
 		// Line 1(b): Specified Service Indicator
-		specifiedServiceInd?: bool
+		specifiedServiceInd?: true
 
 		// Line 1(c): Aggregated Indicator
-		aggregatedInd?: bool
+		aggregatedInd?: true
+
+		#validateSpecifiedServiceIndAndAggregatedInd: true &
+			list.MaxItems(_validateSpecifiedServiceIndAndAggregatedInd, 1)
+		_validateSpecifiedServiceIndAndAggregatedInd: [ for o in [specifiedServiceInd, aggregatedInd] if o != _|_ {o}]
 
 		// Line 1(d): EIN
 		ein?: #ein
@@ -27,6 +36,10 @@ package mef
 
 		// Line 1(d): SSN
 		ssn?: #ssn
+
+		#validateEINAndMissingEINReasonCdAndSSN: true &
+			list.MaxItems(_validateEINAndMissingEINReasonCdAndSSN, 1)
+		_validateEINAndMissingEINReasonCdAndSSN: [ for o in [ein, missingEINReasonCd, ssn] if o != _|_ {o}]
 
 		// Line 1(e): Patron Indicator
 		patronInd?: true

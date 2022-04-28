@@ -22,12 +22,7 @@ type state struct {
 	dec  *xml.Decoder
 	doc  *documentation
 
-	nesting       int
-	nestingChoice int
-
-	choiceMinOccurs string
-	choiceElements  int
-
+	nesting          int
 	seenComplexTypes int
 
 	isReturn bool
@@ -73,6 +68,7 @@ type complexType struct {
 	XMLName   xml.Name   `xml:"complexType"`
 	Seq       *sequence  `xml:"sequence"`
 	Extension *extension `xml:"simpleContent>extension"`
+	Choice    *choice    `xml:"choice"`
 }
 
 type list struct {
@@ -219,12 +215,15 @@ func (s *state) convert() error {
 					return err
 				}
 				s.nesting--
-				fmt.Printf("%s\n}\n", c.Seq.ToCue("\t"))
-
-			case "choice":
-				s.nestingChoice++
-				s.choiceMinOccurs = getAttr(tok, "minOccurs", "1")
-				s.choiceElements = 0
+				if c.Seq != nil {
+					fmt.Printf("%s\n", c.Seq.ToCue("\t"))
+				} else if c.Choice != nil {
+					fmt.Printf("%s\n", c.Choice.ToCue("\t"))
+				}
+				fmt.Printf("}\n")
+				if s.isTypes {
+					fmt.Printf("\n")
+				}
 
 			case "element":
 				name := getAttr(tok, "name", "")
@@ -243,15 +242,7 @@ func (s *state) convert() error {
 					return err
 				}
 				s.nesting--
-				if s.nestingChoice != 0 {
-					s.choiceElements++
-					if s.choiceElements > 1 {
-						fmt.Printf("\t} | {\n")
-					} else {
-						fmt.Printf("\t{\n")
-					}
-					fmt.Printf("%s", e.ToCue("\t\t"))
-				} else if n := e.name(); s.isReturn && !matchIRSWhitelist.MatchString(n) {
+				if n := e.name(); s.isReturn && !matchIRSWhitelist.MatchString(n) {
 					// skip
 				} else {
 					fmt.Printf("%s\n", e.ToCue("\t"))
@@ -273,13 +264,6 @@ func (s *state) convert() error {
 						fmt.Printf("\n")
 					}
 				}
-			case "choice":
-				s.nestingChoice--
-				fmt.Printf("\t}")
-				if s.choiceMinOccurs == "0" {
-					fmt.Printf(" | {\n\t\t...\n\t}")
-				}
-				fmt.Printf("\n\n")
 			}
 		}
 	}
@@ -538,23 +522,69 @@ func (s *sequence) ToCue(indent string) string {
 		case *element:
 			out += o.ToCue(indent)
 		case *choice:
-			for j, e := range o.Elements {
-				if j > 0 {
-					out += indent + "} | {\n"
-				} else {
-					out += indent + "{\n"
-				}
-				out += e.ToCue(indent + "\t")
-			}
-			out += indent + "}"
-			if o.MinOccurs == "0" {
-				out += " | {\n" + indent + "\t...\n" + indent + "}"
-			}
-			out += "\n\n"
+			out += o.ToCue(indent)
 		case string:
 			out += indent + "// " + o + "\n"
 		}
 	}
+	return out
+}
+
+func (c *choice) ToCue(indent string) string {
+	out := ""
+	var names string
+	var fields []string
+	for i, e := range c.Elements {
+		e.MinOccurs = "0"
+		out += e.ToCue(indent)
+		out += "\n"
+
+		name := e.name()
+		fields = append(fields, camelToLower(name))
+		if i > 0 {
+			names += "And"
+		}
+		names += name
+	}
+	if c.MinOccurs == "" {
+		c.MinOccurs = "1"
+	}
+	if c.MaxOccurs == "" {
+		c.MaxOccurs = "1"
+	}
+	if c.MinOccurs != "0" || c.MaxOccurs != "unbounded" {
+		i := indent
+		if c.MinOccurs != "0" && false {
+			out += indent + "if "
+			for i, f := range fields {
+				if i > 0 {
+					out += " || "
+				}
+				out += f + " != _|_"
+			}
+			out += " {\n"
+			i = indent + "\t"
+		}
+		validateName := "validate" + names
+		out += i + "#" + validateName + ": true"
+		if c.MinOccurs != "0" {
+			out += " &\n" + i + "\t"
+			out += "// list.MinItems(_" + validateName + ", " + c.MinOccurs + ")"
+		}
+		if c.MaxOccurs != "unbounded" {
+			out += " &\n" + i + "\t"
+			out += "list.MaxItems(_" + validateName + ", " + c.MaxOccurs + ")"
+		}
+		out += "\n" + i
+		out += "_" + validateName + ": [ for o in ["
+		out += strings.Join(fields, ", ")
+		out += "] if o != _|_ {o}]"
+		if c.MinOccurs != "0" && false {
+			out += "\n"
+			out += indent + "}"
+		}
+	}
+	out += "\n"
 	return out
 }
 
