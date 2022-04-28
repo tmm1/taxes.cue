@@ -536,7 +536,8 @@ func (s *sequence) ToCue(indent string) string {
 			wasComment = false
 		case string:
 			if strings.HasPrefix(o, "Line ") ||
-				strings.HasPrefix(o, "Part ") {
+				strings.HasPrefix(o, "Part ") ||
+				strings.HasSuffix(o, " Section") {
 				out += indent + "// " + o + "\n"
 				lastComment = ""
 				wasComment = false
