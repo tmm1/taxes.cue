@@ -213,6 +213,13 @@ func (s *state) convert() error {
 				form := getAttr(tok, "name", os.Args[1])
 				form = "#" + convertFormName(form)
 				fmt.Printf("%s: {\n", form)
+				var c *complexType
+				err := s.dec.DecodeElement(&c, &tok)
+				if err != nil {
+					return err
+				}
+				s.nesting--
+				fmt.Printf("%s\n}\n", c.Seq.ToCue("\t"))
 
 			case "choice":
 				s.nestingChoice++

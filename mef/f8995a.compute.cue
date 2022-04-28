@@ -70,6 +70,7 @@ import (
 	// Line 16: Total Qualified Business Income Component Amount
 	l16=totalQBIComponentAmt: list.Sum([ for e in qbiDeductionInformationGrp {e.qbiComponentAmt}])
 
+	// Line 20 - Use value from Line 33
 	let l20 = l33
 
 	// Line 21: Filing Status Threshold Code
@@ -89,6 +90,7 @@ import (
 		0.0,
 	][0]
 
+	// Line 27 - Use value from Line 16
 	let l27 = l16
 
 	// Line 28: Qualified REIT Dividends And Publicly Traded Partnership Income Or Loss Amount

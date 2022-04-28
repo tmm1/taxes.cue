@@ -93,6 +93,8 @@ package mef
 	// Line 16: Total Qualified Business Income Component Amount
 	totalQBIComponentAmt?: #usAmount & >=0
 
+	// Line 20 - Use value from Line 33
+
 	// Line 21: Filing Status Threshold Code
 	filingStatusThresholdCd?: "164900" | "164925" | "329800"
 
@@ -104,6 +106,10 @@ package mef
 
 	// Line 24: Phase In Percentage
 	phaseInPct?: #ratio
+
+	// Part IV  Determine Your Qualified Business Income Deduction
+
+	// Line 27 - Use value from Line 16
 
 	// Line 28: Qualified REIT Dividends And Publicly Traded Partnership Income Or Loss Amount
 	qlfyREITDivPTPIncomeLossAmt?: #usAmount
