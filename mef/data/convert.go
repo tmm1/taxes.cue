@@ -304,7 +304,7 @@ func (st *simpleType) ToCue(indent string) string {
 			out += " | "
 		}
 		switch typ {
-		case "TextType", "StringType", "xsd:string":
+		case "TextType", "StringType", "xsd:string", "BankAccountType":
 			out += fmt.Sprintf("%q", v.Value)
 		case "IntegerNNType", "IntegerType", "xsd:integer":
 			out += fmt.Sprintf("%s", v.Value)
@@ -417,10 +417,11 @@ func (e *element) ToCue(indent string) string {
 	} else {
 		out += ": "
 	}
+	var typ string
 	if st := e.SimpleType; st != nil {
-		out += st.ToCue(indent)
+		typ = st.ToCue(indent)
 	} else {
-		typ := e.Type
+		typ = e.Type
 		if ct := e.ComplexType; ct != nil {
 			if ct.Extension != nil {
 				typ = ct.Extension.BaseType
@@ -438,14 +439,14 @@ func (e *element) ToCue(indent string) string {
 				typ = "true"
 			}
 		}
-		if e.MinOccurs == "0" && e.MaxOccurs != "1" {
-			out += "[..." + typ + "]"
-			if e.MaxOccurs != "unbounded" {
-				out += " & list.MaxItems(" + e.MaxOccurs + ")"
-			}
-		} else {
-			out += typ
+	}
+	if e.MinOccurs == "0" && e.MaxOccurs != "1" {
+		out += "[..." + typ + "]"
+		if e.MaxOccurs != "unbounded" {
+			out += " & list.MaxItems(" + e.MaxOccurs + ")"
 		}
+	} else {
+		out += typ
 	}
 	out += "\n"
 	if ct := e.ComplexType; ct != nil && ct.Extension != nil {
