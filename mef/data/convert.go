@@ -14,7 +14,7 @@ import (
 
 var (
 	matchIRSForm      = regexp.MustCompile(`^IRS(\d+|W2|RRB|SSA)`)
-	matchIRSWhitelist = regexp.MustCompile(`^f(1040$|1040(s[123a])|8949|8995a$|w2$)`)
+	matchIRSWhitelist = regexp.MustCompile(`^f(1040$|1040(s[123abd])|8949|8995a$|w2$)`)
 )
 
 type state struct {
