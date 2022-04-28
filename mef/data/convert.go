@@ -86,11 +86,7 @@ type union struct {
 }
 
 type sequence struct {
-	Items []*seqItem `xml:",any"`
-}
-
-type seqItem struct {
-	XMLName xml.Name
+	XMLName xml.Name   `xml:"sequence"`
 	Attrs   []xml.Attr `xml:",any,attr"`
 	Content string     `xml:",innerxml"`
 }
@@ -429,7 +425,7 @@ func (e *element) ToCue(indent string) string {
 		if ct := e.ComplexType; ct != nil {
 			if ct.Extension != nil {
 				typ = ct.Extension.BaseType
-			} else if ct.Seq != nil && len(ct.Seq.Items) > 0 {
+			} else if ct.Seq != nil {
 				typ = "#" + name
 			}
 		}
@@ -483,7 +479,7 @@ func (e *element) ToCue(indent string) string {
 			out += indent + name + `_referenceDocumentId: [...#` + name + `_referenceDocumentName]` + "\n"
 		}
 	}
-	if ct := e.ComplexType; ct != nil && ct.Seq != nil && len(ct.Seq.Items) > 0 {
+	if ct := e.ComplexType; ct != nil && ct.Seq != nil {
 		out += indent + "#" + name + ": {\n"
 		out += ct.Seq.ToCue(indent + "\t")
 		out += indent + "}\n"
@@ -492,32 +488,50 @@ func (e *element) ToCue(indent string) string {
 }
 
 func (s *sequence) ToCue(indent string) string {
+	var items []interface{}
+	dec := xml.NewDecoder(strings.NewReader(s.Content))
+	for {
+		t, err := dec.Token()
+		if err != nil {
+			break
+		}
+
+		switch tok := t.(type) {
+		case xml.StartElement:
+			switch tok.Name.Local {
+			case "element":
+				var e *element
+				err := dec.DecodeElement(&e, &tok)
+				if err != nil {
+					panic(err)
+				}
+				items = append(items, e)
+			case "choice":
+				var c *choice
+				err := dec.DecodeElement(&c, &tok)
+				if err != nil {
+					panic(err)
+				}
+				items = append(items, c)
+			}
+		case xml.Comment:
+			comment := strings.TrimSpace(string(tok))
+			if strings.HasPrefix(comment, "Line ") ||
+				strings.HasPrefix(comment, "Part ") {
+				items = append(items, comment)
+			}
+		}
+	}
 	out := ""
-	for i, o := range s.Items {
+	for i, o := range items {
 		if i > 0 {
 			out += "\n"
 		}
-		switch o.XMLName.Local {
-		case "element":
-			var e *element
-			err := xml.NewDecoder(strings.NewReader(o.Content)).DecodeElement(&e, &xml.StartElement{
-				Name: o.XMLName,
-				Attr: o.Attrs,
-			})
-			if err != nil && err != io.EOF {
-				panic(err)
-			}
-			out += e.ToCue(indent)
-		case "choice":
-			var c *choice
-			err := xml.NewDecoder(strings.NewReader(o.Content)).DecodeElement(&c, &xml.StartElement{
-				Name: o.XMLName,
-				Attr: o.Attrs,
-			})
-			if err != nil && err != io.EOF {
-				panic(err)
-			}
-			for j, e := range c.Elements {
+		switch o := o.(type) {
+		case *element:
+			out += o.ToCue(indent)
+		case *choice:
+			for j, e := range o.Elements {
 				if j > 0 {
 					out += indent + "} | {\n"
 				} else {
@@ -526,10 +540,12 @@ func (s *sequence) ToCue(indent string) string {
 				out += e.ToCue(indent + "\t")
 			}
 			out += indent + "}"
-			if c.MinOccurs == "0" {
+			if o.MinOccurs == "0" {
 				out += " | {\n" + indent + "\t...\n" + indent + "}"
 			}
 			out += "\n\n"
+		case string:
+			out += indent + "// " + o + "\n"
 		}
 	}
 	return out

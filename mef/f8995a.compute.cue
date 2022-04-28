@@ -39,8 +39,11 @@ import (
 		// Line 11: W-2 Wage And Qualified Property Limitation Amount
 		l11=w2WageQlfyPropLimitationAmt: list.Min([l3, l10])
 
+		// Line 12 - Use value from Line 26
+		let l12 = l26
+
 		// Line 13: Qualified Business Income Deduction Before Patron Reduction Amount
-		l13=qbiDedBeforePatronReductionAmt: list.Max([l26, l11])
+		l13=qbiDedBeforePatronReductionAmt: list.Max([l12, l11])
 
 		// Line 14: Patron Reduction Amount
 		l14=patronReductionAmt?: #usAmount
@@ -48,7 +51,10 @@ import (
 		// Line 15: Qualified Business Income Component Amount
 		qbiComponentAmt: l13 - (*l14 | 0)
 
+		// Line 17 - Use value from Line 3
 		let l17 = l3
+
+		// Line 18 - Use value from Line 10
 		let l18 = l10
 
 		// Line 19: QBI 20 Percent Less Greater Allocable Share Amount

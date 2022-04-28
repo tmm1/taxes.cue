@@ -5,6 +5,8 @@ package mef
 	// QBIDeductionInformationGrp
 	qbiDeductionInformationGrp: [...#qbiDeductionInformationGrp]
 	#qbiDeductionInformationGrp: {
+		// Part I  Trade, Business, or Aggregation Information
+
 		// Line 1(a): Trade Or Business Name
 		tradeOrBusinessName?: #businessName
 
@@ -28,6 +30,8 @@ package mef
 
 		// Line 1(e): Patron Indicator
 		patronInd?: true
+
+		// Part II  Determine Your Adjusted Qualified Business Income
 
 		// Line 2: Qualified Business Income Amount
 		qualifiedBusinessIncomeAmt?: #usAmount
@@ -59,6 +63,8 @@ package mef
 		// Line 11: W-2 Wage And Qualified Property Limitation Amount
 		w2WageQlfyPropLimitationAmt?: #usAmount
 
+		// Line 12 - Use value from Line 26
+
 		// Line 13: Qualified Business Income Deduction Before Patron Reduction Amount
 		qbiDedBeforePatronReductionAmt?: #usAmount
 
@@ -67,6 +73,12 @@ package mef
 
 		// Line 15: Qualified Business Income Component Amount
 		qbiComponentAmt?: #usAmount & >=0
+
+		// Part III  Phased-in Reduction
+
+		// Line 17 - Use value from Line 3
+
+		// Line 18 - Use value from Line 10
 
 		// Line 19: QBI 20 Percent Less Greater Allocable Share Amount
 		qbi20PctLessGrtrAllcblShareAmt?: #usAmount
