@@ -412,7 +412,7 @@ func (e *element) ToCue(indent string) string {
 	out += "\n" + indent
 	name := camelToLower(e.name())
 	out += name
-	if e.MinOccurs == "0" && e.MaxOccurs == "1" {
+	if e.MinOccurs == "0" /*&& e.MaxOccurs == "1"*/ {
 		out += "?: "
 	} else {
 		out += ": "
@@ -465,7 +465,7 @@ func (e *element) ToCue(indent string) string {
 				continue
 			}
 			out += indent + name + "_" + a.Name
-			if a.Use == "required" {
+			if a.Use == "required" && false {
 				out += ": "
 			} else {
 				out += "?: "

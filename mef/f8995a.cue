@@ -3,7 +3,7 @@ package mef
 // Form 8995-A (2021)
 #f8995a: {
 	// Group for Lines 1 - 15, 17 - 19, 25 and 26, Rows or Columns A, B, C, . . .
-	qbiDeductionInformationGrp: [...#qbiDeductionInformationGrp]
+	qbiDeductionInformationGrp?: [...#qbiDeductionInformationGrp]
 	#qbiDeductionInformationGrp: {
 		// Part I  Trade, Business, or Aggregation Information
 
