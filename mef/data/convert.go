@@ -478,7 +478,7 @@ func (e *element) ToCue(indent string) string {
 				out += convertType(a.Type) + "\n"
 			}
 		}
-		if refDocTypes != "" {
+		if refDocTypes != "" && false {
 			types := strings.Split(refDocTypes, " ")
 			out += indent + "#" + name + `_referenceDocumentName: =~"^(` + strings.Join(types, "|") + `)(\\.\\d+)?$"` + "\n"
 			out += indent + name + `_referenceDocumentId: [...#` + name + `_referenceDocumentName]` + "\n"
