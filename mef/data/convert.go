@@ -388,7 +388,8 @@ func (e *element) doc() string {
 		if e.lastComment != "" {
 			return e.lastComment
 		}
-		return e.name()
+		parts := camelSplit(e.name())
+		return strings.Join(parts, " ")
 	}
 	if e.Doc.Description == "" && e.lastComment != "" {
 		e.Doc.Description = e.lastComment
@@ -400,7 +401,11 @@ func (e *element) name() string {
 	if e.Ref != "" {
 		return convertFormName(e.Ref)
 	}
-	return e.Name
+	name := e.Name
+	name = strings.TrimSuffix(name, "Grp")
+	name = strings.TrimSuffix(name, "Ind")
+	name = strings.TrimSuffix(name, "Txt")
+	return name
 }
 
 func (e *element) ToCue(indent string) string {
@@ -644,7 +649,9 @@ func convertType(in string) string {
 
 func convertFormName(in string) string {
 	if !matchIRSForm.MatchString(in) {
-		return camelToLower(strings.TrimSuffix(in, "Type"))
+		in = strings.TrimSuffix(in, "Type")
+		in = strings.TrimSuffix(in, "Grp")
+		return camelToLower(in)
 	}
 	in = strings.TrimPrefix(in, "IRS")
 	in = strings.TrimSuffix(in, "Type")
@@ -654,11 +661,20 @@ func convertFormName(in string) string {
 	return in
 }
 
+func camelSplit(in string) []string {
+	parts := camelcase.Split(in)
+	if parts[0] == "I" && parts[1] == "Pv" {
+		parts = parts[2:]
+		parts[0] = "IPv" + parts[0]
+	}
+	return parts
+}
+
 func camelToLower(in string) string {
 	if strings.HasPrefix(in, "#") {
 		return in[1:]
 	}
-	parts := camelcase.Split(in)
+	parts := camelSplit(in)
 	if len(parts) == 0 {
 		return in
 	}

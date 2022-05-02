@@ -6,8 +6,8 @@ import (
 
 // Form 8995-A (2021)
 #f8995a: in={
-	qbiDeductionInformationGrp: [...#qbiDeductionInformationGrp]
-	#qbiDeductionInformationGrp: {
+	qbiDeductionInformation: [...#qbiDeductionInformation]
+	#qbiDeductionInformation: {
 		// Line 2: Qualified Business Income Amount
 		l2=qualifiedBusinessIncomeAmt: #usAmount
 
@@ -67,7 +67,7 @@ import (
 	}
 
 	// Line 16: Total Qualified Business Income Component Amount
-	l16=totalQBIComponentAmt: list.Sum([ for e in qbiDeductionInformationGrp {e.qbiComponentAmt}])
+	l16=totalQBIComponentAmt: list.Sum([ for e in qbiDeductionInformation {e.qbiComponentAmt}])
 
 	// Line 20 - Use value from Line 33
 	let l20 = l33

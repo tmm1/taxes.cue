@@ -3,8 +3,8 @@ package mef
 // Form 8995-A (2021)
 #f8995a: {
 	// Group for Lines 1 - 15, 17 - 19, 25 and 26, Rows or Columns A, B, C, . . .
-	qbiDeductionInformationGrp?: [...#qbiDeductionInformationGrp]
-	#qbiDeductionInformationGrp: {
+	qbiDeductionInformation?: [...#qbiDeductionInformation]
+	#qbiDeductionInformation: {
 		// Part I  Trade, Business, or Aggregation Information
 
 		// Line 1(a): Trade Or Business Name
@@ -19,14 +19,14 @@ package mef
 		_validateTradeOrBusinessNameAndPersonNm: [ for o in [tradeOrBusinessName, personNm] if o != _|_ {o}]
 
 		// Line 1(b): Specified Service Indicator
-		specifiedServiceInd?: true
+		specifiedService?: true
 
 		// Line 1(c): Aggregated Indicator
-		aggregatedInd?: true
+		aggregated?: true
 
-		#validateSpecifiedServiceIndAndAggregatedInd: true &
-			list.MaxItems(_validateSpecifiedServiceIndAndAggregatedInd, 1)
-		_validateSpecifiedServiceIndAndAggregatedInd: [ for o in [specifiedServiceInd, aggregatedInd] if o != _|_ {o}]
+		#validateSpecifiedServiceAndAggregated: true &
+			list.MaxItems(_validateSpecifiedServiceAndAggregated, 1)
+		_validateSpecifiedServiceAndAggregated: [ for o in [specifiedService, aggregated] if o != _|_ {o}]
 
 		// Line 1(d): EIN
 		ein?: #ein
@@ -42,7 +42,7 @@ package mef
 		_validateEINAndMissingEINReasonCdAndSSN: [ for o in [ein, missingEINReasonCd, ssn] if o != _|_ {o}]
 
 		// Line 1(e): Patron Indicator
-		patronInd?: true
+		patron?: true
 
 		// Part II  Determine Your Adjusted Qualified Business Income
 

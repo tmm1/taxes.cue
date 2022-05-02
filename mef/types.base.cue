@@ -214,7 +214,7 @@ package mef
 	// Desc
 	desc: #lineExplanation
 
-	// ForeignAmt
+	// Foreign Amt
 	foreignAmt: #foreignAmount
 
 }
@@ -233,10 +233,10 @@ package mef
 
 #usAddress: {
 	// Address line 1
-	addressLine1Txt: #streetAddress
+	addressLine1: #streetAddress
 
 	// Address line 2
-	addressLine2Txt?: #streetAddress
+	addressLine2?: #streetAddress
 
 	// City
 	cityNm: #city
@@ -251,10 +251,10 @@ package mef
 
 #otherUSAddress: {
 	// Address line 1
-	addressLine1Txt?: #streetAddress
+	addressLine1?: #streetAddress
 
 	// Address line 2
-	addressLine2Txt?: #streetAddress
+	addressLine2?: #streetAddress
 
 	// City
 	cityNm?: #city
@@ -269,10 +269,10 @@ package mef
 
 #foreignAddress: {
 	// Address line 1
-	addressLine1Txt: #streetAddress
+	addressLine1: #streetAddress
 
 	// Address line 2
-	addressLine2Txt?: #streetAddress
+	addressLine2?: #streetAddress
 
 	// City
 	cityNm?: string & =~"([A-Za-z] ?)*[A-Za-z]" & strings.MaxRunes(50)
@@ -290,10 +290,10 @@ package mef
 
 #otherForeignAddress: {
 	// Address line 1
-	addressLine1Txt?: #streetAddress
+	addressLine1?: #streetAddress
 
 	// Address line 2
-	addressLine2Txt?: #streetAddress
+	addressLine2?: #streetAddress
 
 	// City
 	cityNm?: string & =~"([A-Za-z] ?)*[A-Za-z]" & strings.MaxRunes(50)
@@ -311,28 +311,28 @@ package mef
 
 #businessName: {
 	// Business name line 1
-	businessNameLine1Txt: #businessNameLine1
+	businessNameLine1: #businessNameLine1
 
 	// Business name line 2
-	businessNameLine2Txt?: #businessNameLine2
+	businessNameLine2?: #businessNameLine2
 
 }
 
 #nameAndAddress: {
-	// PersonNm
+	// Person Nm
 	personNm?: #personName
 
-	// BusinessName
+	// Business Name
 	businessName?: #businessName
 
 	#validatePersonNmAndBusinessName: true &
 		list.MaxItems(_validatePersonNmAndBusinessName, 1)
 	_validatePersonNmAndBusinessName: [ for o in [personNm, businessName] if o != _|_ {o}]
 
-	// USAddress
+	// US Address
 	usAddress?: #usAddress
 
-	// ForeignAddress
+	// Foreign Address
 	foreignAddress?: #foreignAddress
 
 	#validateUSAddressAndForeignAddress: true &
@@ -412,22 +412,22 @@ package mef
 #personNameControl: string & =~"[A-Z][A-Z\\- ]{0,3}"
 
 // Decimal format for IP Address
-#iPv4: string & =~"[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}"
+#ipv4: string & =~"[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}"
 
 // Hexidecimal format for IP Address
-#iPv6: string & =~"[0-9A-F:]{1,39}"
+#ipv6: string & =~"[0-9A-F:]{1,39}"
 
 #ipAddress: {
-	// IPv4AddressTxt
-	iPv4AddressTxt?: #iPv4
+	// IPv4 Address
+	ipv4Address?: #ipv4
 
-	// IPv6AddressTxt
-	iPv6AddressTxt?: #iPv6
+	// IPv6 Address
+	ipv6Address?: #ipv6
 
-	#validateIPv4AddressTxtAndIPv6AddressTxt: true &
-		// list.MinItems(_validateIPv4AddressTxtAndIPv6AddressTxt, 1) &
-		list.MaxItems(_validateIPv4AddressTxtAndIPv6AddressTxt, 1)
-	_validateIPv4AddressTxtAndIPv6AddressTxt: [ for o in [iPv4AddressTxt, iPv6AddressTxt] if o != _|_ {o}]
+	#validateIPv4AddressAndIPv6Address: true &
+		// list.MinItems(_validateIPv4AddressAndIPv6Address, 1) &
+		list.MaxItems(_validateIPv4AddressAndIPv6Address, 1)
+	_validateIPv4AddressAndIPv6Address: [ for o in [ipv4Address, ipv6Address] if o != _|_ {o}]
 
 }
 
@@ -439,21 +439,21 @@ package mef
 // Type for Preparer Personal Identification No. - S followed by 8 digits
 #stin: string & =~"S[0-9]{8}"
 
-#vehicleDescriptionGrp: {
+#vehicleDescription: {
 	// Year of Vehicle
 	vehicleModelYr: #year
 
 	// Make of Vehicle
-	vehicleMakeNameTxt: #shortDescription
+	vehicleMakeName: #shortDescription
 
 	// Model of Vehicle
-	vehicleModelNameTxt: #shortDescription
+	vehicleModelName: #shortDescription
 
 }
 
 #registrationNum: string & =~"[A-Z0-9]{1,20}"
 
-#foreignEntityIdentificationGrp: {
+#foreignEntityIdentification: {
 	// Reference ID number
 	foreignEntityReferenceIdNum: #alphaNumeric & strings.MaxRunes(50)
 
