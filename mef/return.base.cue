@@ -23,6 +23,9 @@ package mef
 	// Form 1040 Schedule D - Capital Gains and Losses
 	f1040sd?: #f1040sd
 
+	// Form 1040 Schedule E - Supplemental Income and Loss
+	f1040se?: #f1040se
+
 	// Form 8949 - Sales and Other Dispositions of Capital Assets
 	f8949?: [...#f8949]
 

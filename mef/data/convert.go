@@ -14,7 +14,7 @@ import (
 
 var (
 	matchIRSForm      = regexp.MustCompile(`^IRS(\d+|W2|RRB|SSA)`)
-	matchIRSWhitelist = regexp.MustCompile(`^f(1040$|1040(s[123abd])|8949|8995a$|w2$)`)
+	matchIRSWhitelist = regexp.MustCompile(`^f(1040$|1040(s[123abde]$)|8949|8995a$|w2$)`)
 
 	matchPartHeader = regexp.MustCompile(`^(=+)?\s*(Part|PART)\s`)
 )
@@ -294,7 +294,7 @@ func (st *simpleType) ToCue(indent string) string {
 			out += " | "
 		}
 		switch typ {
-		case "TextType", "StringType", "xsd:string", "BankAccountType":
+		case "TextType", "StringType", "xsd:string", "BankAccountType", "LineExplanationType":
 			out += fmt.Sprintf("%q", v.Value)
 		case "IntegerNNType", "IntegerType", "xsd:integer":
 			out += fmt.Sprintf("%s", v.Value)
@@ -663,7 +663,7 @@ func convertFormName(in string) string {
 
 func camelSplit(in string) []string {
 	parts := camelcase.Split(in)
-	if parts[0] == "I" && parts[1] == "Pv" {
+	if len(parts) > 1 && parts[0] == "I" && parts[1] == "Pv" {
 		parts = parts[2:]
 		parts[0] = "IPv" + parts[0]
 	}
