@@ -50,6 +50,7 @@ $ cat mine/2021.freefile # freefilebot data
 
 ### other free tax tools and software
 
+- [NBER TAXSIM](https://users.nber.org/~taxsim)
 - [taxfloss](https://github.com/linuxrocks123/taxfloss)
 - [tenforty](https://github.com/divergentdave/tenforty)
 - [1040.js](https://github.com/b-k/1040.js)
