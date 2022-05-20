@@ -68,10 +68,11 @@ type simpleType struct {
 }
 
 type complexType struct {
-	XMLName   xml.Name   `xml:"complexType"`
-	Seq       *sequence  `xml:"sequence"`
-	Extension *extension `xml:"simpleContent>extension"`
-	Choice    *choice    `xml:"choice"`
+	XMLName          xml.Name   `xml:"complexType"`
+	Seq              *sequence  `xml:"sequence"`
+	SimpleExtension  *extension `xml:"simpleContent>extension"`
+	ComplexExtension *extension `xml:"complexContent>extension"`
+	Choice           *choice    `xml:"choice"`
 }
 
 type list struct {
@@ -433,8 +434,10 @@ func (e *element) ToCue(indent string) string {
 	} else {
 		typ = e.Type
 		if ct := e.ComplexType; ct != nil {
-			if ct.Extension != nil {
-				typ = ct.Extension.BaseType
+			if ct.SimpleExtension != nil {
+				typ = ct.SimpleExtension.BaseType
+			} else if ct.ComplexExtension != nil {
+				typ = ct.ComplexExtension.BaseType
 			} else if ct.Seq != nil {
 				typ = "#" + name
 			}
@@ -459,9 +462,9 @@ func (e *element) ToCue(indent string) string {
 		out += typ
 	}
 	out += "\n"
-	if ct := e.ComplexType; ct != nil && ct.Extension != nil {
+	if ct := e.ComplexType; ct != nil && ct.Extension() != nil {
 		refDocTypes := ""
-		for _, a := range ct.Extension.Attrs {
+		for _, a := range ct.Extension().Attrs {
 			switch a.Name {
 			case "referenceDocumentId":
 				continue
@@ -616,6 +619,13 @@ func (c *choice) ToCue(indent string) string {
 	}
 	out += "\n"
 	return out
+}
+
+func (c *complexType) Extension() *extension {
+	if c.SimpleExtension != nil {
+		return c.SimpleExtension
+	}
+	return c.ComplexExtension
 }
 
 func convertType(in string) string {
