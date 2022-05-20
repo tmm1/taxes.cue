@@ -434,10 +434,8 @@ func (e *element) ToCue(indent string) string {
 	} else {
 		typ = e.Type
 		if ct := e.ComplexType; ct != nil {
-			if ct.SimpleExtension != nil {
-				typ = ct.SimpleExtension.BaseType
-			} else if ct.ComplexExtension != nil {
-				typ = ct.ComplexExtension.BaseType
+			if ct.Extension() != nil {
+				typ = ct.Extension().BaseType
 			} else if ct.Seq != nil {
 				typ = "#" + name
 			}
