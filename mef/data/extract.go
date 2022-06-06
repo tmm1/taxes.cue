@@ -14,13 +14,14 @@ import (
 )
 
 var (
-	matchYearVersionZip       = regexp.MustCompile(`_(\d{4})v(\d\.\d)(?:Rpt)?\.zip$`)
-	match1040BusinessRulesZip = regexp.MustCompile(`^(efile1040_business_rules|1040BusRules)`)
-	match1040SchemasZip       = regexp.MustCompile(`^efile1040x_`)
+	matchFamilyZip        = regexp.MustCompile(`^(?:efile)?(1040|1065|1120)[x_-]`)
+	matchYearVersionZip   = regexp.MustCompile(`[_-](\d{4})v(\d\.\d)(?:Rpt)?(-|\.zip$)`)
+	matchBusinessRulesZip = regexp.MustCompile(`^(efile1040_business_rules|1040BusRules|1065-BusinessRules)`)
+	matchSchemasZip       = regexp.MustCompile(`^(efile1040x_|1065_Schemas)`)
 )
 
 type state struct {
-	year, version string
+	family, year, version string
 
 	madeYearDir        bool
 	wroteSchemaVersion bool
@@ -35,9 +36,17 @@ func main() {
 }
 
 func extract(filename string) error {
-	matches := matchYearVersionZip.FindStringSubmatch(filename)
+	basename := filepath.Base(filename)
+
+	matches := matchFamilyZip.FindStringSubmatch(basename)
 	if len(matches) == 0 {
-		return fmt.Errorf("invalid zip file missing MeF year and version: %s", filename)
+		return fmt.Errorf("invalid zip file missing MeF family prefix: %s", basename)
+	}
+	family := matches[1]
+
+	matches = matchYearVersionZip.FindStringSubmatch(basename)
+	if len(matches) == 0 {
+		return fmt.Errorf("invalid zip file missing MeF year and version: %s", basename)
 	}
 
 	year := matches[1]
@@ -51,6 +60,7 @@ func extract(filename string) error {
 	defer zfs.Close()
 
 	s := state{
+		family:  family,
 		year:    year,
 		version: version,
 	}
@@ -76,8 +86,9 @@ func (s *state) walkZip(zipfs fs.FS) error {
 		ext := filepath.Ext(path)
 		switch ext {
 		case ".zip":
-			if !match1040BusinessRulesZip.MatchString(path) &&
-				!match1040SchemasZip.MatchString(path) {
+			if !matchBusinessRulesZip.MatchString(path) &&
+				!matchSchemasZip.MatchString(path) {
+				log.Printf("skipping %s", path)
 				return nil
 			}
 
@@ -97,7 +108,9 @@ func (s *state) walkZip(zipfs fs.FS) error {
 			if !strings.HasPrefix(path, "Shared/") &&
 				!strings.HasPrefix(path, "Common/") &&
 				!strings.HasPrefix(path, "IndividualIncomeTax/Common/") &&
-				!strings.HasPrefix(path, "IndividualIncomeTax/Ind1040/") {
+				!strings.HasPrefix(path, "IndividualIncomeTax/Ind1040/") &&
+				!strings.HasPrefix(path, "PartnershipIncome/Part1065/IRS1065ScheduleK") {
+				//log.Printf("skipping %s", path)
 				return nil
 			}
 			path = filepath.Join("schemas", path)
@@ -107,14 +120,21 @@ func (s *state) walkZip(zipfs fs.FS) error {
 			}
 
 		case ".csv", ".pdf":
-			if !strings.HasPrefix(path, "1040BusRules") {
+			if !strings.HasPrefix(path, "1040BusRules") &&
+				!strings.HasPrefix(path, "1065-BusinessRules") {
+				//log.Printf("skipping %s", path)
 				return nil
 			}
 			if !s.wroteRulesVersion {
 				s.writeVersion("rules")
 				s.wroteRulesVersion = true
 			}
-			path = filepath.Join("rules", "1040BusRules"+ext)
+			switch s.family {
+			case "1040":
+				path = filepath.Join("rules", "1040BusRules"+ext)
+			case "1065":
+				path = filepath.Join("rules", "1065BusRules"+ext)
+			}
 
 		case ".html":
 			fallthrough
@@ -133,5 +153,5 @@ func (s *state) walkZip(zipfs fs.FS) error {
 }
 
 func (s *state) writeVersion(dir string) {
-	ioutil.WriteFile(filepath.Join("mef", s.year, dir, "VERSION"), []byte(s.version), 0644)
+	ioutil.WriteFile(filepath.Join("mef", s.year, dir, "VERSION-"+s.family), []byte(s.version), 0644)
 }

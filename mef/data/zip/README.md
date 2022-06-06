@@ -4,9 +4,13 @@ zip files containing schemas and business rules, obtained from the IRS via SOR (
 
 for example:
 
-- IMF_BusinessRuleUpdates_2020v5.1.zip
+- efile1040x_2019v5.4.zip
+- efile1040x_2019v5.5.zip
 - efile1040x_2020v5.3.zip
 - efile1040x_2021v5.2.zip
+- IMF_BusinessRuleUpdates_2020v5.1.zip
+- 1065-2021v4.3-BusinessRules-Schemas.zip
+- 1120xBusinessRules_Schemas_TY2021v4.3.zip
 
 #### resources
 
