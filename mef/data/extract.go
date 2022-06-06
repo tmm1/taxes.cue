@@ -15,9 +15,9 @@ import (
 
 var (
 	matchFamilyZip        = regexp.MustCompile(`^(?:efile)?(1040|1065|1120)[x_-]`)
-	matchYearVersionZip   = regexp.MustCompile(`[_-](\d{4})v(\d\.\d)(?:Rpt)?(-|\.zip$)`)
-	matchBusinessRulesZip = regexp.MustCompile(`^(efile1040_business_rules|1040BusRules|1065-BusinessRules)`)
-	matchSchemasZip       = regexp.MustCompile(`^(efile1040x_|1065_Schemas)`)
+	matchYearVersionZip   = regexp.MustCompile(`(?:_|-|TY)(\d{4})v(\d\.\d)(?:Rpt)?(-|\.zip$)`)
+	matchBusinessRulesZip = regexp.MustCompile(`^(efile1040_business_rules|1040BusRules|1065-BusinessRules|1120x_BusinessRules)`)
+	matchSchemasZip       = regexp.MustCompile(`^(efile1040x_|1065_Schemas|1120x_Schemas)`)
 )
 
 type state struct {
@@ -109,7 +109,8 @@ func (s *state) walkZip(zipfs fs.FS) error {
 				!strings.HasPrefix(path, "Common/") &&
 				!strings.HasPrefix(path, "IndividualIncomeTax/Common/") &&
 				!strings.HasPrefix(path, "IndividualIncomeTax/Ind1040/") &&
-				!strings.HasPrefix(path, "PartnershipIncome/Part1065/IRS1065ScheduleK") {
+				!strings.HasPrefix(path, "PartnershipIncome/Part1065/IRS1065ScheduleK") &&
+				!strings.HasPrefix(path, "CorporateIncomeTax/Corp1120S/IRS1120SScheduleK") {
 				//log.Printf("skipping %s", path)
 				return nil
 			}
