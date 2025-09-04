@@ -1,19 +1,22 @@
 // Form 1040 - U.S. Individual Income Tax Return
 f1040: {
+	// chkFilingStatus
+	chkFilingStatus: "single"
+
 	// Enter Your First Name
 	txtFirstName: "john"
 
 	// Enter Your Last Name
 	txtLastName: "doe"
 
+	// Enter Your Initial
+	txtMiddleInitial: "e"
+
 	// Enter Your Social Security Number
 	txtSSN: "123-12-1234"
 
-	// chkFilingStatus
-	chkFilingStatus: "single"
-
-	// Enter Your Initial
-	txtMiddleInitial: "e"
+	// Line 7. Capital gain or (loss). Attach Schedule D if required
+	txtCapitalGains: "34794"
 
 	// Line 1. Wages, salaries, tips, etc. Attach Form (or Forms) W-2
 	txtWagesSalariesTips: "50000"
@@ -24,20 +27,17 @@ f1040: {
 	// Line 2b. Taxable interest
 	txtTaxableInt: "31"
 
-	// Line 3a. Qualified dividends
-	txtQualDiv: "200"
-
-	// Line 3b. Ordinary dividends
-	txtOrdDiv: "3201"
-
-	// Line 7. Capital gain or (loss). Attach Schedule D if required
-	txtCapitalGains: "34794"
-
 	// Line 12a. Standard Deduction for - Single or Married filing separately, $12, 550. Married filing jointly or Qualifying widow(er), $25, 100. Head of household, $18, 800. If you checked any box under Standard Deduction, see instructions. Line 12a. Standard deduction or itemized deductions (from Schedule A)
 	txtStdDed: "25100"
 
+	// Line 3a. Qualified dividends
+	txtQualDiv: "200"
+
 	// Line 16. Tax (see instructions)
 	txtTaxWoAmt: "9880"
+
+	// Line 3b. Ordinary dividends
+	txtOrdDiv: "3201"
 
 	// Line 25a. Federal income tax withheld from: Form(s) W-2
 	txtW2TaxWithheld: "4500"
@@ -48,6 +48,10 @@ f1040: {
 
 // Form W-2 - Wage and Tax Statement
 fw2: [{
+	// Employer's Name 1
+	// Line c. Employer�s name
+	txtEmployerName: "employer 1"
+
 	// Line 1. Wages, tips, other compensation
 	txtWagesTips: "50000"
 
@@ -65,26 +69,10 @@ fw2: [{
 
 	// Line 6. Medicare tax withheld
 	txtMedicareTaxWithheld: "0"
-
-	// Employer's Name 1
-	// Line c. Employer�s name
-	txtEmployerName: "employer 1"
 }]
 
 // Schedule B - Interest & Ordinary Dividends
 f1040sb: {
-	// Line 1. List name of payer
-	txtInterest1: "bank 1"
-
-	// Line 1. Interest Amount
-	txtInterestAmt1: "15"
-
-	// Line 1. List name of payer
-	txtInterest2: "passive investors llc"
-
-	// Line 1. Interest Amount
-	txtInterestAmt2: "16"
-
 	// Line 5. List name of payer
 	txtNamePayer1: "brokerage 1"
 
@@ -102,15 +90,26 @@ f1040sb: {
 
 	// Line 5. Ordinary Dividend Amount
 	txtOrdAmt3: "1"
+	// Line 1. List name of payer
+	txtInterest1: "bank 1"
+
+	// Line 1. Interest Amount
+	txtInterestAmt1: "15"
+
+	// Line 1. List name of payer
+	txtInterest2: "passive investors llc"
+
+	// Line 1. Interest Amount
+	txtInterestAmt2: "16"
 }
 
 // Schedule D - Capital Gains and Losses
 f1040sd: {
-	// Line 5. Net short-term gain or (loss) from partnerships, S corporations, estates, and trusts fromSchedule(s) K-1
-	txtShtTrmSchk: "50"
-
 	// Part 2. Long-Term Capital Gains and Losses-Generally Assets Held More Than One Year (see instructions). See instructions for how to figure the amounts to enter on the lines below. This form may be easier to complete if you round off cents to whole dollars. Line 8a. Column (d) Proceeds (sales price). Totals for all long-term transactions reported on Form 1099-B for which basis was reported to the IRS and for which you have no adjustments (see instructions). However, if you choose to report all these transactions on Form 8949, leave this line blank and go to line 8b
 	txtSchdTotLsellpra1: "50000"
+
+	// Line 5. Net short-term gain or (loss) from partnerships, S corporations, estates, and trusts fromSchedule(s) K-1
+	txtShtTrmSchk: "50"
 
 	// Line 8a. Column (e) Cost (or other basis). Totals for all long-term transactions reported on Form 1099-B for which basis was reported to the IRS and for which you have no adjustments (see instructions). However, if you choose to report all these transactions on Form 8949, leave this line blank and go to line 8b
 	txtSchdTotLbuypra1: "25000"
@@ -130,17 +129,17 @@ f8949st: [{
 	// Line 1(a). Row 1. Description of property (Example: 100 sh. XYZ Co. )
 	txtDescrip1: "10 shares TSLA stock"
 
-	// Line 1(b). Row 1. Date acquired(MM/DD/YYYY)
-	txtAcqDate1: "01/01/2010"
-
-	// Line 1(c). Row 1. Date sold or disposed of(MM/DD/YYYY)
-	txtSaleDate1: "10/10/2020"
-
 	// Line 1(d). Row 1. Proceeds(sales price)(see instructions)
 	txtSalesPrice1: "5555"
 
 	// Line 1(e). Row 1. Cost or other basis. See the Note below and see Column (e) in the separate instructions
 	txtBuyPrice1: "5000"
+
+	// Line 1(b). Row 1. Date acquired(MM/DD/YYYY)
+	txtAcqDate1: "01/01/2010"
+
+	// Line 1(c). Row 1. Date sold or disposed of(MM/DD/YYYY)
+	txtSaleDate1: "10/10/2020"
 }, {
 	// chkF1099BInd
 	chkF1099BInd: "2"

@@ -1,14 +1,5 @@
 // Form 1040 - U.S. Individual Income Tax Return
 f1040: {
-	// Enter Your First Name
-	txtFirstName: "Morgan"
-
-	// Enter Your Last Name
-	txtLastName: "Gardner"
-
-	// Enter Your Social Security Number
-	txtSSN: "400-00-1037"
-
 	// chkFilingStatus
 	chkFilingStatus: "single"
 
@@ -23,6 +14,15 @@ f1040: {
 
 	// Select State
 	cboState: "NY"
+
+	// Enter Your First Name
+	txtFirstName: "Morgan"
+
+	// Enter Your Last Name
+	txtLastName: "Gardner"
+
+	// Enter Your Social Security Number
+	txtSSN: "400-00-1037"
 
 	// Enter ZIP code
 	txtZip: "89146"

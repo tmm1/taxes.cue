@@ -1,5 +1,4 @@
 import (
-	"github.com/tmm1/taxes"
 	"github.com/tmm1/taxes/fixtures"
 )
 

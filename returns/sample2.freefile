@@ -1,25 +1,10 @@
 // Form 1040 - U.S. Individual Income Tax Return
 f1040: {
-	// Enter Your First Name
-	txtFirstName: "Sam"
-
-	// Enter Your Last Name
-	txtLastName: "Gardenia"
-
-	// Enter Your Social Security Number
-	txtSSN: "400-00-1038"
-
 	// chkFilingStatus
 	chkFilingStatus: "joint"
 
-	// If Joint Return, Enter Your Spouse First Name
-	txtSpFirstName: "Gloria"
-
-	// If Joint Return, Enter Your Spouse Last Name
-	txtSpLastName: "Jones"
-
-	// If Joint Return, Enter Your Spouse Social Security Number
-	txtSpSSN: "400-00-1071"
+	// Age/Blindness - Your Spouse is blind
+	chkSpBlind: "1"
 
 	// Enter home address (number and street). If you have a P. O . box, see instructions
 	txtAddress1: "123 Blackberry Street"
@@ -30,11 +15,35 @@ f1040: {
 	// Select State
 	cboState: "NY"
 
+	// Enter Your First Name
+	txtFirstName: "Sam"
+
+	// Enter Your Last Name
+	txtLastName: "Gardenia"
+
+	// Enter Your Social Security Number
+	txtSSN: "400-00-1038"
+
+	// If Joint Return, Enter Your Spouse First Name
+	txtSpFirstName: "Gloria"
+
+	// If Joint Return, Enter Your Spouse Last Name
+	txtSpLastName: "Jones"
+
+	// If Joint Return, Enter Your Spouse Social Security Number
+	txtSpSSN: "400-00-1071"
+
 	// Enter ZIP code
 	txtZip: "10011"
 
-	// Age/Blindness - Your Spouse is blind
-	chkSpBlind: "1"
+	// Line 1. Wages, salaries, tips, etc. Attach Form (or Forms) W-2
+	txtWagesSalariesTips: "36323"
+
+	// Line 12a. Standard Deduction for - Single or Married filing separately, $12, 550. Married filing jointly or Qualifying widow(er), $25, 100. Head of household, $18, 800. If you checked any box under Standard Deduction, see instructions. Line 12a. Standard deduction or itemized deductions (from Schedule A)
+	txtStdDed: "25100"
+
+	// Dependents - Select Relationship to you
+	cboDepRelation1: "SO"
 
 	// Dependents - Enter First name
 	txtDepFirstName1: "Timothy"
@@ -45,26 +54,61 @@ f1040: {
 	// Dependents - Enter Social security number
 	txtDepSSN1: "400-00-1070"
 
-	// Dependents - Select Relationship to you
-	cboDepRelation1: "SO"
-
-	// Line 1. Wages, salaries, tips, etc. Attach Form (or Forms) W-2
-	txtWagesSalariesTips: "36323"
-
-	// Line 12a. Standard Deduction for - Single or Married filing separately, $12, 550. Married filing jointly or Qualifying widow(er), $25, 100. Head of household, $18, 800. If you checked any box under Standard Deduction, see instructions. Line 12a. Standard deduction or itemized deductions (from Schedule A)
-	txtStdDed: "25100"
+	// Line 25a. Federal income tax withheld from: Form(s) W-2
+	txtW2TaxWithheld: "1126"
 
 	// Line 16. Tax (see instructions)
 	txtTaxWoAmt: "1122"
-
-	// Line 25a. Federal income tax withheld from: Form(s) W-2
-	txtW2TaxWithheld: "1126"
 }
 
 // Form W-2 - Wage and Tax Statement
 fw2: [{
+	// Line e. employee's state
+	cboEmpState: "NY"
+
 	// Line 13. Statutory employee
 	chkStatutoryEmp: "1"
+	txtEmpCity:      "New York"
+
+	// Employee's Street
+	// Line e. employee's address
+	txtEmpAddress: "123 Blackberry Street"
+
+	// Employee's Zip
+	// Line e. employee's zip
+	txtEmpZip: "10011"
+
+	// Employer's Street
+	// Line c. Employer�s address
+	txtEmployerAddress: "611 Fifth Avenue"
+
+	// Employer's City
+	// Line c. Employers City
+	txtEmployerCity: "New York"
+
+	// Line c. Employer State
+	cboEmployerState: "NY"
+
+	// Line b. Employer identification number (EIN)
+	txtEmployerIdNum: "00-0000011"
+
+	// Employer's Name 1
+	// Line c. Employer�s name
+	txtEmployerName: "Saks Fifth Avenue"
+
+	// Employer's Zip
+	// Line c. Employer Zip
+	txtEmployerZip: "10022"
+	// Line a. Employee�s social security number
+	txtEmplyerSSN: "400-00-1038"
+
+	// Employee's First Name
+	// Line e. employee's first name
+	txtEmpFirstName: "Sam"
+
+	// Employee's Last Name
+	// Line e. employee's last name
+	txtEmpLastName: "Gardenia"
 
 	// Line 1. Wages, tips, other compensation
 	txtWagesTips: "28921"
@@ -83,50 +127,6 @@ fw2: [{
 
 	// Line 6. Medicare tax withheld
 	txtMedicareTaxWithheld: "419"
-	// Line a. Employee�s social security number
-	txtEmplyerSSN: "400-00-1038"
-
-	// Line b. Employer identification number (EIN)
-	txtEmployerIdNum: "00-0000011"
-
-	// Employer's Name 1
-	// Line c. Employer�s name
-	txtEmployerName: "Saks Fifth Avenue"
-
-	// Employer's Street
-	// Line c. Employer�s address
-	txtEmployerAddress: "611 Fifth Avenue"
-
-	// Employer's City
-	// Line c. Employers City
-	txtEmployerCity: "New York"
-
-	// Line c. Employer State
-	cboEmployerState: "NY"
-
-	// Employer's Zip
-	// Line c. Employer Zip
-	txtEmployerZip: "10022"
-
-	// Employee's First Name
-	// Line e. employee's first name
-	txtEmpFirstName: "Sam"
-
-	// Employee's Last Name
-	// Line e. employee's last name
-	txtEmpLastName: "Gardenia"
-
-	// Employee's Street
-	// Line e. employee's address
-	txtEmpAddress: "123 Blackberry Street"
-	txtEmpCity:    "New York"
-
-	// Line e. employee's state
-	cboEmpState: "NY"
-
-	// Employee's Zip
-	// Line e. employee's zip
-	txtEmpZip: "10011"
 
 	// Line15. Row 1. State
 	cboW2State1: "NY"
@@ -140,6 +140,50 @@ fw2: [{
 	// Line 17. Row 1. State income tax
 	txtSt1IncTax: "876"
 }, {
+	// Line e. employee's state
+	cboEmpState: "NY"
+	txtEmpCity:  "New York"
+
+	// Employee's Street
+	// Line e. employee's address
+	txtEmpAddress: "123 Blackberry Street"
+
+	// Employee's Zip
+	// Line e. employee's zip
+	txtEmpZip: "10011"
+
+	// Employer's Street
+	// Line c. Employer�s address
+	txtEmployerAddress: "1111 8th Street"
+
+	// Employer's City
+	// Line c. Employers City
+	txtEmployerCity: "New York"
+
+	// Line c. Employer State
+	cboEmployerState: "NY"
+
+	// Line b. Employer identification number (EIN)
+	txtEmployerIdNum: "00-0000013"
+
+	// Employer's Name 1
+	// Line c. Employer�s name
+	txtEmployerName: "Wells Fargo"
+
+	// Employer's Zip
+	// Line c. Employer Zip
+	txtEmployerZip: "10004"
+	// Line a. Employee�s social security number
+	txtEmplyerSSN: "400-00-1071"
+
+	// Employee's First Name
+	// Line e. employee's first name
+	txtEmpFirstName: "Gloria"
+
+	// Employee's Last Name
+	// Line e. employee's last name
+	txtEmpLastName: "Jones"
+
 	// Line 1. Wages, tips, other compensation
 	txtWagesTips: "7402"
 
@@ -157,50 +201,6 @@ fw2: [{
 
 	// Line 6. Medicare tax withheld
 	txtMedicareTaxWithheld: "107"
-	// Line a. Employee�s social security number
-	txtEmplyerSSN: "400-00-1071"
-
-	// Line b. Employer identification number (EIN)
-	txtEmployerIdNum: "00-0000013"
-
-	// Employer's Name 1
-	// Line c. Employer�s name
-	txtEmployerName: "Wells Fargo"
-
-	// Employer's Street
-	// Line c. Employer�s address
-	txtEmployerAddress: "1111 8th Street"
-
-	// Employer's City
-	// Line c. Employers City
-	txtEmployerCity: "New York"
-
-	// Line c. Employer State
-	cboEmployerState: "NY"
-
-	// Employer's Zip
-	// Line c. Employer Zip
-	txtEmployerZip: "10004"
-
-	// Employee's First Name
-	// Line e. employee's first name
-	txtEmpFirstName: "Gloria"
-
-	// Employee's Last Name
-	// Line e. employee's last name
-	txtEmpLastName: "Jones"
-
-	// Employee's Street
-	// Line e. employee's address
-	txtEmpAddress: "123 Blackberry Street"
-	txtEmpCity:    "New York"
-
-	// Line e. employee's state
-	cboEmpState: "NY"
-
-	// Employee's Zip
-	// Line e. employee's zip
-	txtEmpZip: "10011"
 
 	// Line15. Row 1. State
 	cboW2State1: "NY"

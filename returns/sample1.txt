@@ -20,56 +20,14 @@ Form1040: {
 	// line 3b Ordinary dividends
 	ordinaryDividends: 3201
 
-	// line 7 Capital gain or loss
-	capitalGainOrLoss: 34794
-
-	// line 8 Other income from Schedule 1
-	otherIncomeFromSchedule1: 22000
-
-	// line 9 Total income
-	totalIncome: 110026
+	// line 11 Adjusted gross income
+	adjustedGrossIncome: 100426
 
 	// line 10 Adjustments to income from Schedule 1
 	adjustmentsToIncomeFromSchedule1: 9600
 
-	// line 11 Adjusted gross income
-	adjustedGrossIncome: 100426
-
-	// line 12a Standard deduction
-	standardDeduction: 12550
-
-	// line 12a Itemized deduction
-	itemizedDeduction: 25100
-
-	// line 12a Standard or itemized deduction
-	standardOrItemizedDeduction: 25100
-
-	// line 15 Taxable income
-	taxableIncome: 75326
-
-	// line 16 Tax
-	tax: 9879.90
-
-	// line 18
-	taxPlusAdditionalTax: 9879.90
-
-	// line 21 Total nonrefundable credits
-	totalNonRefundableCredits: 0
-
-	// line 22 Tax after nonrefundable credits
-	taxAfterNonRefundableCredits: 9879.90
-
-	// line 24 Total tax
-	totalTax: 9879.90
-
-	// line 25a Federal income tax withheld (W-2)
-	w2TaxWithheld: 4500
-
-	// line 25b Federal income tax withheld (Form 1099)
-	f1099TaxWithheld: 5
-
-	// line 25d Total withheld
-	totalWithheld: 4505
+	// line 7 Capital gain or loss
+	capitalGainOrLoss: 34794
 
 	// line 26 Estimated tax payments
 	estimatedTaxPayments: 5000
@@ -77,20 +35,14 @@ Form1040: {
 	// line 26 Estimated tax payments and amount applied from prior return
 	estimatedTaxPaymentsTotal: 5000
 
-	// line 32 Total other payments
-	totalOtherPayments: 0
+	// line 25b Federal income tax withheld (Form 1099)
+	f1099TaxWithheld: 5
 
-	// line 33 Total payments
-	totalPayments: 9505
+	// line 12a Itemized deduction
+	itemizedDeduction: 25100
 
-	// line 34 Tax overpaid
-	taxOverpaid: 0
-
-	// line 35 Tax refund
-	taxRefund: 0
-
-	// line 37 Amount you owe
-	taxOwed: 374.90
+	// line 8 Other income from Schedule 1
+	otherIncomeFromSchedule1: 22000
 
 	// Schedule 1: Additional Income and Adjustments to Income
 	schedule1: {
@@ -235,11 +187,11 @@ Form1040: {
 				// line 28d EIN
 				ein: "00-0000002"
 
-				// line 28b Partnership or S Corp
-				type: "S"
-
 				// line 28c Foreign partnership?
 				isForeign: false
+
+				// line 28b Partnership or S Corp
+				type: "S"
 
 				// line 28e Basis computation required
 				isBasisComputationRequired: false
@@ -276,4 +228,52 @@ Form1040: {
 			total: 22000
 		}
 	}
+
+	// line 12a Standard deduction
+	standardDeduction: 12550
+
+	// line 12a Standard or itemized deduction
+	standardOrItemizedDeduction: 25100
+
+	// line 16 Tax
+	tax: 9879.90
+
+	// line 22 Tax after nonrefundable credits
+	taxAfterNonRefundableCredits: 9879.90
+
+	// line 34 Tax overpaid
+	taxOverpaid: 0
+
+	// line 37 Amount you owe
+	taxOwed: 374.90
+
+	// line 18
+	taxPlusAdditionalTax: 9879.90
+
+	// line 35 Tax refund
+	taxRefund: 0
+
+	// line 15 Taxable income
+	taxableIncome: 75326
+
+	// line 9 Total income
+	totalIncome: 110026
+
+	// line 21 Total nonrefundable credits
+	totalNonRefundableCredits: 0
+
+	// line 32 Total other payments
+	totalOtherPayments: 0
+
+	// line 33 Total payments
+	totalPayments: 9505
+
+	// line 24 Total tax
+	totalTax: 9879.90
+
+	// line 25d Total withheld
+	totalWithheld: 4505
+
+	// line 25a Federal income tax withheld (W-2)
+	w2TaxWithheld: 4500
 }
