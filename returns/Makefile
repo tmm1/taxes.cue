@@ -14,10 +14,10 @@ format:
 	cue import -l data: -f $(<)
 
 %.freefile: compute.cue %.taxdata.cue
-	cue export --out cue $(^) -e 'FreeFile' > $(@)
+	time cue export --out cue $(^) -e 'FreeFile' > $(@)
 
 %.txt: compute.cue %.taxdata.cue
-	cue export --out cue $(^) -e '{"Form1040": Form1040}' > $(@)
+	time cue export --out cue $(^) -e '{"Form1040": Form1040}' > $(@)
 
 returns: $(TARGETS)
 
