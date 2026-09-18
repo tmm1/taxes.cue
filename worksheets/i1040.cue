@@ -1,6 +1,9 @@
 package worksheets
 
-import "list"
+import (
+	"list"
+	"math"
+)
 
 #qualifiedDividendsAndCapitalGainTax: {
 	in: {
@@ -21,7 +24,9 @@ import "list"
 			}
 		}
 	}
-	out: sheet.l25
+	// Form 1040 wants a whole dollar amount, as #computeTax gives, and line 25
+	// is a float whenever line 18 or line 21 carried cents.
+	out: math.Round(sheet.l25)
 	sheet: {
 		l1: in._form1040.l15
 		l2: in._form1040.l3a
